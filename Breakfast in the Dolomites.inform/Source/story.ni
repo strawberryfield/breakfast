@@ -12,8 +12,8 @@ Release along with  the library card.
 Chapter 0.1 - Includes
 
 Include Cleared Events by Daniel Stelzer.
-[Include Large Game Speedup by Nathanael Nerode.]
-Include Trinity Inventory by Mikael Segercrantz.
+Include Large Game Speedup by Nathanael Nerode.
+Include Customized Trinity Inventory by The Strawberry Field.
 
 Chapter 0.2 - Game start
 
@@ -43,8 +43,9 @@ To say /se: say "[/r][unicode 8212] ".
 Volume 2 - Rooms definitions
 
 The Car is a room. 
-The Garden is outside of the car.
-The Reception is inside of the hotel garden.
+The Parking is a room.
+The Garden is east of the parking.
+The Reception is inside of the garden.
 The Stairs is above the reception.
 The Bathroom is north of the reception.
 The Dining room is east of the reception.
@@ -58,13 +59,39 @@ The description of the car is "A city car; the interior space is not much, but m
 
 Chapter 2.1.1 - The dashboard
 
+Section  2.1.1.1 - The Dashboard
+
 The dashboard is a scenery open, not openable container in the car. 
-The description is "An old-fashioned dashboard with analogue instruments[if the key of the car is enclosed by the dashboard]. [/n]The key is inserted[end if].".
+The description is "An old-fashioned dashboard with analogue instruments[if your-car-key is enclosed by the dashboard]. [/n]The key is inserted[end if].".
 Instead of examining the dashboard, say "[description of the dashboard][/n]".
-The key of the car is a thing in the dashboard.
-The description is "The key to open your car."
 
+Section 2.1.1.2 - The key
 
+your-car-key is a thing in the dashboard. Printed name is "your car[']s key".
+The description is "The key to open and start your car."
+Understand "key" as your-car-key.
+
+Section 2.1.1.3 - The drawer
+
+The tiny drawer is a closed openable container. It is part of the dashboard.
+Instead of inserting something which is not your-car-key into the dashboard, try inserting the noun into the tiny drawer.
+
+Section 2.1.1.4 The radio
+
+The radio is a device. It is part of the dashboard.
+Instead of switching on the radio, say "This is not the time to turn on the radio.".
+
+Chapter 2.2 - The car door
+
+The car door is a closed openable lockable scenery door.
+It is outside of the car and inside from the parking.
+your-car-key unlocks the car door.
+
+Chapter 2.3 - The car boot
+
+The boot is a closed openable scenery container.
+
+	
 Volume 3 - Peoples
 
 Book 3.1 - The girlfriend
