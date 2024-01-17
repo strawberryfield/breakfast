@@ -59,7 +59,7 @@ The description of the car is "A city car; the interior space is not much, but m
 
 Chapter 2.1.1 - The dashboard
 
-Section  2.1.1.1 - The Dashboard
+Section 2.1.1.1 - The Dashboard
 
 The dashboard is a scenery open, not openable container in the car. 
 The description is "An old-fashioned dashboard with analogue instruments[if your-car-key is enclosed by the dashboard]. [/n]The key is inserted[end if].".
@@ -81,16 +81,52 @@ Section 2.1.1.4 The radio
 The radio is a device. It is part of the dashboard.
 Instead of switching on the radio, say "This is not the time to turn on the radio.".
 
-Chapter 2.2 - The car door
+Chapter 2.1.2 - The car door
 
 The car door is a closed openable lockable scenery door.
+The description is "[if the location of the player is the car]The door of your car[otherwise][car external][end if].".
 It is outside of the car and inside from the parking.
 your-car-key unlocks the car door.
+To say car external:
+	say "Your little white city car, the door ";
+	if the car door is open:
+		if the boot is open, say "and the boot are open";
+		otherwise: 
+			say "is open and the boot is closed";
+	otherwise:
+		if the boot is open, say "is closed and the boot is open";
+		otherwise:
+			say "and the boot are closed".
+	
 
-Chapter 2.3 - The car boot
+Chapter 2.1.3 - The car boot
 
-The boot is a closed openable scenery container.
+The boot is a closed openable lockable scenery container in the parking.
 
+Section 2.1.3.1 - Locking rules
+
+Before locking the car door with your-car-key while the car door is closed and the boot is open:
+	say "The car boot is open." instead.
+After locking the car door with your-car-key:
+	now the boot is locked;
+	continue the action.
+After unlocking the car door with your-car-key:
+	now the boot is unlocked;
+	continue the action.
+
+Section 2.1.3.2 - Boot content
+
+The pink trolley is a closed openable container in the boot.
+The description is "A jaunty pink trolley.".
+Instead of opening the pink trolley, say "Monica looks at you with a fierce gaze." instead.
+
+The red backpack is a closed openable wearable container in the boot.
+The description is "Your beloved, somewhat frayed, red backpack.".
+Instead of opening the red backpack, say "There is nothing you need in your backpack now.".
+
+Book 2.2 - The parking
+
+The description of the parking is "The hotel's reserved car park. [/n]Your white car is perhaps the smallest of all. [/n]To the east is the garden.".
 	
 Volume 3 - Peoples
 
