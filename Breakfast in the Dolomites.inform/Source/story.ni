@@ -130,20 +130,54 @@ The description of the parking is "The hotel's reserved car park. [/n]Your white
 	
 Volume 3 - Peoples
 
-Book 3.1 - The girlfriend
+A cloth is a kind of thing. 
+A cloth is always wearable.
+A cloth is usually unlisted when worn.
+
+To say dressing of (p - a person):
+	say "[if p is the player]You wear[otherwise][regarding p][They] [wear][end if] [a list of cloth worn by p].".
+	
+Instead of examining a person (called the character):
+	say "[description of the character][/n][dressing of the character]";
+	unless the character is the player:
+		let N be the number of things which are not cloth worn by the character;
+		if N is greater than 0:
+			say "[/n][regarding the noun][They] also [wear] [a list of things which are not cloth worn by the character].".
+
+Book 3.1 - The player
+
+The description of the player is "A young man, about 30 years old, blond hair. [/n]You work as a software engineer, enjoy photography and love walking in the mountains. [/n]In love with your girlfriend, very beautiful, but also shrewish when something doesn't go her way. In the end you always please her and she appreciates it.".
+
+The black t-shirt is a cloth. The description is "A black T-shirt with a surfer design on the front.".
+Understand "shirt" as the t-shirt.
+
+The pair of beige shorts is a cloth. "A pair of beige shorts with lots of pockets: two on the back, two on the front and two on the legs.".
+Understand "pants" as the pair of beige shorts.
+
+The player wears the black t-shirt and the pair of beige shorts.
+
+Book 3.2 - The girlfriend
 
 Monica is a woman in the car.
-Understand "Mo" or "Love" as Monica.
+The description is "Tall, slim, with lots of slightly reddish, frizzy hair and sparkling green eyes: could you not fall in love with her? [/n]A peppy girl, she won't forgive you anything you do that she doesn't like, but deep down she has her heart beating for you.".
+Understand "Mo" or "my/-- love/girl/girlfriend" as Monica.
 
-Book 3.2 - The receptionist
+The pair of jeans is a cloth. The description is "A pair of slightly frayed skinny jeans."
+The striped camisole is a cloth. The description is "A camisole with red and white stripes."
+The shiny black handbag is a closed openable wearable container. The description is "A shiny black handbag with a long golden chain strap.".
+The pair of shimmering gold sneakers is a cloth. 
+
+Monica wears the pair of jeans, the striped camisole,  the pair of shimmering gold sneakers and the shiny black handbag.
+
+Book 3.3 - The receptionist
 
 The receptionist is a man in the reception.
 
-Book 3.3 - The waiters
+Book 3.4 - The waiters
 
-Chapter 3.3.1 - The male waiter
+Chapter 3.4.1 - The male waiter
 
-Chapter 3.3.2 - The waitress
+Chapter 3.4.2 - The waitress
 
 Volume 4 - Texts
 
