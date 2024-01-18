@@ -32,13 +32,13 @@ Section 2b - Empty and non-empty definitions
 
 [Definition: a container is empty if the number of things in it is zero.
 Replaced by Large Games Speedup]
-Definition: a player's holdall is empty if the number of things in it is zero.
+[Definition: a player's holdall is empty if the number of things in it is zero.]
+Definition: a player's holdall is empty rather than non-empty if the first thing held by it is nothing.
 [Definition: a supporter is empty if the number of things on it is zero.
 Replaced by Large Games Speedup]
 Definition: a thing is empty if the number of things encased by it is zero.
 
 Definition: a thing is non-empty if it is not empty.
-
 
 Section 2c - Specially-inventoried
 
