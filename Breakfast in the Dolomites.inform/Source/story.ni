@@ -148,13 +148,41 @@ Book 3.1 - The player
 
 The description of the player is "A young man, about 30 years old, blond hair. [/n]You work as a software engineer, enjoy photography and love walking in the mountains. [/n]In love with your girlfriend, very beautiful, but also shrewish when something doesn't go her way. In the end you always please her and she appreciates it.".
 
+Chapter 3.1.1 - Initial player dressing
+
 The black t-shirt is a cloth. The description is "A black T-shirt with a surfer design on the front.".
 Understand "shirt" as the t-shirt.
 
-The pair of beige shorts is a cloth. "A pair of beige shorts with lots of pockets: two on the back, two on the front and two on the legs.".
+The pair of beige shorts is a cloth. The description is "A pair of beige shorts with lots of pockets: two on the back, two on the front and two on the legs.".
 Understand "pants" as the pair of beige shorts.
+A pocket is a kind of container.
+A pocket is always open. A pocket is always not openable.
+The left back pocket, the right back pocket, the left front pocket, the right front pocket, the left leg pocket, the right leg pocket are pockets.
+The left back pocket, the right back pocket, the left front pocket, the right front pocket, the left leg pocket, the right leg pocket are parts of the pair of beige shorts.
 
-The player wears the black t-shirt and the pair of beige shorts.
+The pair of blue sneakers is a cloth.
+
+The player wears the black t-shirt, the pair of beige shorts and the pair of blue sneakers.
+
+Chapter 3.1.2 - The wallet
+
+The wallet is a closed openable container in the right back pocket.
+The description is "A grey canvas wallet. It's a gift from Monica.".
+Check the player opening the wallet:
+	if the player is not carrying the noun:
+		carry out the implicitly taking activity with the noun;
+		if the player is not carrying the noun, stop the action. 
+
+An unuseful card is a kind of thing.	
+The credit card, the debit card and  the supermarket fidelity card are unuseful cards.
+Instead of taking an unuseful card, say "Right now [the noun] is of no use to you.".
+Instead of examining an unuseful card, say "Examining [the noun] now is a waste of time.".
+
+The credit card, the debit card, the identity card, the supermarket fidelity card, the photo are in the wallet.
+The description of the photo is "A photo you took of Monica last year at Lake Misurina with the Three Peaks of Lavaredo in the background.".		
+
+Some money are in the wallet. The description of money is "It's only banknotes, coins annoy you.".
+Instead of taking money, say "There is nothing to pay.".
 
 Book 3.2 - The girlfriend
 
@@ -162,10 +190,15 @@ Monica is a woman in the car.
 The description is "Tall, slim, with lots of slightly reddish, frizzy hair and sparkling green eyes: could you not fall in love with her? [/n]A peppy girl, she won't forgive you anything you do that she doesn't like, but deep down she has her heart beating for you.".
 Understand "Mo" or "my/-- love/girl/girlfriend" as Monica.
 
+Chapter 3.2.1 - Monica initial dressing
+
 The pair of jeans is a cloth. The description is "A pair of slightly frayed skinny jeans."
 The striped camisole is a cloth. The description is "A camisole with red and white stripes."
-The shiny black handbag is a closed openable wearable container. The description is "A shiny black handbag with a long golden chain strap.".
 The pair of shimmering gold sneakers is a cloth. 
+
+The shiny black handbag is a closed openable wearable container. The description is "A shiny black handbag with a long golden chain strap.".
+Understand "bag" as shiny black handbag.
+Instead of opening the shiny black handbag, say "Monica slaps your hand and scolds you: [/ss]Don't touch!'[/r]".
 
 Monica wears the pair of jeans, the striped camisole,  the pair of shimmering gold sneakers and the shiny black handbag.
 
