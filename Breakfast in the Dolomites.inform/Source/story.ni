@@ -48,7 +48,7 @@ Volume 2 - Rooms definitions
 The Car is a room. 
 The Parking is a room.
 The Garden is east of the parking.
-The Reception is inside of the garden.
+The Reception is a room.
 The Stairs is above the reception.
 The Bathroom is north of the reception.
 The Dining room is east of the reception.
@@ -178,6 +178,31 @@ After going to the garden from the parking:
 	now Monica is in the garden;
 	now arrival-trigger is false;
 	continue the action.
+
+Book 2.3 - The garden
+
+The description of the garden is "There are fir trees in the garden and wooden tables and chairs in the lawn. [/n]The driveway is lit by a few marker lamps. At the end of it a sliding door is the entrance to the hotel. [/n]Parking is to the west.".
+
+Instead of going to the parking from the garden, say "You didn't forget anything important in the car.".
+
+Chapter 2.3.1 - The sliding door
+
+The sliding door is a scenery closed openable door. The description is "An automatic glass sliding door."
+The sliding door is inside from the garden and outside from the reception.
+
+After opening the sliding door, say "You come closer to [the noun] and it automatically opens.".
+After closing the sliding door, say "You move away from [the noun] and it automatically closes.".
+Instead of going through the sliding door:
+	try opening the noun;
+	the sliding door closes in 0 turns from now;
+	continue the action.
+After going through the sliding door:
+	say "Monica also walks through the door.";
+	now Monica is in the location of the player;
+	now check-in-trigger is true;
+	continue the action.
+At the time when the sliding door closes:
+	try closing the sliding door.
 	
 Volume 3 - Peoples
 
@@ -293,3 +318,9 @@ When Arrival ends:
 	if alerts is greater than zero, say "Let's start well: you have just arrived and Monica has already rebuked you [alerts in words] time[s].";
 	now alerts is 0.
 	
+Book 4.3 - Check-in
+
+The Check-in is a scene. "It's time to check in: you have just arrived at the hotel.".
+The check-in-trigger is a truth state that varies.
+The Check-in begins when check-in-trigger is true.
+The Check-in ends when check-in-trigger is false.
