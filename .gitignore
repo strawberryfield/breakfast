@@ -6,7 +6,7 @@
 [Rr]elease/
 
 # Temporary files
-manifest.plist
+*.plist
 Metadata.iFiction
 Release.blurb
 Skein.skein
