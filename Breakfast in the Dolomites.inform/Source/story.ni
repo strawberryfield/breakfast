@@ -21,8 +21,11 @@ When play begins:
 	say "[story-beginning]";
 	say "[/p][/b]«The Strawberry Field»[/r] [/i]presents[/r][/p]".
 
+Arrival-trigger is a truth state that varies. 
 After printing the banner text:
-	say "[/p][arrive-at-hotel]".
+	now arrival-trigger is true;
+	say "[arrive to hotel][/n]";
+	Monica leaves the car in 1 turn from now.
 	
 Volume 1 - Common 
 
@@ -86,7 +89,9 @@ Chapter 2.1.2 - The car door
 The car door is a closed openable lockable scenery door.
 The description is "[if the location of the player is the car]The door of your car[otherwise][car external][end if].".
 It is outside of the car and inside from the parking.
-your-car-key unlocks the car door.
+
+Your-car-key unlocks the car door.
+ 
 To say car external:
 	say "Your little white city car, the door ";
 	if the car door is open:
@@ -102,6 +107,7 @@ To say car external:
 Chapter 2.1.3 - The car boot
 
 The boot is a closed openable lockable scenery container in the parking.
+Understand "trunk" as the boot.
 
 Section 2.1.3.1 - Locking rules
 
@@ -118,15 +124,60 @@ Section 2.1.3.2 - Boot content
 
 The pink trolley is a closed openable container in the boot.
 The description is "A jaunty pink trolley.".
-Instead of opening the pink trolley, say "Monica looks at you with a fierce gaze." instead.
+Instead of opening the pink trolley:
+	say "[alert]Monica looks at you with a fierce gaze." instead.
 
 The red backpack is a closed openable wearable container in the boot.
 The description is "Your beloved, somewhat frayed, red backpack.".
+Understand "baggage/luggage" as the red backpack.
 Instead of opening the red backpack, say "There is nothing you need in your backpack now.".
 
+Chapter 2.1.4 - Timed events
+
+At the time when Monica leaves the car:
+	say "Monica jumps out of the car, then closes the car door.";
+	now Monica is in the parking;
+	Monica takes trolley in 2 turn from now.
+
+At the time when Monica takes trolley:
+	if the boot is locked:
+		say "[alert][/ss]Unlock the car!' [/se]Monica cries."; 
+		Monica takes trolley in 1 turn from now;
+	otherwise:
+		unless the boot is open:
+			now the boot is open;
+			say "Monica opens the car boot revealing [a list of things in the boot], then she takes her pink trolley.";
+		otherwise:
+			say "Monica takes her pink trolley from the boot.";
+		now Monica carries the pink trolley;
+	Monica knocks in 1 turns from now.
+	
+At the time when Monica knocks:
+	if the location of the player is the car:
+		say "[alert]Monica is knocking on the door of the car.[/ss]What are you still doing in there?' [/se]she asks.";
+		Monica knocks in 2 turns from now.	
+	
 Book 2.2 - The parking
 
 The description of the parking is "The hotel's reserved car park. [/n]Your white car is perhaps the smallest of all. [/n]To the east is the garden.".
+
+Chapter 2.2.1 - Rules
+
+Before going to the garden from the parking:
+	unless the red backpack is enclosed by the player:
+		say "[alert][/ss]You forgot to take your luggage.' [/se]Monica remebers you." instead;
+	unless the car door is closed:
+		say "[alert][/ss]How distracted you are tonight: you left the car door open!' [/se]Monica exclaims." instead;
+	unless the boot is closed:
+		say "[alert][/ss]It's better to close the car boot.' [/se]Monica suggests." instead;
+	unless the car door  is locked:
+		say "[alert][/ss]There are a lot of thieves in this world, did you check to make sure that you've locked the car?' [/se] Monica asks." instead.
+		
+After going to the garden from the parking:
+	say "Monica follows you. [/n]";
+	now Monica is in the garden;
+	now arrival-trigger is false;
+	continue the action.
 	
 Volume 3 - Peoples
 
@@ -136,13 +187,19 @@ A cloth is usually unlisted when worn.
 
 To say dressing of (p - a person):
 	say "[if p is the player]You wear[otherwise][regarding p][They] [wear][end if] [a list of cloth worn by p].".
-	
+
+To say carrying of (p - a person):
+	say "[if p is the player]You are carrying[otherwise][regarding p][They] [carry][end if] [a list of things carried by p].".
+		
 Instead of examining a person (called the character):
 	say "[description of the character][/n][dressing of the character]";
 	unless the character is the player:
 		let N be the number of things which are not cloth worn by the character;
 		if N is greater than 0:
-			say "[/n][regarding the noun][They] also [wear] [a list of things which are not cloth worn by the character].".
+			say "[/n][regarding the noun][They] also [wear] [a list of things which are not cloth worn by the character].";
+		let N be the number of things which are carried by the character;
+		if N is greater than 0:
+			say "[carrying of the noun]".
 
 Book 3.1 - The player
 
@@ -190,6 +247,9 @@ Monica is a woman in the car.
 The description is "Tall, slim, with lots of slightly reddish, frizzy hair and sparkling green eyes: could you not fall in love with her? [/n]A peppy girl, she won't forgive you anything you do that she doesn't like, but deep down she has her heart beating for you.".
 Understand "Mo" or "my/-- love/girl/girlfriend" as Monica.
 
+Alerts is a number that varies.
+To say alert: increase alerts by 1.
+
 Chapter 3.2.1 - Monica initial dressing
 
 The pair of jeans is a cloth. The description is "A pair of slightly frayed skinny jeans."
@@ -198,7 +258,7 @@ The pair of shimmering gold sneakers is a cloth.
 
 The shiny black handbag is a closed openable wearable container. The description is "A shiny black handbag with a long golden chain strap.".
 Understand "bag" as shiny black handbag.
-Instead of opening the shiny black handbag, say "Monica slaps your hand and scolds you: [/ss]Don't touch!'[/r]".
+Instead of opening the shiny black handbag, say "[alert]Monica slaps your hand and scolds you: [/ss]Don't touch!' [/r]".
 
 Monica wears the pair of jeans, the striped camisole,  the pair of shimmering gold sneakers and the shiny black handbag.
 
@@ -212,12 +272,24 @@ Chapter 3.4.1 - The male waiter
 
 Chapter 3.4.2 - The waitress
 
-Volume 4 - Texts
+Volume 4 - Scenes
 
 Book 4.1 - Intro
 
 To say story-beginning: 
-	say "A summery Friday evening. [/n]You are driving your car to a small town in the Dolomites. [/n]Next to you is Monica, your girlfriend; you have set off for a relaxing weekend after a hard day at work. [/n][/ss]Still a long way to go?' [/se]Monica asks.[/ss]We will be at the hotel shortly.' [/se]you reply."
+	say "A summery Friday evening. [/n]You are driving your car to a small town in the Dolomites. [/n]Next to you is Monica, your girlfriend; you have set off for a relaxing weekend after a hard day at work. [/n][/ss]Still a long way to go?' [/se]Monica asks.[/ss]We will be at the hotel shortly.' [/se]you reply. [/n]She rests her head on your shoulder and caresses your neck."
 	
-To say arrive-at-hotel:
-	say "A few minutes later you arrive at the hotel and you park your car in a corner of the garden.".
+Book 4.2 - Arrival
+
+The Arrival is a scene. 
+The Arrival begins when arrival-trigger is true.
+When Arrival begins: now alerts is zero.
+The Arrival ends when arrival-trigger is false.
+ 	
+To say arrive to hotel:
+	say "[/p][/i]A few minutes later. [/r][/p]You arrive at the hotel and you park your car in the private car parking area next to the garden. [/p]".
+	
+When Arrival ends:
+	if alerts is greater than zero, say "Let's start well: you have just arrived and Monica has already rebuked you [alerts in words] time[s].";
+	now alerts is 0.
+	
