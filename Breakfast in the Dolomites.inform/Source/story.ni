@@ -14,6 +14,7 @@ Chapter 0.1 - Includes
 Include Cleared Events by Daniel Stelzer.
 Include Large Game Speedup by Nathanael Nerode.
 Include Customized Trinity Inventory by The Strawberry Field.
+Include Conversation Package by Eric Eve.
 
 Chapter 0.2 - Game start
 
@@ -204,6 +205,10 @@ After going through the sliding door:
 At the time when the sliding door closes:
 	try closing the sliding door.
 	
+Book 2.4 - The reception
+
+The description of the reception is "[if unvisited]This charming little hotel welcomes guests with its cosy reception area: the inviting atmosphere is immediately apparent, with a blend of rustic elegance and modern comfort. [/n][end if]The receptionist stands behind a tastefully crafted wooden desk, ready to assist guests with a genuine smile."
+	
 Volume 3 - Peoples
 
 A cloth is a kind of thing. 
@@ -248,13 +253,15 @@ The player wears the black t-shirt, the pair of beige shorts and the pair of blu
 
 Chapter 3.1.2 - The wallet
 
-The wallet is a closed openable container in the right back pocket.
+The wallet is a closed openable container.
 The description is "A grey canvas wallet. It's a gift from Monica.".
 Check the player opening the wallet:
 	if the player is not carrying the noun:
 		carry out the implicitly taking activity with the noun;
 		if the player is not carrying the noun, stop the action. 
-
+Before examining the right back pocket:
+	now the wallet is in the noun.
+	
 An unuseful card is a kind of thing.	
 The credit card, the debit card and  the supermarket fidelity card are unuseful cards.
 Instead of taking an unuseful card, say "Right now [the noun] is of no use to you.".
@@ -283,13 +290,23 @@ The pair of shimmering gold sneakers is a cloth.
 
 The shiny black handbag is a closed openable wearable container. The description is "A shiny black handbag with a long golden chain strap.".
 Understand "bag" as shiny black handbag.
-Instead of opening the shiny black handbag, say "[alert]Monica slaps your hand and scolds you: [/ss]Don't touch!' [/r]".
 
 Monica wears the pair of jeans, the striped camisole,  the pair of shimmering gold sneakers and the shiny black handbag.
 
+Chapter 3.2.2 - Monica dressing rules
+
+To say do not touch: say "[alert]Monica slaps your hand and scolds you: [/ss]Don't touch!' [/r]".
+Instead of opening the shiny black handbag, say "[do not touch]".
+Instead of taking the shiny black handbag, say "[do not touch]".
+
+Instead of taking a cloth which is worn by Monica, say "[alert][/ss]Hey, what are you trying to do? '[/se]shrieks Monica.".
+Persuasion rule for asking Monica to try getting off a cloth: 
+	say "[alert][/ss]No way!' [/se]she replies."; 
+	persuasion fails.
+
 Book 3.3 - The receptionist
 
-The receptionist is a man in the reception.
+The receptionist is a scenery man in the reception.
 
 Book 3.4 - The waiters
 
