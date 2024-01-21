@@ -5,16 +5,23 @@ Volume 0 - Introduction
 The release number is 1.
 The story creation year is 2024.
 The story genre is "Screwball comedy".
-The story headline is "A [/i]play just for fun[/r] comedy".
-The story description is "What a strange thing love is".
-Release along with  the library card.
+The story headline is "A play just for fun comedy".
+The story description is "It is the mid-1990s. On a Friday evening in the summer, a young man and his girlfriend leave work for a short holiday in the Dolomites.
+You play as Francesco, about 30 years old, blond hair. You work as a software engineer, like photography and hiking in the mountains. 
+Monica, your girlfriend, is beautiful: tall, slim, with lots of slightly reddish, frizzy hair and sparkling green eyes: could you not fall in love with her? 
+She loves to stroll around looking in shop windows; a peppy girl, she won't forgive you anything you do that she doesn't like, but deep down she has her heart beating for you.
+What a strange thing love is...
+
+You have to plan the first day of your holiday. There are no treasures to be found, no mysteries to be solved: the only prize is to spend a beautiful day in this wonderful mountain world.".
+Release along with the cover art ("Breakfast in the Dolomites") and the library card.
 
 Chapter 0.1 - Includes
 
 Include Cleared Events by Daniel Stelzer.
 Include Large Game Speedup by Nathanael Nerode.
-Include Customized Trinity Inventory by The Strawberry Field.
 Include Conversation Package by Eric Eve.
+Include Customized Trinity Inventory by The Strawberry Field.
+Include Workers by The Strawberry Field.
 
 Chapter 0.2 - Game start
 
@@ -51,7 +58,9 @@ The Parking is a room.
 The Garden is east of the parking.
 The Reception is a room.
 The Stairs is above the reception.
-The Bathroom is north of the reception.
+The Bathroom is a room.
+The bathroom door is a scenery door.
+The bathroom door is inside from the reception and outside from the bathroom.
 The Dining room is east of the reception.
 The Buffet is north of the dining room.
 The Kitchen is a room.
@@ -201,13 +210,43 @@ After going through the sliding door:
 	say "Monica also walks through the door.";
 	now Monica is in the location of the player;
 	now check-in-trigger is true;
+	the receptionist greets in 1 turn from now;
 	continue the action.
 At the time when the sliding door closes:
 	try closing the sliding door.
 	
 Book 2.4 - The reception
 
-The description of the reception is "[if unvisited]This charming little hotel welcomes guests with its cosy reception area: the inviting atmosphere is immediately apparent, with a blend of rustic elegance and modern comfort. [/n][end if]The receptionist stands behind a tastefully crafted wooden desk, ready to assist guests with a genuine smile."
+The description of the reception is "[if unvisited]This charming little hotel welcomes guests with its cosy reception area: the inviting atmosphere is immediately apparent, with a blend of rustic elegance and modern comfort. [/n][end if]The receptionist stands behind a tastefully crafted wooden desk, ready to assist guests with a genuine smile. [/n]Stairs lead to the upper floors. To the east is the dining room, along the wall is a door."
+
+The staircases and the desk are scenery in the reception.
+Understand "stairs" as staircases.
+
+Chapter 2.4.1 - Rules for check-in
+
+Instead of going east during the check-in, say "It is late, the lights are out and there is no one around.".
+Instead of going up during the check-in, say "You have not yet completed your check-in.".
+Instead of going through the bathroom door during the check-in, say "There is nothing interesting there.".
+Instead of opening the bathroom door during the check-in, say "There is nothing interesting there.".
+Instead of examining the bathroom door during the check-in, say "There is not much light there, all you see is an ordinary wooden door.".
+Instead of going outside during the check-in, say "[alert][/ss]Where are you going? We have to complete the check-in!' [/se]Monica says. [/n]It would be completely useless to go out, you have everything you need with you.".
+
+Chapter 2.4.2 - Timed events
+
+At the time when the receptionist greets:
+	say "[/ss]Good evening, welcome to our hotel!' [/se][determinate-naming of receptionist] greets you.[/ss]How can I help you?' [/r][/n]";
+	Monica greets the receptionist in 0 turns from now.
+
+At the time when Monica greets the receptionist:
+	say "[greet receptionist].' [/se]says Monica[if the receptionist is improper-named] to [determinate-naming of receptionist][end if].". 	
+
+Chapter 2.4.3 - Conversation
+
+To say greet receptionist: 
+	say "[/ss]Good evening[if the receptionist is proper-named] [printed name of the receptionist][end if]".
+
+After saying hello to the receptionist:
+	say "[greet receptionist], we are Francesco and Monica and we have a reservation.' [/r][/n][/ss]Just a moment, I look for it.' [/se][determinate-naming of receptionist] states and types something on the computer.".
 	
 Volume 3 - Peoples
 
@@ -223,7 +262,8 @@ To say carrying of (p - a person):
 		
 Instead of examining a person (called the character):
 	say "[description of the character][/n][dressing of the character]";
-	unless the character is the player:
+	unless the character is the player: 
+		if the character is a worker, say "[character namesign]";
 		let N be the number of things which are not cloth worn by the character;
 		if N is greater than 0:
 			say "[/n][regarding the noun][They] also [wear] [a list of things which are not cloth worn by the character].";
@@ -233,7 +273,7 @@ Instead of examining a person (called the character):
 
 Book 3.1 - The player
 
-The description of the player is "A young man, about 30 years old, blond hair. [/n]You work as a software engineer, enjoy photography and love walking in the mountains. [/n]In love with your girlfriend, very beautiful, but also shrewish when something doesn't go her way. In the end you always please her and she appreciates it.".
+The description of the player is "A young man, about 30 years old, blond hair. [/n]You work as a software engineer, enjoy photography and love hiking in the mountains. [/n]In love with your girlfriend, very beautiful, but also shrewish when something doesn't go her way. In the end you always please her and she appreciates it.".
 
 Chapter 3.1.1 - Initial player dressing
 
@@ -304,9 +344,31 @@ Persuasion rule for asking Monica to try getting off a cloth:
 	say "[alert][/ss]No way!' [/se]she replies."; 
 	persuasion fails.
 
+Chapter 3.2.3 - Kisses
+
+Instead of kissing something:
+	if the noun is Monica, say "[/ss][one of]On dear[or]I love you[at random]!' [/se]she whispers sweetly in your ear." instead;
+	if the noun is a woman, say "[alert]I'm here to be kissed!' [/se]Monica scolds you." instead;
+	if the noun is a man, say "[/ss]Do you like men now?' [/se]amazed Monica asks you." instead;
+	say "[/ss]Hold the kisses for me!' [/se]Monica scolds you.".
+
+Persuasion rule for asking Monica to try kissing someone:
+	if the noun is the player:
+		say "[/ss][one of]On dear[or]I love you[or]Here, my love[at random]!' [/se]she says and places her lips on yours. [/n]You greatly appreciate this kiss.";
+		persuasion fails;
+	otherwise:
+		say "[/ss]My lips are only for you!' [/se]she says and kisses you instead. [/n]You greatly appreciate it.";
+		persuasion fails.
+		
 Book 3.3 - The receptionist
 
-The receptionist is a scenery man in the reception.
+The receptionist is a scenery male worker in the reception.
+The description is "A tall man with short black hair, dark eyes and a light, well-groomed beard.".
+Proper name of the receptionist is "Nathan".
+Understand "Nathan" as the receptionist.
+
+The white shirt, dark grey jacket and dotted grey tie are cloth.
+The receptionist wears the white shirt, dark grey jacket and dotted grey tie.
 
 Book 3.4 - The waiters
 
