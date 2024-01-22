@@ -240,13 +240,30 @@ At the time when the receptionist greets:
 At the time when Monica greets the receptionist:
 	say "[greet receptionist].' [/se]says Monica[if the receptionist is improper-named] to [determinate-naming of receptionist][end if].". 	
 
+At the time when the receptionist confirms reservation:
+	say "[/ss]Here it is.' [/se][determinate-naming of receptionist] reports. [/n][/ss]We have reserved the 'edelweiss' room for you: our rooms do not have a number, but the name of a flower.'[/r][/n]";
+	say "[/ss]Oh nice!' [/se]Monica says and opens her handbag. [/n][determinate-naming of receptionist] smiles.";
+	now the shiny black handbag is open;
+	the receptionist asks for documents in 1 turn from now.
+
+At the time when the receptionist asks for documents:
+	say "[/ss]May I have your documents so that I can register?' [/se]asks [determinate-naming of receptionist].";
+	Monica shows document in 1 turn from now.
+	
+At the time when Monica shows document:
+	say "".	
+	
 Chapter 2.4.3 - Conversation
 
 To say greet receptionist: 
 	say "[/ss]Good evening[if the receptionist is proper-named] [printed name of the receptionist][end if]".
 
-After saying hello to the receptionist:
-	say "[greet receptionist], we are Francesco and Monica and we have a reservation.' [/r][/n][/ss]Just a moment, I look for it.' [/se][determinate-naming of receptionist] states and types something on the computer.".
+Instead of hailing during the check-in:
+	try saying hello to the receptionist.
+Instead of saying hello to someone during the check-in:
+	now the current interlocutor is the receptionist;
+	say "[greet receptionist], we are Francesco and Monica and we have a reservation.' [/r][/n][/ss]Just a moment, I look for it.' [/se][determinate-naming of receptionist] states and types something on the computer.";
+	the receptionist confirms reservation in 1 turn from now.
 	
 Volume 3 - Peoples
 
@@ -328,16 +345,18 @@ The pair of jeans is a cloth. The description is "A pair of slightly frayed skin
 The striped camisole is a cloth. The description is "A camisole with red and white stripes."
 The pair of shimmering gold sneakers is a cloth. 
 
-The shiny black handbag is a closed openable wearable container. The description is "A shiny black handbag with a long golden chain strap.".
-Understand "bag" as shiny black handbag.
+A monica-bag is a kind of container. It is closed, openable and wearable.
+The shiny black handbag is a monica-bag. The description is "A shiny black handbag with a long golden chain strap. [if open]It's open. [end if]".
+Understand "bag" as a monica-bag.
 
 Monica wears the pair of jeans, the striped camisole,  the pair of shimmering gold sneakers and the shiny black handbag.
 
 Chapter 3.2.2 - Monica dressing rules
 
-To say do not touch: say "[alert]Monica slaps your hand and scolds you: [/ss]Don't touch!' [/r]".
-Instead of opening the shiny black handbag, say "[do not touch]".
-Instead of taking the shiny black handbag, say "[do not touch]".
+To say do-not-touch: say "[alert]Monica slaps your hand and scolds you: [/ss]Don't touch!'[/r]".
+Instead of opening a monica-bag, say "[do-not-touch]".
+Instead of taking a monica-bag, say "[do-not-touch]".
+Instead of searching a monica-bag, say "[do-not-touch]".
 
 Instead of taking a cloth which is worn by Monica, say "[alert][/ss]Hey, what are you trying to do? '[/se]shrieks Monica.".
 Persuasion rule for asking Monica to try getting off a cloth: 
