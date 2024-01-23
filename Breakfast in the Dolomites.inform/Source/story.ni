@@ -137,6 +137,14 @@ The description is "A jaunty pink trolley.".
 Instead of opening the pink trolley:
 	say "[alert]Monica looks at you with a fierce gaze." instead.
 
+Instead of taking the pink trolley while the pink trolley is carried by Monica:
+	try asking Monica to try giving the pink trolley to the player.
+Persuasion rule for asking Monica to try giving the pink trolley to the player: persuasion succeeds.
+Instead of Monica giving the pink trolley to the player:	
+	now the player carries the pink trolley;
+	say "[/ss]Will you carry it for me? How kind you are!' [/se]she thanks you with a wonderful smile.";
+	the rule succeeds.
+	
 The red backpack is a closed openable wearable container in the boot.
 The description is "Your beloved, somewhat frayed, red backpack.".
 Understand "baggage/luggage" as the red backpack.
@@ -358,8 +366,17 @@ Instead of opening a monica-bag, say "[do-not-touch]".
 Instead of taking a monica-bag, say "[do-not-touch]".
 Instead of searching a monica-bag, say "[do-not-touch]".
 
+Persuasion rule for asking Monica to try dropping a monica-bag:
+	say "[alert]She looks at you angrily and clutches her [noun].";
+	persuasion fails.
+Persuasion rule for asking Monica to try opening a monica-bag:
+	say "[alert][/ss]This is mine and I do what I want with it. [/se]she shuts you up.";
+	persuasion fails.
+Persuasion rule for asking Monica to try getting off a cloth:
+	say "[alert][/ss]Aren't you ashamed to ask me this?' [/se]she asks you angrily.";
+	persuasion fails.
 Instead of taking a cloth which is worn by Monica, say "[alert][/ss]Hey, what are you trying to do? '[/se]shrieks Monica.".
-Persuasion rule for asking Monica to try getting off a cloth: 
+Persuasion rule for asking Monica to try giving a cloth to someone: 
 	say "[alert][/ss]No way!' [/se]she replies."; 
 	persuasion fails.
 
