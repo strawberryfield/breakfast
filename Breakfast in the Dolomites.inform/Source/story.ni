@@ -37,7 +37,7 @@ After printing the banner text:
 	
 Volume 1 - Common 
 
-Book 1 - Abbreviations
+Book 1.1 - Abbreviations
 
 To say /n: say line break.
 To say /nn: say no line break.
@@ -51,6 +51,35 @@ To say /s (t - text): say "[/i]'[t]'[/r]".
 To say /ss: say "[/i]'".
 To say /se: say "[/r][unicode 8212] ".
 
+Book 1.2 - Rules
+
+Chapter 1.2.1 - Aliases
+
+Understand "look around" as looking.  
+Understand "climb on [something]" as climbing.
+Understand "go [down]stairs" as going.  Understand "go [down] stairs" as going.  
+Understand "go [up]stairs" as going.  Understand "go [up] stairs" as going.  
+Understand "downstairs" as down.  Understand "upstairs" as up.
+Understand "check out [something]" as examining.
+Understand "sit down on/-- [something]" as entering.
+
+Chapter 1.2.2 - Blocking take all
+
+Rule for deciding whether all includes a thing when taking: it does not.
+Rule for deciding whether all includes a thing when removing from: it does not.
+Rule for printing a parser error when the latest parser error is the nothing to do error:
+	say “Don't be a hoarder, just take what you plan to use.”.
+	
+Chapter 1.2.3  - Special actions
+
+Dancing is an action applying to nothing.
+Understand "Dance" as dancing.
+Report dancing: say "[We] [aren't] a dancer.".
+ 
+Singing is an action applying to nothing.
+Understand "Sing" as singing.
+Report singing: say "[We] [are] not particularly in tune.".
+	
 Volume 2 - Rooms definitions
 
 The Car is a room. 
