@@ -75,10 +75,16 @@ Chapter 1.2.3  - Special actions
 Dancing is an action applying to nothing.
 Understand "Dance" as dancing.
 Report dancing: say "[We] [aren't] a dancer.".
+Check an actor dancing:
+	if the actor is enclosed by something (called the seat):
+		say "(first leaving [the seat])";
+		silently try getting off the seat.
  
 Singing is an action applying to nothing.
 Understand "Sing" as singing.
 Report singing: say "[We] [are] not particularly in tune.".
+Check singing:
+	If the location of the player contains people which are not the player, say "Someone could not like it." instead.
 	
 Volume 2 - Rooms definitions
 
@@ -98,6 +104,7 @@ The Sleeping room is a room.
 Book 2.1 - The car
 
 The description of the car is "A city car; the interior space is not much, but more than enough for a young couple. [/n]Next to the dashboard, under the radio, is a small drawer."
+Instead of an actor dancing while the location of the actor is the car: say "Not enough room in here.".
 
 Chapter 2.1.1 - The dashboard
 
@@ -297,10 +304,13 @@ To say greet receptionist:
 
 Instead of hailing during the check-in:
 	try saying hello to the receptionist.
-Instead of saying hello to someone during the check-in:
-	now the current interlocutor is the receptionist;
-	say "[greet receptionist], we are Francesco and Monica and we have a reservation.' [/r][/n][/ss]Just a moment, I look for it.' [/se][determinate-naming of receptionist] states and types something on the computer.";
-	the receptionist confirms reservation in 1 turn from now.
+Instead of saying hello to someone (called the other) during the check-in:
+	unless the other is Monica:
+		now the current interlocutor is the receptionist;
+		say "[greet receptionist], we are Francesco and Monica and we have a reservation.' [/r][/n][/ss]Just a moment, I look for it.' [/se][determinate-naming of receptionist] states and types something on the computer.";
+		the receptionist confirms reservation in 1 turn from now;
+	otherwise:
+		continue the action.
 	
 Volume 3 - Peoples
 
@@ -325,9 +335,15 @@ Instead of examining a person (called the character):
 		if N is greater than 0:
 			say "[carrying of the noun]".
 
+A person can be leading. A person is usually not leading.
+To decide whether leading actors are alone: 
+	if the number of not leading people in the location is zero, decide yes;
+	decide no.
+
 Book 3.1 - The player
 
 The description of the player is "A young man, about 30 years old, blond hair. [/n]You work as a software engineer, enjoy photography and love hiking in the mountains. [/n]In love with your girlfriend, very beautiful, but also shrewish when something doesn't go her way. In the end you always please her and she appreciates it.".
+The player is leading.
 
 Chapter 3.1.1 - Initial player dressing
 
@@ -372,6 +388,8 @@ Book 3.2 - The girlfriend
 Monica is a woman in the car.
 The description is "Tall, slim, with lots of slightly reddish, frizzy hair and sparkling green eyes: could you not fall in love with her? [/n]A peppy girl, she won't forgive you anything you do that she doesn't like, but deep down she has her heart beating for you.".
 Understand "Mo" or "my/-- love/girl/girlfriend" as Monica.
+Monica is proper-named.
+Monica is leading.
 
 Alerts is a number that varies.
 To say alert: increase alerts by 1.
@@ -424,7 +442,20 @@ Persuasion rule for asking Monica to try kissing someone:
 	otherwise:
 		say "[/ss]My lips are only for you!' [/se]she says and kisses you instead. [/n]You greatly appreciate it.";
 		persuasion fails.
-		
+
+Chapter 3.2.4 - Singing and dancing
+
+Persuasion rule for asking Monica to try singing: 
+	unless leading actors are alone:
+		say "[alert][/ss]No, I don't sing, I'm ashamed.' [/se]she answers.";
+	otherwise:
+		say "[alert][/ss]Why do you want me to sing if you know I'm out of tune?' [/se]she asks.";
+	persuasion fails.
+
+Persuasion rule for asking Monica to try dancing: persuasion succeeds.
+Report Monica dancing:
+	say "[Printed name of the actor]  does a twirl. [/n][The list of not leading people in the location] clap[s]. [/n]You kiss her.".
+			
 Book 3.3 - The receptionist
 
 The receptionist is a scenery male worker in the reception.
