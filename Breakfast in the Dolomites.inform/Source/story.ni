@@ -20,6 +20,7 @@ Chapter 0.1 - Includes
 Include Cleared Events by Daniel Stelzer.
 Include Large Game Speedup by Nathanael Nerode.
 Include Conversation Package by Eric Eve.
+Include Assorted Text Generation by Emily Short.
 Include Customized Trinity Inventory by The Strawberry Field.
 Include Workers by The Strawberry Field.
 
@@ -85,6 +86,12 @@ Understand "Sing" as singing.
 Report singing: say "[We] [are] not particularly in tune.".
 Check singing:
 	If the location of the player contains people which are not the player, say "Someone could not like it." instead.
+	
+Chapter 1.2.4 - Special says
+
+To say times of (N - a number): say " for the [ordinal of N] time".
+To say other times of (N - a number):
+	if N is greater than 1, say times of N.
 	
 Volume 2 - Rooms definitions
 
@@ -178,7 +185,7 @@ Instead of taking the pink trolley while the pink trolley is carried by Monica:
 Persuasion rule for asking Monica to try giving the pink trolley to the player: persuasion succeeds.
 Instead of Monica giving the pink trolley to the player:	
 	now the player carries the pink trolley;
-	say "[/ss]Will you carry it for me? How kind you are!' [/se]she thanks you with a wonderful smile.";
+	say "[heart][/ss]Will you carry it for me? How kind you are!' [/se]she thanks you with a wonderful smile.";
 	the rule succeeds.
 	
 The red backpack is a closed openable wearable container in the boot.
@@ -205,11 +212,13 @@ At the time when Monica takes trolley:
 			say "Monica takes her pink trolley from the boot.";
 		now Monica carries the pink trolley;
 	Monica knocks in 1 turns from now.
-	
+
+Mknock-count is a number that varies. Mknock-count is 0.	
 At the time when Monica knocks:
 	if the location of the player is the car:
-		say "[alert]Monica is knocking on the door of the car.[/ss]What are you still doing in there?' [/se]she asks.";
-		Monica knocks in 2 turns from now.	
+		Increase Mknock-count by 1;
+		say "[alert]Monica is knocking on the door of the car[other times of Mknock-count].[/ss]What are you still doing in there?' [/se]she asks.";
+		Monica knocks in 1 turns from now.	
 	
 Book 2.2 - The parking
 
@@ -232,6 +241,15 @@ After going to the garden from the parking:
 	now Monica is in the garden;
 	now arrival-trigger is false;
 	continue the action.
+
+Chapter 2.2.2 - Backdrops
+
+The sky is a backdrop. The sky is in the parking and in the garden.
+The description is "The sky is black because the moon is new; this makes it possible to admire a great number of stars.".
+Understand "moon/stars" as the sky.
+
+The ground is a backdrop. The ground is in the parking and in the garden.
+The description is "[if the location of the player is the parking]An asphalted square; the parking spaces are marked with yellow paint[otherwise]A gravel driveway with well-mown grass to the sides[end if].".
 
 Book 2.3 - The garden
 
@@ -261,10 +279,17 @@ At the time when the sliding door closes:
 	
 Book 2.4 - The reception
 
-The description of the reception is "[if unvisited]This charming little hotel welcomes guests with its cosy reception area: the inviting atmosphere is immediately apparent, with a blend of rustic elegance and modern comfort. [/n][end if]The receptionist stands behind a tastefully crafted wooden desk, ready to assist guests with a genuine smile. [/n]Stairs lead to the upper floors. To the east is the dining room, along the wall is a door."
+The description of the reception is "[if unvisited]This charming little hotel welcomes guests with its cosy reception area: the inviting atmosphere is immediately apparent, with a blend of rustic elegance and modern comfort. [/n][end if]The receptionist stands behind a tastefully crafted wooden desk, ready to assist guests with a genuine smile. [/n]Stairs lead to the upper floors. To the east is the dining room, along the wall is a door.".
 
-The staircases and the desk are scenery in the reception.
+The wooden desk is a scenery supporter in the reception.
+Understand "counter" as the wooden desk.
+The staircases are scenery in the reception.
 Understand "stairs" as staircases.
+
+A room key is a kind of thing. 
+The description is "This is a standard Yale key with an oval pendant with the word 'edelweiss' on it.".
+Before listing contents: group room keys together.
+Two room keys are in the sleeping room.
 
 Chapter 2.4.1 - Rules for check-in
 
@@ -275,18 +300,48 @@ Instead of opening the bathroom door during the check-in, say "There is nothing 
 Instead of examining the bathroom door during the check-in, say "There is not much light there, all you see is an ordinary wooden door.".
 Instead of going outside during the check-in, say "[alert][/ss]Where are you going? We have to complete the check-in!' [/se]Monica says. [/n]It would be completely useless to go out, you have everything you need with you.".
 
+Instead of taking the driving license during the check-in, say "You have driven for hours to get here, now it is time to rest.".
+Instead of giving the identity card to the receptionist during the check-in:
+	try showing the identity card to the receptionist.
+Instead of showing the identity card to the receptionist during the check-in:
+	say "You show your identity card to [determinate-naming of receptionist].";
+	say "[/ss]Thank you Mr. Francesco.' [/se]he says, then he copies your data into the computer.";
+	now the player is registered;
+	Monica urges your document never;
+	if Monica is registered, receptionist closes check-in in 0 turns from now.
+
+Instead of giving a room key to Monica during the check-in:
+	if a room key is enclosed by Monica:
+		say "[heart][/ss]It is better if we keep one each.' [/ss]Monica suggests." instead;
+	unless the player carries a room key:
+		say "(first taking a room key)[command clarification break]";
+		let K be a random room key in the reception;
+		try taking K;
+	let K be a random room key carried by the player;
+	now K is in the handbag;
+	Monica asks for key never;
+	say "You give a key of the room to your girlfriend. [/n]She takes the key and puts it into her handbag. [/n][heart][/ss]Thank you my love.' [/r][/n]".
+
 Chapter 2.4.2 - Timed events
 
 At the time when the receptionist greets:
 	say "[/ss]Good evening, welcome to our hotel!' [/se][determinate-naming of receptionist] greets you.[/ss]How can I help you?' [/r][/n]";
-	Monica greets the receptionist in 0 turns from now.
+	Monica greets the receptionist in 0 turns from now;
+	Monica remember to greet in 1 turn from now;
+
+Mrtg-count is a number that varies. Mrtg-count is 0.
+At the time when Monica remember to greet:
+	increase Mrtg-count by 1;
+	say "[alert][/ss]Don't be rude, say hello to [determinate-naming of receptionist].' [/se]Monica suggests in your ear[other times of Mrtg-count].";
+	Monica remember to greet in 1 turn from now;		
 
 At the time when Monica greets the receptionist:
 	say "[greet receptionist].' [/se]says Monica[if the receptionist is improper-named] to [determinate-naming of receptionist][end if].". 	
 
 At the time when the receptionist confirms reservation:
-	say "[/ss]Here it is.' [/se][determinate-naming of receptionist] reports. [/n][/ss]We have reserved the 'edelweiss' room for you: our rooms do not have a number, but the name of a flower.'[/r][/n]";
-	say "[/ss]Oh nice!' [/se]Monica says and opens her handbag. [/n][determinate-naming of receptionist] smiles.";
+	say "[/ss]Here it is.' [/se][determinate-naming of receptionist] reports. [/n][/ss]We have reserved the 'edelweiss' room for you: our rooms do not have a number, but the name of a flower.' [/r][/n]";
+	say "[/ss]Oh nice!' [/se]Monica says and opens her handbag. [/n]";
+	say "[determinate-naming of receptionist] smiles. [/n]" in sentence case;
 	now the shiny black handbag is open;
 	the receptionist asks for documents in 1 turn from now.
 
@@ -295,7 +350,50 @@ At the time when the receptionist asks for documents:
 	Monica shows document in 1 turn from now.
 	
 At the time when Monica shows document:
-	say "".	
+	say "Monica takes her identity card and shows it to [determinate-naming of receptionist]. [/n]";
+	say "He copies some data into the computer and says [/ss]Thank you Miss Monica.' [/r][/n]";
+	say "Monica puts her identity card back in her handbag and closes it.";
+	now the shiny black handbag is closed;
+	now Monica is registered;
+	unless the player is registered, Monica urges your document in 2 turns from now;
+	otherwise:
+		receptionist closes check-in in 0 turns from now.
+
+Muyd-count is a number that varies. Muyd-count is 0.
+At the time when Monica urges your document:
+	unless the player is registered:
+		increase Muyd-count by 1;
+		say "[alert][/ss]What are you waiting for? Show the document to [determinate-naming of receptionist].' [/se]Monica urges you[other times of Muyd-count].";
+		Monica urges your document in 1 turn from now.
+
+At the time when receptionist closes check-in:
+	say "[determinate-naming of receptionist] takes two keys and puts them on the desk. [/n]"  in sentence case;
+	repeat with K running through room keys in sleeping room: 
+		now K is on the wooden desk;
+	say "[/ss]These are the keys of your room.' [/se][determinate-naming of receptionist] explains.";
+	say "[/ss]In the room you will find a brochure with all the useful information about the hotel, but if you have any questions I am at your disposal.' [/r][/n]";
+	Monica takes key in 1 turn from now.
+
+At the time when Monica takes key:
+	if number of room keys on the wooden desk is zero:
+		say "[alert]Monica would have liked to take a key, but you took them all. She looks at you with a stern stare, maybe it's best if you give her one of the keys.";
+		Monica asks for key in 1 turn from now;
+	otherwise:	
+		say "Monica takes a key from the desk and puts it in her handbag.";
+		now a random room key on the wooden desk is in the handbag;
+		Monica gets tired in 2 turns from now.
+
+Mtired-count is a number that varies. Mtired-count is 0.	
+At the time when Monica gets tired:
+	increase Mtired-count by 1;
+	say "[/ss]I'm tired, let[']s go to sleep.' [/se]asks Monica in a whisper[other times of Mtired-count].";
+	Monica gets tired in 2 turns from now.
+
+Maskkey-count is a number that varies.	
+At the time when Monica asks for key:
+	increase Maskkey-count by 1;
+	say "[alert][/ss]Why did you take both keys? It's better if we each keep one!' [/se]Monica challenges you rather annoyed[other times of Maskkey-count].";
+	Monica asks for key in 1 turn from now.
 	
 Chapter 2.4.3 - Conversation
 
@@ -309,6 +407,7 @@ Instead of saying hello to someone (called the other) during the check-in:
 		now the current interlocutor is the receptionist;
 		say "[greet receptionist], we are Francesco and Monica and we have a reservation.' [/r][/n][/ss]Just a moment, I look for it.' [/se][determinate-naming of receptionist] states and types something on the computer.";
 		the receptionist confirms reservation in 1 turn from now;
+		Monica remember to greet never;
 	otherwise:
 		continue the action.
 	
@@ -344,6 +443,7 @@ Book 3.1 - The player
 
 The description of the player is "A young man, about 30 years old, blond hair. [/n]You work as a software engineer, enjoy photography and love hiking in the mountains. [/n]In love with your girlfriend, very beautiful, but also shrewish when something doesn't go her way. In the end you always please her and she appreciates it.".
 The player is leading.
+A person can be registered. The player is not registered.
 
 Chapter 3.1.1 - Initial player dressing
 
@@ -354,6 +454,7 @@ The pair of beige shorts is a cloth. The description is "A pair of beige shorts 
 Understand "pants" as the pair of beige shorts.
 A pocket is a kind of container.
 A pocket is always open. A pocket is always not openable.
+Instead of searching a pocket: try examining the noun.
 The left back pocket, the right back pocket, the left front pocket, the right front pocket, the left leg pocket, the right leg pocket are pockets.
 The left back pocket, the right back pocket, the left front pocket, the right front pocket, the left leg pocket, the right leg pocket are parts of the pair of beige shorts.
 
@@ -373,15 +474,19 @@ Before examining the right back pocket:
 	now the wallet is in the noun.
 	
 An unuseful card is a kind of thing.	
-The credit card, the debit card and  the supermarket fidelity card are unuseful cards.
+The driving license, the credit card, the debit card and  the supermarket fidelity card are unuseful cards.
+Instead of examining the driving license, say "You pink driving license.".
 Instead of taking an unuseful card, say "Right now [the noun] is of no use to you.".
 Instead of examining an unuseful card, say "Examining [the noun] now is a waste of time.".
 
-The credit card, the debit card, the identity card, the supermarket fidelity card, the photo are in the wallet.
-The description of the photo is "A photo you took of Monica last year at Lake Misurina with the Three Peaks of Lavaredo in the background.".		
+The driving license, the credit card, the debit card, the identity card, the supermarket fidelity card, the photo are in the wallet.
+The description of the photo is "A photo of Monica you took last year at Lake Misurina with the Three Peaks of Lavaredo in the background.".		
 
 Some money are in the wallet. The description of money is "It's only banknotes, coins annoy you.".
 Instead of taking money, say "There is nothing to pay.".
+
+The identity card is in the wallet.
+The description is "A card folded into a booklet with your photo (slightly old) and your personal information.".
 
 Book 3.2 - The girlfriend
 
@@ -391,8 +496,13 @@ Understand "Mo" or "my/-- love/girl/girlfriend" as Monica.
 Monica is proper-named.
 Monica is leading.
 
-Alerts is a number that varies.
-To say alert: increase alerts by 1.
+Alerts and hearts are numbers that vary.
+To say alert: 
+	say "[unicode 9824] ";
+	increase alerts by 1.
+To say heart: 
+	say "[unicode 9825] ";
+	increase hearts by 1.
 
 Chapter 3.2.1 - Monica initial dressing
 
@@ -430,17 +540,17 @@ Persuasion rule for asking Monica to try giving a cloth to someone:
 Chapter 3.2.3 - Kisses
 
 Instead of kissing something:
-	if the noun is Monica, say "[/ss][one of]On dear[or]I love you[at random]!' [/se]she whispers sweetly in your ear." instead;
+	if the noun is Monica, say "[heart][/ss][one of]On dear[or]I love you[at random]!' [/se]she whispers sweetly in your ear." instead;
 	if the noun is a woman, say "[alert]I'm here to be kissed!' [/se]Monica scolds you." instead;
 	if the noun is a man, say "[/ss]Do you like men now?' [/se]amazed Monica asks you." instead;
 	say "[/ss]Hold the kisses for me!' [/se]Monica scolds you.".
 
 Persuasion rule for asking Monica to try kissing someone:
 	if the noun is the player:
-		say "[/ss][one of]On dear[or]I love you[or]Here, my love[at random]!' [/se]she says and places her lips on yours. [/n]You greatly appreciate this kiss.";
+		say "[heart][/ss][one of]Oh dear[or]I love you[or]Here, my love[at random]!' [/se]she says and places her lips on yours. [/n]You greatly appreciate this kiss.";
 		persuasion fails;
 	otherwise:
-		say "[/ss]My lips are only for you!' [/se]she says and kisses you instead. [/n]You greatly appreciate it.";
+		say "[heart][/ss]My lips are only for you!' [/se]she says and kisses you instead. [/n]You greatly appreciate it.";
 		persuasion fails.
 
 Chapter 3.2.4 - Singing and dancing
@@ -452,9 +562,12 @@ Persuasion rule for asking Monica to try singing:
 		say "[alert][/ss]Why do you want me to sing if you know I'm out of tune?' [/se]she asks.";
 	persuasion fails.
 
+To clap is a verb.
 Persuasion rule for asking Monica to try dancing: persuasion succeeds.
 Report Monica dancing:
-	say "[Printed name of the actor]  does a twirl. [/n][The list of not leading people in the location] clap[s]. [/n]You kiss her.".
+	say "[heart][The actor]  does a twirl. [/n]";
+	unless the number of not leading people in the location is zero, say "[The list of not leading people in the location] [clap]. [/n]";
+	say "You kiss her.".
 			
 Book 3.3 - The receptionist
 
