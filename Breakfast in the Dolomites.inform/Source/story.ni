@@ -478,7 +478,8 @@ A person can be registered. The player is not registered.
 Chapter 3.1.1 - Initial player dressing
 
 The black t-shirt is a cloth. The description is "A black T-shirt with a surfer design on the front.".
-Understand "shirt" as the t-shirt.
+The white t-shirt is a cloth.
+The checkered flannel shirt is a cloth. The description is "It was a gift from your father many years ago, it seemed a strange object at the time, but over time you appreciated its comfort and now you no longer leave it."
 
 The pair of beige shorts is a cloth. The description is "A pair of beige shorts with lots of pockets: two on the back, two on the front and two on the legs.".
 Understand "pants" as the pair of beige shorts.
@@ -489,6 +490,7 @@ The left back pocket, the right back pocket, the left front pocket, the right fr
 The left back pocket, the right back pocket, the left front pocket, the right front pocket, the left leg pocket, the right leg pocket are parts of the pair of beige shorts.
 
 The pair of blue sneakers is a cloth.
+The pair of brown trekking boots is a cloth. The description is "Your old leather hiking boots; they still show the marks of the stones you have walked over."
 
 The player wears the black t-shirt, the pair of beige shorts and the pair of blue sneakers.
 
@@ -539,9 +541,13 @@ Chapter 3.2.1 - Monica initial dressing
 The pair of jeans is a cloth. The description is "A pair of slightly frayed skinny jeans."
 The striped camisole is a cloth. The description is "A camisole with red and white stripes."
 The pair of shimmering gold sneakers is a cloth. 
+The pair of pink trekking shoes is a cloth. The description is "A pair of jaunty pink ankle boots."
+The black sweatshirt is a cloth. The description is "A black sweatshirt with a tiger's face drawn on it." 
+The pair of black leggings is a cloth. The description is "A pair of black skinny 3/4 leggings."
 
 A monica-bag is a kind of container. It is closed, openable and wearable.
 The shiny black handbag is a monica-bag. The description is "A shiny black handbag with a long golden chain strap. [if open]It's open. [end if]".
+The small pink backpack is a monica-bag. The description is "A trendy small pink backpack with sparkling silver zips.".
 Understand "bag" as a monica-bag.
 
 Monica wears the pair of jeans, the striped camisole,  the pair of shimmering gold sneakers and the shiny black handbag.
@@ -642,8 +648,34 @@ The Check-in is a scene. "It's time to check in: you have just arrived at the ho
 The check-in-trigger is a truth state that varies.
 The Check-in begins when check-in-trigger is true.
 The Check-in ends when check-in-trigger is false.
-
+When Check-in ends:
+	say "You and Monica bid farewell to the receptionist and set off up the stairs. [/n][/ss]Have a good night!' [/se][determinate-naming of the receptionist] wishes you. [/n]";
+	say "[heart]Monica wraps her arm around your waist and gives you a kiss on the neck.".
+	
 Book 4.4 - Breakfast
 
 The Breakfast is a scene.
 The Breakfast begins when the Check-in ends.
+
+To unwear (t - a thing): now t is in the sleeping room.
+
+When the Breakfast begins:
+	[dressing change]
+	unwear the red backpack;
+	unwear the pink trolley;
+	unwear the black t-shirt;
+	unwear the pair of blue sneakers;
+	unwear the pair of jeans;
+	unwear the striped camisole;
+	unwear the pair of shimmering gold sneakers;
+	unwear the shiny black handbag;
+	now Monica wears the black sweatshirt;
+	now Monica wears the pair of black leggings;
+	now Monica wears the pair of pink trekking shoes;
+	now Monica wears the small pink backpack;
+	now the player wears the white t-shirt;
+	now the player wears the checkered flannel shirt;
+	now the player wears the pair of brown trekking boots;
+	[description]
+	say "[/i]The morning after. [/r][/p]";
+	say "After a good night's sleep, you are ready to enjoy the first day of your holiday. [/n]You and Monica go down the stairs and back to reception, [determinate-naming of the receptionist] is working behind the counter. [/n][/ss]Miss Monica and Mr. Francesco good morning!' [/se]wishes [determinate-naming of the receptionist], [/ss]You're looking good today!' [/r][/n]".
