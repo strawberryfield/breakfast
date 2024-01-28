@@ -234,7 +234,10 @@ Before going to the garden from the parking:
 	unless the boot is closed:
 		say "[alert][/ss]It's better to close the car boot.' [/se]Monica suggests." instead;
 	unless the car door  is locked:
-		say "[alert][/ss]There are a lot of thieves in this world, did you check to make sure that you've locked the car?' [/se] Monica asks." instead.
+		say "[alert][/ss]There are a lot of thieves in this world, did you check to make sure that you've locked the car?' [/se] Monica asks." instead;
+	unless the pink trolley is enclosed by a people:
+		say "[alert][/ss]I'd better carry the trolley myself!' [/se]Monica says annoyed and takes her trolley again.";
+		now Monica carries the pink trolley.
 		
 After going to the garden from the parking:
 	say "Monica follows you. [/n]";
@@ -293,12 +296,35 @@ Two room keys are in the sleeping room.
 
 Chapter 2.4.1 - Rules for check-in
 
+To decide if check-in is completed:
+	if the player is registered and Monica is registered, decide yes;
+	decide no.
+	
+Section 2.4.1.1 - Movements
+
 Instead of going east during the check-in, say "It is late, the lights are out and there is no one around.".
-Instead of going up during the check-in, say "You have not yet completed your check-in.".
 Instead of going through the bathroom door during the check-in, say "There is nothing interesting there.".
 Instead of opening the bathroom door during the check-in, say "There is nothing interesting there.".
 Instead of examining the bathroom door during the check-in, say "There is not much light there, all you see is an ordinary wooden door.".
-Instead of going outside during the check-in, say "[alert][/ss]Where are you going? We have to complete the check-in!' [/se]Monica says. [/n]It would be completely useless to go out, you have everything you need with you.".
+
+Instead of going outside during the check-in:
+	say "[alert][/ss]Where are you going?[run paragraph on]";
+	unless check-in is completed, say " We have to complete the check-in![run paragraph on]";
+	say "' [/se]Monica says. [/n]It would be completely useless to go out, you have everything you need with you.".
+
+Instead of going up during the check-in:
+	unless check-in is completed, say "You have not yet completed your check-in." instead;
+	unless a room key is enclosed by the player:
+		if a room key is on the wooden desk, say "[/ss]Mr. Francesco, you forgot your key.' [/se][determinate-naming of the receptionist] reminds you." instead;
+		say "[alert][/ss]Are you sure you took the room key?' [/se] asks Monica." instead;
+	unless a room key is enclosed by Monica, say "Monica has not yet taken her key." instead;
+	unless the red backpack is enclosed by a people, say "[/ss]Mr. Francesco, you forgot your backpack.' [/se][determinate-naming of the receptionist] reminds you." instead;
+	unless the pink trolley is enclosed by a people, say "[/ss]You forgot your trolley.' [/se][determinate-naming of the receptionist] reminds you." instead;
+	Monica gets tired never;
+	now the check-in-trigger is false.
+		
+
+Section 2.4.1.2 - Wallet items
 
 Instead of taking the driving license during the check-in, say "You have driven for hours to get here, now it is time to rest.".
 Instead of giving the identity card to the receptionist during the check-in:
@@ -309,6 +335,8 @@ Instead of showing the identity card to the receptionist during the check-in:
 	now the player is registered;
 	Monica urges your document never;
 	if Monica is registered, receptionist closes check-in in 0 turns from now.
+
+Section 2.4.1.3 - Room keys
 
 Instead of giving a room key to Monica during the check-in:
 	if a room key is enclosed by Monica:
