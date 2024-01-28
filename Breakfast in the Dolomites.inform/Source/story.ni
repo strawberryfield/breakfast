@@ -180,6 +180,8 @@ The description is "A jaunty pink trolley.".
 Instead of opening the pink trolley:
 	say "[alert]Monica looks at you with a fierce gaze." instead.
 
+Response of Monica when asked for the pink trolley:
+	try asking Monica to try giving the pink trolley to the player.
 Instead of taking the pink trolley while the pink trolley is carried by Monica:
 	try asking Monica to try giving the pink trolley to the player.
 Persuasion rule for asking Monica to try giving the pink trolley to the player: persuasion succeeds.
@@ -640,3 +642,8 @@ The Check-in is a scene. "It's time to check in: you have just arrived at the ho
 The check-in-trigger is a truth state that varies.
 The Check-in begins when check-in-trigger is true.
 The Check-in ends when check-in-trigger is false.
+
+Book 4.4 - Breakfast
+
+The Breakfast is a scene.
+The Breakfast begins when the Check-in ends.
