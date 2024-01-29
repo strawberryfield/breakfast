@@ -302,7 +302,7 @@ To decide if check-in is completed:
 	if the player is registered and Monica is registered, decide yes;
 	decide no.
 	
-Section 2.4.1.1 - Movements
+Section 2.4.1.1 - Movements during check-in
 
 Instead of going east during the check-in, say "It is late, the lights are out and there is no one around.".
 Instead of going through the bathroom door during the check-in, say "There is nothing interesting there.".
@@ -325,8 +325,14 @@ Instead of going up during the check-in:
 	Monica gets tired never;
 	now the check-in-trigger is false.
 		
+Section 2.4.1.2 - Movements during breakfast
 
-Section 2.4.1.2 - Wallet items
+Instead of going outside during the breakfast:
+	if the location of Monica is the reception,	say "[alert][/ss]Where are you going?' [/se]Monica says, [/ss]now it's breakfast time!' [/r][/n]" instead;
+	say "Monica is waiting for you at the table.".
+
+
+Section 2.4.1.3 - Wallet items
 
 Instead of taking the driving license during the check-in, say "You have driven for hours to get here, now it is time to rest.".
 Instead of giving the identity card to the receptionist during the check-in:
@@ -338,7 +344,7 @@ Instead of showing the identity card to the receptionist during the check-in:
 	Monica urges your document never;
 	if Monica is registered, receptionist closes check-in in 0 turns from now.
 
-Section 2.4.1.3 - Room keys
+Section 2.4.1.4 - Room keys
 
 Instead of giving a room key to Monica during the check-in:
 	if a room key is enclosed by Monica:
@@ -353,6 +359,8 @@ Instead of giving a room key to Monica during the check-in:
 	say "You give a key of the room to your girlfriend. [/n]She takes the key and puts it into her handbag. [/n][heart][/ss]Thank you my love.' [/r][/n]".
 
 Chapter 2.4.2 - Timed events
+
+Section 2.4.2.1 - Check-in
 
 At the time when the receptionist greets:
 	say "[/ss]Good evening, welcome to our hotel!' [/se][determinate-naming of receptionist] greets you.[/ss]How can I help you?' [/r][/n]";
@@ -425,7 +433,20 @@ At the time when Monica asks for key:
 	say "[alert][/ss]Why did you take both keys? It's better if we each keep one!' [/se]Monica challenges you rather annoyed[other times of Maskkey-count].";
 	Monica asks for key in 1 turn from now.
 	
+Section 2.4.2.2 - Breakfast
+	
+Mrtm-count is a number that varies. Mrtm-count is 0.
+At the time when Monica remember to morgen:
+	increase Mrtm-count by 1;
+	say "[alert][/ss]Don't be rude, greet [determinate-naming of receptionist].' [/se]Monica suggests in your ear[other times of Mrtm-count].";
+	Monica remember to morgen in 1 turn from now;		
+
+At the time when Monica morgen the receptionist:
+	say "[morgen receptionist].' [/se]says Monica[if the receptionist is improper-named] to [determinate-naming of receptionist][end if].". 	
+
 Chapter 2.4.3 - Conversation
+
+Section 2.4.3.1 - Check-in
 
 To say greet receptionist: 
 	say "[/ss]Good evening[if the receptionist is proper-named] [printed name of the receptionist][end if]".
@@ -438,6 +459,22 @@ Instead of saying hello to someone (called the other) during the check-in:
 		say "[greet receptionist], we are Francesco and Monica and we have a reservation.' [/r][/n][/ss]Just a moment, I look for it.' [/se][determinate-naming of receptionist] states and types something on the computer.";
 		the receptionist confirms reservation in 1 turn from now;
 		Monica remember to greet never;
+	otherwise:
+		continue the action.
+
+Section 2.4.3.2 - Breakfast
+
+To say morgen receptionist: 
+	say "[/ss]Good morning[if the receptionist is proper-named] [printed name of the receptionist][end if]".	
+
+Instead of hailing for the first time during the breakfast:
+	if the location of the player is the reception, try saying hello to the receptionist.
+Instead of saying hello to someone (called the other) during the breakfast:
+	unless the other is Monica:
+		if the location of the player is the reception:
+			now the current interlocutor is the receptionist;
+			say "[morgen receptionist]' [/se]you say[if the receptionist is improper-named] to [determinate-naming of receptionist][end if].";
+			Monica remember to morgen never;
 	otherwise:
 		continue the action.
 	
@@ -678,4 +715,6 @@ When the Breakfast begins:
 	now the player wears the pair of brown trekking boots;
 	[description]
 	say "[/i]The morning after. [/r][/p]";
-	say "After a good night's sleep, you are ready to enjoy the first day of your holiday. [/n]You and Monica go down the stairs and back to reception, [determinate-naming of the receptionist] is working behind the counter. [/n][/ss]Miss Monica and Mr. Francesco good morning!' [/se]wishes [determinate-naming of the receptionist], [/ss]You're looking good today!' [/r][/n]".
+	say "After a good night's sleep, you are ready to enjoy the first day of your holiday. [/n]You and Monica go down the stairs and back to reception, [determinate-naming of the receptionist] is working behind the counter. [/n][/ss]Miss Monica and Mr. Francesco good morning!' [/se]wishes [determinate-naming of the receptionist], [/ss]You're looking good today!' [/r][/n]";
+	Monica morgen the receptionist in 0 turns from now;
+	Monica remember to morgen in 1 turn from now.
