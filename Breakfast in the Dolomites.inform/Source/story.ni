@@ -281,6 +281,11 @@ After going through the sliding door:
 	continue the action.
 At the time when the sliding door closes:
 	try closing the sliding door.
+
+To say automatic door:
+	say "It is an automatic door".
+Instead of opening the sliding door while the location of the player is the reception, say "[automatic door].".
+Instead of closing the sliding door while the location of the player is the reception, say "[automatic door].".
 	
 Book 2.4 - The reception
 
@@ -325,14 +330,7 @@ Instead of going up during the check-in:
 	Monica gets tired never;
 	now the check-in-trigger is false.
 		
-Section 2.4.1.2 - Movements during breakfast
-
-Instead of going outside during the breakfast:
-	if the location of Monica is the reception,	say "[alert][/ss]Where are you going?' [/se]Monica says, [/ss]now it's breakfast time!' [/r][/n]" instead;
-	say "Monica is waiting for you at the table.".
-
-
-Section 2.4.1.3 - Wallet items
+Section 2.4.1.2 - Wallet items
 
 Instead of taking the driving license during the check-in, say "You have driven for hours to get here, now it is time to rest.".
 Instead of giving the identity card to the receptionist during the check-in:
@@ -344,7 +342,7 @@ Instead of showing the identity card to the receptionist during the check-in:
 	Monica urges your document never;
 	if Monica is registered, receptionist closes check-in in 0 turns from now.
 
-Section 2.4.1.4 - Room keys
+Section 2.4.1.3 - Room keys
 
 Instead of giving a room key to Monica during the check-in:
 	if a room key is enclosed by Monica:
@@ -357,6 +355,24 @@ Instead of giving a room key to Monica during the check-in:
 	now K is in the handbag;
 	Monica asks for key never;
 	say "You give a key of the room to your girlfriend. [/n]She takes the key and puts it into her handbag. [/n][heart][/ss]Thank you my love.' [/r][/n]".
+
+Section 2.4.1.4 - Movements during breakfast
+
+To say breakfast time:
+	if the location of Monica is the reception,	say "[alert][/ss]Where are you going?' [/se]Monica says, [/ss]now it's breakfast time!' [/r][/n]";
+	otherwise:
+		say "Monica is waiting for you at the table. [/n]".	
+Instead of going outside during the breakfast:
+	say "[breakfast time]".
+Instead of going up during the breakfast:
+	say "[breakfast time]".
+
+Section 2.4.1.5 - Movements during morgen receptionist
+
+Instead of going east during the Morgen receptionist:
+	say "[alert][/ss]Why don't you listen to what I'm suggesting?' [/se]Monica rebukes you.".
+Instead of going through the bathroom door during the Morgen receptionist, say "There are more important things to do now.".
+Instead of opening the bathroom door during the Morgen receptionist, say "There are more important things to do now.".
 
 Chapter 2.4.2 - Timed events
 
@@ -433,7 +449,7 @@ At the time when Monica asks for key:
 	say "[alert][/ss]Why did you take both keys? It's better if we each keep one!' [/se]Monica challenges you rather annoyed[other times of Maskkey-count].";
 	Monica asks for key in 1 turn from now.
 	
-Section 2.4.2.2 - Breakfast
+Section 2.4.2.2 - Morgen receptionist
 	
 Mrtm-count is a number that varies. Mrtm-count is 0.
 At the time when Monica remember to morgen:
@@ -442,8 +458,14 @@ At the time when Monica remember to morgen:
 	Monica remember to morgen in 1 turn from now;		
 
 At the time when Monica morgen the receptionist:
-	say "[morgen receptionist].' [/se]says Monica[if the receptionist is improper-named] to [determinate-naming of receptionist][end if].". 	
+	say "[morgen-receptionist].' [/se]says Monica[if the receptionist is improper-named] to [determinate-naming of receptionist][end if].". 	
 
+Mub-count is a number that varies. Mub-count is 0.
+At the time when Monica urges breakfast:
+	increase Mub-count by 1;
+	say "[alert][/ss]Shall we go for breakfast?' [/se]urges Monica[other times of Mub-count], [/ss]I'm quite hungry.' [/r][/n]";
+	Monica urges breakfast in 1 turn from now.
+	
 Chapter 2.4.3 - Conversation
 
 Section 2.4.3.1 - Check-in
@@ -462,19 +484,20 @@ Instead of saying hello to someone (called the other) during the check-in:
 	otherwise:
 		continue the action.
 
-Section 2.4.3.2 - Breakfast
+Section 2.4.3.2 - Morgen receptionist
 
-To say morgen receptionist: 
+To say morgen-receptionist: 
 	say "[/ss]Good morning[if the receptionist is proper-named] [printed name of the receptionist][end if]".	
 
-Instead of hailing for the first time during the breakfast:
+Instead of hailing for the first time during the morgen receptionist:
 	if the location of the player is the reception, try saying hello to the receptionist.
 Instead of saying hello to someone (called the other) during the breakfast:
 	unless the other is Monica:
 		if the location of the player is the reception:
 			now the current interlocutor is the receptionist;
-			say "[morgen receptionist]' [/se]you say[if the receptionist is improper-named] to [determinate-naming of receptionist][end if].";
+			say "[morgen-receptionist]' [/se]you say[if the receptionist is improper-named] to [determinate-naming of receptionist][end if].";
 			Monica remember to morgen never;
+			now morgen-trigger is false;
 	otherwise:
 		continue the action.
 	
@@ -716,5 +739,19 @@ When the Breakfast begins:
 	[description]
 	say "[/i]The morning after. [/r][/p]";
 	say "After a good night's sleep, you are ready to enjoy the first day of your holiday. [/n]You and Monica go down the stairs and back to reception, [determinate-naming of the receptionist] is working behind the counter. [/n][/ss]Miss Monica and Mr. Francesco good morning!' [/se]wishes [determinate-naming of the receptionist], [/ss]You're looking good today!' [/r][/n]";
+	now morgen-trigger is true.
+	
+Chapter 4.4.1 - Greeting the receptionist
+
+Morgen receptionist is a scene.
+The morgen-trigger is a truth state that varies.
+Morgen receptionist begins when morgen-trigger is true.
+Morgen receptionist ends when morgen-trigger is false.
+
+When Morgen receptionist begins:
 	Monica morgen the receptionist in 0 turns from now;
 	Monica remember to morgen in 1 turn from now.
+	
+When Morgen receptionist ends:
+	Monica urges breakfast in 2 turns from now.
+	
