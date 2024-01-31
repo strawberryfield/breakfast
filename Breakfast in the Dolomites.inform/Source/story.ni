@@ -23,6 +23,7 @@ Include Conversation Package by Eric Eve.
 Include Assorted Text Generation by Emily Short.
 Include Customized Trinity Inventory by The Strawberry Field.
 Include Workers by The Strawberry Field.
+Include Bathroom kit by The Strawberry Field.
 
 Chapter 0.2 - Game start
 
@@ -100,9 +101,9 @@ The Parking is a room.
 The Garden is east of the parking.
 The Reception is a room.
 The Stairs is above the reception.
-The Bathroom is a room.
-The bathroom door is a scenery door.
-The bathroom door is inside from the reception and outside from the bathroom.
+The bathroom-antechamber is a dark room.
+The bathroom door is a closed, openable, not lockable, scenery door.
+The bathroom door is inside from the reception and outside from the bathroom-antechamber.
 The Dining room is east of the reception.
 The Buffet is north of the dining room.
 The Kitchen is a room.
@@ -500,6 +501,16 @@ Instead of saying hello to someone (called the other) during the breakfast:
 			now morgen-trigger is false;
 	otherwise:
 		continue the action.
+
+Book 2.5 - The bathroom
+
+The description of the bathroom-antechamber is "The small room is floored and covered with white tiles; on some tiles on the walls there are colorful drawings of flowers.[line break]There are two doors, one white and one made of light wood; near each door there is an electrical wall switch.[line break][if antechamber-lamp is lit]The light comes from a ceiling lamp[otherwise]A lamp is at the ceiling, but it's off; the light comes from the door[end if].".
+The printed name of the bathroom-antechamber is "Bathroom antechamber".
+
+The sink is a sink-item in the bathroom-antechamber. "On a side there is the sink where you can wash your hands."
+The sink is fixed in place. The description is "A white sink with a large countertop around it on which there is everything you need to wash and dry your hands."
+
+The antechamber-lamp is a scenery ceiling lamp in the bathroom-antechamber. Printed name is "bathroom antechamber ceiling lamp".
 	
 Volume 3 - Peoples
 
