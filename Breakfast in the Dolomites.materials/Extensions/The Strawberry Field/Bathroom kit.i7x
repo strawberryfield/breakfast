@@ -12,6 +12,7 @@ A ceiling lamp is a kind of thing. The description is "[if lit]It's not a good i
 A light switch is a kind of device. The description is "An ordinary electrical wall switch." 
 Understand "electrical switch" as a light switch.
 Powering relates a light switch to a ceiling lamp. The verb to power means the powering relation.
+Understand "lamp" as a light switch.
 
 After switching on a light switch (called current switch):
 	let the lamp be a random ceiling lamp which is powered by the current switch; 
@@ -21,6 +22,9 @@ After switching off a light switch (called current switch):
 	let the lamp be a random ceiling lamp which is powered by the current switch; 
 	now the lamp is not lit;
 	say "You switched off [the lamp].".
+
+Understand "power on/-- [something]" as switching on.
+Understand "power off/down [something]" as switching off.
 
 Volume 2 - Sink 
 
@@ -40,7 +44,19 @@ Report washing hands:
 Volume 3 - WC
 
 A wc-room is a kind of room.
-A wc-bowl is a kind of supporter. A wc-bowl is enterable.
+A wc-bowl is a kind of supporter. A wc-bowl is scenery and enterable.
+A wc-bowl is in every wc-room.
+Understand "wc/bowl" or "wc bowl" as a wc-bowl.
+
+A flush button is a kind of thing. The description is "A large white button. You should press it after using the wc.".
+A flush button is scenery.
+A flush button is in every wc-room.
+
+Instead of pushing a flush button:
+	say "You cleaned the bowl with the water flush.";
+	let W be a random wc-bowl in the location of the player;
+	now W is clean.
+
 
 Urinating into is an action applying to an object.
 Understand "Urinate in/into/to/-- [something]" as urinating into.
@@ -60,6 +76,14 @@ Report urinating into:
 After entering a wc-bowl:
 	say "You are sitting on the bowl.";
 	try urinating into the noun.
+
+After opening a bathroom-door:
+	now the back side of noun is lighted;
+	say "entering [the back side of noun].";
+	continue the action.
+After closing a bathroom-door:
+	now the back side of noun is dark;
+	continue the action.
 
 Volume 4 - Door
 

@@ -21,6 +21,7 @@ Include Cleared Events by Daniel Stelzer.
 Include Large Game Speedup by Nathanael Nerode.
 Include Conversation Package by Eric Eve.
 Include Assorted Text Generation by Emily Short.
+Include Scopability by Brady Garvin.
 Include Customized Trinity Inventory by The Strawberry Field.
 Include Workers by The Strawberry Field.
 Include Bathroom kit by The Strawberry Field.
@@ -28,6 +29,7 @@ Include Bathroom kit by The Strawberry Field.
 Chapter 0.2 - Game start
 
 When play begins:
+	now the player is in the reception;
 	say "[story-beginning]";
 	say "[/p][/b]«The Strawberry Field»[/r] [/i]presents[/r][/p]".
 
@@ -504,14 +506,49 @@ Instead of saying hello to someone (called the other) during the breakfast:
 
 Book 2.5 - The bathroom
 
+Chapter 2.5.1 - The antechamber
+
 The description of the bathroom-antechamber is "The small room is floored and covered with white tiles; on some tiles on the walls there are colorful drawings of flowers.[line break]There are two doors, one white and one made of light wood; near each door there is an electrical wall switch.[line break][if antechamber-lamp is lit]The light comes from a ceiling lamp[otherwise]A lamp is at the ceiling, but it's off; the light comes from the door[end if].".
 The printed name of the bathroom-antechamber is "Bathroom antechamber".
+
+The description of the bathroom door is "A light wooden door[if the location of the player is the front side of the noun]. A tiny brass sign states [italic type]'Toilet'[roman type][end if].".
+Understand "bath/toilet door/--" as the bathroom door.
+
+After deciding the scope of the player when the location is the bathroom-antechamber:
+	place the bathroom door in scope.
+	
+After opening the bathroom door:
+	now the bathroom-antechamber is lighted;
+	continue the action.
+After closing the bathroom door:
+	now the bathroom-antechamber is dark;
+	continue the action.
 
 The sink is a sink-item in the bathroom-antechamber. "On a side there is the sink where you can wash your hands."
 The sink is fixed in place. The description is "A white sink with a large countertop around it on which there is everything you need to wash and dry your hands."
 
-The antechamber-lamp is a scenery ceiling lamp in the bathroom-antechamber. Printed name is "bathroom antechamber ceiling lamp".
+Before deciding the scope of the player when the location is bathroom-antechamber:
+	let L be a random latch which is part of the men's toilet door;
+	now L is unscopable.
 	
+The antechamber-lamp is a scenery ceiling lamp in the bathroom-antechamber. Printed name is "bathroom antechamber ceiling lamp".
+
+The antechamber light switch is a scenery light switch in the bathroom-antechamber.
+The antechamber light switch powers the antechamber-lamp.
+
+Chapter 2.5.2 - Men's toilet
+
+The Men's toilet is a dark wc-room. The description is "Floor and walls are covered with white tiles.".
+
+The men's toilet door is a scenery bathroom-door. 
+The description is "A white lacquered door, [if the location of the player is the front side of the noun]a stylised metal sign of a man is attached to the casement.[otherwise]a latch allows you to lock the door[end if].".
+The men's toilet door is east of the bathroom-antechamber and outside of the men's toilet.
+
+After deciding the scope of the player when the location is the men's toilet:
+	place the men's toilet door in scope;
+	let L be a random latch which is part of the men's toilet door;
+	now L is scopable.
+
 Volume 3 - Peoples
 
 A cloth is a kind of thing. 
