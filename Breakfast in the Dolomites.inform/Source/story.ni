@@ -508,7 +508,7 @@ Book 2.5 - The bathroom
 
 Chapter 2.5.1 - The antechamber
 
-The description of the bathroom-antechamber is "The small room is floored and covered with white tiles; on some tiles on the walls there are colorful drawings of flowers.[line break]There are two doors, one white and one made of light wood; near each door there is an electrical wall switch.[line break][if antechamber-lamp is lit]The light comes from a ceiling lamp[otherwise]A lamp is at the ceiling, but it's off; the light comes from the door[end if].".
+The description of the bathroom-antechamber is "The small room is floored and covered with white tiles; on some tiles on the walls there are colorful drawings of flowers.[/n]There are three doors: one is made of light wood and leads outside, the other two are white, one facing east and the other west, for men and women respectively. Near each door there is an electrical wall switch.[/p][if antechamber-lamp is lit]The light comes from a ceiling lamp[otherwise]A lamp is at the ceiling, but it's off; the light comes from the wooden door[end if].".
 The printed name of the bathroom-antechamber is "Bathroom antechamber".
 
 The description of the bathroom door is "A light wooden door[if the location of the player is the front side of the noun]. A tiny brass sign states [italic type]'Toilet'[roman type][end if].".
@@ -529,12 +529,16 @@ The sink is fixed in place. The description is "A white sink with a large counte
 
 Before deciding the scope of the player when the location is bathroom-antechamber:
 	let L be a random latch which is part of the men's toilet door;
+	now L is unscopable;
+	let L be a random latch which is part of the women's toilet door;
 	now L is unscopable.
 	
 The antechamber-lamp is a scenery ceiling lamp in the bathroom-antechamber. Printed name is "bathroom antechamber ceiling lamp".
 
 The antechamber light switch is a scenery light switch in the bathroom-antechamber.
-The antechamber light switch powers the antechamber-lamp.
+The powered item of the antechamber light switch is the antechamber-lamp.
+Does the player mean switching on the antechamber light switch: it is very likely.
+Does the player mean switching off the antechamber light switch: it is very likely.
 
 Chapter 2.5.2 - Men's toilet
 
@@ -544,10 +548,34 @@ The men's toilet door is a scenery bathroom-door.
 The description is "A white lacquered door, [if the location of the player is the front side of the noun]a stylised metal sign of a man is attached to the casement.[otherwise]a latch allows you to lock the door[end if].".
 The men's toilet door is east of the bathroom-antechamber and outside of the men's toilet.
 
+The men-toilet lamp is a scenery ceiling lamp in the men's toilet. Printed name is "men's toilet ceiling lamp".
+The men's toilet light switch is a scenery light switch in the bathroom-antechamber.
+The powered item of the men's toilet light switch is the men-toilet lamp.
+
 After deciding the scope of the player when the location is the men's toilet:
 	place the men's toilet door in scope;
 	let L be a random latch which is part of the men's toilet door;
 	now L is scopable.
+	
+Chapter 2.5.3 - Women's toilet
+
+The Women's toilet is a dark wc-room. The description is "Floor and walls are covered with white tiles.".
+
+The women's toilet door is a scenery bathroom-door. 
+The description is "A white lacquered door, [if the location of the player is the front side of the noun]a stylised metal sign of a woman is attached to the casement.[otherwise]a latch allows you to lock the door[end if].".
+The women's toilet door is west of the bathroom-antechamber and outside of the women's toilet.
+
+The women-toilet lamp is a scenery ceiling lamp in the women's toilet. Printed name is "women's toilet ceiling lamp".
+The women's toilet light switch is a scenery light switch in the bathroom-antechamber.
+The powered item of the women's toilet light switch is the women-toilet lamp.
+
+After deciding the scope of the player when the location is the women's toilet:
+	place the women's toilet door in scope;
+	let L be a random latch which is part of the women's toilet door;
+	now L is scopable.
+	
+Chapter 2.5.4 - Be polite and green
+
 
 Volume 3 - Peoples
 

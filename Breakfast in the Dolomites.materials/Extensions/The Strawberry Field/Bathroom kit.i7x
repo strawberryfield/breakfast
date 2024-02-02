@@ -10,21 +10,22 @@ Volume 1 - Electrical stuffs
 
 A ceiling lamp is a kind of thing. The description is "[if lit]It's not a good idea to look at a lit lamp[otherwise]An ordinary white ceiling lamp[end if]."
 A light switch is a kind of device. The description is "An ordinary electrical wall switch." 
+A light switch has a thing called powered item.
 Understand "electrical switch" as a light switch.
-Powering relates a light switch to a ceiling lamp. The verb to power means the powering relation.
 Understand "lamp" as a light switch.
 
 After switching on a light switch (called current switch):
-	let the lamp be a random ceiling lamp which is powered by the current switch; 
-	now the lamp is lit;
-	say "You switched on [the lamp].".
+	now the powered item of the current switch is lit;
+	say "You switched on [the powered item of the current switch].".
 After switching off a light switch (called current switch):
-	let the lamp be a random ceiling lamp which is powered by the current switch; 
-	now the lamp is not lit;
-	say "You switched off [the lamp].".
+	now the powered item of the current switch is not lit;
+	say "You switched off [the powered item of the current switch].".
 
 Understand "power on/-- [something]" as switching on.
 Understand "power off/down [something]" as switching off.
+
+Does the player mean switching on a light switch: it is likely. 
+Does the player mean switching off a light switch: it is likely. 
 
 Volume 2 - Sink 
 
@@ -79,7 +80,6 @@ After entering a wc-bowl:
 
 After opening a bathroom-door:
 	now the back side of noun is lighted;
-	say "entering [the back side of noun].";
 	continue the action.
 After closing a bathroom-door:
 	now the back side of noun is dark;
