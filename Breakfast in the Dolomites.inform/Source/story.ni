@@ -9,7 +9,7 @@ The story headline is "A play just for fun comedy".
 The story description is "It is the mid-1990s. On a Friday evening in the summer, a young man and his girlfriend leave work for a short holiday in the Dolomites.
 You play as Francesco, about 30 years old, blond hair. You work as a software engineer, like photography and hiking in the mountains. 
 Monica, your girlfriend, is beautiful: tall, slim, with lots of slightly reddish, frizzy hair and sparkling green eyes: could you not fall in love with her? 
-She loves to stroll around looking in shop windows; a peppy girl, she won't forgive you anything you do that she doesn't like, but deep down she has her heart beating for you.
+She loves strolling around looking in shop windows; a peppy girl, she won't forgive you anything you do that she doesn't like, but deep down she has her heart beating for you.
 What a strange thing love is...
 
 You have to plan the first day of your holiday. There are no treasures to be found, no mysteries to be solved: the only prize is to spend a beautiful day in this wonderful mountain world.".
@@ -30,6 +30,7 @@ Chapter 0.2 - Game start
 
 When play begins:
 	now the player is in the reception;
+	now Monica is in the reception;
 	say "[story-beginning]";
 	say "[/p][/b]«The Strawberry Field»[/r] [/i]presents[/r][/p]".
 
@@ -37,7 +38,8 @@ Arrival-trigger is a truth state that varies.
 After printing the banner text:
 	now arrival-trigger is true;
 	say "[arrive to hotel][/n]";
-	Monica leaves the car in 1 turn from now.
+[	Monica leaves the car in 1 turn from now.]
+	Monica leaves the car never.
 	
 Volume 1 - Common 
 
@@ -511,11 +513,14 @@ Chapter 2.5.1 - The antechamber
 The description of the bathroom-antechamber is "The small room is floored and covered with white tiles; on some tiles on the walls there are colorful drawings of flowers.[/n]There are three doors: one is made of light wood and leads outside, the other two are white, one facing east and the other west, for men and women respectively. Near each door there is an electrical wall switch.[/p][if antechamber-lamp is lit]The light comes from a ceiling lamp[otherwise]A lamp is at the ceiling, but it's off; the light comes from the wooden door[end if].".
 The printed name of the bathroom-antechamber is "Bathroom antechamber".
 
+Section 2.5.1.1 - The bathroom door
+
 The description of the bathroom door is "A light wooden door[if the location of the player is the front side of the noun]. A tiny brass sign states [italic type]'Toilet'[roman type][end if].".
 Understand "bath/toilet door/--" as the bathroom door.
 
 After deciding the scope of the player when the location is the bathroom-antechamber:
-	place the bathroom door in scope.
+	place the bathroom door in scope;
+	place the antechamber light switch in scope.
 	
 After opening the bathroom door:
 	now the bathroom-antechamber is lighted;
@@ -524,8 +529,24 @@ After closing the bathroom door:
 	now the bathroom-antechamber is dark;
 	continue the action.
 
+Does the player mean opening a closed door: it is likely.
+Does the player mean closing an open door: it is likely.
+
+Section 2.5.1.2 - The sink
+
 The sink is a sink-item in the bathroom-antechamber. "On a side there is the sink where you can wash your hands."
 The sink is fixed in place. The description is "A white sink with a large countertop around it on which there is everything you need to wash and dry your hands."
+
+Section 2.5.1.3 - Light
+
+The antechamber-lamp is a scenery ceiling lamp in the bathroom-antechamber. Printed name is "bathroom antechamber ceiling lamp".
+
+The bathroom antechamber light switch is a scenery light switch in the bathroom-antechamber.
+The powered item of the bathroom antechamber light switch is the antechamber-lamp.
+Does the player mean switching on the bathroom antechamber light switch: it is very likely.
+Does the player mean switching off the bathroom antechamber light switch: it is very likely.
+
+Section 2.5.1.4 - Darkness
 
 Before deciding the scope of the player when the location is bathroom-antechamber:
 	let L be a random latch which is part of the men's toilet door;
@@ -533,41 +554,64 @@ Before deciding the scope of the player when the location is bathroom-antechambe
 	let L be a random latch which is part of the women's toilet door;
 	now L is unscopable.
 	
-The antechamber-lamp is a scenery ceiling lamp in the bathroom-antechamber. Printed name is "bathroom antechamber ceiling lamp".
-
-The antechamber light switch is a scenery light switch in the bathroom-antechamber.
-The powered item of the antechamber light switch is the antechamber-lamp.
-Does the player mean switching on the antechamber light switch: it is very likely.
-Does the player mean switching off the antechamber light switch: it is very likely.
-
 Chapter 2.5.2 - Men's toilet
 
-The Men's toilet is a dark wc-room. The description is "Floor and walls are covered with white tiles.".
+To say toilet-description: say "The floor and walls are covered with white tiles. The wc is in the middle of the wall in front of you, above it is a large white button.".
+The Men's toilet is a dark wc-room. The description is "[toilet-description]".
+
+Section 2.5.2.1 - The door
 
 The men's toilet door is a scenery bathroom-door. 
 The description is "A white lacquered door, [if the location of the player is the front side of the noun]a stylised metal sign of a man is attached to the casement.[otherwise]a latch allows you to lock the door[end if].".
 The men's toilet door is east of the bathroom-antechamber and outside of the men's toilet.
+Understand "gents/men/gentlemen/gentlemen's/gents' door/toilet/--" as the men's toilet door.
+
+Instead of an actor opening the men's toilet door:
+	if the actor is male, continue the action;
+	say "Be careful: this toilet is reserved for gents!".
+
+Section 2.5.2.2 - The light
 
 The men-toilet lamp is a scenery ceiling lamp in the men's toilet. Printed name is "men's toilet ceiling lamp".
 The men's toilet light switch is a scenery light switch in the bathroom-antechamber.
 The powered item of the men's toilet light switch is the men-toilet lamp.
+Understand "gents/men/gentlemen/gentlemen's/gents' light/lamp/switch/toilet/--" as the men's toilet light switch.
+
+To say no unpower (lamp - a thing): say "It is not appropriate to turn off [the lamp] because there is someone inside.".
+Instead of switching off the men's toilet light switch while the men's toilet is busy, say "[no unpower men-toilet lamp]".
+
+Section 2.5.2.3 - Darkness
 
 After deciding the scope of the player when the location is the men's toilet:
 	place the men's toilet door in scope;
 	let L be a random latch which is part of the men's toilet door;
 	now L is scopable.
-	
+
 Chapter 2.5.3 - Women's toilet
 
-The Women's toilet is a dark wc-room. The description is "Floor and walls are covered with white tiles.".
+The Women's toilet is a dark wc-room. The description is "[toilet-description]".
+
+Section 2.5.3.1 - The door
 
 The women's toilet door is a scenery bathroom-door. 
 The description is "A white lacquered door, [if the location of the player is the front side of the noun]a stylised metal sign of a woman is attached to the casement.[otherwise]a latch allows you to lock the door[end if].".
 The women's toilet door is west of the bathroom-antechamber and outside of the women's toilet.
+Understand "ladies/women/ladies' door/toilet/--" as the women's toilet door.
+
+Instead of an actor opening the women's toilet door:
+	if the actor is female, continue the action;
+	say "Be careful: this toilet is reserved for ladies!".
+
+Section 2.5.3.2 - The light
 
 The women-toilet lamp is a scenery ceiling lamp in the women's toilet. Printed name is "women's toilet ceiling lamp".
 The women's toilet light switch is a scenery light switch in the bathroom-antechamber.
 The powered item of the women's toilet light switch is the women-toilet lamp.
+Understand "ladies/women/ladies' light/lamp/switch/toilet/--" as the women's toilet light switch.
+
+Instead of switching off the women's toilet light switch while the women's toilet is busy, say "[no unpower women-toilet lamp]".
+
+Section 2.5.3.3 - Darkness
 
 After deciding the scope of the player when the location is the women's toilet:
 	place the women's toilet door in scope;
@@ -575,6 +619,18 @@ After deciding the scope of the player when the location is the women's toilet:
 	now L is scopable.
 	
 Chapter 2.5.4 - Be polite and green
+
+To say wc inside visible: say "The whole reception could see the inside of the toilet".
+
+Before opening a bathroom-door while the bathroom door is open and the location of the player is the bathroom-antechamber, say "[wc inside visible]." instead.
+Before opening the bathroom door while a bathroom-door is open and the location of the player is the bathroom-antechamber, say "[wc inside visible]." instead.
+
+Before going through the bathroom door from the bathroom-antechamber:
+	if the player is dirty, say "Grubby![line break]Who knows what that sink is for..." instead;
+	if the men-toilet lamp is lit and the men's toilet is not busy, say "You forgot the toilet light on." instead;
+	if the antechamber-lamp is lit and the men's toilet is not busy and the women's toilet is not busy and leading actors are alone:
+		try opening the bathroom door;
+		say "You forgot the light on." instead.
 
 
 Volume 3 - Peoples

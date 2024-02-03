@@ -23,6 +23,8 @@ After switching off a light switch (called current switch):
 
 Understand "power on/-- [something]" as switching on.
 Understand "power off/down [something]" as switching off.
+Understand "power [something] on/--" as switching on.
+Understand "power [something] off/down" as switching off.
 
 Does the player mean switching on a light switch: it is likely. 
 Does the player mean switching off a light switch: it is likely. 
@@ -45,9 +47,15 @@ Report washing hands:
 Volume 3 - WC
 
 A wc-room is a kind of room.
+Definition: a wc-room is busy if a person is in it.
+
+Chapter 3.1 - The bowl
+
 A wc-bowl is a kind of supporter. A wc-bowl is scenery and enterable.
 A wc-bowl is in every wc-room.
 Understand "wc/bowl" or "wc bowl" as a wc-bowl.
+
+Chapter 3.2 - The flush button
 
 A flush button is a kind of thing. The description is "A large white button. You should press it after using the wc.".
 A flush button is scenery.
@@ -58,19 +66,24 @@ Instead of pushing a flush button:
 	let W be a random wc-bowl in the location of the player;
 	now W is clean.
 
+Chapter 3.3
 
 Urinating into is an action applying to an object.
 Understand "Urinate in/into/to/-- [something]" as urinating into.
 Understand "Urinate" as urinating into.
 Understand "Use wc/toilet/bowl" as urinating into.
+Understand the command "Pee" as "urinate".
+Understand the command "Wee" as "urinate".
 
 Rule for supplying a missing noun while urinating into (this is the urinating everywhere rule):
 	now the noun is the location.
 Check urinating into:
-	unless the noun is wc-bowl or the noun is a wc-room, say "Make sure you behave like a polite person." instead.
+	unless the noun is a wc-bowl or the noun is a wc-room, say "Make sure you behave like a polite person." instead.
 Carry out urinating into:
 	now the actor is dirty;
-	now the noun is dirty.
+	let WC be the noun;
+	unless the noun is a wc-bowl, let WC be a random wc-bowl in the noun;
+	now WC is dirty.
 Report urinating into:
 	say "An inevitable need has finally been resolved!".
 	
@@ -85,12 +98,20 @@ After closing a bathroom-door:
 	now the back side of noun is dark;
 	continue the action.
 
+Before going from a wc-room:
+	let WC be a random wc-bowl in the location;
+	if WC is dirty, say "Would you have liked to find the toilet dirty when you entered?" instead.
+
 Volume 4 - Door
 
 The bathroom-door is a kind of door.
 A latch is a kind of thing. The description is "A turnable tab that locks the door." 
 Understand "knob" as latch. 
 A latch is part of every bathroom-door.
+
+Does the player mean entering a door: it is likely. 
+Does the player mean opening a door: it is likely. 
+Does the player mean closing a door: it is likely. 
 
 Instead of turning a latch (called knob): 
 	let the target door be the a random bathroom-door which incorporates the knob;
