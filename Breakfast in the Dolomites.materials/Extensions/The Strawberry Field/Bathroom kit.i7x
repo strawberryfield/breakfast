@@ -49,6 +49,17 @@ Volume 3 - WC
 A wc-room is a kind of room.
 Definition: a wc-room is busy if a person is in it.
 
+After opening a bathroom-door:
+	now the back side of noun is lighted;
+	continue the action.
+After closing a bathroom-door:
+	now the back side of noun is dark;
+	continue the action.
+
+Before going from a wc-room:
+	let WC be a random wc-bowl in the location;
+	if WC is dirty, say "Would you have liked to find the toilet dirty when you entered?" instead.
+
 Chapter 3.1 - The bowl
 
 A wc-bowl is a kind of supporter. A wc-bowl is scenery and enterable.
@@ -69,11 +80,11 @@ Instead of pushing a flush button:
 Chapter 3.3
 
 Urinating into is an action applying to an object.
-Understand "Urinate in/into/to/-- [something]" as urinating into.
-Understand "Urinate" as urinating into.
-Understand "Use wc/toilet/bowl" as urinating into.
-Understand the command "Pee" as "urinate".
-Understand the command "Wee" as "urinate".
+Understand "urinate in/into/to/-- [something]" as urinating into.
+Understand "urinate" as urinating into.
+Understand "use wc/toilet/bowl" as urinating into.
+Understand the command "pee" as "urinate".
+Understand the command "wee" as "urinate".
 
 Rule for supplying a missing noun while urinating into (this is the urinating everywhere rule):
 	now the noun is the location.
@@ -86,21 +97,17 @@ Carry out urinating into:
 	now WC is dirty.
 Report urinating into:
 	say "An inevitable need has finally been resolved!".
+
+Section 3.3.1 - Sitting on bowl
 	
 After entering a wc-bowl:
 	say "You are sitting on the bowl.";
 	try urinating into the noun.
 
-After opening a bathroom-door:
-	now the back side of noun is lighted;
-	continue the action.
-After closing a bathroom-door:
-	now the back side of noun is dark;
-	continue the action.
-
-Before going from a wc-room:
+Understand "sit on/down/--" as entering.
+Rule for supplying a missing noun while entering when the location is a wc-room (this is the seat on the wc rule):
 	let WC be a random wc-bowl in the location;
-	if WC is dirty, say "Would you have liked to find the toilet dirty when you entered?" instead.
+	now the noun is the WC.
 
 Volume 4 - Door
 

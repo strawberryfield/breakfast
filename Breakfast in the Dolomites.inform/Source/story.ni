@@ -21,6 +21,8 @@ Include Cleared Events by Daniel Stelzer.
 Include Large Game Speedup by Nathanael Nerode.
 Include Conversation Package by Eric Eve.
 Include Assorted Text Generation by Emily Short.
+Include Basic Screen Effects by Emily Short.
+Include Glulx Text Effects (for Glulx only) by Emily Short.
 Include Scopability by Brady Garvin.
 Include Customized Trinity Inventory by The Strawberry Field.
 Include Workers by The Strawberry Field.
@@ -28,22 +30,46 @@ Include Bathroom kit by The Strawberry Field.
 
 Chapter 0.2 - Game start
 
+[ uncomment below for release]
+[	
 When play begins:
-	now the player is in the reception;
-	now Monica is in the reception;
 	say "[story-beginning]";
-	say "[/p][/b]«The Strawberry Field»[/r] [/i]presents[/r][/p]".
+	say "[/p][/b]«The Strawberry Field»[/r] [/i]presents[/r][/p]";
+	pause the game.
+]
 
 Arrival-trigger is a truth state that varies. 
 After printing the banner text:
+[	pause the game;
 	now arrival-trigger is true;
 	say "[arrive to hotel][/n]";
-[	Monica leaves the car in 1 turn from now.]
+	Monica leaves the car in 1 turn from now.]
+	[ uncomment above for release, than comment below]
+	now the player is in the reception;
+	now the player is registered;
+	now the player wear the red backpack;
+	let K be a random room key in sleeping room;
+	now the player carries K;
+	now Monica is in the reception;
+	now Monica is registered;
+	now Monica carries the pink trolley;
+	let K be a random room key in sleeping room;
+	now K is in the handbag;
+	now The check-in-trigger is true;
 	Monica leaves the car never.
 	
 Volume 1 - Common 
 
-Book 1.1 - Abbreviations
+Book 1.1 - Typography
+
+Chapter 1.1.1 - Styles
+
+Table of User Styles (continued)
+style name	color	italic	font weight
+special-style-1	"#FF0000"	false	regular-weight
+note-style	"#0000A0"	true	bold-weight
+
+Chapter 1.1.2 - Shortenings
 
 To say /n: say line break.
 To say /nn: say no line break.
@@ -294,7 +320,7 @@ Instead of closing the sliding door while the location of the player is the rece
 	
 Book 2.4 - The reception
 
-The description of the reception is "[if unvisited]This charming little hotel welcomes guests with its cosy reception area: the inviting atmosphere is immediately apparent, with a blend of rustic elegance and modern comfort. [/n][end if]The receptionist stands behind a tastefully crafted wooden desk, ready to assist guests with a genuine smile. [/n]Stairs lead to the upper floors. To the east is the dining room, along the wall is a door.".
+The description of the reception is "[if unvisited]This charming little hotel welcomes guests with its cosy reception area: the inviting atmosphere is immediately apparent, with a blend of rustic elegance and modern comfort. [/n][end if]The receptionist stands behind a tastefully crafted wooden desk, ready to assist guests with a genuine smile. [/n]Stairs lead to the upper floors. To the east is the dining room, along the wall is a door. [if unvisited][/p]The reception of this little hotel in the Dolomites serves as the perfect introduction to the unique blend of comfort and authenticity that awaits guests throughout their stay, promising a memorable and rejuvenating experience in this picturesque mountain retreat. [end if]".
 
 The wooden desk is a scenery supporter in the reception.
 Understand "counter" as the wooden desk.
@@ -458,9 +484,10 @@ Section 2.4.2.2 - Morgen receptionist
 	
 Mrtm-count is a number that varies. Mrtm-count is 0.
 At the time when Monica remember to morgen:
-	increase Mrtm-count by 1;
-	say "[alert][/ss]Don't be rude, greet [determinate-naming of receptionist].' [/se]Monica suggests in your ear[other times of Mrtm-count].";
-	Monica remember to morgen in 1 turn from now;		
+	unless the current interlocutor is the receptionist:
+		increase Mrtm-count by 1;
+		say "[alert][/ss]Don't be rude, greet [determinate-naming of receptionist].' [/se]Monica suggests in your ear[other times of Mrtm-count].";
+		Monica remember to morgen in 1 turn from now;		
 
 At the time when Monica morgen the receptionist:
 	say "[morgen-receptionist].' [/se]says Monica[if the receptionist is improper-named] to [determinate-naming of receptionist][end if].". 	
@@ -556,7 +583,7 @@ Before deciding the scope of the player when the location is bathroom-antechambe
 	
 Chapter 2.5.2 - Men's toilet
 
-To say toilet-description: say "The floor and walls are covered with white tiles. The wc is in the middle of the wall in front of you, above it is a large white button.".
+To say toilet-description: say "The floor and walls are covered with white tiles. The wc is in the middle of the wall in front of you, above it is a large white button. ".
 The Men's toilet is a dark wc-room. The description is "[toilet-description]".
 
 Section 2.5.2.1 - The door
@@ -632,6 +659,44 @@ Before going through the bathroom door from the bathroom-antechamber:
 		try opening the bathroom door;
 		say "You forgot the light on." instead.
 
+Book 2.6 - The dining room
+
+The description of the dining room is "[if unvisited]Rustic wooden beams and locally sourced stone accents complement the alpine setting, while tasteful decor elements pay homage to the region's cultural heritage. [end if]The tables are elegantly set with crisp linens. Around the tables is a bench covered in dark green velvet. [if unvisited][/n]Bathed in natural light that filters through large windows, the room offers panoramic views of the surrounding majestic peaks, creating a serene and inspiring atmosphere. [end if][/n]The reception area is to the west, to the north is the buffet area, and to the east a door leads to the kitchen.".
+
+Chapter 2.6.1 - Furniture
+
+Section 2.6.1.1 - Kitchen door
+
+The kitchen door is a scenery, closed, openable, not lockable door.
+The description is "A two-leaf saloon-style door. At the top of each leaf is a circular pane of glass that is fogged by steam."
+The kitchen door is east of the dining room and west of the kitchen.
+
+Instead of opening the kitchen door: say "This type of door opens when you walk through it and closes immediately afterwards thanks to some springs.".
+Instead of going through the kitchen door: say "Oh no, access to the kitchen is restricted to service personnel.".
+
+Section 2.6.1.2 - The bench
+
+The bench is a scenery enterable supporter in the dining room.
+The description is "A wooden bench padded with dark green velvet cushions."
+After getting off the bench, say "You stand up.".
+Rule for supplying a missing noun while entering when the location is the dining room (this is the seat at the tabe rule): now the noun is the bench.
+
+Section 2.6.1.3 - The table
+	
+The table is a scenery supporter in the dining room.
+
+Chapter 2.6.2 - Rules
+
+After going to the dining room from the reception:
+	if the location of Monica is the reception:
+		say "Monica follows you.";
+		now Monica is in the dining room;
+		Monica urges breakfast never;
+		continue the action.
+		
+Book 2.7 - The buffet
+
+The description of the buffet is "The buffet is a feast for the senses, featuring a variety of locally sourced and homemade delights. Guests can savor freshly baked pastries, artisanal bread, jams, and a selection of cheeses and cured meats, showcasing the flavors of the Dolomites.".
 
 Volume 3 - Peoples
 
@@ -664,6 +729,7 @@ To decide whether leading actors are alone:
 Book 3.1 - The player
 
 The description of the player is "A young man, about 30 years old, blond hair. [/n]You work as a software engineer, enjoy photography and love hiking in the mountains. [/n]In love with your girlfriend, very beautiful, but also shrewish when something doesn't go her way. In the end you always please her and she appreciates it.".
+The player is male.
 The player is leading.
 A person can be registered. The player is not registered.
 
@@ -722,10 +788,10 @@ Monica is leading.
 
 Alerts and hearts are numbers that vary.
 To say alert: 
-	say "[unicode 9824] ";
+	say "[unicode 9828] ";
 	increase alerts by 1.
 To say heart: 
-	say "[unicode 9825] ";
+	say "[special-style-1][unicode 9829] [/r]";
 	increase hearts by 1.
 
 Chapter 3.2.1 - Monica initial dressing
@@ -818,7 +884,7 @@ Volume 4 - Scenes
 Book 4.1 - Intro
 
 To say story-beginning: 
-	say "A summery Friday evening. [/n]You are driving your car to a small town in the Dolomites. [/n]Next to you is Monica, your girlfriend; you have set off for a relaxing weekend after a hard day at work. [/n][/ss]Still a long way to go?' [/se]Monica asks.[/ss]We will be at the hotel shortly.' [/se]you reply. [/n]She rests her head on your shoulder and caresses your neck."
+	say "[/i]A summery Friday evening. [/r][/p]You are driving your car to a small town in the Dolomites. [/n]Next to you is Monica, your girlfriend; you have set off for a relaxing weekend after a hard day at work. [/n][/ss]Still a long way to go?' [/se]Monica asks.[/ss]We will be at the hotel shortly.' [/se]you reply. [/n]She rests her head on your shoulder and caresses your neck."
 	
 Book 4.2 - Arrival
 
@@ -842,7 +908,8 @@ The Check-in begins when check-in-trigger is true.
 The Check-in ends when check-in-trigger is false.
 When Check-in ends:
 	say "You and Monica bid farewell to the receptionist and set off up the stairs. [/n][/ss]Have a good night!' [/se][determinate-naming of the receptionist] wishes you. [/n]";
-	say "[heart]Monica wraps her arm around your waist and gives you a kiss on the neck.".
+	say "[heart]Monica wraps her arm around your waist and gives you a kiss on the neck.";
+	pause the game.
 	
 Book 4.4 - Breakfast
 
@@ -869,7 +936,7 @@ When the Breakfast begins:
 	now the player wears the checkered flannel shirt;
 	now the player wears the pair of brown trekking boots;
 	[description]
-	say "[/i]The morning after. [/r][/p]";
+	say "[note style]The morning after. [/r][/p]";
 	say "After a good night's sleep, you are ready to enjoy the first day of your holiday. [/n]You and Monica go down the stairs and back to reception, [determinate-naming of the receptionist] is working behind the counter. [/n][/ss]Miss Monica and Mr. Francesco good morning!' [/se]wishes [determinate-naming of the receptionist], [/ss]You're looking good today!' [/r][/n]";
 	now morgen-trigger is true.
 	
