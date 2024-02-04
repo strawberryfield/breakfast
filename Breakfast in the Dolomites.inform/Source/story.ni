@@ -353,11 +353,11 @@ Instead of going outside during the check-in:
 Instead of going up during the check-in:
 	unless check-in is completed, say "You have not yet completed your check-in." instead;
 	unless a room key is enclosed by the player:
-		if a room key is on the wooden desk, say "[/ss]Mr. Francesco, you forgot your key.' [/se][determinate-naming of the receptionist] reminds you." instead;
+		if a room key is on the wooden desk, say "[/ss]Mr. Francesco, you forgot your key.' [/se][the naming of the receptionist] reminds you." instead;
 		say "[alert][/ss]Are you sure you took the room key?' [/se] asks Monica." instead;
 	unless a room key is enclosed by Monica, say "Monica has not yet taken her key." instead;
-	unless the red backpack is enclosed by a people, say "[/ss]Mr. Francesco, you forgot your backpack.' [/se][determinate-naming of the receptionist] reminds you." instead;
-	unless the pink trolley is enclosed by a people, say "[/ss]You forgot your trolley.' [/se][determinate-naming of the receptionist] reminds you." instead;
+	unless the red backpack is enclosed by a people, say "[/ss]Mr. Francesco, you forgot your backpack.' [/se][the naming of the receptionist] reminds you." instead;
+	unless the pink trolley is enclosed by a people, say "[/ss]You forgot your trolley.' [/se][the naming of the receptionist] reminds you." instead;
 	Monica gets tired never;
 	now the check-in-trigger is false.
 		
@@ -367,7 +367,7 @@ Instead of taking the driving license during the check-in, say "You have driven 
 Instead of giving the identity card to the receptionist during the check-in:
 	try showing the identity card to the receptionist.
 Instead of showing the identity card to the receptionist during the check-in:
-	say "You show your identity card to [determinate-naming of receptionist].";
+	say "You show your identity card to [the naming of receptionist].";
 	say "[/ss]Thank you Mr. Francesco.' [/se]he says, then he copies your data into the computer.";
 	now the player is registered;
 	Monica urges your document never;
@@ -410,32 +410,32 @@ Chapter 2.4.2 - Timed events
 Section 2.4.2.1 - Check-in
 
 At the time when the receptionist greets:
-	say "[/ss]Good evening, welcome to our hotel!' [/se][determinate-naming of receptionist] greets you.[/ss]How can I help you?' [/r][/n]";
+	say "[/ss]Good evening, welcome to our hotel!' [/se][the naming of receptionist] greets you.[/ss]How can I help you?' [/r][/n]";
 	Monica greets the receptionist in 0 turns from now;
 	Monica remember to greet in 1 turn from now;
 
 Mrtg-count is a number that varies. Mrtg-count is 0.
 At the time when Monica remember to greet:
 	increase Mrtg-count by 1;
-	say "[alert][/ss]Don't be rude, say hello to [determinate-naming of receptionist].' [/se]Monica suggests in your ear[other times of Mrtg-count].";
+	say "[alert][/ss]Don't be rude, say hello to [the naming of receptionist].' [/se]Monica suggests in your ear[other times of Mrtg-count].";
 	Monica remember to greet in 1 turn from now;		
 
 At the time when Monica greets the receptionist:
-	say "[greet receptionist].' [/se]says Monica[if the receptionist is improper-named] to [determinate-naming of receptionist][end if].". 	
+	say "[greet receptionist].' [/se]says Monica[if the receptionist is improper-named] to [the naming of receptionist][end if].". 	
 
 At the time when the receptionist confirms reservation:
-	say "[/ss]Here it is.' [/se][determinate-naming of receptionist] reports. [/n][/ss]We have reserved the 'edelweiss' room for you: our rooms do not have a number, but the name of a flower.' [/r][/n]";
+	say "[/ss]Here it is.' [/se][the naming of receptionist] reports. [/n][/ss]We have reserved the 'edelweiss' room for you: our rooms do not have a number, but the name of a flower.' [/r][/n]";
 	say "[/ss]Oh nice!' [/se]Monica says and opens her handbag. [/n]";
-	say "[determinate-naming of receptionist] smiles. [/n]" in sentence case;
+	say "[The naming of receptionist] smiles. [/n]";
 	now the shiny black handbag is open;
 	the receptionist asks for documents in 1 turn from now.
 
 At the time when the receptionist asks for documents:
-	say "[/ss]May I have your documents so that I can register?' [/se]asks [determinate-naming of receptionist].";
+	say "[/ss]May I have your documents so that I can register?' [/se]asks [the naming of receptionist].";
 	Monica shows document in 1 turn from now.
 	
 At the time when Monica shows document:
-	say "Monica takes her identity card and shows it to [determinate-naming of receptionist]. [/n]";
+	say "Monica takes her identity card and shows it to [the naming of receptionist]. [/n]";
 	say "He copies some data into the computer and says [/ss]Thank you Miss Monica.' [/r][/n]";
 	say "Monica puts her identity card back in her handbag and closes it.";
 	now the shiny black handbag is closed;
@@ -448,14 +448,14 @@ Muyd-count is a number that varies. Muyd-count is 0.
 At the time when Monica urges your document:
 	unless the player is registered:
 		increase Muyd-count by 1;
-		say "[alert][/ss]What are you waiting for? Show the document to [determinate-naming of receptionist].' [/se]Monica urges you[other times of Muyd-count].";
+		say "[alert][/ss]What are you waiting for? Show the document to [the naming of receptionist].' [/se]Monica urges you[other times of Muyd-count].";
 		Monica urges your document in 1 turn from now.
 
 At the time when receptionist closes check-in:
-	say "[determinate-naming of receptionist] takes two keys and puts them on the desk. [/n]"  in sentence case;
+	say "[The naming of receptionist] takes two keys and puts them on the desk. [/n]";
 	repeat with K running through room keys in sleeping room: 
 		now K is on the wooden desk;
-	say "[/ss]These are the keys of your room.' [/se][determinate-naming of receptionist] explains.";
+	say "[/ss]These are the keys of your room.' [/se][the naming of receptionist] explains.";
 	say "[/ss]In the room you will find a brochure with all the useful information about the hotel, but if you have any questions I am at your disposal.' [/r][/n]";
 	Monica takes key in 1 turn from now.
 
@@ -486,11 +486,11 @@ Mrtm-count is a number that varies. Mrtm-count is 0.
 At the time when Monica remember to morgen:
 	unless the current interlocutor is the receptionist:
 		increase Mrtm-count by 1;
-		say "[alert][/ss]Don't be rude, greet [determinate-naming of receptionist].' [/se]Monica suggests in your ear[other times of Mrtm-count].";
+		say "[alert][/ss]Don't be rude, greet [the naming of receptionist].' [/se]Monica suggests in your ear[other times of Mrtm-count].";
 		Monica remember to morgen in 1 turn from now;		
 
 At the time when Monica morgen the receptionist:
-	say "[morgen-receptionist].' [/se]says Monica[if the receptionist is improper-named] to [determinate-naming of receptionist][end if].". 	
+	say "[morgen-receptionist].' [/se]says Monica[if the receptionist is improper-named] to [the naming of receptionist][end if].". 	
 
 Mub-count is a number that varies. Mub-count is 0.
 At the time when Monica urges breakfast:
@@ -510,7 +510,7 @@ Instead of hailing during the check-in:
 Instead of saying hello to someone (called the other) during the check-in:
 	unless the other is Monica:
 		now the current interlocutor is the receptionist;
-		say "[greet receptionist], we are Francesco and Monica and we have a reservation.' [/r][/n][/ss]Just a moment, I look for it.' [/se][determinate-naming of receptionist] states and types something on the computer.";
+		say "[greet receptionist], we are Francesco and Monica and we have a reservation.' [/r][/n][/ss]Just a moment, I look for it.' [/se][the naming of receptionist] states and types something on the computer.";
 		the receptionist confirms reservation in 1 turn from now;
 		Monica remember to greet never;
 	otherwise:
@@ -527,7 +527,7 @@ Instead of saying hello to someone (called the other) during the breakfast:
 	unless the other is Monica:
 		if the location of the player is the reception:
 			now the current interlocutor is the receptionist;
-			say "[morgen-receptionist]' [/se]you say[if the receptionist is improper-named] to [determinate-naming of receptionist][end if].";
+			say "[morgen-receptionist]' [/se]you say[if the receptionist is improper-named] to [the naming of receptionist][end if].";
 			Monica remember to morgen never;
 			now morgen-trigger is false;
 	otherwise:
@@ -700,27 +700,6 @@ The description of the buffet is "The buffet is a feast for the senses, featurin
 
 Volume 3 - Peoples
 
-A cloth is a kind of thing. 
-A cloth is always wearable.
-A cloth is usually unlisted when worn.
-
-To say dressing of (p - a person):
-	say "[if p is the player]You wear[otherwise][regarding p][They] [wear][end if] [a list of cloth worn by p].".
-
-To say carrying of (p - a person):
-	say "[if p is the player]You are carrying[otherwise][regarding p][They] [carry][end if] [a list of things carried by p].".
-		
-Instead of examining a person (called the character):
-	say "[description of the character][/n][dressing of the character]";
-	unless the character is the player: 
-		if the character is a worker, say "[character namesign]";
-		let N be the number of things which are not cloth worn by the character;
-		if N is greater than 0:
-			say "[/n][regarding the noun][They] also [wear] [a list of things which are not cloth worn by the character].";
-		let N be the number of things which are carried by the character;
-		if N is greater than 0:
-			say "[carrying of the noun]".
-
 A person can be leading. A person is usually not leading.
 To decide whether leading actors are alone: 
 	if the number of not leading people in the location is zero, decide yes;
@@ -728,7 +707,9 @@ To decide whether leading actors are alone:
 
 Book 3.1 - The player
 
-The description of the player is "A young man, about 30 years old, blond hair. [/n]You work as a software engineer, enjoy photography and love hiking in the mountains. [/n]In love with your girlfriend, very beautiful, but also shrewish when something doesn't go her way. In the end you always please her and she appreciates it.".
+The description of the player is "A young man, about 30 years old, ".
+Hair of the player are "blond".
+Notes of the player are "You work as a software engineer, enjoy photography and love hiking in the mountains. [/n]In love with your girlfriend, very beautiful, but also shrewish when something doesn't go her way. In the end you always please her and she appreciates it".
 The player is male.
 The player is leading.
 A person can be registered. The player is not registered.
@@ -781,7 +762,10 @@ The description is "A card folded into a booklet with your photo (slightly old) 
 Book 3.2 - The girlfriend
 
 Monica is a woman in the car.
-The description is "Tall, slim, with lots of slightly reddish, frizzy hair and sparkling green eyes: could you not fall in love with her? [/n]A peppy girl, she won't forgive you anything you do that she doesn't like, but deep down she has her heart beating for you.".
+The description is "Tall, slim ".
+Hair are "lots of slightly reddish, frizzy".
+Eyes are "sparkling green".
+Notes are "Could you not fall in love with her? [/n]A peppy girl, she won't forgive you anything you do that she doesn't like, but deep down she has her heart beating for you.".
 Understand "Mo" or "my/-- love/girl/girlfriend" as Monica.
 Monica is proper-named.
 Monica is leading.
@@ -866,18 +850,32 @@ Report Monica dancing:
 Book 3.3 - The receptionist
 
 The receptionist is a scenery male worker in the reception.
-The description is "A tall man with short black hair, dark eyes and a light, well-groomed beard.".
-Proper name of the receptionist is "Nathan".
+The description is "A tall man ".
+Hair are "short black". Eyes are "dark". 
+Notes are "He also has a light, well-groomed beard".
+Proper name of the receptionist is "Nathan". The receptionist is improper-named.
 Understand "Nathan" as the receptionist.
 
-The white shirt, dark grey jacket and dotted grey tie are cloth.
+The dark grey jacket and dotted grey tie are cloth.
 The receptionist wears the white shirt, dark grey jacket and dotted grey tie.
 
 Book 3.4 - The waiters
 
 Chapter 3.4.1 - The male waiter
 
+Hans is a male-waiter in the dining room.
+Hair are "blond". Eyes are "blue".
+Proper name is "Hans".
+Printed name is "waiter".
+Hans is improper-named.
+
 Chapter 3.4.2 - The waitress
+
+Mila is a waitress in the dining room.
+Hair are "auburn". Eyes are "green".
+Proper name is "Mila".
+Printed name is "waitress".
+Mila is improper-named. 
 
 Volume 4 - Scenes
 
@@ -907,7 +905,7 @@ The check-in-trigger is a truth state that varies.
 The Check-in begins when check-in-trigger is true.
 The Check-in ends when check-in-trigger is false.
 When Check-in ends:
-	say "You and Monica bid farewell to the receptionist and set off up the stairs. [/n][/ss]Have a good night!' [/se][determinate-naming of the receptionist] wishes you. [/n]";
+	say "You and Monica bid farewell to the receptionist and set off up the stairs. [/n][/ss]Have a good night!' [/se][the naming of the receptionist] wishes you. [/n]";
 	say "[heart]Monica wraps her arm around your waist and gives you a kiss on the neck.";
 	pause the game.
 	
@@ -937,7 +935,9 @@ When the Breakfast begins:
 	now the player wears the pair of brown trekking boots;
 	[description]
 	say "[note style]The morning after. [/r][/p]";
-	say "After a good night's sleep, you are ready to enjoy the first day of your holiday. [/n]You and Monica go down the stairs and back to reception, [determinate-naming of the receptionist] is working behind the counter. [/n][/ss]Miss Monica and Mr. Francesco good morning!' [/se]wishes [determinate-naming of the receptionist], [/ss]You're looking good today!' [/r][/n]";
+	say "After a good night's sleep, you are ready to enjoy the first day of your holiday. [/n]You and Monica go down the stairs and back to reception. [/n]You wear [a list of cloth worn by the player]; Monica wears [a list of cloth worn by Monica]. [/n]";
+	say "[The naming of the receptionist] is working behind the counter. [/n]";
+	say "[/ss]Miss Monica and Mr. Francesco good morning!' [/se]wishes [the naming of the receptionist], [/ss]You're looking good today!' [/r][/n]";
 	now morgen-trigger is true.
 	
 Chapter 4.4.1 - Greeting the receptionist
