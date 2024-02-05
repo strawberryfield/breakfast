@@ -527,7 +527,7 @@ Instead of saying hello to someone (called the other) during the breakfast:
 	unless the other is Monica:
 		if the location of the player is the reception:
 			now the current interlocutor is the receptionist;
-			say "[morgen-receptionist]' [/se]you say[if the receptionist is improper-named] to [the naming of receptionist][end if].";
+			say "[morgen-receptionist].' [/se]you say[if the receptionist is improper-named] to [the naming of receptionist][end if].";
 			Monica remember to morgen never;
 			now morgen-trigger is false;
 	otherwise:
@@ -692,8 +692,19 @@ After going to the dining room from the reception:
 		say "Monica follows you.";
 		now Monica is in the dining room;
 		Monica urges breakfast never;
+		now search-table-trigger is true;
 		continue the action.
-		
+
+Chapter 2.6.3 - Timed events
+
+At the time when the waiter welcomes:
+	if search-table-trigger is true:
+		unless the current interlocutor is a waiter:
+			let the current waiter be a random waiter in the location;
+			now the current interlocutor is the current waiter;
+			say "[The naming of the current waiter] sees you confused, approaches you and says hello: [/ss]Good morning!' [/r][/n]";
+			say "[/ss]Can I help you?' [/se][regarding the current waiter][they] asks.".
+					
 Book 2.7 - The buffet
 
 The description of the buffet is "The buffet is a feast for the senses, featuring a variety of locally sourced and homemade delights. Guests can savor freshly baked pastries, artisanal bread, jams, and a selection of cheeses and cured meats, showcasing the flavors of the Dolomites.".
@@ -953,4 +964,15 @@ When Morgen receptionist begins:
 	
 When Morgen receptionist ends:
 	Monica urges breakfast in 2 turns from now.
+	
+Chapter 4.4.2 - Searching for the table
+
+Search for the table is a scene.
+The search-table-trigger is a truth state that varies.
+Search for the table begins when search-table-trigger is true.
+Search for the table ends when search-table-trigger is false.
+
+When Search for the table begins:
+	say "[heart][/ss]Very nice, isn't it?' [/se]asks Monica, [/ss]I wonder where we can sit.' [/r][/n]";
+	the waiter welcomes in 3 turns from now.
 	
