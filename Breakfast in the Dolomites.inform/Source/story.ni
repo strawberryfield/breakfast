@@ -490,7 +490,7 @@ At the time when Monica remember to morgen:
 		Monica remember to morgen in 1 turn from now;		
 
 At the time when Monica morgen the receptionist:
-	say "[morgen-receptionist].' [/se]says Monica[if the receptionist is improper-named] to [the naming of receptionist][end if].". 	
+	say "[/ss][good morning receptionist].' [/se]says Monica[greet-to receptionist].". 	
 
 Mub-count is a number that varies. Mub-count is 0.
 At the time when Monica urges breakfast:
@@ -518,16 +518,13 @@ Instead of saying hello to someone (called the other) during the check-in:
 
 Section 2.4.3.2 - Morgen receptionist
 
-To say morgen-receptionist: 
-	say "[/ss]Good morning[if the receptionist is proper-named] [printed name of the receptionist][end if]".	
-
 Instead of hailing for the first time during the morgen receptionist:
 	if the location of the player is the reception, try saying hello to the receptionist.
-Instead of saying hello to someone (called the other) during the breakfast:
+Instead of saying hello to someone (called the other) during the morgen receptionist:
 	unless the other is Monica:
 		if the location of the player is the reception:
 			now the current interlocutor is the receptionist;
-			say "[morgen-receptionist].' [/se]you say[if the receptionist is improper-named] to [the naming of receptionist][end if].";
+			say "[/ss][good morning receptionist].' [/se]you say[greet-to receptionist].";
 			Monica remember to morgen never;
 			now morgen-trigger is false;
 	otherwise:
@@ -704,6 +701,27 @@ At the time when the waiter welcomes:
 			now the current interlocutor is the current waiter;
 			say "[The naming of the current waiter] sees you confused, approaches you and says hello: [/ss]Good morning!' [/r][/n]";
 			say "[/ss]Can I help you?' [/se][regarding the current waiter][they] asks.".
+			
+Chapter 2.6.4 - Conversation
+
+Section 2.6.4.1 - Searching for the table
+
+Instead of hailing during the Search for the table:
+	if the current interlocutor is nothing:
+		let W be a random waiter in the location;
+		try saying hello to W;
+	otherwise:
+		let W be the current interlocutor;
+		now the current interlocutor is nothing;
+		try saying hello to W.
+Instead of saying hello to someone (called the other) during the Search for the table:
+	unless the other is Monica:
+		now the current interlocutor is a random waiter in the location;
+		say "[good morning current interlocutor], we are Francesco and Monica and we have a reservation.' [/r][/n][/ss]Just a moment, I look for it.' [/se][the naming of current interlocutor] states and types something on the computer.";
+		the waiter welcomes never;
+	otherwise:
+		continue the action.
+
 					
 Book 2.7 - The buffet
 

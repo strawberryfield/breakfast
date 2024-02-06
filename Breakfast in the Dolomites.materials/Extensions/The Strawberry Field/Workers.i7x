@@ -57,6 +57,10 @@ A worker is a kind of person.
 A worker is improper-named.
 A worker has some text called proper name.
 
+Chapter 2.1 - Say phrases
+
+Section 2.1.1 - naming
+
 To say a naming of ( w - a worker):
 	say "[if w is improper-named]a [end if][printed name of w]".
 To say A naming of ( w - a worker):
@@ -73,6 +77,16 @@ To say (w - a person) namesign:
 				say "[regarding w][Their] namesign reports [/i]'[proper name of w]'[/r].";
 				now the printed name of w is the proper name of w;
 				now w is proper-named.
+
+Section 2.1.2 - Greetings
+
+To say good morning (w - a worker):
+		say "Good morning[if w is proper-named] [printed name of w][end if]".
+To say good evening (w - a worker):
+		say "Good evening[if w is proper-named] [printed name of w][end if]".
+
+To say greet-to (w - a worker):
+	if w is improper-named, say " to [the naming of w]".
 	
 Volume 3 - waiters
 
