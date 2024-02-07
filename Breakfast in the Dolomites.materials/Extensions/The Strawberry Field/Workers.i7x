@@ -84,9 +84,14 @@ To say good morning (w - a worker):
 		say "Good morning[if w is proper-named] [printed name of w][end if]".
 To say good evening (w - a worker):
 		say "Good evening[if w is proper-named] [printed name of w][end if]".
+To say thanks (w - a worker):
+	say "Thank you[if w is proper-named] [printed name of w][end if]".
 
 To say greet-to (w - a worker):
 	if w is improper-named, say " to [the naming of w]".
+
+To say you are welcome:
+	say "[one of]You are welcome[or]Not at all[or]Don't mention it[or]Duty[in random order]![run paragraph on]".
 	
 Volume 3 - waiters
 

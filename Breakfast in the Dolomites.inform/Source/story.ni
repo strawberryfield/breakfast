@@ -421,7 +421,7 @@ At the time when Monica remember to greet:
 	Monica remember to greet in 1 turn from now;		
 
 At the time when Monica greets the receptionist:
-	say "[greet receptionist].' [/se]says Monica[if the receptionist is improper-named] to [the naming of receptionist][end if].". 	
+	say "[/ss][good evening receptionist].' [/se]says Monica[greet-to receptionist].". 	
 
 At the time when the receptionist confirms reservation:
 	say "[/ss]Here it is.' [/se][the naming of receptionist] reports. [/n][/ss]We have reserved the 'edelweiss' room for you: our rooms do not have a number, but the name of a flower.' [/r][/n]";
@@ -502,15 +502,12 @@ Chapter 2.4.3 - Conversation
 
 Section 2.4.3.1 - Check-in
 
-To say greet receptionist: 
-	say "[/ss]Good evening[if the receptionist is proper-named] [printed name of the receptionist][end if]".
-
 Instead of hailing during the check-in:
 	try saying hello to the receptionist.
 Instead of saying hello to someone (called the other) during the check-in:
 	unless the other is Monica:
 		now the current interlocutor is the receptionist;
-		say "[greet receptionist], we are Francesco and Monica and we have a reservation.' [/r][/n][/ss]Just a moment, I look for it.' [/se][the naming of receptionist] states and types something on the computer.";
+		say "[/ss][good evening receptionist], we are Francesco and Monica and we have a reservation.' [/r][/n][/ss]Just a moment, I look for it.' [/se][the naming of receptionist] states and types something on the computer.";
 		the receptionist confirms reservation in 1 turn from now;
 		Monica remember to greet never;
 	otherwise:
@@ -709,6 +706,7 @@ Section 2.6.4.1 - Searching for the table
 Instead of hailing during the Search for the table:
 	if the current interlocutor is nothing:
 		let W be a random waiter in the location;
+		say "You approach [the naming of W] and say hello: [run paragraph on]";
 		try saying hello to W;
 	otherwise:
 		let W be the current interlocutor;
@@ -717,11 +715,28 @@ Instead of hailing during the Search for the table:
 Instead of saying hello to someone (called the other) during the Search for the table:
 	unless the other is Monica:
 		now the current interlocutor is a random waiter in the location;
-		say "[good morning current interlocutor], we are Francesco and Monica and we have a reservation.' [/r][/n][/ss]Just a moment, I look for it.' [/se][the naming of current interlocutor] states and types something on the computer.";
+		say "[/ss][good morning current interlocutor], we are staying in the 'Edelweiss' room and it is our first day here.' [/r][/n][/ss]Oh, welcome! Let me show you to your table.' [/se]says [the naming of current interlocutor] and goes to a free table. [/n][/ss]This is the table we have reserved for you, I hope it is to your liking.' [/se][regarding the current interlocutor][they] points to you the table.";
+		say "[heart][/ss]It's perfect!' [/se]exclaims Monica [/ss][thanks current interlocutor].' [/r][/n]";
 		the waiter welcomes never;
+		now search-table-trigger is false;
 	otherwise:
 		continue the action.
 
+Section 2.6.4.2 - Order
+
+Section 2.6.4.3 - Other responses
+
+Default ask response for a waiter:
+	say "[/ss]Sorry, I know nothing about it.' [/se][regarding the noun][they] admits.".
+
+Response of a waiter when asked about bathroom:
+	say “[/ss]Where can I find the toilet?’ [/se]you ask. [/n]”;
+	say "[/ss]'Oh yes, it's inside the door in front of the reception desk.' [/se][the naming of the noun] answers.".
+
+Understand "the/-- weather forecast/--" or "the/-- forecast" as "[weather]".	
+Response of a waiter when asked about "[weather]":
+	say “[/ss]Do you know it might rain today?’ [/se]you ask. [/n]”;
+	say "[/ss]You can find the weather report in the daily hotel newsletter on your table.' [/se][regarding the noun][they] explains.".	
 					
 Book 2.7 - The buffet
 
@@ -963,6 +978,7 @@ When the Breakfast begins:
 	now the player wears the checkered flannel shirt;
 	now the player wears the pair of brown trekking boots;
 	[description]
+	now the current interlocutor is nothing;
 	say "[note style]The morning after. [/r][/p]";
 	say "After a good night's sleep, you are ready to enjoy the first day of your holiday. [/n]You and Monica go down the stairs and back to reception. [/n]You wear [a list of cloth worn by the player]; Monica wears [a list of cloth worn by Monica]. [/n]";
 	say "[The naming of the receptionist] is working behind the counter. [/n]";
