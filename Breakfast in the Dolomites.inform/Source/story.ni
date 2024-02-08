@@ -678,6 +678,24 @@ Rule for supplying a missing noun while entering when the location is the dining
 Section 2.6.1.3 - The table
 	
 The table is a scenery supporter in the dining room.
+For printing a locale paragraph about the table:
+	if the player is enclosed by the bench,  say "On the table in front of you [is-are a list of things on the table].".
+
+Instead of examining the table during search for the table, say "All tables are similar and well laid out.".
+
+A houseware is a kind of thing. 
+A cutlery is a kind of houseware.
+A knife is a kind of cutlery. The plural of knife is knives.
+A teaspoon is a kind of cutlery.
+A fork is a kind of cutlery.
+
+A towel is a kind of houseware. The description is "A white paper towel.".
+Two knives, two teaspoons ,two forks and two towels are on the table.
+
+The round plastic container is an open, not openable, not lockable container on the table. 
+The description is "A light brown plastic cylinder; on the surface reads: 'For a clean table'.".
+Instead of taking the round plastic container, say "[alert][/ss]But what do you do with the waste container?' [/se]Monica asks.".
+Instead of taking something which is enclosed by the round plastic container, say "[alert][/ss]Leave it there!' [/se]Monica scolds you [/ss]Now you'd better go wash your hands.' [/r][/n]".
 
 Chapter 2.6.2 - Rules
 
@@ -726,7 +744,7 @@ Section 2.6.4.2 - Order
 
 Section 2.6.4.3 - Other responses
 
-Default ask response for a waiter:
+Default ask response for a worker:
 	say "[/ss]Sorry, I know nothing about it.' [/se][regarding the noun][they] admits.".
 
 Response of a waiter when asked about bathroom:
@@ -734,10 +752,10 @@ Response of a waiter when asked about bathroom:
 	say "[/ss]'Oh yes, it's inside the door in front of the reception desk.' [/se][the naming of the noun] answers.".
 
 Understand "the/-- weather forecast/--" or "the/-- forecast" as "[weather]".	
-Response of a waiter when asked about "[weather]":
+Response of a worker when asked about "[weather]" during the Breakfast:
 	say “[/ss]Do you know it might rain today?’ [/se]you ask. [/n]”;
 	say "[/ss]You can find the weather report in the daily hotel newsletter on your table.' [/se][regarding the noun][they] explains.".	
-					
+			
 Book 2.7 - The buffet
 
 The description of the buffet is "The buffet is a feast for the senses, featuring a variety of locally sourced and homemade delights. Guests can savor freshly baked pastries, artisanal bread, jams, and a selection of cheeses and cured meats, showcasing the flavors of the Dolomites.".
