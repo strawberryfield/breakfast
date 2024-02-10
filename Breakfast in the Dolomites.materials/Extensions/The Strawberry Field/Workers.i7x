@@ -39,13 +39,13 @@ Instead of examining a person:
 Book 1.2 - Dressing
 
 To say dressing of (p - a person):
-	unless the number of cloth worn by p is zero, say "[if p is the player]You wear[otherwise][regarding p][They] [wear][end if] [a list of cloth worn by p]. [/n]".
+	unless the number of cloth worn by p is zero, say "[if p is the player][We] [wear][otherwise][regarding p][They] [wear][end if] [a list of cloth worn by p]. [/n]".
 	
 To say other dressing of (p - a person):
-	unless the number of things which are not cloth worn by p is 0, say "[if p is the player]You also wear[otherwise][regarding p][They] also [wear][end if] [a list of things which are not cloth worn by p]. [/n]".
+	unless the number of things which are not cloth worn by p is 0, say "[if p is the player][We] also [wear][otherwise][regarding p][They] also [wear][end if] [a list of things which are not cloth worn by p]. [/n]".
 	
 To say carrying of (p - a person):
-	unless the number of things carried by p is zero, say "[if p is the player]You are carrying[otherwise][regarding p][They] [carry][end if] [a list of things carried by p]. [/n]".
+	unless the number of things carried by p is zero, say "[if p is the player][We] [are] carrying[otherwise][regarding p][They] [carry][end if] [a list of things carried by p]. [/n]".
 
 A cloth is a kind of thing. 
 A cloth is always wearable.

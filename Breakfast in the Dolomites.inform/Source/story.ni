@@ -25,6 +25,8 @@ Include Basic Screen Effects by Emily Short.
 Include Glulx Text Effects (for Glulx only) by Emily Short.
 Include Scopability by Brady Garvin.
 Include Customized Trinity Inventory by The Strawberry Field.
+Include Commons by The Strawberry Field.
+Include Food by The Strawberry Field.
 Include Workers by The Strawberry Field.
 Include Bathroom kit by The Strawberry Field.
 
@@ -58,7 +60,7 @@ After printing the banner text:
 	now The check-in-trigger is true;
 	Monica leaves the car never.
 	
-Volume 1 - Common 
+Volume 1 - Commons 
 
 Book 1.1 - Typography
 
@@ -69,61 +71,6 @@ style name	color	italic	font weight
 special-style-1	"#FF0000"	false	regular-weight
 note-style	"#0000A0"	true	bold-weight
 
-Chapter 1.1.2 - Shortenings
-
-To say /n: say line break.
-To say /nn: say no line break.
-To say /p: say paragraph break.
-To say /run: say run paragraph on.
-To say /b: say bold type.
-To say /i: say italic type.
-To say /r: say roman type.
-
-To say /s (t - text): say "[/i]'[t]'[/r]".
-To say /ss: say "[/i]'".
-To say /se: say "[/r][unicode 8212] ".
-
-Book 1.2 - Rules
-
-Chapter 1.2.1 - Aliases
-
-Understand "look around" as looking.  
-Understand "climb on [something]" as climbing.
-Understand "go [down]stairs" as going.  Understand "go [down] stairs" as going.  
-Understand "go [up]stairs" as going.  Understand "go [up] stairs" as going.  
-Understand "downstairs" as down.  Understand "upstairs" as up.
-Understand "check out [something]" as examining.
-Understand "sit down on/-- [something]" as entering.
-
-Chapter 1.2.2 - Blocking take all
-
-Rule for deciding whether all includes a thing when taking: it does not.
-Rule for deciding whether all includes a thing when removing from: it does not.
-Rule for printing a parser error when the latest parser error is the nothing to do error:
-	say “Don't be a hoarder, just take what you plan to use.”.
-	
-Chapter 1.2.3  - Special actions
-
-Dancing is an action applying to nothing.
-Understand "Dance" as dancing.
-Report dancing: say "[We] [aren't] a dancer.".
-Check an actor dancing:
-	if the actor is enclosed by something (called the seat):
-		say "(first leaving [the seat])";
-		silently try getting off the seat.
- 
-Singing is an action applying to nothing.
-Understand "Sing" as singing.
-Report singing: say "[We] [are] not particularly in tune.".
-Check singing:
-	If the location of the player contains people which are not the player, say "Someone could not like it." instead.
-	
-Chapter 1.2.4 - Special says
-
-To say times of (N - a number): say " for the [ordinal of N] time".
-To say other times of (N - a number):
-	if N is greater than 1, say times of N.
-	
 Volume 2 - Rooms definitions
 
 The Car is a room. 
@@ -209,7 +156,7 @@ Section 2.1.3.2 - Boot content
 The pink trolley is a closed openable container in the boot.
 The description is "A jaunty pink trolley.".
 Instead of opening the pink trolley:
-	say "[alert]Monica looks at you with a fierce gaze." instead.
+	say "[alert][Monica] [look] at you with a fierce gaze." instead.
 
 Response of Monica when asked for the pink trolley:
 	try asking Monica to try giving the pink trolley to the player.
@@ -229,20 +176,20 @@ Instead of opening the red backpack, say "There is nothing you need in your back
 Chapter 2.1.4 - Timed events
 
 At the time when Monica leaves the car:
-	say "Monica jumps out of the car, then closes the car door.";
+	say "[Monica] [jump] out of the car, then [close] the car door.";
 	now Monica is in the parking;
 	Monica takes trolley in 2 turn from now.
 
 At the time when Monica takes trolley:
 	if the boot is locked:
-		say "[alert][/ss]Unlock the car!' [/se]Monica cries."; 
+		say "[alert][/ss]Unlock the car!' [/se][Monica] [cry]."; 
 		Monica takes trolley in 1 turn from now;
 	otherwise:
 		unless the boot is open:
 			now the boot is open;
-			say "Monica opens the car boot revealing [a list of things in the boot], then she takes her pink trolley.";
+			say "[Monica] [open] the car boot revealing [a list of things in the boot], then [regarding Monica][they] [take] [their] pink trolley.";
 		otherwise:
-			say "Monica takes her pink trolley from the boot.";
+			say "[Monica] [take] [their] pink trolley from the boot.";
 		now Monica carries the pink trolley;
 	Monica knocks in 1 turns from now.
 
@@ -250,7 +197,7 @@ Mknock-count is a number that varies. Mknock-count is 0.
 At the time when Monica knocks:
 	if the location of the player is the car:
 		Increase Mknock-count by 1;
-		say "[alert]Monica is knocking on the door of the car[other times of Mknock-count].[/ss]What are you still doing in there?' [/se]she asks.";
+		say "[alert][Monica] [are] knocking on the door of the car[other times of Mknock-count].[/ss]What are you still doing in there?' [/se][they] [ask].";
 		Monica knocks in 1 turns from now.	
 	
 Book 2.2 - The parking
@@ -261,19 +208,19 @@ Chapter 2.2.1 - Rules
 
 Before going to the garden from the parking:
 	unless the red backpack is enclosed by the player:
-		say "[alert][/ss]You forgot to take your luggage.' [/se]Monica remebers you." instead;
+		say "[alert][/ss]You forgot to take your luggage.' [/se][Monica] [remind] you." instead;
 	unless the car door is closed:
-		say "[alert][/ss]How distracted you are tonight: you left the car door open!' [/se]Monica exclaims." instead;
+		say "[alert][/ss]How distracted you are tonight: you left the car door open!' [/se][Monica] [exclaim]." instead;
 	unless the boot is closed:
-		say "[alert][/ss]It's better to close the car boot.' [/se]Monica suggests." instead;
+		say "[alert][/ss]It's better to close the car boot.' [/se][Monica] [suggest]." instead;
 	unless the car door  is locked:
-		say "[alert][/ss]There are a lot of thieves in this world, did you check to make sure that you've locked the car?' [/se] Monica asks." instead;
+		say "[alert][/ss]There are a lot of thieves in this world, did you check to make sure that you've locked the car?' [/se][Monica] [ask]." instead;
 	unless the pink trolley is enclosed by a people:
-		say "[alert][/ss]I'd better carry the trolley myself!' [/se]Monica says annoyed and takes her trolley again.";
+		say "[alert][/ss]I'd better carry the trolley myself!' [/se][Monica] [say] annoyed and [take] [their] trolley again.";
 		now Monica carries the pink trolley.
 		
 After going to the garden from the parking:
-	say "Monica follows you. [/n]";
+	say "[Monica] [follow] you. [/n]";
 	now Monica is in the garden;
 	now arrival-trigger is false;
 	continue the action.
@@ -298,14 +245,14 @@ Chapter 2.3.1 - The sliding door
 The sliding door is a scenery closed openable door. The description is "An automatic glass sliding door."
 The sliding door is inside from the garden and outside from the reception.
 
-After opening the sliding door, say "You come closer to [the noun] and it automatically opens.".
-After closing the sliding door, say "You move away from [the noun] and it automatically closes.".
+After opening the sliding door, say "[We] [come] closer to [the noun] and it automatically [open].".
+After closing the sliding door, say "[We] [move] away from [the noun] and it automatically [close].".
 Instead of going through the sliding door:
 	try opening the noun;
 	the sliding door closes in 0 turns from now;
 	continue the action.
 After going through the sliding door:
-	say "Monica also walks through the door.";
+	say "[Monica] also [walk] through the door.";
 	now Monica is in the location of the player;
 	now check-in-trigger is true;
 	the receptionist greets in 1 turn from now;
@@ -348,27 +295,27 @@ Instead of examining the bathroom door during the check-in, say "There is not mu
 Instead of going outside during the check-in:
 	say "[alert][/ss]Where are you going?[run paragraph on]";
 	unless check-in is completed, say " We have to complete the check-in![run paragraph on]";
-	say "' [/se]Monica says. [/n]It would be completely useless to go out, you have everything you need with you.".
+	say "' [/se][Monica] [say]. [/n]It would be completely useless to go out, you have everything you need with you.".
 
 Instead of going up during the check-in:
 	unless check-in is completed, say "You have not yet completed your check-in." instead;
 	unless a room key is enclosed by the player:
 		if a room key is on the wooden desk, say "[/ss]Mr. Francesco, you forgot your key.' [/se][the naming of the receptionist] reminds you." instead;
-		say "[alert][/ss]Are you sure you took the room key?' [/se] asks Monica." instead;
-	unless a room key is enclosed by Monica, say "Monica has not yet taken her key." instead;
-	unless the red backpack is enclosed by a people, say "[/ss]Mr. Francesco, you forgot your backpack.' [/se][the naming of the receptionist] reminds you." instead;
-	unless the pink trolley is enclosed by a people, say "[/ss]You forgot your trolley.' [/se][the naming of the receptionist] reminds you." instead;
+		say "[alert][/ss]Are you sure you took the room key?' [/se][Monica] [ask]." instead;
+	unless a room key is enclosed by Monica, say "[Monica] [have] not yet taken [their] key." instead;
+	unless the red backpack is enclosed by a people, say "[/ss]Mr. [printed name of the player], you forgot your backpack.' [/se][the naming of the receptionist] [remind] you." instead;
+	unless the pink trolley is enclosed by a people, say "[/ss]You forgot your trolley.' [/se][the naming of the receptionist] [remind] you." instead;
 	Monica gets tired never;
 	now the check-in-trigger is false.
 		
 Section 2.4.1.2 - Wallet items
 
-Instead of taking the driving license during the check-in, say "You have driven for hours to get here, now it is time to rest.".
+Instead of taking the driving license during the check-in, say "[We] [have] driven for hours to get here, now it is time to rest.".
 Instead of giving the identity card to the receptionist during the check-in:
 	try showing the identity card to the receptionist.
 Instead of showing the identity card to the receptionist during the check-in:
 	say "You show your identity card to [the naming of receptionist].";
-	say "[/ss]Thank you Mr. Francesco.' [/se]he says, then he copies your data into the computer.";
+	say "[/ss]Thank you Mr. [printed name of the player].' [/se]he says, then he copies your data into the computer.";
 	now the player is registered;
 	Monica urges your document never;
 	if Monica is registered, receptionist closes check-in in 0 turns from now.
@@ -377,7 +324,7 @@ Section 2.4.1.3 - Room keys
 
 Instead of giving a room key to Monica during the check-in:
 	if a room key is enclosed by Monica:
-		say "[heart][/ss]It is better if we keep one each.' [/ss]Monica suggests." instead;
+		say "[heart][/ss]It is better if we keep one each.' [/ss][Monica] [suggest]." instead;
 	unless the player carries a room key:
 		say "(first taking a room key)[command clarification break]";
 		let K be a random room key in the reception;
@@ -390,9 +337,9 @@ Instead of giving a room key to Monica during the check-in:
 Section 2.4.1.4 - Movements during breakfast
 
 To say breakfast time:
-	if the location of Monica is the reception,	say "[alert][/ss]Where are you going?' [/se]Monica says, [/ss]now it's breakfast time!' [/r][/n]";
+	if the location of Monica is the reception,	say "[alert][/ss]Where are you going?' [/se][Monica] [say], [/ss]now it's breakfast time!' [/r][/n]";
 	otherwise:
-		say "Monica is waiting for you at the table. [/n]".	
+		say "[Monica] is waiting for you at the table. [/n]".	
 Instead of going outside during the breakfast:
 	say "[breakfast time]".
 Instead of going up during the breakfast:
@@ -400,44 +347,46 @@ Instead of going up during the breakfast:
 
 Section 2.4.1.5 - Movements during morgen receptionist
 
+To say more important things:
+	say "There are more important things to do now.".
 Instead of going east during the Morgen receptionist:
-	say "[alert][/ss]Why don't you listen to what I'm suggesting?' [/se]Monica rebukes you.".
-Instead of going through the bathroom door during the Morgen receptionist, say "There are more important things to do now.".
-Instead of opening the bathroom door during the Morgen receptionist, say "There are more important things to do now.".
+	say "[alert][/ss]Why don't you listen to what I'm suggesting?' [/se][Monica] [rebuke] you.".
+Instead of going through the bathroom door during the Morgen receptionist, say more important things.
+Instead of opening the bathroom door during the Morgen receptionist, say more important things.
 
 Chapter 2.4.2 - Timed events
 
 Section 2.4.2.1 - Check-in
 
 At the time when the receptionist greets:
-	say "[/ss]Good evening, welcome to our hotel!' [/se][the naming of receptionist] greets you.[/ss]How can I help you?' [/r][/n]";
+	say "[/ss]Good evening, welcome to our hotel!' [/se][the naming of receptionist] [greet] you.[/ss]How can I help you?' [/r][/n]";
 	Monica greets the receptionist in 0 turns from now;
 	Monica remember to greet in 1 turn from now;
 
 Mrtg-count is a number that varies. Mrtg-count is 0.
 At the time when Monica remember to greet:
 	increase Mrtg-count by 1;
-	say "[alert][/ss]Don't be rude, say hello to [the naming of receptionist].' [/se]Monica suggests in your ear[other times of Mrtg-count].";
+	say "[alert][/ss]Don't be rude, say hello to [the naming of receptionist].' [/se][Monica] [suggest] in your ear[other times of Mrtg-count].";
 	Monica remember to greet in 1 turn from now;		
 
 At the time when Monica greets the receptionist:
-	say "[/ss][good evening receptionist].' [/se]says Monica[greet-to receptionist].". 	
+	say "[/ss][good evening receptionist].' [/se][Monica] [say][greet-to receptionist].". 	
 
 At the time when the receptionist confirms reservation:
 	say "[/ss]Here it is.' [/se][the naming of receptionist] reports. [/n][/ss]We have reserved the 'edelweiss' room for you: our rooms do not have a number, but the name of a flower.' [/r][/n]";
-	say "[/ss]Oh nice!' [/se]Monica says and opens her handbag. [/n]";
+	say "[/ss]Oh nice!' [/se][Monica] [say] and [open] [their] handbag. [/n]";
 	say "[The naming of receptionist] smiles. [/n]";
 	now the shiny black handbag is open;
 	the receptionist asks for documents in 1 turn from now.
 
 At the time when the receptionist asks for documents:
-	say "[/ss]May I have your documents so that I can register?' [/se]asks [the naming of receptionist].";
+	say "[/ss]May I have your documents so that I can register?' [/se][the naming of receptionist] [ask].";
 	Monica shows document in 1 turn from now.
 	
 At the time when Monica shows document:
-	say "Monica takes her identity card and shows it to [the naming of receptionist]. [/n]";
-	say "He copies some data into the computer and says [/ss]Thank you Miss Monica.' [/r][/n]";
-	say "Monica puts her identity card back in her handbag and closes it.";
+	say "[Monica] [take] [their] identity card and [show] it to [the naming of receptionist]. [/n]";
+	say "[regarding receptionist][They] [copy] some data into the computer and [say] [/ss]Thank you Miss [Monica].' [/r][/n]";
+	say "[Monica] [put] [their] identity card back in [their] handbag and [close] it.";
 	now the shiny black handbag is closed;
 	now Monica is registered;
 	unless the player is registered, Monica urges your document in 2 turns from now;
@@ -448,36 +397,36 @@ Muyd-count is a number that varies. Muyd-count is 0.
 At the time when Monica urges your document:
 	unless the player is registered:
 		increase Muyd-count by 1;
-		say "[alert][/ss]What are you waiting for? Show the document to [the naming of receptionist].' [/se]Monica urges you[other times of Muyd-count].";
+		say "[alert][/ss]What are you waiting for? Show the document to [the naming of receptionist].' [/se][Monica] [urge] you[other times of Muyd-count].";
 		Monica urges your document in 1 turn from now.
 
 At the time when receptionist closes check-in:
 	say "[The naming of receptionist] takes two keys and puts them on the desk. [/n]";
 	repeat with K running through room keys in sleeping room: 
 		now K is on the wooden desk;
-	say "[/ss]These are the keys of your room.' [/se][the naming of receptionist] explains.";
+	say "[/ss]These are the keys of your room.' [/se][the naming of receptionist] [explain].";
 	say "[/ss]In the room you will find a brochure with all the useful information about the hotel, but if you have any questions I am at your disposal.' [/r][/n]";
 	Monica takes key in 1 turn from now.
 
 At the time when Monica takes key:
 	if number of room keys on the wooden desk is zero:
-		say "[alert]Monica would have liked to take a key, but you took them all. She looks at you with a stern stare, maybe it's best if you give her one of the keys.";
+		say "[alert][Monica] would have liked to take a key, but you took them all. [They] [look] at you with a stern stare, maybe it's best if you give [them] one of the keys.";
 		Monica asks for key in 1 turn from now;
 	otherwise:	
-		say "Monica takes a key from the desk and puts it in her handbag.";
+		say "[Monica] [take] a key from the desk and [put] it in [their] handbag.";
 		now a random room key on the wooden desk is in the handbag;
 		Monica gets tired in 2 turns from now.
 
 Mtired-count is a number that varies. Mtired-count is 0.	
 At the time when Monica gets tired:
 	increase Mtired-count by 1;
-	say "[/ss]I'm tired, let[']s go to sleep.' [/se]asks Monica in a whisper[other times of Mtired-count].";
+	say "[/ss]I'm tired, let[']s go to sleep.' [/se][Monica] [ask] in a whisper[other times of Mtired-count].";
 	Monica gets tired in 2 turns from now.
 
 Maskkey-count is a number that varies.	
 At the time when Monica asks for key:
 	increase Maskkey-count by 1;
-	say "[alert][/ss]Why did you take both keys? It's better if we each keep one!' [/se]Monica challenges you rather annoyed[other times of Maskkey-count].";
+	say "[alert][/ss]Why did you take both keys? It's better if we each keep one!' [/se][Monica] [challenge] you rather annoyed[other times of Maskkey-count].";
 	Monica asks for key in 1 turn from now.
 	
 Section 2.4.2.2 - Morgen receptionist
@@ -486,16 +435,16 @@ Mrtm-count is a number that varies. Mrtm-count is 0.
 At the time when Monica remember to morgen:
 	unless the current interlocutor is the receptionist:
 		increase Mrtm-count by 1;
-		say "[alert][/ss]Don't be rude, greet [the naming of receptionist].' [/se]Monica suggests in your ear[other times of Mrtm-count].";
+		say "[alert][/ss]Don't be rude, greet [the naming of receptionist].' [/se][Monica] [suggest] in your ear[other times of Mrtm-count].";
 		Monica remember to morgen in 1 turn from now;		
 
 At the time when Monica morgen the receptionist:
-	say "[/ss][good morning receptionist].' [/se]says Monica[greet-to receptionist].". 	
+	say "[/ss][good morning receptionist].' [/se][Monica] [say][greet-to receptionist].". 	
 
 Mub-count is a number that varies. Mub-count is 0.
 At the time when Monica urges breakfast:
 	increase Mub-count by 1;
-	say "[alert][/ss]Shall we go for breakfast?' [/se]urges Monica[other times of Mub-count], [/ss]I'm quite hungry.' [/r][/n]";
+	say "[alert][/ss]Shall we go for breakfast?' [/se][Monica] [urge][other times of Mub-count], [/ss]I'm quite hungry.' [/r][/n]";
 	Monica urges breakfast in 1 turn from now.
 	
 Chapter 2.4.3 - Conversation
@@ -507,7 +456,7 @@ Instead of hailing during the check-in:
 Instead of saying hello to someone (called the other) during the check-in:
 	unless the other is Monica:
 		now the current interlocutor is the receptionist;
-		say "[/ss][good evening receptionist], we are Francesco and Monica and we have a reservation.' [/r][/n][/ss]Just a moment, I look for it.' [/se][the naming of receptionist] states and types something on the computer.";
+		say "[/ss][good evening receptionist], we are [printed name of the player] and [Monica] and we have a reservation.' [/r][/n][/ss]Just a moment, I look for it.' [/se][the naming of receptionist] [state] and [type] something on the computer.";
 		the receptionist confirms reservation in 1 turn from now;
 		Monica remember to greet never;
 	otherwise:
@@ -521,7 +470,7 @@ Instead of saying hello to someone (called the other) during the morgen receptio
 	unless the other is Monica:
 		if the location of the player is the reception:
 			now the current interlocutor is the receptionist;
-			say "[/ss][good morning receptionist].' [/se]you say[greet-to receptionist].";
+			say "[/ss][good morning receptionist].' [/se][we] [say][greet-to receptionist].";
 			Monica remember to morgen never;
 			now morgen-trigger is false;
 	otherwise:
@@ -648,10 +597,10 @@ Before opening the bathroom door while a bathroom-door is open and the location 
 
 Before going through the bathroom door from the bathroom-antechamber:
 	if the player is dirty, say "Grubby![line break]Who knows what that sink is for..." instead;
-	if the men-toilet lamp is lit and the men's toilet is not busy, say "You forgot the toilet light on." instead;
+	if the men-toilet lamp is lit and the men's toilet is not busy, say "[We] forgot the toilet light on." instead;
 	if the antechamber-lamp is lit and the men's toilet is not busy and the women's toilet is not busy and leading actors are alone:
 		try opening the bathroom door;
-		say "You forgot the light on." instead.
+		say "[We] forgot the light on." instead.
 
 Book 2.6 - The dining room
 
@@ -672,7 +621,7 @@ Section 2.6.1.2 - The bench
 
 The bench is a scenery enterable supporter in the dining room.
 The description is "A wooden bench padded with dark green velvet cushions."
-After getting off the bench, say "You stand up.".
+After getting off the bench, say "[We] stand up.".
 Rule for supplying a missing noun while entering when the location is the dining room (this is the seat at the tabe rule): now the noun is the bench.
 
 Section 2.6.1.3 - The table
@@ -694,14 +643,14 @@ Two knives, two teaspoons ,two forks and two towels are on the table.
 
 The round plastic container is an open, not openable, not lockable container on the table. 
 The description is "A light brown plastic cylinder; on the surface reads: 'For a clean table'.".
-Instead of taking the round plastic container, say "[alert][/ss]But what do you do with the waste container?' [/se]Monica asks.".
-Instead of taking something which is enclosed by the round plastic container, say "[alert][/ss]Leave it there!' [/se]Monica scolds you [/ss]Now you'd better go wash your hands.' [/r][/n]".
+Instead of taking the round plastic container, say "[alert][/ss]But what do you do with the waste container?' [/se][Monica] [ask].".
+Instead of taking something which is enclosed by the round plastic container, say "[alert][/ss]Leave it there!' [/se][Monica] [scold] you [/ss]Now you'd better go wash your hands.' [/r][/n]".
 
 Chapter 2.6.2 - Rules
 
 After going to the dining room from the reception:
 	if the location of Monica is the reception:
-		say "Monica follows you.";
+		say "[Monica] [follow] you.";
 		now Monica is in the dining room;
 		Monica urges breakfast never;
 		now search-table-trigger is true;
@@ -714,8 +663,8 @@ At the time when the waiter welcomes:
 		unless the current interlocutor is a waiter:
 			let the current waiter be a random waiter in the location;
 			now the current interlocutor is the current waiter;
-			say "[The naming of the current waiter] sees you confused, approaches you and says hello: [/ss]Good morning!' [/r][/n]";
-			say "[/ss]Can I help you?' [/se][regarding the current waiter][they] asks.".
+			say "[The naming of the current waiter] [see] you confused, [approach] you and [say] hello: [/ss]Good morning!' [/r][/n]";
+			say "[/ss]Can I help you?' [/se][regarding the current waiter][they] [ask].".
 			
 Chapter 2.6.4 - Conversation
 
@@ -724,7 +673,7 @@ Section 2.6.4.1 - Searching for the table
 Instead of hailing during the Search for the table:
 	if the current interlocutor is nothing:
 		let W be a random waiter in the location;
-		say "You approach [the naming of W] and say hello: [run paragraph on]";
+		say "[We] [approach] [the naming of W] and say hello: [run paragraph on]";
 		try saying hello to W;
 	otherwise:
 		let W be the current interlocutor;
@@ -733,8 +682,8 @@ Instead of hailing during the Search for the table:
 Instead of saying hello to someone (called the other) during the Search for the table:
 	unless the other is Monica:
 		now the current interlocutor is a random waiter in the location;
-		say "[/ss][good morning current interlocutor], we are staying in the 'Edelweiss' room and it is our first day here.' [/r][/n][/ss]Oh, welcome! Let me show you to your table.' [/se]says [the naming of current interlocutor] and goes to a free table. [/n][/ss]This is the table we have reserved for you, I hope it is to your liking.' [/se][regarding the current interlocutor][they] points to you the table.";
-		say "[heart][/ss]It's perfect!' [/se]exclaims Monica [/ss][thanks current interlocutor].' [/r][/n]";
+		say "[/ss][good morning current interlocutor], we are staying in the 'Edelweiss' room and it is our first day here.' [/r][/n][/ss]Oh, welcome! Let me show you to your table.' [/se][the naming of current interlocutor] [regarding current interlocutor][say] and [go] to a free table. [/n][/ss]This is the table we have reserved for you, I hope it is to your liking.' [/se][regarding the current interlocutor][they] [point] to you the table.";
+		say "[heart][/ss]It's perfect!' [/se][Monica] [exclaim] [/ss][thanks current interlocutor].' [/r][/n]";
 		the waiter welcomes never;
 		now search-table-trigger is false;
 	otherwise:
@@ -745,16 +694,16 @@ Section 2.6.4.2 - Order
 Section 2.6.4.3 - Other responses
 
 Default ask response for a worker:
-	say "[/ss]Sorry, I know nothing about it.' [/se][regarding the noun][they] admits.".
+	say "[/ss]Sorry, I know nothing about it.' [/se][regarding the noun][they] [admit].".
 
 Response of a waiter when asked about bathroom:
-	say “[/ss]Where can I find the toilet?’ [/se]you ask. [/n]”;
-	say "[/ss]'Oh yes, it's inside the door in front of the reception desk.' [/se][the naming of the noun] answers.".
+	say “[/ss]Where can I find the toilet?’ [/se][we] [ask]. [/n]”;
+	say "[/ss]'Oh yes, it's inside the door in front of the reception desk.' [/se][the naming of the noun] [answer].".
 
 Understand "the/-- weather forecast/--" or "the/-- forecast" as "[weather]".	
 Response of a worker when asked about "[weather]" during the Breakfast:
-	say “[/ss]Do you know it might rain today?’ [/se]you ask. [/n]”;
-	say "[/ss]You can find the weather report in the daily hotel newsletter on your table.' [/se][regarding the noun][they] explains.".	
+	say “[/ss]Do you know it might rain today?’ [/se][we] [ask]. [/n]”;
+	say "[/ss]You can find the weather report in the daily hotel newsletter on your table.' [/se][regarding the noun][they] [explain].".	
 			
 Book 2.7 - The buffet
 
@@ -774,6 +723,7 @@ Hair of the player are "blond".
 Notes of the player are "You work as a software engineer, enjoy photography and love hiking in the mountains. [/n]In love with your girlfriend, very beautiful, but also shrewish when something doesn't go her way. In the end you always please her and she appreciates it".
 The player is male.
 The player is leading.
+The printed name of the player is "Francesco".
 A person can be registered. The player is not registered.
 
 Chapter 3.1.1 - Initial player dressing
@@ -798,7 +748,7 @@ The player wears the black t-shirt, the pair of beige shorts and the pair of blu
 Chapter 3.1.2 - The wallet
 
 The wallet is a closed openable container.
-The description is "A grey canvas wallet. It's a gift from Monica.".
+The description is "A grey canvas wallet. It's a gift from [Monica].".
 Check the player opening the wallet:
 	if the player is not carrying the noun:
 		carry out the implicitly taking activity with the noun;
@@ -813,7 +763,7 @@ Instead of taking an unuseful card, say "Right now [the noun] is of no use to yo
 Instead of examining an unuseful card, say "Examining [the noun] now is a waste of time.".
 
 The driving license, the credit card, the debit card, the identity card, the supermarket fidelity card, the photo are in the wallet.
-The description of the photo is "A photo of Monica you took last year at Lake Misurina with the Three Peaks of Lavaredo in the background.".		
+The description of the photo is "A photo of [Monica] you took last year at Lake Misurina with the Three Peaks of Lavaredo in the background.".		
 
 Some money are in the wallet. The description of money is "It's only banknotes, coins annoy you.".
 Instead of taking money, say "There is nothing to pay.".
@@ -858,56 +808,56 @@ Monica wears the pair of jeans, the striped camisole,  the pair of shimmering go
 
 Chapter 3.2.2 - Monica dressing rules
 
-To say do-not-touch: say "[alert]Monica slaps your hand and scolds you: [/ss]Don't touch!'[/r]".
+To say do-not-touch: say "[alert][Monica] [slap] your hand and [scold] you: [/ss]Don't touch!'[/r]".
 Instead of opening a monica-bag, say "[do-not-touch]".
 Instead of taking a monica-bag, say "[do-not-touch]".
 Instead of searching a monica-bag, say "[do-not-touch]".
 
 Persuasion rule for asking Monica to try dropping a monica-bag:
-	say "[alert]She looks at you angrily and clutches her [noun].";
+	say "[alert][regarding the actor][They] [look] at you angrily and [clutch] [their] [noun].";
 	persuasion fails.
 Persuasion rule for asking Monica to try opening a monica-bag:
-	say "[alert][/ss]This is mine and I do what I want with it. [/se]she shuts you up.";
+	say "[alert][/ss]This is mine and I do what I want with it.' [/se][regarding the actor][they] [shut] you up.";
 	persuasion fails.
 Persuasion rule for asking Monica to try getting off a cloth:
-	say "[alert][/ss]Aren't you ashamed to ask me this?' [/se]she asks you angrily.";
+	say "[alert][/ss]Aren't you ashamed to ask me this?' [/se][regarding the actor][they] [ask] you angrily.";
 	persuasion fails.
-Instead of taking a cloth which is worn by Monica, say "[alert][/ss]Hey, what are you trying to do? '[/se]shrieks Monica.".
+Instead of taking a cloth which is worn by Monica, say "[alert][/ss]Hey, what are you trying to do?' [/se][Monica] [shriek].".
 Persuasion rule for asking Monica to try giving a cloth to someone: 
-	say "[alert][/ss]No way!' [/se]she replies."; 
+	say "[alert][/ss]No way!' [/se][regarding the actor][they] [reply]."; 
 	persuasion fails.
 
 Chapter 3.2.3 - Kisses
 
 Instead of kissing something:
-	if the noun is Monica, say "[heart][/ss][one of]On dear[or]I love you[at random]!' [/se]she whispers sweetly in your ear." instead;
-	if the noun is a woman, say "[alert]I'm here to be kissed!' [/se]Monica scolds you." instead;
-	if the noun is a man, say "[/ss]Do you like men now?' [/se]amazed Monica asks you." instead;
-	say "[/ss]Hold the kisses for me!' [/se]Monica scolds you.".
+	if the noun is Monica, say "[heart][/ss][one of]On dear[or]I love you[at random]!' [/se][regarding the noun][they] [whisper] sweetly in your ear." instead;
+	if the noun is a female person, say "[alert][/ss]I'm here to be kissed!' [/se][Monica] [scold] you." instead;
+	if the noun is a male person, say "[/ss]Do you like men now?' [/se]amazed [Monica] [ask] you." instead;
+	say "[/ss]Hold the kisses for me!' [/se][Monica] [scold] you.".
 
 Persuasion rule for asking Monica to try kissing someone:
 	if the noun is the player:
-		say "[heart][/ss][one of]Oh dear[or]I love you[or]Here, my love[at random]!' [/se]she says and places her lips on yours. [/n]You greatly appreciate this kiss.";
+		say "[heart][/ss][one of]Oh dear[or]I love you[or]Here, my love[at random]!' [/se][regarding the actor][they] [say] and [place] her lips on yours. [/n][We] greatly [appreciate] this kiss.";
 		persuasion fails;
 	otherwise:
-		say "[heart][/ss]My lips are only for you!' [/se]she says and kisses you instead. [/n]You greatly appreciate it.";
+		say "[heart][/ss]My lips are only for you!' [/se][regarding the actor][they] [say] and [kiss] you instead. [/n][We] greatly [appreciate] this.";
 		persuasion fails.
 
 Chapter 3.2.4 - Singing and dancing
 
 Persuasion rule for asking Monica to try singing: 
 	unless leading actors are alone:
-		say "[alert][/ss]No, I don't sing, I'm ashamed.' [/se]she answers.";
+		say "[alert][/ss]No, I don't sing, I'm ashamed.' [/se][regarding the actor][they] [answer].";
 	otherwise:
-		say "[alert][/ss]Why do you want me to sing if you know I'm out of tune?' [/se]she asks.";
+		say "[alert][/ss]Why do you want me to sing if you know I'm out of tune?' [/se][regarding the actor][they] [ask].";
 	persuasion fails.
 
 To clap is a verb.
 Persuasion rule for asking Monica to try dancing: persuasion succeeds.
 Report Monica dancing:
-	say "[heart][The actor]  does a twirl. [/n]";
+	say "[heart][The actor]  [do] a twirl. [/n]";
 	unless the number of not leading people in the location is zero, say "[The list of not leading people in the location] [clap]. [/n]";
-	say "You kiss her.".
+	say "[We] [kiss] [regarding the actor][them].".
 			
 Book 3.3 - The receptionist
 
@@ -944,7 +894,7 @@ Volume 4 - Scenes
 Book 4.1 - Intro
 
 To say story-beginning: 
-	say "[/i]A summery Friday evening. [/r][/p]You are driving your car to a small town in the Dolomites. [/n]Next to you is Monica, your girlfriend; you have set off for a relaxing weekend after a hard day at work. [/n][/ss]Still a long way to go?' [/se]Monica asks.[/ss]We will be at the hotel shortly.' [/se]you reply. [/n]She rests her head on your shoulder and caresses your neck."
+	say "[/i]A summery Friday evening. [/r][/p][We] [are] driving your car to a small town in the Dolomites. [/n]Next to you is [Monica], your girlfriend; [we] [have] set off for a relaxing weekend after a hard day at work. [/n][/ss]Still a long way to go?' [/se][Monica] [ask].[/ss]We will be at the hotel shortly.' [/se][we] [reply]. [/n][regarding Monica][They] [rest] [their] head on your shoulder and [caress] your neck."
 	
 Book 4.2 - Arrival
 
@@ -954,21 +904,21 @@ When Arrival begins: now alerts is zero.
 The Arrival ends when arrival-trigger is false.
  	
 To say arrive to hotel:
-	say "[/p][/i]A few minutes later. [/r][/p]You arrive at the hotel and you park your car in the private car parking area next to the garden. [/p]".
+	say "[/p][/i]A few minutes later. [/r][/p][We] [arrive] at the hotel and [park] your car in the private car parking area next to the garden. [/p]".
 	
 When Arrival ends:
-	if alerts is greater than zero, say "Let's start well: you have just arrived and Monica has already rebuked you [alerts in words] time[s].";
+	if alerts is greater than zero, say "Let's start well: [we] [have] just arrived and [Monica] [have] already rebuked you [alerts in words] time[s].";
 	now alerts is 0.
 	
 Book 4.3 - Check-in
 
-The Check-in is a scene. "It's time to check in: you have just arrived at the hotel.".
+The Check-in is a scene. "It's time to check in: [we] [have] just arrived at the hotel.".
 The check-in-trigger is a truth state that varies.
 The Check-in begins when check-in-trigger is true.
 The Check-in ends when check-in-trigger is false.
 When Check-in ends:
-	say "You and Monica bid farewell to the receptionist and set off up the stairs. [/n][/ss]Have a good night!' [/se][the naming of the receptionist] wishes you. [/n]";
-	say "[heart]Monica wraps her arm around your waist and gives you a kiss on the neck.";
+	say "[We] and [Monica] bid farewell to the receptionist and set off up the stairs. [/n][/ss]Have a good night!' [/se][the naming of the receptionist] [wish] you. [/n]";
+	say "[heart][Monica] [wrap] [their] arm around your waist and [give] you a kiss on the neck.";
 	pause the game.
 	
 Book 4.4 - Breakfast
@@ -998,9 +948,9 @@ When the Breakfast begins:
 	[description]
 	now the current interlocutor is nothing;
 	say "[note style]The morning after. [/r][/p]";
-	say "After a good night's sleep, you are ready to enjoy the first day of your holiday. [/n]You and Monica go down the stairs and back to reception. [/n]You wear [a list of cloth worn by the player]; Monica wears [a list of cloth worn by Monica]. [/n]";
-	say "[The naming of the receptionist] is working behind the counter. [/n]";
-	say "[/ss]Miss Monica and Mr. Francesco good morning!' [/se]wishes [the naming of the receptionist], [/ss]You're looking good today!' [/r][/n]";
+	say "After a good night's sleep, [we] [are] ready to enjoy the first day of your holiday. [/n][We] and [Monica] go down the stairs and back to reception. [/n][We] [wear] [a list of cloth worn by the player]; [Monica] [wear] [a list of cloth worn by Monica]. [/n]";
+	say "[The naming of the receptionist] [are] working behind the counter. [/n]";
+	say "[/ss]Miss [Monica] and Mr. [printed name of the player] good morning!' [/se]wishes [the naming of the receptionist], [/ss]You're looking good today!' [/r][/n]";
 	now morgen-trigger is true.
 	
 Chapter 4.4.1 - Greeting the receptionist
@@ -1025,6 +975,6 @@ Search for the table begins when search-table-trigger is true.
 Search for the table ends when search-table-trigger is false.
 
 When Search for the table begins:
-	say "[heart][/ss]Very nice, isn't it?' [/se]asks Monica, [/ss]I wonder where we can sit.' [/r][/n]";
+	say "[heart][/ss]Very nice, isn't it?' [/se][Monica] [ask], [/ss1]I wonder where we can sit.' [/r][/n]";
 	the waiter welcomes in 3 turns from now.
 	

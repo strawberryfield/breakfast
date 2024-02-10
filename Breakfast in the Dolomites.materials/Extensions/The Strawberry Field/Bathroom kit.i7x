@@ -34,9 +34,15 @@ Volume 2 - Sink
 A sink-item is a kind of thing.
 
 Washing hands is an action applying to nothing and requiring light.
-Understand "Wash the/-- hands" as washing hands.
-Understand "Clean the/-- hands" as washing hands.
+Washing hands in is an action applying to one thing and requiring light.
+Understand "wash the/my/-- hands" as washing hands.
+Understand "clean the/my/-- hands" as washing hands.
+Understand "wash the/my/-- hands in/with [sink-item]" as washing hands in.
+Understand "clean the/my/-- hands in/with [sink-item]" as washing hands in.
 
+Carry out washing hands in:
+	try washing hands instead.
+	
 Check washing hands:
 	unless a sink-item is in the location of the player, say "There is nothing to wash with." instead.
 Carry out washing hands:
