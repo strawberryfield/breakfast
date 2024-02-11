@@ -21,6 +21,7 @@ Include Cleared Events by Daniel Stelzer.
 Include Large Game Speedup by Nathanael Nerode.
 Include Conversation Package by Eric Eve.
 Include Assorted Text Generation by Emily Short.
+[Include Measured Liquid by Emily Short.]
 Include Basic Screen Effects by Emily Short.
 Include Glulx Text Effects (for Glulx only) by Emily Short.
 Include Scopability by Brady Garvin.
@@ -928,28 +929,56 @@ The narrator is a backdrop.
 The narrator is everywhere.
 Understand "storyteller/teller" as the narrator.
 
-Instead of examining the narrator, say "The narrator is invisible. [/n]He should limit himself to describing situations and executing, as far as possible, the player's commands."
-
 Chapter 3.5.1 - Interaction
 
 Instead of saying hello to the narrator, say "[first time][/i]Welcome to this game! [/r][/n][only]Remember[first time], however,[only] that I, as the narrator, cannot be involved in the play: interact with [Monica] and the other characters."
 
-Understand "narrator/storyteller/teller" as "[narrator]".
+Understand "narrator/storyteller/teller/master" as "[narrator]".
 Asking narrator for is an action applying to one thing.
-Understand "Ask the/-- [narrator] for [anything]" as asking narrator for.
+Understand "ask the/-- [narrator] for [anything]" as asking narrator for.
 Carry out asking narrator for:
 	try saying hello to the narrator.
 	
 Asking narrator about is an action applying to one thing.
-Understand "Ask the/-- [narrator] about [anything]" as asking narrator about.
+Understand "ask the/-- [narrator] about [anything]" as asking narrator about.
 Carry out asking narrator about:
 	try saying hello to the narrator.
 
 Quizzing narrator about is an action applying to one topic.
-Understand "Ask the/-- [narrator] about [text]" as quizzing narrator about.
+Understand "ask the/-- [narrator] about [text]" as quizzing narrator about.
 Carry out quizzing narrator about:
 	try saying hello to the narrator.
+	
+Chapter 3.5.2 - Minimal help system
 
+Asking help is an action applying to nothing.
+Understand "help me/-- please/--" as asking help.
+Understand the command "hint" as "help".
+Understand the command "info" as "help".
+Understand the command "advise" as "help".
+Understand the command "suggest" as "help".
+Understand the command "tip" as "help".
+
+To say help1: say "It is not my job to help the player, but I can give you some advice".
+To say help2: say "First of all look carefully at anything around".
+To say help3: say "Next, pay attention to everything [Monica] [say] and [do]".
+Understand "help/hint/hints/suggestion/suggestions/info/tip/advise" as "[help]".
+Response of a worker when asked about "[help]":
+	try the noun asking help.
+Carry out an actor asking help:
+	if the actor is the player:
+		say "[first time]I am sorry to hear you are stuck. [/n][only][help1]. [/n][help2]. [/n][help3]. [/n]";
+		unless the number of not leading people in the location is zero, say "[The list of not leading people in the location] [can] tell you something of interest.";
+	otherwise:
+		say "[/ss][help1].' [/se][the actor] [say]. [/n]";
+		say "[/ss][help2].' [/r][/n]";
+		if the actor is Monica, say "[heart][/ss]And as I always tell you, pay attention to what I say and do: you know I am always right!' [/r][/n]";
+		otherwise:
+			say "[/ss][help3].' [/r][/n]";
+			say "[/ss]'But,' [/se][regarding the actor][they] [go] on [/ss1]if you want to ask me more specific questions, I will be more than happy to help you.' [/r][/n]".
+
+Persuasion rule for asking a person to try asking help: persuasion succeeds.
+			
 Volume 4 - Scenes
 
 Book 4.1 - Intro
