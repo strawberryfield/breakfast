@@ -790,6 +790,9 @@ To say heart:
 	say "[special-style-1][unicode 9829] [/r]";
 	increase hearts by 1.
 
+For printing a locale paragraph about Monica:
+	say "[Monica] [are] next to you."
+	
 Chapter 3.2.1 - Monica initial dressing
 
 The pair of jeans is a cloth. The description is "A pair of slightly frayed skinny jeans."
@@ -829,20 +832,50 @@ Persuasion rule for asking Monica to try giving a cloth to someone:
 
 Chapter 3.2.3 - Kisses
 
+Understand the command "kiss" as something new.
+Understand "kiss [something]" as kissing.
+Kisses-count is a number that varies. Kisses-count is 0.
+Kisses-limit is always six.
 Instead of kissing something:
-	if the noun is Monica, say "[heart][/ss][one of]On dear[or]I love you[at random]!' [/se][regarding the noun][they] [whisper] sweetly in your ear." instead;
+	if the noun is Monica:
+		increase kisses-count by one;
+		if kisses-count is greater than kisses-limit, say no more kisses instead;
+		say "[heart][/ss][one of]On dear[or]I love you[at random]!' [/se][regarding the noun][they] [whisper] sweetly in your ear.";
+		if kisses-count is three, say narrator love kissing;
+		stop the action;
 	if the noun is a female person, say "[alert][/ss]I'm here to be kissed!' [/se][Monica] [scold] you." instead;
 	if the noun is a male person, say "[/ss]Do you like men now?' [/se]amazed [Monica] [ask] you." instead;
 	say "[/ss]Hold the kisses for me!' [/se][Monica] [scold] you.".
 
-Persuasion rule for asking Monica to try kissing someone:
+Persuasion rule for asking Monica to try kissing something:
 	if the noun is the player:
+		increase kisses-count by one;
+		if kisses-count is greater than kisses-limit:
+			say no more kisses;
+			persuasion fails;
 		say "[heart][/ss][one of]Oh dear[or]I love you[or]Here, my love[at random]!' [/se][regarding the actor][they] [say] and [place] her lips on yours. [/n][We] greatly [appreciate] this kiss.";
+		if kisses-count is three, say narrator love kissing;
 		persuasion fails;
-	otherwise:
+	if the noun is a person:
+		increase kisses-count by one;
+		if kisses-count is greater than kisses-limit, persuasion fails;
 		say "[heart][/ss]My lips are only for you!' [/se][regarding the actor][they] [say] and [kiss] you instead. [/n][We] greatly [appreciate] this.";
-		persuasion fails.
+		if kisses-count is three, say narrator love kissing;
+		persuasion fails;
+	if the noun is the narrator:
+		say "Unfortunately, the rules of the game do not allow it, but I have to admit that I would have loved to do it.";
+		persuasion fails;
+	say "[/ss]I don't think so.' [/se][Monica] [answer].";
+	persuasion fails;
 
+To say narrator love kissing:
+	say "This kissing scene is starting to feel pretty enjoyable...";
+	say "[/ss]Don't get your hopes up!' [/se]the actress who plays [Monica] [say] to the narrator [/ss1]They are just stage kisses.' [/r][/n]";
+	say "Ok, Ok, I'll try to remain professional.".
+	
+To say no more kisses:
+	say "[/ss]We have already kissed so many times.' [/se][Monica] [remind] [/ss1]I love kissing you, but now we have to get on with the game.' [/r][/n]".
+	
 Chapter 3.2.4 - Singing and dancing
 
 Persuasion rule for asking Monica to try singing: 
@@ -888,6 +921,34 @@ Hair are "auburn". Eyes are "green".
 Proper name is "Mila".
 Printed name is "waitress".
 Mila is improper-named. 
+
+Book 3.5 - The narrator
+
+The narrator is a backdrop.
+The narrator is everywhere.
+Understand "storyteller/teller" as the narrator.
+
+Instead of examining the narrator, say "The narrator is invisible. [/n]He should limit himself to describing situations and executing, as far as possible, the player's commands."
+
+Chapter 3.5.1 - Interaction
+
+Instead of saying hello to the narrator, say "[first time][/i]Welcome to this game! [/r][/n][only]Remember[first time], however,[only] that I, as the narrator, cannot be involved in the play: interact with [Monica] and the other characters."
+
+Understand "narrator/storyteller/teller" as "[narrator]".
+Asking narrator for is an action applying to one thing.
+Understand "Ask the/-- [narrator] for [anything]" as asking narrator for.
+Carry out asking narrator for:
+	try saying hello to the narrator.
+	
+Asking narrator about is an action applying to one thing.
+Understand "Ask the/-- [narrator] about [anything]" as asking narrator about.
+Carry out asking narrator about:
+	try saying hello to the narrator.
+
+Quizzing narrator about is an action applying to one topic.
+Understand "Ask the/-- [narrator] about [text]" as quizzing narrator about.
+Carry out quizzing narrator about:
+	try saying hello to the narrator.
 
 Volume 4 - Scenes
 
