@@ -20,12 +20,13 @@ Chapter 0.1 - Includes
 Include Cleared Events by Daniel Stelzer.
 Include Large Game Speedup by Nathanael Nerode.
 Include Conversation Package by Eric Eve.
+Include Metric Units by Graham Nelson.
 Include Assorted Text Generation by Emily Short.
-[Include Measured Liquid by Emily Short.]
 Include Basic Screen Effects by Emily Short.
 Include Glulx Text Effects (for Glulx only) by Emily Short.
 Include Scopability by Brady Garvin.
 Include Customized Trinity Inventory by The Strawberry Field.
+Include Customized Measured Liquid by The Strawberry Field.
 Include Commons by The Strawberry Field.
 Include Food by The Strawberry Field.
 Include Workers by The Strawberry Field.
@@ -710,6 +711,17 @@ Book 2.7 - The buffet
 
 The description of the buffet is "The buffet is a feast for the senses, featuring a variety of locally sourced and homemade delights. Guests can savor freshly baked pastries, artisanal bread, jams, and a selection of cheeses and cured meats, showcasing the flavors of the Dolomites.".
 
+Chapter 2.7.1 - Drinks
+
+A jug is a kind of fluid container.
+A bottle is a kind of fluid container.
+
+
+Section 2.7.1.1 - The cupboard
+
+The cupboard is a scenery supporter in the buffet.
+Two jugs are on the cupboard.
+
 Volume 3 - Peoples
 
 A person can be leading. A person is usually not leading.
@@ -962,7 +974,7 @@ Understand the command "tip" as "help".
 To say help1: say "It is not my job to help the player, but I can give you some advice".
 To say help2: say "First of all look carefully at anything around".
 To say help3: say "Next, pay attention to everything [Monica] [say] and [do]".
-Understand "help/hint/hints/suggestion/suggestions/info/tip/advise" as "[help]".
+Understand "help/hint/hints/suggestion/suggestions/info/tip/advise/game" or "this game/story" as "[help]".
 Response of a worker when asked about "[help]":
 	try the noun asking help.
 Carry out an actor asking help:
