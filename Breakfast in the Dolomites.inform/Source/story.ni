@@ -713,14 +713,73 @@ The description of the buffet is "The buffet is a feast for the senses, featurin
 
 Chapter 2.7.1 - Drinks
 
-A jug is a kind of fluid container.
-A bottle is a kind of fluid container.
+Section 2.7.1.1 - Containers
+
+A jug is a kind of fluid container. The fluid capacity of a jug is 1.5 litres. 
+A bottle is a kind of fluid container. The fluid capacity of the bottle is 1 litre.
+A glass is a kind of fluid container. The fluid capacity of a glass is 200 ml.
+A glass is preferred for drinking.
+
+A cup is a kind of fluid container. The fluid capacity of a cup is 200 ml.
+A coffeecup is a kind of fluid container. The fluid capacity of a coffeecup is 50 ml.
+A mug is a kind of fluid container. The fluid capacity of a mug is 300 ml.
+A pot is a kind of fluid container. The fluid capacity of a pot is 100 ml.
+
+A dish is a kind of portable supporter.
+
+Section 2.7.1.2 - Liquids
+
+Table of Liquids (continued)
+liquid	potable	flavor
+milk	true	"A smooth, sweet taste; thirst-quenching and nourishing."
+orange juice	true	"A pungent, slightly acidic flavour; very refreshing."
+apple juice	true	"Clear and crystalline, with an inviting straw-yellow colour, it offers a sweet, natural and fresh flavour."
+pear nectar	true	"A sweet nectar with the delicate flavour of freshly picked pears."
+coffee	true	"The unmistakable aroma of espresso coffee, black, bitter with a soft cream."
+cappuccino	true	"Characterised by the unmistakable aromas of coffee, its bitter taste and the roundness of whipped milk that sticks around the mouth."
+hot chocolate	true	"Delicious hot chocolate with all the taste of cocoa and mountain milk."
+tea	true	"A herbaceous flavour with a tendency to be bitter and slightly astringent."
 
 
-Section 2.7.1.1 - The cupboard
+Section 2.7.1.3 - The cupboard
 
 The cupboard is a scenery supporter in the buffet.
-Two jugs are on the cupboard.
+The description is "A cupboard in light fir wood. There are two drawers at the bottom, one on the left and one on the right.".
+Understand "sideboard" as the cupboard.
+The left drawer is a closed, openable container. It is part of the cupboard.
+The right drawer is a closed, openable container. It is part of the cupboard.
+Ten glasses are in the left drawer.
+A bib is a kind of wearable thing.
+Three bibs are in the right drawer.
+
+Ten dishes are on the cupboard.
+Three jugs are on the cupboard.
+Two bottles are on the cupboard.
+
+Table of the bottles
+liquid-type	quantity
+water	1000 cc
+milk	600 cc
+
+Table of the jugs
+liquid-type	quantity
+orange juice	1200 cc
+apple juice	800 cc
+pear nectar	1400 cc
+
+When play begins:
+	let tablerow be 1;
+	repeat with current jug running through list of jugs which are on the cupboard:
+		choose row tablerow in the Table of the jugs;
+		now the liquid of the current jug is liquid-type entry;
+		now the fluid content of the current jug is quantity entry;
+		increment tablerow;
+	let tablerow be 1;
+	repeat with current bottle running through list of bottles which are on the cupboard:
+		choose row tablerow in the Table of the bottles;
+		now the liquid of the current bottle is liquid-type entry;
+		now the fluid content of the current bottle is quantity entry;
+		increment tablerow.
 
 Volume 3 - Peoples
 
