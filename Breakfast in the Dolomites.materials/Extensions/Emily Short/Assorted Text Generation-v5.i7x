@@ -248,7 +248,8 @@ To say proportion of (superset - a description of objects) conforming to the des
 	say subset count as a proportion of superset count;
 	say " [are]";
 
-To say (N - a number) as a/-- proportion:
+[patch by The Strawberry Field]
+To say (N - a real number) as a/-- proportion:
 	if N is greater than 100:
 		say "*** BUG: [N] being printed as a percentage ***";
 	repeat through the Table of Proportions:

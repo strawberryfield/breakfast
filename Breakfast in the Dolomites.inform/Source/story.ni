@@ -26,7 +26,7 @@ Include Basic Screen Effects by Emily Short.
 Include Glulx Text Effects (for Glulx only) by Emily Short.
 Include Scopability by Brady Garvin.
 Include Customized Trinity Inventory by The Strawberry Field.
-Include Customized Measured Liquid by The Strawberry Field.
+Include Measured Liquid by Emily Short.
 Include Commons by The Strawberry Field.
 Include Food by The Strawberry Field.
 Include Workers by The Strawberry Field.
@@ -72,6 +72,40 @@ Table of User Styles (continued)
 style name	color	italic	font weight
 special-style-1	"#FF0000"	false	regular-weight
 note-style	"#0000A0"	true	bold-weight
+
+Book 1.2 - Patches
+
+Chapter 1.2.1 - Measured liquids interfere with content of supporters
+
+[resolved by otisdog]
+After printing the name of a fluid container (called the target) while not [examining or searching or] pouring (this is the alternate suffix with contents rule):
+	if the current action is the action of opening the target:
+		do nothing;
+	if the target is a liquid source:
+		do nothing instead;
+	if the target is closed and the target is not transparent:
+		do nothing instead; 
+	if the person asked is not the player:
+		do nothing instead;
+	unless the target is empty:
+		unless examining the target or searching the target: [added]
+			say " of [liquid of the target]" (A);
+			omit contents in listing.
+
+The alternate suffix with contents rule is listed instead of the suffix with contents rule in the after printing the name rules.
+
+Chapter 1.2.2 - Measured liquids interfere with Trinity Inventory
+
+[resolved by otisdog]
+Rule for inventory listing the contents of a fluid container (called target):
+	do nothing.
+
+Carry out taking inventory when the number of listed when carried things carried by the player is at least one (this is the alternate non-empty inventory rule):
+	say "holding [a list of listed when carried things carried by the player][run paragraph on]" (A).
+
+The alternate non-empty inventory rule is listed instead of the non-empty inventory rule in the carry out taking inventory rules.
+
+The inventory normal rule is not listed in any rulebook.
 
 Volume 2 - Rooms definitions
 

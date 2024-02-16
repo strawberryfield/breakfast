@@ -1,8 +1,7 @@
-Version 6.3 of Customized Measured Liquid by The Strawberry Field begins here.
+Version 6.3 of Measured Liquid by Emily Short begins here.
 
 "Measured Liquid provides a concept of volume, together with the ability to fill containers, pour measured amounts of liquid, and drink from containers. It handles mixtures as well, if desired. It is compatible with, but does not require, the Metric Units extension by Graham Nelson."
 
-[based on original work by Emily Short]
 [Updated for adaptive responses.]
 
 To hold is a verb. To contain is a verb. To clean is a verb. To fill is a verb. To dump is a verb. To must is a verb. To remain is a verb. To offer is a verb. To pour is a verb. To lead is a verb. To fit is a verb.
@@ -355,7 +354,7 @@ Rule for describing the fullness of an ungraduated non-empty emptyable fluid con
 	otherwise if the sample cup is full:
 		say " full" (D);
 	otherwise:
-		say "[percent] full" (E);
+		say "[percent as a proportion] full" (E);
 	say " of [the liquid of the sample cup].[no line break]" (F). 
 
 Section 3 - Dull Fullness (for use without Assorted Text Generation by Emily Short)
@@ -768,7 +767,7 @@ Unsuccessful attempt by someone drinking something (this is the explain unsucces
 			rule succeeds.
 
 
-Customized Measured Liquid ends here.
+Measured Liquid ends here.
 
 ---- Documentation ----
 
