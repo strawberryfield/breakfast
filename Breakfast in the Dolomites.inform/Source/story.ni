@@ -376,7 +376,7 @@ To say breakfast time:
 	if the location of Monica is the reception,	say "[alert][/ss]Where are you going?' [/se][Monica] [say], [/ss]now it's breakfast time!' [/r][/n]";
 	otherwise:
 		say "[Monica] is waiting for you at the table. [/n]".	
-Instead of going outside during the breakfast:
+Instead of going outside from the reception during the breakfast:
 	say "[breakfast time]".
 Instead of going up during the breakfast:
 	say "[breakfast time]".
@@ -479,8 +479,9 @@ At the time when Monica morgen the receptionist:
 
 Mub-count is a number that varies. Mub-count is 0.
 At the time when Monica urges breakfast:
-	increase Mub-count by 1;
-	say "[alert][/ss]Shall we go for breakfast?' [/se][Monica] [urge][other times of Mub-count], [/ss]I'm quite hungry.' [/r][/n]";
+	if Monica is in the location:
+		increase Mub-count by 1;
+		say "[alert][/ss]Shall we go for breakfast?' [/se][Monica] [urge][other times of Mub-count], [/ss]I'm quite hungry.' [/r][/n]";
 	Monica urges breakfast in 1 turn from now.
 	
 Chapter 2.4.3 - Conversation
@@ -690,7 +691,7 @@ After going to the dining room from the reception:
 		now Monica is in the dining room;
 		Monica urges breakfast never;
 		now search-table-trigger is true;
-		continue the action.
+	continue the action.
 
 Chapter 2.6.3 - Timed events
 
@@ -778,7 +779,7 @@ tea	true	"A herbaceous flavour with a tendency to be bitter and slightly astring
 Section 2.7.1.3 - The cupboard
 
 The cupboard is a scenery supporter in the buffet.
-The description is "A cupboard in light fir wood. There are two drawers at the bottom, one on the left and one on the right.".
+The description is "A cupboard in light fir wood. Under the top are two drawers, one on the left and one on the right.".
 Understand "sideboard" as the cupboard.
 The left drawer is a closed, openable container. It is part of the cupboard.
 The right drawer is a closed, openable container. It is part of the cupboard.
@@ -786,6 +787,9 @@ Ten glasses are in the left drawer.
 A bib is a kind of wearable thing.
 Three bibs are in the right drawer.
 
+Rule for printing a locale paragraph about the cupboard:
+	say "To the right is a wooden cupboard. On it are some empty dishes and containers with cold drinks.".
+	
 Ten dishes are on the cupboard.
 Three jugs are on the cupboard.
 Two bottles are on the cupboard.
@@ -814,6 +818,57 @@ When play begins:
 		now the liquid of the current bottle is liquid-type entry;
 		now the fluid content of the current bottle is quantity entry;
 		increment tablerow.
+
+Chapter 2.7.2 - Food
+
+Section 2.7.2.1 - Meats
+
+A slice of speck is a kind of food-item. 
+The description is "A slice of typical Tyrolean smoked ham. Dark red in color with thin white streaks of fat." 
+The plural of slice of speck is slices of speck.
+The scent-description of a slice of speck is "a slight smell of smoke".
+The flavor-description of the slice of speck is "an intense and spicy flavor of the pork leg enhanced by the expert smoking".
+
+A slice of salami is a kind of food-item. 
+The description is "A slice of seasoned sausage. Dark red in color with little dots of fat." 
+The plural of slice of salami is slices of salami.
+The scent-description of a slice of salami is "light scent of spices".
+The flavor-description of the slice of salami is "lightly smoked over beech wood and cured in the pure mountain air, it develops an extraordinary aroma".
+
+Section 2.7.2.2 - Butter and jams
+
+A knob of butter is a kind of butter-item. 
+The description is "A little light-yellow cube of butter."
+The plural of knob of butter is knobs of butter.
+
+Section 2.7.2.3 - Bread
+
+A slice of white bread is a kind of bread slice.
+The plural of slice of white bread is slices of white bread.
+A slice of pumpernickel bread is a kind of bread slice.
+The plural of slice of pumpernickel bread is slices of pumpernickel bread.
+Understand "rye/black bread/--" as slice of pumpernickel bread.
+
+
+Section 2.7.2.4 - The buffet table
+
+The buffet table is a scenery supporter in the buffet. 
+The description is "A large table with a white table cloth on it."
+Rule for printing a locale paragraph about the buffet table:
+	say "To the left is a table on which are bread, butter, jams, meats and cheese.".
+
+A service container is a kind of container. It is open and not openable.
+Instead of taking a service container, say "[The noun] is a container that has to remain at the disposal of everyone, so leave it where it is.".
+Instead of inserting something into a service container, say "Any food that has been in contact with you will no longer be of use to others."
+
+The white basket is a service container.
+The description of the white basket is "A small wicker basket dyed white. The interior is lined with a white canvas.".
+8 slices of white bread are in the white basket.
+The brown basket is a service container.
+The description of the brown basket is "A small natural wicker basket. The interior is lined with a red canvas.".
+10 slices of pumpernickel bread are in the brown basket.
+
+The white basket and the brown basket are on the buffet table.
 
 Volume 3 - Peoples
 
@@ -1027,6 +1082,16 @@ Hair are "auburn". Eyes are "green".
 Proper name is "Mila".
 Printed name is "waitress".
 Mila is improper-named. 
+
+Chapter 3.4.3 - The cook
+
+Emma is a worker in the buffet.
+Emma is female.
+Hair are "a bonnet covering her". Eyes are "brown".
+Proper name is "Emma".
+Printed name is "cook".
+Emma is improper-named. 
+Understand "cook/waitress" as Emma.
 
 Book 3.5 - The narrator
 

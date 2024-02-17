@@ -159,6 +159,7 @@ For printing the locale description
 			carry out the printing a locale paragraph about activity with the notable-object entry;
 	continue the activity.
 
+
 The optimized you-can-also-see rule is listed instead of the you-can-also-see rule in the for printing the locale description rulebook.
 For printing the locale description
 	(this is the optimized you-can-also-see rule):
@@ -219,6 +220,7 @@ For printing the locale description
 				say ".[paragraph break]" (H);
 			end the listing nondescript items activity with the domain;
 	continue the activity.
+
 
 Chapter - Improved WriteListFrom
 
