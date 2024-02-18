@@ -835,6 +835,16 @@ The plural of slice of salami is slices of salami.
 The scent-description of a slice of salami is "light scent of spices".
 The flavor-description of the slice of salami is "lightly smoked over beech wood and cured in the pure mountain air, it develops an extraordinary aroma".
 
+A slice of Ahrntal gray cheese is a kind of food-item.
+The description is "A slice of the typical 'gray cheese' from Sudtyrol."
+The plural of slice of Ahrntal gray cheese is slices of Ahrntal gray cheese.
+The scent-description of a slice of Ahrntal gray cheese is "good seasoned cheese".
+The flavor-description of a slice of Ahrntal gray cheese is "in the cheese, milky and toasted notes reminiscent of milk, cream and heated butter prevail, while there are also agre notes reminding us of fermented milk and yoghurt".
+
+Response of a waiter when asked about a slice of Ahrntal gray cheese:
+	say "[/ss]The cheese in the buffet is the traditional Ahrntal grey cheese.' [/se][the naming of the noun] [explain] ";
+	say "[/ss1]Its unattractive appearance is due to the presence of a precious mould; it is the leanest of the cheeses, so much so that the fat content in the dry residue does not exceed two per cent: it is actually a product made from the milk left over from butter production, without the use of rennet.' [/r][/n]".
+
 Section 2.7.2.2 - Butter and jams
 
 A knob of butter is a kind of butter-item. 
@@ -849,26 +859,33 @@ A slice of pumpernickel bread is a kind of bread slice.
 The plural of slice of pumpernickel bread is slices of pumpernickel bread.
 Understand "rye/black bread/--" as slice of pumpernickel bread.
 
-
 Section 2.7.2.4 - The buffet table
 
-The buffet table is a scenery supporter in the buffet. 
-The description is "A large table with a white table cloth on it."
+The buffet table is a scenery service table in the buffet. 
+The description is "A large table with a white tablecloth."
 Rule for printing a locale paragraph about the buffet table:
 	say "To the left is a table on which are bread, butter, jams, meats and cheese.".
-
-A service container is a kind of container. It is open and not openable.
-Instead of taking a service container, say "[The noun] is a container that has to remain at the disposal of everyone, so leave it where it is.".
-Instead of inserting something into a service container, say "Any food that has been in contact with you will no longer be of use to others."
-
+		
 The white basket is a service container.
-The description of the white basket is "A small wicker basket dyed white. The interior is lined with a white canvas.".
+The description of the white basket is "A small wicker basket dyed white. The inside is lined with a white canvas.".
 8 slices of white bread are in the white basket.
 The brown basket is a service container.
-The description of the brown basket is "A small natural wicker basket. The interior is lined with a red canvas.".
+The description of the brown basket is "A small natural wicker basket. The inside is lined with a red canvas.".
 10 slices of pumpernickel bread are in the brown basket.
 
 The white basket and the brown basket are on the buffet table.
+
+A chopping board is a kind of service supporter.
+The description is "A wooden chopping board."
+
+The first chopping board is a scenery chopping board.
+5 slices of speck are on the first chopping board.
+The second chopping board is a scenery chopping board.
+3 slices of salami are on the second chopping board.
+The third chopping board is a scenery chopping board.
+2 slices of Ahrntal gray cheese are on the third chopping board.
+
+The first chopping board, the second chopping board and the third chopping board are on the buffet table.
 
 Volume 3 - Peoples
 

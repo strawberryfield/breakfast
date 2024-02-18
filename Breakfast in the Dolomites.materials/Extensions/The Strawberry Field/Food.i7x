@@ -85,5 +85,65 @@ Carry out spreading:
 
 Report spreading:
 	say "Now you have [a second noun].[paragraph break]".	
+	
+Volume 4 - Service containers and supporters
 
+Book 4.1 - containers and supporters
+
+A service container is a kind of container. It is open and not openable.
+A service supporter is a kind of supporter. 
+Instead of taking a service container, say "[The noun] is a container that has to remain at the disposal of everyone, so leave it where it is.".
+Instead of taking a service supporter, say "[The noun] has to remain at the disposal of everyone, so leave it where you found it.".
+
+To say cannot return food:
+	say "Any food that has been in contact with you will no longer be of use to others.".
+Instead of inserting something into a service container, say cannot return food.
+Instead of inserting something into a service supporter, say cannot return food.
+
+The sc-content flag is a truth state that varies. The sc-content flag is false.
+
+To say round content of (C - a thing):
+	let N be the number of things held by C;
+	let X be the first thing held by C;
+	say "[adjectival N in round numbers] [if N is greater than 1][printed plural name of X][otherwise][X][end if]".
+
+Instead of examining a service container:
+	say "[description of the noun][/n]";
+	now examine text printed is true;
+	if the noun is empty, say "It is actually empty";
+	otherwise:
+		say "It contains [round content of the noun]";
+	say ". [/n]".
+Rule for printing the name of a service container (called target):
+	say "[printed name of target][if sc-content flag is true] [list the contents of target][end if]".
+To say list the contents of (C - a service container):
+	if C is empty, say "which is actually empty";
+	otherwise:
+		say "with [round content of C]".
+
+Instead of examining a service supporter:
+	say "[description of the noun][/n]";
+	now examine text printed is true;
+	if the noun is empty, say "It is actually empty";
+	otherwise:
+		say "On it you can see [round content of the noun]";
+	say ". [/n]".
+Rule for printing the name of a service supporter (called target):
+	say "[printed name of target][if sc-content flag is true] [list the contents of target][end if]".
+To say list the contents of (C - a service supporter):
+	if C is empty, say "which is actually empty";
+	otherwise:
+		say "with [round content of C]".
+
+Book 4.2 - service tables
+
+A service table is a kind of supporter.
+
+Instead of examining a service table:
+	say "[description of the noun][line break]";
+	now examine text printed is true;
+	now sc-content flag is true;
+	say "On it [is-are a list of things held by the noun].";
+	now sc-content flag is false.
+	
 Food ends here.
