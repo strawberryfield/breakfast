@@ -827,21 +827,33 @@ A slice of speck is a kind of food-item.
 The description is "A slice of typical Tyrolean smoked ham. Dark red in color with thin white streaks of fat." 
 The plural of slice of speck is slices of speck.
 The scent-description of a slice of speck is "a slight smell of smoke".
-The flavor-description of the slice of speck is "an intense and spicy flavor of the pork leg enhanced by the expert smoking".
+The flavor-description of the slice of speck is "An intense and spicy flavor of the pork leg enhanced by the expert smoking".
+Understand "smoked/-- ham" as "[speck]".
+Understand "slice of [speck]" or "[speck]" as a slice of speck.
+
+Response of a waitstaff worker when asked about a slice of speck:
+	say "[/ss]Speck is a typical product of our valleys.' [/se][the naming of the noun] [say] ";
+	say "[/ss1]It is a raw ham that is lightly smoked and cured in the open air, making it famous among gourmets all over the world. Behind it all is a jealously guarded secret, a recipe passed down from generation to generation.' [/r][/n]".
 
 A slice of salami is a kind of food-item. 
 The description is "A slice of seasoned sausage. Dark red in color with little dots of fat." 
 The plural of slice of salami is slices of salami.
 The scent-description of a slice of salami is "light scent of spices".
-The flavor-description of the slice of salami is "lightly smoked over beech wood and cured in the pure mountain air, it develops an extraordinary aroma".
+The flavor-description of the slice of salami is "Lightly smoked over beech wood and cured in the pure mountain air, it develops an extraordinary aroma".
+Understand "kaminwurzen/sausage" as "[salami]".
+Understand "slice of [salami]" or "[salami]" as a slice of salami.
 
-A slice of Ahrntal gray cheese is a kind of food-item.
-The description is "A slice of the typical 'gray cheese' from Sudtyrol."
-The plural of slice of Ahrntal gray cheese is slices of Ahrntal gray cheese.
-The scent-description of a slice of Ahrntal gray cheese is "good seasoned cheese".
-The flavor-description of a slice of Ahrntal gray cheese is "in the cheese, milky and toasted notes reminiscent of milk, cream and heated butter prevail, while there are also agre notes reminding us of fermented milk and yoghurt".
+Response of a waitstaff worker when asked about a slice of salami:
+	say "[/ss]Kaminwurzen are our favourite sausages.' [/se][the naming of the noun] [state] ";
+	say "[/ss1]Home-made according to an original recipe from the South Tyrolean countryside, they are lightly smoked and contain 20 per cent beef and 80 per cent pork.' [/r][/n]".
+	
+A slice of Ahrntal grey cheese is a kind of food-item.
+The description is "A slice of the typical 'grey cheese' from Sudtyrol."
+The plural of slice of Ahrntal grey cheese is slices of Ahrntal grey cheese.
+The scent-description of a slice of Ahrntal grey cheese is "good seasoned cheese".
+The flavor-description of a slice of Ahrntal grey cheese is "In the cheese, milky and toasted notes reminiscent of milk, cream and heated butter prevail, while there are also agre notes reminding us of fermented milk and yoghurt".
 
-Response of a waiter when asked about a slice of Ahrntal gray cheese:
+Response of a waitstaff worker when asked about a slice of Ahrntal grey cheese:
 	say "[/ss]The cheese in the buffet is the traditional Ahrntal grey cheese.' [/se][the naming of the noun] [explain] ";
 	say "[/ss1]Its unattractive appearance is due to the presence of a precious mould; it is the leanest of the cheeses, so much so that the fat content in the dry residue does not exceed two per cent: it is actually a product made from the milk left over from butter production, without the use of rennet.' [/r][/n]".
 
@@ -883,7 +895,7 @@ The first chopping board is a scenery chopping board.
 The second chopping board is a scenery chopping board.
 3 slices of salami are on the second chopping board.
 The third chopping board is a scenery chopping board.
-2 slices of Ahrntal gray cheese are on the third chopping board.
+2 slices of Ahrntal grey cheese are on the third chopping board.
 
 The first chopping board, the second chopping board and the third chopping board are on the buffet table.
 
@@ -1104,6 +1116,7 @@ Chapter 3.4.3 - The cook
 
 Emma is a worker in the buffet.
 Emma is female.
+Emma is waitstaff.
 Hair are "a bonnet covering her". Eyes are "brown".
 Proper name is "Emma".
 Printed name is "cook".

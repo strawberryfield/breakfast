@@ -56,6 +56,7 @@ Volume 2 - generic worker
 A worker is a kind of person.
 A worker is improper-named.
 A worker has some text called proper name.
+A worker can be waitstaff. A worker is usually not waitstaff.
 
 Chapter 2.1 - Say phrases
 
@@ -96,6 +97,7 @@ To say you are welcome:
 Volume 3 - waiters
 
 A waiter is a kind of worker.
+A waiter is waitstaff.
 
 A male-waiter is a kind of waiter. It is male.
 The printed name is "waiter".
