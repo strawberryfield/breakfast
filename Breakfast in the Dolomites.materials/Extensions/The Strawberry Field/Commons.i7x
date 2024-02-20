@@ -169,6 +169,7 @@ To challenge is a verb.
 To clutch is a verb.
 To cock is a verb. 
 To come is a verb.
+To continue is a verb.
 To copy is a verb.
 To cry is a verb.
 To decide is a verb. 

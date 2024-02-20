@@ -746,6 +746,22 @@ Book 2.7 - The buffet
 
 The description of the buffet is "The buffet is a feast for the senses, featuring a variety of locally sourced and homemade delights. Guests can savor freshly baked pastries, artisanal bread, jams, and a selection of cheeses and cured meats, showcasing the flavors of the Dolomites.".
 
+Response of a not waitstaff worker when asked about a food-item :
+	say "[/ss]For such things, it is best to ask my dining room colleagues.' [/se][the naming of the noun] [admit] ".
+	
+Understand "buffet" or "self/free service" or "free flow" as "[buffet]".
+Response of a not waitstaff worker when asked about "[buffet]" or asked about the buffet table:
+	say "[/ss]Ask my colleagues in the dining room.' [/se][the naming of the noun] [explain] ";
+	say "[/ss1]They will be pleased to give you all the information you need.' [/r][/n]".
+
+Response of a waiter when asked about "[buffet]" or asked about the buffet table:
+	say "[/ss]The buffet is over there.' [/se][the naming of the noun] [say], pointing north ";
+	say "[/ss1]Bread, jam, butter, cheese and cold meats are provided, as well as cold drinks. You can also use a juicer and a colleague can cook eggs for you.' [/r][/n]".
+
+Response of Emma when asked about the buffet table:
+	say "[/ss]You can take anything you want, but you have to consume it here: you are not allowed to take it out for a pocket launch.' [/se][the naming of the noun] [explain], then [continue] ";
+	say "[/ss1]If you want, I can cook you an egg the way you like it.' [/r][/n]".
+		
 Chapter 2.7.1 - Drinks
 
 Section 2.7.1.1 - Containers
