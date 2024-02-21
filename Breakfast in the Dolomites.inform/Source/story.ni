@@ -746,7 +746,7 @@ Book 2.7 - The buffet
 
 The description of the buffet is "The buffet is a feast for the senses, featuring a variety of locally sourced and homemade delights. Guests can savor freshly baked pastries, artisanal bread, jams, and a selection of cheeses and cured meats, showcasing the flavors of the Dolomites.".
 
-Response of a not waitstaff worker when asked about a food-item :
+Response of a not waitstaff worker when asked about a food-item or asked about "[meats]":
 	say "[/ss]For such things, it is best to ask my dining room colleagues.' [/se][the naming of the noun] [admit] ".
 	
 Understand "buffet" or "self/free service" or "free flow" as "[buffet]".
@@ -844,7 +844,7 @@ The description is "A slice of typical Tyrolean smoked ham. Dark red in color wi
 The plural of slice of speck is slices of speck.
 The scent-description of a slice of speck is "a slight smell of smoke".
 The flavor-description of the slice of speck is "An intense and spicy flavor of the pork leg enhanced by the expert smoking".
-Understand "smoked/-- ham" as "[speck]".
+Understand "smoked/-- ham" or "speck" as "[speck]".
 Understand "slice of [speck]" or "[speck]" as a slice of speck.
 
 Response of a waitstaff worker when asked about a slice of speck:
@@ -856,7 +856,7 @@ The description is "A slice of seasoned sausage. Dark red in color with little d
 The plural of slice of salami is slices of salami.
 The scent-description of a slice of salami is "light scent of spices".
 The flavor-description of the slice of salami is "Lightly smoked over beech wood and cured in the pure mountain air, it develops an extraordinary aroma".
-Understand "kaminwurzen/sausage" as "[salami]".
+Understand "kaminwurzen/sausage/salami" as "[salami]".
 Understand "slice of [salami]" or "[salami]" as a slice of salami.
 
 Response of a waitstaff worker when asked about a slice of salami:
@@ -873,6 +873,24 @@ Response of a waitstaff worker when asked about a slice of Ahrntal grey cheese:
 	say "[/ss]The cheese in the buffet is the traditional Ahrntal grey cheese.' [/se][the naming of the noun] [explain] ";
 	say "[/ss1]Its unattractive appearance is due to the presence of a precious mould; it is the leanest of the cheeses, so much so that the fat content in the dry residue does not exceed two per cent: it is actually a product made from the milk left over from butter production, without the use of rennet.' [/r][/n]".
 
+Understand "charcuterie" or "cold cuts/cut" or "cured/-- meats/meat" as "[meats]".
+Meat-type-node is a closed not auto-suggesting convnode.
+Node-introduction for meat-type-node:
+	say "[/ss]We have salami and speck:' [/se][the naming of current interlocutor] [say] ";
+	say "[/ss1]which one are you interested in?' [/r][/n]".
+Response of a waitstaff worker when asked about "[meats]":
+	setnode meat-type-node;
+	say "[/ss]What nice cold cuts in the buffet!' [/se]you say. [/n]".
+Response for meat-type-node when answered that "speck":	
+	say leavenode;
+	try quizzing the current interlocutor about the noun.
+After reading a command when the current node is meat-type-node:
+	if the player's command matches "[speck]":
+		replace the player's command with "answer speck to [printed name of current interlocutor]";
+	otherwise if the player's command matches "[salami]": 
+		replace the player's command with "answer salami to [printed name of current interlocutor]".
+
+	
 Section 2.7.2.2 - Butter and jams
 
 A knob of butter is a kind of butter-item. 
