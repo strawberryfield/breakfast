@@ -692,6 +692,20 @@ After going to the dining room from the reception:
 		Monica urges breakfast never;
 		now search-table-trigger is true;
 	continue the action.
+	
+Section 2.6.2.1 - Good manners
+
+Instead of eating something while the player is not enclosed by the bench:
+	if Monica is in the location:
+		say "[alert][/ss]But what are you doing?' [/se][Monica] [rebuke] you. [/ss1]You should eat sitting at the table!' [/r][/n]";
+	otherwise:
+		say "I am sure that [Monica] would scold you if she could see you now.".
+
+Instead of drinking something while the player is not enclosed by the bench:
+	if Monica is in the location:
+		say "[alert][/ss]Naughty!' [/se][Monica] [exclaim]. [/ss1]You should drink sitting at the table!' [/r][/n]";
+	otherwise:
+		say "If [Monica] were here, she would not allow you to do such a thing.".
 
 Chapter 2.6.3 - Timed events
 
@@ -702,6 +716,19 @@ At the time when the waiter welcomes:
 			now the current interlocutor is the current waiter;
 			say "[The naming of the current waiter] [see] you confused, [approach] you and [say] hello: [/ss]Good morning!' [/r][/n]";
 			say "[/ss]Can I help you?' [/se][regarding the current waiter][they] [ask].".
+
+At the time when Monica sits at table:
+	if Monica is in the dining room:
+		say "[Monica] [sit] down on the bench.";
+		now Monica is on the bench;
+		Monica invites to sit in 0 turns from now;
+	otherwise:
+		Monica sits at table in 1 turn from now.
+
+At the time when Monica invites to sit:
+	if the location is the dining room and the player is not enclosed by the bench:
+		say "[/ss]Why don't you sit?' [/se][Monica] [ask]. [/n]";
+		Monica invites to sit in 1 turns from now.
 			
 Chapter 2.6.4 - Conversation
 
@@ -723,10 +750,62 @@ Instead of saying hello to someone (called the other) during the Search for the 
 		say "[heart][/ss]It's perfect!' [/se][Monica] [exclaim] [/ss][thanks current interlocutor].' [/r][/n]";
 		the waiter welcomes never;
 		now search-table-trigger is false;
+		Monica sits at table in 1 turn from now;
 	otherwise:
 		continue the action.
 
+Instead of saying yes during Search for the table, try hailing.
+
+Instead of entering the bench during Search for the table, say "[alert][/ss]The first thing we need to know is where to sit.' [/se][Monica] [remind]. [/n]".
+
+Instead of going somewhere during Search for the table, say "[alert][/ss]Let's go. Instead of wandering around, let's find our table.' [/se][Monica] [remind]. [/n]".
+		
 Section 2.6.4.2 - Order
+
+After entering the bench:
+	waiter comes for order in 1 turn from now;
+	continue the action.
+	
+At the time when waiter comes for order:
+	if the player is enclosed by the bench:
+		let current waiter be a random waiter in the dining room;
+		say "[A naming of current waiter] is at your table. [/n]";
+		now the current interlocutor is the current waiter;
+		setnode main-order node.
+
+To say available hot drinks:
+	say "a coffee, a cappuccino, a hot chocolate or a tea".
+The main-order node is a closed not auto-suggesting convnode.
+Node-introduction for main-order node:
+	say "[/ss]May I serve you a hot beverage?' [/se][the naming of current interlocutor] [ask], then [explain]: ";
+	say "[/ss1]I can offer you [available hot drinks].' [/r][/n]".
+	
+Understand "hot/-- chocolate" as "[chocolate]".
+
+Response for main-order node when answered that "coffee":
+	say "[leavenode][/ss]Espresso, moka or barley?' [/r][/n]".
+Response for main-order node when answered that "cappuccino":
+	say "[leavenode][/ss]Regular, soy milk or barley coffee?' [/r][/n]".
+Response for main-order node when answered that "[chocolate]":
+	say "[leavenode][/ss]Good choice.' [/r][/n]".
+Response for main-order node when answered that "tea":
+	say "[leavenode][/ss]Lemon, milk or nothing?' [/r][/n]".
+Default response for main-order node:
+	say "[/ss]The only hot drinks that are available are [available hot drinks].' [/se][the naming of current interlocutor] [state]. [/n]".
+Response for main-order node when saying no:
+	say "[leavenode][/ss]If you want something hot later, don't hesitate to call me or my colleague.' [/se][the naming of current interlocutor] [say] and [go] away. [/n]";
+	now the current interlocutor is nothing.
+	 		
+After reading a command when the current node is main-order node:
+	if the player's command matches "coffee":
+		replace the player's command with "answer coffee to [printed name of current interlocutor]";
+	otherwise if the player's command matches "cappuccino": 
+		replace the player's command with "answer cappuccino to [printed name of current interlocutor]";
+	otherwise if the player's command matches "[chocolate]": 
+		replace the player's command with "answer chocolate to [printed name of current interlocutor]";
+	otherwise if the player's command matches "tea": 
+		replace the player's command with "answer tea to [printed name of current interlocutor]".
+	
 
 Section 2.6.4.3 - Other responses
 
@@ -780,6 +859,7 @@ A mug is a kind of fluid container. The fluid capacity of a mug is 300 ml.
 A pot is a kind of fluid container. The fluid capacity of a pot is 100 ml.
 
 A dish is a kind of portable supporter.
+The carrying capacity of a dish is 10.
 
 Section 2.7.1.2 - Liquids
 
@@ -968,6 +1048,12 @@ The third chopping board is a scenery chopping board.
 
 The first chopping board, the second chopping board and the third chopping board are on the buffet table.
 
+Chapter 2.7.3 - Movements
+
+Before going to the buffet:
+	if the number of things carried by the player is greater than zero:
+		say "[/ss]Why are you carrying [the list of things carried by the player]?' [/se][Monica] [ask]. [/n]" instead.
+
 Volume 3 - Peoples
 
 A person can be leading. A person is usually not leading.
@@ -984,6 +1070,7 @@ The player is male.
 The player is leading.
 The printed name of the player is "Francesco".
 A person can be registered. The player is not registered.
+The carrying capacity of the player is 3.
 
 Chapter 3.1.1 - Initial player dressing
 
@@ -1049,9 +1136,9 @@ To say heart:
 	say "[special-style-1][unicode 9829] [/r]";
 	increase hearts by 1.
 
-For printing a locale paragraph about Monica:
+Rule for printing a locale paragraph about Monica (this is the Monica next to you rule):
 	say "[Monica] [are] next to you."
-	
+ 
 Chapter 3.2.1 - Monica initial dressing
 
 The pair of jeans is a cloth. The description is "A pair of slightly frayed skinny jeans."
@@ -1308,8 +1395,8 @@ When the Breakfast begins:
 	now the current interlocutor is nothing;
 	say "[note style]The morning after. [/r][/p]";
 	say "After a good night's sleep, [we] [are] ready to enjoy the first day of your holiday. [/n][We] and [Monica] go down the stairs and back to reception. [/n][We] [wear] [a list of cloth worn by the player]; [Monica] [wear] [a list of cloth worn by Monica]. [/n]";
-	say "[The naming of the receptionist] [are] working behind the counter. [/n]";
-	say "[/ss]Miss [Monica] and Mr. [printed name of the player] good morning!' [/se]wishes [the naming of the receptionist], [/ss]You're looking good today!' [/r][/n]";
+	say "[The naming of the receptionist] [are] working behind the counter. [/p]";
+	say "[/ss]Miss [Monica] and Mr. [printed name of the player] good morning!' [/se][the naming of the receptionist] [wish], [/ss]You're looking good today!' [/r][/n]";
 	now morgen-trigger is true.
 	
 Chapter 4.4.1 - Greeting the receptionist
@@ -1336,4 +1423,36 @@ Search for the table ends when search-table-trigger is false.
 When Search for the table begins:
 	say "[heart][/ss]Very nice, isn't it?' [/se][Monica] [ask], [/ss1]I wonder where we can sit.' [/r][/n]";
 	the waiter welcomes in 3 turns from now.
+	
+Chapter 4.4.3 - First buffet access
+
+First buffet access is a scene.
+The buffet-trigger is a truth state that varies.
+The first-buffet-access is a truth state that varies.
+First buffet access begins when buffet-trigger is true.
+First buffet access ends when buffet-trigger is false.
+
+After going to the buffet while the first-buffet-access is false:
+	now first-buffet-access is true;
+	now buffet-trigger is true;
+	continue the action.
+	
+When First buffet access begins:
+	say "[Monica] [if Monica is enclosed by the bench][stand] up and [end if][follow] you at the buffet. [/n]";
+	now Monica is in the buffet.
+	
+When First buffet access ends:
+	say "[Monica] [return] with you in the dining room and [sit] on the bench. [/n]";
+	now Monica is on the bench.
+	
+Instead of going somewhere from the buffet during First buffet access:
+	if the number of things carried by the player is zero:
+		say "[/ss]I don't understand why you didn't take anything.' [/se][Monica] [ask]. [/n]";
+		now first-buffet-access is false;
+		now buffet-trigger is false; 
+		continue the action;
+	[insert here che checks]
+	now buffet-trigger is false;
+	continue the action.
+
 	

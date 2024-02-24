@@ -211,6 +211,7 @@ To remind is a verb.
 To reply is a verb.
 To report is a verb.
 To rest is a verb. 
+To return is a verb.
 To revolve is a verb. 
 To scold is a verb.
 To scrabble is a verb. 
@@ -222,8 +223,10 @@ To show is a verb.
 To shriek is a verb.
 To shut is a verb.
 To shy is a verb. 
+To sit is a verb.
 To slap is a verb.
 To slip is a verb. 
+To stand is a verb.
 To stare is a verb. 
 To state is a verb.
 To strike is a verb. 
