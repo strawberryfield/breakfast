@@ -747,8 +747,11 @@ Book 2.7 - The buffet
 The description of the buffet is "The buffet is a feast for the senses, featuring a variety of locally sourced and homemade delights. Guests can savor freshly baked pastries, artisanal bread, jams, and a selection of cheeses and cured meats, showcasing the flavors of the Dolomites.".
 
 Response of a not waitstaff worker when asked about a food-item or asked about "[meats]":
-	say "[/ss]For such things, it is best to ask my dining room colleagues.' [/se][the naming of the noun] [admit] ".
-	
+	say "[/ss]For such things, it is best to ask my dining room colleagues.' [/se][the naming of the noun] [admit]. [/n]".
+
+Response of Monica when asked about a food-item or asked about "[meats]" or asked about "[buffet]" or asked about the buffet table:
+	say "[/ss][one of]I think you'd better ask a waiter[or]In my opinion, you'd better have a word with a waiter[at random].' [/se][Monica] [suggest]. [/n]".
+		
 Understand "buffet" or "self/free service" or "free flow" as "[buffet]".
 Response of a not waitstaff worker when asked about "[buffet]" or asked about the buffet table:
 	say "[/ss]Ask my colleagues in the dining room.' [/se][the naming of the noun] [explain] ";
@@ -837,6 +840,8 @@ When play begins:
 
 Chapter 2.7.2 - Food
 
+A food-item is familiar.
+
 Section 2.7.2.1 - Meats
 
 A slice of speck is a kind of food-item. 
@@ -847,10 +852,12 @@ The flavor-description of the slice of speck is "An intense and spicy flavor of 
 Understand "smoked/-- ham" or "speck" as "[speck]".
 Understand "slice of [speck]" or "[speck]" as a slice of speck.
 
-Response of a waitstaff worker when asked about a slice of speck:
-	say "[/ss]Speck is a typical product of our valleys.' [/se][the naming of the noun] [say] ";
+To say (P - a person) talks about speck:
+	say "[/ss]Speck is a typical product of our valleys.' [/se][the naming of P] [say] ";
 	say "[/ss1]It is a raw ham that is lightly smoked and cured in the open air, making it famous among gourmets all over the world. Behind it all is a jealously guarded secret, a recipe passed down from generation to generation.' [/r][/n]".
-
+Response of a waitstaff worker when asked about a slice of speck:
+	say the noun talks about speck.
+	
 A slice of salami is a kind of food-item. 
 The description is "A slice of seasoned sausage. Dark red in color with little dots of fat." 
 The plural of slice of salami is slices of salami.
@@ -859,11 +866,13 @@ The flavor-description of the slice of salami is "Lightly smoked over beech wood
 Understand "kaminwurzen/sausage/salami" as "[salami]".
 Understand "slice of [salami]" or "[salami]" as a slice of salami.
 
-Response of a waitstaff worker when asked about a slice of salami:
-	say "[/ss]Kaminwurzen are our favourite sausages.' [/se][the naming of the noun] [state] ";
+To say (P - a person) talks about salami:
+	say "[/ss]Kaminwurzen are our favourite sausages.' [/se][the naming of P] [state] ";
 	say "[/ss1]Home-made according to an original recipe from the South Tyrolean countryside, they are lightly smoked and contain 20 per cent beef and 80 per cent pork.' [/r][/n]".
+Response of a waitstaff worker when asked about a slice of salami:
+	say the noun talks about salami.
 	
-A slice of Ahrntal grey cheese is a kind of food-item.
+A slice of Ahrntal grey cheese is a kind of food-item. 
 The description is "A slice of the typical 'grey cheese' from Sudtyrol."
 The plural of slice of Ahrntal grey cheese is slices of Ahrntal grey cheese.
 The scent-description of a slice of Ahrntal grey cheese is "good seasoned cheese".
@@ -880,10 +889,13 @@ Node-introduction for meat-type-node:
 	say "[/ss1]which one are you interested in?' [/r][/n]".
 Response of a waitstaff worker when asked about "[meats]":
 	setnode meat-type-node;
-	say "[/ss]What nice cold cuts in the buffet!' [/se]you say. [/n]".
-Response for meat-type-node when answered that "speck":	
+	say "[/ss]What nice cold cuts in the buffet!' [/se]you say. ".
+Response for meat-type-node when answered that "[speck]":	
 	say leavenode;
-	try quizzing the current interlocutor about the noun.
+	say the current interlocutor talks about speck.
+Response for meat-type-node when answered that "[salami]":	
+	say leavenode;
+	say the current interlocutor talks about salami.
 After reading a command when the current node is meat-type-node:
 	if the player's command matches "[speck]":
 		replace the player's command with "answer speck to [printed name of current interlocutor]";
@@ -899,12 +911,35 @@ The plural of knob of butter is knobs of butter.
 
 Section 2.7.2.3 - Bread
 
-A slice of white bread is a kind of bread slice.
+A slice of white bread is a kind of bread slice. The description is "Soft slices of bread."
 The plural of slice of white bread is slices of white bread.
+The scent-description of a slice of white bread is "fragrance of wheat".
+The flavor-description of a slice of white bread is "This bread has a soft texture and a delicate taste.".
+To say (P - a person) talks about white bread:
+	say "[leavenode][/ss]The loaf of bread from which these slices were made was baked this morning.' [/se][the naming of P] [say] proudly. [/n]".
+Response of a waitstaff worker when asked about a slice of white bread:
+	say the noun talks about white bread.
+	
 A slice of pumpernickel bread is a kind of bread slice.
 The plural of slice of pumpernickel bread is slices of pumpernickel bread.
-Understand "rye/black bread/--" as slice of pumpernickel bread.
+The scent-description of a slice of pumpernickel bread is "burnt caramel smell".
+The flavor-description of a slice of pumpernickel bread is "This bread has a firm texture, an earthy flavour and a distinctly sour taste.".
+Understand "rye/black/dark/brown bread/--" as slice of pumpernickel bread.
+To say (P - a person) talks about pumpernickel bread:
+	say "[leavenode][/ss]The black bread is made from wholemeal rye flour.' [/se][the naming of P] [explain] ";
+	say "[/ss1]It is a bread of German origin, with a characteristic dark colour and a burnt caramel smell. It tastes very good and is unmistakable among other breads. It is great for breakfast!' [/r][/n]".
+Response of a waitstaff worker when asked about a slice of pumpernickel bread:
+	say the noun talks about pumpernickel bread.
 
+Definition: a bread slice is matched if it fits the parse list. 
+Rule for asking which do you mean when everything matched is a bread slice: 
+	if the number of person in the location is greater than 1:
+		say "[/ss]We have white wheat and black rye bread: which one are you interested in?' [/r][/n]";
+	otherwise:
+		say "Who are you asking? [/n]";
+		stop the action.
+
+		
 Section 2.7.2.4 - The buffet table
 
 The buffet table is a scenery service table in the buffet. 

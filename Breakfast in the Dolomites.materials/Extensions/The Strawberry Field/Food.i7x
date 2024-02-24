@@ -45,6 +45,12 @@ A butter-item is a kind of food-item. It is spreadable.
 The flavor-description of a butter-item is "soft, creamy, and rich, with just a hint of sweetness".
 The scent-description of a butter-item is "smell of good milk cream".
 
+Does the player mean tasting a food-item: it is likely.
+Does the player mean smelling a food-item: it is likely.
+Does the player mean eating a food-item: it is likely.
+Does the player mean quizzing about a food-item: it is likely.
+Does the player mean taking a food-item: it is likely.
+
 Book 2.1 - bread
 
 A bread slice is a kind of food-item.

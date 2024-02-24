@@ -237,4 +237,21 @@ To wish is a verb.
 To withdraw is a verb.
 To wrap is a verb.
 
+Book 1.3 - Disambiguation
+
+To decide whether (N - an object) fits the parse list:
+	(- (FindInParseList({N})) -)
+
+Include (-
+[ FindInParseList obj i k marker;
+	marker = 0;
+	for (i=1 : i<=number_of_classes : i++) {
+	while (((match_classes-->marker) ~= i) && ((match_classes-->marker) ~= -i)) marker++;
+	k = match_list-->marker;
+	if (k==obj) rtrue;
+	}
+	rfalse;
+];
+-)
+
 Commons ends here.
