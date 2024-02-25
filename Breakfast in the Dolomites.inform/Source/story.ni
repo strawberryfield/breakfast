@@ -760,7 +760,23 @@ Instead of entering the bench during Search for the table, say "[alert][/ss]The 
 
 Instead of going somewhere during Search for the table, say "[alert][/ss]Let's go. Instead of wandering around, let's find our table.' [/se][Monica] [remind]. [/n]".
 		
-Section 2.6.4.2 - Order
+Section 2.6.4.2 - Other responses
+
+Default ask response for a worker:
+	say "[/ss]Sorry, I know nothing about it.' [/se][regarding the noun][they] [admit].".
+
+Response of a waiter when asked about bathroom:
+	say “[/ss]Where can I find the toilet?’ [/se][we] [ask]. [/n]”;
+	say "[/ss]'Oh yes, it's inside the door in front of the reception desk.' [/se][the naming of the noun] [answer].".
+
+Understand "the/-- weather forecast/--" or "the/-- forecast" as "[weather]".	
+Response of a worker when asked about "[weather]" during the Breakfast:
+	say “[/ss]Do you know it might rain today?’ [/se][we] [ask]. [/n]”;
+	say "[/ss]You can find the weather report in the daily hotel newsletter on your table.' [/se][regarding the noun][they] [explain].".	
+			
+Chapter 2.6.5 - Order
+
+Section 2.6.5.1 - Start
 
 After entering the bench:
 	waiter comes for order in 1 turn from now;
@@ -771,7 +787,18 @@ At the time when waiter comes for order:
 		let current waiter be a random waiter in the dining room;
 		say "[A naming of current waiter] is at your table. [/n]";
 		now the current interlocutor is the current waiter;
+		reset order;
 		setnode main-order node.
+
+To say ask for choice:
+	say "[/se][regarding the current interlocutor][they] [ask] you to choose. [/n]".
+To say ask for choice again:
+	say "[/se][regarding the current interlocutor][they] [ask] you again to choose. [/n]".
+To say order confirmation:
+	say "[leavenode][/ss]Good choice.' [/se][the naming of current interlocutor] [confirm] you. [/n]";
+	finalize order.
+	
+Section 2.6.5.2 - Main node
 
 To say available hot drinks:
 	say "a coffee, a cappuccino, a hot chocolate or a tea".
@@ -779,17 +806,30 @@ The main-order node is a closed not auto-suggesting convnode.
 Node-introduction for main-order node:
 	say "[/ss]May I serve you a hot beverage?' [/se][the naming of current interlocutor] [ask], then [explain]: ";
 	say "[/ss1]I can offer you [available hot drinks].' [/r][/n]".
+
+The coffee-order node is a closed not auto-suggesting convnode.
+The cappuccino-order node is a closed not auto-suggesting convnode.
+The tea-order node is a closed not auto-suggesting convnode.
+
+The espresso-order node is a closed not auto-suggesting convnode.
+The barley-order node is a closed not auto-suggesting convnode.
 	
 Understand "hot/-- chocolate" as "[chocolate]".
 
 Response for main-order node when answered that "coffee":
-	say "[leavenode][/ss]Espresso, moka or barley?' [/r][/n]".
+	now next-node of current node is coffee-order node;
+	say "[leavenode][/ss]Espresso, moka or barley?' [ask for choice]".
 Response for main-order node when answered that "cappuccino":
-	say "[leavenode][/ss]Regular, soy milk or barley coffee?' [/r][/n]".
+	now next-node of current node is cappuccino-order node;
+	say "[leavenode][/ss]Regular, soy milk or barley coffee?' [ask for choice]".
 Response for main-order node when answered that "[chocolate]":
-	say "[leavenode][/ss]Good choice.' [/r][/n]".
+	now the order content is a random mug in the kitchen;
+	now the liquid of the order content is hot chocolate;
+	now the fluid content of the order content is 200 ml;
+	say order confirmation.
 Response for main-order node when answered that "tea":
-	say "[leavenode][/ss]Lemon, milk or nothing?' [/r][/n]".
+	now next-node of current node is tea-order node;
+	say "[leavenode][/ss]Lemon, milk or nothing?' [ask for choice]".
 Default response for main-order node:
 	say "[/ss]The only hot drinks that are available are [available hot drinks].' [/se][the naming of current interlocutor] [state]. [/n]".
 Response for main-order node when saying no:
@@ -806,21 +846,120 @@ After reading a command when the current node is main-order node:
 	otherwise if the player's command matches "tea": 
 		replace the player's command with "answer tea to [printed name of current interlocutor]".
 	
+Section 2.6.5.3 - Coffee node
 
-Section 2.6.4.3 - Other responses
+Response for coffee-order node when answered that "espresso":
+	now next-node of current node is espresso-order node;
+	say "[leavenode][/ss]Regular, short or tall?' [ask for choice again]".
+Response for coffee-order node when answered that "barley":
+	now next-node of current node is barley-order node;
+	say "[leavenode][/ss]Small or large cup?' [ask for choice again]".
+Response for coffee-order node when answered that "moka":
+	now the order content is a random coffeecup in the kitchen;
+	now the liquid of the order content is moka coffee;
+	now the fluid content of the order content is 40 ml;
+	say order confirmation.
+Default response for coffee-order node:
+	say "[/ss]Sorry, I did not understand your preference for coffee: espresso, moka or barley?' [/se][the naming of current interlocutor] [state]. [/n]".
 
-Default ask response for a worker:
-	say "[/ss]Sorry, I know nothing about it.' [/se][regarding the noun][they] [admit].".
+After reading a command when the current node is coffee-order node:
+	if the player's command matches "espresso":
+		replace the player's command with "answer espresso to [printed name of current interlocutor]";
+	otherwise if the player's command matches "moka": 
+		replace the player's command with "answer moka to [printed name of current interlocutor]";
+	otherwise if the player's command matches "barley": 
+		replace the player's command with "answer barley to [printed name of current interlocutor]".
 
-Response of a waiter when asked about bathroom:
-	say “[/ss]Where can I find the toilet?’ [/se][we] [ask]. [/n]”;
-	say "[/ss]'Oh yes, it's inside the door in front of the reception desk.' [/se][the naming of the noun] [answer].".
+Section 2.6.5.4 - Espresso node
 
-Understand "the/-- weather forecast/--" or "the/-- forecast" as "[weather]".	
-Response of a worker when asked about "[weather]" during the Breakfast:
-	say “[/ss]Do you know it might rain today?’ [/se][we] [ask]. [/n]”;
-	say "[/ss]You can find the weather report in the daily hotel newsletter on your table.' [/se][regarding the noun][they] [explain].".	
-			
+Understand "regular/normal/plain/standard" as "[regular]".
+Understand "short/low/shrunk/limited" as "[short]".
+Understand "tall/long/high/lengthy" as "[tall]".
+
+Response for espresso-order node when answered that "[regular]":
+	now the order content is a random coffeecup in the kitchen;
+	now the liquid of the order content is espresso;
+	now the fluid content of the order content is 30 ml; 
+	say order confirmation.
+Response for espresso-order node when answered that "[short]":
+	now the order content is a random coffeecup in the kitchen;
+	now the liquid of the order content is espresso;
+	now the fluid content of the order content is 20 ml;
+	say order confirmation.
+Response for espresso-order node when answered that "[tall]":
+	now the order content is a random coffeecup in the kitchen;
+	now the liquid of the order content is espresso;
+	now the fluid content of the order content is 40 ml;
+	say order confirmation.
+Default response for espresso-order node:
+	say "[/ss]Sorry, I did not understand your espresso preference: regular, low or high?' [/se][the naming of current interlocutor] [state]. [/n]".
+	
+After reading a command when the current node is espresso-order node:
+	if the player's command matches "[regular]":
+		replace the player's command with "answer regular to [printed name of current interlocutor]";
+	otherwise if the player's command matches "[short]": 
+		replace the player's command with "answer short to [printed name of current interlocutor]";
+	otherwise if the player's command matches "[tall]": 
+		replace the player's command with "answer tall to [printed name of current interlocutor]".
+
+Section 2.6.5.5 - Barley node
+
+Understand "small/little/tiny/short/shrunk/espresso cup/--" as "[small]".
+Understand "large/big/tea/cappuccino/long/engthy cup/--" as "[large]".
+
+Response for barley-order node when answered that "[small]":
+	now the order content is a random coffeecup in the kitchen;
+	now the liquid of the order content is barley coffee;
+	now the fluid content of the order content is 40 ml;
+	say order confirmation.
+Response for barley-order node when answered that "[large]":
+	now the order content is a random cup in the kitchen;
+	now the liquid of the order content is barley coffee;
+	now the fluid content of the order content is 150 ml;
+	say order confirmation.
+Default response for barley-order node:
+	say "[/ss]Sorry, I did not understand your preference for barley coffee: small or large cup?' [/se][the naming of current interlocutor] [state]. [/n]".
+	
+After reading a command when the current node is barley-order node:
+	if the player's command matches "[small]":
+		replace the player's command with "answer small to [printed name of current interlocutor]";
+	otherwise if the player's command matches "[large]": 
+		replace the player's command with "answer large to [printed name of current interlocutor]".
+		
+Section 2.6.5.6 - Cappuccino node
+
+Section 2.6.5.7 - Tea node
+
+Section 2.6.5.8 - Order handling
+
+The round tray is a portable supporter in the kitchen.
+The order content is an object that varies. The order content is nothing.
+The order second-content is an object that varies. The order second-content is nothing.
+The order handler is an object that varies.
+
+To reset order:
+	now the order content is nothing;
+	now the order second-content is nothing;
+	now the order handler is nothing;
+	now the round tray is in the kitchen.
+	
+To finalize order:
+	now the order handler is the current interlocutor; 
+	now the order content is on the round tray;
+	unless the order second-content is nothing, now the order second-content is on the round tray; 
+	now the order handler carries the round tray;
+	say "[/ss]I'll be back soon with what you've ordered.' [/se][the naming of order handler] [say]";
+	if first-buffet-access is false, say " [/ss1]In the meantime, you can help yourself to the buffet.' [/r][/n]";
+	otherwise:
+		say ". [/n]";
+	say "[regarding order handler][They] [go] to the kitchen. [/n]"; 
+	now the order handler is in the kitchen;
+	waiter returns with order in three turns from now.
+	
+At the time when waiter returns with order:
+	now the order handler is in the dining room;
+	say "[The naming of order handler] [return] with a tray that contains your order. [/n]".
+		
 Book 2.7 - The buffet
 
 The description of the buffet is "The buffet is a feast for the senses, featuring a variety of locally sourced and homemade delights. Guests can savor freshly baked pastries, artisanal bread, jams, and a selection of cheeses and cured meats, showcasing the flavors of the Dolomites.".
@@ -858,6 +997,11 @@ A coffeecup is a kind of fluid container. The fluid capacity of a coffeecup is 5
 A mug is a kind of fluid container. The fluid capacity of a mug is 300 ml.
 A pot is a kind of fluid container. The fluid capacity of a pot is 100 ml.
 
+2 cups are in the kitchen.
+2 coffeecups are in the kitchen.
+2 mugs are in the kitchen.
+2 pots are in the kitchen.
+
 A dish is a kind of portable supporter.
 The carrying capacity of a dish is 10.
 
@@ -868,9 +1012,14 @@ liquid	potable	flavor
 milk	true	"A smooth, sweet taste; thirst-quenching and nourishing."
 orange juice	true	"A pungent, slightly acidic flavour; very refreshing."
 apple juice	true	"Clear and crystalline, with an inviting straw-yellow colour, it offers a sweet, natural and fresh flavour."
+lemon juice	true	""
 pear nectar	true	"A sweet nectar with the delicate flavour of freshly picked pears."
-coffee	true	"The unmistakable aroma of espresso coffee, black, bitter with a soft cream."
+espresso	true	"The unmistakable aroma of espresso coffee, black, bitter with a soft cream."
+moka coffee	true	"The intense aroma of coffee, as at home."
+barley coffee	true	""
 cappuccino	true	"Characterised by the unmistakable aromas of coffee, its bitter taste and the roundness of whipped milk that sticks around the mouth."
+soy cappuccino	true	""
+barley cappuccino	true	""
 hot chocolate	true	"Delicious hot chocolate with all the taste of cocoa and mountain milk."
 tea	true	"A herbaceous flavour with a tendency to be bitter and slightly astringent."
 
