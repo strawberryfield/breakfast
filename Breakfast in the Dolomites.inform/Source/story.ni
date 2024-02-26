@@ -928,7 +928,67 @@ After reading a command when the current node is barley-order node:
 		
 Section 2.6.5.6 - Cappuccino node
 
+Understand "soy/soya milk/--" as "[soy]".
+Understand "barley coffee/--" as "[barley]".
+
+Response for cappuccino-order node when answered that "[regular]":
+	now the order content is a random cup in the kitchen;
+	now the liquid of the order content is cappuccino;
+	now the fluid content of the order content is 200 ml;
+	say order confirmation.
+Response for cappuccino-order node when answered that "[soy]":
+	now the order content is a random cup in the kitchen;
+	now the liquid of the order content is soy cappuccino;
+	now the fluid content of the order content is 200 ml;
+	say order confirmation.
+Response for cappuccino-order node when answered that "[barley]":
+	now the order content is a random cup in the kitchen;
+	now the liquid of the order content is barley cappuccino;
+	now the fluid content of the order content is 200 ml;
+	say order confirmation.
+Default response for cappuccino-order node:
+	say "[/ss]Sorry, I did not understand your preference for cappuccino: regular, soy milk or barley coffee?' [/se][the naming of current interlocutor] [state]. [/n]".
+
+After reading a command when the current node is cappuccino-order node:
+	if the player's command matches "[regular]":
+		replace the player's command with "answer regular to [printed name of current interlocutor]";
+	otherwise if the player's command matches "[soy]": 
+		replace the player's command with "answer soy to [printed name of current interlocutor]";
+	otherwise if the player's command matches "[barley]": 
+		replace the player's command with "answer barley to [printed name of current interlocutor]".
+
 Section 2.6.5.7 - Tea node
+
+Understand "none/nothing/neither" as "[nothing]".
+
+To prepare tea:
+	now the order content is a random cup in the kitchen;
+	now the liquid of the order content is cappuccino;
+	now the fluid content of the order content is 150 ml;
+	say order confirmation.
+		
+Response for tea-order node when answered that "[nothing]":
+	prepare tea.
+Response for tea-order node when answered that "lemon":
+	now the order second-content is a random pot in the kitchen;
+	now the liquid of the order second-content is lemon juice;
+	now the fluid content of the order second-content is 5 ml;
+	prepare tea.
+Response for tea-order node when answered that "milk":
+	now the order second-content is a random pot in the kitchen;
+	now the liquid of the order second-content is milk;
+	now the fluid content of the order second-content is 5 ml;
+	prepare tea.
+Default response for tea-order node:
+	say "[/ss]Sorry, I did not understand your preference for tea: lemon, milk or neither?' [/se][the naming of current interlocutor] [state]. [/n]".
+
+After reading a command when the current node is tea-order node:
+	if the player's command matches "[nothing]":
+		replace the player's command with "answer nothing to [printed name of current interlocutor]";
+	otherwise if the player's command matches "lemon": 
+		replace the player's command with "answer lemon to [printed name of current interlocutor]";
+	otherwise if the player's command matches "milk": 
+		replace the player's command with "answer milk to [printed name of current interlocutor]".
 
 Section 2.6.5.8 - Order handling
 
@@ -944,21 +1004,31 @@ To reset order:
 	now the round tray is in the kitchen.
 	
 To finalize order:
+	say "[/ss]What can I get for you, miss?' [/se][regarding current interlocutor][they] [ask] [Monica]. [/n]";
+	if the liquid of the order content is hot chocolate:
+		say "[/ss]A cappuccino.' ";
+	otherwise:
+		say "[/ss]A cup of hot chocolate.' ";
+	say "[/se][Monica] [answer]. [/n]";
+	say "[/ss]Perfect!' [/se][the naming of current interlocutor] [exclaim]. [/n]";
 	now the order handler is the current interlocutor; 
 	now the order content is on the round tray;
 	unless the order second-content is nothing, now the order second-content is on the round tray; 
 	now the order handler carries the round tray;
-	say "[/ss]I'll be back soon with what you've ordered.' [/se][the naming of order handler] [say]";
-	if first-buffet-access is false, say " [/ss1]In the meantime, you can help yourself to the buffet.' [/r][/n]";
+	say "[/ss]I'll be back soon with what you've ordered.' [/se][regarding order handler][they] [say]";
+	if first-buffet-access is false, say " [/ss1]In the meantime, you can help yourself to the buffet.' [/r][/p]";
 	otherwise:
-		say ". [/n]";
-	say "[regarding order handler][They] [go] to the kitchen. [/n]"; 
+		say ". [/p]";
+	say "[The naming of order handler] [go] to the kitchen. [/n]"; 
 	now the order handler is in the kitchen;
 	waiter returns with order in three turns from now.
 	
 At the time when waiter returns with order:
-	now the order handler is in the dining room;
-	say "[The naming of order handler] [return] with a tray that contains your order. [/n]".
+	if the player is enclosed by the bench:
+		now the order handler is in the dining room;
+		say "[The naming of order handler] [return] with a tray that contains your order. [/n]";
+	otherwise:
+		waiter returns with order in one turn from now.
 		
 Book 2.7 - The buffet
 
