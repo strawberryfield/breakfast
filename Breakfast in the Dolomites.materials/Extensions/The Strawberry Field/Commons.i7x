@@ -191,6 +191,7 @@ To kiss is a verb.
 To land is a verb. 
 To leak is a verb. 
 To leap is a verb. 
+To leave is a verb.
 To make is a verb. 
 To meet is a verb. 
 To move is a verb.

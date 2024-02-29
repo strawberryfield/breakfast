@@ -788,7 +788,8 @@ At the time when waiter comes for order:
 		say "[A naming of current waiter] is at your table. [/n]";
 		now the current interlocutor is the current waiter;
 		reset order;
-		setnode main-order node.
+		setnode main-order node;
+		now ordering-trigger is true.
 
 To say ask for choice:
 	say "[/se][regarding the current interlocutor][they] [ask] you to choose. [/n]".
@@ -834,7 +835,8 @@ Default response for main-order node:
 	say "[/ss]The only hot drinks that are available are [available hot drinks].' [/se][the naming of current interlocutor] [state]. [/n]".
 Response for main-order node when saying no:
 	say "[leavenode][/ss]If you want something hot later, don't hesitate to call me or my colleague.' [/se][the naming of current interlocutor] [say] and [go] away. [/n]";
-	now the current interlocutor is nothing.
+	now the current interlocutor is nothing;
+	now ordering-trigger is false.
 	 		
 After reading a command when the current node is main-order node:
 	if the player's command matches "coffee":
@@ -876,21 +878,18 @@ Understand "regular/normal/plain/standard" as "[regular]".
 Understand "short/low/shrunk/limited" as "[short]".
 Understand "tall/long/high/lengthy" as "[tall]".
 
+To prepare (V - a volume) of espresso:
+	now the order content is a random coffeecup in the kitchen;
+	now the liquid of the order content is espresso;
+	now the fluid content of the order content is V; 
+	say order confirmation.
+	
 Response for espresso-order node when answered that "[regular]":
-	now the order content is a random coffeecup in the kitchen;
-	now the liquid of the order content is espresso;
-	now the fluid content of the order content is 30 ml; 
-	say order confirmation.
+	prepare 30 ml of espresso.
 Response for espresso-order node when answered that "[short]":
-	now the order content is a random coffeecup in the kitchen;
-	now the liquid of the order content is espresso;
-	now the fluid content of the order content is 20 ml;
-	say order confirmation.
+	prepare 20 ml of espresso.
 Response for espresso-order node when answered that "[tall]":
-	now the order content is a random coffeecup in the kitchen;
-	now the liquid of the order content is espresso;
-	now the fluid content of the order content is 40 ml;
-	say order confirmation.
+	prepare 40 ml of espresso.
 Default response for espresso-order node:
 	say "[/ss]Sorry, I did not understand your espresso preference: regular, low or high?' [/se][the naming of current interlocutor] [state]. [/n]".
 	
@@ -1007,8 +1006,16 @@ To finalize order:
 	say "[/ss]What can I get for you, miss?' [/se][regarding current interlocutor][they] [ask] [Monica]. [/n]";
 	if the liquid of the order content is hot chocolate:
 		say "[/ss]A cappuccino.' ";
+		let Monica-drink be a random cup in the kitchen;
+		now the liquid of Monica-drink is cappuccino;
+		now the fluid content of Monica-drink is 200 cc;
+		now Monica-drink is on the round tray;
 	otherwise:
 		say "[/ss]A cup of hot chocolate.' ";
+		let Monica-drink be a random mug in the kitchen;
+		now the liquid of Monica-drink is hot chocolate;
+		now the fluid content of Monica-drink is 250 cc;
+		now Monica-drink is on the round tray;
 	say "[/se][Monica] [answer]. [/n]";
 	say "[/ss]Perfect!' [/se][the naming of current interlocutor] [exclaim]. [/n]";
 	now the order handler is the current interlocutor; 
@@ -1021,12 +1028,18 @@ To finalize order:
 		say ". [/p]";
 	say "[The naming of order handler] [go] to the kitchen. [/n]"; 
 	now the order handler is in the kitchen;
+	now ordering-trigger is false;
 	waiter returns with order in three turns from now.
 	
 At the time when waiter returns with order:
 	if the player is enclosed by the bench:
 		now the order handler is in the dining room;
-		say "[The naming of order handler] [return] with a tray that contains your order. [/n]";
+		say "[The naming of order handler] [return] with a tray containing your order. [/n]";
+		say "[/ss]Here are your hot drinks!' [/se][regarding order handler][they] [exclaim] ";
+		say "[/ss1][A list of things on the round tray].' [/r][/n]";
+		say "[The naming of order handler] then [regarding order handler][place] the contents of the tray on the table. [/n]";
+		repeat with D running through the things on the round tray:
+			now D is on the table;
 	otherwise:
 		waiter returns with order in one turn from now.
 		
@@ -1673,5 +1686,15 @@ Instead of going somewhere from the buffet during First buffet access:
 	[insert here che checks]
 	now buffet-trigger is false;
 	continue the action.
+	
+Chapter 4.4.4 - Ordering
+
+Ordering is a scene.
+The ordering-trigger is a truth state that varies.
+Ordering begins when ordering-trigger is true.
+Ordering ends when ordering-trigger is false.
+
+Instead of getting off the bench during ordering:
+	say "[alert][/ss]Have you no respect for [the naming of order handler]? ' [/se][Monica] [rebuke] you. [/n]".
 
 	

@@ -92,7 +92,20 @@ To say greet-to (w - a worker):
 	if w is improper-named, say " to [the naming of w]".
 
 To say you are welcome:
-	say "[one of]You are welcome[or]Not at all[or]Don't mention it[or]Duty[in random order]![run paragraph on]".
+	say "[one of]You're welcome[or]Not at all[or]Don't mention it[or]Duty[in random order]![run paragraph on]".
+	
+Section 2.1.3 - thank
+
+Understand the command "thank" as something new.
+Understand "Thank you/--" as leavetaking.
+Understand "Thank you/-- [something]" as saying goodbye to.
+
+Instead of saying goodbye to the current interlocutor:
+	say "[/ss][thanks the current interlocutor].' [/se][we] [say][greet-to the current interlocutor]. [/n]";
+	say "[/ss][you are welcome]' [/se][regarding current interlocutor][they] [reply]";
+	if the current interlocutor is a waiter, say " and then [regarding the current interlocutor][leave]";
+	say ". [/n]";
+	reset the interlocutor.
 	
 Volume 3 - waiters
 
