@@ -155,6 +155,7 @@ Sanity-check switching on or switching off an r-abstract thing:
 
 Chapter 1.2.8 - Verbs
 
+To add is a verb.
 To admit is a verb.
 To answer is a verb.
 To appreciate is a verb.

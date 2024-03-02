@@ -863,10 +863,12 @@ After reading a command when the current node is main-order node:
 
 Section 2.6.5.3 - Coffee node
 
+Understand "barley coffee/--" as "[barley]".
+
 Response for coffee-order node when answered that "espresso":
 	now next-node of current node is espresso-order node;
 	say "[leavenode][/ss]Regular, short or tall?' [ask for choice again]".
-Response for coffee-order node when answered that "barley":
+Response for coffee-order node when answered that "[barley]":
 	now next-node of current node is barley-order node;
 	say "[leavenode][/ss]Small or large cup?' [ask for choice again]".
 Response for coffee-order node when answered that "moka":
@@ -882,7 +884,7 @@ After reading a command when the current node is coffee-order node:
 		replace the player's command with "answer espresso to [printed name of current interlocutor]";
 	otherwise if the player's command matches "moka": 
 		replace the player's command with "answer moka to [printed name of current interlocutor]";
-	otherwise if the player's command matches "barley": 
+	otherwise if the player's command matches "[barley]": 
 		replace the player's command with "answer barley to [printed name of current interlocutor]".
 
 Section 2.6.5.4 - Espresso node
@@ -941,7 +943,6 @@ After reading a command when the current node is barley-order node:
 Section 2.6.5.6 - Cappuccino node
 
 Understand "soy/soya milk/--" as "[soy]".
-Understand "barley coffee/--" as "[barley]".
 
 To prepare a full cup of (L - a liquid):
 	now the order content is a random cup in the kitchen;
@@ -1058,29 +1059,54 @@ Chapter 2.6.6 - Hot drinks details
 
 To say /cie:
 	say "[/se][the naming of current interlocutor] [regarding current interlocutor][one of][explain][or][answer][or][say][at random]. ".
+To say /cia:
+	say "[regarding current interlocutor][They] also [add]: [/ss1]".
 	
 Response of a waitstaff worker when asked-or-told about "coffee":
 	follow the about coffee rule.
 Response for an order-convnode when asked-or-told about "coffee":
 	follow the about coffee rule.
 This is the about coffee rule:
-	say "[/ss]To prepare the coffee, we use a blend of 100% arabica beans of the highest quality, carefully roasted. This gives it a smooth and intense flavour and a superb aroma.' [/cie][/ss1]We can extract it with an espresso machine or with a moka, as you do at home. We can also make it with barley.' [/r][/n]".
+	say "[/ss]This is the best way to start the day with a sprint.' [/cie][/ss1]To prepare the coffee, we use a blend of 100% arabica beans of the highest quality, carefully roasted. This gives it a smooth and intense flavour and a superb aroma.' [/r][/n]";
+	say "[/cia]We can extract it with an espresso machine or with a moka, as you do at home. We can also make it with barley.' [/r][/n]".
 
 Response of a waitstaff worker when asked-or-told about "cappuccino":
 	follow the about cappuccino rule.
 Response for an order-convnode when asked-or-told about "cappuccino":
 	follow the about cappuccino rule.
 This is the about cappuccino rule:
-	say "[/ss]My favourite breakfast choice.' [/cie][/ss1]Traditionally, it is made with one third coffee, one third milk and the rest with a soft froth of whipped milk.' [/r][/n]".	
+	say "[/ss]My favourite breakfast choice.' [/cie][/ss1]Traditionally, it is made with one third coffee, one third milk and the rest with a soft froth of whipped milk. In addition to its delicious taste, our cappuccino offers several health benefits: the espresso base provides a dose of antioxidants, while the milk contributes essential nutrients like calcium.' [/r][/n]";
+	say "[/cia]I can also make it with soy milk or barley coffee.' [/r][/n]".	
 
 Response of a waitstaff worker when asked-or-told about "[chocolate]":
 	follow the about chocolate rule.
 Response for an order-convnode when asked-or-told about "[chocolate]":
 	follow the about chocolate rule.
 This is the about chocolate rule:
-	say "[/ss]Ha, ha, you are so gluttonous!' [/cie][/ss1]The traditional hot chocolate made with cocoa, milk and brown sugar that enhances the taste. It is thickened over the fire and served hot.' [/r][/n]".	
+	say "[/ss]Ha, ha, you are so gluttonous!' [/cie][/ss1]A velvety-smooth concoction that envelopes you in warmth and indulgence, setting the perfect tone for a cozy morning. The traditional hot chocolate made with cocoa, milk and brown sugar that enhances the taste. It is thickened over the fire and served hot.' [/r][/n]".	
 
+Response of a waitstaff worker when asked-or-told about "tea":
+	follow the about tea rule.
+Response for an order-convnode when asked-or-told about "tea":
+	follow the about tea rule.
+This is the about tea rule:
+	say "[/ss]A perfect way to start your day.' [/cie][/ss1]A cup of tea not only wakes you up but also tantalizes your taste buds. Our tea blend combines select black teas to deliver a harmonious balance of strength and flavor.' [/r][/n]";
+	say "[/cia]If you like, I can bring lemon or milk for you to add.' [/r][/n]".	
+
+Response of a waitstaff worker when asked-or-told about "[barley]":
+	follow the about barley rule.
+Response for an order-convnode when asked-or-told about "[barley]":
+	follow the about barley rule.
+This is the about barley rule:
+	say "[/ss]It's a wonderful alternative to traditional coffee.' [/cie][/ss1]Unlike traditional coffee, barley coffee is naturally caffeine-free, making it an ideal choice for those looking to reduce their caffeine intake or seeking a milder option. Its roasted notes provide a delightful depth of flavor without the bitterness often associated with coffee.' [/r][/n]".	
 	
+Response of a waitstaff worker when asked-or-told about "[soy]":
+	follow the about soy rule.
+Response for an order-convnode when asked-or-told about "[soy]":
+	follow the about soy rule.
+This is the about soy rule:
+	say "[/ss]It's a fantastic option for accommodating dietary preferences or allergies.' [/cie][/ss1]It's naturally rich in protein, making it a satisfying option to start your day. Plus, it's low in saturated fat and cholesterol-free, contributing to a heart-healthy diet. It's a delicious and nutritious alternative that's sure to enhance your morning routine.' [/r][/n]".	
+
 Book 2.7 - The buffet
 
 The description of the buffet is "The buffet is a feast for the senses, featuring a variety of locally sourced and homemade delights. Guests can savor freshly baked pastries, artisanal bread, jams, and a selection of cheeses and cured meats, showcasing the flavors of the Dolomites.".
