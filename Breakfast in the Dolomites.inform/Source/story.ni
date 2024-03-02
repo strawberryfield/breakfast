@@ -745,9 +745,9 @@ Instead of hailing during the Search for the table:
 		try saying hello to W.
 Instead of saying hello to someone (called the other) during the Search for the table:
 	unless the other is Monica:
-		now the current interlocutor is a random waiter in the location;
-		say "[/ss][good morning current interlocutor], we are staying in the 'Edelweiss' room and it is our first day here.' [/r][/n][/ss]Oh, welcome! Let me show you to your table.' [/se][the naming of current interlocutor] [regarding current interlocutor][say] and [go] to a free table. [/n][/ss]This is the table we have reserved for you, I hope it is to your liking.' [/se][regarding the current interlocutor][they] [point] to you the table.";
-		say "[heart][/ss]It's perfect!' [/se][Monica] [exclaim] [/ss][thanks current interlocutor].' [/r][/n]";
+		now the current interlocutor is the other;
+		say "[/ss1][good morning current interlocutor], we are staying in the 'Edelweiss' room and it is our first day here.' [/r][/n][/ss]Oh, welcome! Let me show you to your table.' [/se][the naming of current interlocutor] [regarding current interlocutor][say] and [go] to a free table. [/n][/ss]This is the table we have reserved for you, I hope it is to your liking.' [/se][regarding the current interlocutor][they] [point] to you the table.";
+		say "[heart][/ss]It's perfect!' [/se][Monica] [exclaim] [/ss1][thanks current interlocutor].' [/r][/n]";
 		the waiter welcomes never;
 		now search-table-trigger is false;
 		Monica sits at table in 1 turn from now;
@@ -755,15 +755,13 @@ Instead of saying hello to someone (called the other) during the Search for the 
 		continue the action.
 
 Instead of saying yes during Search for the table, try hailing.
+Instead of calling a waiter during Search for the table, try hailing.
 
 Instead of entering the bench during Search for the table, say "[alert][/ss]The first thing we need to know is where to sit.' [/se][Monica] [remind]. [/n]".
 
 Instead of going somewhere during Search for the table, say "[alert][/ss]Let's go. Instead of wandering around, let's find our table.' [/se][Monica] [remind]. [/n]".
 		
 Section 2.6.4.2 - Other responses
-
-Default ask response for a worker:
-	say "[/ss]Sorry, I know nothing about it.' [/se][regarding the noun][they] [admit].".
 
 Response of a waiter when asked about bathroom:
 	say “[/ss]Where can I find the toilet?’ [/se][we] [ask]. [/n]”;
@@ -779,7 +777,12 @@ Chapter 2.6.5 - Order
 Section 2.6.5.1 - Start
 
 After entering the bench:
-	waiter comes for order in 1 turn from now;
+	if the current interlocutor is a waiter:
+		reset order;
+		setnode main-order node;
+		now ordering-trigger is true;
+	otherwise:
+		waiter comes for order in 1 turn from now;
 	continue the action.
 	
 At the time when waiter comes for order:
@@ -798,22 +801,30 @@ To say ask for choice again:
 To say order confirmation:
 	say "[leavenode][/ss]Good choice.' [/se][the naming of current interlocutor] [confirm] you. [/n]";
 	finalize order.
-	
+
+An order-convnode is a kind of convnode.
+An order-convnode is closed and not auto-suggesting.
+Default response for an order-convnode:
+	say "[/ss]Don't change the topic.' [/se][Monica] [say] [us]. [/n]".
+
+Rule for printing a parser error when the latest parser error is the not a verb I recognise error during ordering:
+	abide by the default answer response rules for the current node.
+		
 Section 2.6.5.2 - Main node
 
 To say available hot drinks:
 	say "a coffee, a cappuccino, a hot chocolate or a tea".
-The main-order node is a closed not auto-suggesting convnode.
+The main-order node is a order-convnode.
 Node-introduction for main-order node:
 	say "[/ss]May I serve you a hot beverage?' [/se][the naming of current interlocutor] [ask], then [explain]: ";
 	say "[/ss1]I can offer you [available hot drinks].' [/r][/n]".
 
-The coffee-order node is a closed not auto-suggesting convnode.
-The cappuccino-order node is a closed not auto-suggesting convnode.
-The tea-order node is a closed not auto-suggesting convnode.
+The coffee-order node is an order-convnode.
+The cappuccino-order node is an order-convnode.
+The tea-order node is an order-convnode.
 
-The espresso-order node is a closed not auto-suggesting convnode.
-The barley-order node is a closed not auto-suggesting convnode.
+The espresso-order node is an order-convnode.
+The barley-order node is an order-convnode.
 	
 Understand "hot/-- chocolate" as "[chocolate]".
 
@@ -831,13 +842,15 @@ Response for main-order node when answered that "[chocolate]":
 Response for main-order node when answered that "tea":
 	now next-node of current node is tea-order node;
 	say "[leavenode][/ss]Lemon, milk or nothing?' [ask for choice]".
-Default response for main-order node:
+Default answer response for main-order node:
 	say "[/ss]The only hot drinks that are available are [available hot drinks].' [/se][the naming of current interlocutor] [state]. [/n]".
 Response for main-order node when saying no:
 	say "[leavenode][/ss]If you want something hot later, don't hesitate to call me or my colleague.' [/se][the naming of current interlocutor] [say] and [go] away. [/n]";
 	now the current interlocutor is nothing;
 	now ordering-trigger is false.
-	 		
+Response for main-order node when saying yes:
+	say "[/ss]Well!' [/se][regarding current interlocutor][they] [say] and then [ask]: [/ss1]What do you prefer?' [/r][/n]".
+	
 After reading a command when the current node is main-order node:
 	if the player's command matches "coffee":
 		replace the player's command with "answer coffee to [printed name of current interlocutor]";
@@ -847,7 +860,7 @@ After reading a command when the current node is main-order node:
 		replace the player's command with "answer chocolate to [printed name of current interlocutor]";
 	otherwise if the player's command matches "tea": 
 		replace the player's command with "answer tea to [printed name of current interlocutor]".
-	
+
 Section 2.6.5.3 - Coffee node
 
 Response for coffee-order node when answered that "espresso":
@@ -861,7 +874,7 @@ Response for coffee-order node when answered that "moka":
 	now the liquid of the order content is moka coffee;
 	now the fluid content of the order content is 40 ml;
 	say order confirmation.
-Default response for coffee-order node:
+Default answer response for coffee-order node:
 	say "[/ss]Sorry, I did not understand your preference for coffee: espresso, moka or barley?' [/se][the naming of current interlocutor] [state]. [/n]".
 
 After reading a command when the current node is coffee-order node:
@@ -890,7 +903,7 @@ Response for espresso-order node when answered that "[short]":
 	prepare 20 ml of espresso.
 Response for espresso-order node when answered that "[tall]":
 	prepare 40 ml of espresso.
-Default response for espresso-order node:
+Default answer response for espresso-order node:
 	say "[/ss]Sorry, I did not understand your espresso preference: regular, low or high?' [/se][the naming of current interlocutor] [state]. [/n]".
 	
 After reading a command when the current node is espresso-order node:
@@ -916,7 +929,7 @@ Response for barley-order node when answered that "[large]":
 	now the liquid of the order content is barley coffee;
 	now the fluid content of the order content is 150 ml;
 	say order confirmation.
-Default response for barley-order node:
+Default answer response for barley-order node:
 	say "[/ss]Sorry, I did not understand your preference for barley coffee: small or large cup?' [/se][the naming of current interlocutor] [state]. [/n]".
 	
 After reading a command when the current node is barley-order node:
@@ -930,22 +943,19 @@ Section 2.6.5.6 - Cappuccino node
 Understand "soy/soya milk/--" as "[soy]".
 Understand "barley coffee/--" as "[barley]".
 
+To prepare a full cup of (L - a liquid):
+	now the order content is a random cup in the kitchen;
+	now the liquid of the order content is L;
+	now the fluid content of the order content is 200 ml;
+	say order confirmation.
+	
 Response for cappuccino-order node when answered that "[regular]":
-	now the order content is a random cup in the kitchen;
-	now the liquid of the order content is cappuccino;
-	now the fluid content of the order content is 200 ml;
-	say order confirmation.
+	prepare a full cup of cappuccino.
 Response for cappuccino-order node when answered that "[soy]":
-	now the order content is a random cup in the kitchen;
-	now the liquid of the order content is soy cappuccino;
-	now the fluid content of the order content is 200 ml;
-	say order confirmation.
+	prepare a full cup of soy cappuccino.
 Response for cappuccino-order node when answered that "[barley]":
-	now the order content is a random cup in the kitchen;
-	now the liquid of the order content is barley cappuccino;
-	now the fluid content of the order content is 200 ml;
-	say order confirmation.
-Default response for cappuccino-order node:
+	prepare a full cup of barley cappuccino.
+Default answer response for cappuccino-order node:
 	say "[/ss]Sorry, I did not understand your preference for cappuccino: regular, soy milk or barley coffee?' [/se][the naming of current interlocutor] [state]. [/n]".
 
 After reading a command when the current node is cappuccino-order node:
@@ -965,20 +975,20 @@ To prepare tea:
 	now the liquid of the order content is cappuccino;
 	now the fluid content of the order content is 150 ml;
 	say order confirmation.
-		
+To prepare a pot of (L - a liquid):
+	now the order second-content is a random pot in the kitchen;
+	now the liquid of the order second-content is L;
+	now the fluid content of the order second-content is 5 ml.
+			
 Response for tea-order node when answered that "[nothing]":
 	prepare tea.
 Response for tea-order node when answered that "lemon":
-	now the order second-content is a random pot in the kitchen;
-	now the liquid of the order second-content is lemon juice;
-	now the fluid content of the order second-content is 5 ml;
+	prepare a pot of lemon juice;
 	prepare tea.
 Response for tea-order node when answered that "milk":
-	now the order second-content is a random pot in the kitchen;
-	now the liquid of the order second-content is milk;
-	now the fluid content of the order second-content is 5 ml;
+	prepare a pot of milk;
 	prepare tea.
-Default response for tea-order node:
+Default answer response for tea-order node:
 	say "[/ss]Sorry, I did not understand your preference for tea: lemon, milk or neither?' [/se][the naming of current interlocutor] [state]. [/n]".
 
 After reading a command when the current node is tea-order node:
@@ -1029,6 +1039,7 @@ To finalize order:
 	say "[The naming of order handler] [go] to the kitchen. [/n]"; 
 	now the order handler is in the kitchen;
 	now ordering-trigger is false;
+	now the current interlocutor is nothing;
 	waiter returns with order in three turns from now.
 	
 At the time when waiter returns with order:
@@ -1042,7 +1053,34 @@ At the time when waiter returns with order:
 			now D is on the table;
 	otherwise:
 		waiter returns with order in one turn from now.
-		
+	
+Chapter 2.6.6 - Hot drinks details
+
+To say /cie:
+	say "[/se][the naming of current interlocutor] [regarding current interlocutor][one of][explain][or][answer][or][say][at random]. ".
+	
+Response of a waitstaff worker when asked-or-told about "coffee":
+	follow the about coffee rule.
+Response for an order-convnode when asked-or-told about "coffee":
+	follow the about coffee rule.
+This is the about coffee rule:
+	say "[/ss]To prepare the coffee, we use a blend of 100% arabica beans of the highest quality, carefully roasted. This gives it a smooth and intense flavour and a superb aroma.' [/cie][/ss1]We can extract it with an espresso machine or with a moka, as you do at home. We can also make it with barley.' [/r][/n]".
+
+Response of a waitstaff worker when asked-or-told about "cappuccino":
+	follow the about cappuccino rule.
+Response for an order-convnode when asked-or-told about "cappuccino":
+	follow the about cappuccino rule.
+This is the about cappuccino rule:
+	say "[/ss]My favourite breakfast choice.' [/cie][/ss1]Traditionally, it is made with one third coffee, one third milk and the rest with a soft froth of whipped milk.' [/r][/n]".	
+
+Response of a waitstaff worker when asked-or-told about "[chocolate]":
+	follow the about chocolate rule.
+Response for an order-convnode when asked-or-told about "[chocolate]":
+	follow the about chocolate rule.
+This is the about chocolate rule:
+	say "[/ss]Ha, ha, you are so gluttonous!' [/cie][/ss1]The traditional hot chocolate made with cocoa, milk and brown sugar that enhances the taste. It is thickened over the fire and served hot.' [/r][/n]".	
+
+	
 Book 2.7 - The buffet
 
 The description of the buffet is "The buffet is a feast for the senses, featuring a variety of locally sourced and homemade delights. Guests can savor freshly baked pastries, artisanal bread, jams, and a selection of cheeses and cured meats, showcasing the flavors of the Dolomites.".

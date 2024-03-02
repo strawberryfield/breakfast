@@ -129,4 +129,25 @@ Understand "waitress" as a female waiter.
 A waiter has a thing called attended table. 
 Definition: a waiter is free if attended table of it is nothing.
 
+Chapter 3.1 - Calling the waiter
+
+Calling a waiter is an action applying to nothing.
+Understand "Call for/-- a/-- waiter/waitress" as calling a waiter.
+Understand "Rise your/a/the/-- hand" as calling a waiter.
+
+Check calling a waiter:
+	unless the current interlocutor is nothing:
+		if the current interlocutor is a waiter, say "Someone is already at your service." instead;
+	if the number of waiters in the location is 0, say "There are no waiters here." instead.
+Carry out calling a waiter:
+	now the current interlocutor is a random waiter in the location.
+Report calling a waiter:
+	say "[A naming of current interlocutor] approached. [/n]";
+	say "[/ss]Can I help you?' [/se][regarding current interlocutor][they] [ask]. [/n]".
+
+Volume 4 - Answers
+
+Default response for a worker (this is the worker default response rule):
+	say "[/ss][one of]Sorry,[or]I'm sorry, but[at random] [one of]I can't help you[or]I can't be of any assistance to you[at random] [one of]now[or]at the moment[or]at this time[at random].' [/se][regarding the noun][they] [admit].".
+
 Workers ends here.
