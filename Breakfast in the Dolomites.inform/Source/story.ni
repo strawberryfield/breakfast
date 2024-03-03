@@ -31,6 +31,7 @@ Include Commons by The Strawberry Field.
 Include Food by The Strawberry Field.
 Include Workers by The Strawberry Field.
 Include Bathroom kit by The Strawberry Field.
+Include Written papers by The Strawberry Field.
 
 Chapter 0.2 - Game start
 
@@ -1061,6 +1062,8 @@ To say /cie:
 	say "[/se][the naming of current interlocutor] [regarding current interlocutor][one of][explain][or][answer][or][say][at random]. ".
 To say /cia:
 	say "[regarding current interlocutor][They] also [add]: [/ss1]".
+
+Section 2.6.6.1 - Coffee
 	
 Response of a waitstaff worker when asked-or-told about "coffee":
 	follow the about coffee rule.
@@ -1070,6 +1073,8 @@ This is the about coffee rule:
 	say "[/ss]This is the best way to start the day with a sprint.' [/cie][/ss1]To prepare the coffee, we use a blend of 100% arabica beans of the highest quality, carefully roasted. This gives it a smooth and intense flavour and a superb aroma.' [/r][/n]";
 	say "[/cia]We can extract it with an espresso machine or with a moka, as you do at home. We can also make it with barley.' [/r][/n]".
 
+Section 2.6.6.2 - Cappuccino
+
 Response of a waitstaff worker when asked-or-told about "cappuccino":
 	follow the about cappuccino rule.
 Response for an order-convnode when asked-or-told about "cappuccino":
@@ -1078,12 +1083,16 @@ This is the about cappuccino rule:
 	say "[/ss]My favourite breakfast choice.' [/cie][/ss1]Traditionally, it is made with one third coffee, one third milk and the rest with a soft froth of whipped milk. In addition to its delicious taste, our cappuccino offers several health benefits: the espresso base provides a dose of antioxidants, while the milk contributes essential nutrients like calcium.' [/r][/n]";
 	say "[/cia]I can also make it with soy milk or barley coffee.' [/r][/n]".	
 
+Section 2.6.6.3 - Chocolate
+
 Response of a waitstaff worker when asked-or-told about "[chocolate]":
 	follow the about chocolate rule.
 Response for an order-convnode when asked-or-told about "[chocolate]":
 	follow the about chocolate rule.
 This is the about chocolate rule:
 	say "[/ss]Ha, ha, you are so gluttonous!' [/cie][/ss1]A velvety-smooth concoction that envelopes you in warmth and indulgence, setting the perfect tone for a cozy morning. The traditional hot chocolate made with cocoa, milk and brown sugar that enhances the taste. It is thickened over the fire and served hot.' [/r][/n]".	
+
+Section 2.6.6.4 - Tea
 
 Response of a waitstaff worker when asked-or-told about "tea":
 	follow the about tea rule.
@@ -1093,6 +1102,8 @@ This is the about tea rule:
 	say "[/ss]A perfect way to start your day.' [/cie][/ss1]A cup of tea not only wakes you up but also tantalizes your taste buds. Our tea blend combines select black teas to deliver a harmonious balance of strength and flavor.' [/r][/n]";
 	say "[/cia]If you like, I can bring lemon or milk for you to add.' [/r][/n]".	
 
+Section 2.6.6.5 - Barley
+
 Response of a waitstaff worker when asked-or-told about "[barley]":
 	follow the about barley rule.
 Response for an order-convnode when asked-or-told about "[barley]":
@@ -1100,12 +1111,50 @@ Response for an order-convnode when asked-or-told about "[barley]":
 This is the about barley rule:
 	say "[/ss]It's a wonderful alternative to traditional coffee.' [/cie][/ss1]Unlike traditional coffee, barley coffee is naturally caffeine-free, making it an ideal choice for those looking to reduce their caffeine intake or seeking a milder option. Its roasted notes provide a delightful depth of flavor without the bitterness often associated with coffee.' [/r][/n]".	
 	
+Section 2.6.6.3 - Soy
+
 Response of a waitstaff worker when asked-or-told about "[soy]":
 	follow the about soy rule.
 Response for an order-convnode when asked-or-told about "[soy]":
 	follow the about soy rule.
 This is the about soy rule:
 	say "[/ss]It's a fantastic option for accommodating dietary preferences or allergies.' [/cie][/ss1]It's naturally rich in protein, making it a satisfying option to start your day. Plus, it's low in saturated fat and cholesterol-free, contributing to a heart-healthy diet. It's a delicious and nutritious alternative that's sure to enhance your morning routine.' [/r][/n]".	
+	
+Chapter 2.6.7 - The written paper
+			
+The written paper is a paper-item on the table.
+The written paper front is a paper-side.
+The written paper back is a paper-side.
+The front of the written paper is the written paper front.
+The back of the written paper is the written paper back.
+
+The description of the written paper front is "[/b]Today Dinner Menu[/p][/i]Starter[/f][/n]Toasted rustic bread with fresh tomatoes, red onions, basil, and garlic topped with cheese[/p][/i]First course[/f][/n]Traditional Italian bean and pasta soup[/p][/i]Main course[/f][/n]Sautéed chicken breast with wild mushrooms and scallions in a Marsala reduction wine sauce served with potato and vegetables[/p][/i]Dessert[/f][/n]Raspberry mousse[/r]".
+
+
+Table of Bulletin topics
+topic	title	text
+"[weather]"	"Weather report"	"Today will be mostly sunny, except for some low clouds in the morning, which will dissipate quickly. In the late afternoon/evening, cloud formation and local rain showers are possible. [/n]Minimum temperatures between 8°C and 10°C, maximum temperatures between 20°C and 28°C."
+"tip of/-- the/-- day/--"	"Tip of the day"	"Look carefully along the paths: you may find small fossils, witnesses to a time when what are now mountain peaks were at the bottom of a vast tropical sea. [/n]These 280 million year old cliffs are particularly impressive at sunrise and sunset, when they glow a fiery red: this is the phenomenon we call 'enrosadira'."
+
+To say list of topics of bulletin:
+	let named options count be the number of rows in Table of Bulletin topics;
+	repeat through Table of Bulletin topics:
+		say "[/ss][title entry]'[/r]";
+		decrease named options count by 1;
+		if the named options count is 1:
+			if the serial comma option is active, say ",";
+			say " and ";
+		otherwise unless the named options count is 0:
+			say ", ".
+			
+The description of the written paper back is "There are several boxes whose titles are: [list of topics of bulletin]. ".
+
+Understand "examine [text]" as examining as a paper when the written paper is visible and the written paper is turned.
+Understand "read [text]" as examining as a paper when the written paper is visible and the written paper is turned.
+
+Instead of examining as a paper a topic listed in the Table of Bulletin topics:
+	say "[/b][title entry][/b][/p][/f][text entry][/r][/n]".
+
 
 Book 2.7 - The buffet
 

@@ -11,6 +11,7 @@ To say /run: say run paragraph on.
 To say /b: say bold type.
 To say /i: say italic type.
 To say /r: say roman type.
+To say /f: say fixed letter spacing.
 
 To say /s (t - text): say "[/i]'[t]'[/r]".
 To say /ss: say "[/i]'".
