@@ -97,13 +97,19 @@ To say you are welcome:
 Section 2.1.3 - thank
 
 Understand the command "thank" as something new.
-Understand "Thank you/--" as leavetaking.
-Understand "Thank you/-- [something]" as saying goodbye to.
+Understand "Thank you/--" as implicitly thanking.
+Understand "Thank you/-- [something]" as thanking.
 
-Instead of saying goodbye to the current interlocutor:
-	say "[/ss][thanks the current interlocutor].' [/se][we] [say][greet-to the current interlocutor]. [/n]";
-	say "[/ss][you are welcome]' [/se][regarding current interlocutor][they] [reply]";
-	if the current interlocutor is a waiter, say " and then [regarding the current interlocutor][leave]";
+Implicitly thanking is an action applying to nothing.
+Thanking is an action applying to one visible thing.
+
+Carry out implicitly thanking (this is the standard implicitly thanking rule):
+  try thanking the current interlocutor.
+  
+Instead of thanking something:
+	say "[/ss][thanks the noun].' [/se][we] [say][greet-to the noun]. [/n]";
+	say "[/ss][you are welcome]' [/se][regarding the noun][they] [reply]";
+	if the noun is a waiter, say " and then [regarding the noun][leave]";
 	say ". [/n]";
 	reset the interlocutor.
 	

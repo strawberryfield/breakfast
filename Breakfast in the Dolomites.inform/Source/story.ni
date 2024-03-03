@@ -74,6 +74,7 @@ style name	color	italic	font weight
 special-style-1	"#FF0000"	false	regular-weight
 note-style	"#0000A0"	true	bold-weight
 
+
 Book 1.2 - Patches
 
 Chapter 1.2.1 - Measured liquids interfere with content of supporters
@@ -1128,27 +1129,16 @@ The written paper front is a paper-side.
 The written paper back is a paper-side.
 The front of the written paper is the written paper front.
 The back of the written paper is the written paper back.
+The arguments of the written paper back are the Table of Bulletin topics.
 
 The description of the written paper front is "[/b]Today Dinner Menu[/p][/i]Starter[/f][/n]Toasted rustic bread with fresh tomatoes, red onions, basil, and garlic topped with cheese[/p][/i]First course[/f][/n]Traditional Italian bean and pasta soup[/p][/i]Main course[/f][/n]Sautéed chicken breast with wild mushrooms and scallions in a Marsala reduction wine sauce served with potato and vegetables[/p][/i]Dessert[/f][/n]Raspberry mousse[/r]".
-
 
 Table of Bulletin topics
 topic	title	text
 "[weather]"	"Weather report"	"Today will be mostly sunny, except for some low clouds in the morning, which will dissipate quickly. In the late afternoon/evening, cloud formation and local rain showers are possible. [/n]Minimum temperatures between 8°C and 10°C, maximum temperatures between 20°C and 28°C."
 "tip of/-- the/-- day/--"	"Tip of the day"	"Look carefully along the paths: you may find small fossils, witnesses to a time when what are now mountain peaks were at the bottom of a vast tropical sea. [/n]These 280 million year old cliffs are particularly impressive at sunrise and sunset, when they glow a fiery red: this is the phenomenon we call 'enrosadira'."
 
-To say list of topics of bulletin:
-	let named options count be the number of rows in Table of Bulletin topics;
-	repeat through Table of Bulletin topics:
-		say "[/ss][title entry]'[/r]";
-		decrease named options count by 1;
-		if the named options count is 1:
-			if the serial comma option is active, say ",";
-			say " and ";
-		otherwise unless the named options count is 0:
-			say ", ".
-			
-The description of the written paper back is "There are several boxes whose titles are: [list of topics of bulletin]. ".
+The description of the written paper back is "[/b]The daily newsletter[/r][/p]There are several boxes whose titles are: [list of topics of the noun]. ".
 
 Understand "examine [text]" as examining as a paper when the written paper is visible and the written paper is turned.
 Understand "read [text]" as examining as a paper when the written paper is visible and the written paper is turned.
@@ -1160,6 +1150,11 @@ Instead of examining as a paper a topic listed in the Table of Bulletin topics:
 Book 2.7 - The buffet
 
 The description of the buffet is "The buffet is a feast for the senses, featuring a variety of locally sourced and homemade delights. Guests can savor freshly baked pastries, artisanal bread, jams, and a selection of cheeses and cured meats, showcasing the flavors of the Dolomites.".
+
+The HACCP ingredients book is in the buffet.
+Instead of examining the HACCP ingredients book, say "If you need information about food, it is best to ask the staff.".
+Instead of taking the HACCP ingredients book, say "Even if no one ever reads it, it must remain here.".
+Instead of opening the HACCP ingredients book, try examining the noun.
 
 Response of a not waitstaff worker when asked about a food-item or asked about "[meats]":
 	say "[/ss]For such things, it is best to ask my dining room colleagues.' [/se][the naming of the noun] [admit]. [/n]".
@@ -1264,11 +1259,28 @@ When play begins:
 		now the fluid content of the current bottle is quantity entry;
 		increment tablerow.
 
-Chapter 2.7.2 - Food
+Chapter 2.7.2 - The juicer
+
+The juicer table is a scenery service table in the buffet. 
+The description is "A little table without tablecloth."
+Rule for printing a locale paragraph about the juicer table:
+	say "Next to the sideboard is a small table with a juicer on it and two small wooden crates of celery ribs and carrots.".
+
+A vegetable is a kind of food-item.
+A celery rib is a kind of vegetable.
+A carrot is a kind of vegetable.
+
+A crate is a kind of service container. The description is "A little wooden crate for vegetables."
+The first crate is a scenery crate on the juicer table.
+3 carrots are in the first crate.
+The second crate is a scenery crate on the juicer table.
+3 celery ribs are in the second crate.
+
+Chapter 2.7.3 - Food
 
 A food-item is familiar.
 
-Section 2.7.2.1 - Meats
+Section 2.7.3.1 - Meats
 
 A slice of speck is a kind of food-item. 
 The description is "A slice of typical Tyrolean smoked ham. Dark red in color with thin white streaks of fat." 
@@ -1329,7 +1341,7 @@ After reading a command when the current node is meat-type-node:
 		replace the player's command with "answer salami to [printed name of current interlocutor]".
 
 	
-Section 2.7.2.2 - Butter and jams
+Section 2.7.3.2 - Butter and jams
 
 A knob of butter is a kind of butter-item. 
 The description is "A little light-yellow cube of butter."
@@ -1366,7 +1378,7 @@ Rule for asking which do you mean when everything matched is a bread slice:
 		stop the action.
 
 		
-Section 2.7.2.4 - The buffet table
+Section 2.7.3.4 - The buffet table
 
 The buffet table is a scenery service table in the buffet. 
 The description is "A large table with a white tablecloth."
@@ -1394,7 +1406,13 @@ The third chopping board is a scenery chopping board.
 
 The first chopping board, the second chopping board and the third chopping board are on the buffet table.
 
-Chapter 2.7.3 - Movements
+Chapter 2.7.4 - The cook
+
+The cooking table is a scenery service table in the buffet.
+Rule for printing a locale paragraph about the cooking table:
+	say "Next to the buffet table there is another table, behind which a cook is on hand to cook the eggs that are in a basket.".
+
+Chapter 2.7.5 - Movements
 
 Before going to the buffet:
 	if the number of things carried by the player is greater than zero:
@@ -1616,9 +1634,7 @@ Mila is improper-named.
 
 Chapter 3.4.3 - The cook
 
-Emma is a worker in the buffet.
-Emma is female.
-Emma is waitstaff.
+Emma is a scenery female waitstaff worker in the buffet.
 Hair are "a bonnet covering her". Eyes are "brown".
 Proper name is "Emma".
 Printed name is "cook".
@@ -1630,7 +1646,7 @@ Book 3.5 - The narrator
 The narrator is a backdrop.
 The narrator is everywhere.
 Understand "storyteller/teller" as the narrator.
-
+	
 Chapter 3.5.1 - Interaction
 
 Instead of saying hello to the narrator, say "[first time][/i]Welcome to this game! [/r][/n][only]Remember[first time], however,[only] that I, as the narrator, cannot be involved in the play: interact with [Monica] and the other characters."
@@ -1839,7 +1855,6 @@ Visit buffet	false
 Drunk hot drinks	false
 Eat buffet	false
 Drunk cold drinks	false
-
-
+Got cooked egg	false
 
 	
