@@ -1035,7 +1035,7 @@ To finalize order:
 	unless the order second-content is nothing, now the order second-content is on the round tray; 
 	now the order handler carries the round tray;
 	say "[/ss]I'll be back soon with what you've ordered.' [/se][regarding order handler][they] [say]";
-	if first-buffet-access is false, say " [/ss1]In the meantime, you can help yourself to the buffet.' [/r][/p]";
+	unless visit buffet completed, say " [/ss1]In the meantime, you can help yourself to the buffet.' [/r][/p]";
 	otherwise:
 		say ". [/p]";
 	say "[The naming of order handler] [go] to the kitchen. [/n]"; 
@@ -1053,6 +1053,7 @@ At the time when waiter returns with order:
 		say "[The naming of order handler] then [regarding order handler][place] the contents of the tray on the table. [/n]";
 		repeat with D running through the things on the round tray:
 			now D is on the table;
+		mark order hot drinks as done;
 	otherwise:
 		waiter returns with order in one turn from now.
 	
@@ -1773,27 +1774,27 @@ Chapter 4.4.3 - First buffet access
 
 First buffet access is a scene.
 The buffet-trigger is a truth state that varies.
-The first-buffet-access is a truth state that varies.
 First buffet access begins when buffet-trigger is true.
 First buffet access ends when buffet-trigger is false.
 
-After going to the buffet while the first-buffet-access is false:
-	now first-buffet-access is true;
-	now buffet-trigger is true;
+After going to the buffet:
+	unless visit buffet completed:
+		mark visit buffet as done;
+		now buffet-trigger is true;
 	continue the action.
 	
 When First buffet access begins:
-	say "[Monica] [if Monica is enclosed by the bench][stand] up and [end if][follow] you at the buffet. [/n]";
+	say "[Monica] [if Monica is enclosed by the bench][stand] up and [end if][follow] [us] at the buffet. [/n]";
 	now Monica is in the buffet.
 	
 When First buffet access ends:
-	say "[Monica] [return] with you in the dining room and [sit] on the bench. [/n]";
+	say "[Monica] [return] with [us] in the dining room and [sit] on the bench. [/n]";
 	now Monica is on the bench.
 	
 Instead of going somewhere from the buffet during First buffet access:
 	if the number of things carried by the player is zero:
 		say "[/ss]I don't understand why you didn't take anything.' [/se][Monica] [ask]. [/n]";
-		now first-buffet-access is false;
+		mark visit buffet as not done;
 		now buffet-trigger is false; 
 		continue the action;
 	[insert here che checks]
@@ -1808,6 +1809,37 @@ Ordering begins when ordering-trigger is true.
 Ordering ends when ordering-trigger is false.
 
 Instead of getting off the bench during ordering:
-	say "[alert][/ss]Have you no respect for [the naming of order handler]? ' [/se][Monica] [rebuke] you. [/n]".
+	say "[alert][/ss]Have you no respect for [the naming of order handler]? ' [/se][Monica] [rebuke] [us]. [/n]".
+
+Volume 5 - Internal db
+
+Book 5.1 - Table of tasks
+
+A task is a kind of value.
+Some tasks are defined by the Table of tasks.
+
+To mark (T - a task) as done:
+	choose a row with a task of T in the Table of tasks;
+	now done entry is true.
+
+To mark (T - a task) as not done:
+	choose a row with a task of T in the Table of tasks;
+	now done entry is false.
+
+To decide if (T - a task) completed:
+	let X be the done corresponding to a task of T in the Table of tasks;
+	if X is true, decide yes;
+	otherwise:
+		decide no.
+		
+Table of tasks
+task	done
+Order hot drinks	false
+Visit buffet	false
+Drunk hot drinks	false
+Eat buffet	false
+Drunk cold drinks	false
+
+
 
 	
