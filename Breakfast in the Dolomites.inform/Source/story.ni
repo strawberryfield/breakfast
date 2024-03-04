@@ -1149,32 +1149,19 @@ Instead of examining as a paper a topic listed in the Table of Bulletin topics:
 
 Book 2.7 - The buffet
 
-The description of the buffet is "The buffet is a feast for the senses, featuring a variety of locally sourced and homemade delights. Guests can savor freshly baked pastries, artisanal bread, jams, and a selection of cheeses and cured meats, showcasing the flavors of the Dolomites.".
+The description of the buffet is "The buffet is a feast for the senses, featuring a variety of locally sourced and homemade delights. Guests can savor freshly baked artisanal breads, jams, and a selection of cheeses and cured meats, showcasing the flavors of the Dolomites.".
 
 The HACCP ingredients book is in the buffet.
+The HACCP ingredients book is familiar.
 Instead of examining the HACCP ingredients book, say "If you need information about food, it is best to ask the staff.".
 Instead of taking the HACCP ingredients book, say "Even if no one ever reads it, it must remain here.".
 Instead of opening the HACCP ingredients book, try examining the noun.
 
-Response of a not waitstaff worker when asked about a food-item or asked about "[meats]":
-	say "[/ss]For such things, it is best to ask my dining room colleagues.' [/se][the naming of the noun] [admit]. [/n]".
+Response of a not waitstaff worker when asked about the HACCP ingredients book:
+	say "[/ss]You can find it in the buffet,' [/se][the naming of the noun] [say] [/ss1]but if you need information about food, it is best to ask my colleagues in the dining room.' [/r][/n]".
+Response of a waitstaff worker when asked about the HACCP ingredients book:
+	say "[/ss]You can find it next to the buffet,' [/se][the naming of the noun] [say] [/ss1]but if you need information about food, it is best to ask me or my colleagues.' [/r][/n]".
 
-Response of Monica when asked about a food-item or asked about "[meats]" or asked about "[buffet]" or asked about the buffet table:
-	say "[/ss][one of]I think you'd better ask a waiter[or]In my opinion, you'd better have a word with a waiter[at random].' [/se][Monica] [suggest]. [/n]".
-		
-Understand "buffet" or "self/free service" or "free flow" as "[buffet]".
-Response of a not waitstaff worker when asked about "[buffet]" or asked about the buffet table:
-	say "[/ss]Ask my colleagues in the dining room.' [/se][the naming of the noun] [explain] ";
-	say "[/ss1]They will be pleased to give you all the information you need.' [/r][/n]".
-
-Response of a waiter when asked about "[buffet]" or asked about the buffet table:
-	say "[/ss]The buffet is over there.' [/se][the naming of the noun] [say], pointing north ";
-	say "[/ss1]Bread, jam, butter, cheese and cold meats are provided, as well as cold drinks. You can also use a juicer and a colleague can cook eggs for you.' [/r][/n]".
-
-Response of Emma when asked about the buffet table:
-	say "[/ss]You can take anything you want, but you have to consume it here: you are not allowed to take it out for a pocket launch.' [/se][the naming of the noun] [explain], then [continue] ";
-	say "[/ss1]If you want, I can cook you an egg the way you like it.' [/r][/n]".
-		
 Chapter 2.7.1 - Drinks
 
 Section 2.7.1.1 - Containers
@@ -1417,6 +1404,37 @@ Chapter 2.7.5 - Movements
 Before going to the buffet:
 	if the number of things carried by the player is greater than zero:
 		say "[/ss]Why are you carrying [the list of things carried by the player]?' [/se][Monica] [ask]. [/n]" instead.
+		
+Chapter 2.7.6 - Generic answers
+
+Understand "buffet" or "self/free service" or "free flow" as "[buffet]".
+Understand "food/cooking/cuisine/edible/edibles/foodstuff/foodstuffs" as "[food]".
+Understand "drink/drinks/liquid/liquids/beverage" as "[drinks]".
+Understand "[food]" or "[drinks]" as "[edibles]".
+
+Response of a not waitstaff worker when asked about a food-item or asked about "[meats]" or asked about "[edibles]":
+	say "[/ss]For such things, it is best to ask my dining room colleagues.' [/se][the naming of the noun] [admit]. [/n]".
+
+Response of Monica when asked about a food-item or asked about "[meats]" or asked about "[buffet]" or asked about "[edibles]" or asked about the buffet table:
+	say "[/ss][one of]I think you'd better ask a waiter[or]In my opinion, you'd better have a word with a waiter[at random].' [/se][Monica] [suggest]. [/n]".
+
+Response of a waitstaff worker when asked about "[edibles]":
+	say "[/ss]The question is a little too general,' [/se][the naming of the noun] [reply] ";
+	say "[/ss1]if you have a more specific question, I will be more than happy to help you.' [/r][/n]".		
+	
+Response of a not waitstaff worker when asked about "[buffet]" or asked about the buffet table:
+	say "[/ss]Ask my colleagues in the dining room.' [/se][the naming of the noun] [explain] ";
+	say "[/ss1]They will be pleased to give you all the information you need.' [/r][/n]".
+
+Response of a waiter when asked about "[buffet]" or asked about the buffet table:
+	say "[/ss]The buffet is over there.' [/se][the naming of the noun] [say], pointing north ";
+	say "[/ss1]Bread, jam, butter, cheese and cold meats are provided, as well as cold drinks. You can also use a juicer and a colleague can cook eggs for you.' [/r][/n]".
+
+Response of Emma when asked about the buffet table:
+	say "[/ss]You can take anything you want, but you have to consume it here: you are not allowed to take it out for a pocket launch.' [/se][the naming of the noun] [explain], then [continue] ";
+	say "[/ss1]If you want, I can cook you an egg the way you like it.' [/r][/n]".
+		
+
 
 Volume 3 - Peoples
 
