@@ -736,10 +736,12 @@ Chapter 2.6.4 - Conversation
 
 Section 2.6.4.1 - Searching for the table
 
+To say approaching (W - a worker):
+	say "[We] [approach] [the naming of W] and [say] hello: [run paragraph on]".
 Instead of hailing during the Search for the table:
 	if the current interlocutor is nothing:
 		let W be a random waiter in the location;
-		say "[We] [approach] [the naming of W] and say hello: [run paragraph on]";
+		say approaching W;
 		try saying hello to W;
 	otherwise:
 		let W be the current interlocutor;
@@ -814,11 +816,13 @@ Rule for printing a parser error when the latest parser error is the not a verb 
 		
 Section 2.6.5.2 - Main node
 
+To say main question introduction:
+	say "[/se][the naming of current interlocutor] [regarding current interlocutor][ask], then [explain]: ".
 To say available hot drinks:
 	say "a coffee, a cappuccino, a hot chocolate or a tea".
 The main-order node is a order-convnode.
 Node-introduction for main-order node:
-	say "[/ss]May I serve you a hot beverage?' [/se][the naming of current interlocutor] [ask], then [explain]: ";
+	say "[/ss]May I serve you a hot beverage?' [main question introduction]";
 	say "[/ss1]I can offer you [available hot drinks].' [/r][/n]".
 
 The coffee-order node is an order-convnode.
@@ -1400,9 +1404,53 @@ The first chopping board, the second chopping board and the third chopping board
 
 Chapter 2.7.4 - The cook
 
+Section 2.7.4.1 - Conversation 
+
 The cooking table is a scenery service table in the buffet.
 Rule for printing a locale paragraph about the cooking table:
 	say "Next to the buffet table there is another table, behind which a cook is on hand to cook the eggs that are in a basket.".
+	
+Instead of hailing while the location is the buffet:
+	if the current interlocutor is nothing:
+		say approaching Emma;
+	otherwise:
+		now the current interlocutor is nothing;
+	try saying hello to Emma.
+Instead of saying hello to someone (called the other) while the location is the buffet:
+	unless the other is Monica:
+		now the current interlocutor is the other;
+		say "[/ss1][good morning current interlocutor].' [/r][/n]";
+		now the egg-cooking-trigger is true;
+		setnode main-egg node;
+	otherwise:
+		continue the action.
+		
+Section 2.7.4.2 - Eggs choice
+
+An egg-convnode is a kind of convnode.
+An egg-convnode is closed and not auto-suggesting.
+Default response for an egg-convnode:
+	say "[/ss]Sorry, I need an answer to my question.' [/se][the naming of Emma] [say] [us]. [/n]".
+Rule for printing a parser error when the latest parser error is the not a verb I recognise error during egg cooking:
+	abide by the default answer response rules for the current node.
+
+To say available eggs cooking:
+	say "a fried egg, an omelette or a crêpe".			
+The main-egg node is an egg-convnode.
+Node-introduction for main-egg node:
+	say "[/ss]May I cook an egg for you?' [main question introduction]";
+	say "[/ss1]I can offer you [available eggs cooking].' [/r][/n]".
+
+The fried-egg node is an egg-convnode.
+The omelette node is an egg-convnode.
+Understand "fried egg/--" as "[fried egg]".
+Understand "omelette/omelet" as "[omelette]".
+Understand "crêpe/crepe" as "[crepe]".
+
+Section 2.7.4.3 - Fried egg
+
+Understand "scrambled" as "[scrambled]".
+Understand "bullseye" or "bull's eye" or "sunny side up" as "[bullseye]".	
 
 Chapter 2.7.5 - Movements
 
@@ -1831,6 +1879,7 @@ When First buffet access ends:
 	now Monica is on the bench.
 	
 Instead of going somewhere from the buffet during First buffet access:
+	if egg-cooking-trigger is true, continue the action;
 	if the number of things carried by the player is zero:
 		say "[/ss]I don't understand why you didn't take anything.' [/se][Monica] [ask]. [/n]";
 		mark visit buffet as not done;
@@ -1850,6 +1899,18 @@ Ordering ends when ordering-trigger is false.
 Instead of getting off the bench during ordering:
 	say "[alert][/ss]Have you no respect for [the naming of order handler]? ' [/se][Monica] [rebuke] [us]. [/n]".
 
+Chapter 4.4.5 - Egg cooking
+
+Egg cooking is a scene.
+The egg-cooking-trigger is a truth state that varies.
+Egg cooking begins when egg-cooking-trigger is true.
+Egg cooking ends when egg-cooking-trigger is false.
+
+Instead of going somewhere during egg cooking:
+	say "[The naming of Emma] [are] cooking an egg for [us].".
+Instead of taking something during egg cooking:	
+	say "It [are] best to keep your hands free for the dish [the naming of Emma] [are] about to pass to [us].".
+	
 Volume 5 - Internal db
 
 Book 5.1 - Table of tasks
