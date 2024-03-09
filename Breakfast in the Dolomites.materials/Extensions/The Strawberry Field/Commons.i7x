@@ -162,9 +162,11 @@ To answer is a verb.
 To appreciate is a verb.
 To approach is a verb.
 To ask is a verb.
+To beat is a verb.
 To become is a verb. 
 To blink is a verb. 
 To bounce is a verb. 
+To break is a verb.
 To caress is a verb.
 To cease is a verb. 
 To challenge is a verb.
@@ -173,6 +175,7 @@ To cock is a verb.
 To come is a verb.
 To confirm is a verb.
 To continue is a verb.
+To cook is a verb.
 To copy is a verb.
 To cry is a verb.
 To decide is a verb. 
@@ -230,11 +233,13 @@ To shy is a verb.
 To sit is a verb.
 To slap is a verb.
 To slip is a verb. 
+To spread is a verb.
 To stand is a verb.
 To stare is a verb. 
 To state is a verb.
 To strike is a verb. 
 To suggest is a verb.
+To throw is a verb.
 To type is a verb.
 To urge is a verb.
 To walk is a verb.

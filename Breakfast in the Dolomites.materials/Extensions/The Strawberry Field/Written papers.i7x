@@ -16,6 +16,8 @@ Instead of turning a paper-item:
 		now the noun is upside;
 		say "front";
 	say " side.".
+Understand the command "flip" as "turn".
+Understand the command "revert" as "turn".
 
 Instead of examining a paper-item:
 	if the noun is upside, try examining the front of the noun instead;

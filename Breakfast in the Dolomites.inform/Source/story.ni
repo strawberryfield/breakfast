@@ -813,7 +813,7 @@ Default response for an order-convnode:
 
 Rule for printing a parser error when the latest parser error is the not a verb I recognise error during ordering:
 	abide by the default answer response rules for the current node.
-		
+
 Section 2.6.5.2 - Main node
 
 To say main question introduction:
@@ -1404,12 +1404,21 @@ The first chopping board, the second chopping board and the third chopping board
 
 Chapter 2.7.4 - The cook
 
-Section 2.7.4.1 - Conversation 
-
 The cooking table is a scenery service table in the buffet.
 Rule for printing a locale paragraph about the cooking table:
 	say "Next to the buffet table there is another table, behind which a cook is on hand to cook the eggs that are in a basket.".
 	
+The omelette is a food-item in the kitchen. 
+The fried egg is a food-item in the kitchen.
+The crepe is a bread slice in the kitchen. Printed name is "crêpe".
+
+The current dish is an object that varies.
+To get a dish:
+	now the current dish is a random dish on the cupboard;
+	now the current dish is in the kitchen.
+	
+Section 2.7.4.1 - Conversation 
+
 Instead of hailing while the location is the buffet:
 	if the current interlocutor is nothing:
 		say approaching Emma;
@@ -1424,7 +1433,15 @@ Instead of saying hello to someone (called the other) while the location is the 
 		setnode main-egg node;
 	otherwise:
 		continue the action.
-		
+
+To say (item - a food-item) will be ready:
+	say "[leavenode][/ss][Our] [item] will be ready in a couple of minutes.' [/se][the naming of current interlocutor] [regarding current interlocutor][say]. [/p]";
+	the egg is ready in two turns from now.
+	
+At the time when the egg is ready:
+	now Emma carries the current dish;
+	say "[/ss]Here's [our] [list of things on the current dish]!' [/se][the naming of current interlocutor] [regarding current interlocutor][say], handing [we] the dish. [/n]".
+			
 Section 2.7.4.2 - Eggs choice
 
 An egg-convnode is a kind of convnode.
@@ -1443,14 +1460,138 @@ Node-introduction for main-egg node:
 
 The fried-egg node is an egg-convnode.
 The omelette node is an egg-convnode.
-Understand "fried egg/--" as "[fried egg]".
-Understand "omelette/omelet" as "[omelette]".
-Understand "crêpe/crepe" as "[crepe]".
+Understand "a/the/one/-- fried egg/--" as "[fried egg]".
+Understand "a/the/one/-- omelette/omelet" as "[omelette]".
+Understand "a/the/one/-- crêpe/crepe" as "[crepe]".
 
+Response for main-egg node when answered that "[fried egg]":
+	now next-node of current node is fried-egg node;
+	say "[leavenode][/ss]Bull's eye or scrambled?' [ask for choice]".
+Response for main-egg node when answered that "[omelette]":
+	now next-node of current node is omelette node;
+	say "[leavenode][/ss]Empty or stuffed?' [ask for choice]".
+Response for main-egg node when answered that "[crepe]":
+	get a dish;
+	now the crepe is on the current dish;
+	say the crepe will be ready;
+	say "[The naming of Emma] [take] a ladle of liquid dough from a bowl and [place] it on a hot plate. She carefully [spread] the dough with a wooden spatula.";
+	Emma turns crepe in 1 turn from now.
+Default answer response for main-egg node:
+	say "[/ss]I can cook you [available eggs cooking].' [/se][the naming of current interlocutor] [state]. [/n]".
+Response for main-egg node when saying no:
+	say "[leavenode][/ss]If you need anything later, I am here to help you.' [/se][the naming of current interlocutor] [say]. [/n]";
+	now the current interlocutor is nothing;
+	now egg-cooking-trigger is false.
+Response for main-egg node when saying yes:
+	say "[/ss]Ok.' [/se][regarding current interlocutor][they] [say] and then [ask]: [/ss1]What do you prefer?' [/r][/n]".
+
+After reading a command when the current node is main-egg node:
+	if the player's command matches "[fried egg]":
+		replace the player's command with "answer fried to [printed name of current interlocutor]";
+	otherwise if the player's command matches "[omelette]": 
+		replace the player's command with "answer omelette to [printed name of current interlocutor]";
+	otherwise if the player's command matches "[crepe]": 
+		replace the player's command with "answer crepe to [printed name of current interlocutor]".
+
+At the time when Emma turns crepe:
+	say "[The naming of Emma] [turn] the crêpe over with the help of a wide-bladed knife.".
+		
 Section 2.7.4.3 - Fried egg
 
-Understand "scrambled" as "[scrambled]".
-Understand "bullseye" or "bull's eye" or "sunny side up" as "[bullseye]".	
+Understand "scrambled/mixed egg/--" as "[scrambled]".
+Understand "bullseye/eye/integer/whole egg/--" or "bull's eye egg/--" or "sunny side/-- up/-- egg/--" as "[bullseye]".	
+
+To say Emma take an egg:
+	say "[The naming of Emma] [regarding Emma][take] an egg, [break] it by tapping it on the edge of [/run]".
+To say Emma discard the eggshell:
+	say "[regarding Emma][They] [throw] the eggshell into a bin under the table.".	
+	
+To prepare a (mode - some text) fried egg:
+	get a dish;
+	now the fried egg is on the current dish;
+	now attributes of fried egg are mode;
+	say the fried egg will be ready;
+	say "[Emma take an egg]a frying pan and then carefully [pour] the contents into the pan.";
+	say Emma discard the eggshell.
+	
+Response for fried-egg node when answered that "[scrambled]":
+	prepare a "scrambled" fried egg;
+	Emma scrambles the egg in 1 turn from now.
+Response for fried-egg node when answered that "[bullseye]":
+	prepare a "bull's eye" fried egg;
+	Emma watchs the egg in 1 turn from now.
+Default answer response for fried-egg node:
+	say "[/ss]I can leave the egg whole like «bull's eye» either I can scramble it.' [/se][the naming of current interlocutor] [state]. [/n]".
+		
+After reading a command when the current node is fried-egg node:
+	if the player's command matches "[scrambled]":
+		replace the player's command with "answer scrambled to [printed name of current interlocutor]";
+	otherwise if the player's command matches "[bullseye]": 
+		replace the player's command with "answer bullseye to [printed name of current interlocutor]".
+
+At the time when Emma scrambles the egg:
+	say "[The naming of Emma] [use] a fork to mix the egg yolk with the abume, creating a white mixture with yellow flecks.".
+At the time when Emma watchs the egg:
+	say "The egg [cook] under the watchful eyes of [the naming of Emma]. The albumen [have] turned white and the yolk in the centre [are] as yellow as the sun.".
+	
+Section 2.7.4.4 - Omelette
+
+Understand "leave/-- it/-- empty/plain/regular" or "with/-- nothing" as "[empty]".
+Understand "stuffed/filled/dressed" or "stuff/fill/dress it/--" as "[stuffed]".
+The stuffed-omelette node is an egg-convnode.
+
+To say available omelette stuffing:
+	say "tomato, cheese or speck".
+	
+To prepare a (stuff - some text) omelette:
+	get a dish;
+	now the omelette is on the current dish;
+	unless the stuff is empty, now the attributes of the omelette are "[stuff] stuffed";
+	say the omelette will be ready;
+	say "[Emma take an egg]a bowl and then [regarding Emma][pour] the contents into it.";
+	say Emma discard the eggshell;
+	say "[The naming of Emma] [regarding Emma][beat] the egg in the bowl with a whisk, ";
+	unless the stuff is empty, say "[regarding Emma][add] some pieces of [stuff], ";
+	say "then [regarding Emma][pour] the contents of the bowl into a hot pan.";
+	Emma rotates the omelette in 1 turn from now.
+	
+Response for omelette node when answered that "[empty]" or saying no:
+	prepare a "" omelette.
+Response for omelette node when answered that "[stuffed]" or saying yes:
+	now next-node of current node is stuffed-omelette node;
+	say "[leavenode][/ss]I can stuff it with [available omelette stuffing], which one do you prefer?' [ask for choice again]".
+Default answer response for omelette node:
+	say "[/ss]I can stuff your omelette with something or leave it empty.' [/se][the naming of current interlocutor] [state]. [/n]".
+
+After reading a command when the current node is omelette node:
+	if the player's command matches "[empty]":
+		replace the player's command with "answer empty to [printed name of current interlocutor]";
+	otherwise if the player's command matches "[stuffed]": 
+		replace the player's command with "answer stuffed to [printed name of current interlocutor]".
+
+At the time when Emma rotates the omelette:
+	say "[The naming of Emma] [regarding Emma][turn] the omelette upside down with a skilful flick of the pan so that it can be cooked on the other side."
+	
+Section 2.7.4.5 - Stuffed omelette
+
+Response for stuffed-omelette node when answered that "tomato":
+	prepare a "tomato" omelette.
+Response for stuffed-omelette node when answered that "cheese":
+	prepare a "cheese" omelette.
+Response for stuffed-omelette node when answered that "speck":
+	prepare a "speck" omelette.
+
+Default answer response for stuffed-omelette node:
+	say "[/ss]I can stuff your omelette with [available omelette stuffing] only.' [/se][the naming of current interlocutor] [state]. [/n]".
+	
+After reading a command when the current node is stuffed-omelette node:
+	if the player's command matches "tomato":
+		replace the player's command with "answer tomato to [printed name of current interlocutor]";
+	otherwise if the player's command matches "cheese": 
+		replace the player's command with "answer cheese to [printed name of current interlocutor]";
+	otherwise if the player's command matches "speck": 
+		replace the player's command with "answer speck to [printed name of current interlocutor]".
+
 
 Chapter 2.7.5 - Movements
 
@@ -1910,6 +2051,18 @@ Instead of going somewhere during egg cooking:
 	say "[The naming of Emma] [are] cooking an egg for [us].".
 Instead of taking something during egg cooking:	
 	say "It [are] best to keep your hands free for the dish [the naming of Emma] [are] about to pass to [us].".
+Instead of taking a dish during egg cooking:
+	if the current dish is carried by Emma:
+		now the current dish is carried by the player;
+		say "[We] [take] [the noun] from [the naming of Emma].";
+		now the current dish is nothing;
+		now egg-cooking-trigger is false;
+	otherwise:
+		continue the action.
+Instead of examining a dish during egg cooking:
+	if the current dish is carried by Emma, say "On the dish there is [a list of things on the current dish].";
+	otherwise:
+		continue the action.
 	
 Volume 5 - Internal db
 

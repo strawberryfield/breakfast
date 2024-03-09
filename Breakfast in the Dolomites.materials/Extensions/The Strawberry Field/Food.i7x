@@ -40,7 +40,11 @@ Volume 2 - Food items
 
 A food-item is a kind of thing. It is edible.
 A food-item can be spreadable. A food-item is usually not spreadable.
-
+A food-item has some text called attributes.
+Rule for printing the name of a food-item (called target):
+	if the attributes of the target are not empty, say "[attributes of the target] ";
+	say printed name of the target.
+	
 A butter-item is a kind of food-item. It is spreadable.
 The flavor-description of a butter-item is "soft, creamy, and rich, with just a hint of sweetness".
 The scent-description of a butter-item is "smell of good milk cream".
