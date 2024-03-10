@@ -688,7 +688,7 @@ Instead of taking something which is enclosed by the round plastic container, sa
 Chapter 2.6.2 - Rules
 
 After going to the dining room from the reception:
-	if the location of Monica is the reception:
+	if Monica is in the reception:
 		say "[Monica] [follow] you.";
 		now Monica is in the dining room;
 		Monica urges breakfast never;
@@ -698,16 +698,12 @@ After going to the dining room from the reception:
 Section 2.6.2.1 - Good manners
 
 Instead of eating something while the player is not enclosed by the bench:
-	if Monica is in the location:
-		say "[alert][/ss]But what are you doing?' [/se][Monica] [rebuke] you. [/ss1]You should eat sitting at the table!' [/r][/n]";
-	otherwise:
-		say "I am sure that [Monica] would scold you if she could see you now.".
+	if Monica is here, say "[alert][/ss]But what are you doing?' [/se][Monica] [rebuke] you. [/ss1]You should eat sitting at the table!' [/r][/n]" instead;
+	say "I am sure that [Monica] would scold you if she could see you now.".
 
 Instead of drinking something while the player is not enclosed by the bench:
-	if Monica is in the location:
-		say "[alert][/ss]Naughty!' [/se][Monica] [exclaim]. [/ss1]You should drink sitting at the table!' [/r][/n]";
-	otherwise:
-		say "If [Monica] were here, she would not allow you to do such a thing.".
+	if Monica is here, say "[alert][/ss]Naughty!' [/se][Monica] [exclaim]. [/ss1]You should drink sitting at the table!' [/r][/n]" instead;
+	say "If [Monica] were here, she would not allow you to do such a thing.".
 
 Chapter 2.6.3 - Timed events
 
@@ -799,11 +795,11 @@ At the time when waiter comes for order:
 		now ordering-trigger is true.
 
 To say ask for choice:
-	say "[/se][regarding the current interlocutor][they] [ask] you to choose. [/n]".
+	say "[/se][regarding the current interlocutor][they] [ask] [us] to choose. [/n]".
 To say ask for choice again:
-	say "[/se][regarding the current interlocutor][they] [ask] you again to choose. [/n]".
+	say "[/se][regarding the current interlocutor][they] [ask] [us] again to choose. [/n]".
 To say order confirmation:
-	say "[leavenode][/ss]Good choice.' [/se][the naming of current interlocutor] [confirm] you. [/n]";
+	say "[leavenode][/ss]Good choice.' [/se][the naming of current interlocutor] [confirm] [us]. [/n]";
 	finalize order.
 
 An order-convnode is a kind of convnode.
@@ -813,6 +809,9 @@ Default response for an order-convnode:
 
 Rule for printing a parser error when the latest parser error is the not a verb I recognise error during ordering:
 	abide by the default answer response rules for the current node.
+
+To rewrite the answer with (A - some text):
+	replace the player's command with "answer [A] to [printed name of current interlocutor]";	
 
 Section 2.6.5.2 - Main node
 
@@ -826,28 +825,36 @@ Node-introduction for main-order node:
 	say "[/ss1]I can offer you [available hot drinks].' [/r][/n]".
 
 The coffee-order node is an order-convnode.
+Node-introduction for coffee-order node:
+	say "[/ss]Espresso, moka or barley?' [ask for choice]".	
 The cappuccino-order node is an order-convnode.
+Node-introduction for cappuccino-order node:
+	say "[/ss]Regular, soy milk or barley coffee?' [ask for choice]".
 The tea-order node is an order-convnode.
-
+Node-introduction for tea-order node:
+	say "[/ss]Lemon, milk or nothing?' [ask for choice]".
+	
 The espresso-order node is an order-convnode.
 The barley-order node is an order-convnode.
 	
 Understand "hot/-- chocolate" as "[chocolate]".
-
-Response for main-order node when answered that "coffee":
-	now next-node of current node is coffee-order node;
-	say "[leavenode][/ss]Espresso, moka or barley?' [ask for choice]".
-Response for main-order node when answered that "cappuccino":
-	now next-node of current node is cappuccino-order node;
-	say "[leavenode][/ss]Regular, soy milk or barley coffee?' [ask for choice]".
-Response for main-order node when answered that "[chocolate]":
+To prepare chocolate:
 	now the order content is a random mug in the kitchen;
 	now the liquid of the order content is hot chocolate;
 	now the fluid content of the order content is 200 ml;
 	say order confirmation.
+		
+Response for main-order node when answered that "coffee":
+	now next-node of current node is coffee-order node;
+	say leavenode.
+Response for main-order node when answered that "cappuccino":
+	now next-node of current node is cappuccino-order node;
+	say leavenode.
+Response for main-order node when answered that "[chocolate]":
+	prepare chocolate.
 Response for main-order node when answered that "tea":
 	now next-node of current node is tea-order node;
-	say "[leavenode][/ss]Lemon, milk or nothing?' [ask for choice]".
+	say leavenode.
 Default answer response for main-order node:
 	say "[/ss]The only hot drinks that are available are [available hot drinks].' [/se][the naming of current interlocutor] [state]. [/n]".
 Response for main-order node when saying no:
@@ -858,14 +865,10 @@ Response for main-order node when saying yes:
 	say "[/ss]Well!' [/se][regarding current interlocutor][they] [say] and then [ask]: [/ss1]What do you prefer?' [/r][/n]".
 	
 After reading a command when the current node is main-order node:
-	if the player's command matches "coffee":
-		replace the player's command with "answer coffee to [printed name of current interlocutor]";
-	otherwise if the player's command matches "cappuccino": 
-		replace the player's command with "answer cappuccino to [printed name of current interlocutor]";
-	otherwise if the player's command matches "[chocolate]": 
-		replace the player's command with "answer chocolate to [printed name of current interlocutor]";
-	otherwise if the player's command matches "tea": 
-		replace the player's command with "answer tea to [printed name of current interlocutor]".
+	if the player's command matches "coffee", rewrite the answer with "coffee";
+	if the player's command matches "cappuccino", rewrite the answer with "cappuccino"; 
+	if the player's command matches "[chocolate]", rewrite the answer with "chocolate";
+	if the player's command matches "tea", rewrite the answer with "tea".
 
 Section 2.6.5.3 - Coffee node
 
@@ -886,12 +889,9 @@ Default answer response for coffee-order node:
 	say "[/ss]Sorry, I did not understand your preference for coffee: espresso, moka or barley?' [/se][the naming of current interlocutor] [state]. [/n]".
 
 After reading a command when the current node is coffee-order node:
-	if the player's command matches "espresso":
-		replace the player's command with "answer espresso to [printed name of current interlocutor]";
-	otherwise if the player's command matches "moka": 
-		replace the player's command with "answer moka to [printed name of current interlocutor]";
-	otherwise if the player's command matches "[barley]": 
-		replace the player's command with "answer barley to [printed name of current interlocutor]".
+	if the player's command matches "espresso", rewrite the answer with "espresso";
+	if the player's command matches "moka", rewrite the answer with "moka";
+	if the player's command matches "[barley]", rewrite the answer with "barley".
 
 Section 2.6.5.4 - Espresso node
 
@@ -915,12 +915,9 @@ Default answer response for espresso-order node:
 	say "[/ss]Sorry, I did not understand your espresso preference: regular, low or high?' [/se][the naming of current interlocutor] [state]. [/n]".
 	
 After reading a command when the current node is espresso-order node:
-	if the player's command matches "[regular]":
-		replace the player's command with "answer regular to [printed name of current interlocutor]";
-	otherwise if the player's command matches "[short]": 
-		replace the player's command with "answer short to [printed name of current interlocutor]";
-	otherwise if the player's command matches "[tall]": 
-		replace the player's command with "answer tall to [printed name of current interlocutor]".
+	if the player's command matches "[regular]", rewrite the answer with "regular";
+	if the player's command matches "[short]", rewrite the answer with "short";
+	if the player's command matches "[tall]", rewrite the answer with "tall".
 
 Section 2.6.5.5 - Barley node
 
@@ -941,10 +938,8 @@ Default answer response for barley-order node:
 	say "[/ss]Sorry, I did not understand your preference for barley coffee: small or large cup?' [/se][the naming of current interlocutor] [state]. [/n]".
 	
 After reading a command when the current node is barley-order node:
-	if the player's command matches "[small]":
-		replace the player's command with "answer small to [printed name of current interlocutor]";
-	otherwise if the player's command matches "[large]": 
-		replace the player's command with "answer large to [printed name of current interlocutor]".
+	if the player's command matches "[small]", rewrite the answer with "small";
+	if the player's command matches "[large]", rewrite the answer with "large".
 		
 Section 2.6.5.6 - Cappuccino node
 
@@ -966,12 +961,9 @@ Default answer response for cappuccino-order node:
 	say "[/ss]Sorry, I did not understand your preference for cappuccino: regular, soy milk or barley coffee?' [/se][the naming of current interlocutor] [state]. [/n]".
 
 After reading a command when the current node is cappuccino-order node:
-	if the player's command matches "[regular]":
-		replace the player's command with "answer regular to [printed name of current interlocutor]";
-	otherwise if the player's command matches "[soy]": 
-		replace the player's command with "answer soy to [printed name of current interlocutor]";
-	otherwise if the player's command matches "[barley]": 
-		replace the player's command with "answer barley to [printed name of current interlocutor]".
+	if the player's command matches "[regular]", rewrite the answer with "regular";
+	if the player's command matches "[soy]", rewrite the answer with "soy";
+	if the player's command matches "[barley]", rewrite the answer with "barley".
 
 Section 2.6.5.7 - Tea node
 
@@ -999,12 +991,9 @@ Default answer response for tea-order node:
 	say "[/ss]Sorry, I did not understand your preference for tea: lemon, milk or neither?' [/se][the naming of current interlocutor] [state]. [/n]".
 
 After reading a command when the current node is tea-order node:
-	if the player's command matches "[nothing]":
-		replace the player's command with "answer nothing to [printed name of current interlocutor]";
-	otherwise if the player's command matches "lemon": 
-		replace the player's command with "answer lemon to [printed name of current interlocutor]";
-	otherwise if the player's command matches "milk": 
-		replace the player's command with "answer milk to [printed name of current interlocutor]".
+	if the player's command matches "[nothing]", rewrite the answer with "nothing";
+	if the player's command matches "lemon", rewrite the answer with "lemon";
+	if the player's command matches "milk", rewrite the answer with "milk".
 
 Section 2.6.5.8 - Order handling
 
@@ -1409,11 +1398,11 @@ Rule for printing a locale paragraph about the cooking table:
 	say "Next to the buffet table there is another table, behind which a cook is on hand to cook the eggs that are in a basket.".
 
 The egg is a scenery in the buffet. The description is "The eggs in the basket look fresh."	
-Understand "egg basket" as the egg.
+Understand "egg/eggs basket/--" as the egg.
 The omelette is a food-item in the kitchen. 
 The fried egg is a food-item in the kitchen.
 The crepe is a bread-slice in the kitchen. Printed name is "crêpe".
-The egg, the omelette, the fried egg and the crepe are familiar.
+The egg is familiar.
 	
 The current dish is an object that varies.
 To get a dish:
@@ -1505,12 +1494,9 @@ Response for main-egg node when saying yes:
 	say "[/ss]Ok.' [/se][regarding current interlocutor][they] [say] and then [ask]: [/ss1]What do you prefer?' [/r][/n]".
 
 After reading a command when the current node is main-egg node:
-	if the player's command matches "[fried egg]":
-		replace the player's command with "answer fried to [printed name of current interlocutor]";
-	otherwise if the player's command matches "[omelette]": 
-		replace the player's command with "answer omelette to [printed name of current interlocutor]";
-	otherwise if the player's command matches "[crepe]": 
-		replace the player's command with "answer crepe to [printed name of current interlocutor]".
+	if the player's command matches "[fried egg]", rewrite the answer with "fried";
+	if the player's command matches "[omelette]", rewrite the answer with "omelette";
+	if the player's command matches "[crepe]", rewrite the answer with "crepe".
 
 At the time when Emma turns crepe:
 	say "[The naming of Emma] [turn] the crêpe over with the help of a wide-bladed knife.".
@@ -1543,10 +1529,8 @@ Default answer response for fried-egg node:
 	say "[/ss]I can leave the egg whole like «bull's eye» either I can scramble it.' [/se][the naming of current interlocutor] [state]. [/n]".
 		
 After reading a command when the current node is fried-egg node:
-	if the player's command matches "[scrambled]":
-		replace the player's command with "answer scrambled to [printed name of current interlocutor]";
-	otherwise if the player's command matches "[bullseye]": 
-		replace the player's command with "answer bullseye to [printed name of current interlocutor]".
+	if the player's command matches "[scrambled]", rewrite the answer with "scrambled";
+	if the player's command matches "[bullseye]", rewrite the answer with "bullseye".
 
 At the time when Emma scrambles the egg:
 	say "[The naming of Emma] [use] a fork to mix the egg yolk with the abume, creating a white mixture with yellow flecks.".
@@ -1583,10 +1567,8 @@ Default answer response for omelette node:
 	say "[/ss]I can stuff your omelette with something or leave it empty.' [/se][the naming of current interlocutor] [state]. [/n]".
 
 After reading a command when the current node is omelette node:
-	if the player's command matches "[empty]":
-		replace the player's command with "answer empty to [printed name of current interlocutor]";
-	otherwise if the player's command matches "[stuffed]": 
-		replace the player's command with "answer stuffed to [printed name of current interlocutor]".
+	if the player's command matches "[empty]", rewrite the answer with "empty";
+	if the player's command matches "[stuffed]", rewrite the answer with "stuffed".
 
 At the time when Emma rotates the omelette:
 	say "[The naming of Emma] [regarding Emma][turn] the omelette upside down with a skilful flick of the pan so that it can be cooked on the other side."
@@ -1604,12 +1586,9 @@ Default answer response for stuffed-omelette node:
 	say "[/ss]I can stuff your omelette with [available omelette stuffing] only.' [/se][the naming of current interlocutor] [state]. [/n]".
 	
 After reading a command when the current node is stuffed-omelette node:
-	if the player's command matches "tomato":
-		replace the player's command with "answer tomato to [printed name of current interlocutor]";
-	otherwise if the player's command matches "cheese": 
-		replace the player's command with "answer cheese to [printed name of current interlocutor]";
-	otherwise if the player's command matches "speck": 
-		replace the player's command with "answer speck to [printed name of current interlocutor]".
+	if the player's command matches "tomato", rewrite the answer with "tomato";
+	if the player's command matches "cheese", rewrite the answer with "cheese";
+	if the player's command matches "speck", rewrite the answer with "speck".
 		
 Section 2.7.4.6 - Direct egg requests
 
@@ -1637,7 +1616,7 @@ Response of Emma when asked for the crepe:
 	check request for cooking;
 	if can-cook is true, prepare a crepe.
 
-Section 2.7.5 - Ask for egg info
+Chapter 2.7.5 - Ask for egg info
 
 Does the player mean quizzing about the egg: it is very likely.
 Response of a waitstaff worker when asked-or-told about egg:
@@ -1648,7 +1627,7 @@ This is the about egg rule:
 	say "[/ss]We offer fresh eggs for breakfast,' [/cie][/ss1]brought to us every morning by a farmer who lives nearby. His hens are free to roam in the yard and he feeds them maize he grows himself.' [/r][/n]";
 	say "[/cia]Eggs can be fried or used to make omelettes or crêpes.' [/r][/n]".
 
-Response of a waiter when asked-or-told about fried egg:
+Response of a waiter when asked-or-told about fried egg or asked-or-told about omelette or asked-or-told about crepe:
 	say "[/ss]Just ask my colleague at the buffet, she is the one who prepares these things and she will be happy to clear up any doubts that you may have.' [/se][they] [reply].".
 	
 Response of Emma when asked-or-told about fried egg:
@@ -1710,8 +1689,6 @@ Response of Emma when asked about the buffet table:
 	say "[/ss]You can take anything you want, but you have to consume it here: you are not allowed to take it out for a pocket launch.' [/se][the naming of the noun] [explain], then [continue] ";
 	say "[/ss1]If you want, I can cook you an egg the way you like it.' [/r][/n]".
 		
-
-
 Volume 3 - Peoples
 
 A person can be leading. A person is usually not leading.
@@ -1797,6 +1774,8 @@ To say heart:
 Rule for printing a locale paragraph about Monica (this is the Monica next to you rule):
 	say "[Monica] [are] next to you."
  
+Definition: a person is here if the location of it is the location of the player.
+
 Chapter 3.2.1 - Monica initial dressing
 
 The pair of jeans is a cloth. The description is "A pair of slightly frayed skinny jeans."
