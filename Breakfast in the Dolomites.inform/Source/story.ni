@@ -1065,7 +1065,7 @@ At the time when waiter returns with order:
 Chapter 2.6.6 - Hot drinks details
 
 To say /cie:
-	say "[/se][the naming of current interlocutor] [regarding current interlocutor][one of][explain][or][answer][or][say][at random]. ".
+	say "[/se][the naming of current interlocutor] [regarding current interlocutor][one of][explain][or][answer][or][say][at random] ".
 To say /cia:
 	say "[regarding current interlocutor][They] also [add]: [/ss1]".
 
@@ -1345,7 +1345,7 @@ The plural of knob of butter is knobs of butter.
 
 Section 2.7.2.3 - Bread
 
-A slice of white bread is a kind of bread slice. The description is "Soft slices of bread."
+A slice of white bread is a kind of bread-slice. The description is "Soft slices of bread."
 The plural of slice of white bread is slices of white bread.
 The scent-description of a slice of white bread is "fragrance of wheat".
 The flavor-description of a slice of white bread is "This bread has a soft texture and a delicate taste.".
@@ -1354,7 +1354,7 @@ To say (P - a person) talks about white bread:
 Response of a waitstaff worker when asked about a slice of white bread:
 	say the noun talks about white bread.
 	
-A slice of pumpernickel bread is a kind of bread slice.
+A slice of pumpernickel bread is a kind of bread-slice.
 The plural of slice of pumpernickel bread is slices of pumpernickel bread.
 The scent-description of a slice of pumpernickel bread is "burnt caramel smell".
 The flavor-description of a slice of pumpernickel bread is "This bread has a firm texture, an earthy flavour and a distinctly sour taste.".
@@ -1365,8 +1365,8 @@ To say (P - a person) talks about pumpernickel bread:
 Response of a waitstaff worker when asked about a slice of pumpernickel bread:
 	say the noun talks about pumpernickel bread.
 
-Definition: a bread slice is matched if it fits the parse list. 
-Rule for asking which do you mean when everything matched is a bread slice: 
+Definition: a bread-slice is matched if it fits the parse list. 
+Rule for asking which do you mean when everything matched is a bread-slice: 
 	if the number of person in the location is greater than 1:
 		say "[/ss]We have white wheat and black rye bread: which one are you interested in?' [/r][/n]";
 	otherwise:
@@ -1407,16 +1407,19 @@ Chapter 2.7.4 - The cook
 The cooking table is a scenery service table in the buffet.
 Rule for printing a locale paragraph about the cooking table:
 	say "Next to the buffet table there is another table, behind which a cook is on hand to cook the eggs that are in a basket.".
-	
+
+The egg is a scenery in the buffet. The description is "The eggs in the basket look fresh."	
+Understand "egg basket" as the egg.
 The omelette is a food-item in the kitchen. 
 The fried egg is a food-item in the kitchen.
-The crepe is a bread slice in the kitchen. Printed name is "crêpe".
-
+The crepe is a bread-slice in the kitchen. Printed name is "crêpe".
+The egg, the omelette, the fried egg and the crepe are familiar.
+	
 The current dish is an object that varies.
 To get a dish:
 	now the current dish is a random dish on the cupboard;
 	now the current dish is in the kitchen.
-	
+
 Section 2.7.4.1 - Conversation 
 
 Instead of hailing while the location is the buffet:
@@ -1428,9 +1431,13 @@ Instead of hailing while the location is the buffet:
 Instead of saying hello to someone (called the other) while the location is the buffet:
 	unless the other is Monica:
 		now the current interlocutor is the other;
-		say "[/ss1][good morning current interlocutor].' [/r][/n]";
-		now the egg-cooking-trigger is true;
-		setnode main-egg node;
+		unless the greeting type is implicit, say "[/ss1][good morning current interlocutor].' [/r][/n]";
+		if the number of thing carried by the player is less than the carrying capacity of the player:
+			now the egg-cooking-trigger is true;
+			setnode main-egg node;
+		otherwise:
+			say "[/ss]Good morning!' [/se][the naming of the current interlocutor] [greet] [us]. [/n]";
+			say can I help you;
 	otherwise:
 		continue the action.
 
@@ -1459,23 +1466,35 @@ Node-introduction for main-egg node:
 	say "[/ss1]I can offer you [available eggs cooking].' [/r][/n]".
 
 The fried-egg node is an egg-convnode.
+Node-introduction for fried-egg node:
+	say "[/ss]Bull's eye or scrambled?' [ask for choice]".
+	
 The omelette node is an egg-convnode.
+Node-introduction for omelette node:
+	say "[/ss]Empty or stuffed?' [ask for choice]".
+	
 Understand "a/the/one/-- fried egg/--" as "[fried egg]".
-Understand "a/the/one/-- omelette/omelet" as "[omelette]".
+Understand "a/an/the/one/-- omelette/omelet" as "[omelette]".
 Understand "a/the/one/-- crêpe/crepe" as "[crepe]".
+Understand "[fried egg]" as the fried egg.
+Understand "[omelette]" as the omelette.
+Understand "[crepe]" as the crepe.
 
-Response for main-egg node when answered that "[fried egg]":
-	now next-node of current node is fried-egg node;
-	say "[leavenode][/ss]Bull's eye or scrambled?' [ask for choice]".
-Response for main-egg node when answered that "[omelette]":
-	now next-node of current node is omelette node;
-	say "[leavenode][/ss]Empty or stuffed?' [ask for choice]".
-Response for main-egg node when answered that "[crepe]":
+To prepare a crepe:
 	get a dish;
 	now the crepe is on the current dish;
 	say the crepe will be ready;
 	say "[The naming of Emma] [take] a ladle of liquid dough from a bowl and [place] it on a hot plate. She carefully [spread] the dough with a wooden spatula.";
 	Emma turns crepe in 1 turn from now.
+		
+Response for main-egg node when answered that "[fried egg]":
+	now next-node of current node is fried-egg node;
+	say leavenode.
+Response for main-egg node when answered that "[omelette]":
+	now next-node of current node is omelette node;
+	say leavenode.
+Response for main-egg node when answered that "[crepe]":
+	prepare a crepe.
 Default answer response for main-egg node:
 	say "[/ss]I can cook you [available eggs cooking].' [/se][the naming of current interlocutor] [state]. [/n]".
 Response for main-egg node when saying no:
@@ -1591,15 +1610,78 @@ After reading a command when the current node is stuffed-omelette node:
 		replace the player's command with "answer cheese to [printed name of current interlocutor]";
 	otherwise if the player's command matches "speck": 
 		replace the player's command with "answer speck to [printed name of current interlocutor]".
+		
+Section 2.7.4.6 - Direct egg requests
 
+Definition: a person is carrying a cooked egg if the the omelette is enclosed by it or the fried egg is enclosed by it or the crepe is enclosed by it.
 
-Chapter 2.7.5 - Movements
+Can-cook is a truth state that varies.
+To check request for cooking:
+	now can-cook is false;
+	unless the current dish is nothing, say "[/ss]I am preparing another egg for you!' [/se][the naming of Emma] [exclaim]. [/n]" instead;
+	unless the number of thing carried by the player is less than the carrying capacity of the player, say "[/ss]I'd love to prepare it for you, but you wouldn't be able to take it because your hands are busy with other things.' [/se][the naming of Emma] [regarding Emma][reply]. " instead;
+	if the player is carrying a cooked egg, say "You already have a cooked egg." instead;
+	now the egg-cooking-trigger is true;
+	now can-cook is true.
+
+Response of Emma when asked for the egg:
+	check request for cooking;
+	if can-cook is true, setnode main-egg node.
+Response of Emma when asked for the fried egg:
+	check request for cooking;
+	if can-cook is true, setnode fried-egg node.
+Response of Emma when asked for the omelette:
+	check request for cooking;
+	if can-cook is true, setnode omelette node.
+Response of Emma when asked for the crepe:
+	check request for cooking;
+	if can-cook is true, prepare a crepe.
+
+Section 2.7.5 - Ask for egg info
+
+Does the player mean quizzing about the egg: it is very likely.
+Response of a waitstaff worker when asked-or-told about egg:
+	follow the about egg rule.
+Response for an egg-convnode when asked-or-told about egg:
+	follow the about egg rule.
+This is the about egg rule:
+	say "[/ss]We offer fresh eggs for breakfast,' [/cie][/ss1]brought to us every morning by a farmer who lives nearby. His hens are free to roam in the yard and he feeds them maize he grows himself.' [/r][/n]";
+	say "[/cia]Eggs can be fried or used to make omelettes or crêpes.' [/r][/n]".
+
+Response of a waiter when asked-or-told about fried egg:
+	say "[/ss]Just ask my colleague at the buffet, she is the one who prepares these things and she will be happy to clear up any doubts that you may have.' [/se][they] [reply].".
+	
+Response of Emma when asked-or-told about fried egg:
+	follow the about fried egg rule.
+Response for an egg-convnode when asked-or-told about fried egg:
+	follow the about fried egg rule.
+This is the about fried egg rule:
+	say "[/ss]I can prepare it in two ways:' [/cie][/ss1]«bull's-eye», with the yellow yolk ball in the middle of the egg whites;' [/r][/n]";
+	say "[/cia]or scrambled, with the yolk and egg whites coarsely mixed.' [/r][/n]".
+
+Response of Emma when asked-or-told about omelette:
+	follow the about omelette rule.
+Response for an egg-convnode when asked-or-told about omelette:
+	follow the about omelette rule.
+This is the about omelette rule:
+	say "[/ss]This is my specialty.' [/cie][/ss1]Farm-fresh eggs, whisked to perfection and gently cooked to a fluffy consistency. I would eat them all!' [/r][/n]";
+	say "[/cia]I can leave it empty or stuff it with your choice of [available omelette stuffing].' [/r][/n]".
+
+Response of Emma when asked-or-told about crepe:
+	follow the about crepe rule.
+Response for an egg-convnode when asked-or-told about crepe:
+	follow the about crepe rule.
+This is the about crepe rule:
+	say "[/ss]It's made from a simple batter consisting of flour, eggs, milk, butter, and a pinch of salt.' [/cie][/ss1]The batter is typically quite thin, resulting in a delicate, lacy texture when cooked.' [/r][/n]";
+	say "[/cia]You can fill it with anything sweet or savoury you see on our buffet.' [/r][/n]".
+
+Chapter 2.7.6 - Movements
 
 Before going to the buffet:
 	if the number of things carried by the player is greater than zero:
 		say "[/ss]Why are you carrying [the list of things carried by the player]?' [/se][Monica] [ask]. [/n]" instead.
 		
-Chapter 2.7.6 - Generic answers
+Chapter 2.7.7 - Generic answers
 
 Understand "buffet" or "self/free service" or "free flow" as "[buffet]".
 Understand "food/cooking/cuisine/edible/edibles/foodstuff/foodstuffs" as "[food]".
@@ -2057,6 +2139,7 @@ Instead of taking a dish during egg cooking:
 		say "[We] [take] [the noun] from [the naming of Emma].";
 		now the current dish is nothing;
 		now egg-cooking-trigger is false;
+		mark got cooked egg as done;
 	otherwise:
 		continue the action.
 Instead of examining a dish during egg cooking:

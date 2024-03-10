@@ -57,25 +57,25 @@ Does the player mean taking a food-item: it is likely.
 
 Book 2.1 - bread
 
-A bread slice is a kind of food-item.
-A bread-filling is a kind of supporter. A bread-filling is part of every bread slice.
+A bread-slice is a kind of food-item.
+A bread-filling is a kind of supporter. A bread-filling is part of every bread-slice.
 
-To decide which bread-filling is fill holder of (target - a bread slice):
+To decide which bread-filling is fill holder of (target - a bread-slice):
 	decide on a random bread-filling which is part of the target.
 	
-Definition: a bread slice (called target) is buttered:
+Definition: a bread-slice (called target) is buttered:
 	if the list of butter-items held by the fill holder of the target is empty, decide no;
 		decide yes.
 
-Definition: a bread slice (called target) is dressed:
+Definition: a bread-slice (called target) is dressed:
 	let the filler list be the list of food-items which are not butter-items held by the fill holder of the target;
 	if the filler list is empty, decide no;
 		decide yes.
 
-To say dressing of (target - bread slice):
+To say dressing of (target - bread-slice):
 	say "[list of food-items which are not knobs of butter held by the fill holder of the target]".
 
-Rule for printing the name of a bread slice (called target):	
+Rule for printing the name of a bread-slice (called target):	
 	say "[if target is buttered]buttered [end if][printed name of the target][if target is dressed] dressed with a [dressing of target][end if]".
 	
 Volume 3 - Spreading
@@ -86,7 +86,7 @@ Understand "spread [something] on/over [something]" as spreading.
 Check spreading:
 	unless the noun is a food-item, say "There is no need to spread something inedible." instead;
 	unless the noun is spreadable, say "You cannot spread [the noun]." instead;
-	unless the second noun is a bread slice, say "[The noun] should be spread on a slice of bread, not [the second noun]." instead;
+	unless the second noun is a bread-slice, say "[The noun] should be spread on a slice of bread, not [the second noun]." instead;
 	if the noun is a knob of butter and the second noun is buttered, say "It's already buttered." instead;
 	if the second noun is dressed, say "You cannot spread [the noun] over another dressing." instead.	
 	

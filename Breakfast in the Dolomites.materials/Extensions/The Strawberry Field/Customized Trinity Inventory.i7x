@@ -105,7 +105,7 @@ Rule for inventory listing the contents of a container (called the item) (this i
 		otherwise:
 			say ". [We] also [have]" (B);
 		now content-listing is true;
-		say " [list of listed when carried things in the item] in " (C);
+		say " [a list of listed when carried things in the item] in " (C);
 		now content-listing is false;
 		now articulating is true;
 		if the item is specially-inventoried, say "[item]" (D);
@@ -138,7 +138,7 @@ Rule for inventory listing the contents of a player's holdall (called the item) 
 		otherwise:
 			say ". [We] also [have]" (B);
 		now content-listing is true;
-		say " [list of listed when carried things in the item] in " (C);
+		say " [a list of listed when carried things in the item] in " (C);
 		now content-listing is false;
 		now articulating is true;
 		if the item is specially-inventoried, say "[item]" (D);
@@ -171,7 +171,7 @@ Rule for inventory listing the contents of a supporter (called the item) (this i
 		otherwise:
 			say ". [We] also [have]" (B);
 		now content-listing is true;
-		say " [list of listed when carried things on the item] on " (C);
+		say " [a list of listed when carried things on the item] on " (C);
 		now content-listing is false;
 		now articulating is true;
 		if the item is specially-inventoried, say "[item]" (D);

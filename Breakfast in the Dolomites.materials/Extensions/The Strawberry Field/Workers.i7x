@@ -141,6 +141,9 @@ Calling a waiter is an action applying to nothing.
 Understand "Call for/-- a/-- waiter/waitress" as calling a waiter.
 Understand "Rise your/a/the/-- hand" as calling a waiter.
 
+To say can I help you:
+	say "[/ss]Can I help you?' [/se][regarding current interlocutor][they] [ask]. [/n]".
+
 Check calling a waiter:
 	unless the current interlocutor is nothing:
 		if the current interlocutor is a waiter, say "Someone is already at your service." instead;
@@ -149,7 +152,7 @@ Carry out calling a waiter:
 	now the current interlocutor is a random waiter in the location.
 Report calling a waiter:
 	say "[A naming of current interlocutor] approached. [/n]";
-	say "[/ss]Can I help you?' [/se][regarding current interlocutor][they] [ask]. [/n]".
+	say can I help you.
 
 Volume 4 - Answers
 
