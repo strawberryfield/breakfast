@@ -660,14 +660,16 @@ Section 2.6.1.2 - The bench
 
 The bench is a scenery enterable supporter in the dining room.
 The description is "A wooden bench padded with dark green velvet cushions."
-After getting off the bench, say "[We] stand up.".
+After getting off the bench, say "[We] [stand] up.".
 Rule for supplying a missing noun while entering when the location is the dining room (this is the seat at the tabe rule): now the noun is the bench.
+
+Definition: a person is at the table if it is enclosed by the bench.
 
 Section 2.6.1.3 - The table
 	
 The table is a scenery supporter in the dining room.
 For printing a locale paragraph about the table:
-	if the player is enclosed by the bench,  say "On the table in front of you [is-are a list of things on the table].".
+	if the player is at the table,  say "On the table in front of [us] [is-are a list of things on the table].".
 
 Instead of examining the table during search for the table, say "All tables are similar and well laid out.".
 
@@ -697,14 +699,42 @@ After going to the dining room from the reception:
 	
 Section 2.6.2.1 - Good manners
 
-Instead of eating something while the player is not enclosed by the bench:
+Instead of eating something while the player is not at the table:
 	if Monica is here, say "[alert][/ss]But what are you doing?' [/se][Monica] [rebuke] you. [/ss1]You should eat sitting at the table!' [/r][/n]" instead;
 	say "I am sure that [Monica] would scold you if she could see you now.".
 
-Instead of drinking something while the player is not enclosed by the bench:
+Instead of drinking something while the player is not at the table:
 	if Monica is here, say "[alert][/ss]Naughty!' [/se][Monica] [exclaim]. [/ss1]You should drink sitting at the table!' [/r][/n]" instead;
 	say "If [Monica] were here, she would not allow you to do such a thing.".
+	
+Section 2.6.2.2 - Food and drink management
 
+To decide whether can order hot drinks:
+	if the number of non-empty hot drink containers on the table is greater than zero, decide no;
+	otherwise	decide yes.
+			
+To decide whether hot drinks are drunk:
+	unless order hot drinks completed, decide no;
+	if can order hot drinks, decide yes;
+	otherwise decide no.
+		
+To decide whether food is eaten:
+	if the number of food-items enclosed by table is zero, decide yes;
+	otherwise	decide no.
+
+To decide whether liquids are drunk:
+	if the number of non-empty fluid containers on the table is greater than zero, decide no;
+	otherwise	decide yes.
+	
+To decide whether can leave the table:
+	if food is eaten and liquids are drunk, decide yes;
+	otherwise decide no.
+
+To (W - a waiter) collects empty items:
+	let the empty dishes list be the list of empty dishes on the table;
+	let the empty containers list be the list of empty fluid containers on the table;
+	if the number of entries in the empty dishes list is greater than zero or the number of entries in the empty containers list is greater than 0, say "[The naming of W] [collect] all the empty dishes, glasses and cups from the table. [/n]".	
+	
 Chapter 2.6.3 - Timed events
 
 At the time when the waiter welcomes:
@@ -1169,10 +1199,11 @@ A bottle is a kind of fluid container. The fluid capacity of the bottle is 1 lit
 A glass is a kind of fluid container. The fluid capacity of a glass is 200 ml.
 A glass is preferred for drinking.
 
-A cup is a kind of fluid container. The fluid capacity of a cup is 200 ml.
-A coffeecup is a kind of fluid container. The fluid capacity of a coffeecup is 50 ml.
-A mug is a kind of fluid container. The fluid capacity of a mug is 300 ml.
-A pot is a kind of fluid container. The fluid capacity of a pot is 100 ml.
+A hot drink container is a kind of fluid container.
+A cup is a kind of hot drink container. The fluid capacity of a cup is 200 ml.
+A coffeecup is a kind of hot drink container. The fluid capacity of a coffeecup is 50 ml.
+A mug is a kind of hot drink container. The fluid capacity of a mug is 300 ml.
+A pot is a kind of hot drink container. The fluid capacity of a pot is 100 ml.
 
 2 cups are in the kitchen.
 2 coffeecups are in the kitchen.

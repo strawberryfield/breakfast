@@ -73,7 +73,7 @@ Definition: a bread-slice (called target) is dressed:
 		decide yes.
 
 To say dressing of (target - bread-slice):
-	say "[list of food-items which are not knobs of butter held by the fill holder of the target]".
+	say list of food-items which are not knobs of butter held by the fill holder of the target.
 
 Rule for printing the name of a bread-slice (called target):	
 	say "[if target is buttered]buttered [end if][printed name of the target][if target is dressed] dressed with a [dressing of target][end if]".
