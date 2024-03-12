@@ -1136,7 +1136,7 @@ Response for an order-convnode when asked-or-told about "[barley]":
 This is the about barley rule:
 	say "[/ss]It's a wonderful alternative to traditional coffee.' [/cie][/ss1]Unlike traditional coffee, barley coffee is naturally caffeine-free, making it an ideal choice for those looking to reduce their caffeine intake or seeking a milder option. Its roasted notes provide a delightful depth of flavor without the bitterness often associated with coffee.' [/r][/n]".	
 	
-Section 2.6.6.3 - Soy
+Section 2.6.6.6 - Soy
 
 Response of a waitstaff worker when asked-or-told about "[soy]":
 	follow the about soy rule.
@@ -1145,6 +1145,9 @@ Response for an order-convnode when asked-or-told about "[soy]":
 This is the about soy rule:
 	say "[/ss]It's a fantastic option for accommodating dietary preferences or allergies.' [/cie][/ss1]It's naturally rich in protein, making it a satisfying option to start your day. Plus, it's low in saturated fat and cholesterol-free, contributing to a heart-healthy diet. It's a delicious and nutritious alternative that's sure to enhance your morning routine.' [/r][/n]".	
 	
+Section 2.6.6.7 - Hot drinks direct requests
+
+
 Chapter 2.6.7 - The written paper
 			
 The written paper is a paper-item on the table.
@@ -1387,8 +1390,7 @@ Response of a waitstaff worker when asked about a slice of pumpernickel bread:
 
 Definition: a bread-slice is matched if it fits the parse list. 
 Rule for asking which do you mean when everything matched is a bread-slice: 
-	if the number of person in the location is greater than 1:
-		say "[/ss]We have white wheat and black rye bread: which one are you interested in?' [/r][/n]";
+	if the number of person in the location is greater than 1,	say "[/ss]We have white wheat and black rye bread: which one are you interested in?' [/r][/n]";
 	otherwise:
 		say "Who are you asking? [/n]";
 		stop the action.
@@ -1893,10 +1895,8 @@ To say no more kisses:
 Chapter 3.2.4 - Singing and dancing
 
 Persuasion rule for asking Monica to try singing: 
-	unless leading actors are alone:
-		say "[alert][/ss]No, I don't sing, I'm ashamed.' [/se][regarding the actor][they] [answer].";
-	otherwise:
-		say "[alert][/ss]Why do you want me to sing if you know I'm out of tune?' [/se][regarding the actor][they] [ask].";
+	unless leading actors are alone, say "[alert][/ss]No, I don't sing, I'm ashamed.' [/se][regarding the actor][they] [answer].";
+	otherwise	say "[alert][/ss]Why do you want me to sing if you know I'm out of tune?' [/se][regarding the actor][they] [ask].";
 	persuasion fails.
 
 To clap is a verb.
@@ -2154,8 +2154,7 @@ Instead of taking a dish during egg cooking:
 		continue the action.
 Instead of examining a dish during egg cooking:
 	if the current dish is carried by Emma, say "On the dish there is [a list of things on the current dish].";
-	otherwise:
-		continue the action.
+	otherwise	continue the action.
 	
 Volume 5 - Internal db
 
@@ -2175,8 +2174,7 @@ To mark (T - a task) as not done:
 To decide if (T - a task) completed:
 	let X be the done corresponding to a task of T in the Table of tasks;
 	if X is true, decide yes;
-	otherwise:
-		decide no.
+	otherwise	decide no.
 		
 Table of tasks
 task	done
@@ -2186,5 +2184,26 @@ Drunk hot drinks	false
 Eat buffet	false
 Drunk cold drinks	false
 Got cooked egg	false
+
+Book 5.2 - Table of food limits
+
+A food-limit is a kind of value.
+Some food-limits are defined by the Table of limits.
+
+Table of limits
+food-limit	limit	eaten
+coffee-based	2	0
+egg-based	2	0
+cheese-based	2	0
+meat-based	3	0
+
+To another (L - a food-limit) eaten:
+	choose a row with a food-limit of L in the Table of limits;
+	now eaten entry is eaten entry plus 1.
+	
+To decide if (L - a food-limit) can be eaten:
+	choose a row with food-limit of L in the Table of limits;
+	if limit entry is greater than eaten entry, decide yes;
+	otherwise decide no.
 
 	
