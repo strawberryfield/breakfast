@@ -856,12 +856,16 @@ Node-introduction for main-order node:
 
 The coffee-order node is an order-convnode.
 Node-introduction for coffee-order node:
+	another coffee-based eaten;
 	say "[/ss]Espresso, moka or barley?' [ask for choice]".	
 The cappuccino-order node is an order-convnode.
 Node-introduction for cappuccino-order node:
+	another coffee-based eaten;
+	another milk-based eaten;
 	say "[/ss]Regular, soy milk or barley coffee?' [ask for choice]".
 The tea-order node is an order-convnode.
 Node-introduction for tea-order node:
+	another tea-based eaten;
 	say "[/ss]Lemon, milk or nothing?' [ask for choice]".
 	
 The espresso-order node is an order-convnode.
@@ -873,22 +877,31 @@ To prepare chocolate:
 	now the liquid of the order content is hot chocolate;
 	now the fluid content of the order content is 200 ml;
 	say order confirmation.
-		
-Response for main-order node when answered that "coffee":
+
+Understand "coffee" as "[coffee]".
+Understand "cappuccino" as "[cappuccino]".
+Understand "tea" as "[tea]".		
+Understand "nothing/none/neither" as "[nothing]".
+Response for main-order node when answered that "[coffee]":
 	now next-node of current node is coffee-order node;
 	say leavenode.
-Response for main-order node when answered that "cappuccino":
+Response for main-order node when answered that "[cappuccino]":
 	now next-node of current node is cappuccino-order node;
 	say leavenode.
 Response for main-order node when answered that "[chocolate]":
+	another milk-based eaten;
+	another chocolate-based eaten;
 	prepare chocolate.
-Response for main-order node when answered that "tea":
+Response for main-order node when answered that "[tea]":
 	now next-node of current node is tea-order node;
 	say leavenode.
 Default answer response for main-order node:
 	say "[/ss]The only hot drinks that are available are [available hot drinks].' [/se][the naming of current interlocutor] [state]. [/n]".
+Response for main-order node when answered that "[nothing]":
+	try saying no.
 Response for main-order node when saying no:
 	say "[leavenode][/ss]If you want something hot later, don't hesitate to call me or my colleague.' [/se][the naming of current interlocutor] [say] and [go] away. [/n]";
+	now the node of the current interlocutor is the null-node;
 	now the current interlocutor is nothing;
 	now ordering-trigger is false.
 Response for main-order node when saying yes:
@@ -898,7 +911,8 @@ After reading a command when the current node is main-order node:
 	if the player's command matches "coffee", rewrite the answer with "coffee";
 	if the player's command matches "cappuccino", rewrite the answer with "cappuccino"; 
 	if the player's command matches "[chocolate]", rewrite the answer with "chocolate";
-	if the player's command matches "tea", rewrite the answer with "tea".
+	if the player's command matches "tea", rewrite the answer with "tea";
+	if the player's command matches "[nothing]", rewrite the answer with "nothing".
 
 Section 2.6.5.3 - Coffee node
 
@@ -997,8 +1011,6 @@ After reading a command when the current node is cappuccino-order node:
 
 Section 2.6.5.7 - Tea node
 
-Understand "none/nothing/neither" as "[nothing]".
-
 To prepare tea:
 	now the order content is a random cup in the kitchen;
 	now the liquid of the order content is cappuccino;
@@ -1039,21 +1051,24 @@ To reset order:
 	now the round tray is in the kitchen.
 	
 To finalize order:
-	say "[/ss]What can I get for you, miss?' [/se][regarding current interlocutor][they] [ask] [Monica]. [/n]";
-	if the liquid of the order content is hot chocolate:
-		say "[/ss]A cappuccino.' ";
-		let Monica-drink be a random cup in the kitchen;
-		now the liquid of Monica-drink is cappuccino;
-		now the fluid content of Monica-drink is 200 cc;
-		now Monica-drink is on the round tray;
-	otherwise:
-		say "[/ss]A cup of hot chocolate.' ";
-		let Monica-drink be a random mug in the kitchen;
-		now the liquid of Monica-drink is hot chocolate;
-		now the fluid content of Monica-drink is 250 cc;
-		now Monica-drink is on the round tray;
-	say "[/se][Monica] [answer]. [/n]";
-	say "[/ss]Perfect!' [/se][the naming of current interlocutor] [exclaim]. [/n]";
+	unless order hot drinks completed:
+		say "[/ss]What can I get for you, miss?' [/se][regarding current interlocutor][they] [ask] [Monica]. [/n]";
+		if the liquid of the order content is hot chocolate:
+			say "[/ss]A cappuccino.' ";
+			let Monica-drink be a random cup in the kitchen;
+			now the liquid of Monica-drink is cappuccino;
+			now the fluid content of Monica-drink is 200 cc;
+			now Monica-drink is on the round tray;
+		otherwise:
+			say "[/ss]A cup of hot chocolate.' ";
+			let Monica-drink be a random mug in the kitchen;
+			now the liquid of Monica-drink is hot chocolate;
+			now the fluid content of Monica-drink is 250 cc;
+			now Monica-drink is on the round tray;
+		say "[/se][Monica] [answer]. [/n]";
+		say "[/ss]Perfect!' [/se][the naming of current interlocutor] [exclaim]. [/n]";
+		mark order hot drinks as done;
+	now the node of the current interlocutor is the null-node;
 	now the order handler is the current interlocutor; 
 	now the order content is on the round tray;
 	unless the order second-content is nothing, now the order second-content is on the round tray; 
@@ -1071,6 +1086,7 @@ To finalize order:
 At the time when waiter returns with order:
 	if the player is enclosed by the bench:
 		now the order handler is in the dining room;
+		now the current interlocutor is the order handler;
 		say "[The naming of order handler] [return] with a tray containing your order. [/n]";
 		say "[/ss]Here are your hot drinks!' [/se][regarding order handler][they] [exclaim] ";
 		say "[/ss1][A list of things on the round tray].' [/r][/n]";
@@ -1078,6 +1094,7 @@ At the time when waiter returns with order:
 		repeat with D running through the things on the round tray:
 			now D is on the table;
 		mark order hot drinks as done;
+		now the order handler is nothing;
 	otherwise:
 		waiter returns with order in one turn from now.
 	
@@ -1090,9 +1107,9 @@ To say /cia:
 
 Section 2.6.6.1 - Coffee
 	
-Response of a waitstaff worker when asked-or-told about "coffee":
+Response of a waitstaff worker when asked-or-told about "[coffee]":
 	follow the about coffee rule.
-Response for an order-convnode when asked-or-told about "coffee":
+Response for an order-convnode when asked-or-told about "[coffee]":
 	follow the about coffee rule.
 This is the about coffee rule:
 	say "[/ss]This is the best way to start the day with a sprint.' [/cie][/ss1]To prepare the coffee, we use a blend of 100% arabica beans of the highest quality, carefully roasted. This gives it a smooth and intense flavour and a superb aroma.' [/r][/n]";
@@ -1100,9 +1117,9 @@ This is the about coffee rule:
 
 Section 2.6.6.2 - Cappuccino
 
-Response of a waitstaff worker when asked-or-told about "cappuccino":
+Response of a waitstaff worker when asked-or-told about "[cappuccino]":
 	follow the about cappuccino rule.
-Response for an order-convnode when asked-or-told about "cappuccino":
+Response for an order-convnode when asked-or-told about "[cappuccino]":
 	follow the about cappuccino rule.
 This is the about cappuccino rule:
 	say "[/ss]My favourite breakfast choice.' [/cie][/ss1]Traditionally, it is made with one third coffee, one third milk and the rest with a soft froth of whipped milk. In addition to its delicious taste, our cappuccino offers several health benefits: the espresso base provides a dose of antioxidants, while the milk contributes essential nutrients like calcium.' [/r][/n]";
@@ -1119,9 +1136,9 @@ This is the about chocolate rule:
 
 Section 2.6.6.4 - Tea
 
-Response of a waitstaff worker when asked-or-told about "tea":
+Response of a waitstaff worker when asked-or-told about "[tea]":
 	follow the about tea rule.
-Response for an order-convnode when asked-or-told about "tea":
+Response for an order-convnode when asked-or-told about "[tea]":
 	follow the about tea rule.
 This is the about tea rule:
 	say "[/ss]A perfect way to start your day.' [/cie][/ss1]A cup of tea not only wakes you up but also tantalizes your taste buds. Our tea blend combines select black teas to deliver a harmonious balance of strength and flavor.' [/r][/n]";
@@ -1144,10 +1161,45 @@ Response for an order-convnode when asked-or-told about "[soy]":
 	follow the about soy rule.
 This is the about soy rule:
 	say "[/ss]It's a fantastic option for accommodating dietary preferences or allergies.' [/cie][/ss1]It's naturally rich in protein, making it a satisfying option to start your day. Plus, it's low in saturated fat and cholesterol-free, contributing to a heart-healthy diet. It's a delicious and nutritious alternative that's sure to enhance your morning routine.' [/r][/n]".	
+
+Section 2.6.6.7 - Drinks
+
+Understand "drink/drinks/beverage" as "[drinks]".
+Response of a waitstaff worker when asked-or-told about "[drinks]":
+	follow the about drinks rule.
+Response for an order-convnode when asked-or-told about "[drinks]":
+	follow the about drinks rule.
+This is the about drinks rule:
+	say "[/ss]Cold drinks are available in the buffet.' [/cie][/ss1][if the current interlocutor is a waiter]I[otherwise]A waiter[end if] can serve you [available hot drinks].' [/r][/n]";
+	say "[/cia]If you want to know about a particular drink, feel free to ask.' [/r][/n]".
+			
+Section 2.6.6.8 - Hot drinks direct requests
+
+To decide whether the player can make order:
+	unless the player is at the table:
+		say "[We] [can] only order hot drinks if you are seated at a table.";
+		decide no;
+	unless the order handler is nothing:
+		say "[/ss]Don't you think you're overdoing it?' [/se][Monica] [say] [/ss1]You are already waiting for a hot drink.' [/r][/n]";
+		decide no;
+	decide yes;
 	
-Section 2.6.6.7 - Hot drinks direct requests
-
-
+Response of a waiter when asked for "coffee":
+	if the player can make order:
+		if coffee-based can be ordered, setnode coffee-order node.
+Response of a waiter when asked for "tea":
+	if the player can make order:
+		if tea-based can be ordered, setnode tea-order node.
+Response of a waiter when asked for "cappuccino":
+	if the player can make order:
+		if coffee-based can be ordered and milk-based can be ordered, setnode cappuccino-order node.
+Response of a waiter when asked for "chocolate":
+	if the player can make order:
+		if chocolate-based can be ordered and milk-based can be ordered:
+			another milk-based eaten;
+			another chocolate-based eaten;
+			prepare chocolate.
+		
 Chapter 2.6.7 - The written paper
 			
 The written paper is a paper-item on the table.
@@ -2191,11 +2243,14 @@ A food-limit is a kind of value.
 Some food-limits are defined by the Table of limits.
 
 Table of limits
-food-limit	limit	eaten
-coffee-based	2	0
-egg-based	2	0
-cheese-based	2	0
-meat-based	3	0
+food-limit	limit	eaten	description
+coffee-based	2	0	"coffees"
+milk-based	2	0	"cups of milk"
+chocolate-based	1	0	"chocolate"
+tea-based	2	0	"cups of tea"
+egg-based	2	0	"eggs"
+cheese-based	2	0	"pieces of cheese"
+meat-based	3	0	"slices of meat"
 
 To another (L - a food-limit) eaten:
 	choose a row with a food-limit of L in the Table of limits;
@@ -2206,4 +2261,11 @@ To decide if (L - a food-limit) can be eaten:
 	if limit entry is greater than eaten entry, decide yes;
 	otherwise decide no.
 
+To decide if (L - food-limit) can be ordered:
+	choose a row with food-limit of L in the Table of limits;
+	if limit entry is greater than eaten entry, decide yes;
+	otherwise:
+		say "[/ss]You've already had [eaten entry in words] [description entry], that's enough.' [/se][Monica] [state].";
+		decide no.
+	
 	
