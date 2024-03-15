@@ -106,7 +106,7 @@ Thanking is an action applying to one visible thing.
 Carry out implicitly thanking (this is the standard implicitly thanking rule):
   try thanking the current interlocutor.
   
-Instead of thanking something:
+Instead of thanking something (this is the standard thanking worker rule):
 	say "[/ss][thanks the noun].' [/se][we] [say][greet-to the noun]. [/n]";
 	say "[/ss][you are welcome]' [/se][regarding the noun][they] [reply]";
 	if the noun is a waiter, say " and then [regarding the noun][leave]";
