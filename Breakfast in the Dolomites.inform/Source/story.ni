@@ -873,12 +873,13 @@ Chapter 2.6.5 - Order
 Section 2.6.5.1 - Start
 
 After entering the bench:
-	if the current interlocutor is a waiter:
-		reset order;
-		setnode main-order node;
-		now ordering-trigger is true;
-	otherwise:
-		waiter comes for order in 1 turn from now;
+	unless order hot drinks completed:
+		if the current interlocutor is a waiter:
+			reset order;
+			setnode main-order node;
+			now ordering-trigger is true;
+		otherwise:
+			waiter comes for order in 1 turn from now;
 	continue the action.
 	
 At the time when waiter comes for order:
@@ -983,14 +984,15 @@ After reading a command when the current node is main-order node:
 Section 2.6.5.3 - Coffee node
 
 Understand "barley coffee/--" as "[barley]".
-
-Response for coffee-order node when answered that "espresso":
+Understand "espresso coffee/--" as "[espresso]".
+Understand "moka coffee/--" as "[moka]".
+Response for coffee-order node when answered that "[espresso]":
 	now next-node of current node is espresso-order node;
 	say "[leavenode][/ss]Regular, short or tall?' [ask for choice again]".
 Response for coffee-order node when answered that "[barley]":
 	now next-node of current node is barley-order node;
 	say "[leavenode][/ss]Small or large cup?' [ask for choice again]".
-Response for coffee-order node when answered that "moka":
+Response for coffee-order node when answered that "[moka]":
 	now the order content is a random coffeecup in the kitchen;
 	now the liquid of the order content is moka coffee;
 	now the fluid content of the order content is 40 ml;
@@ -999,8 +1001,8 @@ Default answer response for coffee-order node:
 	say "[/ss]Sorry, I did not understand your preference for coffee: espresso, moka or barley?' [/se][the naming of current interlocutor] [state]. [/n]".
 
 After reading a command when the current node is coffee-order node:
-	if the player's command matches "espresso", rewrite the answer with "espresso";
-	if the player's command matches "moka", rewrite the answer with "moka";
+	if the player's command matches "[espresso]", rewrite the answer with "espresso";
+	if the player's command matches "[moka]", rewrite the answer with "moka";
 	if the player's command matches "[barley]", rewrite the answer with "barley".
 
 Section 2.6.5.4 - Espresso node
@@ -1011,7 +1013,7 @@ Understand "tall/long/high/lengthy" as "[tall]".
 
 To prepare (V - a volume) of espresso:
 	now the order content is a random coffeecup in the kitchen;
-	now the liquid of the order content is espresso;
+	now the liquid of the order content is espresso coffee;
 	now the fluid content of the order content is V; 
 	say order confirmation.
 	
@@ -1115,19 +1117,20 @@ To reset order:
 	now the order second-content is nothing;
 	now the order handler is nothing;
 	now the round tray is in the kitchen.
-	
+
+Monica-drink is an object that varies.	
 To finalize order:
 	unless order hot drinks completed:
 		say "[/ss]What can I get for you, miss?' [/se][regarding current interlocutor][they] [ask] [Monica]. [/n]";
 		if the liquid of the order content is hot chocolate:
 			say "[/ss]A cappuccino.' ";
-			let Monica-drink be a random cup in the kitchen;
+			now Monica-drink is a random cup in the kitchen;
 			now the liquid of Monica-drink is cappuccino;
 			now the fluid content of Monica-drink is 200 cc;
 			now Monica-drink is on the round tray;
 		otherwise:
 			say "[/ss]A cup of hot chocolate.' ";
-			let Monica-drink be a random mug in the kitchen;
+			now Monica-drink is a random mug in the kitchen;
 			now the liquid of Monica-drink is hot chocolate;
 			now the fluid content of Monica-drink is 250 cc;
 			now Monica-drink is on the round tray;
@@ -1162,9 +1165,16 @@ At the time when waiter returns with order:
 			now D is on the table;
 		mark order hot drinks as done;
 		now the order handler is nothing;
+		Monica drinks hot beverage in 1 turn from now;
+		waiter tries to go away in two turns from now;
 	otherwise:
 		waiter returns with order in one turn from now.
 	
+At the time when Monica drinks hot beverage:
+	say "[Monica] [drink] [their] [Monica-drink].";
+	now the fluid content of Monica-drink is 0 cc.
+	
+
 Chapter 2.6.6 - Hot drinks details
 
 To say /cie:
@@ -1344,7 +1354,7 @@ orange juice	true	"A pungent, slightly acidic flavour; very refreshing."
 apple juice	true	"Clear and crystalline, with an inviting straw-yellow colour, it offers a sweet, natural and fresh flavour."
 lemon juice	true	""
 pear nectar	true	"A sweet nectar with the delicate flavour of freshly picked pears."
-espresso	true	"The unmistakable aroma of espresso coffee, black, bitter with a soft cream."
+espresso coffee	true	"The unmistakable aroma of espresso coffee, black, bitter with a soft cream."
 moka coffee	true	"The intense aroma of coffee, as at home."
 barley coffee	true	""
 cappuccino	true	"Characterised by the unmistakable aromas of coffee, its bitter taste and the roundness of whipped milk that sticks around the mouth."
@@ -1353,6 +1363,12 @@ barley cappuccino	true	""
 hot chocolate	true	"Delicious hot chocolate with all the taste of cocoa and mountain milk."
 tea	true	"A herbaceous flavour with a tendency to be bitter and slightly astringent."
 
+Understand "espresso/-- coffee" or "espresso" as espresso coffee.
+Understand "moka/-- coffee" as moka coffee.
+Understand "barley coffee/--" as barley coffee.
+
+Understand "soyy/-- cappuccino" as soy cappuccino.
+Understand "barley/-- cappuccino" as barley cappuccino.
 
 Section 2.7.1.3 - The cupboard
 

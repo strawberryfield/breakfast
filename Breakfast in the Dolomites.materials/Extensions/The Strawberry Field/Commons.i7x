@@ -179,6 +179,7 @@ To continue is a verb.
 To cook is a verb.
 To copy is a verb.
 To cry is a verb.
+To drink is a verb.
 To decide is a verb. 
 To exclaim is a verb. 
 To explain is a verb.

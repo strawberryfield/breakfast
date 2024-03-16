@@ -152,8 +152,25 @@ Carry out calling a waiter:
 	now the current interlocutor is a random waiter in the location.
 Report calling a waiter:
 	say "[A naming of current interlocutor] approached. [/n]";
+	waiter tries to go away in two turns from now;
 	say can I help you.
 
+Section 3.1.1 - Close waiter dialog
+
+Before speaking (this is the waiter conversation rule):
+	if the current interlocutor is a waiter:
+		waiter tries to go away in two turns from now.
+
+Before giving something to a waiter (this is the waiter giving rule):
+	waiter tries to go away in two turns from now.
+
+Before showing something to a waiter (this is the waiter showing rule):
+	waiter tries to go away in two turns from now.
+
+At the time when waiter tries to go away:
+	unless the current interlocutor is nothing, say "[The naming of current interlocutor] [leave].";
+	reset the interlocutor.
+	
 Volume 4 - Answers
 
 Default response for a worker (this is the worker default response rule):
