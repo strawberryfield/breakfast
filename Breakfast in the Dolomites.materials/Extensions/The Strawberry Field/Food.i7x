@@ -78,6 +78,20 @@ To say dressing of (target - bread-slice):
 Rule for printing the name of a bread-slice (called target):	
 	say "[if target is buttered]buttered [end if][printed name of the target][if target is dressed] dressed with a [dressing of target][end if]".
 	
+Book 2.2 - jams
+
+A jam-item is a kind of food-item. It is spreadable.
+
+A single portion jar is a kind of container.
+A single portion jar is closed, openable not lockable.
+
+Instead of closing an open single portion jar, say "Once opened, the package [cannot] be resealed."
+Instead of inserting something into a single portion jar, say "[We] [can't] do it."
+
+Understand "single/-- portion/serving/-- container/jar" as a single portion jar.
+
+Does the player mean taking a closed single portion jar: it is very likely.
+	
 Volume 3 - Spreading
 
 Spreading is an action applying to two things.

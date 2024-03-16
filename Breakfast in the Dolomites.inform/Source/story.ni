@@ -1257,7 +1257,10 @@ To decide whether the player can make order:
 		say "[We] [can] only order hot drinks if you are seated at a table.";
 		decide no;
 	unless the order handler is nothing:
-		say "[/ss]Don't you think you're overdoing it?' [/se][Monica] [say] [/ss1]You are already waiting for a hot drink.' [/r][/n]";
+		say "[alert][/ss]Don't you think you're overdoing it?' [/se][Monica] [say] [/ss1]You are already waiting for a hot drink.' [/r][/n]";
+		decide no;
+	unless can order hot drinks:
+		say "[alert][/ss]You have [a list of non-empty hot drink containers on the table] to drink.' [/se][Monica] [say] [/ss1]First drink it.' [/r][/n]";
 		decide no;
 	decide yes;
 	
@@ -1501,6 +1504,14 @@ A knob of butter is a kind of butter-item.
 The description is "A little light-yellow cube of butter."
 The plural of knob of butter is knobs of butter.
 
+A blueberry jam portion jar is a kind of single portion jar.
+An orange marmalade portion jar is a kind of single portion jar.
+
+A blueberry jam is a kind of jam-item.
+A blueberry jam is in every blueberry jam portion jar.
+An orange marmalade is a kind of jam-item.
+An orange marmalade is in every orange marmalade portion jar.
+
 Section 2.7.2.3 - Bread
 
 A slice of white bread is a kind of bread-slice. The description is "Soft slices of bread."
@@ -1523,12 +1534,12 @@ To say (P - a person) talks about pumpernickel bread:
 Response of a waitstaff worker when asked about a slice of pumpernickel bread:
 	say the noun talks about pumpernickel bread.
 
-Definition: a bread-slice is matched if it fits the parse list. 
+[Definition: a bread-slice is matched if it fits the parse list. 
 Rule for asking which do you mean when everything matched is a bread-slice: 
 	if the number of person in the location is greater than 1,	say "[/ss]We have white wheat and black rye bread: which one are you interested in?' [/r][/n]";
 	otherwise:
 		say "Who are you asking? [/n]";
-		stop the action.
+		stop the action.]
 
 		
 Section 2.7.3.4 - The buffet table
@@ -1540,12 +1551,26 @@ Rule for printing a locale paragraph about the buffet table:
 		
 The white basket is a service container.
 The description of the white basket is "A small wicker basket dyed white. The inside is lined with a white canvas.".
-8 slices of white bread are in the white basket.
+4 slices of white bread are in the white basket.
 The brown basket is a service container.
 The description of the brown basket is "A small natural wicker basket. The inside is lined with a red canvas.".
-10 slices of pumpernickel bread are in the brown basket.
+6 slices of pumpernickel bread are in the brown basket.
 
 The white basket and the brown basket are on the buffet table.
+
+The white bowl is a service container.
+The description is "A large white ceramic bowl with ice cubes inside.".
+6 knobs of butter are in the white bowl.
+
+A jam-basket is a kind of service container. 
+The description is "A small wicker basket dyed red.".
+
+The first red basket is a scenery jam-basket.
+3 blueberry jam portion jars are in the first red basket.
+The second red basket is a scenery jam-basket.
+3 orange marmalade portion jars are in the second red basket.
+		
+The the first red basket, the second red basket and the white bowl are on the buffet table.
 
 A chopping board is a kind of service supporter.
 The description is "A wooden chopping board."
@@ -2348,7 +2373,7 @@ To decide if (L - food-limit) can be ordered:
 	choose a row with food-limit of L in the Table of limits;
 	if limit entry is greater than eaten entry, decide yes;
 	otherwise:
-		say "[/ss]You've already had [eaten entry in words] [description entry], that's enough.' [/se][Monica] [state].";
+		say "[alert][/ss]You've already had [eaten entry in words] [description entry], that's enough.' [/se][Monica] [state].";
 		decide no.
 	
 	
