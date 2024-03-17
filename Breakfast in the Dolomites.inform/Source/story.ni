@@ -74,7 +74,6 @@ style name	color	italic	font weight
 special-style-1	"#FF0000"	false	regular-weight
 note-style	"#0000A0"	true	bold-weight
 
-
 Book 1.2 - Patches
 
 Chapter 1.2.1 - Measured liquids interfere with content of supporters
@@ -1507,12 +1506,13 @@ The plural of knob of butter is knobs of butter.
 A blueberry jam portion jar is a kind of single portion jar.
 An orange marmalade portion jar is a kind of single portion jar.
 
-A blueberry jam is a kind of jam-item.
-A blueberry jam is in every blueberry jam portion jar.
-An orange marmalade is a kind of jam-item.
-An orange marmalade is in every orange marmalade portion jar.
+A portion of blueberry jam is a kind of jam-item.
+A portion of blueberry jam is in every blueberry jam portion jar.
+A portion of orange marmalade is a kind of jam-item.
+A portion of orange marmalade is in every orange marmalade portion jar.
 
 Section 2.7.2.3 - Bread
+
 
 A slice of white bread is a kind of bread-slice. The description is "Soft slices of bread."
 The plural of slice of white bread is slices of white bread.

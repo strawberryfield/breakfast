@@ -59,13 +59,14 @@ Book 2.1 - bread
 
 A bread-slice is a kind of food-item.
 A bread-filling is a kind of supporter. A bread-filling is part of every bread-slice.
+A bread-slice can be buttered or unbuttered. A bread-slice is usually unbuttered.
 
 To decide which bread-filling is fill holder of (target - a bread-slice):
 	decide on a random bread-filling which is part of the target.
 	
-Definition: a bread-slice (called target) is buttered:
+[Definition: a bread-slice (called target) is buttered:
 	if the list of butter-items held by the fill holder of the target is empty, decide no;
-		decide yes.
+		decide yes.]
 
 Definition: a bread-slice (called target) is dressed:
 	let the filler list be the list of food-items which are not butter-items held by the fill holder of the target;
@@ -77,6 +78,8 @@ To say dressing of (target - bread-slice):
 
 Rule for printing the name of a bread-slice (called target):	
 	say "[if target is buttered]buttered [end if][printed name of the target][if target is dressed] dressed with a [dressing of target][end if]".
+
+Understand the buttered property as describing a bread-slice.
 	
 Book 2.2 - jams
 
@@ -87,29 +90,32 @@ A single portion jar is closed, openable not lockable.
 
 Instead of closing an open single portion jar, say "Once opened, the package [cannot] be resealed."
 Instead of inserting something into a single portion jar, say "[We] [can't] do it."
-
+	
 Understand "single/-- portion/serving/-- container/jar" as a single portion jar.
 
 Does the player mean taking a closed single portion jar: it is very likely.
 	
 Volume 3 - Spreading
 
-Spreading is an action applying to two things.
-Understand "spread [something] on/over [something]" as spreading.
+Spreading it on is an action applying to two things.
+Understand "spread [something] on/over [something]" as spreading it on.
 
-Check spreading:
+Check spreading it on:
 	unless the noun is a food-item, say "There is no need to spread something inedible." instead;
 	unless the noun is spreadable, say "You cannot spread [the noun]." instead;
 	unless the second noun is a bread-slice, say "[The noun] should be spread on a slice of bread, not [the second noun]." instead;
-	if the noun is a knob of butter and the second noun is buttered, say "It's already buttered." instead;
+	if the noun is a butter-item and the second noun is buttered, say "It's already buttered." instead;
 	if the second noun is dressed, say "You cannot spread [the noun] over another dressing." instead.	
 	
-Carry out spreading:
-	now the noun is in the fill holder of the second noun.	
+Carry out spreading it on:
+	now the noun is in the fill holder of the second noun;	
+	if the noun is a butter-item, now the second noun is buttered.
 
-Report spreading:
+Report spreading it on:
 	say "Now you have [a second noun].[paragraph break]".	
-	
+
+Does the player mean spreading a food-item on: it is likely.
+		
 Volume 4 - Service containers and supporters
 
 Book 4.1 - containers and supporters
