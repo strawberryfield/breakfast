@@ -1347,6 +1347,14 @@ A pot is a kind of hot drink container. The fluid capacity of a pot is 100 ml.
 A dish is a kind of portable supporter.
 The carrying capacity of a dish is 10.
 
+Instead of inserting a dish into a dish, say "Piling one dish on top of another is pointless."
+Instead of inserting a fluid container into a dish, say "It is better not to do this: [the noun] could slip and fall."
+Instead of inserting something into a dish while the second noun is carrying a cooked egg, say "Not enough space for [the noun] on the dish."
+Instead of inserting something into a not empty dish:
+	if the noun is the omelette or the noun is the fried egg or the noun is the crepe, say "You need an empty dish for [the noun].";
+	otherwise:
+		continue the action.
+		
 Section 2.7.1.2 - Liquids
 
 Table of Liquids (continued)
@@ -1503,13 +1511,18 @@ A knob of butter is a kind of butter-item.
 The description is "A little light-yellow cube of butter."
 The plural of knob of butter is knobs of butter.
 
-A blueberry jam portion jar is a kind of single portion jar.
-An orange marmalade portion jar is a kind of single portion jar.
-
 A portion of blueberry jam is a kind of jam-item.
+A blueberry jam portion jar is a kind of single portion jar.
 A portion of blueberry jam is in every blueberry jam portion jar.
+
 A portion of orange marmalade is a kind of jam-item.
+An orange marmalade portion jar is a kind of single portion jar.
 A portion of orange marmalade is in every orange marmalade portion jar.
+
+A portion of peach jam is a kind of jam-item.
+A peach jam portion jar is a kind of single portion jar.
+A portion of peach jam is in every peach jam portion jar.
+
 
 Section 2.7.2.3 - Bread
 
@@ -1569,6 +1582,8 @@ The first red basket is a scenery jam-basket.
 3 blueberry jam portion jars are in the first red basket.
 The second red basket is a scenery jam-basket.
 3 orange marmalade portion jars are in the second red basket.
+The third red basket is a scenery jam-basket.
+3 peach jam portion jars are in the third red basket.
 		
 The the first red basket, the second red basket and the white bowl are on the buffet table.
 
@@ -1785,7 +1800,7 @@ After reading a command when the current node is stuffed-omelette node:
 		
 Section 2.7.4.6 - Direct egg requests
 
-Definition: a person is carrying a cooked egg if the the omelette is enclosed by it or the fried egg is enclosed by it or the crepe is enclosed by it.
+Definition: a thing is carrying a cooked egg if the the omelette is enclosed by it or the fried egg is enclosed by it or the crepe is enclosed by it.
 
 Can-cook is a truth state that varies.
 To check request for cooking:
