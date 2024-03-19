@@ -729,6 +729,21 @@ To decide whether can leave the table:
 	if food is eaten and liquids are drunk, decide yes;
 	otherwise decide no.
 	
+Before spreading something on something (called target):
+	if the target is not encased by the table, say "Don't you think it's better to lean on your table?" instead.
+	
+Instead putting something on a bread-slice:
+	unless the noun is a food-item, say "There is no point in putting something inedible on [a second noun]." instead;
+	unless the noun is bread-placeable, say "Isn't a good idea to put [a noun] on [a second noun]." instead;
+	if the noun is spreadable, try spreading the noun on the second noun instead;
+	if the second noun is buttered, say "[A noun] on [a second noun]? Very strange." instead;
+	if the second noun is dressed, say "[We] already [have] [a second noun], why put another filling on top?" instead;
+	now the noun is in the fill holder of the second noun;
+	say "Now [we] [have] [a second noun].".	
+
+	
+	
+
 Chapter 2.6.3 - Timed events
 
 At the time when the waiter welcomes:
@@ -1446,7 +1461,7 @@ A food-item is familiar.
 
 Section 2.7.3.1 - Meats
 
-A slice of speck is a kind of food-item. 
+A slice of speck is a kind of food-item. It is bread-placeable.
 The description is "A slice of typical Tyrolean smoked ham. Dark red in color with thin white streaks of fat." 
 The plural of slice of speck is slices of speck.
 The scent-description of a slice of speck is "a slight smell of smoke".
@@ -1460,7 +1475,7 @@ To say (P - a person) talks about speck:
 Response of a waitstaff worker when asked about a slice of speck:
 	say the noun talks about speck.
 	
-A slice of salami is a kind of food-item. 
+A slice of salami is a kind of food-item. It is bread-placeable.
 The description is "A slice of seasoned sausage. Dark red in color with little dots of fat." 
 The plural of slice of salami is slices of salami.
 The scent-description of a slice of salami is "light scent of spices".
@@ -1474,13 +1489,13 @@ To say (P - a person) talks about salami:
 Response of a waitstaff worker when asked about a slice of salami:
 	say the noun talks about salami.
 	
-A slice of Ahrntal grey cheese is a kind of food-item. 
+A piece of Ahrntal grey cheese is a kind of food-item. It is bread-placeable.
 The description is "A slice of the typical 'grey cheese' from Sudtyrol."
-The plural of slice of Ahrntal grey cheese is slices of Ahrntal grey cheese.
-The scent-description of a slice of Ahrntal grey cheese is "good seasoned cheese".
-The flavor-description of a slice of Ahrntal grey cheese is "In the cheese, milky and toasted notes reminiscent of milk, cream and heated butter prevail, while there are also agre notes reminding us of fermented milk and yoghurt".
+The plural of piece of Ahrntal grey cheese is pieces of Ahrntal grey cheese.
+The scent-description of a piece of Ahrntal grey cheese is "good seasoned cheese".
+The flavor-description of a piece of Ahrntal grey cheese is "In the cheese, milky and toasted notes reminiscent of milk, cream and heated butter prevail, while there are also agre notes reminding us of fermented milk and yoghurt".
 
-Response of a waitstaff worker when asked about a slice of Ahrntal grey cheese:
+Response of a waitstaff worker when asked about a piece of Ahrntal grey cheese:
 	say "[/ss]The cheese in the buffet is the traditional Ahrntal grey cheese.' [/se][the naming of the noun] [explain] ";
 	say "[/ss1]Its unattractive appearance is due to the presence of a precious mould; it is the leanest of the cheeses, so much so that the fat content in the dry residue does not exceed two per cent: it is actually a product made from the milk left over from butter production, without the use of rennet.' [/r][/n]".
 

@@ -40,6 +40,7 @@ Volume 2 - Food items
 
 A food-item is a kind of thing. It is edible.
 A food-item can be spreadable. A food-item is usually not spreadable.
+A food-item can be bread-placeable. A food-item is usually not bread-placeable.
 A food-item has some text called attributes.
 Rule for printing the name of a food-item (called target):
 	if the attributes of the target are not empty, say "[attributes of the target] ";
@@ -102,17 +103,17 @@ Understand "spread [something] on/over [something]" as spreading it on.
 
 Check spreading it on:
 	unless the noun is a food-item, say "There is no need to spread something inedible." instead;
-	unless the noun is spreadable, say "You cannot spread [the noun]." instead;
+	unless the noun is spreadable, say "[We] [cannot] spread [the noun]." instead;
 	unless the second noun is a bread-slice, say "[The noun] should be spread on a slice of bread, not [the second noun]." instead;
 	if the noun is a butter-item and the second noun is buttered, say "It's already buttered." instead;
-	if the second noun is dressed, say "You cannot spread [the noun] over another dressing." instead.	
+	if the second noun is dressed, say "[We] [cannot] spread [the noun] over another dressing." instead.	
 	
 Carry out spreading it on:
 	now the noun is in the fill holder of the second noun;	
 	if the noun is a butter-item, now the second noun is buttered.
 
 Report spreading it on:
-	say "Now you have [a second noun].[paragraph break]".	
+	say "Now [we] [have] [a second noun].[paragraph break]".	
 
 Does the player mean spreading a food-item on: it is likely.
 		
