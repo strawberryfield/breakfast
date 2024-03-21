@@ -164,6 +164,7 @@ To approach is a verb.
 To ask is a verb.
 To beat is a verb.
 To become is a verb. 
+To belong is a verb.
 To blink is a verb. 
 To bounce is a verb. 
 To break is a verb.
@@ -268,4 +269,13 @@ Include (-
 ];
 -)
 
+Book 1.4 - Owner
+
+A thing has an object called owner. The owner is usually nothing.
+
+Definition: an object is owned unless the owner of it is nothing.
+
+Instead of doing anything other than examining to something while the noun is owned:
+	say "[The noun] [belong] to [the owner of the noun]."
+	
 Commons ends here.

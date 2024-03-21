@@ -844,15 +844,18 @@ At the time when a waiter collects garbage:
 	a waiter collects garbage in three turns from now.
 
 To (W - a waiter) restores dirty items:
-	repeat with item running through the dishes carried by W:
-		now item is clean;
-		now item is on the cupboard;
-	repeat with item running through the glasses carried by W:
+	repeat with the item running through the dishes carried by W:
+		now the item is clean;
+		now the owner of the item is nothing;
+		now the item is on the cupboard;
+	repeat with the item running through the glasses carried by W:
 		now the liquid of the item is nonliquid;
-		now item is on the left drawer;
-	repeat with item running through the hot drink containers carried by W:
+		now the owner of the item is nothing;
+		now the item is on the left drawer;
+	repeat with the item running through the hot drink containers carried by W:
 		now the liquid of the item is nonliquid;
-		now item is in the kitchen;
+		now the owner of the item is nothing;
+		now the item is in the kitchen;
 	now collected dirty items is false.
 
 After calling a waiter:
@@ -1149,6 +1152,7 @@ To finalize order:
 			now the fluid content of Monica-drink is 250 cc;
 			now Monica-drink is on the round tray;
 		say "[/se][Monica] [answer]. [/n]";
+		now the owner of Monica-drink is Monica;
 		say "[/ss]Perfect!' [/se][the naming of current interlocutor] [exclaim]. [/n]";
 		mark order hot drinks as done;
 	now the node of the current interlocutor is the null-node;
@@ -1998,6 +2002,9 @@ Rule for printing a locale paragraph about Monica (this is the Monica next to yo
 	say "[Monica] [are] next to you."
  
 Definition: a person is here if the location of it is the location of the player.
+
+Instead of doing anything other than examining to something while the owner of the noun is Monica and Monica is here:
+	say "[alert][/ss][The noun] is mine.' [/se][Monica] [remember] [us]."
 
 Chapter 3.2.1 - Monica initial dressing
 
