@@ -730,20 +730,8 @@ To decide whether can leave the table:
 	otherwise decide no.
 	
 Before spreading something on something (called target):
-	if the target is not encased by the table, say "Don't you think it's better to lean on your table?" instead.
+	unless the target is held by the table or the holder of the target is held by the table, say "Don't you think it's better to lean on your table?" instead.
 	
-Instead putting something on a bread-slice:
-	unless the noun is a food-item, say "There is no point in putting something inedible on [a second noun]." instead;
-	unless the noun is bread-placeable, say "Isn't a good idea to put [a noun] on [a second noun]." instead;
-	if the noun is spreadable, try spreading the noun on the second noun instead;
-	if the second noun is buttered, say "[A noun] on [a second noun]? Very strange." instead;
-	if the second noun is dressed, say "[We] already [have] [a second noun], why put another filling on top?" instead;
-	now the noun is in the fill holder of the second noun;
-	say "Now [we] [have] [a second noun].".	
-
-	
-	
-
 Chapter 2.6.3 - Timed events
 
 At the time when the waiter welcomes:

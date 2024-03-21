@@ -46,7 +46,7 @@ Rule for printing the name of a food-item (called target):
 	if the attributes of the target are not empty, say "[attributes of the target] ";
 	say printed name of the target.
 	
-A butter-item is a kind of food-item. It is spreadable.
+A butter-item is a kind of food-item. It is spreadable. It is bread-placeable.
 The flavor-description of a butter-item is "soft, creamy, and rich, with just a hint of sweetness".
 The scent-description of a butter-item is "smell of good milk cream".
 
@@ -84,7 +84,7 @@ Understand the buttered property as describing a bread-slice.
 	
 Book 2.2 - jams
 
-A jam-item is a kind of food-item. It is spreadable.
+A jam-item is a kind of food-item. It is spreadable. It is bread-placeable.
 
 A single portion jar is a kind of container.
 A single portion jar is closed, openable not lockable.
@@ -116,6 +116,18 @@ Report spreading it on:
 	say "Now [we] [have] [a second noun].[paragraph break]".	
 
 Does the player mean spreading a food-item on: it is likely.
+
+Instead of putting something on a bread-slice:
+	unless the noun is a food-item, say "There is no point in putting something inedible on [a second noun]." instead;
+	unless the noun is bread-placeable, say "Isn't a good idea to put [a noun] on [a second noun]." instead;
+	if the noun is spreadable, try spreading the noun on the second noun instead;
+	if the second noun is buttered, say "[A noun] on [a second noun]? Very strange." instead;
+	if the second noun is dressed, say "[We] already [have] [a second noun], why put another filling on top?" instead;
+	now the noun is in the fill holder of the second noun;
+	say "Now [we] [have] [a second noun].".	
+
+Understand "dress [something] with [something]" as putting it on (with nouns reversed).	
+	
 		
 Volume 4 - Service containers and supporters
 
