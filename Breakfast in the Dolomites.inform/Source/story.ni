@@ -1369,14 +1369,14 @@ liquid	potable	flavor
 milk	true	"A smooth, sweet taste; thirst-quenching and nourishing."
 orange juice	true	"A pungent, slightly acidic flavour; very refreshing."
 apple juice	true	"Clear and crystalline, with an inviting straw-yellow colour, it offers a sweet, natural and fresh flavour."
-lemon juice	true	""
+lemon juice	true	"The unmistakable sour taste and a sharp, acidic smell."
 pear nectar	true	"A sweet nectar with the delicate flavour of freshly picked pears."
 espresso coffee	true	"The unmistakable aroma of espresso coffee, black, bitter with a soft cream."
 moka coffee	true	"The intense aroma of coffee, as at home."
-barley coffee	true	""
+barley coffee	true	"A nutty, earthy taste; not quite as bitter as traditional coffee."
 cappuccino	true	"Characterised by the unmistakable aromas of coffee, its bitter taste and the roundness of whipped milk that sticks around the mouth."
-soy cappuccino	true	""
-barley cappuccino	true	""
+soy cappuccino	true	"A creamy drink, with a sweet and delicate taste."
+barley cappuccino	true	"The taste of milk with barley from when I was a child."
 hot chocolate	true	"Delicious hot chocolate with all the taste of cocoa and mountain milk."
 tea	true	"A herbaceous flavour with a tendency to be bitter and slightly astringent."
 
@@ -1437,6 +1437,8 @@ The description is "A little table without tablecloth."
 Rule for printing a locale paragraph about the juicer table:
 	say "Next to the sideboard is a small table with a juicer on it and two small wooden crates of celery ribs and carrots.".
 
+Section 2.7.2.1 - Vegetables
+
 A vegetable is a kind of food-item.
 A celery rib is a kind of vegetable.
 A carrot is a kind of vegetable.
@@ -1446,6 +1448,17 @@ The first crate is a scenery crate on the juicer table.
 3 carrots are in the first crate.
 The second crate is a scenery crate on the juicer table.
 3 celery ribs are in the second crate.
+
+Understand "celery rib/ribs/-- juice/--" as "[celery]".
+Understand "carrot/carrots juice/--" as "[carrot]".
+
+Response of a waitstaff worker when asked-or-told about "[celery]" or asked about a celery rib or told about a celery rib:
+	say "[/ss]Celery juice is low in sugar and contains potassium and vitamins A, C, and K.' [/se][the naming of the noun] [explain] ";
+	say "[/ss1]This popular drink may reduce inflammation and boost hydration, among other benefits.' [/r][/n]".
+	
+Response of a waitstaff worker when asked-or-told about "[carrot]" or asked about a carrot or told about a carrot:
+	say "[/ss]Carrot juice is incredibly nutritious, providing potassium, several carotenoids, and vitamins A, C, and K; this veggie juice may help improve eye health, boost your immune system, and strengthen your skin.' [/se][the naming of the noun] [explain] ";
+	say "[/ss1]Drinking it on an empty stomach in the morning hours is certainly a good choice: this is because your body tends to quickly absorb all the vital nutrients.' [/r][/n]".
 
 Chapter 2.7.3 - Food
 
@@ -1496,7 +1509,7 @@ Meat-type-node is a closed not auto-suggesting convnode.
 Node-introduction for meat-type-node:
 	say "[/ss]We have salami and speck:' [/se][the naming of current interlocutor] [say] ";
 	say "[/ss1]which one are you interested in?' [/r][/n]".
-Response of a waitstaff worker when asked about "[meats]":
+Response of a waitstaff worker when asked-or-told about "[meats]":
 	setnode meat-type-node;
 	say "[/ss]What nice cold cuts in the buffet!' [/se]you say. ".
 Response for meat-type-node when answered that "[speck]":	
@@ -1519,20 +1532,25 @@ The description is "A little light-yellow cube of butter."
 The plural of knob of butter is knobs of butter.
 
 A portion of blueberry jam is a kind of jam-item.
+The flavor-description is "a little bit of sweetness combined with a slightly acidic flavor".
 A blueberry jam portion jar is a kind of single portion jar.
 A portion of blueberry jam is in every blueberry jam portion jar.
 
 A portion of orange marmalade is a kind of jam-item.
+The scent-description is "slight hint of the scent emanating from the bitter orange flower, called 'azahar'".
+The flavor-description is "the bitter flavor of oranges, perfect on buttered bread".
 An orange marmalade portion jar is a kind of single portion jar.
 A portion of orange marmalade is in every orange marmalade portion jar.
 
-A portion of peach jam is a kind of jam-item.
-A peach jam portion jar is a kind of single portion jar.
-A portion of peach jam is in every peach jam portion jar.
+A portion of apricot jam is a kind of jam-item.
+The flavor-description is "sweet apricots with a little bit of sourness".
+An apricot jam portion jar is a kind of single portion jar.
+A portion of apricot jam is in every apricot jam portion jar.
 
+Response of a waitstaff worker when asked about a jam-item or told about a jam-item:
+	say "[/ss][flavor-description of the second noun in sentence case].' [/se][the naming of the noun] [say].".
 
 Section 2.7.2.3 - Bread
-
 
 A slice of white bread is a kind of bread-slice. The description is "Soft slices of bread."
 The plural of slice of white bread is slices of white bread.
@@ -1554,14 +1572,6 @@ To say (P - a person) talks about pumpernickel bread:
 Response of a waitstaff worker when asked about a slice of pumpernickel bread:
 	say the noun talks about pumpernickel bread.
 
-[Definition: a bread-slice is matched if it fits the parse list. 
-Rule for asking which do you mean when everything matched is a bread-slice: 
-	if the number of person in the location is greater than 1,	say "[/ss]We have white wheat and black rye bread: which one are you interested in?' [/r][/n]";
-	otherwise:
-		say "Who are you asking? [/n]";
-		stop the action.]
-
-		
 Section 2.7.3.4 - The buffet table
 
 The buffet table is a scenery service table in the buffet. 
@@ -1590,7 +1600,7 @@ The first red basket is a scenery jam-basket.
 The second red basket is a scenery jam-basket.
 3 orange marmalade portion jars are in the second red basket.
 The third red basket is a scenery jam-basket.
-3 peach jam portion jars are in the third red basket.
+3 apricot jam portion jars are in the third red basket.
 		
 The the first red basket, the second red basket and the white bowl are on the buffet table.
 
