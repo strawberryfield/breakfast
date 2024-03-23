@@ -1086,7 +1086,7 @@ Section 2.6.5.7 - Tea node
 
 To prepare tea:
 	now the order content is a random cup in the kitchen;
-	now the liquid of the order content is cappuccino;
+	now the liquid of the order content is tea;
 	now the fluid content of the order content is 150 ml;
 	say order confirmation.
 To prepare a pot of (L - a liquid):
@@ -1169,16 +1169,34 @@ At the time when waiter returns with order:
 		say "[The naming of order handler] then [regarding order handler][place] the contents of the tray on the table. [/n]";
 		repeat with D running through the things on the round tray:
 			now D is on the table;
+		unless Monica-drink is nothing, Monica drinks hot beverage in 1 turn from now;
+		Monica urges drink in 2 turn from now;
 		mark order hot drinks as done;
 		now the order handler is nothing;
-		Monica drinks hot beverage in 1 turn from now;
 		waiter tries to go away in two turns from now;
 	otherwise:
 		waiter returns with order in one turn from now.
+		
+Section 2.6.5.9 - Post order activities
 	
 At the time when Monica drinks hot beverage:
 	say "[Monica] [drink] [their] [Monica-drink].";
-	now the fluid content of Monica-drink is 0 cc.
+	now the fluid content of Monica-drink is 0 cc;
+	now Monica-drink is nothing;
+	unless visit buffet completed, Monica urges buffet in 1 turn from now.
+	
+At the time when Monica urges buffet:
+	unless can leave the table, Monica urges buffet in 1 turn from now;
+	otherwise if the player is at the table:
+		unless the number of hot drink containers carried by the player is zero, Monica urges buffet in 1 turn from now;
+		otherwise:
+			say "[heart][/ss]Come on, let's get something from the buffet.' [/se][Monica] [suggest] [us].";
+			Monica urges buffet in 2 turns from now.
+		
+At the time when Monica urges drink:
+	unless can order hot drinks:
+		say "[/ss]Drink your [list of non-empty hot drink containers which are not pot on the table] before [they] [get] cold.' [/se][Monica] [suggest] [us].";
+		Monica urges drink in 1 turn from now.
 	
 
 Chapter 2.6.6 - Hot drinks details
@@ -2139,6 +2157,9 @@ Proper name is "Emma".
 Printed name is "cook".
 Emma is improper-named. 
 Understand "cook/waitress" as Emma.
+
+The white blouse and the apron made of rough canvas are cloth.
+Emma wear the white blouse and the apron made of rough canvas.
 
 Book 3.5 - The narrator
 
