@@ -1197,6 +1197,14 @@ At the time when Monica urges drink:
 	unless can order hot drinks:
 		say "[/ss]Drink your [list of non-empty hot drink containers which are not pot on the table] before [they] [get] cold.' [/se][Monica] [suggest] [us].";
 		Monica urges drink in 1 turn from now.
+		
+Before drinking a cup:
+	if the liquid of the noun is tea:
+		let T be the list of not empty pot held by the table;
+		add the list of not empty pot carried by the player to T;
+		unless T is empty:
+			say "[/ss]Why don't you pour the [liquid of entry 1 of T] into the tea?' [/se][Monica] [ask].";
+			stop the action.
 	
 
 Chapter 2.6.6 - Hot drinks details
@@ -1369,6 +1377,8 @@ A pot is a kind of hot drink container. The fluid capacity of a pot is 100 ml.
 2 mugs are in the kitchen.
 2 pots are in the kitchen.
 
+Instead of drinking a pot, say "A pot is not a container to drink from."
+
 A dish is a kind of portable supporter.
 The carrying capacity of a dish is 10.
 
@@ -1380,6 +1390,11 @@ Instead of inserting something into a not empty dish:
 	otherwise:
 		continue the action.
 		
+Instead of dropping anything during breakfast, say "You must not throw anything on the ground."
+Instead of putting anything on the bench, say "The bench is for sitting, not for placing other things on it."
+Instead of inserting a fluid container into a pocket, say "[The noun] [do] not fit in the pocket."
+Instead of inserting a dish into a pocket, say "[The noun] [are] too big for the pocket."
+	
 Section 2.7.1.2 - Liquids
 
 Table of Liquids (continued)
@@ -1397,6 +1412,8 @@ soy cappuccino	true	"A creamy drink, with a sweet and delicate taste."
 barley cappuccino	true	"The taste of milk with barley from when I was a child."
 hot chocolate	true	"Delicious hot chocolate with all the taste of cocoa and mountain milk."
 tea	true	"A herbaceous flavour with a tendency to be bitter and slightly astringent."
+lemon tea	true	"A good tea with lemon flavor."
+milky tea	true	"A British tea with milk."
 
 Understand "espresso/-- coffee" or "espresso" as espresso coffee.
 Understand "moka/-- coffee" as moka coffee.
@@ -1404,6 +1421,23 @@ Understand "barley coffee/--" as barley coffee.
 
 Understand "soyy/-- cappuccino" as soy cappuccino.
 Understand "barley/-- cappuccino" as barley cappuccino.
+
+Understand "hot/liquid/-- chocolate" as hot chocolate.
+
+Understand "lemon/-- tea" as lemon tea.
+Understand "milk/milky/-- tea" or "milky" as milky tea.
+
+Understand "orange juice/--" as orange juice.
+Understand "apple juice/--" as apple juice.
+Understand "lemon/lime juice/--" as lemon juice.
+Understand "pear juice/nectar/--" as pear nectar.
+
+Use mixed liquids.
+
+Table of Liquid Mixtures (continued)
+mix-list	result
+{tea, lemon juice}	lemon tea
+{tea, milk}	milky tea
 
 Section 2.7.1.3 - The cupboard
 
@@ -1481,6 +1515,7 @@ Response of a waitstaff worker when asked-or-told about "[carrot]" or asked abou
 Chapter 2.7.3 - Food
 
 A food-item is familiar.
+Instead of inserting a food-item into a pocket, say "Food can be put on a plate, not in a pocket."
 
 Section 2.7.3.1 - Meats
 
@@ -1899,7 +1934,7 @@ This is the about crepe rule:
 
 Chapter 2.7.6 - Movements
 
-Before going to the buffet:
+Before going from the dining room:
 	if the number of things carried by the player is greater than zero:
 		say "[/ss]Why are you carrying [the list of things carried by the player]?' [/se][Monica] [ask]. [/n]" instead.
 		
