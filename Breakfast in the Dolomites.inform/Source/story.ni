@@ -1511,6 +1511,21 @@ Response of a waitstaff worker when asked-or-told about "[celery]" or asked abou
 Response of a waitstaff worker when asked-or-told about "[carrot]" or asked about a carrot or told about a carrot:
 	say "[/ss]Carrot juice is incredibly nutritious, providing potassium, several carotenoids, and vitamins A, C, and K; this veggie juice may help improve eye health, boost your immune system, and strengthen your skin.' [/se][the naming of the noun] [explain] ";
 	say "[/ss1]Drinking it on an empty stomach in the morning hours is certainly a good choice: this is because your body tends to quickly absorb all the vital nutrients.' [/r][/n]".
+	
+Section 2.7.2.2 - Cutting
+
+One knife is on the juicer table.
+
+A chopping board is a kind of service supporter.
+The description is "A wooden chopping board."
+Understand "cutting board" as a chopping board.
+
+The sturdy wooden chopping board is a chopping board on the juicer table.
+The description is "The surface is slightly damp: someone must have used it to cut vegetables."
+Does the player mean putting a vegetable on the sturdy wooden chopping board: it is likely.
+
+Instead of cutting a food-item, say "There is no point in cutting [the noun]."
+Instead of cutting a vegetable, say "You should specify what you cut it with."
 
 Chapter 2.7.3 - Food
 
@@ -1656,9 +1671,6 @@ The third red basket is a scenery jam-basket.
 3 apricot jam portion jars are in the third red basket.
 		
 The the first red basket, the second red basket and the white bowl are on the buffet table.
-
-A chopping board is a kind of service supporter.
-The description is "A wooden chopping board."
 
 The first chopping board is a scenery chopping board.
 5 slices of speck are on the first chopping board.
