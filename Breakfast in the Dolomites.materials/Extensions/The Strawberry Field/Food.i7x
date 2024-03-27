@@ -95,6 +95,36 @@ Instead of inserting something into a single portion jar, say "[We] [can't] do i
 Understand "single/-- portion/serving/-- container/jar" as a single portion jar.
 
 Does the player mean taking a closed single portion jar: it is very likely.
+
+Book 2.3 - vegetables
+
+A vegetable is a kind of food-item.
+A vegetable can be chopped. A vegetable is usually not chopped.
+Understand the chopped property as describing a vegetable.
+Rule for printing the name of a vegetable: say "[if chopped]chopped [end if][printed name]".
+
+Chapter 2.3.1 - cutting
+
+Instead of cutting a food-item, say "There is no point in cutting [the noun]."
+Instead of cutting a vegetable, say "You should specify what you cut it with."
+
+Cutting it with is an action applying to two things.
+Understand "cut [something] with/using [something]" as cutting it with.
+Understand "use [something] to cut/chop [something]" as cutting it with (with nouns reversed).
+To cut is a verb.
+to chop is a verb.
+
+Does the player mean cutting a vegetable on a chopping board with: it is likely.
+
+Check cutting it with:
+	unless the second noun is a knife, say "A knife is needed to cut." instead;
+	unless the noun is a vegetable, say "There is no point in cutting [the noun]." instead;
+	unless the noun is on a chopping board, say "It is better to lean on a chopping board." instead;
+	if the noun is chopped, say "It's already chopped." instead.
+Carry out cutting it with:
+	now the noun is chopped.
+Report cutting it with:
+	say "[We] [cut] [the printed name of the noun] using [the second noun] in small pieces."
 	
 Volume 3 - Spreading
 
@@ -188,5 +218,12 @@ Instead of examining a service table:
 	now sc-content flag is true;
 	say "On it [is-are a list of things held by the noun].";
 	now sc-content flag is false.
+
+Book 4.3 - chopping boards
+
+A chopping board is a kind of service supporter.
+The description is "A wooden chopping board."
+Understand "cutting board" as a chopping board.
+
 	
 Food ends here.

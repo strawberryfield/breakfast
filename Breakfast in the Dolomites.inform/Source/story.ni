@@ -1491,7 +1491,6 @@ Rule for printing a locale paragraph about the juicer table:
 
 Section 2.7.2.1 - Vegetables
 
-A vegetable is a kind of food-item.
 A celery rib is a kind of vegetable.
 A carrot is a kind of vegetable.
 
@@ -1516,16 +1515,10 @@ Section 2.7.2.2 - Cutting
 
 One knife is on the juicer table.
 
-A chopping board is a kind of service supporter.
-The description is "A wooden chopping board."
-Understand "cutting board" as a chopping board.
-
 The sturdy wooden chopping board is a chopping board on the juicer table.
 The description is "The surface is slightly damp: someone must have used it to cut vegetables."
 Does the player mean putting a vegetable on the sturdy wooden chopping board: it is likely.
 
-Instead of cutting a food-item, say "There is no point in cutting [the noun]."
-Instead of cutting a vegetable, say "You should specify what you cut it with."
 
 Chapter 2.7.3 - Food
 
