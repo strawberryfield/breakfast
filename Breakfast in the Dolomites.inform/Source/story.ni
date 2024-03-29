@@ -1518,6 +1518,10 @@ One knife is on the juicer table.
 The sturdy wooden chopping board is a chopping board on the juicer table.
 The description is "The surface is slightly damp: someone must have used it to cut vegetables."
 Does the player mean putting a vegetable on the sturdy wooden chopping board: it is likely.
+Before putting a vegetable on the sturdy wooden chopping board:
+	now the noun is on the second noun;
+	say "[We] [place] [the noun] on [the second noun].";
+	stop the action.
 
 
 Chapter 2.7.3 - Food
@@ -1586,30 +1590,24 @@ After reading a command when the current node is meat-type-node:
 		replace the player's command with "answer salami to [printed name of current interlocutor]".
 
 	
-Section 2.7.3.2 - Butter and jams
+Section 2.7.3.2 - Butter
 
 A knob of butter is a kind of butter-item. 
 The description is "A little light-yellow cube of butter."
 The plural of knob of butter is knobs of butter.
 
-A portion of blueberry jam is a kind of jam-item.
-The flavor-description is "a little bit of sweetness combined with a slightly acidic flavor".
-A blueberry jam portion jar is a kind of single portion jar.
-A portion of blueberry jam is in every blueberry jam portion jar.
+The white bowl is a service container.
+The description is "A large white ceramic bowl with ice cubes inside.".
+6 knobs of butter are in the white bowl.
 
-A portion of orange marmalade is a kind of jam-item.
-The scent-description is "slight hint of the scent emanating from the bitter orange flower, called 'azahar'".
-The flavor-description is "the bitter flavor of oranges, perfect on buttered bread".
-An orange marmalade portion jar is a kind of single portion jar.
-A portion of orange marmalade is in every orange marmalade portion jar.
+The ice cube is a scenery in the buffet. It is edible.
+Instead of taking the ice cube, say "It is here to keep the butter cold, you cannot take it."
+Instead of tasting the ice cube, say "It's icy."
+Before eating the ice cube:
+	if Monica is here, say "[alert][/ss]You may be hungry, but eating ice with all the good stuff here is absurd!' [/se][Monica] [exclaim]." instead;
+	otherwise say "There is so much better to eat here." instead.
 
-A portion of apricot jam is a kind of jam-item.
-The flavor-description is "sweet apricots with a little bit of sourness".
-An apricot jam portion jar is a kind of single portion jar.
-A portion of apricot jam is in every apricot jam portion jar.
-
-Response of a waitstaff worker when asked about a jam-item or told about a jam-item:
-	say "[/ss][flavor-description of the second noun in sentence case].' [/se][the naming of the noun] [say].".
+The white bowl is on the buffet table.
 
 Section 2.7.2.3 - Bread
 
@@ -1649,9 +1647,35 @@ The description of the brown basket is "A small natural wicker basket. The insid
 
 The white basket and the brown basket are on the buffet table.
 
-The white bowl is a service container.
-The description is "A large white ceramic bowl with ice cubes inside.".
-6 knobs of butter are in the white bowl.
+The first chopping board is a scenery chopping board.
+5 slices of speck are on the first chopping board.
+The second chopping board is a scenery chopping board.
+3 slices of salami are on the second chopping board.
+The third chopping board is a scenery chopping board.
+2 slices of Ahrntal grey cheese are on the third chopping board.
+
+The first chopping board, the second chopping board and the third chopping board are on the buffet table.
+
+Section 2.7.3.5 - jams
+
+A portion of blueberry jam is a kind of jam-item.
+The flavor-description is "a little bit of sweetness combined with a slightly acidic flavor".
+A blueberry jam portion jar is a kind of single portion jar.
+A portion of blueberry jam is in every blueberry jam portion jar.
+
+A portion of orange marmalade is a kind of jam-item.
+The scent-description is "slight hint of the scent emanating from the bitter orange flower, called 'azahar'".
+The flavor-description is "the bitter flavor of oranges, perfect on buttered bread".
+An orange marmalade portion jar is a kind of single portion jar.
+A portion of orange marmalade is in every orange marmalade portion jar.
+
+A portion of apricot jam is a kind of jam-item.
+The flavor-description is "sweet apricots with a little bit of sourness".
+An apricot jam portion jar is a kind of single portion jar.
+A portion of apricot jam is in every apricot jam portion jar.
+
+Response of a waitstaff worker when asked about a jam-item or told about a jam-item:
+	say "[/ss][flavor-description of the second noun in sentence case].' [/se][the naming of the noun] [say].".
 
 A jam-basket is a kind of service container. 
 The description is "A small wicker basket dyed red.".
@@ -1663,16 +1687,38 @@ The second red basket is a scenery jam-basket.
 The third red basket is a scenery jam-basket.
 3 apricot jam portion jars are in the third red basket.
 		
-The the first red basket, the second red basket and the white bowl are on the buffet table.
+The the first red basket, the second red basket and the third red basket are on the buffet table.
 
-The first chopping board is a scenery chopping board.
-5 slices of speck are on the first chopping board.
-The second chopping board is a scenery chopping board.
-3 slices of salami are on the second chopping board.
-The third chopping board is a scenery chopping board.
-2 slices of Ahrntal grey cheese are on the third chopping board.
+To say put in the same basket:
+	say "Put the jam in the same basket you took it from."
+To return (jam - a thing) into (basket - a thing):
+	now the jam is in the basket;
+	say "[The jam] [are] in [the basket] again.".
+Before inserting a single portion jar into a jam-basket:
+	if the noun is open, say "[We] [cannot] return an open jam." instead;
+	if the noun is a blueberry jam portion jar:
+		unless the second noun is the first red basket, say put in the same basket instead;
+		otherwise:
+			return the noun into the second noun instead;
+	if the noun is a orange marmalade portion jar:
+		unless the second noun is the second red basket, say put in the same basket instead;
+		otherwise:
+			return the noun into the second noun instead;
+	if the noun is a apricot jam portion jar:
+		unless the second noun is the third red basket, say put in the same basket instead;
+		otherwise:
+			return the noun into the second noun instead.
 
-The first chopping board, the second chopping board and the third chopping board are on the buffet table.
+Before putting a single portion jar on a jam-basket:
+	try inserting the noun into the second noun instead.
+	
+Does the player mean inserting a blueberry jam portion jar into the first red basket: it is likely.
+Does the player mean inserting an orange marmalade portion jar into the second red basket: it is likely.
+Does the player mean inserting an apricot jam portion jar into the third red basket: it is likely.
+Does the player mean putting a blueberry jam portion jar on the first red basket: it is likely.
+Does the player mean putting an orange marmalade portion jar on the second red basket: it is likely.
+Does the player mean putting an apricot jam portion jar on the third red basket: it is likely.
+	
 
 Chapter 2.7.4 - The cook
 

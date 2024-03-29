@@ -124,7 +124,7 @@ Check cutting it with:
 Carry out cutting it with:
 	now the noun is chopped.
 Report cutting it with:
-	say "[We] [cut] [the printed name of the noun] using [the second noun] in small pieces."
+	say "[We] [chop] [the printed name of the noun] using [the second noun] in small pieces."
 	
 Volume 3 - Spreading
 
@@ -170,8 +170,27 @@ Instead of taking a service supporter, say "[The noun] has to remain at the disp
 
 To say cannot return food:
 	say "Any food that has been in contact with you will no longer be of use to others.".
-Instead of inserting something into a service container, say cannot return food.
-Instead of inserting something into a service supporter, say cannot return food.
+To say cannot insert in service container:
+	say "This container is only for food.".
+To say cannot put on chopping board:
+	say "This chopping board is only for food.".
+To say cannot put food here:
+	say "Food should be put on a plate, not right here.".
+	
+Before inserting something into a service container:
+	if the noun is a food-item, say cannot return food instead;
+	otherwise say cannot insert in service container instead.
+Before putting something on a service container:
+	try inserting the noun into the second noun instead.
+	
+Before inserting something into a service supporter:
+	if the second noun is a chopping board:
+		if the noun is a food-item, say cannot return food instead;
+		otherwise say cannot put on chopping board instead;
+	otherwise:
+		if the noun is a food-item, say cannot put food here instead.
+Before putting something on a service supporter:
+	try inserting the noun into the second noun instead.
 
 The sc-content flag is a truth state that varies. The sc-content flag is false.
 
