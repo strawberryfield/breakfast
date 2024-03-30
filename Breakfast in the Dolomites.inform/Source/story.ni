@@ -698,13 +698,15 @@ After going to the dining room from the reception:
 	
 Section 2.6.2.1 - Good manners
 
+To say Monica does not allow:
+	say "[one of]I am sure that [Monica] would scold you if she could see you now[or]If [Monica] were here, she would not allow you to do such a thing[at random].".
 Instead of eating something while the player is not at the table:
 	if Monica is here, say "[alert][/ss]But what are you doing?' [/se][Monica] [rebuke] you. [/ss1]You should eat sitting at the table!' [/r][/n]" instead;
-	say "I am sure that [Monica] would scold you if she could see you now.".
+	say Monica does not allow.
 
 Instead of drinking something while the player is not at the table:
 	if Monica is here, say "[alert][/ss]Naughty!' [/se][Monica] [exclaim]. [/ss1]You should drink sitting at the table!' [/r][/n]" instead;
-	say "If [Monica] were here, she would not allow you to do such a thing.".
+	say Monica does not allow.
 	
 Section 2.6.2.2 - Food and drink management
 
@@ -1414,6 +1416,8 @@ hot chocolate	true	"Delicious hot chocolate with all the taste of cocoa and moun
 tea	true	"A herbaceous flavour with a tendency to be bitter and slightly astringent."
 lemon tea	true	"A good tea with lemon flavor."
 milky tea	true	"A British tea with milk."
+carrot juice	true	"Slightly sweet and refreshing."
+celery juice	true	"Very refreshing."
 
 Understand "espresso/-- coffee" or "espresso" as espresso coffee.
 Understand "moka/-- coffee" as moka coffee.
@@ -1431,6 +1435,8 @@ Understand "orange juice/--" as orange juice.
 Understand "apple juice/--" as apple juice.
 Understand "lemon/lime juice/--" as lemon juice.
 Understand "pear juice/nectar/--" as pear nectar.
+Understand "carrot juice/--" as carrot juice.
+Understand "celery juice/--" as celery juice.
 
 Use mixed liquids.
 
@@ -1445,7 +1451,9 @@ The cupboard is a scenery supporter in the buffet.
 The description is "A cupboard in light fir wood. Under the top are two drawers, one on the left and one on the right.".
 Understand "sideboard" as the cupboard.
 The left drawer is a closed, openable container. It is part of the cupboard.
+Understand "first drawer" as the left drawer.
 The right drawer is a closed, openable container. It is part of the cupboard.
+Understand "second drawer" as the right drawer.
 Ten glasses are in the left drawer.
 A bib is a kind of wearable thing.
 Three bibs are in the right drawer.
@@ -1484,20 +1492,125 @@ When play begins:
 
 Chapter 2.7.2 - The juicer
 
-The juicer table is a scenery service table in the buffet. 
-The description is "A little table without tablecloth."
-Rule for printing a locale paragraph about the juicer table:
+The marble table is a scenery service table in the buffet. 
+The description is "A small marble-topped table."
+Rule for printing a locale paragraph about the marble table:
 	say "Next to the sideboard is a small table with a juicer on it and two small wooden crates of celery ribs and carrots.".
+Understand "marble-topped/juicer table" as marble table.
+	
+The juicer machine is a device on the marble table.
+The description is "The machine takes the form of a large steel cylinder. [/n]At the top, a lid gives access to a container in which to place the vegetables from which the juice is extracted. [/n]At the bottom there is a recess in which a glass can be placed to collect the juice that comes out of a spout. [/n]On the right is a switch to turn the machine on and off."
+Does the player mean examining the juicer machine: it is likely.
 
-Section 2.7.2.1 - Vegetables
+Before taking the juicer machine:
+	if Monica is here:
+		say "[alert][/ss]You're the usual grabber: remember you're not playing those games you like so much, those «interactive fictions» or whatever they're called!' [/se][Monica] [exclaim].";
+		say "But really...";
+		say "[/ss]I stick to what is written in the script.' [/se]the actress playing [Monica] [reply].";
+		say "However, you can't take it.";
+	otherwise:
+		say "Best left where it is.";
+	stop the action.
+
+Section 2.7.2.1 - The juicer bowl
+
+The juicer bowl is a closed, opaque, openable, not lockable container. It is part of the juicer machine.
+The description is "[if closed]A black plastic lid covers the container[otherwise]A conical bowl with a central hole[end if].".
+Understand "juicer/-- lid" as the juicer bowl.
+
+Does the player mean opening the juicer bowl: it is likely.
+Does the player mean closing the juicer bowl: it is likely.
+Before opening the juicer machine, try opening the juicer bowl instead.
+Before closing the juicer machine, try closing the juicer bowl instead.
+Before opening the juicer bowl when the juicer machine is switched on, say "You cannot open the lid while the machine is working." instead.
+
+Does the player mean inserting a vegetable into the juicer bowl: it is likely.
+Does the player mean putting a vegetable on the juicer bowl: it is likely.
+Does the player mean inserting a chopped vegetable into the juicer bowl: it is very likely.
+Does the player mean putting a chopped vegetable on the juicer bowl: it is very likely.
+
+Before inserting something into the juicer machine, try inserting the noun into the juicer bowl instead.
+Before putting something on the juicer machine, try inserting the noun into the juicer bowl instead.
+
+Before inserting something into the juicer bowl:
+	if the second noun is closed, say "[The second noun] is closed." instead;
+	unless the second noun is empty:
+		let V be a random thing in the second noun;
+		say "[A V] is already in [the second noun].";
+		stop the action;
+	unless the noun is a vegetable, say "This machine processes vegetables only." instead;
+	unless the noun is chopped, say "[/ss]You cannot put a whole [noun] in the machine, you have to chop it first.' [/se][the naming of Emma] [suggest] [us]." instead.
+Before putting something on the juicer bowl, try inserting the noun into the second noun.
+	
+Section 2.7.2.2 - Juicer output
+
+The spout is a part of the juicer machine. The description is "A narrow steel spout."
+The juicer recess is a container. It is part of the juicer machine.
+The description is "A recess under the spout where you can place a glass to collect the juice."
+
+Does the player mean inserting a glass into the juicer recess: it is likely.
+Does the player mean putting a glass on the juicer recess: it is likely.
+Before inserting something into the juicer recess:
+	if the second noun is not empty, say "There is already a glass inside." instead;
+	unless the noun is a glass, say "You can only put glasses here." instead.
+Before putting something on the juicer recess, try inserting the noun into the second noun instead.
+
+Before taking a glass:
+	unless the juicer recess is empty:
+		unless the juicer machine is switched off, say "You cannot remove the glass while the machine is working." instead;
+		let G be a random glass in the juicer recess;
+		now the player carries G;
+		say "[We] [take] the [G] from the juicer.";
+		stop the action.
+
+Section 2.7.2.3 - Processing juice
+		
+The juicer switch is device. It is part of the juicer machine.
+Does the player mean switching on the juicer machine: it is likely.
+Does the player mean switching off the juicer machine: it is likely.
+Before switching on the juicer switch, try switching on the juicer machine instead.
+Before switching off the juicer switch, try switching off the juicer machine instead.
+
+Before switching on the juicer machine:
+	if the juicer bowl is open, say "[/ss]If you do not close the lid, the machine will not start.' [/se][the naming of Emma] [remember] [us]." instead;
+	if the juicer recess is empty:
+		if Monica is here, say "[/ss]You forgot to put the glass in.' [/se][Monica] [remember] [us].";
+		otherwise:
+			say "Shouldn't you put a glass to collect the juice? [/n]";
+		stop the action;
+	let the current glass be a random glass in the juicer recess;
+	unless the current glass is empty, say "[/ss]You can't put any more juice in that glass, it won't fit.' [/se][the naming of Emma] [say]." instead.
+	
+After switching on the juicer machine:
+	say "You switch on the juicer ";
+	if the juicer bowl is empty, say "but nothing comes down into the glass. [/n][/ss]Did you put the vegetables in?' [/se][the naming of Emma] [ask].";
+	otherwise:
+		let the current vegetable be a random vegetable in the juicer bowl;
+		let the current glass be a random glass in the juicer recess;
+		if the current vegetable is a carrot, now the liquid of the current glass is carrot juice;
+		otherwise now the liquid of the current glass is celery juice;
+		say "and the [liquid of the current glass] starts coming down into the glass.";
+		now the fluid content of the current glass is 80 cc;
+		the juice stops coming down in 1 turn from now.
+		
+At the time when the juice stops coming down:
+	say "No more juice comes down.";
+	the cook switch off the juicer in 1 turn from now.
+	
+At the time when the cook switch off the juicer:
+	if the juicer machine is switched on:
+		say "[The naming of Emma] [switch] off the juicer.";
+		now the juicer machine is switched off.
+		
+Section 2.7.2.4 - Vegetables
 
 A celery rib is a kind of vegetable.
 A carrot is a kind of vegetable.
 
 A crate is a kind of service container. The description is "A little wooden crate for vegetables."
-The first crate is a scenery crate on the juicer table.
+The first crate is a scenery crate on the marble table.
 3 carrots are in the first crate.
-The second crate is a scenery crate on the juicer table.
+The second crate is a scenery crate on the marble table.
 3 celery ribs are in the second crate.
 
 Understand "celery rib/ribs/-- juice/--" as "[celery]".
@@ -1511,18 +1624,17 @@ Response of a waitstaff worker when asked-or-told about "[carrot]" or asked abou
 	say "[/ss]Carrot juice is incredibly nutritious, providing potassium, several carotenoids, and vitamins A, C, and K; this veggie juice may help improve eye health, boost your immune system, and strengthen your skin.' [/se][the naming of the noun] [explain] ";
 	say "[/ss1]Drinking it on an empty stomach in the morning hours is certainly a good choice: this is because your body tends to quickly absorb all the vital nutrients.' [/r][/n]".
 	
-Section 2.7.2.2 - Cutting
+Section 2.7.2.5 - Cutting
 
-One knife is on the juicer table.
+One knife is on the marble table.
 
-The sturdy wooden chopping board is a chopping board on the juicer table.
+The sturdy wooden chopping board is a chopping board on the marble table.
 The description is "The surface is slightly damp: someone must have used it to cut vegetables."
 Does the player mean putting a vegetable on the sturdy wooden chopping board: it is likely.
 Before putting a vegetable on the sturdy wooden chopping board:
 	now the noun is on the second noun;
 	say "[We] [place] [the noun] on [the second noun].";
 	stop the action.
-
 
 Chapter 2.7.3 - Food
 

@@ -115,6 +115,7 @@ To cut is a verb.
 to chop is a verb.
 
 Does the player mean cutting a vegetable on a chopping board with: it is likely.
+Does the player mean taking a vegetable on a chopping board: it is very likely.
 
 Check cutting it with:
 	unless the second noun is a knife, say "A knife is needed to cut." instead;
