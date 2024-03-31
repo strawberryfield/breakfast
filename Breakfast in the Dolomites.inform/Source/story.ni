@@ -1367,6 +1367,7 @@ A jug is a kind of fluid container. The fluid capacity of a jug is 1.5 litres.
 A bottle is a kind of fluid container. The fluid capacity of the bottle is 1 litre.
 A glass is a kind of fluid container. The fluid capacity of a glass is 200 ml.
 A glass is preferred for drinking.
+Does the player mean taking a not empty glass: it is likely.
 
 A hot drink container is a kind of fluid container.
 A cup is a kind of hot drink container. The fluid capacity of a cup is 200 ml.
@@ -1501,6 +1502,7 @@ Understand "marble-topped/juicer table" as marble table.
 The juicer machine is a device on the marble table.
 The description is "The machine takes the form of a large steel cylinder. [/n]At the top, a lid gives access to a container in which to place the vegetables from which the juice is extracted. [/n]At the bottom there is a recess in which a glass can be placed to collect the juice that comes out of a spout. [/n]On the right is a switch to turn the machine on and off."
 Does the player mean examining the juicer machine: it is likely.
+Understand "juice/-- machine/extractor" as the juicer machine.
 
 Before taking the juicer machine:
 	if Monica is here:
@@ -1512,6 +1514,17 @@ Before taking the juicer machine:
 		say "Best left where it is.";
 	stop the action.
 
+Does the player mean quizzing someone about the juicer machine: it is likely.
+Does the player mean informing someone about the juicer machine: it is likely.
+
+Response of a waiter when asked-or-told about the juicer machine:
+	say "[/ss]There is a juicer in the buffet and some vegetables to make good juices,' [/se][the naming of the noun] [explain] [/ss1]but you should ask my colleague for more details.' [/r][/n]".
+Response of Emma when asked-or-told about the juicer machine: 
+	say "[/ss]Can you help me to extract some juice?' [/se][we] [ask].";
+	say "[/ss]Of course!' [/se][regarding the noun][they] [answer] [/ss1]Choose a vegetable and chop it, then put it in the machine and start.' [/r][/n]";
+	say "[/ss]Oh, it seems to be easy!' [/se][if Monica is here][Monica] [say] [/ss1]Go on, try it!' [/r][otherwise][we] [say].[end if][/n]";
+	say "[/ss]Do not forget the glass. When you are finished, turn off the machine.' [/se][the naming of noun] [remember]."
+	
 Section 2.7.2.1 - The juicer bowl
 
 The juicer bowl is a closed, opaque, openable, not lockable container. It is part of the juicer machine.
@@ -1591,6 +1604,7 @@ After switching on the juicer machine:
 		otherwise now the liquid of the current glass is celery juice;
 		say "and the [liquid of the current glass] starts coming down into the glass.";
 		now the fluid content of the current glass is 80 cc;
+		mark extracted juice as done;
 		the juice stops coming down in 1 turn from now.
 		
 At the time when the juice stops coming down:
@@ -2598,6 +2612,7 @@ Drunk hot drinks	false
 Eat buffet	false
 Drunk cold drinks	false
 Got cooked egg	false
+Extracted juice	false
 
 Book 5.2 - Table of food limits
 
