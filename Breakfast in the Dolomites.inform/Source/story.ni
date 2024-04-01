@@ -19,6 +19,7 @@ Chapter 0.1 - Includes
 
 Include Cleared Events by Daniel Stelzer.
 Include Large Game Speedup by Nathanael Nerode.
+Include Smarter Parser by Aaron Reed.
 Include Conversation Package by Eric Eve.
 Include Metric Units by Graham Nelson.
 Include Assorted Text Generation by Emily Short.
