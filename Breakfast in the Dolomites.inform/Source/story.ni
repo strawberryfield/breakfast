@@ -917,6 +917,7 @@ Rule for printing a parser error when the latest parser error is the not a verb 
 
 To rewrite the answer with (A - some text):
 	replace the player's command with "answer [A] to [printed name of current interlocutor]";	
+	stop the action.
 
 Section 2.6.5.2 - Main node
 
@@ -957,6 +958,9 @@ Understand "coffee" as "[coffee]".
 Understand "cappuccino" as "[cappuccino]".
 Understand "tea" as "[tea]".		
 Understand "nothing/none/neither" as "[nothing]".
+Understand "[nothing]" as saying no.
+Before order-answering while the current interlocutor is nothing: say "Who are you asking for this?" instead.
+
 Response for main-order node when answered that "[coffee]":
 	now next-node of current node is coffee-order node;
 	say leavenode.
@@ -982,13 +986,23 @@ Response for main-order node when saying no:
 Response for main-order node when saying yes:
 	say "[/ss]Well!' [/se][regarding current interlocutor][they] [say] and then [ask]: [/ss1]What do you prefer?' [/r][/n]".
 	
-After reading a command when the current node is main-order node:
-	if the player's command matches "coffee", rewrite the answer with "coffee";
-	if the player's command matches "cappuccino", rewrite the answer with "cappuccino"; 
-	if the player's command matches "[chocolate]", rewrite the answer with "chocolate";
-	if the player's command matches "tea", rewrite the answer with "tea";
-	if the player's command matches "[nothing]", rewrite the answer with "nothing".
-
+Answering coffee is an action applying to nothing.
+Answering coffee is order-answering.
+Understand "coffee" as answering coffee.
+Carry out answering coffee: try answering the current interlocutor that "coffee".
+Answering cappuccino is an action applying to nothing.
+Answering cappuccino is order-answering.
+Understand "cappuccino" as answering cappuccino.
+Carry out answering cappuccino: try answering the current interlocutor that "cappuccino".
+Answering tea is an action applying to nothing.
+Answering tea is order-answering.
+Understand "tea" as answering tea.
+Carry out answering tea: try answering the current interlocutor that "tea".
+Answering chocolate is an action applying to nothing.
+Answering chocolate is order-answering.
+Understand "[chocolate]" as answering chocolate.
+Carry out answering chocolate: try answering the current interlocutor that "chocolate".
+	
 Section 2.6.5.3 - Coffee node
 
 Understand "barley coffee/--" as "[barley]".
@@ -1008,16 +1022,25 @@ Response for coffee-order node when answered that "[moka]":
 Default answer response for coffee-order node:
 	say "[/ss]Sorry, I did not understand your preference for coffee: espresso, moka or barley?' [/se][the naming of current interlocutor] [state]. [/n]".
 
-After reading a command when the current node is coffee-order node:
-	if the player's command matches "[espresso]", rewrite the answer with "espresso";
-	if the player's command matches "[moka]", rewrite the answer with "moka";
-	if the player's command matches "[barley]", rewrite the answer with "barley".
+Answering espresso is an action applying to nothing.
+Answering espresso is order-answering.
+Understand "[espresso]" as answering espresso.
+Carry out answering espresso: try answering the current interlocutor that "espresso".
+Answering barley is an action applying to nothing.
+Answering barley is order-answering.
+Understand "[barley]" as answering barley.
+Carry out answering barley: try answering the current interlocutor that "barley".
+Answering moka is an action applying to nothing.
+Answering moka is order-answering.
+Understand "[moka]" as answering moka.
+Carry out answering moka: try answering the current interlocutor that "moka".	
 
 Section 2.6.5.4 - Espresso node
 
 Understand "regular/normal/plain/standard" as "[regular]".
 Understand "short/low/shrunk/limited" as "[short]".
 Understand "tall/long/high/lengthy" as "[tall]".
+Understand the command long as something new.
 
 To prepare (V - a volume) of espresso:
 	now the order content is a random coffeecup in the kitchen;
@@ -1034,15 +1057,23 @@ Response for espresso-order node when answered that "[tall]":
 Default answer response for espresso-order node:
 	say "[/ss]Sorry, I did not understand your espresso preference: regular, low or high?' [/se][the naming of current interlocutor] [state]. [/n]".
 	
-After reading a command when the current node is espresso-order node:
-	if the player's command matches "[regular]", rewrite the answer with "regular";
-	if the player's command matches "[short]", rewrite the answer with "short";
-	if the player's command matches "[tall]", rewrite the answer with "tall".
+Answering regular is an action applying to nothing.
+Answering regular is order-answering.
+Understand "[regular]" as answering regular.
+Carry out answering regular: try answering the current interlocutor that "regular".
+Answering short is an action applying to nothing.
+Answering short is order-answering.
+Understand "[short]" as answering short.
+Carry out answering short: try answering the current interlocutor that "short".
+Answering tall is an action applying to nothing.
+Answering tall is order-answering.
+Understand "[tall]" as answering tall.
+Carry out answering tall: try answering the current interlocutor that "tall".	
 
 Section 2.6.5.5 - Barley node
 
-Understand "small/little/tiny/short/shrunk/espresso cup/--" as "[small]".
-Understand "large/big/tea/cappuccino/long/engthy cup/--" as "[large]".
+Understand "small/little/tiny/shrunk/espresso cup/--" as "[small]".
+Understand "large/big/tea/cappuccino/lengthy cup/--" as "[large]".
 
 Response for barley-order node when answered that "[small]":
 	now the order content is a random coffeecup in the kitchen;
@@ -1056,10 +1087,15 @@ Response for barley-order node when answered that "[large]":
 	say order confirmation.
 Default answer response for barley-order node:
 	say "[/ss]Sorry, I did not understand your preference for barley coffee: small or large cup?' [/se][the naming of current interlocutor] [state]. [/n]".
-	
-After reading a command when the current node is barley-order node:
-	if the player's command matches "[small]", rewrite the answer with "small";
-	if the player's command matches "[large]", rewrite the answer with "large".
+
+Answering small is an action applying to nothing.
+Answering small is order-answering.
+Understand "[small]" as answering small.
+Carry out answering small: try answering the current interlocutor that "small".
+Answering large is an action applying to nothing.
+Answering large is order-answering.
+Understand "[large]" as answering large.
+Carry out answering large: try answering the current interlocutor that "large".
 		
 Section 2.6.5.6 - Cappuccino node
 
@@ -1080,10 +1116,10 @@ Response for cappuccino-order node when answered that "[barley]":
 Default answer response for cappuccino-order node:
 	say "[/ss]Sorry, I did not understand your preference for cappuccino: regular, soy milk or barley coffee?' [/se][the naming of current interlocutor] [state]. [/n]".
 
-After reading a command when the current node is cappuccino-order node:
-	if the player's command matches "[regular]", rewrite the answer with "regular";
-	if the player's command matches "[soy]", rewrite the answer with "soy";
-	if the player's command matches "[barley]", rewrite the answer with "barley".
+Answering soy is an action applying to nothing.
+Answering soy is order-answering.
+Understand "[soy]" as answering soy.
+Carry out answering soy: try answering the current interlocutor that "soy".
 
 Section 2.6.5.7 - Tea node
 
@@ -1108,10 +1144,14 @@ Response for tea-order node when answered that "milk":
 Default answer response for tea-order node:
 	say "[/ss]Sorry, I did not understand your preference for tea: lemon, milk or neither?' [/se][the naming of current interlocutor] [state]. [/n]".
 
-After reading a command when the current node is tea-order node:
-	if the player's command matches "[nothing]", rewrite the answer with "nothing";
-	if the player's command matches "lemon", rewrite the answer with "lemon";
-	if the player's command matches "milk", rewrite the answer with "milk".
+Answering lemon is an action applying to nothing.
+Answering lemon is order-answering.
+Understand "lemon" as answering lemon.
+Carry out answering lemon: try answering the current interlocutor that "lemon".
+Answering milk is an action applying to nothing.
+Answering milk is order-answering.
+Understand "milk" as answering milk.
+Carry out answering milk: try answering the current interlocutor that "milk".
 
 Section 2.6.5.8 - Order handling
 
@@ -1711,11 +1751,8 @@ Response for meat-type-node when answered that "[salami]":
 	say leavenode;
 	say the current interlocutor talks about salami.
 After reading a command when the current node is meat-type-node:
-	if the player's command matches "[speck]":
-		replace the player's command with "answer speck to [printed name of current interlocutor]";
-	otherwise if the player's command matches "[salami]": 
-		replace the player's command with "answer salami to [printed name of current interlocutor]".
-
+	if the player's command matches "[speck]", rewrite the answer with "speck";
+	if the player's command matches "[salami]", rewrite the answer with "salami".
 	
 Section 2.7.3.2 - Butter
 
@@ -1846,7 +1883,6 @@ Does the player mean putting a blueberry jam portion jar on the first red basket
 Does the player mean putting an orange marmalade portion jar on the second red basket: it is likely.
 Does the player mean putting an apricot jam portion jar on the third red basket: it is likely.
 	
-
 Chapter 2.7.4 - The cook
 
 The cooking table is a scenery service table in the buffet.
@@ -1949,10 +1985,18 @@ Response for main-egg node when saying no:
 Response for main-egg node when saying yes:
 	say "[/ss]Ok.' [/se][regarding current interlocutor][they] [say] and then [ask]: [/ss1]What do you prefer?' [/r][/n]".
 
-After reading a command when the current node is main-egg node:
-	if the player's command matches "[fried egg]", rewrite the answer with "fried";
-	if the player's command matches "[omelette]", rewrite the answer with "omelette";
-	if the player's command matches "[crepe]", rewrite the answer with "crepe".
+Answering fried is an action applying to nothing.
+Answering fried is order-answering.
+Understand "[fried egg]" as answering fried.
+Carry out answering fried: try answering the current interlocutor that "fried".
+Answering omelette is an action applying to nothing.
+Answering omelette is order-answering.
+Understand "[omelette]" as answering omelette.
+Carry out answering omelette: try answering the current interlocutor that "omelette".
+Answering crepe is an action applying to nothing.
+Answering crepe is order-answering.
+Understand "[crepe]" as answering crepe.
+Carry out answering crepe: try answering the current interlocutor that "crepe".
 
 At the time when Emma turns crepe:
 	say "[The naming of Emma] [turn] the crêpe over with the help of a wide-bladed knife.".
@@ -1984,9 +2028,14 @@ Response for fried-egg node when answered that "[bullseye]":
 Default answer response for fried-egg node:
 	say "[/ss]I can leave the egg whole like «bull's eye» either I can scramble it.' [/se][the naming of current interlocutor] [state]. [/n]".
 		
-After reading a command when the current node is fried-egg node:
-	if the player's command matches "[scrambled]", rewrite the answer with "scrambled";
-	if the player's command matches "[bullseye]", rewrite the answer with "bullseye".
+Answering scrambled is an action applying to nothing.
+Answering scrambled is order-answering.
+Understand "[scrambled]" as answering scrambled.
+Carry out answering scrambled: try answering the current interlocutor that "scrambled".
+Answering bullseye is an action applying to nothing.
+Answering bullseye is order-answering.
+Understand "[bullseye]" as answering bullseye.
+Carry out answering bullseye: try answering the current interlocutor that "bullseye".
 
 At the time when Emma scrambles the egg:
 	say "[The naming of Emma] [use] a fork to mix the egg yolk with the abume, creating a white mixture with yellow flecks.".
@@ -2022,9 +2071,14 @@ Response for omelette node when answered that "[stuffed]" or saying yes:
 Default answer response for omelette node:
 	say "[/ss]I can stuff your omelette with something or leave it empty.' [/se][the naming of current interlocutor] [state]. [/n]".
 
-After reading a command when the current node is omelette node:
-	if the player's command matches "[empty]", rewrite the answer with "empty";
-	if the player's command matches "[stuffed]", rewrite the answer with "stuffed".
+Answering empty is an action applying to nothing.
+Answering empty is order-answering.
+Understand "[empty]" as answering empty.
+Carry out answering empty: try answering the current interlocutor that "empty".
+Answering stuffed is an action applying to nothing.
+Answering stuffed is order-answering.
+Understand "[stuffed]" as answering stuffed.
+Carry out answering stuffed: try answering the current interlocutor that "stuffed".
 
 At the time when Emma rotates the omelette:
 	say "[The naming of Emma] [regarding Emma][turn] the omelette upside down with a skilful flick of the pan so that it can be cooked on the other side."
@@ -2041,10 +2095,18 @@ Response for stuffed-omelette node when answered that "speck":
 Default answer response for stuffed-omelette node:
 	say "[/ss]I can stuff your omelette with [available omelette stuffing] only.' [/se][the naming of current interlocutor] [state]. [/n]".
 	
-After reading a command when the current node is stuffed-omelette node:
-	if the player's command matches "tomato", rewrite the answer with "tomato";
-	if the player's command matches "cheese", rewrite the answer with "cheese";
-	if the player's command matches "speck", rewrite the answer with "speck".
+Answering tomato is an action applying to nothing.
+Answering tomato is order-answering.
+Understand "tomato" as answering tomato.
+Carry out answering tomato: try answering the current interlocutor that "tomato".
+Answering cheese is an action applying to nothing.
+Answering cheese is order-answering.
+Understand "cheese" as answering cheese.
+Carry out answering cheese: try answering the current interlocutor that "cheese".
+Answering speck is an action applying to nothing.
+Answering speck is order-answering.
+Understand "speck" as answering speck.
+Carry out answering speck: try answering the current interlocutor that "speck".
 		
 Section 2.7.4.6 - Direct egg requests
 
@@ -2162,6 +2224,7 @@ The player is leading.
 The printed name of the player is "Francesco".
 A person can be registered. The player is not registered.
 The carrying capacity of the player is 3.
+The scent-description of the player is "the aftershave [/i]'for the man who never has to ask'[/r] that [Monica] gave [us]".
 
 Chapter 3.1.1 - Initial player dressing
 
@@ -2215,6 +2278,7 @@ The description is "Tall, slim ".
 Hair are "lots of slightly reddish, frizzy".
 Eyes are "sparkling green".
 Notes are "Could you not fall in love with her? [/n]A peppy girl, she won't forgive you anything you do that she doesn't like, but deep down she has her heart beating for you.".
+The scent-description of Monica is "the bouquet perfume you gave her for her birthday. [/n]She loves it and has almost finished it, so you have to find an excuse to give her another."
 Understand "Mo" or "my/-- love/girl/girlfriend" as Monica.
 Monica is proper-named.
 Monica is leading.
@@ -2234,6 +2298,11 @@ Definition: a person is here if the location of it is the location of the player
 
 Instead of doing anything other than examining to something while the owner of the noun is Monica and Monica is here:
 	say "[alert][/ss][The noun] is mine.' [/se][Monica] [remember] [us]."
+	
+Instead of tasting Monica:
+	say "[We] [love] to nibble on her neck.";
+	say "[heart][/ss]Come on, not here, I feel a bit embarrassed.' [/se][Monica] [whisper] into your ear."
+	
 
 Chapter 3.2.1 - Monica initial dressing
 
@@ -2322,7 +2391,7 @@ Chapter 3.2.4 - Singing and dancing
 
 Persuasion rule for asking Monica to try singing: 
 	unless leading actors are alone, say "[alert][/ss]No, I don't sing, I'm ashamed.' [/se][regarding the actor][they] [answer].";
-	otherwise	say "[alert][/ss]Why do you want me to sing if you know I'm out of tune?' [/se][regarding the actor][they] [ask].";
+	otherwise	say "[/ss]Why do you want me to sing if you know I'm out of tune?' [/se][regarding the actor][they] [ask].";
 	persuasion fails.
 
 To clap is a verb.

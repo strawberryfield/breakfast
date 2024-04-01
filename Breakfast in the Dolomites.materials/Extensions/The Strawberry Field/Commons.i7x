@@ -12,6 +12,7 @@ To say /b: say bold type.
 To say /i: say italic type.
 To say /r: say roman type.
 To say /f: say fixed letter spacing.
+To say --: say unicode 8212.
 
 To say /s (t - text): say "[/i]'[t]'[/r]".
 To say /ss: say "[/i]'".
@@ -19,6 +20,9 @@ To say /ss1: say "[unicode 8212] [/i]'".
 To say /se: say "[/r][unicode 8212] ".
 
 Book 1.2 - Rules
+
+Rule for clarifying the parser's choice of something:
+	do nothing instead.
 
 Chapter 1.2.1 - Aliases
 
@@ -114,6 +118,9 @@ Sanity-check searching a person:
 Sanity-check opening a person:
 	say "I'm not sure what you're imagining, but I at least am no surgeon." instead.
 
+Sanity-check eating a person:
+	say "Are you a cannibal?" instead.
+	
 Sanity-check closing a person:
 	say "I don't understand how that could be a meaningful action." instead.
 
@@ -200,6 +207,7 @@ To land is a verb.
 To leak is a verb. 
 To leap is a verb. 
 To leave is a verb.
+To love is a verb.
 To make is a verb. 
 To meet is a verb. 
 To move is a verb.

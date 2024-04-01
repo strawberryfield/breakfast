@@ -97,8 +97,8 @@ To say you are welcome:
 Section 2.1.3 - thank
 
 Understand the command "thank" as something new.
-Understand "Thank you/--" as implicitly thanking.
-Understand "Thank you/-- [something]" as thanking.
+Understand "thank you/--" or "say thanks" or "say thank you" or "thanks" or "thanks again" or "thanks a lot"  or "bless you" or "ta" or "cheers" or "much obliged" as implicitly thanking.
+Understand "thank you/-- [something]" or "say thank/thanks you/-- [something]" as thanking.
 
 Implicitly thanking is an action applying to nothing.
 Thanking is an action applying to one visible thing.

@@ -102,6 +102,7 @@ A vegetable is a kind of food-item.
 A vegetable can be chopped. A vegetable is usually not chopped.
 Understand the chopped property as describing a vegetable.
 Rule for printing the name of a vegetable: say "[if chopped]chopped [end if][printed name]".
+The scent-description of a vegetable is usually "vegetable matter".
 
 Chapter 2.3.1 - cutting
 

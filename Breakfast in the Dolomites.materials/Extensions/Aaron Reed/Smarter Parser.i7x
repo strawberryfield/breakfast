@@ -18,10 +18,6 @@ You seem to want to talk to someone, but I can't see whom.
 
 ]
 
-Chapter - Patches by The Strawberry Field
-
-To say --: say "-".
-
 Chapter - Definitions
 
 Use MAX_EXPRESSION_NODES of 300.
