@@ -2607,7 +2607,8 @@ When First buffet access begins:
 	
 When First buffet access ends:
 	say "[Monica] [return] with [us] in the dining room and [sit] on the bench. [/n]";
-	now Monica is on the bench.
+	now Monica is on the bench;
+	Monica invites to sit in 0 turns from now.
 	
 Instead of going somewhere from the buffet during First buffet access:
 	if egg-cooking-trigger is true, continue the action;
@@ -2617,6 +2618,16 @@ Instead of going somewhere from the buffet during First buffet access:
 		now buffet-trigger is false; 
 		continue the action;
 	[insert here che checks]
+	unless the player carries a glass:
+		say "[/ss]Don't you take anything to drink?' [/se][Monica] [ask]. [/n]" instead;
+	if the player carries an empty glass:
+		say "[/ss]Your glass is empty,' [/se][Monica] [observe] [/ss1]you'd better pour yourself a drink.' [/r][/n]" instead;
+	unless the player carries a dish:
+		say "[heart][/ss]What is wrong this morning? Are you sick?' [/se][Monica] [ask] [us] worriedly [/ss1]You didn't take anything to eat.' [/r][/n]" instead;
+	if the player carries an empty dish:
+		say "[/ss]Your dish is empty,' [/se][Monica] [observe] [/ss1]is it possible that of all the good things here, there is nothing for you?' [/r][/n]" instead;
+	unless the player is carrying a cooked egg:
+		say "[heart][/ss]The things [the naming of Emma] is preparing must be delicious,' [/se][Monica] [suggest] [/ss1]let's try one!' [/r][/n]" instead;
 	now buffet-trigger is false;
 	continue the action.
 	

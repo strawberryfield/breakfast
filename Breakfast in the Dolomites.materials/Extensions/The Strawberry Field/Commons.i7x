@@ -212,6 +212,7 @@ To make is a verb.
 To meet is a verb. 
 To move is a verb.
 To nod is a verb. 
+To observe is a verb.
 To park is a verb.
 To peer is a verb. 
 To ping is a verb. 
