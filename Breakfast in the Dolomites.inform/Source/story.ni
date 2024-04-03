@@ -109,6 +109,13 @@ The alternate non-empty inventory rule is listed instead of the non-empty invent
 
 The inventory normal rule is not listed in any rulebook.
 
+Chapter 1.2.3 - Disabling smarter parser rules
+
+the Smarter Parser simplify punctuation rule is not listed in any rulebook.
+To announce the reparsed command:
+	say "[unless saved Smarter Parser error is empty]([italic type][saved Smarter Parser error][roman type])[command clarification break][end unless]Next time, I suggest you write the command as: [/f][reborn command][/r]".
+
+
 Volume 2 - Rooms definitions
 
 The Car is a room. 
@@ -1788,7 +1795,7 @@ A slice of pumpernickel bread is a kind of bread-slice.
 The plural of slice of pumpernickel bread is slices of pumpernickel bread.
 The scent-description of a slice of pumpernickel bread is "burnt caramel smell".
 The flavor-description of a slice of pumpernickel bread is "This bread has a firm texture, an earthy flavour and a distinctly sour taste.".
-Understand "rye/black/dark/brown bread/--" as slice of pumpernickel bread.
+Understand "rye/black/dark/brown bread/--" as a slice of pumpernickel bread.
 To say (P - a person) talks about pumpernickel bread:
 	say "[leavenode][/ss]The black bread is made from wholemeal rye flour.' [/se][the naming of P] [explain] ";
 	say "[/ss1]It is a bread of German origin, with a characteristic dark colour and a burnt caramel smell. It tastes very good and is unmistakable among other breads. It is great for breakfast!' [/r][/n]".
