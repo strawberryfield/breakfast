@@ -1398,15 +1398,23 @@ The description of the buffet is "The buffet is a feast for the senses, featurin
 
 The HACCP ingredients book is in the buffet.
 The HACCP ingredients book is familiar.
-Instead of examining the HACCP ingredients book, say "If you need information about food, it is best to ask the staff.".
-Instead of taking the HACCP ingredients book, say "Even if no one ever reads it, it must remain here.".
-Instead of opening the HACCP ingredients book, try examining the noun.
+Before examining the HACCP ingredients book, say "If you need information about food, it is best to ask the staff." instead.
+Before taking the HACCP ingredients book, say "Even if no one ever reads it, it must remain here." instead.
+Before opening the HACCP ingredients book, try examining the noun instead.
 
 Response of a not waitstaff worker when asked about the HACCP ingredients book:
 	say "[/ss]You can find it in the buffet,' [/se][the naming of the noun] [say] [/ss1]but if you need information about food, it is best to ask my colleagues in the dining room.' [/r][/n]".
 Response of a waitstaff worker when asked about the HACCP ingredients book:
 	say "[/ss]You can find it next to the buffet,' [/se][the naming of the noun] [say] [/ss1]but if you need information about food, it is best to ask me or my colleagues.' [/r][/n]".
 
+Before going somewhere from the buffet:
+	if the player carries an empty glass, say "Why bring an empty glass from the buffet? [/n]Either fill it up or put it back." instead;
+	if the player carries an empty dish, say "An empty dish is of no use to you, if you take nothing to eat put it back." instead;
+	if the player carries a dish:
+		let B be the bread slices taken;
+		if the jam jars taken is greater than B, say "You don't have enough slices of bread to spread jam on." instead;
+		if the butter knobs taken is greater than B, say "You don't have enough slices of bread to spread butter on." instead.
+		
 Chapter 2.7.1 - Drinks
 
 Section 2.7.1.1 - Containers
@@ -1432,6 +1440,7 @@ Instead of drinking a pot, say "A pot is not a container to drink from."
 
 A dish is a kind of portable supporter.
 The carrying capacity of a dish is 10.
+Does the player mean taking a not empty not owned dish: it is likely.
 
 Instead of inserting a dish into a dish, say "Piling one dish on top of another is pointless."
 Instead of inserting a fluid container into a dish, say "It is better not to do this: [the noun] could slip and fall."
@@ -1772,14 +1781,23 @@ The description is "A large white ceramic bowl with ice cubes inside.".
 6 knobs of butter are in the white bowl.
 
 The ice cube is a scenery in the buffet. It is edible.
-Instead of taking the ice cube, say "It is here to keep the butter cold, you cannot take it."
-Instead of tasting the ice cube, say "It's icy."
+Before taking the ice cube, say "It is here to keep the butter cold, you cannot take it." instead.
+Before tasting the ice cube, say "It's icy." instead.
 Before eating the ice cube:
 	if Monica is here, say "[alert][/ss]You may be hungry, but eating ice with all the good stuff here is absurd!' [/se][Monica] [exclaim]." instead;
 	otherwise say "There is so much better to eat here." instead.
 
 The white bowl is on the buffet table.
 
+To decide which number is the butter knobs taken:
+	decide on the number of butter-items enclosed by the player.
+
+Before taking a butter-item when the location is the buffet:
+	unless butter-based can be eaten, stop the action.
+After taking a butter-item when the location is the buffet:
+	another butter-based eaten;
+	continue the action.
+	
 Section 2.7.2.3 - Bread
 
 A slice of white bread is a kind of bread-slice. The description is "Soft slices of bread."
@@ -1801,6 +1819,11 @@ To say (P - a person) talks about pumpernickel bread:
 	say "[/ss1]It is a bread of German origin, with a characteristic dark colour and a burnt caramel smell. It tastes very good and is unmistakable among other breads. It is great for breakfast!' [/r][/n]".
 Response of a waitstaff worker when asked about a slice of pumpernickel bread:
 	say the noun talks about pumpernickel bread.
+
+To decide which number is the bread slices taken:
+	let W be the number of slices of white bread enclosed by the player;
+	let B be the number of slices of pumpernickel bread enclosed by the player; 
+	decide on W + B.
 
 Section 2.7.3.4 - The buffet table
 
@@ -1864,6 +1887,8 @@ To say put in the same basket:
 	say "Put the jam in the same basket you took it from."
 To return (jam - a thing) into (basket - a thing):
 	now the jam is in the basket;
+	choose a row with a food-limit of jam-based in the Table of limits;
+	now eaten entry is eaten entry minus 1;
 	say "[The jam] [are] in [the basket] again.".
 Before inserting a single portion jar into a jam-basket:
 	if the noun is open, say "[We] [cannot] return an open jam." instead;
@@ -1889,6 +1914,15 @@ Does the player mean inserting an apricot jam portion jar into the third red bas
 Does the player mean putting a blueberry jam portion jar on the first red basket: it is likely.
 Does the player mean putting an orange marmalade portion jar on the second red basket: it is likely.
 Does the player mean putting an apricot jam portion jar on the third red basket: it is likely.
+	
+To decide which number is the jam jars taken:
+	decide on the number of single portion jars enclosed by the player.
+	
+Before taking a single portion jar when the location is the buffet:
+	unless jam-based can be eaten, stop the action.
+After taking a single portion jar when the location is the buffet:
+	another jam-based eaten;
+	continue the action.
 	
 Chapter 2.7.4 - The cook
 
@@ -2610,14 +2644,15 @@ After going to the buffet:
 	
 When First buffet access begins:
 	say "[Monica] [if Monica is enclosed by the bench][stand] up and [end if][follow] [us] at the buffet. [/n]";
-	now Monica is in the buffet.
+	now Monica is in the buffet;
+	Monica takes a dish in 1 turn from now.
 	
 When First buffet access ends:
 	say "[Monica] [return] with [us] in the dining room and [sit] on the bench. [/n]";
 	now Monica is on the bench;
-	Monica invites to sit in 0 turns from now.
+	Monica invites to sit in 1 turn from now.
 	
-Instead of going somewhere from the buffet during First buffet access:
+Before going somewhere from the buffet during First buffet access:
 	if egg-cooking-trigger is true, continue the action;
 	if the number of things carried by the player is zero:
 		say "[/ss]I don't understand why you didn't take anything.' [/se][Monica] [ask]. [/n]";
@@ -2635,9 +2670,28 @@ Instead of going somewhere from the buffet during First buffet access:
 		say "[/ss]Your dish is empty,' [/se][Monica] [observe] [/ss1]is it possible that of all the good things here, there is nothing for you?' [/r][/n]" instead;
 	unless the player is carrying a cooked egg:
 		say "[heart][/ss]The things [the naming of Emma] is preparing must be delicious,' [/se][Monica] [suggest] [/ss1]let's try one!' [/r][/n]" instead;
+	continue the action.
+	
+After going somewhere from the buffet:
 	now buffet-trigger is false;
 	continue the action.
 	
+Section 4.4.3.1 - Monica actions in the buffet
+
+Monica-dish is an object that varies.
+At the time when Monica takes a dish:
+	say "[Monica] [take] a dish from the cupboard.";
+	now Monica-dish is a random dish on the cupboard;
+	now the owner of Monica-dish is Monica;
+	now Monica carries Monica-dish;
+	Monica takes bread in zero turn from now.
+
+At the time when Monica takes bread:
+	let the current item be a random slice of white bread in the white basket;
+	now the owner of the current item is Monica;
+	now the current item is in Monica-dish;
+	say "[Monica] [take] a [current item] and [put] it on the dish she [are] carrying."
+			
 Chapter 4.4.4 - Ordering
 
 Ordering is a scene.
@@ -2716,6 +2770,8 @@ tea-based	2	0	"cups of tea"
 egg-based	2	0	"eggs"
 cheese-based	2	0	"pieces of cheese"
 meat-based	3	0	"slices of meat"
+butter-based	3	0	"knobs of butter"
+jam-based	3	0	"portions of jam"
 
 To another (L - a food-limit) eaten:
 	choose a row with a food-limit of L in the Table of limits;
@@ -2724,7 +2780,9 @@ To another (L - a food-limit) eaten:
 To decide if (L - a food-limit) can be eaten:
 	choose a row with food-limit of L in the Table of limits;
 	if limit entry is greater than eaten entry, decide yes;
-	otherwise decide no.
+	otherwise:
+		say "You don't want to overdo it: you've already had [eaten entry in words] [description entry].";
+		decide no.
 
 To decide if (L - food-limit) can be ordered:
 	choose a row with food-limit of L in the Table of limits;

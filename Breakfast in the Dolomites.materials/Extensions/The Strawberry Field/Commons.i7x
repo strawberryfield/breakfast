@@ -286,5 +286,7 @@ Definition: an object is owned unless the owner of it is nothing.
 
 Instead of doing anything other than examining to something while the noun is owned:
 	say "[The noun] [belong] to [the owner of the noun]."
+
+Does the player mean taking an owned thing: it is unlikely.
 	
 Commons ends here.
