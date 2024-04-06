@@ -12,7 +12,7 @@ Monica, your girlfriend, is beautiful: tall, slim, with lots of slightly reddish
 She loves strolling around looking in shop windows; a peppy girl, she won't forgive you anything you do that she doesn't like, but deep down she has her heart beating for you.
 What a strange thing love is...
 
-You have to plan the first day of your holiday. There are no treasures to be found, no mysteries to be solved: the only prize is to spend a beautiful day in this wonderful mountain world.".
+You have to start the first day of your holiday. There are no treasures to be found, no mysteries to be solved: the only prize is to spend a beautiful morning discovering this wonderful mountain world.".
 Release along with the cover art ("Breakfast in the Dolomites") and the library card.
 
 Chapter 0.1 - Includes
@@ -1419,8 +1419,13 @@ Chapter 2.7.1 - Drinks
 
 Section 2.7.1.1 - Containers
 
-A jug is a kind of fluid container. The fluid capacity of a jug is 1.5 litres. 
-A bottle is a kind of fluid container. The fluid capacity of the bottle is 1 litre.
+A service fluid container is a kind of fluid container.
+A jug is a kind of service fluid container. The fluid capacity of a jug is 1.5 litres. 
+A bottle is a kind of service fluid container. The fluid capacity of the bottle is 1 litre.
+Before taking a service fluid container:
+	say "Others need it too, you can't take it." instead.
+Does the player mean pouring a service fluid container into: it is likely.
+
 A glass is a kind of fluid container. The fluid capacity of a glass is 200 ml.
 A glass is preferred for drinking.
 Does the player mean taking a not empty glass: it is likely.
@@ -1969,7 +1974,14 @@ To say (item - a food-item) will be ready:
 	
 At the time when the egg is ready:
 	now Emma carries the current dish;
-	say "[/ss]Here's [our] [list of things on the current dish]!' [/se][the naming of current interlocutor] [regarding current interlocutor][say], handing [we] the dish. [/n]".
+	say "[/ss]Here's [our] [list of things on the current dish]!' [/se][the naming of current interlocutor] [regarding current interlocutor][say] handing [we] the dish. [/n]";
+	Emma urges the dish in 1 turn from now.
+	
+At the time when Emma urges the dish:
+	if Monica is here, say "[alert][/ss]Why don't you take the dish with your [list of things on the current dish]?' [/se][Monica] [ask] [us].";
+	otherwise:
+		say "[/ss]Hey, Sir!' [/se][the naming of Emma] [draw] [our] attention: [/ss1]Please take this dish with your [list of things on the current dish].";
+	Emma urges the dish in 0 turn from now.
 			
 Section 2.7.4.2 - Eggs choice
 
@@ -2545,7 +2557,7 @@ Volume 4 - Scenes
 Book 4.1 - Intro
 
 To say story-beginning: 
-	say "[/i]A summery Friday evening. [/r][/p][We] [are] driving your car to a small town in the Dolomites. [/n]Next to you is [Monica], your girlfriend; [we] [have] set off for a relaxing weekend after a hard day at work. [/n][/ss]Still a long way to go?' [/se][Monica] [ask].[/ss]We will be at the hotel shortly.' [/se][we] [reply]. [/n][regarding Monica][They] [rest] [their] head on your shoulder and [caress] your neck."
+	say "[/i]A summery Friday evening. [/r][/p][We] [are] driving [our] car to a small town in the Dolomites. [/n]Next to [us] [are] [Monica], [our] girlfriend; [we] [have] set off for a relaxing weekend after a hard day at work. [/n][/ss]Still a long way to go?' [/se][Monica] [ask].[/ss]We will be at the hotel shortly.' [/se][we] [reply]. [/n][regarding Monica][They] [rest] [their] head on your shoulder and [caress] your neck."
 	
 Book 4.2 - Arrival
 
@@ -2679,19 +2691,60 @@ After going somewhere from the buffet:
 Section 4.4.3.1 - Monica actions in the buffet
 
 Monica-dish is an object that varies.
+Monica getting food is a truth state that varies.
 At the time when Monica takes a dish:
+	now Monica getting food is true;
 	say "[Monica] [take] a dish from the cupboard.";
 	now Monica-dish is a random dish on the cupboard;
 	now the owner of Monica-dish is Monica;
 	now Monica carries Monica-dish;
 	Monica takes bread in zero turn from now.
 
-At the time when Monica takes bread:
-	let the current item be a random slice of white bread in the white basket;
+To Monica gets (current item - a thing):
 	now the owner of the current item is Monica;
 	now the current item is in Monica-dish;
 	say "[Monica] [take] a [current item] and [put] it on the dish she [are] carrying."
-			
+	
+At the time when Monica takes bread:
+	let the current item be a random slice of white bread in the white basket;
+	Monica gets the current item;
+	Monica takes butter in 0 turns from now.
+	
+At the time when Monica takes butter:
+	let the current item be a random butter-item in the white bowl;
+	Monica gets the current item;
+	Monica takes jam in 0 turns from now.
+	
+At the time when Monica takes jam:
+	let the current item be a random single portion jar in the third red basket;
+	Monica gets the current item;
+	now Monica getting food is false.
+
+Before going somewhere from the buffet while Monica getting food is true:	
+	say "[/ss]Wait!' [/se][Monica] [claim] [our] attention [/ss1]I haven't finished taking things from the buffet yet.' [/r][/n]" instead.
+	
+After taking an empty glass:
+	Monica takes glass in 0 turns from now.
+	
+Monica-glass is an object that varies.	
+At the time when Monica takes glass:
+	now Monica getting food is true;
+	unless the left drawer is open, say "[Monica] re[open] the drawer and she also [take] a glass.";
+	otherwise:
+		say "[Monica] also [take] a glass.";
+	say "She then closes the drawer[if the left drawer is closed] again[end if].";
+	now the left drawer is closed;
+	now Monica-glass is a random glass in the left drawer;
+	now the owner of Monica-glass is Monica;
+	now Monica carries the Monica-glass;
+	Monica fills glass in 0 turns from now.
+	
+At the time when Monica fills glass:
+	say "[Monica] [pour] some orange juice in her glass.";
+	now the liquid of Monica-glass is orange juice;
+	now the fluid content of Monica-glass is 150 ml;
+	now Monica getting food is false.
+	
 Chapter 4.4.4 - Ordering
 
 Ordering is a scene.
@@ -2717,14 +2770,49 @@ Instead of taking a dish during egg cooking:
 	if the current dish is carried by Emma:
 		now the current dish is carried by the player;
 		say "[We] [take] [the noun] from [the naming of Emma].";
-		now the current dish is nothing;
 		now egg-cooking-trigger is false;
+		Emma urges the dish never;
+		now current dish is nothing;
+		now Monica-egg-cooking-trigger is true;
 		mark got cooked egg as done;
 	otherwise:
 		continue the action.
 Instead of examining a dish during egg cooking:
 	if the current dish is carried by Emma, say "On the dish there is [a list of things on the current dish].";
 	otherwise	continue the action.
+
+Section 4.4.5.1 - Monica egg cooking
+
+Monica egg cooking is a scene.
+The Monica-egg-cooking-trigger is a truth state that varies.
+Monica egg cooking begins when Monica-egg-cooking-trigger is true.
+Monica egg cooking ends when Monica-egg-cooking-trigger is false.
+
+The Monica-egg-dish is an object that varies.
+When Monica egg cooking begins:
+	now the Monica-egg-dish is a random dish on the cupboard;
+	now the Monica-egg-dish is in the kitchen;
+	if the crepe is enclosed by the player:
+		now the fried egg is in the Monica-egg-dish;
+		now attributes of the fried egg is "sunny side up";
+		now the owner of the crepe is Monica;
+	otherwise:
+		now the crepe is in the Monica-egg-dish;
+		now the owner of the crepe is Monica;
+	say "[/ss]Can I prepare something for you too, Miss?' [/se][the naming of Emma] [ask] to [Monica].";
+	say "[/ss]I would like [a list of things on the Monica-egg-dish].' [/se][Monica] [reply].";
+	say "[/ss]Good choice!' [/se][the naming of Emma] [confirm] [/ss1]It will be ready in a few minutes.' [/r][/n]";
+	Monica gets egg in 3 turns from now.
+	
+At the time when Monica gets egg:
+	say "[/ss]Here's your [list of things on the Monica-egg-dish], Miss.' [/se][the naming of Emma] [say] to [Monica] handing her the dish.";
+	say "[/ss][thanks Emma].' [/se][Monica] [say] getting the dish. [/n]";
+	say "[/ss][you are welcome]' [/se][the naming of Emma] [reply].";
+	now Monica carries the Monica-egg-dish;
+	now Monica-egg-cooking-trigger is false.
+
+Before going somewhere during Monica egg cooking:
+	say "[/ss]Don't go away!' [/se][Monica] [draw] [our] attention: [/ss1]I'm waiting for [a list of things in the Monica-egg-dish].' [/r][/n]" instead.
 	
 Volume 5 - Internal db
 

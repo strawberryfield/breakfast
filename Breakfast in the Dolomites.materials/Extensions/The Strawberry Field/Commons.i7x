@@ -178,6 +178,7 @@ To break is a verb.
 To caress is a verb.
 To cease is a verb. 
 To challenge is a verb.
+To claim is a verb.
 To clutch is a verb.
 To cock is a verb. 
 To collect is a verb.
@@ -187,6 +188,7 @@ To continue is a verb.
 To cook is a verb.
 To copy is a verb.
 To cry is a verb.
+To draw is a verb.
 To drink is a verb.
 To decide is a verb. 
 To exclaim is a verb. 
