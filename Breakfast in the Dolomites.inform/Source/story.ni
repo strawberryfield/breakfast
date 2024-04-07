@@ -115,6 +115,32 @@ the Smarter Parser simplify punctuation rule is not listed in any rulebook.
 To announce the reparsed command:
 	say "[unless saved Smarter Parser error is empty]([italic type][saved Smarter Parser error][roman type])[command clarification break][end unless]Next time, I suggest you write the command as: [/f][reborn command][/r]".
 
+Chapter 1.2.4 - Customized drinking rules
+
+Check an actor drinking something which is not carried by the actor (this is the custom prefer to carry drink sources rule):
+	if the noun is fixed in place or the noun is scenery or the noun is part of something:
+		make no decision;
+	otherwise:
+		if the player is the actor:
+			say "(first taking [the noun])[command clarification break]" (A);
+		silently try the actor taking the noun;
+		if the player carries the noun, continue the action;
+		otherwise:
+			stop the action.
+The custom prefer to carry drink sources rule is listed instead of the prefer to carry drink sources rule in the check drinking rules.
+
+Carry out an actor drinking a fluid container (this is the custom drinking fluids rule):
+	now the fluid content of the noun is null volume;
+	if the no trace amounts option is active, now the liquid of the noun is nonliquid.
+The custom drinking fluids rule is listed instead of the standard drinking fluids rule in the carry out drinking rules.
+
+Report drinking a fluid container (this is the custom report drinking rule):
+	say "[We] [drink] the [the liquid drunk][if the noun is empty], leaving [the noun] empty[end if]" (A);
+	if the flavor of the liquid of the noun is not "":
+		say ". [/n][flavor of the liquid drunk][paragraph break]" (B);
+	otherwise:
+		say "." 
+The custom report drinking rule is listed instead of the standard report drinking rule in the report drinking rules.
 
 Volume 2 - Rooms definitions
 
@@ -1219,7 +1245,7 @@ At the time when waiter returns with order:
 		say "[The naming of order handler] then [regarding order handler][place] the contents of the tray on the table. [/n]";
 		repeat with D running through the things on the round tray:
 			now D is on the table;
-		unless Monica-drink is nothing, Monica drinks hot beverage in 1 turn from now;
+		unless Monica-drink is nothing, Monica drinks hot beverage in 0 turn from now;
 		Monica urges drink in 2 turn from now;
 		mark order hot drinks as done;
 		now the order handler is nothing;
@@ -1230,8 +1256,10 @@ At the time when waiter returns with order:
 Section 2.6.5.9 - Post order activities
 	
 At the time when Monica drinks hot beverage:
-	say "[Monica] [drink] [their] [Monica-drink].";
+	say "[Monica] [take] [their] [Monica-drink] and [drink] the [liquid of Monica-drink].";
 	now the fluid content of Monica-drink is 0 cc;
+	say "Then she [put] the [Monica-drink] on the table.";
+	say "[/ss]The [liquid of Monica-drink] was really good,' [/se][Monica] [state] and [suggest] [/ss1]why don't you try it?' [/r][/n]";
 	now Monica-drink is nothing;
 	unless visit buffet completed, Monica urges buffet in 1 turn from now.
 	
@@ -1428,6 +1456,7 @@ Does the player mean pouring a service fluid container into: it is likely.
 
 A glass is a kind of fluid container. The fluid capacity of a glass is 200 ml.
 A glass is preferred for drinking.
+A glass is familiar.
 Does the player mean taking a not empty glass: it is likely.
 
 A hot drink container is a kind of fluid container.
@@ -1445,6 +1474,8 @@ Instead of drinking a pot, say "A pot is not a container to drink from."
 
 A dish is a kind of portable supporter.
 The carrying capacity of a dish is 10.
+A dish is familiar.
+Understand "plate" as a dish.
 Does the player mean taking a not empty not owned dish: it is likely.
 
 Instead of inserting a dish into a dish, say "Piling one dish on top of another is pointless."
@@ -1456,10 +1487,31 @@ Instead of inserting something into a not empty dish:
 		continue the action.
 		
 Instead of dropping anything during breakfast, say "You must not throw anything on the ground."
-Instead of putting anything on the bench, say "The bench is for sitting, not for placing other things on it."
-Instead of inserting a fluid container into a pocket, say "[The noun] [do] not fit in the pocket."
-Instead of inserting a dish into a pocket, say "[The noun] [are] too big for the pocket."
-	
+To say bench only for sitting:
+	say "The bench is for sitting, not for placing other things on it."
+Instead of putting anything on the bench, say bench only for sitting.
+Instead of inserting anything into the bench, say bench only for sitting.
+To say (N - a thing) too big for pocket:
+	say "The [N] [one of][do] not fit in[or][are] too big for[at random] the pocket."
+Instead of inserting a fluid container into a pocket, say the noun too big for pocket.
+Instead of inserting a dish into a pocket, say the noun too big for pocket.
+Instead of putting a fluid container on a pocket, say the noun too big for pocket.
+Instead of putting a dish on a pocket, say the noun too big for pocket.
+
+To say (W - a waiter) about glass: say "[/ss]You can find the glasses in the buffet.' [/se][regarding W][they] [reply]."
+Response of a waiter when asked about a glass: say the noun about glass.
+Response of a waiter when asked for a glass: say the noun about glass.
+To say Emma about glass: say "[/ss]The glasses are in a drawer of the cupboard.' [/se]she [reply]."
+Response of Emma when asked about a glass: say Emma about glass.
+Response of Emma when asked for a glass: say Emma about glass.
+		
+To say (W - a waiter) about dish: say "[/ss]You can find the dishes in the buffet.' [/se][regarding W][they] [reply]."
+Response of a waiter when asked about a dish: say the noun about dish.
+Response of a waiter when asked for a dish: say the noun about dish.
+To say Emma about dish: say "[/ss]The eggs I cook are already on a dish,' [/se]she [say] [/ss1]if you need an empty plate you will find it on the cupboard.' [/r][/n]".
+Response of Emma when asked about a dish: say Emma about dish.
+Response of Emma when asked for a dish: say Emma about dish.
+
 Section 2.7.1.2 - Liquids
 
 Table of Liquids (continued)
@@ -1851,7 +1903,7 @@ The first chopping board is a scenery chopping board.
 The second chopping board is a scenery chopping board.
 3 slices of salami are on the second chopping board.
 The third chopping board is a scenery chopping board.
-2 slices of Ahrntal grey cheese are on the third chopping board.
+2 pieces of Ahrntal grey cheese are on the third chopping board.
 
 The first chopping board, the second chopping board and the third chopping board are on the buffet table.
 
@@ -1927,6 +1979,26 @@ Before taking a single portion jar when the location is the buffet:
 	unless jam-based can be eaten, stop the action.
 After taking a single portion jar when the location is the buffet:
 	another jam-based eaten;
+	continue the action.
+	
+Section 2.7.3.6 - Eating
+
+To recycle (item - a food-item):
+	if the item is a slice of speck, now the item is on the first chopping board;
+	if the item is a slice of salami, now the item is on the second chopping board;
+	if the item is a piece of Ahrntal grey cheese, now the item is on the third chopping board;
+	if the item is a slice of white bread, now the item is in the white basket;
+	if the item is a slice of pumpernickel bread, now the item is in the brown basket;
+	if the item is a knob of butter, now the item is in the white bowl.
+	
+After eating something:
+	now the owner of the noun is nothing;
+	if the noun is the fried egg or the noun is the omelette or the noun is the crepe, now the noun is in the kitchen;
+	otherwise recycle the noun;
+	if the noun is a bread-slice:
+		repeat with F running through the food-items in the fill holder of the noun:
+			now the owner of F is nothing;
+			recycle F;
 	continue the action.
 	
 Chapter 2.7.4 - The cook
@@ -2349,14 +2421,13 @@ Rule for printing a locale paragraph about Monica (this is the Monica next to yo
  
 Definition: a person is here if the location of it is the location of the player.
 
-Instead of doing anything other than examining to something while the owner of the noun is Monica and Monica is here:
-	say "[alert][/ss][The noun] is mine.' [/se][Monica] [remember] [us]."
+Instead of doing anything other than examining while the noun is a thing and the owner of the noun is Monica and Monica is here:
+	say "[alert][/ss][The noun] is mine.' [/se][Monica] [remember] [us]." 
 	
 Instead of tasting Monica:
 	say "[We] [love] to nibble on her neck.";
 	say "[heart][/ss]Come on, not here, I feel a bit embarrassed.' [/se][Monica] [whisper] into your ear."
 	
-
 Chapter 3.2.1 - Monica initial dressing
 
 The pair of jeans is a cloth. The description is "A pair of slightly frayed skinny jeans."
@@ -2660,9 +2731,13 @@ When First buffet access begins:
 	Monica takes a dish in 1 turn from now.
 	
 When First buffet access ends:
-	say "[Monica] [return] with [us] in the dining room and [sit] on the bench. [/n]";
+	say "[Monica] [return] with [us] in the dining room and [regarding Monica][sit] on the bench. [/n]Then she [put] the dishes and the glass she [have] brought from the buffet on the table.";
 	now Monica is on the bench;
-	Monica invites to sit in 1 turn from now.
+	now Monica-dish is on the table;
+	now Monica-egg-dish is on the table;
+	now Monica-glass is on the table;
+	Monica invites to sit in 1 turn from now;
+	Monica eats egg in 1 turn from now.
 	
 Before going somewhere from the buffet during First buffet access:
 	if egg-cooking-trigger is true, continue the action;
@@ -2744,6 +2819,45 @@ At the time when Monica fills glass:
 	now the liquid of Monica-glass is orange juice;
 	now the fluid content of Monica-glass is 150 ml;
 	now Monica getting food is false.
+
+Section 4.4.3.2 - Monica eats buffet food
+
+At the time when Monica eats egg:
+	let the current egg be a random thing on the Monica-egg-dish;
+	silently try Monica eating the current egg;
+	say "[Monica] [eat] her [current egg]. [/n]It seems to have been really good, judging by her expression.";
+	Monica spreads butter in 2 turns from now.
+		
+At the time when Monica spreads butter:
+	let the current bread be a random bread-slice on the Monica-dish;
+	let the current butter be a random butter-item on the Monica-dish;
+	silently try Monica spreading the current butter on the current bread;
+	say "[Monica] [spread] [the current butter] on her [printed name of current bread].";
+	Monica opens jam in 0 turns from now.
+
+At the time when Monica opens jam:
+	let the current jar be a random single portion jar on the Monica-dish;
+	try Monica opening the current jar;
+	Monica spreads jam in 0 turns from now.
+
+At the time when Monica spreads jam:
+	let the current jar be a random single portion jar on the Monica-dish;
+	let the current jam be a random jam-item in the current jar;
+	let the current bread be a random bread-slice on the Monica-dish;
+	silently try Monica spreading the current jam on the current bread;
+	say "[Monica] [spread] [the current jam] over the buttered [printed name of current bread].";
+	Monica eats jam in 0 turns from now.
+	
+At the time when Monica eats jam:
+	let the current bread be a random bread-slice on the Monica-dish;
+	try Monica eating the current bread;
+	say "[heart][/ss]Delicious!' [/se][Monica] [exclaim] [/ss1]You really took me to a nice place.' [/r][/n]";
+	Monica drinks orange juice in 0 turns from now.
+
+At the time when Monica drinks orange juice:
+	say "[Monica] [take] [their] [Monica-glass] and [drink] the juice.";
+	now the fluid content of Monica-glass is 0 cc;
+	say "After drinking [Monica] [put] [the Monica-glass] on the table again."	
 	
 Chapter 4.4.4 - Ordering
 
@@ -2812,7 +2926,7 @@ At the time when Monica gets egg:
 	now Monica-egg-cooking-trigger is false.
 
 Before going somewhere during Monica egg cooking:
-	say "[/ss]Don't go away!' [/se][Monica] [draw] [our] attention: [/ss1]I'm waiting for [a list of things in the Monica-egg-dish].' [/r][/n]" instead.
+	say "[/ss]Don't go away!' [/se][Monica] [draw] [our] attention: [/ss1]I'm waiting for [a list of things on the Monica-egg-dish].' [/r][/n]" instead.
 	
 Volume 5 - Internal db
 

@@ -140,7 +140,7 @@ Check spreading it on:
 	if the noun is a butter-item and the second noun is buttered, say "It's already buttered." instead;
 	if the second noun is dressed, say "[We] [cannot] spread [the noun] over another dressing." instead.	
 	
-Carry out spreading it on:
+Carry out an actor spreading something on something (this is the standard spreading rule):
 	now the noun is in the fill holder of the second noun;	
 	if the noun is a butter-item, now the second noun is buttered.
 

@@ -284,11 +284,13 @@ Book 1.4 - Owner
 
 A thing has an object called owner. The owner is usually nothing.
 
-Definition: an object is owned unless the owner of it is nothing.
+Definition: a thing is owned unless the owner of it is nothing.
 
 Instead of doing anything other than examining to something while the noun is owned:
 	say "[The noun] [belong] to [the owner of the noun]."
-
+	
 Does the player mean taking an owned thing: it is unlikely.
+Does the player mean inserting an owned thing into: it is unlikely.
+Does the player mean putting an owned thing on: it is unlikely.
 	
 Commons ends here.
