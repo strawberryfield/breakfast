@@ -1,0 +1,1708 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SCRIBUSUTF8NEW Version="1.6.1">
+    <DOCUMENT ANZPAGES="36" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" PRESET="0" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" ORIENTATION="0" PAGESIZE="Custom" FIRSTNUM="1" BOOK="1" AUTOSPALTEN="1" ABSTSPALTEN="11" UNITS="1" DFONT="Gargoyle Serif Regular" DSIZE="10" DCOL="1" DGAP="0" TabFill="" TabWidth="36" TextDistLeft="0" TextDistRight="0" TextDistBottom="0" TextDistTop="0" FirstLineOffset="1" AUTHOR="Roberto Ceccarelli - «The Strawberry Field»" COMMENTS="" KEYWORDS="" PUBLISHER="" DOCDATE="" DOCTYPE="Software" DOCFORMAT="" DOCIDENT="" DOCSOURCE="" DOCLANGINFO="en" DOCRELATION="" DOCCOVER="Worldwide" DOCRIGHTS="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International" DOCCONTRIB="" TITLE="Breakfast in the Dolomites" SUBJECT="A work of Interactive Fiction" VHOCH="33" VHOCHSC="66" VTIEF="33" VTIEFSC="66" VKAPIT="75" BASEGRID="14.4" BASEO="0" AUTOL="100" UnderlinePos="-1" UnderlineWidth="-1" StrikeThruPos="-1" StrikeThruWidth="-1" GROUPC="1" HCMS="0" DPSo="0" DPSFo="0" DPuse="0" DPgam="0" DPbla="1" DPPr="ISO Coated v2 300% (basICColor)" DPIn="sRGB display profile (ICC v2.2)" DPInCMYK="ISO Coated v2 300% (basICColor)" DPIn2="sRGB display profile (ICC v2.2)" DPIn3="ISO Coated v2 300% (basICColor)" DISc="1" DIIm="0" ALAYER="0" LANGUAGE="it" AUTOMATIC="1" AUTOCHECK="0" GUIDELOCK="0" SnapToGuides="0" SnapToGrid="0" SnapToElement="0" MINGRID="20.0012598425197" MAJGRID="100.00062992126" SHOWGRID="0" SHOWGUIDES="1" showcolborders="1" SHOWFRAME="1" SHOWControl="0" SHOWLAYERM="0" SHOWMARGIN="1" SHOWBASE="0" SHOWPICT="1" SHOWLINK="0" rulerMode="1" showrulers="1" showBleed="1" rulerXoffset="0" rulerYoffset="0" GuideRad="10" GRAB="4" POLYC="4" POLYF="0.502045814642449" POLYR="0" POLYIR="0" POLYCUR="0" POLYOCUR="0" POLYS="0" arcStartAngle="30" arcSweepAngle="300" spiralStartAngle="0" spiralEndAngle="1080" spiralFactor="1.2" AutoSave="1" AutoSaveTime="600000" AutoSaveCount="1" AutoSaveKeep="0" AUtoSaveInDocDir="1" AutoSaveDir="" ScratchBottom="20.0012598425197" ScratchLeft="100.00062992126" ScratchRight="100.00062992126" ScratchTop="20.0012598425197" GapHorizontal="0" GapVertical="39.9996850393701" StartArrow="0" EndArrow="0" PEN="Black" BRUSH="None" PENLINE="Black" PENTEXT="Black" StrokeText="Black" TextBackGround="None" TextLineColor="None" TextBackGroundShade="100" TextLineShade="100" TextPenShade="100" TextStrokeShade="100" STIL="1" STILLINE="1" WIDTH="1" WIDTHLINE="1" PENSHADE="100" LINESHADE="100" BRUSHSHADE="100" CPICT="None" PICTSHADE="100" CSPICT="None" PICTSSHADE="100" PICTSCX="1" PICTSCY="1" PSCALE="1" PASPECT="1" EmbeddedPath="0" HalfRes="1" dispX="10.0006299212598" dispY="10.0006299212598" constrain="15" MINORC="#00ff00" MAJORC="#00ff00" GuideC="#000080" BaseC="#c0c0c0" renderStack="2 0 4 1 3" GridType="0" PAGEC="#ffffff" MARGC="#0000ff" RANDF="0" currentProfile="PDF 1.4" calligraphicPenFillColor="Black" calligraphicPenLineColor="Black" calligraphicPenFillColorShade="100" calligraphicPenLineColorShade="100" calligraphicPenLineWidth="1" calligraphicPenAngle="0" calligraphicPenWidth="10" calligraphicPenStyle="1">
+        <CheckProfile Name="PDF 1.3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF 1.4" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF 1.5" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF 1.6" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="0" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF/X-1a" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="1" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF/X-3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="1" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF/X-4" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="1" checkFontNotEmbedded="1" checkFontIsOpenType="0" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PostScript" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="0" checkFontIsOpenType="0" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <COLOR NAME="Black" SPACE="CMYK" C="0" M="0" Y="0" K="100"/>
+        <COLOR NAME="FromRtf#000000" SPACE="RGB" R="0" G="0" B="0"/>
+        <COLOR NAME="FromRtf#000080" SPACE="RGB" R="0" G="0" B="128"/>
+        <COLOR NAME="FromRtf#0000ff" SPACE="RGB" R="0" G="0" B="255"/>
+        <COLOR NAME="FromRtf#008000" SPACE="RGB" R="0" G="128" B="0"/>
+        <COLOR NAME="FromRtf#008080" SPACE="RGB" R="0" G="128" B="128"/>
+        <COLOR NAME="FromRtf#00ff00" SPACE="RGB" R="0" G="255" B="0"/>
+        <COLOR NAME="FromRtf#00ffff" SPACE="RGB" R="0" G="255" B="255"/>
+        <COLOR NAME="FromRtf#800000" SPACE="RGB" R="128" G="0" B="0"/>
+        <COLOR NAME="FromRtf#800080" SPACE="RGB" R="128" G="0" B="128"/>
+        <COLOR NAME="FromRtf#808000" SPACE="RGB" R="128" G="128" B="0"/>
+        <COLOR NAME="FromRtf#808080" SPACE="RGB" R="128" G="128" B="128"/>
+        <COLOR NAME="FromRtf#c0c0c0" SPACE="RGB" R="192" G="192" B="192"/>
+        <COLOR NAME="FromRtf#ff0000" SPACE="RGB" R="255" G="0" B="0"/>
+        <COLOR NAME="FromRtf#ff00ff" SPACE="RGB" R="255" G="0" B="255"/>
+        <COLOR NAME="FromRtf#ffff00" SPACE="RGB" R="255" G="255" B="0"/>
+        <COLOR NAME="FromRtf#ffffff" SPACE="RGB" R="255" G="255" B="255"/>
+        <COLOR NAME="Registration" SPACE="CMYK" C="100" M="100" Y="100" K="100" Register="1"/>
+        <COLOR NAME="White" SPACE="CMYK" C="0" M="0" Y="0" K="0"/>
+        <HYPHEN/>
+        <CHARSTYLE CNAME="Default Character Style" DefaultStyle="1" FONT="Gargoyle Serif Regular" FONTSIZE="9" FONTFEATURES="-clig" FEATURES="inherit" FCOLOR="Black" FSHADE="100" HyphenWordMin="3" SCOLOR="Black" BGCOLOR="None" BGSHADE="100" SSHADE="100" TXTSHX="5" TXTSHY="-5" TXTOUT="1" TXTULP="-0.1" TXTULW="-0.1" TXTSTP="-0.1" TXTSTW="-0.1" SCALEH="100" SCALEV="100" BASEO="0" KERN="0" LANGUAGE="it"/>
+        <CHARSTYLE CNAME="Titolo" CPARENT="Default Character Style" FONT="Gargoyle Serif Bold" FONTSIZE="15" FONTFEATURES="-clig"/>
+        <CHARSTYLE CNAME="prompt" FONT="Courier New Bold" FONTFEATURES="-clig" LANGUAGE="it"/>
+        <CHARSTYLE CNAME="comandi" FONTSIZE="8" LANGUAGE="it"/>
+        <STYLE NAME="Default Paragraph Style" DefaultStyle="1" ALIGN="0" DIRECTION="0" LINESPMode="1" LINESP="14" INDENT="0" RMARGIN="0" FIRST="8.50393700787402" VOR="0" NACH="7" ParagraphEffectOffset="0" DROP="0" DROPLIN="2" Bullet="0" Numeration="0" HyphenConsecutiveLines="2" BCOLOR="None" BSHADE="100"/>
+        <STYLE NAME="Titolo" PARENT="Default Paragraph Style" ALIGN="1" FIRST="0" NACH="15"/>
+        <STYLE NAME="prompt" PARENT="Default Paragraph Style" FIRST="0"/>
+        <STYLE NAME="HTML_p" LINESPMode="0" LINESP="14" NACH="14.1732283464567" KERN="0"/>
+        <STYLE NAME="HTML_default" LINESPMode="0" LINESP="14" KERN="0"/>
+        <STYLE NAME="comandi" LINESPMode="0" LINESP="11" FIRST="0" NACH="0" LANGUAGE="it"/>
+        <STYLE NAME="Testo23_Standard" PARENT="Testo23_Default Paragraph Style" ALIGN="0" LINESPMode="1" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None" FONT="Liberation Serif Regular" FONTSIZE="12" FEATURES="inherit" FCOLOR="Black" BGCOLOR="None"/>
+        <STYLE NAME="Testo23_Heading" PARENT="Testo23_Standard" ALIGN="0" LINESPMode="1" INDENT="0" RMARGIN="0" FIRST="0" VOR="11.9905511811024" NACH="6.00944881889764" BCOLOR="None" FONT="Liberation Sans Regular" FONTSIZE="14" FEATURES="inherit" FCOLOR="Black" BGCOLOR="None"/>
+        <STYLE NAME="Testo23_Text body" PARENT="Testo23_Standard" ALIGN="0" LINESPMode="1" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="7.00157480314961" BCOLOR="None" FONT="Liberation Serif Regular" FONTSIZE="12" FEATURES="inherit" FCOLOR="Black" BGCOLOR="None"/>
+        <STYLE NAME="Testo23_List" PARENT="Testo23_Text body" ALIGN="0" LINESPMode="1" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="7.00157480314961" BCOLOR="None" FONT="Liberation Serif Regular" FONTSIZE="12" FEATURES="inherit" FCOLOR="Black" BGCOLOR="None"/>
+        <STYLE NAME="Testo23_Caption" PARENT="Testo23_Standard" ALIGN="0" LINESPMode="1" INDENT="0" RMARGIN="0" FIRST="0" VOR="6.00944881889764" NACH="6.00944881889764" BCOLOR="None" FONT="Liberation Serif Italic" FONTSIZE="12" FEATURES="inherit" FCOLOR="Black" BGCOLOR="None"/>
+        <STYLE NAME="Testo23_Index" PARENT="Testo23_Standard" ALIGN="0" LINESPMode="1" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None" FONT="Liberation Serif Regular" FONTSIZE="12" FEATURES="inherit" FCOLOR="Black" BGCOLOR="None"/>
+        <STYLE NAME="Testo30_Standard" PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None" FONT="Liberation Serif Regular" FONTSIZE="12" FEATURES="inherit" FCOLOR="Black" BGCOLOR="None"/>
+        <STYLE NAME="Testo30_Heading" PARENT="Testo30_Standard" ALIGN="0" LINESPMode="1" INDENT="0" RMARGIN="0" FIRST="0" VOR="11.9905511811024" NACH="6.00944881889764" BCOLOR="None" FONT="Liberation Sans Regular" FONTSIZE="14" FEATURES="inherit" FCOLOR="Black" BGCOLOR="None"/>
+        <STYLE NAME="Testo30_Text body" PARENT="Testo30_Standard" ALIGN="0" LINESPMode="1" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="7.00157480314961" BCOLOR="None" FONT="Liberation Serif Regular" FONTSIZE="12" FEATURES="inherit" FCOLOR="Black" BGCOLOR="None"/>
+        <STYLE NAME="Testo30_List" PARENT="Testo30_Text body" ALIGN="0" LINESPMode="1" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="7.00157480314961" BCOLOR="None" FONT="Liberation Serif Regular" FONTSIZE="12" FEATURES="inherit" FCOLOR="Black" BGCOLOR="None"/>
+        <STYLE NAME="Testo30_Caption" PARENT="Testo30_Standard" ALIGN="0" LINESPMode="1" INDENT="0" RMARGIN="0" FIRST="0" VOR="6.00944881889764" NACH="6.00944881889764" BCOLOR="None" FONT="Liberation Serif Italic" FONTSIZE="12" FEATURES="inherit" FCOLOR="Black" BGCOLOR="None"/>
+        <STYLE NAME="Testo30_Index" PARENT="Testo30_Standard" ALIGN="0" LINESPMode="1" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None" FONT="Liberation Serif Regular" FONTSIZE="12" FEATURES="inherit" FCOLOR="Black" BGCOLOR="None"/>
+        <TableStyle NAME="Default Table Style" DefaultStyle="1" FillColor="None" FillShade="100">
+            <TableBorderLeft>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderLeft>
+            <TableBorderRight>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderRight>
+            <TableBorderTop>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderTop>
+            <TableBorderBottom>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderBottom>
+        </TableStyle>
+        <CellStyle NAME="Default Cell Style" DefaultStyle="1" FillColor="None" FillShade="100" LeftPadding="1" RightPadding="1" TopPadding="1" BottomPadding="1">
+            <TableBorderLeft>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderLeft>
+            <TableBorderRight>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderRight>
+            <TableBorderTop>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderTop>
+            <TableBorderBottom>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderBottom>
+        </CellStyle>
+        <LAYERS NUMMER="0" LEVEL="0" NAME="Sfondo" SICHTBAR="1" DRUCKEN="1" EDIT="1" SELECT="0" FLOW="1" TRANS="1" BLEND="0" OUTL="0" LAYERC="#000000"/>
+        <Printer firstUse="1" toFile="0" useAltPrintCommand="0" outputSeparations="0" useSpotColors="1" useColor="1" mirrorH="0" mirrorV="0" useICC="0" doGCR="0" doClip="0" setDevParam="0" useDocBleeds="1" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" includePDFMarks="1" PSLevel="3" PrintEngine="4" markLength="20.0013" markOffset="0" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" printer="Microsoft Print to PDF" filename="" separationName="All" printerCommand=""/>
+        <PDF firstUse="0" Thumbnails="1" Articles="0" Bookmarks="1" Compress="1" CMethod="0" Quality="0" EmbedPDF="0" MirrorH="0" MirrorV="0" Clip="0" rangeSel="0" rangeTxt="" RotateDeg="0" PresentMode="0" RecalcPic="0" FontEmbedding="0" Grayscale="0" RGBMode="1" UseProfiles="0" UseProfiles2="0" Binding="0" PicRes="300" Resolution="300" Version="14" Intent="1" Intent2="0" SolidP="sRGB display profile (ICC v2.2)" ImageP="sRGB display profile (ICC v2.2)" PrintP="ISO Coated v2 300% (basICColor)" InfoString="" BTop="0" BLeft="0" BRight="0" BBottom="0" useDocBleeds="0" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" docInfoMarks="0" markLength="20.0012598425197" markOffset="0" ImagePr="0" PassOwner="" PassUser="" Permissions="-4" Encrypt="0" UseLayers="0" UseLpi="0" UseSpotColors="1" doMultiFile="0" displayBookmarks="0" displayFullscreen="0" displayLayers="0" displayThumbs="0" hideMenuBar="0" hideToolBar="0" fitWindow="1" openAfterExport="0" PageLayout="3" openAction="">
+            <Subset Name="Courier New Bold"/>
+            <Subset Name="Gargoyle Serif Bold"/>
+            <Subset Name="Gargoyle Serif Bold Italic"/>
+            <Subset Name="Gargoyle Serif Regular"/>
+            <Subset Name="Segoe UI Black Italic"/>
+            <Subset Name="Segoe UI Regular"/>
+            <LPI Color="" Frequency="10" Angle="0" SpotFunction="0"/>
+            <LPI Color="Black" Frequency="133" Angle="45" SpotFunction="3"/>
+            <LPI Color="Cyan" Frequency="133" Angle="105" SpotFunction="3"/>
+            <LPI Color="Magenta" Frequency="133" Angle="75" SpotFunction="3"/>
+            <LPI Color="Yellow" Frequency="133" Angle="90" SpotFunction="3"/>
+        </PDF>
+        <DocItemAttributes/>
+        <TablesOfContents/>
+        <NotesStyles>
+            <notesStyle Name="Default" Start="1" Endnotes="0" Type="Type_1_2_3" Range="0" Prefix="" Suffix=")" AutoHeight="1" AutoWidth="1" AutoRemove="1" AutoWeld="1" SuperNote="1" SuperMaster="1" MarksStyle="" NotesStyle=""/>
+        </NotesStyles>
+        <PageSets>
+            <Set Name="Single Page" FirstPage="0" Rows="1" Columns="1"/>
+            <Set Name="Facing Pages" FirstPage="1" Rows="1" Columns="2">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+            <Set Name="3-Fold" FirstPage="0" Rows="1" Columns="3">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Middle"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+            <Set Name="4-Fold" FirstPage="0" Rows="1" Columns="4">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Middle Left"/>
+                <PageNames Name="Middle Right"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+        </PageSets>
+        <Sections>
+            <Section Number="0" Name="Sezione 1" From="0" To="35" Type="Type_1_2_3" Start="1" Reversed="0" Active="1" FillChar="0" FieldWidth="0"/>
+        </Sections>
+        <MASTERPAGE PAGEXPOS="100.00062992126" PAGEYPOS="20.0012598425197" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="0" NAM="Normale sinistra" MNAM="" Size="Custom" Orientation="0" LEFT="1" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <MASTERPAGE PAGEXPOS="100.00062992126" PAGEYPOS="20.0012598425197" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="1" NAM="Normale destra" MNAM="" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="440.158110236221" PAGEYPOS="20.0012598425197" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="0" NAM="" MNAM="Normale destra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="400.158425196851" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="1" NAM="" MNAM="Normale sinistra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="440.158110236221" PAGEYPOS="400.158425196851" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="2" NAM="" MNAM="Normale destra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="780.315590551182" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="3" NAM="" MNAM="Normale sinistra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="440.158110236221" PAGEYPOS="780.315590551182" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="4" NAM="" MNAM="Normale destra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="1160.47275590551" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="5" NAM="" MNAM="Normale sinistra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="440.158110236221" PAGEYPOS="1160.47275590551" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="6" NAM="" MNAM="Normale destra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="1540.62992125984" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="7" NAM="" MNAM="Normale sinistra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="440.158110236221" PAGEYPOS="1540.62992125984" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="8" NAM="" MNAM="Normale destra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="1920.78708661417" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="9" NAM="" MNAM="Normale sinistra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="440.158110236221" PAGEYPOS="1920.78708661417" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="10" NAM="" MNAM="Normale destra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="2300.94425196851" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="11" NAM="" MNAM="Normale sinistra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="440.158110236221" PAGEYPOS="2300.94425196851" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="12" NAM="" MNAM="Normale destra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="2681.10141732284" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="13" NAM="" MNAM="Normale sinistra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="440.158110236221" PAGEYPOS="2681.10141732284" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="14" NAM="" MNAM="Normale destra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="3061.25858267717" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="15" NAM="" MNAM="Normale sinistra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="440.158110236221" PAGEYPOS="3061.25858267717" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="16" NAM="" MNAM="Normale destra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="3441.4157480315" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="17" NAM="" MNAM="Normale sinistra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="440.158110236221" PAGEYPOS="3441.4157480315" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="18" NAM="" MNAM="Normale destra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="3821.57291338583" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="19" NAM="" MNAM="Normale sinistra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="440.158110236221" PAGEYPOS="3821.57291338583" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="20" NAM="" MNAM="Normale sinistra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="4201.73007874016" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="21" NAM="" MNAM="Normale destra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="440.158110236221" PAGEYPOS="4201.73007874016" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="22" NAM="" MNAM="Normale sinistra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="4581.88724409449" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="23" NAM="" MNAM="Normale destra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="440.158110236221" PAGEYPOS="4581.88724409449" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="24" NAM="" MNAM="Normale sinistra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="4962.04440944882" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="25" NAM="" MNAM="Normale destra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="440.158110236221" PAGEYPOS="4962.04440944882" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="26" NAM="" MNAM="Normale sinistra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="5342.20157480316" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="27" NAM="" MNAM="Normale destra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="440.158110236221" PAGEYPOS="5342.20157480316" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="28" NAM="" MNAM="Normale sinistra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="5722.35874015749" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="29" NAM="" MNAM="Normale destra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="440.158110236221" PAGEYPOS="5722.35874015749" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="30" NAM="" MNAM="Normale sinistra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="6102.51590551182" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="31" NAM="" MNAM="Normale destra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="440.158110236221" PAGEYPOS="6102.51590551182" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="32" NAM="" MNAM="Normale sinistra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="6482.67307086615" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="33" NAM="" MNAM="Normale destra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="440.158110236221" PAGEYPOS="6482.67307086615" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="34" NAM="" MNAM="Normale sinistra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="6862.83023622048" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="35" NAM="" MNAM="Normale sinistra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGEOBJECT XPOS="100.00062992126" YPOS="6862.83023622047" OwnPage="35" ItemID="239444032" PTYPE="6" WIDTH="340.157" HEIGHT="340.157" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" PCOLOR="Black" SHADE="30" PLINEART="1" path="M0 0 L340.157 0 L340.157 340.157 L0 340.157 L0 0 Z" copath="M0 0 L340.157 0 L340.157 340.157 L0 340.157 L0 0 Z" gXpos="100.00062992126" gYpos="6862.83023622047" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="440.158110236221" YPOS="20.0012598425197" OwnPage="0" ItemID="238794160" PTYPE="2" WIDTH="340.157480314961" HEIGHT="340.157480314961" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.332185039370079" LOCALSCY="0.332185039370079" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="images/cover.psd" IRENDER="0" EMBEDDED="0" path="M0 0 L340.157 0 L340.157 340.157 L0 340.157 L0 0 Z" copath="M0 0 L340.157 0 L340.157 340.157 L0 340.157 L0 0 Z" gXpos="440.158110236221" gYpos="20.0012598425197" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="122.677795275591" YPOS="6885.50740157481" OwnPage="35" ItemID="239604752" PTYPE="4" WIDTH="294.803149606299" HEIGHT="195.914152323873" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 195.914 L0 195.914 L0 0 Z" copath="M0 0 L294.803 0 L294.803 195.914 L0 195.914 L0 0 Z" gXpos="122.677795275591" gYpos="6885.50740157481" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT CPARENT="Default Character Style" FONTSIZE="8" CH="It is the mid-1990s. On a Friday evening in the summer, a young man and his girlfriend leave work for a short holiday in the Dolomites."/>
+                <para PARENT="Default Paragraph Style" LINESPMode="0" LINESP="12"/>
+                <ITEXT CPARENT="Default Character Style" FONTSIZE="8" CH="You play as Francesco, about 30 years old, blond hair. You work as a software engineer, like photography and hiking in the mountains. "/>
+                <para PARENT="Default Paragraph Style" LINESPMode="0" LINESP="12"/>
+                <ITEXT CPARENT="Default Character Style" FONTSIZE="8" CH="Monica, your girlfriend, is beautiful: tall, slim, with lots of slightly reddish, frizzy hair and sparkling green eyes: could you not fall in love with her? "/>
+                <para PARENT="Default Paragraph Style" LINESPMode="0" LINESP="12"/>
+                <ITEXT CPARENT="Default Character Style" FONTSIZE="8" CH="She loves strolling around looking in shop windows; a peppy girl, she won't forgive you anything you do that she doesn't like, but deep down she has her heart beating for you."/>
+                <para PARENT="Default Paragraph Style" LINESPMode="0" LINESP="12"/>
+                <ITEXT CPARENT="Default Character Style" FONTSIZE="8" CH="What a strange thing love is..."/>
+                <para PARENT="Default Paragraph Style" LINESPMode="0" LINESP="12"/>
+                <ITEXT CPARENT="Default Character Style" FONTSIZE="8" CH="You have to plan the first day of your holiday. There are no treasures to be found, no mysteries to be solved: the only prize is to spend a beautiful day in this wonderful mountain world."/>
+                <trail PARENT="Default Paragraph Style" LINESPMode="0" LINESP="12"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="122.677795275591" YPOS="7120.28881053585" OwnPage="35" ItemID="239795200" PTYPE="4" WIDTH="294.803149606299" HEIGHT="60.0217406452513" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 60.0217 L0 60.0217 L0 0 Z" copath="M0 0 L294.803 0 L294.803 60.0217 L0 60.0217 L0 0 Z" gXpos="122.677795275591" gYpos="7120.28881053585" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FONT="Segoe UI Black Italic" FONTSIZE="8" CH="Breakfast in the Dolomites"/>
+                <para LINESP="13"/>
+                <ITEXT FONT="Segoe UI Regular" FONTSIZE="8" CH="A play just for fun comedy by Roberto Ceccarelli"/>
+                <para LINESP="13"/>
+                <ITEXT FONT="Segoe UI Regular" FONTSIZE="8" CH="Release 1 / Serial number 240306 / Inform 7 v10.1.2 / D"/>
+                <trail LINESP="13"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="122.677795275591" YPOS="422.835590551181" OwnPage="1" ItemID="240152160" PTYPE="2" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.287893700787401" LOCALSCY="0.287893700787401" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="images/paper3.jpeg" IRENDER="0" EMBEDDED="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="122.677795275591" gYpos="422.835590551181" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="462.835275590552" YPOS="422.835590551181" OwnPage="2" ItemID="240157424" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="462.835275590552" gYpos="422.835590551181" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT CPARENT="Titolo" CH="Welcome to "/>
+                <ITEXT CPARENT="Titolo" FONT="Gargoyle Serif Bold Italic" CH="Breakfast in the Dolomites"/>
+                <para PARENT="Titolo"/>
+                <ITEXT CPARENT="Default Character Style" CH="This is an interactive fiction: in interactive fiction you control the main character. His challenges, and his choices, are yours."/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT CPARENT="Default Character Style" CH="Interactive fiction tells you the beginning of a story. Then it puts you in charge and lets you decide what your character should do. You type commands for the main character to carry out, and the story replies by telling you what happens next. Think of the rooms as your setting, and the objects you find as the props."/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT CPARENT="Default Character Style" CH="Part of your role is to help the main character overcome obstacles to his progress: solving problems, working out what is going on in the story, discovering ways to reach new locations and tools. That aspect of interactive fiction is like a game."/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT CPARENT="Default Character Style" CH="And part of your role is to help him make decisions. Interactive fiction may have multiple endings, subject to your choices. That aspect is like a story, but an open-ended one."/>
+                <para PARENT="Default Paragraph Style"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="122.677795275591" YPOS="802.992755905512" OwnPage="3" ItemID="240162800" PTYPE="2" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.287893700787401" LOCALSCY="0.287893700787401" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="images/_9fe10314-7d99-409f-b2e8-e6774e688edc.jpeg" IRENDER="0" EMBEDDED="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="122.677795275591" gYpos="422.835590551181" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="462.835275590552" YPOS="802.992755905512" OwnPage="4" ItemID="240697392" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="462.835275590552" gYpos="422.835590551181" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT CPARENT="Titolo" CH="Francesco: "/>
+                <ITEXT CPARENT="Titolo" FONT="Gargoyle Serif Bold Italic" CH="you"/>
+                <para PARENT="Titolo"/>
+                <ITEXT CPARENT="prompt" CH="&gt; "/>
+                <ITEXT CPARENT="prompt" FEATURES="inherit allcaps" CH="examine me"/>
+                <para PARENT="prompt"/>
+                <ITEXT CPARENT="Default Character Style" CH="A young man, about 30 years old, with blond hair. "/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT CPARENT="Default Character Style" CH="You work as a software engineer, enjoy photography and love hiking in the mountains. "/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT CPARENT="Default Character Style" CH="In love with your girlfriend, very beautiful, but also shrewish when something doesn't go her way. In the end you always please her and she appreciates it. "/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT CPARENT="Default Character Style" CH="You wear a pair of brown trekking boots, a checkered flannel shirt, a white t-shirt and a pair of beige shorts. "/>
+                <para PARENT="Default Paragraph Style"/>
+                <para PARENT="Default Paragraph Style"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="122.677795275591" YPOS="1183.14992125984" OwnPage="5" ItemID="240702768" PTYPE="2" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.287893700787401" LOCALSCY="0.287893700787401" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="images/_8b02b8e5-a776-463b-91b6-5f57dc7fd1b4.jpeg" IRENDER="0" EMBEDDED="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="122.677795275591" gYpos="422.835590551181" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="462.835275590552" YPOS="1183.14992125984" OwnPage="6" ItemID="241479856" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="462.835275590552" gYpos="422.835590551181" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FONT="Gargoyle Serif Bold" FONTSIZE="15" CH="Monica: "/>
+                <ITEXT FONT="Gargoyle Serif Bold Italic" FONTSIZE="15" CH="your girlfriend"/>
+                <para PARENT="Titolo"/>
+                <ITEXT CPARENT="prompt" CH="&gt; "/>
+                <ITEXT CPARENT="prompt" FEATURES="inherit allcaps" CH="look at Monica"/>
+                <para PARENT="prompt"/>
+                <ITEXT CPARENT="Default Character Style" CH="Tall, slim with lots of slightly reddish, frizzy hair and sparkling green eyes. "/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT CPARENT="Default Character Style" CH="Could you not fall in love with her? "/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT CPARENT="Default Character Style" CH="A peppy girl, she won't forgive you anything you do that she doesn't like, but deep down she has her heart beating for you.. "/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT CPARENT="Default Character Style" CH="She wears a pair of pink trekking shoes, a pair of black leggings and a black sweatshirt. "/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT CPARENT="Default Character Style" CH="She also wears a small pink backpack. "/>
+                <para PARENT="Default Paragraph Style"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="462.835275590552" YPOS="1563.30708661417" OwnPage="8" ItemID="240710576" PTYPE="4" WIDTH="294.803149606299" HEIGHT="147.40157480315" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 147.402 L0 147.402 L0 0 Z" copath="M0 0 L294.803 0 L294.803 147.402 L0 147.402 L0 0 Z" gXpos="462.835275590552" gYpos="422.835590551181" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT CPARENT="Titolo" CH="The receptionist"/>
+                <para PARENT="Titolo"/>
+                <ITEXT CPARENT="prompt" CH="&gt; "/>
+                <ITEXT CPARENT="prompt" FEATURES="inherit allcaps" CH="x receptionist"/>
+                <para PARENT="prompt"/>
+                <ITEXT CPARENT="Default Character Style" CH="A tall man with short black hair and dark eyes. "/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT CPARENT="Default Character Style" CH="He also has a light, well-groomed beard. "/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT CPARENT="Default Character Style" CH="He wears a dark grey jacket, dotted grey tie and a white shirt. "/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT CPARENT="Default Character Style" CH=" "/>
+                <para PARENT="Default Paragraph Style"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="462.835275590552" YPOS="1710.70866141732" OwnPage="8" ItemID="239307328" PTYPE="4" WIDTH="294.803149606299" HEIGHT="147.40157480315" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 147.402 L0 147.402 L0 0 Z" copath="M0 0 L294.803 0 L294.803 147.402 L0 147.402 L0 0 Z" gXpos="462.835275590552" gYpos="570.237165354334" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT CPARENT="Titolo" CH="The cook"/>
+                <para PARENT="Titolo"/>
+                <ITEXT CPARENT="prompt" CH="&gt; "/>
+                <ITEXT CPARENT="prompt" FEATURES="inherit allcaps" CH="x cook"/>
+                <para PARENT="prompt"/>
+                <ITEXT CH="A young woman with a bonnet covering her hair and brown eyes."/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT CH="She wears a white blouse and an apron made of rough canvas. "/>
+                <para PARENT="Default Paragraph Style"/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT CPARENT="Default Character Style" CH=" "/>
+                <para PARENT="Default Paragraph Style"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="462.835275590552" YPOS="1943.4642519685" OwnPage="10" ItemID="239312704" PTYPE="4" WIDTH="294.803149606299" HEIGHT="147.40157480315" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 147.402 L0 147.402 L0 0 Z" copath="M0 0 L294.803 0 L294.803 147.402 L0 147.402 L0 0 Z" gXpos="462.835275590552" gYpos="422.835590551181" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT CPARENT="Titolo" CH="The waiter"/>
+                <para PARENT="Titolo"/>
+                <ITEXT CPARENT="prompt" CH="&gt; "/>
+                <ITEXT CPARENT="prompt" FEATURES="inherit allcaps" CH="x waiter"/>
+                <para PARENT="prompt"/>
+                <ITEXT CH="A young man with blond hair and blue eyes. "/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT CH="He wears a pair of black pants and a white shirt. "/>
+                <para PARENT="Default Paragraph Style"/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT CPARENT="Default Character Style" CH=" "/>
+                <para PARENT="Default Paragraph Style"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="462.835275590552" YPOS="2090.86582677166" OwnPage="10" ItemID="239318080" PTYPE="4" WIDTH="294.803149606299" HEIGHT="147.40157480315" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 147.402 L0 147.402 L0 0 Z" copath="M0 0 L294.803 0 L294.803 147.402 L0 147.402 L0 0 Z" gXpos="462.835275590552" gYpos="570.237165354334" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT CPARENT="Titolo" CH="The waitress"/>
+                <para PARENT="Titolo"/>
+                <ITEXT CPARENT="prompt" CH="&gt; "/>
+                <ITEXT CPARENT="prompt" FEATURES="inherit allcaps" CH="x waitress"/>
+                <para PARENT="prompt"/>
+                <ITEXT CH="A young woman with auburn hair and green eyes. "/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT CH="She wears a black skirt and a white shirt. "/>
+                <para PARENT="Default Paragraph Style"/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT CPARENT="Default Character Style" CH=" "/>
+                <para PARENT="Default Paragraph Style"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="122.677795275591" YPOS="1563.30708661417" OwnPage="7" ItemID="242036752" PTYPE="2" WIDTH="144.566929133858" HEIGHT="144.566929133858" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.141178641732283" LOCALSCY="0.141178641732283" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="images/_ea89a5c7-988f-4762-8902-eeb5cae5b089.jpeg" IRENDER="0" EMBEDDED="0" path="M0 0 L144.567 0 L144.567 144.567 L0 144.567 L0 0 Z" copath="M0 0 L144.567 0 L144.567 144.567 L0 144.567 L0 0 Z" gXpos="122.677795275591" gYpos="422.835590551181" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="272.914015748032" YPOS="1713.54330708662" OwnPage="7" ItemID="241115152" PTYPE="2" WIDTH="144.566929133858" HEIGHT="144.566929133858" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.141178641732283" LOCALSCY="0.141178641732283" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="images/_5f180cc5-3313-49af-b2ab-a4913e51a266.jpeg" IRENDER="0" EMBEDDED="0" path="M0 0 L144.567 0 L144.567 144.567 L0 144.567 L0 0 Z" copath="M0 0 L144.567 0 L144.567 144.567 L0 144.567 L0 0 Z" gXpos="272.914015748032" gYpos="573.071811023626" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="272.914015748032" YPOS="1563.30708661417" OwnPage="7" ItemID="242156832" PTYPE="2" WIDTH="144.566929133858" HEIGHT="144.566929133858" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.141178641732283" LOCALSCY="0.141178641732283" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="images/_98d68a9d-1b37-478d-876c-3de2e55b3500.jpeg" IRENDER="0" EMBEDDED="0" path="M0 0 L144.567 0 L144.567 144.567 L0 144.567 L0 0 Z" copath="M0 0 L144.567 0 L144.567 144.567 L0 144.567 L0 0 Z" gXpos="272.914015748032" gYpos="422.835590551181" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="122.677795275591" YPOS="1713.54330708662" OwnPage="7" ItemID="242159552" PTYPE="2" WIDTH="144.566929133858" HEIGHT="144.566929133858" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.141178641732283" LOCALSCY="0.141178641732283" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="images/_ca6d9af4-d91e-46ea-8ebe-1c489346402c.jpeg" IRENDER="0" EMBEDDED="0" path="M0 0 L144.567 0 L144.567 144.567 L0 144.567 L0 0 Z" copath="M0 0 L144.567 0 L144.567 144.567 L0 144.567 L0 0 Z" gXpos="122.677795275591" gYpos="573.071811023626" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="122.677795275591" YPOS="1943.4642519685" OwnPage="9" ItemID="242162272" PTYPE="2" WIDTH="144.566929133858" HEIGHT="144.566929133858" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.141178641732283" LOCALSCY="0.141178641732283" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="images/_59bd28ce-0738-4516-a2fc-2b84d42de4f1.jpeg" IRENDER="0" EMBEDDED="0" path="M0 0 L144.567 0 L144.567 144.567 L0 144.567 L0 0 Z" copath="M0 0 L144.567 0 L144.567 144.567 L0 144.567 L0 0 Z" gXpos="122.677795275591" gYpos="422.835590551181" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="272.914015748032" YPOS="2093.70047244095" OwnPage="9" ItemID="242164992" PTYPE="2" WIDTH="144.566929133858" HEIGHT="144.566929133858" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.141178641732283" LOCALSCY="0.141178641732283" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="images/_bfdebbbb-c1f4-4728-b1a3-e83dcfe5d549.jpeg" IRENDER="0" EMBEDDED="0" path="M0 0 L144.567 0 L144.567 144.567 L0 144.567 L0 0 Z" copath="M0 0 L144.567 0 L144.567 144.567 L0 144.567 L0 0 Z" gXpos="272.914015748032" gYpos="573.071811023626" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="272.914015748032" YPOS="1943.4642519685" OwnPage="9" ItemID="241120416" PTYPE="2" WIDTH="144.566929133858" HEIGHT="144.566929133858" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.141178641732283" LOCALSCY="0.141178641732283" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="images/_5cf97b16-997c-4be5-badb-bfeb2146841a.jpeg" IRENDER="0" EMBEDDED="0" path="M0 0 L144.567 0 L144.567 144.567 L0 144.567 L0 0 Z" copath="M0 0 L144.567 0 L144.567 144.567 L0 144.567 L0 0 Z" gXpos="272.914015748032" gYpos="422.835590551181" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="122.677795275591" YPOS="2093.70047244095" OwnPage="9" ItemID="241123136" PTYPE="2" WIDTH="144.566929133858" HEIGHT="144.566929133858" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.141178641732283" LOCALSCY="0.141178641732283" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="images/_1c814f85-5409-4e01-a555-c5fa68304cfd.jpeg" IRENDER="0" EMBEDDED="0" path="M0 0 L144.567 0 L144.567 144.567 L0 144.567 L0 0 Z" copath="M0 0 L144.567 0 L144.567 144.567 L0 144.567 L0 0 Z" gXpos="122.677795275591" gYpos="573.071811023626" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="462.835275590552" YPOS="3934.2215817713" OwnPage="20" ItemID="241125856" PTYPE="4" WIDTH="294.803149606299" HEIGHT="204.831646575147" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 204.832 L0 204.832 L0 0 Z" copath="M0 0 L294.803 0 L294.803 204.832 L0 204.832 L0 0 Z" gXpos="802.992755905513" gYpos="2033.43575499966" gWidth="0" gHeight="0" PSTYLE="Default Paragraph Style" LAYER="0" NEXTITEM="242140480" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Default Paragraph Style" LINESPMode="1" LINESP="9"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;[direction]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="going"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;[nothing]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="saying no"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;[chocolate]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="answering chocolate"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;[espresso]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="answering espresso"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;[barley]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="answering barley"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;[moka]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="answering moka"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;[regular]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="answering regular"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;[short]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="answering short"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;[tall]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="answering tall"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;[small]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="answering small"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;[large]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="answering large"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;[soy]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="answering soy"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;[fried egg]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="answering fried"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;[omelette]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="answering omelette"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;[crepe]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="answering crepe"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;[scrambled]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="answering scrambled"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;[bullseye]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="answering bullseye"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;[empty]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="answering empty"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;[stuffed]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="answering stuffed"/>
+                <breakline/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;a [any known thing]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="implicit-quizzing"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;a [text]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="implicit-asking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;adjust&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;set&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;advise&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;help&quot; "/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;answer hello/hi&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="hailing"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;answer thanks&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="implicitly thanking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;answer thank you&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="implicitly thanking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;answer hello/hi to [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="saying hello to"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;answer bye/goodbye/farewell/cheerio to [someone]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="saying goodbye to"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;answer thank/thanks you/-- [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="thanking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;answer [text] to [someone]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="answering it that"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" (nouns reversed)"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;approach [a door]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="entering"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;ask about [any known thing]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="implicit-quizzing"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;ask for [any known thing]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="implicit-requesting"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;ask [someone] for [any known thing]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="requesting it for"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;ask [someone] about [any known thing]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="quizzing it about"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;ask the/-- [narrator] for [anything]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="asking narrator for"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;ask the/-- [narrator] about [anything]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="asking narrator about"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;ask the/-- [narrator] about [text]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="quizzing narrator about"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;ask [someone] about [text]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="asking it about"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;ask [someone] for [text]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="imploring it for"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;ask about [text]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="implicit-asking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;ask for [text]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="implicit-imploring"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;attach&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;tie&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;attack [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="attacking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;awake&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;wake&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;awaken&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;wake&quot;"/>
+                <breakline/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;back&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="retreating"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;bite [someone]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="attacking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;bite [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="tasting"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;bless you&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="implicitly thanking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;break&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;attack&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;brief&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="preferring sometimes abbreviated room descriptions"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;burn [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="burning"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;buy [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="buying"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;bye&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="leavetaking"/>
+                <breakline/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;call for/-- a/-- waiter/waitress&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="calling a waiter"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;cappuccino&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="answering cappuccino"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;carry&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;take&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;check&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;examine&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;cheerio&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="leavetaking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;cheers&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="implicitly thanking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;cheese&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="answering cheese"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;chop&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;cut&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;clean&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;rub&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;clear&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;push&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;climb [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="climbing"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;climb up/over [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="climbing"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;climb on [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="climbing"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;close [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="closing"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;close up [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="closing"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;close off [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="switching off"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;coffee&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="answering coffee"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;consult [something] on/about [text]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="consulting it about"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;cover&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;close&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;crack&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;attack&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;cross&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;enter&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;cut [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="cutting"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;cut [something] with/using [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="cutting it with"/>
+                <breakline/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;dance&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="dancing"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;describe&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;examine&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;destroy&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;attack&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;discard&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;drop&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;display&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;show&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;disrobe&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;shed&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;dive&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="swimming in"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;dive in/into [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="swimming in"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;doff&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;shed&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;don&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;wear&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;drag&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;pull&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;dress [something] with [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="putting it on"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" (nouns reversed)"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;drink [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="drinking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;drink from [fluid container]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="drinking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;drop [things preferably held]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="dropping"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;drop [something preferably held] at/against [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="throwing it at"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;drop [other things] in/into/down [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="inserting it into"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;drop [other things] on/onto [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="putting it on"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;dust&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;rub&quot;"/>
+                <breakline/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;eat [something preferably held]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="eating"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;embrace&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;hug&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;empty [non-empty fluid container] in/into [fluid container]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="pouring it into"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;empty [fluid container] in/into [fluid container]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="pouring it into"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;empty [something] in/into [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="pouring it into"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;enter&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="entering"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;enter [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="entering"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;epistat [any thing]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="requesting epistemic status of"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;examine [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="examining"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;examine out [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="examining"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;examine [text]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="examining as a paper"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;exit&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="exiting"/>
+                <breakline/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;farewell&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="leavetaking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;fasten&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;tie&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;feed&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;give&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;feel&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;touch&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;fight&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;attack&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;fill [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="filling it with"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;fill [fluid container] with/from [full liquid source]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="filling it with"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;fill [fluid container] with/from [non-empty fluid container]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="filling it with"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;fill [fluid container] with/from [fluid container]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="filling it with"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;fill [something] with/from [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="filling it with"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;flip&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;turn&quot;"/>
+                <breakline/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;get out/off/down/up&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="exiting"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;get in/on&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="entering"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;get [things]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="taking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;get in/into/on/onto [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="entering"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;get off/down [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="getting off"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;get [things inside] from [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="removing it from"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;give [someone] [something preferably held]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="giving it to"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" (nouns reversed)"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;give [something preferably held] to [someone]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="giving it to"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;go&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="going"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;go back&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="retreating"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;go [direction]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="going"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;go [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="entering"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;go [down]stairs&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="going"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;go [down] stairs&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="going"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;go [up]stairs&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="going"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;go [up] stairs&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="going"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;go into/in/inside/through [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="entering"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;goodbye&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="leavetaking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;greet [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="saying hello to"/>
+                <breakline/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;hear [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="listening to"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;hello&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="hailing"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;help me/-- please/--&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="asking help"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;hi&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="hailing"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;hint&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;help&quot; "/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;hit&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;attack&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;hold&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;take&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;hop&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;jump&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;hug [someone]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="kissing"/>
+                <breakline/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;i&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;inventory&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;info&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;help&quot; "/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;insert [other things] in/into [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="inserting it into"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;inv&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;inventory&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;inventory&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="taking inventory"/>
+                <breakline/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;jump&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="jumping"/>
+                <breakline/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;kill&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;attack&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;kiss [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="kissing"/>
+                <breakline/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;l&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;look&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;leave&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;exit&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;lemon&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="answering lemon"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;light&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;burn&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;listen&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="listening to"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;listen to [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="listening to"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;lock [an unlocked lockable thing]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="locking keylessly"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;lock [a lockable thing]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="locking keylessly"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;lock [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="locking keylessly"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;lock [an unlocked lockable thing] with [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="locking it with"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;lock [a lockable thing] with [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="locking it with"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;lock [something] with [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="locking it with"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;look&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="looking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;look around&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="looking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;look [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="examining"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;look at [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="examining"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;look inside/in/into/through [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="searching"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;look under [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="looking under"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;look up [text] in [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="consulting it about"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" (nouns reversed)"/>
+                <breakline/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;milk&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="answering milk"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;mix [non-empty fluid container] in/into/with [fluid container]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="pouring it into"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;mix [fluid container] in/into/with [fluid container]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="pouring it into"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;mix [something] in/into/with [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="pouring it into"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;move&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;push&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;much obliged&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="implicitly thanking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;murder&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;attack&quot;"/>
+                <breakline/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;nap&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;sleep&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;no&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="saying no"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;normal&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="preferring sometimes abbreviated room descriptions"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;notify&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="switching score notification on"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;notify on&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="switching score notification on"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;notify off&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="switching score notification off"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;nouns&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="requesting the pronoun meanings"/>
+                <breakline/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;offer&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;give&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;open [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="opening"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;open [a locked lockable thing] with [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="unlocking it with"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;open [a lockable thing] with [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="unlocking it with"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;open [something] with [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="unlocking it with"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;out&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;exit&quot;"/>
+                <breakline/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;parser&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="parser-debugging"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;pay&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;give&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;pee&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;urinate&quot; "/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;pick up [things]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="taking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;pick [things] up&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="taking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;polish&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;rub&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;pour [non-empty fluid container] in/into/on/onto [fluid container]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="pouring it into"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;pour [fluid container] in/into/on/onto [fluid container]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="pouring it into"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;pour [something] in/into/on/onto [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="pouring it into"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;power on/-- [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="switching on"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;power off/down [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="switching off"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;power [something] on/--&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="switching on"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;power [something] off/down&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="switching off"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;present&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;show&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;press&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;push&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;pronouns&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="requesting the pronoun meanings"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;prune&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;cut&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;pull [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="pulling"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;punch&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;attack&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;purchase&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;buy&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;push [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="pushing"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;push [something] [direction]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="pushing it to"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;push [something] to [direction]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="pushing it to"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;put on [something preferably held]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="wearing"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;put [something preferably held] on&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="wearing"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;put down [things preferably held]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="dropping"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;put [things preferably held] down&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="dropping"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;put [passkey] on [keychain]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="putting it on"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;put [other things] in/inside/into [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="inserting it into"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;put [other things] on/onto [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="putting it on"/>
+                <breakline/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;q&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="quitting the game"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;quit&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="quitting the game"/>
+                <breakline/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;read [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="examining"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;read about [text] in [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="consulting it about"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" (nouns reversed)"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;read [text] in [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="consulting it about"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" (nouns reversed)"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;read [text]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="examining as a paper"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;remove [something preferably held]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="taking off"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;remove [things inside] from [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="removing it from"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;restart&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="restarting the game"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;restore&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="restoring the game"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;retreat&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="retreating"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;return&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="retreating"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;revert&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;turn&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;rise your/a/the/-- hand&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="calling a waiter"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;rotate&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;turn&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;rub [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="rubbing"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;rub the/my/-- hands&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="washing hands"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;rub the/my/-- hands in/with [sink-item]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="washing hands in"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;run&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;go&quot;"/>
+                <breakline/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;save&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="saving the game"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;say&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;answer&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;scale&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;climb&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;score&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="requesting the score"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;screw&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;turn&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;script&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="switching the story transcript on"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;script on&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="switching the story transcript on"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;script off&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="switching the story transcript off"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;scrub&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;rub&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;search [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="searching"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;set [something] to [text]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="setting it to"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;shed [something preferably held]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="taking off"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;shift&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;push&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;shine&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;rub&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;short&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="preferring abbreviated room descriptions"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;shout&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;answer&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;show [someone] [something preferably held]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="showing it to"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" (nouns reversed)"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;show [something preferably held] to [someone]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="showing it to"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;shut&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;close&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;sing&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="singing"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;sip&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;drink&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;sit on/down/--&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="entering"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;sit on/in/inside [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="entering"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;sit down on/-- [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="entering"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;sit on top of [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="entering"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;skip&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;jump&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;sleep&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="sleeping"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;slice&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;cut&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;smash&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;attack&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;smell&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="smelling"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;smell [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="smelling"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;sniff&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;smell&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;sorry&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="saying sorry"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;speak&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;answer&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;speck&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="answering speck"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;spread [something] on/over [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="spreading it on"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;squash&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;squeeze&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;squeeze [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="squeezing"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;stand&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="exiting"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;stand up&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="exiting"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;stand on [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="entering"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;suggest&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;help&quot; "/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;superbrief&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="preferring abbreviated room descriptions"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;swallow&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;drink&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;sweep&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;rub&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;swim&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="swimming in"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;swim in [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="swimming in"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;swing [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="swinging"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;swing on [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="swinging"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;switch [something switched on]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="switching off"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;switch [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="switching on"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;switch on [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="switching on"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;switch [something] on&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="switching on"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;switch [something] off&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="switching off"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;switch off [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="switching off"/>
+                <breakline/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;t [any known thing]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="implicit-informing"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;t [text]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="implicit-telling"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;ta&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="implicitly thanking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;take inventory&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="taking inventory"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;take [things]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="taking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;take off [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="taking off"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;take [something] off&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="taking off"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;take [things inside] from [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="removing it from"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;take [things inside] off [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="removing it from"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;talk about [any known thing]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="implicit-informing"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;talk to [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="saying hello to"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;taste [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="tasting"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;tea&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="answering tea"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;tell [someone] about [any known thing]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="informing it about"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;tell [someone] about [text]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="telling it about"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;tell [someone] that [text]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="answering it that"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;tell [someone] [text]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="answering it that"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;thank you/--&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="implicitly thanking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;thank you/-- [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="thanking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;thanks&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="implicitly thanking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;thanks again&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="implicitly thanking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;thanks a lot&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="implicitly thanking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;think&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="thinking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;throw&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;drop&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;thump&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;attack&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;tie [something] to [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="tying it to"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;tip&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;help&quot; "/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;tomato&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="answering tomato"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;topics&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="listing suggested topics"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;torture&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;attack&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;touch [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="touching"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;transcript&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="switching the story transcript on"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;transcript on&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="switching the story transcript on"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;transcript off&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="switching the story transcript off"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;turn [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="turning"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;turn [something] on&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="switching on"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;turn on [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="switching on"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;turn [something] off&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="switching off"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;turn off [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="switching off"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;twist&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;turn&quot;"/>
+                <breakline/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;uncover [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="opening"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;unlock [a locked lockable thing]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="unlocking keylessly"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;unlock [a lockable thing]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="unlocking keylessly"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;unlock [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="unlocking keylessly"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;unlock [a locked lockable thing] with [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="unlocking it with"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;unlock [a lockable thing] with [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="unlocking it with"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;unlock with [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="unlocking it with"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;unlockall&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="universal unlocking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;unscrew&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;turn&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;unwrap [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="opening"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;urinate&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="urinating into"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;urinate in/into/to/-- [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="urinating into"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;use wc/toilet/bowl&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="urinating into"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;use [a closed openable container]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="opening"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;use [an open openable container]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="closing"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;use [a switched off device]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="switching on"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;use [an open door]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="entering"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;use [an edible thing]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="eating"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;use [a wearable thing]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="wearing"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;use [a door]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="opening"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;use [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="using"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;use [something preferably held] on [a locked lockable thing]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="unlocking it with"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" (nouns reversed)"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;use [something preferably held] on [an unlocked lockable thing]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="locking it with"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" (nouns reversed)"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;use [something] to cut/chop [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="cutting it with"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" (nouns reversed)"/>
+                <breakline/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;verbose&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="preferring unabbreviated room descriptions"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;verify&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="verifying the story file"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;version&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="requesting the story file version"/>
+                <breakline/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;wait&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="waiting"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;wake&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="waking up"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;wake up&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="waking up"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;wake [someone]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="waking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;wake [someone] up&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="waking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;wake up [someone]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="waking"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;walk&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;go&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;wash the/my/-- hands&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="washing hands"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;wash the/my/-- hands in/with [sink-item]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="washing hands in"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;watch&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;examine&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;wave&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="waving hands"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;wave [something]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="waving"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;wear [something preferably held]&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="wearing"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;wee&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;urinate&quot; "/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;wipe&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;rub&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;wreck&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;attack&quot;"/>
+                <breakline/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;x&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;examine&quot;"/>
+                <breakline/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;y&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;yes&quot;"/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;yes&quot; - "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="saying yes"/>
+                <breakline/>
+                <breakline/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH="&quot;z&quot;, "/>
+                <ITEXT FONT="Gargoyle Serif Italic" FONTSIZE="8" FCOLOR="FromRtf#000000" CH="same as"/>
+                <ITEXT FONTSIZE="8" FCOLOR="FromRtf#000000" CH=" &quot;wait&quot;"/>
+                <para PARENT="comandi" LINESP="10"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="122.677795275591" YPOS="4224.40724409448" OwnPage="21" ItemID="242140480" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="122.677795275591" gYpos="2323.62141732283" gWidth="0" gHeight="0" PSTYLE="Default Paragraph Style" LAYER="0" NEXTITEM="242143312" BACKITEM="241125856"/>
+        <PAGEOBJECT XPOS="462.835275590552" YPOS="4224.40724409448" OwnPage="22" ItemID="242143312" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="802.992755905513" gYpos="1943.4642519685" gWidth="0" gHeight="0" PSTYLE="Default Paragraph Style" LAYER="0" NEXTITEM="250150896" BACKITEM="242140480"/>
+        <PAGEOBJECT XPOS="122.677795275591" YPOS="4604.56440944881" OwnPage="23" ItemID="250150896" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="122.677795275591" gYpos="2323.62141732283" gWidth="0" gHeight="0" PSTYLE="Default Paragraph Style" LAYER="0" NEXTITEM="238215424" BACKITEM="242143312"/>
+        <PAGEOBJECT XPOS="462.835275590552" YPOS="4604.56440944881" OwnPage="24" ItemID="238215424" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="802.992755905513" gYpos="1943.4642519685" gWidth="0" gHeight="0" PSTYLE="Default Paragraph Style" LAYER="0" NEXTITEM="238221088" BACKITEM="250150896"/>
+        <PAGEOBJECT XPOS="122.677795275591" YPOS="4984.72157480314" OwnPage="25" ItemID="238221088" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="122.677795275591" gYpos="2323.62141732283" gWidth="0" gHeight="0" PSTYLE="Default Paragraph Style" LAYER="0" NEXTITEM="238209760" BACKITEM="238215424"/>
+        <PAGEOBJECT XPOS="462.835275590552" YPOS="4984.72157480314" OwnPage="26" ItemID="238209760" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="802.992755905513" gYpos="1943.4642519685" gWidth="0" gHeight="0" PSTYLE="Default Paragraph Style" LAYER="0" NEXTITEM="238201264" BACKITEM="238221088"/>
+        <PAGEOBJECT XPOS="122.677795275591" YPOS="5364.87874015747" OwnPage="27" ItemID="238201264" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="122.677795275591" gYpos="2323.62141732283" gWidth="0" gHeight="0" PSTYLE="Default Paragraph Style" LAYER="0" NEXTITEM="238218256" BACKITEM="238209760"/>
+        <PAGEOBJECT XPOS="462.835275590552" YPOS="5364.87874015747" OwnPage="28" ItemID="238218256" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="802.992755905513" gYpos="1943.4642519685" gWidth="0" gHeight="0" PSTYLE="Default Paragraph Style" LAYER="0" NEXTITEM="238223920" BACKITEM="238201264"/>
+        <PAGEOBJECT XPOS="122.677795275591" YPOS="5745.0359055118" OwnPage="29" ItemID="238223920" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="122.677795275591" gYpos="2323.62141732283" gWidth="0" gHeight="0" PSTYLE="Default Paragraph Style" LAYER="0" NEXTITEM="238226752" BACKITEM="238218256"/>
+        <PAGEOBJECT XPOS="462.835275590552" YPOS="5745.0359055118" OwnPage="30" ItemID="238226752" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="802.992755905513" gYpos="1943.4642519685" gWidth="0" gHeight="0" PSTYLE="Default Paragraph Style" LAYER="0" NEXTITEM="238229584" BACKITEM="238223920"/>
+        <PAGEOBJECT XPOS="122.677795275591" YPOS="6125.19307086614" OwnPage="31" ItemID="238229584" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="122.677795275591" gYpos="2323.62141732283" gWidth="0" gHeight="0" PSTYLE="Default Paragraph Style" LAYER="0" NEXTITEM="238206928" BACKITEM="238226752"/>
+        <PAGEOBJECT XPOS="462.835275590552" YPOS="6125.19307086614" OwnPage="32" ItemID="238206928" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="802.992755905513" gYpos="1943.4642519685" gWidth="0" gHeight="0" PSTYLE="Default Paragraph Style" LAYER="0" NEXTITEM="238212592" BACKITEM="238229584"/>
+        <PAGEOBJECT XPOS="122.677795275591" YPOS="6505.35023622047" OwnPage="33" ItemID="238212592" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="122.677795275591" gYpos="2323.62141732283" gWidth="0" gHeight="0" PSTYLE="Default Paragraph Style" LAYER="0" NEXTITEM="238204096" BACKITEM="238206928"/>
+        <PAGEOBJECT XPOS="462.835275590552" YPOS="6505.35023622047" OwnPage="34" ItemID="238204096" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="802.992755905513" gYpos="1943.4642519685" gWidth="0" gHeight="0" PSTYLE="Default Paragraph Style" LAYER="0" NEXTITEM="-1" BACKITEM="238212592"/>
+        <PAGEOBJECT XPOS="462.835275590552" YPOS="3844.25007874015" OwnPage="20" ItemID="250236352" PTYPE="4" WIDTH="294.803149606299" HEIGHT="88.6971667479652" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 88.6972 L0 88.6972 L0 0 Z" copath="M0 0 L294.803 0 L294.803 88.6972 L0 88.6972 L0 0 Z" gXpos="802.992755905513" gYpos="1943.4642519685" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT CPARENT="Titolo" CH="List of available commands"/>
+                <para PARENT="Titolo"/>
+                <ITEXT CH="Below is a list of all the commands that the game recognises. Note that some of them are useless in this game."/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT CPARENT="Default Character Style" CH=" "/>
+                <para PARENT="Default Paragraph Style"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="122.677795275591" YPOS="3844.25007874015" OwnPage="19" ItemID="241128688" PTYPE="2" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.287893700787401" LOCALSCY="0.287893700787401" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="images/_3c8c8cbc-6316-4216-b4d1-bdd15d284fd1.jpeg" IRENDER="0" EMBEDDED="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="122.677795275591" gYpos="1943.4642519685" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="462.835275590552" YPOS="2323.62141732283" OwnPage="12" ItemID="250230688" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="462.835275590552" gYpos="422.835590551181" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="250233520" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FONT="Gargoyle Serif Bold" FONTSIZE="15" CH="How to play"/>
+                <para PARENT="Titolo"/>
+                <ITEXT CH="Interactive fiction understands many common verbs, as well as the names of objects that appear in the story. Most of what you type will have the pattern:"/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT CPARENT="prompt" CH="&gt; ACTION OBJECT"/>
+                <para PARENT="prompt"/>
+                <ITEXT CH="You may want to start by familiarizing yourself with your environment. You’ll receive a description of your surroundings each time you enter a new room. If you’d like to reread this description, you can see it again by typing "/>
+                <para/>
+                <ITEXT CPARENT="prompt" CH="&gt; LOOK"/>
+                <para PARENT="prompt"/>
+                <ITEXT CH="You can also read more about individual objects or people by typing, for instance,"/>
+                <para/>
+                <ITEXT CPARENT="prompt" CH="&gt; EXAMINE ME"/>
+                <para PARENT="prompt"/>
+                <ITEXT CH="which returns informations about yourself, or"/>
+                <para/>
+                <ITEXT CPARENT="prompt" CH="&gt; LOOK AT MONICA"/>
+                <para PARENT="prompt"/>
+                <ITEXT CH="to discover more about your girlfriend. Since you will be using it frequently, that EXAMINE command can also be abbreviated to just plain X, like:"/>
+                <para/>
+                <ITEXT CPARENT="prompt" CH="&gt; X TABLE"/>
+                <para PARENT="prompt"/>
+                <ITEXT CH="Soon you may want to explore a bit. Often you can move by typing compass directions: "/>
+                <para/>
+                <ITEXT CPARENT="prompt" CH="&gt; GO NORTH"/>
+                <para PARENT="prompt"/>
+                <ITEXT CH="for instance, or just N. It is common, though not universal, to understand eight compass directions as well as IN, OUT, UP and DOWN. The “status bar” line at the top of the screen contains information about where you are, as well."/>
+                <para PARENT="prompt"/>
+                <ITEXT CH="The items you find are props you can use to make things happen. Many of them work in the way you might expect, given your experiences in daily life; others have special properties unique to the story. Many of these you will be able to TAKE, DROP, or PUT ON or IN other objects."/>
+                <para/>
+                <ITEXT CPARENT="prompt" CH="&gt; TAKE GLASS"/>
+                <para PARENT="prompt"/>
+                <ITEXT CPARENT="prompt" CH="&gt; DROP TOVEL"/>
+                <para PARENT="prompt"/>
+                <ITEXT CPARENT="prompt" CH="&gt; PUT SPECK ON PLATE"/>
+                <para PARENT="prompt"/>
+                <ITEXT CPARENT="prompt" CH="&gt; PUT ROOM KEY IN FRONT LEFT POCKET"/>
+                <para PARENT="prompt"/>
+                <ITEXT CH="Once you’ve acquired a few objects, you can also "/>
+                <para/>
+                <ITEXT CPARENT="prompt" CH="&gt; TAKE INVENTORY"/>
+                <para PARENT="prompt"/>
+                <ITEXT CH="(or just type I for short) and get a list of things you’re carrying."/>
+                <para/>
+                <ITEXT CH="There’s lots to do with objects besides move them around, of course. Some can also be worn, eaten, opened, unlocked, and so on. Devices can be turned on and turned off. Topics of study can be looked up in books and reference works."/>
+                <para/>
+                <ITEXT CH="In addition to objects, you may encounter other characters. These may have all sorts of roles, some of them are there to talk to. You can:"/>
+                <para/>
+                <ITEXT CPARENT="prompt" CH="&gt; KISS MONICA"/>
+                <para PARENT="prompt"/>
+                <ITEXT CPARENT="prompt" CH="&gt; SHOW CARD TO THE RECEPTIONIST"/>
+                <para PARENT="prompt"/>
+                <ITEXT CPARENT="prompt" CH="&gt; GIVE GLASS TO MONICA"/>
+                <para PARENT="prompt"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="122.677795275591" YPOS="2323.62141732283" OwnPage="11" ItemID="242147168" PTYPE="2" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.287893700787401" LOCALSCY="0.287893700787401" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="images/_094fb41c-906c-431d-8045-43ab552f8cb3.jpeg" IRENDER="0" EMBEDDED="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="122.677795275591" gYpos="422.835590551181" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="122.677795275591" YPOS="2703.77858267717" OwnPage="13" ItemID="250233520" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="122.677795275591" gYpos="2703.77858267717" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="250242016" BACKITEM="250230688"/>
+        <PAGEOBJECT XPOS="462.835275590552" YPOS="2703.77858267717" OwnPage="14" ItemID="250242016" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="122.677795275591" gYpos="2703.77858267717" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="250239184" BACKITEM="250233520"/>
+        <PAGEOBJECT XPOS="122.677795275591" YPOS="3083.9357480315" OwnPage="15" ItemID="250239184" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="122.677795275591" gYpos="2703.77858267717" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="250227856" BACKITEM="250242016"/>
+        <PAGEOBJECT XPOS="462.835275590552" YPOS="3083.9357480315" OwnPage="16" ItemID="250227856" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="122.677795275591" gYpos="2703.77858267717" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="250244848" BACKITEM="250239184"/>
+        <PAGEOBJECT XPOS="122.677795275591" YPOS="3464.09291338583" OwnPage="17" ItemID="250244848" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="122.677795275591" gYpos="2703.77858267717" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="250219360" BACKITEM="250227856"/>
+        <PAGEOBJECT XPOS="462.835275590552" YPOS="3464.09291338583" OwnPage="18" ItemID="250219360" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="122.677795275591" gYpos="2703.77858267717" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="250244848"/>
+    </DOCUMENT>
+</SCRIBUSUTF8NEW>

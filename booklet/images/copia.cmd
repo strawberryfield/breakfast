@@ -1,0 +1,13 @@
+copy c:\users\rober\Pictures\breakfast\paper3.jpeg .
+copy c:\users\rober\Pictures\breakfast\_9fe10314-7d99-409f-b2e8-e6774e688edc.jpeg .
+copy c:\users\rober\Pictures\breakfast\_8b02b8e5-a776-463b-91b6-5f57dc7fd1b4.jpeg .
+copy c:\users\rober\Pictures\breakfast\_ea89a5c7-988f-4762-8902-eeb5cae5b089.jpeg .
+copy c:\users\rober\Pictures\breakfast\_5f180cc5-3313-49af-b2ab-a4913e51a266.jpeg .
+copy c:\users\rober\Pictures\breakfast\_98d68a9d-1b37-478d-876c-3de2e55b3500.jpeg .
+copy c:\users\rober\Pictures\breakfast\_ca6d9af4-d91e-46ea-8ebe-1c489346402c.jpeg .
+copy c:\users\rober\Pictures\breakfast\_59bd28ce-0738-4516-a2fc-2b84d42de4f1.jpeg .
+copy c:\users\rober\Pictures\breakfast\_bfdebbbb-c1f4-4728-b1a3-e83dcfe5d549.jpeg .
+copy c:\users\rober\Pictures\breakfast\_5cf97b16-997c-4be5-badb-bfeb2146841a.jpeg .
+copy c:\users\rober\Pictures\breakfast\_1c814f85-5409-4e01-a555-c5fa68304cfd.jpeg .
+copy c:\users\rober\Pictures\rhorses\_3c8c8cbc-6316-4216-b4d1-bdd15d284fd1.jpeg   .
+copy c:\users\rober\Pictures\breakfast\_094fb41c-906c-431d-8045-43ab552f8cb3.jpeg .
