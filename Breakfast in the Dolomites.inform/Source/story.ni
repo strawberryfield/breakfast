@@ -961,7 +961,8 @@ To say available hot drinks:
 The main-order node is a order-convnode.
 Node-introduction for main-order node:
 	say "[/ss]May I serve you a hot beverage?' [main question introduction]";
-	say "[/ss1]I can offer you [available hot drinks].' [/r][/n]".
+	say "[/ss1]I can offer you [available hot drinks].' [/r][/n]";
+	Monica urges buffet never.
 
 The coffee-order node is an order-convnode.
 Node-introduction for coffee-order node:
@@ -1015,7 +1016,8 @@ Response for main-order node when saying no:
 	say "[leavenode][/ss]If you want something hot later, don't hesitate to call me or my colleague.' [/se][the naming of current interlocutor] [say] and [go] away. [/n]";
 	now the node of the current interlocutor is the null-node;
 	now the current interlocutor is nothing;
-	now ordering-trigger is false.
+	now ordering-trigger is false;
+	Monica urges buffet in 0 turns from now.
 Response for main-order node when saying yes:
 	say "[/ss]Well!' [/se][regarding current interlocutor][they] [say] and then [ask]: [/ss1]What do you prefer?' [/r][/n]".
 	
@@ -1373,7 +1375,10 @@ To decide whether the player can make order:
 		say "[alert][/ss]You have [a list of non-empty hot drink containers on the table] to drink.' [/se][Monica] [say] [/ss1]First drink it.' [/r][/n]";
 		decide no;
 	decide yes;
-	
+
+Response of a waiter when asked for "hot drink/drinks/beverage":
+	if the player can make order:
+		setnode main-order node.
 Response of a waiter when asked for "coffee":
 	if the player can make order:
 		if coffee-based can be ordered, setnode coffee-order node.
@@ -2857,7 +2862,28 @@ At the time when Monica eats jam:
 At the time when Monica drinks orange juice:
 	say "[Monica] [take] [their] [Monica-glass] and [drink] the juice.";
 	now the fluid content of Monica-glass is 0 cc;
-	say "After drinking [Monica] [put] [the Monica-glass] on the table again."	
+	say "After drinking [Monica] [put] [the Monica-glass] on the table again.";
+	if order hot drinks completed:
+		if extracted juice completed:
+			if used wc completed:
+				do nothing;
+			otherwise:
+				Monica urges wc in 2 turns from now;
+		otherwise:
+			Monica urges juicer in 1 turn from now;
+	otherwise:
+		Monica urges order in 0 turns from now	
+		
+Section 4.4.3.3 - Tasks requests
+
+At the time when Monica urges wc:
+	do nothing.
+	
+At the time when Monica urges juicer:
+	do nothing.
+	
+At the time when Monica urges order:
+	do nothing.
 	
 Chapter 4.4.4 - Ordering
 
@@ -2957,6 +2983,7 @@ Eat buffet	false
 Drunk cold drinks	false
 Got cooked egg	false
 Extracted juice	false
+Used wc	false
 
 Book 5.2 - Table of food limits
 
