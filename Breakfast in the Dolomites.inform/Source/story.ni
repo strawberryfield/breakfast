@@ -962,7 +962,8 @@ The main-order node is a order-convnode.
 Node-introduction for main-order node:
 	say "[/ss]May I serve you a hot beverage?' [main question introduction]";
 	say "[/ss1]I can offer you [available hot drinks].' [/r][/n]";
-	Monica urges buffet never.
+	Monica urges buffet never;
+	Monica urges order never.
 
 The coffee-order node is an order-convnode.
 Node-introduction for coffee-order node:
@@ -1017,7 +1018,8 @@ Response for main-order node when saying no:
 	now the node of the current interlocutor is the null-node;
 	now the current interlocutor is nothing;
 	now ordering-trigger is false;
-	Monica urges buffet in 0 turns from now.
+	Monica urges buffet in 0 turns from now;
+	Monica urges order in 1 turn from now.
 Response for main-order node when saying yes:
 	say "[/ss]Well!' [/se][regarding current interlocutor][they] [say] and then [ask]: [/ss1]What do you prefer?' [/r][/n]".
 	
@@ -2483,9 +2485,9 @@ Instead of kissing something:
 		say "[heart][/ss][one of]On dear[or]I love you[at random]!' [/se][regarding the noun][they] [whisper] sweetly in your ear.";
 		if kisses-count is three, say narrator love kissing;
 		stop the action;
-	if the noun is a female person, say "[alert][/ss]I'm here to be kissed!' [/se][Monica] [scold] you." instead;
-	if the noun is a male person, say "[/ss]Do you like men now?' [/se]amazed [Monica] [ask] you." instead;
-	say "[/ss]Hold the kisses for me!' [/se][Monica] [scold] you.".
+	if the noun is a female person, say "[alert][/ss]I'm here to be kissed!' [/se][Monica] [scold] [us]." instead;
+	if the noun is a male person, say "[/ss]Do you like men now?' [/se]amazed [Monica] [ask] [us]." instead;
+	say "[/ss]Hold the kisses for me!' [/se][Monica] [scold] [us].".
 
 Persuasion rule for asking Monica to try kissing something:
 	if the noun is the player:
@@ -2733,21 +2735,26 @@ After going to the buffet:
 When First buffet access begins:
 	say "[Monica] [if Monica is enclosed by the bench][stand] up and [end if][follow] [us] at the buffet. [/n]";
 	now Monica is in the buffet;
-	Monica takes a dish in 1 turn from now.
+	Monica takes a dish in 2 turn from now.
 	
 When First buffet access ends:
-	say "[Monica] [return] with [us] in the dining room and [regarding Monica][sit] on the bench. [/n]Then she [put] the dishes and the glass she [have] brought from the buffet on the table.";
+	say "[Monica] [return] with [us] in the dining room and [regarding Monica][sit] on the bench.";
 	now Monica is on the bench;
-	now Monica-dish is on the table;
-	now Monica-egg-dish is on the table;
-	now Monica-glass is on the table;
 	Monica invites to sit in 1 turn from now;
-	Monica eats egg in 1 turn from now.
+	if the number of things carried by Monica is greater than zero:
+		say "Then she [put] the dishes and the glass she [have] brought from the buffet on the table.";
+		now Monica-dish is on the table;
+		now Monica-egg-dish is on the table;
+		now Monica-glass is on the table;
+		Monica eats egg in 1 turn from now.
 	
 Before going somewhere from the buffet during First buffet access:
 	if egg-cooking-trigger is true, continue the action;
 	if the number of things carried by the player is zero:
+		if the number of things carried by Monica is greater than zero:
+			say "[heart][/ss]Get yourself something to eat too.' [/se][Monica] [suggest]." instead;
 		say "[/ss]I don't understand why you didn't take anything.' [/se][Monica] [ask]. [/n]";
+		monica takes a dish never;
 		mark visit buffet as not done;
 		now buffet-trigger is false; 
 		continue the action;
@@ -2773,12 +2780,13 @@ Section 4.4.3.1 - Monica actions in the buffet
 Monica-dish is an object that varies.
 Monica getting food is a truth state that varies.
 At the time when Monica takes a dish:
-	now Monica getting food is true;
-	say "[Monica] [take] a dish from the cupboard.";
-	now Monica-dish is a random dish on the cupboard;
-	now the owner of Monica-dish is Monica;
-	now Monica carries Monica-dish;
-	Monica takes bread in zero turn from now.
+	if Monica is in the buffet:
+		now Monica getting food is true;
+		say "[Monica] [take] a dish from the cupboard.";
+		now Monica-dish is a random dish on the cupboard;
+		now the owner of Monica-dish is Monica;
+		now Monica carries Monica-dish;
+		Monica takes bread in zero turn from now.
 
 To Monica gets (current item - a thing):
 	now the owner of the current item is Monica;
@@ -2851,8 +2859,14 @@ At the time when Monica spreads jam:
 	let the current bread be a random bread-slice on the Monica-dish;
 	silently try Monica spreading the current jam on the current bread;
 	say "[Monica] [spread] [the current jam] over the buttered [printed name of current bread].";
+	Monica throws jar in 0 turns from now.
+
+At the time when Monica throws jar:
+	let the current jar be a random single portion jar on the Monica-dish;
+	now the current jar is in the round plastic container;
+	say "[Monica] [throw] [the current jar] in the round plastic container.";
 	Monica eats jam in 0 turns from now.
-	
+		
 At the time when Monica eats jam:
 	let the current bread be a random bread-slice on the Monica-dish;
 	try Monica eating the current bread;
@@ -2873,17 +2887,27 @@ At the time when Monica drinks orange juice:
 			Monica urges juicer in 1 turn from now;
 	otherwise:
 		Monica urges order in 0 turns from now	
-		
+
+After the player spreading something on:
+	Monica throws your jar in 1 turn from now;
+	continue the action.
+	
+At the time when Monica throws your jar:
+	let the current jar be a random empty single portion jar on a dish;
+	unless the current jar is nothing:
+		now the current jar is in the round plastic container;
+		say "[alert][/ss]Next time be tidier!' [/se][Monica] [say] throwing your [current jar] in the round plastic container.".
+			
 Section 4.4.3.3 - Tasks requests
 
 At the time when Monica urges wc:
 	do nothing.
 	
-At the time when Monica urges juicer:
-	do nothing.
-	
 At the time when Monica urges order:
-	do nothing.
+	unless order hot drinks completed:
+		if the location is the dining room:
+			say "[/ss]Why don't we order something hot to drink?' [/se][Monica] [ask].";
+		Monica urges order in 1 turn from now.
 	
 Chapter 4.4.4 - Ordering
 
@@ -2954,6 +2978,51 @@ At the time when Monica gets egg:
 Before going somewhere during Monica egg cooking:
 	say "[/ss]Don't go away!' [/se][Monica] [draw] [our] attention: [/ss1]I'm waiting for [a list of things on the Monica-egg-dish].' [/r][/n]" instead.
 	
+Chapter 4.4.6 - Juice for Monica
+
+Juice for Monica is a scene.
+Monica-juice-trigger is a truth state that varies.
+Juice for Monica begins when Monica-juice-trigger is true.
+Juice for Monica ends when Monica-juice-trigger is false.
+
+When Juice for Monica ends:
+	say "[We] [return] at your table and [put] [the Monica-glass] in front of [Monica].";
+	now the Monica-glass is on the table;
+	say "[/ss]Here is your [liquid of the Monica-glass].' [/se][we] [say] to [Monica].";
+	unless kisses-count is less than kisses-limit, now kisses-count is kisses-limit minus two;
+	say "[Monica] [smile] and [kiss] [us].";
+	try kissing Monica;
+	Monica drinks orange juice in 1 turn from now.
+	
+Section 4.4.6.1 - Starting event
+
+At the time when Monica urges juicer:
+	unless extracted juice completed:
+		if the location of the player is the dining room and can leave the table:
+			now the current interlocutor is Monica;
+			setnode ask-for-juice node;
+		otherwise:
+			Monica urges juicer in 1 turn from now.
+	
+Section 4.4.6.2 - Conversation
+
+The ask-for-juice node is a closed, not auto-suggesting convnode.
+Node-introduction for ask-for-juice node:
+	say "[heart][/ss]There was a juice extractor at the buffet, I would love to try one of those juices.' [/se][Monica] [say] looking at you with sweet love eyes [/ss1]Would you be so kind as to bring me one?' [/r][/n]".
+		
+Default answer response for ask-for-juice node:
+	say "[/ss]It is completely useless to try to change the subject, you know you can give me only one answer.' [/se][Monica] [say] pointing a finger at you."
+Response for ask-for-juice node when saying no:
+	say "[alert][/ss]How unpleasant you are this morning!' [/se][Monica] [scold] [us] [/ss1]Don't you want to do a kindness to your girlfriend who loves you so much?' [/r][/n]".	
+Response for ask-for-juice node when saying yes:
+	say "[leavenode][heart][/ss]My love!' [/se][Monica] [reply] caressing [us] [/ss1]You can choose the vegetable.' [/r][/n]";
+	say "[We] [stand] up and [go] to the buffet; [Monica] [send] [us] a kiss. [heart][/n]";
+	now the player is in the buffet;
+	now Monica-juice-trigger is true.
+	
+Rule for printing a parser error when the latest parser error is the not a verb I recognise error and the current node is ask-for-juice node:
+	abide by the default answer response rules for the current node.
+
 Volume 5 - Internal db
 
 Book 5.1 - Table of tasks

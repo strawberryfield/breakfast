@@ -237,6 +237,7 @@ To revolve is a verb.
 To scold is a verb.
 To scrabble is a verb. 
 To scramble is a verb. 
+To send is a verb.
 To shake is a verb. 
 To shatter is a verb. 
 To shift is a verb. 
@@ -247,6 +248,7 @@ To shy is a verb.
 To sit is a verb.
 To slap is a verb.
 To slip is a verb. 
+To smile is a verb.
 To spread is a verb.
 To stand is a verb.
 To stare is a verb. 
