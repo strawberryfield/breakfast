@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SCRIBUSUTF8NEW Version="1.6.1">
+    <DOCUMENT ANZPAGES="8" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" PRESET="0" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" ORIENTATION="0" PAGESIZE="Custom" FIRSTNUM="1" BOOK="1" AUTOSPALTEN="1" ABSTSPALTEN="11" UNITS="1" DFONT="Arial Regular" DSIZE="12" DCOL="1" DGAP="0" TabFill="" TabWidth="36" TextDistLeft="0" TextDistRight="0" TextDistBottom="0" TextDistTop="0" FirstLineOffset="1" AUTHOR="" COMMENTS="" KEYWORDS="" PUBLISHER="" DOCDATE="" DOCTYPE="" DOCFORMAT="" DOCIDENT="" DOCSOURCE="" DOCLANGINFO="" DOCRELATION="" DOCCOVER="" DOCRIGHTS="" DOCCONTRIB="" TITLE="" SUBJECT="" VHOCH="33" VHOCHSC="66" VTIEF="33" VTIEFSC="66" VKAPIT="75" BASEGRID="14.4" BASEO="0" AUTOL="100" UnderlinePos="-1" UnderlineWidth="-1" StrikeThruPos="-1" StrikeThruWidth="-1" GROUPC="1" HCMS="0" DPSo="0" DPSFo="0" DPuse="0" DPgam="0" DPbla="1" DPPr="ISO Coated v2 300% (basICColor)" DPIn="sRGB display profile (ICC v2.2)" DPInCMYK="ISO Coated v2 300% (basICColor)" DPIn2="sRGB display profile (ICC v2.2)" DPIn3="ISO Coated v2 300% (basICColor)" DISc="1" DIIm="0" ALAYER="0" LANGUAGE="it" AUTOMATIC="1" AUTOCHECK="0" GUIDELOCK="0" SnapToGuides="0" SnapToGrid="0" SnapToElement="0" MINGRID="20.001" MAJGRID="100.001" SHOWGRID="0" SHOWGUIDES="1" showcolborders="1" SHOWFRAME="1" SHOWControl="0" SHOWLAYERM="0" SHOWMARGIN="1" SHOWBASE="0" SHOWPICT="1" SHOWLINK="0" rulerMode="1" showrulers="1" showBleed="1" rulerXoffset="0" rulerYoffset="0" GuideRad="10" GRAB="4" POLYC="4" POLYF="0.502" POLYR="0" POLYIR="0" POLYCUR="0" POLYOCUR="0" POLYS="0" arcStartAngle="30" arcSweepAngle="300" spiralStartAngle="0" spiralEndAngle="1080" spiralFactor="1.2" AutoSave="1" AutoSaveTime="600000" AutoSaveCount="1" AutoSaveKeep="0" AUtoSaveInDocDir="1" AutoSaveDir="" ScratchBottom="20.001" ScratchLeft="100.001" ScratchRight="100.001" ScratchTop="20.001" GapHorizontal="0" GapVertical="40" StartArrow="0" EndArrow="0" PEN="Black" BRUSH="None" PENLINE="Black" PENTEXT="Black" StrokeText="Black" TextBackGround="None" TextLineColor="None" TextBackGroundShade="100" TextLineShade="100" TextPenShade="100" TextStrokeShade="100" STIL="1" STILLINE="1" WIDTH="1" WIDTHLINE="1" PENSHADE="100" LINESHADE="100" BRUSHSHADE="100" CPICT="None" PICTSHADE="100" CSPICT="None" PICTSSHADE="100" PICTSCX="1" PICTSCY="1" PSCALE="1" PASPECT="1" EmbeddedPath="0" HalfRes="1" dispX="10.001" dispY="10.001" constrain="15" MINORC="#00ff00" MAJORC="#00ff00" GuideC="#000080" BaseC="#c0c0c0" renderStack="2 0 4 1 3" GridType="0" PAGEC="#ffffff" MARGC="#0000ff" RANDF="0" currentProfile="PDF 1.4" calligraphicPenFillColor="Black" calligraphicPenLineColor="Black" calligraphicPenFillColorShade="100" calligraphicPenLineColorShade="100" calligraphicPenLineWidth="1" calligraphicPenAngle="0" calligraphicPenWidth="10" calligraphicPenStyle="1">
+        <CheckProfile Name="PDF 1.3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF 1.4" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF 1.5" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF 1.6" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="0" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF/X-1a" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="1" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF/X-3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="1" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF/X-4" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="1" checkFontNotEmbedded="1" checkFontIsOpenType="0" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PostScript" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="0" checkFontIsOpenType="0" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <COLOR NAME="Black" SPACE="CMYK" C="0" M="0" Y="0" K="100"/>
+        <COLOR NAME="FromRtf#000000" SPACE="RGB" R="0" G="0" B="0"/>
+        <COLOR NAME="Registration" SPACE="CMYK" C="100" M="100" Y="100" K="100" Register="1"/>
+        <COLOR NAME="White" SPACE="CMYK" C="0" M="0" Y="0" K="0"/>
+        <COLOR NAME="cover black" SPACE="RGB" R="2" G="13" B="17"/>
+        <COLOR NAME="cover light brown" SPACE="RGB" R="237" G="190" B="156"/>
+        <HYPHEN/>
+        <CHARSTYLE CNAME="Default Character Style" DefaultStyle="1" FONT="Arial Regular" FONTSIZE="12" FONTFEATURES="" FEATURES="inherit" FCOLOR="Black" FSHADE="100" HyphenWordMin="3" SCOLOR="Black" BGCOLOR="None" BGSHADE="100" SSHADE="100" TXTSHX="5" TXTSHY="-5" TXTOUT="1" TXTULP="-0.1" TXTULW="-0.1" TXTSTP="-0.1" TXTSTW="-0.1" SCALEH="100" SCALEV="100" BASEO="0" KERN="0" LANGUAGE="it"/>
+        <CHARSTYLE CNAME="Testo4_Numbering Symbols" CPARENT="Default Character Style" FONT="Liberation Serif Regular" FONTSIZE="10" FEATURES="inherit" FCOLOR="Black" BGCOLOR="None"/>
+        <CHARSTYLE CNAME="Testo4_Bullet Symbols" CPARENT="Default Character Style" FONT="OpenSymbol Regular" FONTSIZE="10" FEATURES="inherit" FCOLOR="Black" BGCOLOR="None"/>
+        <CHARSTYLE CNAME="Default Character Style (2)" FONT="Gargoyle Serif Regular" FONTSIZE="9" FONTFEATURES="-clig" FEATURES="inherit" FCOLOR="Black" FSHADE="100" HyphenWordMin="3" SCOLOR="Black" BGCOLOR="None" BGSHADE="100" SSHADE="100" TXTSHX="5" TXTSHY="-5" TXTOUT="1" TXTULP="-0.1" TXTULW="-0.1" TXTSTP="-0.1" TXTSTW="-0.1" SCALEH="100" SCALEV="100" BASEO="0" KERN="0" LANGUAGE="it"/>
+        <STYLE NAME="Default Paragraph Style" DefaultStyle="1" ALIGN="0" DIRECTION="0" LINESPMode="0" LINESP="15" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" ParagraphEffectOffset="0" DROP="0" DROPLIN="2" Bullet="0" Numeration="0" HyphenConsecutiveLines="2" BCOLOR="None" BSHADE="100"/>
+        <STYLE NAME="Testo4_Standard" PARENT="Testo4_Default Paragraph Style" ALIGN="0" LINESPMode="1" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None" FONT="Liberation Serif Regular" FONTSIZE="12" FEATURES="inherit" FCOLOR="Black" BGCOLOR="None"/>
+        <STYLE NAME="Testo4_Heading" PARENT="Testo4_Standard" ALIGN="0" LINESPMode="1" INDENT="0" RMARGIN="0" FIRST="0" VOR="11.9905511811024" NACH="6.00944881889764" BCOLOR="None" FONT="Liberation Sans Regular" FONTSIZE="14" FEATURES="inherit" FCOLOR="Black" BGCOLOR="None"/>
+        <STYLE NAME="Testo4_Text body" PARENT="Testo4_Standard" ALIGN="0" LINESPMode="1" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None" FONT="Gargoyle Serif Regular" FONTSIZE="11" FEATURES="inherit" FCOLOR="Black" BGCOLOR="None"/>
+        <STYLE NAME="Testo4_List" PARENT="Testo4_Text body" ALIGN="0" LINESPMode="1" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None" FONT="Gargoyle Serif Regular" FONTSIZE="11" FEATURES="inherit" FCOLOR="Black" BGCOLOR="None"/>
+        <STYLE NAME="Testo4_Caption" PARENT="Testo4_Standard" ALIGN="0" LINESPMode="1" INDENT="0" RMARGIN="0" FIRST="0" VOR="6.00944881889764" NACH="6.00944881889764" BCOLOR="None" FONT="Liberation Serif Italic" FONTSIZE="12" FEATURES="inherit" FCOLOR="Black" BGCOLOR="None"/>
+        <STYLE NAME="Testo4_Index" PARENT="Testo4_Standard" ALIGN="0" LINESPMode="1" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None" FONT="Liberation Serif Regular" FONTSIZE="12" FEATURES="inherit" FCOLOR="Black" BGCOLOR="None"/>
+        <STYLE NAME="Testo4_Title" PARENT="Testo4_Heading" ALIGN="1" LINESPMode="1" INDENT="0" RMARGIN="0" FIRST="0" VOR="11.9905511811024" NACH="6.00944881889764" BCOLOR="None" FONT="Liberation Sans Bold" FONTSIZE="28" FEATURES="inherit" FCOLOR="Black" BGCOLOR="None"/>
+        <STYLE NAME="Testo4_Heading 4" PARENT="Testo4_Heading" ALIGN="0" LINESPMode="1" INDENT="0" RMARGIN="0" FIRST="0" VOR="14.1448818897638" NACH="0" BCOLOR="None" FONT="Gargoyle Serif Bold Italic" FONTSIZE="13" FEATURES="inherit" FCOLOR="Black" BGCOLOR="None"/>
+        <STYLE NAME="Testo4_Heading 2" PARENT="Testo4_Heading" ALIGN="0" LINESPMode="1" INDENT="0" RMARGIN="0" FIRST="0" VOR="10.0062992125984" NACH="6.00944881889764" BCOLOR="None" FONT="Liberation Sans Bold" FONTSIZE="16" FEATURES="inherit" FCOLOR="Black" BGCOLOR="None"/>
+        <STYLE NAME="Testo4_Quotations" PARENT="Testo4_Standard" ALIGN="0" LINESPMode="1" INDENT="28.3464566929134" RMARGIN="28.3464566929134" FIRST="0" VOR="0" NACH="14.1448818897638" BCOLOR="None" FONT="Liberation Serif Regular" FONTSIZE="12" FEATURES="inherit" FCOLOR="Black" BGCOLOR="None"/>
+        <STYLE NAME="Testo4_Preformatted Text" PARENT="Testo4_Standard" ALIGN="0" LINESPMode="1" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None" FONT="Liberation Mono Regular" FONTSIZE="10" FEATURES="inherit" FCOLOR="Black" BGCOLOR="None"/>
+        <STYLE NAME="Testo4_Heading 1" PARENT="Testo4_Heading" ALIGN="0" LINESPMode="1" INDENT="0" RMARGIN="0" FIRST="0" VOR="11.9905511811024" NACH="6.00944881889764" BCOLOR="None" FONT="Liberation Sans Bold" FONTSIZE="18" FEATURES="inherit" FCOLOR="Black" BGCOLOR="None"/>
+        <STYLE NAME="Testo4_Heading 3" PARENT="Testo4_Heading" ALIGN="0" LINESPMode="1" INDENT="0" RMARGIN="0" FIRST="0" VOR="7.00157480314961" NACH="6.00944881889764" BCOLOR="None" FONT="Liberation Sans Bold" FONTSIZE="14" FEATURES="inherit" FCOLOR="Black" BGCOLOR="None"/>
+        <STYLE NAME="Default Paragraph Style (2)" ALIGN="0" DIRECTION="0" LINESPMode="1" LINESP="14" INDENT="0" RMARGIN="0" FIRST="8.50393700787402" VOR="0" NACH="7" ParagraphEffectOffset="0" DROP="0" DROPLIN="2" Bullet="0" Numeration="0" HyphenConsecutiveLines="2" BCOLOR="None" BSHADE="100"/>
+        <TableStyle NAME="Default Table Style" DefaultStyle="1" FillColor="None" FillShade="100">
+            <TableBorderLeft>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderLeft>
+            <TableBorderRight>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderRight>
+            <TableBorderTop>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderTop>
+            <TableBorderBottom>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderBottom>
+        </TableStyle>
+        <CellStyle NAME="Default Cell Style" DefaultStyle="1" FillColor="None" FillShade="100" LeftPadding="1" RightPadding="1" TopPadding="1" BottomPadding="1">
+            <TableBorderLeft>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderLeft>
+            <TableBorderRight>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderRight>
+            <TableBorderTop>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderTop>
+            <TableBorderBottom>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderBottom>
+        </CellStyle>
+        <LAYERS NUMMER="0" LEVEL="0" NAME="Sfondo" SICHTBAR="1" DRUCKEN="1" EDIT="1" SELECT="0" FLOW="1" TRANS="1" BLEND="0" OUTL="0" LAYERC="#000000"/>
+        <Printer firstUse="1" toFile="0" useAltPrintCommand="0" outputSeparations="0" useSpotColors="1" useColor="1" mirrorH="0" mirrorV="0" useICC="0" doGCR="0" doClip="0" setDevParam="0" useDocBleeds="1" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" includePDFMarks="1" PSLevel="3" PrintEngine="4" markLength="20.0013" markOffset="0" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" printer="Microsoft Print to PDF" filename="" separationName="All" printerCommand=""/>
+        <PDF firstUse="1" Thumbnails="0" Articles="0" Bookmarks="0" Compress="1" CMethod="0" Quality="0" EmbedPDF="0" MirrorH="0" MirrorV="0" Clip="0" rangeSel="0" rangeTxt="" RotateDeg="0" PresentMode="0" RecalcPic="0" FontEmbedding="0" Grayscale="0" RGBMode="1" UseProfiles="0" UseProfiles2="0" Binding="0" PicRes="300" Resolution="300" Version="14" Intent="1" Intent2="0" SolidP="sRGB display profile (ICC v2.2)" ImageP="sRGB display profile (ICC v2.2)" PrintP="ISO Coated v2 300% (basICColor)" InfoString="" BTop="0" BLeft="0" BRight="0" BBottom="0" useDocBleeds="1" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" docInfoMarks="0" markLength="20.0012598425197" markOffset="0" ImagePr="0" PassOwner="" PassUser="" Permissions="-4" Encrypt="0" UseLayers="0" UseLpi="0" UseSpotColors="1" doMultiFile="0" displayBookmarks="0" displayFullscreen="0" displayLayers="0" displayThumbs="0" hideMenuBar="0" hideToolBar="0" fitWindow="0" openAfterExport="0" PageLayout="0" openAction="">
+            <LPI Color="" Frequency="0" Angle="0" SpotFunction="0"/>
+            <LPI Color="Black" Frequency="133" Angle="45" SpotFunction="3"/>
+            <LPI Color="Cyan" Frequency="133" Angle="105" SpotFunction="3"/>
+            <LPI Color="Magenta" Frequency="133" Angle="75" SpotFunction="3"/>
+            <LPI Color="Yellow" Frequency="133" Angle="90" SpotFunction="3"/>
+        </PDF>
+        <DocItemAttributes/>
+        <TablesOfContents/>
+        <NotesStyles>
+            <notesStyle Name="Default" Start="1" Endnotes="0" Type="Type_1_2_3" Range="0" Prefix="" Suffix=")" AutoHeight="1" AutoWidth="1" AutoRemove="1" AutoWeld="1" SuperNote="1" SuperMaster="1" MarksStyle="" NotesStyle=""/>
+        </NotesStyles>
+        <PageSets>
+            <Set Name="Single Page" FirstPage="0" Rows="1" Columns="1"/>
+            <Set Name="Facing Pages" FirstPage="1" Rows="1" Columns="2">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+            <Set Name="3-Fold" FirstPage="0" Rows="1" Columns="3">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Middle"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+            <Set Name="4-Fold" FirstPage="0" Rows="1" Columns="4">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Middle Left"/>
+                <PageNames Name="Middle Right"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+        </PageSets>
+        <Sections>
+            <Section Number="0" Name="Sezione 1" From="0" To="7" Type="Type_1_2_3" Start="1" Reversed="0" Active="1" FillChar="0" FieldWidth="0"/>
+        </Sections>
+        <MASTERPAGE PAGEXPOS="100.001" PAGEYPOS="20.001" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="0" NAM="Normale sinistra" MNAM="" Size="Custom" Orientation="0" LEFT="1" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <MASTERPAGE PAGEXPOS="100.001" PAGEYPOS="20.001" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="1" NAM="Normale destra" MNAM="" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="440.158480314961" PAGEYPOS="20.001" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="0" NAM="" MNAM="Normale destra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.001" PAGEYPOS="400.158480314961" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="1" NAM="" MNAM="Normale sinistra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="440.158480314961" PAGEYPOS="400.158480314961" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="2" NAM="" MNAM="Normale destra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.001" PAGEYPOS="780.315960629922" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="3" NAM="" MNAM="Normale sinistra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="440.158480314961" PAGEYPOS="780.315960629922" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="4" NAM="" MNAM="Normale destra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.001" PAGEYPOS="1160.47344094488" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="5" NAM="" MNAM="Normale sinistra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="440.158480314961" PAGEYPOS="1160.47344094488" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="6" NAM="" MNAM="Normale destra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.001" PAGEYPOS="1540.63092125984" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="7" NAM="" MNAM="Normale sinistra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGEOBJECT XPOS="440.158480314961" YPOS="20.001" OwnPage="0" ItemID="238102832" PTYPE="2" WIDTH="340.157480314961" HEIGHT="340.157480314961" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="cover black" PLINEART="1" LOCALSCX="0.332185039370079" LOCALSCY="0.332185039370079" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="images/_413eef01-c071-4298-92df-b9191b5474e6.jpeg" IRENDER="0" EMBEDDED="0" path="M0 0 L340.157 0 L340.157 340.157 L0 340.157 L0 0 Z" copath="M0 0 L340.157 0 L340.157 340.157 L0 340.157 L0 0 Z" gXpos="440.158480314961" gYpos="20.001" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="442.993125984252" YPOS="301.182799177758" OwnPage="0" ItemID="234849280" PTYPE="4" WIDTH="340.157480314961" HEIGHT="57.3451327433629" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="cover black" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L340.157 0 L340.157 57.3451 L0 57.3451 L0 0 Z" copath="M0 0 L340.157 0 L340.157 57.3451 L0 57.3451 L0 0 Z" gXpos="442.993125984252" gYpos="301.182799177758" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle FONT="Bernard MT Condensed Regular"/>
+                <ITEXT FONTSIZE="25" FCOLOR="cover light brown" CH="Breakfast in the Dolomites"/>
+                <para ALIGN="1"/>
+                <ITEXT FONTSIZE="18" FCOLOR="cover light brown" FSHADE="30" CH="the walkthrough"/>
+                <trail ALIGN="1" LINESP="19"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="122.678165354331" YPOS="422.835645669292" OwnPage="1" ItemID="235028848" PTYPE="2" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.287893700787402" LOCALSCY="0.287893700787402" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="images/_31a1b7fb-5e43-4280-b7d1-298d88c2b92d.jpeg" IRENDER="0" EMBEDDED="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="122.678165354331" gYpos="422.835645669292" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="462.835645669292" YPOS="422.835645669292" OwnPage="2" ItemID="234840784" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="462.835645669292" gYpos="422.835645669292" gWidth="0" gHeight="0" PSTYLE="Default Paragraph Style" LAYER="0" NEXTITEM="234832288" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Default Paragraph Style" LINESPMode="1" LINESP="12"/>
+                <ITEXT FONT="Gargoyle Serif Bold" FONTSIZE="28" CH="Breakfast in the Dolomites"/>
+                <para PARENT="Default Paragraph Style" ALIGN="1" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="11.9905511811024" NACH="6.00944881889764" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Bold Italic" FONTSIZE="16" CH="a simple walkthrought"/>
+                <para PARENT="Default Paragraph Style" ALIGN="1" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="10.0062992125984" NACH="6.00944881889764" BCOLOR="None"/>
+                <para PARENT="Default Paragraph Style" ALIGN="1" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="9" CH="The following is a short list of actions that must be taken to complete the game. "/>
+                <breakline/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="9" CH="You can also ask the characters questions about objects in the game, the weather, the surroundings."/>
+                <breakline/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="9" CH="You can go to the buffet as often as you like, or call a waiter to your table to order more hot drinks."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT CH="Leaving the car"/>
+                <para PARENT="Testo4_Heading 4" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="14.1448818897638" NACH="0" BCOLOR="None"/>
+                <ITEXT CH="Remember to take the key from the car dashboard."/>
+                <para PARENT="Testo4_Text body" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT CH="Remember to take the luggage."/>
+                <para PARENT="Testo4_Text body" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT CH="Close and lock the car."/>
+                <para PARENT="Testo4_Text body" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT CH="Go to the garden."/>
+                <para PARENT="Testo4_Text body" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT CH="In the garden"/>
+                <para PARENT="Testo4_Heading 4" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="14.1448818897638" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="A beautiful place where to kiss your girlfriend."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT CH="The morning after"/>
+                <para PARENT="Testo4_Heading 4" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="14.1448818897638" NACH="0" BCOLOR="None"/>
+                <ITEXT CH="Greet the receptionist."/>
+                <para PARENT="Testo4_Text body" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT CH="Go east to the dining room."/>
+                <para PARENT="Testo4_Text body" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT CH="First access to the dining room"/>
+                <para PARENT="Testo4_Heading 4" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="14.1448818897638" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Greet a waiter."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="If you are carrying the room key put it in a pocket."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Sit down on the bench."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="When a waiter arrives order the hot drink of your choice."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="While waiting for the hot drink go north to the buffet."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT CH="Food from the buffet"/>
+                <para PARENT="Testo4_Heading 4" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="14.1448818897638" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="(remember you have a carrying capacity of only three items, over a plate you can place a maximum of ten items)"/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Take a dish."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Put a few slices of bread on the dish."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Put a few knobs of butter on the dish (if you like)."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Put a few portions of jam on the plate (if you like)."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Put some slices of meat on the dish (again, if you like)."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT CH="Cooked egg"/>
+                <para PARENT="Testo4_Heading 4" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="14.1448818897638" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Greet the cook."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Choose the type of preparation you prefer."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="When your egg is ready, take the plate the cook hands you."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Don’t forget to thank the cook."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT CH="Cold drinks"/>
+                <para PARENT="Testo4_Heading 4" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="14.1448818897638" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Find a glass, asking the cook for it can help."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Open the drawers."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Take a glass."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Fill the glass with the drink of your choice."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT CH="The juicer"/>
+                <para PARENT="Testo4_Heading 4" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="14.1448818897638" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Take a glass (if you don’t find it, ask the cook)."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Put the glass in the juicer."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Choose a vagetable and put it on the cutting board."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Cut the vegetable with the knife."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Open the juicer."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Put the chopped vegetable in the juicer."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Switch on the juicer."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Wait until no more juice goes down in the glass."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Switch off the juicer."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Take the glass."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT CH="Drinking hot drink"/>
+                <para PARENT="Testo4_Heading 4" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="14.1448818897638" NACH="0" BCOLOR="None"/>
+                <ITEXT CH="When the waiter returns with the ordered hot drink, drink it."/>
+                <para PARENT="Testo4_Standard" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="(If you have ordered a tea with lemon or milk pour the content of the pot in the tea.)"/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT CH="Spreading butter and jam"/>
+                <para PARENT="Testo4_Heading 4" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="14.1448818897638" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Spread butter on a slice of bread (if you have got the bread)."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Open the jam jar."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Spread the jam on the bread (buttered or not at you choice)."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Put the empty jar in the can."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Eat the slice of bread. "/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT CH="Stuff bread with meat or cheese"/>
+                <para PARENT="Testo4_Heading 4" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="14.1448818897638" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Put the meat or the cheese on a slice of bread."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+                <ITEXT FONT="Gargoyle Serif Regular" FONTSIZE="11" CH="Eat the slice of bread."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0" LINESPMode="1" LINESP="12" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" BCOLOR="None"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="122.678165354331" YPOS="802.993125984253" OwnPage="3" ItemID="234832288" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="462.835645669292" gYpos="422.835645669292" gWidth="0" gHeight="0" PSTYLE="Default Paragraph Style" LAYER="0" NEXTITEM="234843616" BACKITEM="234840784"/>
+        <PAGEOBJECT XPOS="462.835645669292" YPOS="802.993125984253" OwnPage="4" ItemID="234843616" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="462.835645669292" gYpos="422.835645669292" gWidth="0" gHeight="0" PSTYLE="Default Paragraph Style" LAYER="0" NEXTITEM="234826624" BACKITEM="234832288"/>
+        <PAGEOBJECT XPOS="122.678165354331" YPOS="1183.15060629921" OwnPage="5" ItemID="234826624" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="462.835645669292" gYpos="422.835645669292" gWidth="0" gHeight="0" PSTYLE="Default Paragraph Style" LAYER="0" NEXTITEM="234835120" BACKITEM="234843616"/>
+        <PAGEOBJECT XPOS="462.835645669292" YPOS="1183.15060629921" OwnPage="6" ItemID="234835120" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="462.835645669292" gYpos="422.835645669292" gWidth="0" gHeight="0" PSTYLE="Default Paragraph Style" LAYER="0" NEXTITEM="-1" BACKITEM="234826624"/>
+        <PAGEOBJECT XPOS="100.001" YPOS="1540.63092125983" OwnPage="7" ItemID="287019536" PTYPE="6" WIDTH="340.157" HEIGHT="340.157" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" PCOLOR="Black" SHADE="30" PLINEART="1" path="M0 0 L340.157 0 L340.157 340.157 L0 340.157 L0 0 Z" copath="M0 0 L340.157 0 L340.157 340.157 L0 340.157 L0 0 Z" gXpos="100.00062992126" gYpos="6862.83023622047" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="122.678165354331" YPOS="1563.30808661417" OwnPage="7" ItemID="287022368" PTYPE="4" WIDTH="294.803149606299" HEIGHT="195.914152323873" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 195.914 L0 195.914 L0 0 Z" copath="M0 0 L294.803 0 L294.803 195.914 L0 195.914 L0 0 Z" gXpos="122.677795275591" gYpos="6885.50740157481" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT CPARENT="Default Character Style" FONTSIZE="8" CH="This booklet contains a simple walkthrough: it is the bare minimun list of commands to terminate the game."/>
+                <para PARENT="Default Paragraph Style (2)" LINESPMode="0" LINESP="12"/>
+                <ITEXT CPARENT="Default Character Style" FONTSIZE="8" CH=" "/>
+                <trail PARENT="Default Paragraph Style (2)" LINESPMode="0" LINESP="12"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="122.678165354331" YPOS="1798.08949557521" OwnPage="7" ItemID="286996880" PTYPE="4" WIDTH="294.803149606299" HEIGHT="60.0217406452513" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 60.0217 L0 60.0217 L0 0 Z" copath="M0 0 L294.803 0 L294.803 60.0217 L0 60.0217 L0 0 Z" gXpos="122.677795275591" gYpos="7120.28881053585" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FONT="Segoe UI Black Italic" FONTSIZE="8" CH="Breakfast in the Dolomites"/>
+                <para LINESP="13"/>
+                <ITEXT FONT="Segoe UI Regular" FONTSIZE="8" CH="A play just for fun comedy by Roberto Ceccarelli"/>
+                <para LINESP="13"/>
+                <ITEXT FONT="Segoe UI Regular" FONTSIZE="8" CH="Release 1 / Serial number 240306 / Inform 7 v10.1.2 / D"/>
+                <trail LINESP="13"/>
+            </StoryText>
+        </PAGEOBJECT>
+    </DOCUMENT>
+</SCRIBUSUTF8NEW>
