@@ -7,12 +7,13 @@ The story creation year is 2024.
 The story genre is "Screwball comedy".
 The story headline is "A play just for fun comedy".
 The story description is "It is the mid-1990s. On a Friday evening in the summer, a young man and his girlfriend leave work for a short holiday in the Dolomites.
-You play as Francesco, about 30 years old, blond hair. You work as a software engineer, like photography and hiking in the mountains. 
-Monica, your girlfriend, is beautiful: tall, slim, with lots of slightly reddish, frizzy hair and sparkling green eyes: could you not fall in love with her? 
-She loves strolling around looking in shop windows; a peppy girl, she won't forgive you anything you do that she doesn't like, but deep down she has her heart beating for you.
+
+You play as Francesco, about 30 years old, blond hair. You work as a software engineer, you like photography and hiking in the mountains. 
+Monica, your girlfriend, is beautiful: tall, slim, with lots of slightly reddish frizzy hair and sparkling green eyes: could you not fall in love with her? 
+She loves strolling around looking in shop windows; a peppy girl, she won't forgive you for anything you do that she doesn't like, but deep down her heart beats for you.
 What a strange thing love is...
 
-You have to start the first day of your holiday. There are no treasures to be found, no mysteries to be solved: the only prize is to spend a beautiful morning discovering this wonderful mountain world.".
+There are no treasures to be found, no mysteries to be solved: the only prize is to spend a morning discovering this wonderful mountain world.".
 Release along with the cover art ("Breakfast in the Dolomites") and the library card.
 
 Chapter 0.1 - Includes
@@ -3000,7 +3001,8 @@ At the time when Monica urges juicer:
 	unless extracted juice completed:
 		if the location of the player is the dining room and can leave the table:
 			now the current interlocutor is Monica;
-			setnode ask-for-juice node;
+			now the next-scheduled-node is the ask-for-juice node;
+			advance the conversation node;
 		otherwise:
 			Monica urges juicer in 1 turn from now.
 	
@@ -3020,9 +3022,13 @@ Response for ask-for-juice node when saying yes:
 	now the player is in the buffet;
 	now Monica-juice-trigger is true.
 	
-Rule for printing a parser error when the latest parser error is the not a verb I recognise error and the current node is ask-for-juice node:
-	abide by the default answer response rules for the current node.
-
+Before printing a parser error when the latest parser error is didn't understand error and the current node is ask-for-juice node (this is the generic answer for ask-for-juice rule):
+	follow the default answer response rules for the current node;
+	stop the action.
+The generic answer for ask-for-juice rule is listed first in the before printing a parser error rules.
+Rule for printing a parser error when the latest parser error is didn't understand error and the current node is ask-for-juice node:
+	do nothing.
+	
 Volume 5 - Internal db
 
 Book 5.1 - Table of tasks
