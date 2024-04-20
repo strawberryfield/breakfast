@@ -13,7 +13,7 @@ Monica, your girlfriend, is beautiful: tall, slim, with lots of slightly reddish
 She loves strolling around looking in shop windows; a peppy girl, she won't forgive you for anything you do that she doesn't like, but deep down her heart beats for you.
 What a strange thing love is...
 
-There are no treasures to be found, no mysteries to be solved: the only prize is to spend a morning discovering this wonderful mountain world.".
+There are no treasures to be found, there are no mysteries to be solved; remember, you are on holiday: have fun!".
 Release along with the cover art ("Breakfast in the Dolomites") and the library card.
 
 Chapter 0.1 - Includes
@@ -72,9 +72,10 @@ Book 1.1 - Typography
 Chapter 1.1.1 - Styles
 
 Table of User Styles (continued)
-style name	color	italic	font weight
-special-style-1	"#FF0000"	false	regular-weight
-note-style	"#0000A0"	true	bold-weight
+style name	color	italic	font weight	background color
+all-styles	"#101010"	false	regular-weight	"#f8f8e0"
+special-style-1	"#FF0000"	false	regular-weight	--
+note-style	"#0000A0"	true	bold-weight	--
 
 Book 1.2 - Patches
 
@@ -413,9 +414,9 @@ To say breakfast time:
 	otherwise:
 		say "[Monica] is waiting for you at the table. [/n]".	
 Instead of going outside from the reception during the breakfast:
-	say "[breakfast time]".
+	say breakfast time.
 Instead of going up during the breakfast:
-	say "[breakfast time]".
+	say breakfast time.
 
 Section 2.4.1.5 - Movements during morgen receptionist
 
@@ -809,6 +810,7 @@ Instead of hailing during the Search for the table:
 		try saying hello to W.
 Instead of saying hello to someone (called the other) during the Search for the table:
 	unless the other is Monica:
+		if the current interlocutor is nothing, say approaching the other;
 		now the current interlocutor is the other;
 		say "[/ss1][good morning current interlocutor], we are staying in the 'Edelweiss' room and it is our first day here.' [/r][/n][/ss]Oh, welcome! Let me show you to your table.' [/se][the naming of current interlocutor] [regarding current interlocutor][say] and [go] to a free table. [/n][/ss]This is the table we have reserved for you, I hope it is to your liking.' [/se][regarding the current interlocutor][they] [point] to you the table.";
 		say "[heart][/ss]It's perfect!' [/se][Monica] [exclaim] [/ss1][thanks current interlocutor].' [/r][/n]";
@@ -836,6 +838,13 @@ Understand "the/-- weather forecast/--" or "the/-- forecast" as "[weather]".
 Response of a worker when asked about "[weather]" during the Breakfast:
 	say “[/ss]Do you know it might rain today?’ [/se][we] [ask]. [/n]”;
 	say "[/ss]You can find the weather report in the daily hotel newsletter on your table.' [/se][regarding the noun][they] [explain].".	
+	
+Understand "the/my/our/reserved/free/your/-- table/place/seat" as "[table]".
+Response of a worker when asked about "[table]" or asked about table during the Breakfast:
+	if the noun is a waiter, do nothing;
+	otherwise:
+		say "[/ss]Please feel free to ask my colleagues in the dining room about it.' [/se][regarding the noun][they] [reply]."
+
 
 Section 2.6.4.3 - Garbage collection
 
@@ -2717,7 +2726,7 @@ Search for the table begins when search-table-trigger is true.
 Search for the table ends when search-table-trigger is false.
 
 When Search for the table begins:
-	say "[heart][/ss]Very nice, isn't it?' [/se][Monica] [ask], [/ss1]I wonder where we can sit.' [/r][/n]";
+	say "[heart][/ss]Very nice, isn't it?' [/se][Monica] [ask], [/ss1]I wonder at which table we can sit.' [/r][/n]";
 	the waiter welcomes in 3 turns from now.
 	
 Chapter 4.4.3 - First buffet access
