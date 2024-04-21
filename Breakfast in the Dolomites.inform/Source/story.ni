@@ -37,17 +37,17 @@ Include Written papers by The Strawberry Field.
 
 Chapter 0.2 - Game start
 
+Figure cover is the file "Cover.jpg".
 [ uncomment below for release]
-[	
-When play begins:
+[When play begins:
 	say "[story-beginning]";
 	say "[/p][/b]«The Strawberry Field»[/r] [/i]presents[/r][/p]";
-	pause the game.
-]
+	pause the game.]
 
 Arrival-trigger is a truth state that varies. 
 After printing the banner text:
-[	pause the game;
+[	display the Figure cover;
+	pause the game;
 	now arrival-trigger is true;
 	say "[arrive to hotel][/n]";
 	Monica leaves the car in 1 turn from now.]
