@@ -14,7 +14,7 @@ She loves strolling around looking in shop windows; a peppy girl, she won't forg
 What a strange thing love is...
 
 There are no treasures to be found, there are no mysteries to be solved; remember, you are on holiday: have fun!".
-Release along with the cover art ("Breakfast in the Dolomites") and the library card.
+Release along with the cover art ("Breakfast in the Dolomites"), a file of "Introductory booklet" called "booklet.pdf", a file of "Walkthrought" called "walkthrough.pdf" and the library card.
 
 Chapter 0.1 - Includes
 
