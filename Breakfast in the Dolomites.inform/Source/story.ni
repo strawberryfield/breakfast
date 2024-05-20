@@ -852,7 +852,7 @@ To decide if (W - a waiter) collects empty items:
 	let the empty dishes list be the list of empty dishes on the table;
 	let the empty containers list be the list of empty fluid containers on the table;
 	if the number of entries in the empty dishes list is greater than zero or the number of entries in the empty containers list is greater than 0:
-		say "[The naming of W] [collect] all the empty dishes, glasses and cups from the table. [/n]";
+		if the location of the player is the dining room, say "[The naming of W] [collect] all the empty dishes, glasses and cups from the table. [/n]";
 		repeat with item running through the empty dishes list:
 			now W carries the item;	
 		repeat with item running through the empty containers list:
@@ -863,7 +863,7 @@ To decide if (W - a waiter) collects empty items:
 
 The current collecter is an object that varies.
 To (W - a waiter) returns to the kitchen:
-	say "Then [regarding W][they] [go] to the kitchen.";
+	if the location of the player is the dining room, say "Then [regarding W][they] [go] to the kitchen.";
 	W silently returns to the kitchen.
 To (W - a waiter) silently returns to the kitchen:
 	now W is in the kitchen;
@@ -2822,7 +2822,9 @@ Before going somewhere from the buffet while Monica getting food is true:
 	say "[/ss]Wait!' [/se][Monica] [claim] [our] attention [/ss1]I haven't finished taking things from the buffet yet.' [/r][/n]" instead.
 	
 After taking an empty glass:
-	Monica takes glass in 0 turns from now.
+	if Monica is in the Buffet, Monica takes glass in 0 turns from now;
+	otherwise:
+		continue the action.
 	
 Monica-glass is an object that varies.	
 At the time when Monica takes glass:
@@ -2889,10 +2891,13 @@ At the time when Monica drinks orange juice:
 	say "After drinking [Monica] [put] [the Monica-glass] on the table again.";
 	if order hot drinks completed:
 		if extracted juice completed:
-			if used wc completed:
-				do nothing;
+			if read newsletter completed:
+				if used wc completed:
+					do nothing;
+				otherwise:
+					Monica urges wc in 2 turns from now;
 			otherwise:
-				Monica urges wc in 2 turns from now;
+				Monica asks for newsletter in 1 turn from now;
 		otherwise:
 			Monica urges juicer in 1 turn from now;
 	otherwise:
@@ -2910,8 +2915,11 @@ At the time when Monica throws your jar:
 			
 Section 4.4.3.3 - Tasks requests
 
+At the time when Monica asks for newsletter:
+	now newsletter-trigger is true.
+	
 At the time when Monica urges wc:
-	do nothing.
+	now WC-trigger is true.
 	
 At the time when Monica urges order:
 	unless order hot drinks completed:
@@ -3038,6 +3046,37 @@ The generic answer for ask-for-juice rule is listed first in the before printing
 Rule for printing a parser error when the latest parser error is didn't understand error and the current node is ask-for-juice node:
 	do nothing.
 	
+Section 4.4.6.3 - Leaving the buffet
+
+Before going somewhere from the buffet during Juice for Monica:
+	unless the player carries a glass, say "[Monica] [are] waiting for a juice." instead;
+	if the player carries an empty glass, say "[Monica] is waiting for a juice and you bring her an empty glass?" instead;
+	now Monica-glass is a random glass carried by the player.
+	
+After going to the dining room during Juice for Monica:
+	now Monica-juice-trigger is false;
+	continue the action.
+	
+Instead of filling something with something during Juice for Monica:
+	say "You should fill [the noun] with a vegetable juice."
+	
+Instead of pouring something into something during Juice for Monica:
+	say  "You should pour a vegetable juice into [the second noun]."
+	
+Chapter 4.4.7 - Reading the newsletter
+
+Reading the newsletter is a scene.
+Newsletter-trigger is a truth state that varies.
+Reading the newsletter begins when newsletter-trigger is true.	
+Reading the newsletter ends when newsletter-trigger is false.	
+
+Chapter 4.4.8 - Using WC
+
+Using the WC is a scene.
+WC-trigger is a truth state that varies.
+Using the WC begins when the WC-trigger is true.
+Using the WC ends when the WC-trigger is false.
+	
 Volume 5 - Internal db
 
 Book 5.1 - Table of tasks
@@ -3068,6 +3107,7 @@ Drunk cold drinks	false
 Got cooked egg	false
 Extracted juice	false
 Used wc	false
+read newsletter	false
 
 Book 5.2 - Table of food limits
 
