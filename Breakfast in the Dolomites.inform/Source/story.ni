@@ -3070,12 +3070,21 @@ Newsletter-trigger is a truth state that varies.
 Reading the newsletter begins when newsletter-trigger is true.	
 Reading the newsletter ends when newsletter-trigger is false.	
 
+When Reading the newsletter begins:
+	say "[heart][/ss]We should find out what the weather is going to be like today and decide what to do.' [/se][Monica] [say]. [/ss1]In any case, my suggestion is a visit to Cortina for a look at the shop windows.' [/r][/n]".
+
 Chapter 4.4.8 - Using WC
 
 Using the WC is a scene.
 WC-trigger is a truth state that varies.
 Using the WC begins when the WC-trigger is true.
 Using the WC ends when the WC-trigger is false.
+
+Book 4.5 - End of the game
+
+End of the game is a scene.
+End-game-trigger is a truth state that varies.
+End of the game begins when the end-game-trigger is true.
 	
 Volume 5 - Internal db
 
