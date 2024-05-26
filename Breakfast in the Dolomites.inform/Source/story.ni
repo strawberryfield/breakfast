@@ -6,11 +6,11 @@ The release number is 1.
 The story creation year is 2024.
 The story genre is "Screwball comedy".
 The story headline is "A play just for fun comedy".
-The story description is "It is the mid-1990s. On a Friday evening in the summer, a young man and his girlfriend leave work for a short holiday in the Dolomites.
+The story description is "It is the mid-1990s. On a Friday evening in the summer, a guy and his girlfriend leave work for a short holiday in the Dolomites.
 
-You play as Francesco, about 30 years old, blond hair. You work as a software engineer, you like photography and hiking in the mountains. 
-Monica, your girlfriend, is beautiful: tall, slim, with lots of slightly reddish frizzy hair and sparkling green eyes: could you not fall in love with her? 
-She loves strolling around looking in shop windows; a peppy girl, she won't forgive you for anything you do that she doesn't like, but deep down her heart beats for you.
+You play as Francesco, about 30 years old, blond hair. Francesco works as a software engineer, he like photography and hiking in the mountains. 
+Monica is his beautiful girlfriend: tall, slim, with lots of slightly reddish frizzy hair and sparkling green eyes: could he not fall in love with her? 
+She loves strolling around looking in shop windows; a peppy girl, she won't forgive him for anything he does that she doesn't like, but deep down her heart beats for him.
 What a strange thing love is...
 
 There are no treasures to be found, there are no mysteries to be solved; remember, you are on holiday: have fun!".
@@ -837,7 +837,12 @@ Response of a waiter when asked about bathroom:
 Understand "the/-- weather forecast/--" or "the/-- forecast" as "[weather]".	
 Response of a worker when asked about "[weather]" during the Breakfast:
 	say “[/ss]Do you know it might rain today?’ [/se][we] [ask]. [/n]”;
-	say "[/ss]You can find the weather report in the daily hotel newsletter on your table.' [/se][regarding the noun][they] [explain].".	
+	say "[/ss]You can find the weather report in the hotel daily newsletter on your table.' [/se][regarding the noun][they] [explain].".	
+
+Understand "the/-- daily/hotel/-- daily/hotel/-- newsletter/bulletin/gazette" as "[newsletter]".
+Response of a worker when asked about "[newsletter]" during the Breakfast:
+	say "[/ss]Where can I find the newsletter?' [/se][we] [ask]. [/n]";
+	say "[/ss]It's printed on the back side of the menu.' [/se][the naming of the noun] [reply].".	
 	
 Understand "the/my/our/reserved/free/your/-- table/place/seat" as "[table]".
 Response of a worker when asked about "[table]" or asked about table during the Breakfast:
@@ -1410,23 +1415,35 @@ Response of a waiter when asked for "chocolate":
 Chapter 2.6.7 - The written paper
 			
 The written paper is a paper-item on the table.
+Understand "today/-- dinner/-- menus" as the written paper.
 The written paper front is a paper-side.
 The written paper back is a paper-side.
 The front of the written paper is the written paper front.
 The back of the written paper is the written paper back.
 The arguments of the written paper back are the Table of Bulletin topics.
 
+To mark (T - some text) as read:
+	choose a row with a title of T in the Table of Bulletin topics;
+	now read entry is true.
+
+To decide if (T - some text) read:
+	let X be the read corresponding to a title of T in the Table of Bulletin topics;
+	if X is true, decide yes;
+	otherwise	decide no.
+
+Section 2.6.7.1 - Paper text
+	
 The description of the written paper front is "[/b]Today Dinner Menu[/p][/i]Starter[/f][/n]Toasted rustic bread with fresh tomatoes, red onions, basil, and garlic topped with cheese[/p][/i]First course[/f][/n]Traditional Italian bean and pasta soup[/p][/i]Main course[/f][/n]Sautéed chicken breast with wild mushrooms and scallions in a Marsala reduction wine sauce served with potato and vegetables[/p][/i]Dessert[/f][/n]Raspberry mousse[/r]".
 
 Understand "legend/legends/ of/-- the/-- dolomites/mountain/mountains/--" as "[legend]".
 Understand "hike/escursion/trekking of/-- the/-- day/--" as "[hike]".
 
 Table of Bulletin topics
-topic	title	text
-"[weather]"	"Weather report"	"Today will be mostly sunny, except for some low clouds in the morning, which will dissipate quickly. In the late afternoon/evening, cloud formation and local rain showers are possible. [/n]Minimum temperatures between 8°C and 10°C, maximum temperatures between 20°C and 28°C."
-"tip of/-- the/-- day/--"	"Tip of the day"	"Look carefully along the paths: you may find small fossils, witnesses to a time when what are now mountain peaks were at the bottom of a vast tropical sea. [/n]These 280 million year old cliffs are particularly impressive at sunrise and sunset, when they glow a fiery red: this is the phenomenon we call 'enrosadira'. About this topic read the legend of King Laurin’s Rose Garden in another article in this newsletter."
-"[legend]"	"A legend of the Dolomites"	"[/i]King Laurin’s Rose Garden[/f][/n]Many, many years ago, on the Catinaccio mountain chain lived King Laurin, the cunning king of dwarves, who spent his time digging deep down into the earth to find precious stones. Among his various treasures, the king owned a magic belt, which allowed him to become invisible.[/n]One day, the King of Adige held a great feast and invited all the aristocrats in the area, except King Laurin. Nevertheless, the king of dwarves went to the feast anyway, wearing his belt so that he wouldn’t be seen by anybody. Similde, the king’s beautiful daughter, was also at the feast. Laurin fell in love with her at first sight and, exploiting the fact that he was invisible, he kidnapped her and took her to his kingdom on the Catinaccio mountain range.[/n]He was so in love with the young girl that, by casting a spell, he covered the mountain with a very beautiful layer of red roses. King Adige, however, did not sit on his hands and, together with his army, he marched towards King Laurin’s kingdom to free his daughter.[/n]The king of dwarves was convinced that no-one would track him down because, thanks to his belt, he could become invisible, but he hadn’t considered one thing: every time he moved on that garden of roses, he trampled some of them. Therefore, the soldiers just had to follow the path of the trampled roses to reach and catch him and tear the magic belt off him.[/n]The poor king of dwarves had no option, but to surrender and give beautiful Similde back to her father. Before doing so though he put a terrible curse on the rose garden that had betrayed him. He said, 'No human eye will be able to admire you, neither during the day nor at night.' Therefore, where there were once beautiful roses, only bare rocks remained.[/n]King Laurin though had not considered sunset, which was neither day nor night. That is why, still today, when the sun sinks behind the mountains, we can still admire the garden of red roses that tinges the Dolomite peaks."
-"[hike]"	"Hike of the day"	"[/i]Around the Three Peaks of Lavaredo[/f][/n]The Three Peaks of Lavaredo, the symbol of the Dolomites, have always exerted a certain fascination, attracting climbers and hikers from all over the world. This is a true paradise for those who love hiking, mountaineering and vie ferrate. But that's not all... there are also some easy but breathtaking hikes, such as the tour around the Three Peaks of Lavaredo. The starting point for our walk is the Auronzo Hut (2,320 m).[/n]Crossing the Landro Valley we reach Lake Misurina, where we park our car. From here you can take the shuttle bus to the Auronzo Hut. Then we start our walk on the 101 path, which goes along the south side of the Three Peaks of Lavaredo to the Lavaredo Hut (2,344 m). From here take a small path to the left which leads to the Forcella di Lavaredo (2,454 m). There is a wonderful panoramic view, not only of the surrounding valleys, but also of the northern side of the Three Peaks of Lavaredo. Continue slightly downhill at the foot of Mount Paterno until you come to a fork, where you take the road that leads to the A. Locatelli Hut (2,405 m).[/n]Arriving at the refuge, after a walk of about 1.5 hours, we take a break and sit down on the grass to eat a typical snack of speck, salami and tomatoes. Then we start our way back, first to the Malga Lange (2,232 m, n. 105) and then, at the foot of the western face of the Three Peaks of Lavaredo, to the Auronzo Hut, from where we return to the car."
+topic	read	title	text
+"[weather]"	false	"Weather report"	"Today will be mostly sunny, except for some low clouds in the morning, which will dissipate quickly. In the late afternoon/evening, cloud formation and local rain showers are possible. [/n]Minimum temperatures between 8°C and 10°C, maximum temperatures between 20°C and 28°C."
+"tip of/-- the/-- day/--"	false	"Tip of the day"	"Look carefully along the paths: you may find small fossils, witnesses to a time when what are now mountain peaks were at the bottom of a vast tropical sea. [/n]These 280 million year old cliffs are particularly impressive at sunrise and sunset, when they glow a fiery red: this is the phenomenon we call 'enrosadira'. About this topic read the legend of King Laurin’s Rose Garden in another article in this newsletter."
+"[legend]"	false	"A legend of the Dolomites"	"[/i]King Laurin’s Rose Garden[/f][/n]Many, many years ago, on the Catinaccio mountain chain lived King Laurin, the cunning king of dwarves, who spent his time digging deep down into the earth to find precious stones. Among his various treasures, the king owned a magic belt, which allowed him to become invisible.[/n]One day, the King of Adige held a great feast and invited all the aristocrats in the area, except King Laurin. Nevertheless, the king of dwarves went to the feast anyway, wearing his belt so that he wouldn’t be seen by anybody. Similde, the king’s beautiful daughter, was also at the feast. Laurin fell in love with her at first sight and, exploiting the fact that he was invisible, he kidnapped her and took her to his kingdom on the Catinaccio mountain range.[/n]He was so in love with the young girl that, by casting a spell, he covered the mountain with a very beautiful layer of red roses. King Adige, however, did not sit on his hands and, together with his army, he marched towards King Laurin’s kingdom to free his daughter.[/n]The king of dwarves was convinced that no-one would track him down because, thanks to his belt, he could become invisible, but he hadn’t considered one thing: every time he moved on that garden of roses, he trampled some of them. Therefore, the soldiers just had to follow the path of the trampled roses to reach and catch him and tear the magic belt off him.[/n]The poor king of dwarves had no option, but to surrender and give beautiful Similde back to her father. Before doing so though he put a terrible curse on the rose garden that had betrayed him. He said, 'No human eye will be able to admire you, neither during the day nor at night.' Therefore, where there were once beautiful roses, only bare rocks remained.[/n]King Laurin though had not considered sunset, which was neither day nor night. That is why, still today, when the sun sinks behind the mountains, we can still admire the garden of red roses that tinges the Dolomite peaks."
+"[hike]"	false	"Hike of the day"	"[/i]Around the Three Peaks of Lavaredo[/f][/n]The Three Peaks of Lavaredo, the symbol of the Dolomites, have always exerted a certain fascination, attracting climbers and hikers from all over the world. This is a true paradise for those who love hiking, mountaineering and vie ferrate. But that's not all... there are also some easy but breathtaking hikes, such as the tour around the Three Peaks of Lavaredo. The starting point for our walk is the Auronzo Hut (2,320 m).[/n]Crossing the Landro Valley we reach Lake Misurina, where we park our car. From here you can take the shuttle bus to the Auronzo Hut. Then we start our walk on the 101 path, which goes along the south side of the Three Peaks of Lavaredo to the Lavaredo Hut (2,344 m). From here take a small path to the left which leads to the Forcella di Lavaredo (2,454 m). There is a wonderful panoramic view, not only of the surrounding valleys, but also of the northern side of the Three Peaks of Lavaredo. Continue slightly downhill at the foot of Mount Paterno until you come to a fork, where you take the road that leads to the A. Locatelli Hut (2,405 m).[/n]Arriving at the refuge, after a walk of about 1.5 hours, we take a break and sit down on the grass to eat a typical snack of speck, salami and tomatoes. Then we start our way back, first to the Malga Lange (2,232 m, n. 105) and then, at the foot of the western face of the Three Peaks of Lavaredo, to the Auronzo Hut, from where we return to the car."
 
 The description of the written paper back is "[/b]The daily newsletter[/r][/p]There are several boxes whose titles are: [list of topics of the noun]. ".
 
@@ -1434,8 +1451,19 @@ Understand "examine [text]" as examining as a paper when the written paper is vi
 Understand "read [text]" as examining as a paper when the written paper is visible and the written paper is turned.
 
 Instead of examining as a paper a topic listed in the Table of Bulletin topics:
-	say "[/b][title entry][/b][/p][/f][text entry][/r][/n]".
-
+	say "[/b][title entry][/b][/p][/f][text entry][/r][/p]";
+	now the read entry is true;
+	if title entry is "Weather report":
+		say "[/ss]This time you got lucky:' [/se][Monica] [admit] [/ss1]we are going to the mountains.' [/r][/n]";
+		unless "Hike of the day" read:
+			say "[/ss]Read which hike they suggest.' [/se][Monica] [add].";
+		otherwise:
+			now newsletter-trigger is false;
+	if title entry is "Hike of the day":
+		say "[/ss]Sounds like a nice hike.' [/se][Monica] [comment] [/ss1]From Misurina to Cortina is not a long way: on the way back we could stop.' [/r][/n]";
+		if "Weather report" read:
+			now newsletter-trigger is false.
+			
 
 Book 2.7 - The buffet
 
@@ -2889,19 +2917,7 @@ At the time when Monica drinks orange juice:
 	say "[Monica] [take] [their] [Monica-glass] and [drink] the juice.";
 	now the fluid content of Monica-glass is 0 cc;
 	say "After drinking [Monica] [put] [the Monica-glass] on the table again.";
-	if order hot drinks completed:
-		if extracted juice completed:
-			if read newsletter completed:
-				if used wc completed:
-					do nothing;
-				otherwise:
-					Monica urges wc in 2 turns from now;
-			otherwise:
-				Monica asks for newsletter in 1 turn from now;
-		otherwise:
-			Monica urges juicer in 1 turn from now;
-	otherwise:
-		Monica urges order in 0 turns from now	
+	check stage progress.	
 
 After the player spreading something on:
 	Monica throws your jar in 1 turn from now;
@@ -3071,8 +3087,20 @@ Reading the newsletter begins when newsletter-trigger is true.
 Reading the newsletter ends when newsletter-trigger is false.	
 
 When Reading the newsletter begins:
-	say "[heart][/ss]We should find out what the weather is going to be like today and decide what to do.' [/se][Monica] [say]. [/ss1]In any case, my suggestion is a visit to Cortina for a look at the shop windows.' [/r][/n]".
+	say "[heart][/ss]We should find out what the weather is going to be like today and decide what to do.' [/se][Monica] [say]. [/ss1]In any case, my suggestion is a visit to Cortina for a look at the shop windows.' [/r][/n]";
+	say "[/ss]It is always the same!' [/se][we] [reply] [/ss1]There are so many beautiful things to see, and all you can think of is to stroll along the windows.' [/r][/n]";
+	say "[/ss]Ok.' [/se][Monica] [state] [/ss1]If the weather is good, we will do as you say, otherwise you will have to take me where you know. So ask someone for the weather forecast.' [/r][/n]";
+	Monica urges weather in 4 turns from now.
 
+When Reading the newsletter ends:
+	mark read newsletter as done;
+	check stage progress.
+		
+At the time when Monica urges weather:
+	unless "Weather report" read:
+		say "[/ss]So, we still know nothing about the weather?' [/se][Monica] [ask].";
+		Monica urges weather in 2 turns from now.
+		
 Chapter 4.4.8 - Using WC
 
 Using the WC is a scene.
@@ -3080,12 +3108,30 @@ WC-trigger is a truth state that varies.
 Using the WC begins when the WC-trigger is true.
 Using the WC ends when the WC-trigger is false.
 
+When Using the WC begins:
+	say "[heart][/ss]Sweetheart, are you all right?' [/se][Monica] [ask]."
+
 Book 4.5 - End of the game
 
 End of the game is a scene.
 End-game-trigger is a truth state that varies.
 End of the game begins when the end-game-trigger is true.
-	
+
+To check stage progress:
+	if order hot drinks completed:
+		if extracted juice completed:
+			if read newsletter completed:
+				if used wc completed:
+					do nothing;
+				otherwise:
+					Monica urges wc in 1 turns from now;
+			otherwise:
+				Monica asks for newsletter in 0 turn from now;
+		otherwise:
+			Monica urges juicer in 1 turn from now;
+	otherwise:
+		Monica urges order in 0 turns from now.	
+				
 Volume 5 - Internal db
 
 Book 5.1 - Table of tasks
