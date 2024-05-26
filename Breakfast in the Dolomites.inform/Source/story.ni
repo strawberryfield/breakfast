@@ -830,9 +830,12 @@ Instead of going somewhere during Search for the table, say "[alert][/ss]Let's g
 		
 Section 2.6.4.2 - Other responses
 
-Response of a waiter when asked about bathroom:
+Response of a worker when asked about bathroom:
 	say “[/ss]Where can I find the toilet?’ [/se][we] [ask]. [/n]”;
-	say "[/ss]'Oh yes, it's inside the door in front of the reception desk.' [/se][the naming of the noun] [answer].".
+	if the noun is the receptionist:
+		say "[/ss]It's the door right in front.' [/se][the naming of the noun] [answer].";
+	otherwise:
+		say "[/ss]'Oh yes, it's inside the door in front of the reception desk.' [/se][the naming of the noun] [answer].".
 
 Understand "the/-- weather forecast/--" or "the/-- forecast" as "[weather]".	
 Response of a worker when asked about "[weather]" during the Breakfast:
@@ -842,7 +845,10 @@ Response of a worker when asked about "[weather]" during the Breakfast:
 Understand "the/-- daily/hotel/-- daily/hotel/-- newsletter/bulletin/gazette" as "[newsletter]".
 Response of a worker when asked about "[newsletter]" during the Breakfast:
 	say "[/ss]Where can I find the newsletter?' [/se][we] [ask]. [/n]";
-	say "[/ss]It's printed on the back side of the menu.' [/se][the naming of the noun] [reply].".	
+	if the noun is a waiter:
+		say "[/ss]It's printed on the back side of the menu.' [/se][the naming of the noun] [reply].";
+	otherwise:
+		say "[/ss]You can find it on your table in the dining room.' [/se][the naming of the noun] [reply].".
 	
 Understand "the/my/our/reserved/free/your/-- table/place/seat" as "[table]".
 Response of a worker when asked about "[table]" or asked about table during the Breakfast:
@@ -1454,7 +1460,7 @@ Instead of examining as a paper a topic listed in the Table of Bulletin topics:
 	say "[/b][title entry][/b][/p][/f][text entry][/r][/p]";
 	now the read entry is true;
 	if title entry is "Weather report":
-		say "[/ss]This time you got lucky:' [/se][Monica] [admit] [/ss1]we are going to the mountains.' [/r][/n]";
+		say "[/ss]This time you got lucky:' [/se][Monica] [admit] [/ss1]we'll go to the mountains.' [/r][/n]";
 		unless "Hike of the day" read:
 			say "[/ss]Read which hike they suggest.' [/se][Monica] [add].";
 		otherwise:
@@ -1462,8 +1468,9 @@ Instead of examining as a paper a topic listed in the Table of Bulletin topics:
 	if title entry is "Hike of the day":
 		say "[/ss]Sounds like a nice hike.' [/se][Monica] [comment] [/ss1]From Misurina to Cortina is not a long way: on the way back we could stop.' [/r][/n]";
 		if "Weather report" read:
-			now newsletter-trigger is false.
-			
+			now newsletter-trigger is false;
+		otherwise:
+			say "[/ss]Weather permitting, of course.' [/se][regarding Monica][they] [add]."		
 
 Book 2.7 - The buffet
 
@@ -2932,10 +2939,16 @@ At the time when Monica throws your jar:
 Section 4.4.3.3 - Tasks requests
 
 At the time when Monica asks for newsletter:
-	now newsletter-trigger is true.
+	if the location is the dining room:
+		now newsletter-trigger is true;
+	otherwise:
+		Monica asks for newsletter in 1 turn from now.
 	
 At the time when Monica urges wc:
-	now WC-trigger is true.
+	if the location is the dining room:
+		now WC-trigger is true;
+	otherwise:
+		Monica urges wc in 1 turn from now.
 	
 At the time when Monica urges order:
 	unless order hot drinks completed:
@@ -3098,7 +3111,8 @@ When Reading the newsletter ends:
 		
 At the time when Monica urges weather:
 	unless "Weather report" read:
-		say "[/ss]So, we still know nothing about the weather?' [/se][Monica] [ask].";
+		if location is the dining room:
+			say "[/ss]So, we still know nothing about the weather?' [/se][Monica] [ask].";
 		Monica urges weather in 2 turns from now.
 		
 Chapter 4.4.8 - Using WC
@@ -3109,8 +3123,24 @@ Using the WC begins when the WC-trigger is true.
 Using the WC ends when the WC-trigger is false.
 
 When Using the WC begins:
-	say "[heart][/ss]Sweetheart, are you all right?' [/se][Monica] [ask]."
+	say "It's been a while since you've gone downstairs for breakfast, and now you feel the urge to go to the bathroom. [/n]You move a bit nervously, and Monica notices your discomfort. [/p]";
+	say "[heart][/ss]Sweetheart, are you all right?' [/se][Monica] [ask].";
+	say "[/ss]Go to the toilet, which is better.' [/se][regarding Monica][they] [suggest] [/ss1]If you can't find it, ask: someone will show you.' [/r][/n]";
+	Monica remembers wc in 2 turn from now.
 
+When Using the WC ends:
+	Monica remembers wc never;
+	check stage progress.
+
+After urinating into:
+	now WC-trigger is false;
+	continue the action.
+		
+At the time when Monica remembers wc:
+	if the location is the dining room:
+		say "[/ss]You still haven't gone to the toilet?' [/se][Monica] [ask].";
+	Monica remembers wc in 1 turn from now.
+	
 Book 4.5 - End of the game
 
 End of the game is a scene.
