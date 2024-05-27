@@ -295,5 +295,15 @@ Instead of doing anything other than examining to something while the noun is ow
 Does the player mean taking an owned thing: it is unlikely.
 Does the player mean inserting an owned thing into: it is unlikely.
 Does the player mean putting an owned thing on: it is unlikely.
+
+Book 1.5 - go to named room
+
+Understand "[any room]" as going by name. 
+Understand "go to/into/-- [any room]" as going by name.
+
+Going by name is an action applying to one thing.
+Check going by name:
+    if the noun is the location, say "You're already in [the location]." instead;
+    if the noun is not adjacent, say "There isn't any [noun] nearby." instead. 
 	
 Commons ends here.
