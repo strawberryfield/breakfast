@@ -9,9 +9,83 @@
         <CheckProfile Name="PDF/X-3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="1" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
         <CheckProfile Name="PDF/X-4" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="1" checkFontNotEmbedded="1" checkFontIsOpenType="0" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
         <CheckProfile Name="PostScript" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="0" checkFontIsOpenType="0" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <COLOR NAME="Apricot" SPACE="RGB" R="255" G="195" B="143"/>
+        <COLOR NAME="Aquamarine" SPACE="RGB" R="193" G="255" B="234"/>
+        <COLOR NAME="Bistre" SPACE="RGB" R="53" G="19" B="13"/>
         <COLOR NAME="Black" SPACE="CMYK" C="0" M="0" Y="0" K="100"/>
+        <COLOR NAME="Blue" SPACE="RGB" R="31" G="117" B="254"/>
+        <COLOR NAME="Bole" SPACE="RGB" R="100" G="54" B="46"/>
+        <COLOR NAME="Bright chartreuse" SPACE="RGB" R="231" G="244" B="134"/>
+        <COLOR NAME="Bright french blue" SPACE="RGB" R="120" G="180" B="255"/>
+        <COLOR NAME="Bright steel blue" SPACE="RGB" R="171" G="200" B="255"/>
+        <COLOR NAME="Burnt sienna" SPACE="RGB" R="102" G="51" B="43"/>
+        <COLOR NAME="CMYK Cyan" SPACE="RGB" R="0" G="255" B="255"/>
+        <COLOR NAME="CMYK Magenta" SPACE="RGB" R="255" G="0" B="255"/>
+        <COLOR NAME="CMYK Yellow" SPACE="RGB" R="255" G="255" B="0"/>
+        <COLOR NAME="Cadium-yellow" SPACE="RGB" R="252" G="232" B="32"/>
+        <COLOR NAME="Cal Poly Pomona" SPACE="RGB" R="29" G="52" B="35"/>
+        <COLOR NAME="Celeste" SPACE="RGB" R="185" G="245" B="246"/>
+        <COLOR NAME="Cerise" SPACE="RGB" R="222" G="49" B="99"/>
+        <COLOR NAME="Cerulean frost" SPACE="RGB" R="109" G="174" B="199"/>
+        <COLOR NAME="Chestnut" SPACE="RGB" R="163" G="65" B="44"/>
+        <COLOR NAME="Cobalt blue" SPACE="RGB" R="0" G="71" B="171"/>
+        <COLOR NAME="Columns: 7" SPACE="RGB" R="0" G="0" B="0"/>
+        <COLOR NAME="Dark chocolate" SPACE="RGB" R="84" G="42" B="14"/>
+        <COLOR NAME="Dark cordovan" SPACE="RGB" R="108" G="41" B="52"/>
+        <COLOR NAME="Dark crimson" SPACE="RGB" R="121" G="5" B="35"/>
+        <COLOR NAME="Dark grey blue" SPACE="RGB" R="48" G="69" B="119"/>
+        <COLOR NAME="Dark grullo green" SPACE="RGB" R="74" G="104" B="93"/>
+        <COLOR NAME="Dark salmon" SPACE="RGB" R="228" G="136" B="100"/>
+        <COLOR NAME="Dark slate grey" SPACE="RGB" R="47" G="79" B="79"/>
+        <COLOR NAME="Dark tangerine" SPACE="RGB" R="255" G="168" B="18"/>
+        <COLOR NAME="Dark thulian pink" SPACE="RGB" R="193" G="75" B="110"/>
+        <COLOR NAME="Dark wheat" SPACE="RGB" R="232" G="204" B="144"/>
+        <COLOR NAME="Deep carmine" SPACE="RGB" R="169" G="32" B="62"/>
+        <COLOR NAME="Deep pink" SPACE="RGB" R="255" G="20" B="147"/>
+        <COLOR NAME="English-red" SPACE="RGB" R="209" G="0" B="0"/>
+        <COLOR NAME="Forest green" SPACE="RGB" R="1" G="68" B="33"/>
+        <COLOR NAME="Gray 15" SPACE="RGB" R="38" G="38" B="38"/>
+        <COLOR NAME="Gray-asparagus" SPACE="RGB" R="22" G="34" B="29"/>
+        <COLOR NAME="Green-yellow" SPACE="RGB" R="189" G="246" B="29"/>
+        <COLOR NAME="Grey 30" SPACE="RGB" R="77" G="77" B="77"/>
+        <COLOR NAME="Grey 50" SPACE="RGB" R="128" G="128" B="128"/>
+        <COLOR NAME="Grey 67" SPACE="RGB" R="171" G="171" B="171"/>
+        <COLOR NAME="Grey 85" SPACE="RGB" R="217" G="217" B="217"/>
+        <COLOR NAME="Ice blue" SPACE="RGB" R="208" G="231" B="255"/>
+        <COLOR NAME="Lemon yellow" SPACE="RGB" R="243" G="253" B="37"/>
+        <COLOR NAME="Maroon" SPACE="RGB" R="128" G="0" B="0"/>
+        <COLOR NAME="Medium dark teal" SPACE="RGB" R="36" G="48" B="45"/>
+        <COLOR NAME="Medium jungle green" SPACE="RGB" R="30" G="51" B="58"/>
+        <COLOR NAME="Mint" SPACE="RGB" R="119" G="198" B="121"/>
+        <COLOR NAME="Napier green" SPACE="RGB" R="42" G="128" B="0"/>
+        <COLOR NAME="Olive" SPACE="RGB" R="128" G="128" B="0"/>
+        <COLOR NAME="Orange" SPACE="RGB" R="255" G="140" B="0"/>
+        <COLOR NAME="Orange-red" SPACE="RGB" R="252" G="60" B="3"/>
+        <COLOR NAME="Peach" SPACE="RGB" R="255" G="229" B="180"/>
+        <COLOR NAME="Persian orange" SPACE="RGB" R="217" G="144" B="88"/>
+        <COLOR NAME="Pink" SPACE="RGB" R="255" G="203" B="219"/>
+        <COLOR NAME="Prussian blue" SPACE="RGB" R="0" G="49" B="83"/>
+        <COLOR NAME="Purple" SPACE="RGB" R="138" G="23" B="137"/>
+        <COLOR NAME="RGB Blue" SPACE="RGB" R="0" G="0" B="255"/>
+        <COLOR NAME="RGB Green" SPACE="RGB" R="0" G="255" B="0"/>
+        <COLOR NAME="RGB Red" SPACE="RGB" R="229" G="17" B="1"/>
         <COLOR NAME="Registration" SPACE="CMYK" C="100" M="100" Y="100" K="100" Register="1"/>
+        <COLOR NAME="Rose pink" SPACE="RGB" R="255" G="102" B="204"/>
+        <COLOR NAME="Salmon" SPACE="RGB" R="255" G="140" B="105"/>
+        <COLOR NAME="Sand" SPACE="RGB" R="194" G="178" B="128"/>
+        <COLOR NAME="Sea green" SPACE="RGB" R="65" G="156" B="105"/>
+        <COLOR NAME="Sienna" SPACE="RGB" R="184" G="66" B="0"/>
+        <COLOR NAME="Straw" SPACE="RGB" R="242" G="227" B="198"/>
+        <COLOR NAME="Tan" SPACE="RGB" R="210" G="180" B="140"/>
+        <COLOR NAME="Teal" SPACE="RGB" R="0" G="128" B="128"/>
+        <COLOR NAME="Tiffany green" SPACE="RGB" R="173" G="217" B="186"/>
+        <COLOR NAME="Timberwolf" SPACE="RGB" R="175" G="205" B="182"/>
+        <COLOR NAME="Tomato" SPACE="RGB" R="255" G="54" B="34"/>
+        <COLOR NAME="Turquoise" SPACE="RGB" R="67" G="170" B="176"/>
+        <COLOR NAME="Unbleached silk" SPACE="RGB" R="255" G="219" B="188"/>
+        <COLOR NAME="Violet" SPACE="RGB" R="78" G="39" B="138"/>
         <COLOR NAME="White" SPACE="CMYK" C="0" M="0" Y="0" K="0"/>
+        <COLOR NAME="Yellow ochre" SPACE="RGB" R="216" G="153" B="12"/>
         <COLOR NAME="cover black" SPACE="RGB" R="2" G="13" B="17"/>
         <COLOR NAME="cover light brown" SPACE="RGB" R="237" G="190" B="156"/>
         <HYPHEN/>
@@ -48,8 +122,13 @@
         </CellStyle>
         <LAYERS NUMMER="0" LEVEL="0" NAME="Sfondo" SICHTBAR="1" DRUCKEN="1" EDIT="1" SELECT="0" FLOW="1" TRANS="1" BLEND="0" OUTL="0" LAYERC="#000000"/>
         <Printer firstUse="1" toFile="0" useAltPrintCommand="0" outputSeparations="0" useSpotColors="1" useColor="1" mirrorH="0" mirrorV="0" useICC="0" doGCR="0" doClip="0" setDevParam="0" useDocBleeds="1" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" includePDFMarks="1" PSLevel="3" PrintEngine="4" markLength="20.0013" markOffset="0" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" printer="Microsoft Print to PDF" filename="" separationName="All" printerCommand=""/>
-        <PDF firstUse="1" Thumbnails="0" Articles="0" Bookmarks="0" Compress="1" CMethod="0" Quality="0" EmbedPDF="0" MirrorH="0" MirrorV="0" Clip="0" rangeSel="0" rangeTxt="" RotateDeg="0" PresentMode="0" RecalcPic="0" FontEmbedding="0" Grayscale="0" RGBMode="1" UseProfiles="0" UseProfiles2="0" Binding="0" PicRes="300" Resolution="300" Version="14" Intent="1" Intent2="0" SolidP="sRGB display profile (ICC v2.2)" ImageP="sRGB display profile (ICC v2.2)" PrintP="ISO Coated v2 300% (basICColor)" InfoString="" BTop="0" BLeft="0" BRight="0" BBottom="0" useDocBleeds="1" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" docInfoMarks="0" markLength="20.0012598425197" markOffset="0" ImagePr="0" PassOwner="" PassUser="" Permissions="-4" Encrypt="0" UseLayers="0" UseLpi="0" UseSpotColors="1" doMultiFile="0" displayBookmarks="0" displayFullscreen="0" displayLayers="0" displayThumbs="0" hideMenuBar="0" hideToolBar="0" fitWindow="0" openAfterExport="0" PageLayout="0" openAction="">
-            <LPI Color="" Frequency="0" Angle="0" SpotFunction="0"/>
+        <PDF firstUse="0" Thumbnails="0" Articles="0" Bookmarks="0" Compress="1" CMethod="0" Quality="0" EmbedPDF="0" MirrorH="0" MirrorV="0" Clip="0" rangeSel="0" rangeTxt="" RotateDeg="0" PresentMode="0" RecalcPic="1" FontEmbedding="0" Grayscale="0" RGBMode="1" UseProfiles="0" UseProfiles2="0" Binding="0" PicRes="150" Resolution="300" Version="14" Intent="1" Intent2="0" SolidP="sRGB display profile (ICC v2.2)" ImageP="sRGB display profile (ICC v2.2)" PrintP="ISO Coated v2 300% (basICColor)" InfoString="" BTop="0" BLeft="0" BRight="0" BBottom="0" useDocBleeds="1" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" docInfoMarks="0" markLength="20.0012598425197" markOffset="0" ImagePr="0" PassOwner="" PassUser="" Permissions="-4" Encrypt="0" UseLayers="0" UseLpi="0" UseSpotColors="1" doMultiFile="0" displayBookmarks="0" displayFullscreen="0" displayLayers="0" displayThumbs="0" hideMenuBar="0" hideToolBar="0" fitWindow="0" openAfterExport="0" PageLayout="3" openAction="">
+            <Fonts Name="Bernard MT Condensed Regular"/>
+            <Subset Name="Arial Italic"/>
+            <Subset Name="Arial Regular"/>
+            <Subset Name="Segoe UI Black Italic"/>
+            <Subset Name="Segoe UI Regular"/>
+            <LPI Color="" Frequency="10" Angle="0" SpotFunction="0"/>
             <LPI Color="Black" Frequency="133" Angle="45" SpotFunction="3"/>
             <LPI Color="Cyan" Frequency="133" Angle="105" SpotFunction="3"/>
             <LPI Color="Magenta" Frequency="133" Angle="75" SpotFunction="3"/>
@@ -87,17 +166,17 @@
         <PAGE PAGEXPOS="100.001" PAGEYPOS="400.158480314961" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="1" NAM="" MNAM="Normale sinistra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
         <PAGE PAGEXPOS="440.158480314961" PAGEYPOS="400.158480314961" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="2" NAM="" MNAM="Normale destra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
         <PAGE PAGEXPOS="100.001" PAGEYPOS="780.315960629922" PAGEWIDTH="340.157480314961" PAGEHEIGHT="340.157480314961" BORDERLEFT="22.6771653543307" BORDERRIGHT="22.6771653543307" BORDERTOP="22.6771653543307" BORDERBOTTOM="22.6771653543307" NUM="3" NAM="" MNAM="Normale sinistra" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
-        <PAGEOBJECT XPOS="100.001" YPOS="780.315960629908" OwnPage="3" ItemID="88205184" PTYPE="6" WIDTH="340.157" HEIGHT="340.157" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" PCOLOR="Black" SHADE="30" PLINEART="1" path="M0 0 L340.157 0 L340.157 340.157 L0 340.157 L0 0 Z" copath="M0 0 L340.157 0 L340.157 340.157 L0 340.157 L0 0 Z" gXpos="100.00062992126" gYpos="6862.83023622047" gWidth="0" gHeight="0" LAYER="0"/>
-        <PAGEOBJECT XPOS="122.678165354331" YPOS="802.993125984248" OwnPage="3" ItemID="99274896" PTYPE="4" WIDTH="294.803149606299" HEIGHT="195.914152323873" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 195.914 L0 195.914 L0 0 Z" copath="M0 0 L294.803 0 L294.803 195.914 L0 195.914 L0 0 Z" gXpos="122.677795275591" gYpos="6885.50740157481" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="100.001" YPOS="780.315960629908" OwnPage="3" ItemID="232127728" PTYPE="6" WIDTH="340.157" HEIGHT="340.157" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" PCOLOR="Black" SHADE="30" PLINEART="1" path="M0 0 L340.157 0 L340.157 340.157 L0 340.157 L0 0 Z" copath="M0 0 L340.157 0 L340.157 340.157 L0 340.157 L0 0 Z" gXpos="100.00062992126" gYpos="6862.83023622047" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="122.678165354331" YPOS="802.993125984248" OwnPage="3" ItemID="232495888" PTYPE="4" WIDTH="294.803149606299" HEIGHT="195.914152323873" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 195.914 L0 195.914 L0 0 Z" copath="M0 0 L294.803 0 L294.803 195.914 L0 195.914 L0 0 Z" gXpos="122.677795275591" gYpos="6885.50740157481" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle/>
-                <ITEXT CPARENT="Default Character Style" FONTSIZE="8" CH="This booklet contains a simple walkthrough: it is the bare minimun list of commands to terminate the game."/>
+                <ITEXT CPARENT="Default Character Style" FONTSIZE="8" CH="This booklet contains instructions to quickly start the game."/>
                 <para PARENT="Default Paragraph Style (2)" LINESPMode="0" LINESP="12"/>
                 <ITEXT CPARENT="Default Character Style" FONTSIZE="8" CH=" "/>
                 <trail PARENT="Default Paragraph Style (2)" LINESPMode="0" LINESP="12"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="122.678165354331" YPOS="1037.77453494529" OwnPage="3" ItemID="242483184" PTYPE="4" WIDTH="294.803149606299" HEIGHT="60.0217406452513" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 60.0217 L0 60.0217 L0 0 Z" copath="M0 0 L294.803 0 L294.803 60.0217 L0 60.0217 L0 0 Z" gXpos="122.677795275591" gYpos="7120.28881053585" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="122.678165354331" YPOS="1037.77453494529" OwnPage="3" ItemID="232697888" PTYPE="4" WIDTH="294.803149606299" HEIGHT="60.0217406452513" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 60.0217 L0 60.0217 L0 0 Z" copath="M0 0 L294.803 0 L294.803 60.0217 L0 60.0217 L0 0 Z" gXpos="122.677795275591" gYpos="7120.28881053585" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle/>
                 <ITEXT FONT="Segoe UI Black Italic" FONTSIZE="8" CH="Breakfast in the Dolomites"/>
@@ -108,8 +187,8 @@
                 <trail LINESP="13"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="440.158480314961" YPOS="20.001" OwnPage="0" ItemID="259130608" PTYPE="2" WIDTH="340.157480314961" HEIGHT="340.157480314961" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="cover black" PLINEART="1" LOCALSCX="0.16609251968504" LOCALSCY="0.16609251968504" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="cover.jpg" IRENDER="0" EMBEDDED="0" path="M0 0 L340.157 0 L340.157 340.157 L0 340.157 L0 0 Z" copath="M0 0 L340.157 0 L340.157 340.157 L0 340.157 L0 0 Z" gXpos="440.158480314961" gYpos="20.001" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
-        <PAGEOBJECT XPOS="442.993125984252" YPOS="301.182799177758" OwnPage="0" ItemID="250006288" PTYPE="4" WIDTH="340.157480314961" HEIGHT="57.3451327433629" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="cover black" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L340.157 0 L340.157 57.3451 L0 57.3451 L0 0 Z" copath="M0 0 L340.157 0 L340.157 57.3451 L0 57.3451 L0 0 Z" gXpos="442.993125984252" gYpos="301.182799177758" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="440.158480314961" YPOS="0.158480314960631" OwnPage="0" ItemID="232817952" PTYPE="2" WIDTH="340.157480314961" HEIGHT="340.157480314961" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="cover black" PLINEART="1" LOCALSCX="0.16609251968504" LOCALSCY="0.16609251968504" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="cover.jpg" IRENDER="0" EMBEDDED="0" path="M0 0 L340.157 0 L340.157 340.157 L0 340.157 L0 0 Z" copath="M0 0 L340.157 0 L340.157 340.157 L0 340.157 L0 0 Z" gXpos="440.158480314961" gYpos="0.158480314960631" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="440.158480314961" YPOS="301.182799177758" OwnPage="0" ItemID="232558400" PTYPE="4" WIDTH="340.157480314961" HEIGHT="57.3451327433629" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="cover black" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L340.157 0 L340.157 57.3451 L0 57.3451 L0 0 Z" copath="M0 0 L340.157 0 L340.157 57.3451 L0 57.3451 L0 0 Z" gXpos="440.158480314961" gYpos="301.182799177758" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle FONT="Bernard MT Condensed Regular"/>
                 <ITEXT FONTSIZE="25" FCOLOR="cover light brown" CH="Breakfast in the Dolomites"/>
@@ -118,5 +197,35 @@
                 <trail ALIGN="1" LINESP="19"/>
             </StoryText>
         </PAGEOBJECT>
+        <PAGEOBJECT XPOS="122.678165354331" YPOS="422.835645669292" OwnPage="1" ItemID="88283968" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="122.678165354331" gYpos="422.835645669292" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="102295424" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FONTSIZE="9" CH="This interactive fiction comes in the form of a story file."/>
+                <para PARENT="Default Paragraph Style (2)"/>
+                <ITEXT FONTSIZE="9" CH="This is a software program. Rather than running directly on any one computer, this is a program for a virtualmachine adapted for IF. "/>
+                <para PARENT="Default Paragraph Style (2)"/>
+                <ITEXT FONTSIZE="9" CH="The advantage of this is that the same story file can be used on any number of very different systems (Macs, PCs, Linux boxes), and that a story file is so isolated from the host computer that it is impossible for it to alter other files or do any damage, malicious or accidental."/>
+                <para PARENT="Default Paragraph Style (2)"/>
+                <ITEXT FONTSIZE="9" CH="The disadvantage is that a story file can only be used with a program called an “interpreter”. All the same, once you have installed an interpreter, you will be able to play a wide range of stories."/>
+                <para PARENT="Default Paragraph Style (2)"/>
+                <ITEXT FONTSIZE="9" CH="This story was tested using an interpreter called Gargoyle, which you can download from: "/>
+                <ITEXT FONT="Arial Italic" FONTSIZE="9" FCOLOR="Cobalt blue" CH="https://github.com/garglk/garglk/releases"/>
+                <para PARENT="Default Paragraph Style (2)"/>
+                <ITEXT FONTSIZE="9" CH="Gargoyle runs on Windows, Mac and Linux (also available as a package named "/>
+                <ITEXT FONT="Arial Italic" FONTSIZE="9" CH="gargoyle-free"/>
+                <ITEXT FONTSIZE="9" CH=" on Ubuntu); once you have the interpreter installed, just drag the story file (the one with the .gblorb extension) onto the executable and the story will start."/>
+                <para PARENT="Default Paragraph Style (2)" LINESPMode="0" LINESP="12"/>
+                <ITEXT FONTSIZE="9" CH="Many other interpreters are available; you can find a list here: "/>
+                <ITEXT FONT="Arial Italic" FONTSIZE="9" FCOLOR="Cobalt blue" CH="https://www.ifwiki.org/Glulx"/>
+                <para PARENT="Default Paragraph Style (2)"/>
+                <ITEXT FONTSIZE="9" CH="This game comes with two additional manuals: "/>
+                <para PARENT="Default Paragraph Style (2)"/>
+                <ITEXT FONTSIZE="9" CH="- An introductory booklet that describes the story and explains how to play."/>
+                <para PARENT="Default Paragraph Style (2)"/>
+                <ITEXT FONTSIZE="9" CH="- A walkthrough, useful if you get stuck. You shouldn't read this guide, as it would take away from the fun of solving the puzzles yourself; but if you really can't, you can have the solution to help you progress in the game."/>
+                <trail PARENT="Default Paragraph Style (2)"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="462.835645669292" YPOS="422.835645669292" OwnPage="2" ItemID="102295424" PTYPE="4" WIDTH="294.803149606299" HEIGHT="294.803149606299" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" copath="M0 0 L294.803 0 L294.803 294.803 L0 294.803 L0 0 Z" gXpos="122.678165354331" gYpos="422.835645669292" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="88283968"/>
     </DOCUMENT>
 </SCRIBUSUTF8NEW>

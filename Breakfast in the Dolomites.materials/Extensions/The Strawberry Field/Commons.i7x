@@ -304,6 +304,13 @@ Understand "go to/into/-- [any room]" as going by name.
 Going by name is an action applying to one thing.
 Check going by name:
     if the noun is the location, say "You're already in [the location]." instead;
-    if the noun is not adjacent, say "There isn't any [noun] nearby." instead. 
+    if the noun is not adjacent and the noun is unvisited, say "There isn't any [noun] nearby." instead. 
+
+Carry out going by name:
+    let aim be the best route from the location to the noun, using doors;
+    if aim is not a direction, say "You can't think how to get there from here." instead;
+    say "(heading [aim])[command clarification break]";
+    try going aim;
+    if the location is not the noun, say "You'll have to stop here."
 	
 Commons ends here.
