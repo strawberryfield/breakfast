@@ -83,6 +83,18 @@ Instead of pushing a flush button:
 	let W be a random wc-bowl in the location of the player;
 	now W is clean.
 
+Flushing is an action applying to an object.
+Understand "flush [something]" as flushing.
+Understand "flush" as flushing.
+Rule for supplying a missing noun while flushing (this is the flush the room rule):
+	now the noun is the location.
+	
+Check flushing:
+	unless the noun is a flush button or the noun is a wc-room, say "There is nothing to flush here." instead.
+Carry out flushing:
+	let W be a random flush button in the location of the player;
+	try pushing w.
+
 Chapter 3.3
 
 Urinating into is an action applying to an object.

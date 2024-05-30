@@ -74,6 +74,8 @@ Chapter 1.1.1 - Styles
 Table of User Styles (continued)
 style name	color	italic	font weight	background color
 all-styles	"#101010"	false	regular-weight	"#f8f8e0"
+italic-style	--	true	regular-weight	--
+bold-style	--	false	bold-weight	--
 special-style-1	"#FF0000"	false	regular-weight	--
 note-style	"#0000A0"	true	bold-weight	--
 
@@ -3133,6 +3135,7 @@ When Using the WC ends:
 	check stage progress.
 
 After urinating into:
+	mark used WC as done;
 	now WC-trigger is false;
 	continue the action.
 		
@@ -3152,7 +3155,7 @@ To check stage progress:
 		if extracted juice completed:
 			if read newsletter completed:
 				if used wc completed:
-					do nothing;
+					play ends in 1 turn from now;
 				otherwise:
 					Monica urges wc in 1 turns from now;
 			otherwise:
@@ -3161,7 +3164,13 @@ To check stage progress:
 			Monica urges juicer in 1 turn from now;
 	otherwise:
 		Monica urges order in 0 turns from now.	
-				
+
+At the time when play ends:
+	unless the location is the dining room:
+		play ends in 0 turns from now;
+	otherwise:
+		say "End of the play".
+					
 Volume 5 - Internal db
 
 Book 5.1 - Table of tasks
