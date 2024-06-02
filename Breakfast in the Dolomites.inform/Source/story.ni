@@ -39,20 +39,20 @@ Chapter 0.2 - Game start
 
 Figure cover is the file "Cover.jpg".
 [ uncomment below for release]
-[When play begins:
+When play begins:
 	say "[story-beginning]";
 	say "[/p][/b]«The Strawberry Field»[/r] [/i]presents[/r][/p]";
-	pause the game.]
+	pause the game.
 
 Arrival-trigger is a truth state that varies. 
 After printing the banner text:
-[	display the Figure cover;
+	display the Figure cover;
 	pause the game;
 	now arrival-trigger is true;
 	say "[arrive to hotel][/n]";
-	Monica leaves the car in 1 turn from now.]
+	Monica leaves the car in 1 turn from now.
 	[ uncomment above for release, than comment below]
-	now the player is in the reception;
+	[now the player is in the reception;
 	now the player is registered;
 	now the player wear the red backpack;
 	let K be a random room key in sleeping room;
@@ -63,7 +63,7 @@ After printing the banner text:
 	let K be a random room key in sleeping room;
 	now K is in the handbag;
 	now The check-in-trigger is true;
-	Monica leaves the car never.
+	Monica leaves the car never.]
 	
 Volume 1 - Commons 
 
@@ -113,11 +113,15 @@ The alternate non-empty inventory rule is listed instead of the non-empty invent
 
 The inventory normal rule is not listed in any rulebook.
 
-Chapter 1.2.3 - Disabling smarter parser rules
+Chapter 1.2.3 - Smarter parser rules
 
 the Smarter Parser simplify punctuation rule is not listed in any rulebook.
 To announce the reparsed command:
 	say "[unless saved Smarter Parser error is empty]([italic type][saved Smarter Parser error][roman type])[command clarification break][end unless]Next time, I suggest you write the command as: [/f][reborn command][/r]".
+
+Table of Smarter Parser Messages (amended)
+SP rule	message
+asking who are you rule	"I'm the narrator. [/n]I translate what you type into the story world. You have to use specific commands to talk to me though. Try typing HELP for more information."
 
 Chapter 1.2.4 - Customized drinking rules
 
@@ -163,7 +167,7 @@ The Sleeping room is a room.
 
 Book 2.1 - The car
 
-The description of the car is "A city car; the interior space is not much, but more than enough for a young couple. [/n]Next to the dashboard, under the radio, is a small drawer."
+The description of the car is "A city car; the interior space is not much, but more than enough for a young couple. [/n]The dashboard is powered off."
 Instead of an actor dancing while the location of the actor is the car: say "Not enough room in here.".
 
 Chapter 2.1.1 - The dashboard
@@ -180,10 +184,10 @@ your-car-key is a thing in the dashboard. Printed name is "your car[']s key".
 The description is "The key to open and start your car."
 Understand "key" as your-car-key.
 
-Section 2.1.1.3 - The drawer
+[Section 2.1.1.3 - The drawer
 
 The tiny drawer is a closed openable container. It is part of the dashboard.
-Instead of inserting something which is not your-car-key into the dashboard, try inserting the noun into the tiny drawer.
+Instead of inserting something which is not your-car-key into the dashboard, try inserting the noun into the tiny drawer.]
 
 Section 2.1.1.4 The radio
 
@@ -212,10 +216,12 @@ To say car external:
 
 Chapter 2.1.3 - The car boot
 
-The boot is a closed openable lockable scenery container in the parking.
-Understand "trunk" as the boot.
+The car boot is a closed openable lockable scenery container in the parking.
+Understand "car/-- trunk" as the car boot.
 
 Section 2.1.3.1 - Locking rules
+
+Does the player mean locking keylessly a door: it is likely.
 
 Before locking the car door with your-car-key while the car door is closed and the boot is open:
 	say "The car boot is open." instead.
@@ -311,7 +317,7 @@ The description is "[if the location of the player is the parking]An asphalted s
 
 Book 2.3 - The garden
 
-The description of the garden is "There are fir trees in the garden and wooden tables and chairs in the lawn. [/n]The driveway is lit by a few marker lamps. At the end of it a sliding door is the entrance to the hotel. [/n]Parking is to the west.".
+The description of the garden is "There are fir trees in the garden and wooden tables and chairs in the lawn. [/n]The driveway is lit by a few marker lamps. At the end of it a sliding door is the entrance to the hotel. [/n]The low light enhances the starry sky and creates a romantic atmosphere. [/n]Parking is to the west.".
 
 Instead of going to the parking from the garden, say "You didn't forget anything important in the car.".
 
@@ -319,6 +325,7 @@ Chapter 2.3.1 - The sliding door
 
 The sliding door is a scenery closed openable door. The description is "An automatic glass sliding door."
 The sliding door is inside from the garden and outside from the reception.
+Understand "hotel door/--" as the sliding door.
 
 After opening the sliding door, say "[We] [come] closer to [the noun] and it automatically [open].".
 After closing the sliding door, say "[We] [move] away from [the noun] and it automatically [close].".
@@ -434,7 +441,7 @@ Chapter 2.4.2 - Timed events
 Section 2.4.2.1 - Check-in
 
 At the time when the receptionist greets:
-	say "[/ss]Good evening, welcome to our hotel!' [/se][the naming of receptionist] [greet] you.[/ss]How can I help you?' [/r][/n]";
+	say "[/ss]Good evening, welcome to our hotel!' [/se][the naming of receptionist] [greet] you [/ss1]How can I help you?' [/r][/n]";
 	Monica greets the receptionist in 0 turns from now;
 	Monica remember to greet in 1 turn from now;
 
@@ -448,7 +455,7 @@ At the time when Monica greets the receptionist:
 	say "[/ss][good evening receptionist].' [/se][Monica] [say][greet-to receptionist].". 	
 
 At the time when the receptionist confirms reservation:
-	say "[/ss]Here it is.' [/se][the naming of receptionist] reports. [/n][/ss]We have reserved the 'edelweiss' room for you: our rooms do not have a number, but the name of a flower.' [/r][/n]";
+	say "[/ss]Here it is.' [/se][the naming of receptionist] reports [/ss1]We have reserved the 'edelweiss' room for you: our rooms do not have a number, but the name of a flower.' [/r][/n]";
 	say "[/ss]Oh nice!' [/se][Monica] [say] and [open] [their] handbag. [/n]";
 	say "[The naming of receptionist] smiles. [/n]";
 	now the shiny black handbag is open;
@@ -2692,10 +2699,10 @@ When Arrival begins: now alerts is zero.
 The Arrival ends when arrival-trigger is false.
  	
 To say arrive to hotel:
-	say "[/p][/i]A few minutes later. [/r][/p][We] [arrive] at the hotel and [park] your car in the private car parking area next to the garden. [/p]".
+	say "[/p][/i]A few minutes later. [/r][/p][We] [arrive] at the hotel and [park] your car in the private car parking area next to the garden. [/n][Monica] [turn] off the radio. [/p]".
 	
 When Arrival ends:
-	if alerts is greater than zero, say "Let's start well: [we] [have] just arrived and [Monica] [have] already rebuked you [alerts in words] time[s].";
+	if alerts is greater than zero, say "Let's start well: [we] [have] just arrived and [Monica] [have] already rebuked you [alerts in words] time[s]. [/n]Monica is looking at you with sweet eyes, waiting for a sign of your love.";
 	now alerts is 0.
 	
 Book 4.3 - Check-in
@@ -3169,7 +3176,11 @@ At the time when play ends:
 	unless the location is the dining room:
 		play ends in 0 turns from now;
 	otherwise:
-		say "End of the play".
+		say "[The naming of the receptionist] walks away from his desk and comes into the dining room.";
+		say "[The naming of Emma] also comes here.";
+		say "[Monica] stands up and starts clapping, followed by all the other characters. [/p]";
+		say "Your game is over, you played very well and solved all the puzzles we set you. [/n]We all thank you for playing!";
+		end the story saying "The curtain closes".
 					
 Volume 5 - Internal db
 

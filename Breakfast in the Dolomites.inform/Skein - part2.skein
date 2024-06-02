@@ -1,0 +1,1240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skein rootNode="node-1">
+  <generator>Windows Inform 10.1.2</generator>
+  <item nodeId="node-1">
+    <command xml:space="preserve">Breakfast in the Dolomites</command>
+    <result xml:space="preserve">Breakfast in the Dolomites&#x000A;A play just for fun comedy by Roberto Ceccarelli&#x000A;Release 1 / Serial number 240601 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Reception&#x000A;This charming little hotel welcomes guests with its cosy reception area: the inviting atmosphere is immediately apparent, with a blend of rustic elegance and modern comfort. &#x000A;The receptionist stands behind a tastefully crafted wooden desk, ready to assist guests with a genuine smile. &#x000A;Stairs lead to the upper floors. To the east is the dining room, along the wall is a door. &#x000A;&#x000A;The reception of this little hotel in the Dolomites serves as the perfect introduction to the unique blend of comfort and authenticity that awaits guests throughout their stay, promising a memorable and rejuvenating experience in this picturesque mountain retreat. &#x000A;&#x000A;Reception&#x000A;The receptionist stands behind a tastefully crafted wooden desk, ready to assist guests with a genuine smile. &#x000A;Stairs lead to the upper floors. To the east is the dining room, along the wall is a door. &#x000A;&#x000A;Monica is next to you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2"/>
+      <child nodeId="node-4"/>
+    </children>
+  </item>
+  <item nodeId="node-2">
+    <command xml:space="preserve"> </command>
+    <result xml:space="preserve">Please press SPACE to continue.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3"/>
+    </children>
+  </item>
+  <item nodeId="node-3">
+    <command xml:space="preserve"> </command>
+    <result xml:space="preserve">Breakfast in the Dolomites&#x000A;A play just for fun comedy by Roberto Ceccarelli&#x000A;Release 1 / Serial number 240421 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Reception&#x000A;This charming little hotel welcomes guests with its cosy reception area: the inviting atmosphere is immediately apparent, with a blend of rustic elegance and modern comfort. &#x000A;The receptionist stands behind a tastefully crafted wooden desk, ready to assist guests with a genuine smile. &#x000A;Stairs lead to the upper floors. To the east is the dining room, along the wall is a door. &#x000A;&#x000A;The reception of this little hotel in the Dolomites serves as the perfect introduction to the unique blend of comfort and authenticity that awaits guests throughout their stay, promising a memorable and rejuvenating experience in this picturesque mountain retreat. &#x000A;&#x000A;Reception&#x000A;The receptionist stands behind a tastefully crafted wooden desk, ready to assist guests with a genuine smile. &#x000A;Stairs lead to the upper floors. To the east is the dining room, along the wall is a door. &#x000A;&#x000A;Monica is next to you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-4">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;It's time to check in: you have just arrived at the hotel.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5"/>
+    </children>
+  </item>
+  <item nodeId="node-5">
+    <command xml:space="preserve">up</command>
+    <result xml:space="preserve">You and Monica bid farewell to the receptionist and set off up the stairs. &#x000A;"Have a good night!" &#x2014; the receptionist wishes you. &#x000A;&#x2665; Monica wraps her arm around your waist and gives you a kiss on the neck.&#x000A;&#x000A;&#x000A;Please press SPACE to continue.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-6"/>
+    </children>
+  </item>
+  <item nodeId="node-6">
+    <command xml:space="preserve"> </command>
+    <result xml:space="preserve">The morning after. &#x000A;&#x000A;After a good night's sleep, you are ready to enjoy the first day of your holiday. &#x000A;You and Monica go down the stairs and back to reception. &#x000A;You wear a pair of brown trekking boots, a checkered flannel shirt, a white t-shirt and a pair of beige shorts; Monica wears a pair of pink trekking shoes, a pair of black leggings and a black sweatshirt. &#x000A;The receptionist are working behind the counter. &#x000A;&#x000A;"Miss Monica and Mr. Francesco good morning!" &#x2014; the receptionist wishes, "You're looking good today!" &#x000A;&#x000A;"Good morning." &#x2014; Monica says to the receptionist.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-7"/>
+    </children>
+  </item>
+  <item nodeId="node-7">
+    <command xml:space="preserve">hi</command>
+    <result xml:space="preserve">"Good morning." &#x2014; you say to the receptionist.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-8"/>
+      <child nodeId="node-12"/>
+    </children>
+  </item>
+  <item nodeId="node-8">
+    <command xml:space="preserve">ask about table</command>
+    <result xml:space="preserve">"Please feel free to ask my colleagues in the dining room about it." &#x2014; he replies.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-9"/>
+    </children>
+  </item>
+  <item nodeId="node-9">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Monica follows you.&#x000A;&#x000A;Dining room&#x000A;Rustic wooden beams and locally sourced stone accents complement the alpine setting, while tasteful decor elements pay homage to the region's cultural heritage. The tables are elegantly set with crisp linens. Around the tables is a bench covered in dark green velvet. &#x000A;Bathed in natural light that filters through large windows, the room offers panoramic views of the surrounding majestic peaks, creating a serene and inspiring atmosphere. &#x000A;The reception area is to the west, to the north is the buffet area, and to the east a door leads to the kitchen.&#x000A;&#x000A;Monica is next to you.&#x000A;&#x000A;You can see a waiter and a waitress here.&#x000A;&#x000A;&#x2665; "Very nice, isn't it?" &#x2014; Monica asks, &#x2014; "I wonder at which table we can sit." &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-10"/>
+    </children>
+  </item>
+  <item nodeId="node-10">
+    <command xml:space="preserve">ask about table</command>
+    <result xml:space="preserve">You need to specify who you want to speak to.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-11"/>
+    </children>
+  </item>
+  <item nodeId="node-11">
+    <command xml:space="preserve">ask waiter about table</command>
+    <result xml:space="preserve">You approach the waiter and say hello: &#x2014; "Good morning, we are staying in the "Edelweiss" room and it is our first day here." &#x000A;"Oh, welcome! Let me show you to your table." &#x2014; the waiter says and goes to a free table. &#x000A;"This is the table we have reserved for you, I hope it is to your liking." &#x2014; he points to you the table.&#x000A;&#x2665; "It's perfect!" &#x2014; Monica exclaims &#x2014; "Thank you." &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-12">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Monica follows you.&#x000A;&#x000A;Dining room&#x000A;Rustic wooden beams and locally sourced stone accents complement the alpine setting, while tasteful decor elements pay homage to the region's cultural heritage. The tables are elegantly set with crisp linens. Around the tables is a bench covered in dark green velvet. &#x000A;Bathed in natural light that filters through large windows, the room offers panoramic views of the surrounding majestic peaks, creating a serene and inspiring atmosphere. &#x000A;The reception area is to the west, to the north is the buffet area, and to the east a door leads to the kitchen.&#x000A;&#x000A;Monica is next to you.&#x000A;&#x000A;You can see a waiter and a waitress here.&#x000A;&#x000A;&#x2665; "Very nice, isn't it?" &#x2014; Monica asks, &#x2014; "I wonder at which table we can sit." &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-13"/>
+    </children>
+  </item>
+  <item nodeId="node-13">
+    <command xml:space="preserve">hi</command>
+    <result xml:space="preserve">You approach the waiter and say hello: You approach the waiter and say hello: &#x2014; "Good morning, we are staying in the "Edelweiss" room and it is our first day here." &#x000A;"Oh, welcome! Let me show you to your table." &#x2014; the waiter says and goes to a free table. &#x000A;"This is the table we have reserved for you, I hope it is to your liking." &#x2014; he points to you the table.&#x000A;&#x2665; "It's perfect!" &#x2014; Monica exclaims &#x2014; "Thank you." &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-14"/>
+    </children>
+  </item>
+  <item nodeId="node-14">
+    <command xml:space="preserve">put key on table</command>
+    <result xml:space="preserve">You put the room key on the table.&#x000A;&#x000A;Monica sits down on the bench.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-15"/>
+    </children>
+  </item>
+  <item nodeId="node-15">
+    <command xml:space="preserve">sit</command>
+    <result xml:space="preserve">You get onto the bench.&#x000A;&#x000A;Monica is next to you.&#x000A;&#x000A;"May I serve you a hot beverage?" &#x2014; the waiter asks, then explains: &#x2014; "I can offer you a coffee, a cappuccino, a hot chocolate or a tea." &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-16"/>
+    </children>
+  </item>
+  <item nodeId="node-16">
+    <command xml:space="preserve">cappuccino</command>
+    <result xml:space="preserve">"Regular, soy milk or barley coffee?" &#x2014; he asks you to choose. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-17"/>
+    </children>
+  </item>
+  <item nodeId="node-17">
+    <command xml:space="preserve">regular</command>
+    <result xml:space="preserve">"Good choice." &#x2014; the waiter confirms you. &#x000A;"What can I get for you, miss?" &#x2014; he asks Monica. &#x000A;"A cup of hot chocolate." &#x2014; Monica answers. &#x000A;"Perfect!" &#x2014; the waiter exclaims. &#x000A;"I'll be back soon with what you've ordered." &#x2014; he says &#x2014; "In the meantime, you can help yourself to the buffet." &#x000A;&#x000A;The waiter goes to the kitchen. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-18"/>
+    </children>
+  </item>
+  <item nodeId="node-18">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">(first getting off the bench)&#x000A;You stand up.&#x000A;&#x000A;Buffet&#x000A;The buffet is a feast for the senses, featuring a variety of locally sourced and homemade delights. Guests can savor freshly baked artisanal breads, jams, and a selection of cheeses and cured meats, showcasing the flavors of the Dolomites.&#x000A;&#x000A;To the right is a wooden cupboard. On it are some empty dishes and containers with cold drinks.&#x000A;Next to the sideboard is a small table with a juicer on it and two small wooden crates of celery ribs and carrots.&#x000A;To the left is a table on which are bread, butter, jams, meats and cheese.&#x000A;Next to the buffet table there is another table, behind which a cook is on hand to cook the eggs that are in a basket.&#x000A;You can see a HACCP ingredients book here.&#x000A;&#x000A;Monica stands up and follows you at the buffet. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-19"/>
+    </children>
+  </item>
+  <item nodeId="node-19">
+    <command xml:space="preserve">take dish</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-20"/>
+    </children>
+  </item>
+  <item nodeId="node-20">
+    <command xml:space="preserve">put speck on dish</command>
+    <result xml:space="preserve">(first taking the slice of speck)&#x000A;You put the slice of speck on the dish.&#x000A;&#x000A;Monica takes a dish from the cupboard.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-21"/>
+    </children>
+  </item>
+  <item nodeId="node-21">
+    <command xml:space="preserve">take bread</command>
+    <result xml:space="preserve">Which do you mean, a slice of white bread or a slice of pumpernickel bread?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-22"/>
+    </children>
+  </item>
+  <item nodeId="node-22">
+    <command xml:space="preserve">black</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;Monica takes a slice of white bread and puts it on the dish she is carrying.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-23"/>
+    </children>
+  </item>
+  <item nodeId="node-23">
+    <command xml:space="preserve">put bread on dish</command>
+    <result xml:space="preserve">(the slice of pumpernickel bread on the dish)&#x000A;You put the slice of pumpernickel bread on the dish.&#x000A;&#x000A;Monica takes a knob of butter and puts it on the dish she is carrying.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-24"/>
+    </children>
+  </item>
+  <item nodeId="node-24">
+    <command xml:space="preserve">put black bread on dish</command>
+    <result xml:space="preserve">(first taking the slice of pumpernickel bread)&#x000A;You put the slice of pumpernickel bread on the dish.&#x000A;&#x000A;Monica takes a apricot jam portion jar and puts it on the dish she is carrying.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-25"/>
+    </children>
+  </item>
+  <item nodeId="node-25">
+    <command xml:space="preserve">put butter on dish</command>
+    <result xml:space="preserve">(first taking the knob of butter)&#x000A;You put the knob of butter on the dish.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-26"/>
+    </children>
+  </item>
+  <item nodeId="node-26">
+    <command xml:space="preserve">put marmalade on dish</command>
+    <result xml:space="preserve">(first taking the orange marmalade portion jar)&#x000A;You put the orange marmalade portion jar on the dish.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-27"/>
+    </children>
+  </item>
+  <item nodeId="node-27">
+    <command xml:space="preserve">ask cook for a glass</command>
+    <result xml:space="preserve">"The glasses are in a drawer of the cupboard." &#x2014; she replies.&#x000A;&#x000A;"May I cook an egg for you?" &#x2014; the cook asks, then explains: &#x2014; "I can offer you a fried egg, an omelette or a cr&#x00EA;pe." &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-28"/>
+    </children>
+  </item>
+  <item nodeId="node-28">
+    <command xml:space="preserve">fried</command>
+    <result xml:space="preserve">"Bull's eye or scrambled?" &#x2014; she asks you to choose. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-29"/>
+    </children>
+  </item>
+  <item nodeId="node-29">
+    <command xml:space="preserve">scrambled</command>
+    <result xml:space="preserve">"Your scrambled fried egg will be ready in a couple of minutes." &#x2014; the cook says. &#x000A;&#x000A;The cook takes an egg, breaks it by tapping it on the edge of a frying pan and then carefully pours the contents into the pan.&#x000A;She throws the eggshell into a bin under the table.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-30"/>
+    </children>
+  </item>
+  <item nodeId="node-30">
+    <command xml:space="preserve">ask cook for a dish</command>
+    <result xml:space="preserve">"The eggs I cook are already on a dish," &#x2014; she says &#x2014; "if you need an empty plate you will find it on the cupboard." &#x000A;&#x000A;The cook uses a fork to mix the egg yolk with the abume, creating a white mixture with yellow flecks.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-31"/>
+    </children>
+  </item>
+  <item nodeId="node-31">
+    <command xml:space="preserve">open left drawer</command>
+    <result xml:space="preserve">You open the left drawer, revealing ten empty glasses.&#x000A;&#x000A;"Here's your scrambled fried egg!" &#x2014; the cook says handing you the dish. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-32"/>
+    </children>
+  </item>
+  <item nodeId="node-32">
+    <command xml:space="preserve">get dish</command>
+    <result xml:space="preserve">You take the dish from the cook.&#x000A;&#x000A;"Can I prepare something for you too, Miss?" &#x2014; the cook asks to Monica.&#x000A;"I would like a cr&#x00EA;pe." &#x2014; Monica replies.&#x000A;"Good choice!" &#x2014; the cook confirms &#x2014; "It will be ready in a few minutes." &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-33"/>
+    </children>
+  </item>
+  <item nodeId="node-33">
+    <command xml:space="preserve">take glass</command>
+    <result xml:space="preserve">Monica also takes a glass.&#x000A;She then closes the drawer.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-34"/>
+    </children>
+  </item>
+  <item nodeId="node-34">
+    <command xml:space="preserve">pour apple in the glass</command>
+    <result xml:space="preserve">You pour apple juice into the glass.&#x000A;&#x000A;Monica pours some orange juice in her glass.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-35"/>
+    </children>
+  </item>
+  <item nodeId="node-35">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">"Don't go away!" &#x2014; Monica draws your attention: &#x2014; "I'm waiting for a cr&#x00EA;pe." &#x000A;&#x000A;"Here's your cr&#x00EA;pe, Miss." &#x2014; the cook says to Monica handing her the dish.&#x000A;"Thank you." &#x2014; Monica says getting the dish. &#x000A;"Don't mention it!" &#x2014; the cook replies.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-36"/>
+    </children>
+  </item>
+  <item nodeId="node-36">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Dining room&#x000A;The tables are elegantly set with crisp linens. Around the tables is a bench covered in dark green velvet. &#x000A;The reception area is to the west, to the north is the buffet area, and to the east a door leads to the kitchen.&#x000A;&#x000A;You can see a waitress here.&#x000A;&#x000A;Monica returns with you in the dining room and sits on the bench.&#x000A;Then she puts the dishes and the glass she has brought from the buffet on the table.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-37"/>
+    </children>
+  </item>
+  <item nodeId="node-37">
+    <command xml:space="preserve">sit</command>
+    <result xml:space="preserve">You get onto the bench.&#x000A;&#x000A;Monica is next to you.&#x000A;&#x000A;The waiter returns with a tray containing your order. &#x000A;"Here are your hot drinks!" &#x2014; he exclaims &#x2014; "A cup of cappuccino and a mug of hot chocolate." &#x000A;The waiter then places the contents of the tray on the table. &#x000A;&#x000A;(Monica first taking the cr&#x00EA;pe)&#x000A;Monica eats her cr&#x00EA;pe. &#x000A;It seems to have been really good, judging by her expression.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-38"/>
+    </children>
+  </item>
+  <item nodeId="node-38">
+    <command xml:space="preserve">drink chocolate</command>
+    <result xml:space="preserve">The mug of hot chocolate belongs to Monica.&#x000A;&#x000A;Monica takes her mug of hot chocolate and drinks the hot chocolate.&#x000A;Then she puts the mug on the table.&#x000A;"The hot chocolate was really good," &#x2014; Monica states and suggests &#x2014; "why don't you try it?" &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-39"/>
+    </children>
+  </item>
+  <item nodeId="node-39">
+    <command xml:space="preserve">drink cappuccino</command>
+    <result xml:space="preserve">(first taking the cup of cappuccino)&#x000A;You're carrying too many things already.&#x000A;&#x000A;"Drink your cup of cappuccino before it gets cold." &#x2014; Monica suggests you.&#x000A;&#x000A;The waiter leave.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-40"/>
+    </children>
+  </item>
+  <item nodeId="node-40">
+    <command xml:space="preserve">put glass on table</command>
+    <result xml:space="preserve">(the glass of apple juice on the table)&#x000A;You put the glass of apple juice on the table.&#x000A;&#x000A;Monica spreads the knob of butter on her slice of white bread.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-41"/>
+    </children>
+  </item>
+  <item nodeId="node-41">
+    <command xml:space="preserve">put dish on table</command>
+    <result xml:space="preserve">You put the dish on the table.&#x000A;&#x000A;"Drink your cup of cappuccino before it gets cold." &#x2014; Monica suggests you.&#x000A;&#x000A;Monica opens the apricot jam portion jar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-42"/>
+    </children>
+  </item>
+  <item nodeId="node-42">
+    <command xml:space="preserve">put dish on table</command>
+    <result xml:space="preserve">You put the dish on the table.&#x000A;&#x000A;Monica spreads the portion of apricot jam over the buttered slice of white bread.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-43"/>
+    </children>
+  </item>
+  <item nodeId="node-43">
+    <command xml:space="preserve">drink cappuccino</command>
+    <result xml:space="preserve">(first taking the cup of cappuccino)&#x000A;You drink the cappuccino, leaving the cup empty. &#x000A;Characterised by the unmistakable aromas of coffee, its bitter taste and the roundness of whipped milk that sticks around the mouth.&#x000A;&#x000A;The waitress collects all the empty dishes, glasses and cups from the table. &#x000A;Then she goes to the kitchen.&#x000A;&#x000A;Monica throws the apricot jam portion jar in the round plastic container.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-44"/>
+    </children>
+  </item>
+  <item nodeId="node-44">
+    <command xml:space="preserve">put the cup on the table</command>
+    <result xml:space="preserve">You put the empty cup on the table.&#x000A;&#x000A;(Monica first taking the buttered slice of white bread dressed with a portion of apricot jam)&#x000A;Monica eats the buttered slice of white bread dressed with a portion of apricot jam.&#x000A;&#x000A;&#x2665; "Delicious!" &#x2014; Monica exclaims &#x2014; "You really took me to a nice place." &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-45"/>
+    </children>
+  </item>
+  <item nodeId="node-45">
+    <command xml:space="preserve">put speck on black bread</command>
+    <result xml:space="preserve">Now you have a slice of pumpernickel bread dressed with a slice of speck.&#x000A;&#x000A;Monica takes her glass of orange juice and drinks the juice.&#x000A;After drinking Monica puts the empty glass on the table again.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-46"/>
+    </children>
+  </item>
+  <item nodeId="node-46">
+    <command xml:space="preserve">eat bread</command>
+    <result xml:space="preserve">(first taking the slice of pumpernickel bread dressed with a slice of speck)&#x000A;You eat the slice of pumpernickel bread dressed with a slice of speck. Not bad.&#x000A;&#x000A;The waitress collects all the empty dishes, glasses and cups from the table. &#x000A;Then she goes to the kitchen.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-47"/>
+    </children>
+  </item>
+  <item nodeId="node-47">
+    <command xml:space="preserve">x table</command>
+    <result xml:space="preserve">On the table are a dish (on which are an orange marmalade portion jar (closed), a knob of butter and a slice of pumpernickel bread), a dish (on which is a scrambled fried egg), a glass of apple juice, a room key, two knives, two teaspoons, two forks, two towels, a round plastic container (in which is an apricot jam portion jar (empty)) and a written paper.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-48"/>
+    </children>
+  </item>
+  <item nodeId="node-48">
+    <command xml:space="preserve">open marmalade</command>
+    <result xml:space="preserve">You open the orange marmalade portion jar, revealing a portion of orange marmalade.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-49"/>
+    </children>
+  </item>
+  <item nodeId="node-49">
+    <command xml:space="preserve">spread butter on bread</command>
+    <result xml:space="preserve">Now you have a buttered slice of pumpernickel bread.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-50"/>
+    </children>
+  </item>
+  <item nodeId="node-50">
+    <command xml:space="preserve">spread marmalade on bread</command>
+    <result xml:space="preserve">(the portion of orange marmalade on the buttered slice of pumpernickel bread)&#x000A;Now you have a buttered slice of pumpernickel bread dressed with a portion of orange marmalade.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-51"/>
+    </children>
+  </item>
+  <item nodeId="node-51">
+    <command xml:space="preserve">eat bread</command>
+    <result xml:space="preserve">(first taking the buttered slice of pumpernickel bread dressed with a portion of orange marmalade)&#x000A;You eat the buttered slice of pumpernickel bread dressed with a portion of orange marmalade. Not bad.&#x000A;&#x000A;&#x2664; "Next time be tidier!" &#x2014; Monica says throwing your orange marmalade portion jar in the round plastic container.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-52"/>
+    </children>
+  </item>
+  <item nodeId="node-52">
+    <command xml:space="preserve">x table</command>
+    <result xml:space="preserve">On the table are a dish, a dish (on which is a scrambled fried egg), a glass of apple juice, a room key, two knives, two teaspoons, two forks, two towels, a round plastic container (in which are an orange marmalade portion jar (empty) and an apricot jam portion jar (empty)) and a written paper.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-53"/>
+    </children>
+  </item>
+  <item nodeId="node-53">
+    <command xml:space="preserve">eat egg</command>
+    <result xml:space="preserve">(first taking the scrambled fried egg)&#x000A;You eat the scrambled fried egg. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-54"/>
+    </children>
+  </item>
+  <item nodeId="node-54">
+    <command xml:space="preserve">drink apple juice</command>
+    <result xml:space="preserve">(first taking the glass of apple juice)&#x000A;You drink the apple juice, leaving the glass empty. &#x000A;Clear and crystalline, with an inviting straw-yellow colour, it offers a sweet, natural and fresh flavour.&#x000A;&#x000A;The waiter collects all the empty dishes, glasses and cups from the table. &#x000A;Then he goes to the kitchen.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-55"/>
+    </children>
+  </item>
+  <item nodeId="node-55">
+    <command xml:space="preserve">put glass on table</command>
+    <result xml:space="preserve">You put the empty glass on the table.&#x000A;&#x000A;&#x2665; "There was a juice extractor at the buffet, I would love to try one of those juices." &#x2014; Monica says looking at you with sweet love eyes &#x2014; "Would you be so kind as to bring me one?" &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-56"/>
+      <child nodeId="node-61"/>
+    </children>
+  </item>
+  <item nodeId="node-56">
+    <command xml:space="preserve">no</command>
+    <result xml:space="preserve">&#x2664; "How unpleasant you are this morning!" &#x2014; Monica scolds you &#x2014; "Don't you want to do a kindness to your girlfriend who loves you so much?" &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-57"/>
+    </children>
+  </item>
+  <item nodeId="node-57">
+    <command xml:space="preserve">do it yourself</command>
+    <result xml:space="preserve">"It is completely useless to try to change the subject, you know you can give me only one answer." &#x2014; Monica says pointing a finger at you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-58"/>
+    </children>
+  </item>
+  <item nodeId="node-58">
+    <command xml:space="preserve">fuck</command>
+    <result xml:space="preserve">"It is completely useless to try to change the subject, you know you can give me only one answer." &#x2014; Monica says pointing a finger at you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-59"/>
+    </children>
+  </item>
+  <item nodeId="node-59">
+    <command xml:space="preserve">yes</command>
+    <result xml:space="preserve">&#x2665; "My love!" &#x2014; Monica replies caressing you &#x2014; "You can choose the vegetable." &#x000A;You stand up and go to the buffet; Monica sends you a kiss. &#x2665; &#x000A;&#x000A;Buffet&#x000A;The buffet is a feast for the senses, featuring a variety of locally sourced and homemade delights. Guests can savor freshly baked artisanal breads, jams, and a selection of cheeses and cured meats, showcasing the flavors of the Dolomites.&#x000A;&#x000A;To the right is a wooden cupboard. On it are some empty dishes and containers with cold drinks.&#x000A;Next to the sideboard is a small table with a juicer on it and two small wooden crates of celery ribs and carrots.&#x000A;To the left is a table on which are bread, butter, jams, meats and cheese.&#x000A;Next to the buffet table there is another table, behind which a cook is on hand to cook the eggs that are in a basket.&#x000A;You can see a HACCP ingredients book here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-60"/>
+    </children>
+  </item>
+  <item nodeId="node-60">
+    <command xml:space="preserve">fuck</command>
+    <result xml:space="preserve">I'm sorry if you're feeling frustrated. If you like, you can type SAVE to store your progress to a file (in most interpreters), then RESTORE to come back to it later. In the meantime, you might try searching the web to see if there are hints available.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-61">
+    <command xml:space="preserve">yes</command>
+    <result xml:space="preserve">&#x2665; "My love!" &#x2014; Monica replies caressing you &#x2014; "You can choose the vegetable." &#x000A;You stand up and go to the buffet; Monica sends you a kiss. &#x2665; &#x000A;&#x000A;Buffet&#x000A;The buffet is a feast for the senses, featuring a variety of locally sourced and homemade delights. Guests can savor freshly baked artisanal breads, jams, and a selection of cheeses and cured meats, showcasing the flavors of the Dolomites.&#x000A;&#x000A;To the right is a wooden cupboard. On it are some empty dishes and containers with cold drinks.&#x000A;Next to the sideboard is a small table with a juicer on it and two small wooden crates of celery ribs and carrots.&#x000A;To the left is a table on which are bread, butter, jams, meats and cheese.&#x000A;Next to the buffet table there is another table, behind which a cook is on hand to cook the eggs that are in a basket.&#x000A;You can see a HACCP ingredients book here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-62"/>
+    </children>
+  </item>
+  <item nodeId="node-62">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Monica is waiting for a juice.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-63"/>
+    </children>
+  </item>
+  <item nodeId="node-63">
+    <command xml:space="preserve">open left drawer</command>
+    <result xml:space="preserve">You open the left drawer, revealing nine empty glasses.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-64"/>
+    </children>
+  </item>
+  <item nodeId="node-64">
+    <command xml:space="preserve">take glass</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-65"/>
+    </children>
+  </item>
+  <item nodeId="node-65">
+    <command xml:space="preserve">fill glass with orange</command>
+    <result xml:space="preserve">You should fill the empty glass with a vegetable juice.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-66"/>
+    </children>
+  </item>
+  <item nodeId="node-66">
+    <command xml:space="preserve">ask cook about juicer</command>
+    <result xml:space="preserve">"Can you help me to extract some juice?" &#x2014; you ask.&#x000A;"Of course!" &#x2014; she answers &#x2014; "Choose a vegetable and chop it, then put it in the machine and start." &#x000A;"Oh, it seems to be easy!" &#x2014; you say.&#x000A;&#x000A;"Do not forget the glass. When you are finished, turn off the machine." &#x2014; the cook remember.&#x000A;&#x000A;"May I cook an egg for you?" &#x2014; the cook asks, then explains: &#x2014; "I can offer you a fried egg, an omelette or a cr&#x00EA;pe." &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-67"/>
+    </children>
+  </item>
+  <item nodeId="node-67">
+    <command xml:space="preserve">no</command>
+    <result xml:space="preserve">"If you need anything later, I am here to help you." &#x2014; the cook says. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-68"/>
+    </children>
+  </item>
+  <item nodeId="node-68">
+    <command xml:space="preserve">look at juicer</command>
+    <result xml:space="preserve">The machine takes the form of a large steel cylinder. &#x000A;At the top, a lid gives access to a container in which to place the vegetables from which the juice is extracted. &#x000A;At the bottom there is a recess in which a glass can be placed to collect the juice that comes out of a spout. &#x000A;On the right is a switch to turn the machine on and off.&#x000A;&#x000A;The juicer machine is currently switched off.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-69"/>
+    </children>
+  </item>
+  <item nodeId="node-69">
+    <command xml:space="preserve">look at juicer table</command>
+    <result xml:space="preserve">A small marble-topped table.&#x000A;On it are a juicer machine, a first crate with several carrots, a second crate with several celery ribs, a knife and a sturdy wooden chopping board which is actually empty.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-70"/>
+    </children>
+  </item>
+  <item nodeId="node-70">
+    <command xml:space="preserve">put carrot on chopping board</command>
+    <result xml:space="preserve">You place the carrot on the sturdy wooden chopping board.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-71"/>
+    </children>
+  </item>
+  <item nodeId="node-71">
+    <command xml:space="preserve">chop carrot with knife</command>
+    <result xml:space="preserve">You chop carrot using the knife in small pieces.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-72"/>
+    </children>
+  </item>
+  <item nodeId="node-72">
+    <command xml:space="preserve">open juicer</command>
+    <result xml:space="preserve">You open the juicer bowl.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-73"/>
+    </children>
+  </item>
+  <item nodeId="node-73">
+    <command xml:space="preserve">put carrot in juicer</command>
+    <result xml:space="preserve">(the chopped carrot in the juicer bowl)&#x000A;(first taking the chopped carrot)&#x000A;You put the chopped carrot into the juicer bowl.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-74"/>
+    </children>
+  </item>
+  <item nodeId="node-74">
+    <command xml:space="preserve">close juicer</command>
+    <result xml:space="preserve">You close the juicer bowl.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-75"/>
+    </children>
+  </item>
+  <item nodeId="node-75">
+    <command xml:space="preserve">put glass in juicer</command>
+    <result xml:space="preserve">You put the empty glass into the juicer recess.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-76"/>
+    </children>
+  </item>
+  <item nodeId="node-76">
+    <command xml:space="preserve">turn on juicer</command>
+    <result xml:space="preserve">You switch on the juicer and the carrot juice starts coming down into the glass.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-77"/>
+    </children>
+  </item>
+  <item nodeId="node-77">
+    <command xml:space="preserve">switch off juicer</command>
+    <result xml:space="preserve">You switch the juicer machine off.&#x000A;&#x000A;No more juice comes down.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-78"/>
+    </children>
+  </item>
+  <item nodeId="node-78">
+    <command xml:space="preserve">look glass</command>
+    <result xml:space="preserve">Which do you mean, an empty glass or the glass of carrot juice?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-79"/>
+    </children>
+  </item>
+  <item nodeId="node-79">
+    <command xml:space="preserve">close drawer</command>
+    <result xml:space="preserve">Which do you mean, the left drawer or the right drawer?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-80"/>
+    </children>
+  </item>
+  <item nodeId="node-80">
+    <command xml:space="preserve">close open drawer</command>
+    <result xml:space="preserve">(I only understood the first part of that &#x2014; trying anyway.)&#x000A;Next time, I suggest you write the command as: close open&#x000A;You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-81"/>
+    </children>
+  </item>
+  <item nodeId="node-81">
+    <command xml:space="preserve">close left drawer</command>
+    <result xml:space="preserve">You close the left drawer.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-82"/>
+    </children>
+  </item>
+  <item nodeId="node-82">
+    <command xml:space="preserve">look glass</command>
+    <result xml:space="preserve">The glass is roughly half full of carrot juice.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-83"/>
+    </children>
+  </item>
+  <item nodeId="node-83">
+    <command xml:space="preserve">take glass</command>
+    <result xml:space="preserve">You take the glass of carrot juice from the juicer.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-84"/>
+    </children>
+  </item>
+  <item nodeId="node-84">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Dining room&#x000A;The tables are elegantly set with crisp linens. Around the tables is a bench covered in dark green velvet. &#x000A;The reception area is to the west, to the north is the buffet area, and to the east a door leads to the kitchen.&#x000A;&#x000A;On the bench is Monica.&#x000A;&#x000A;You can also see a waiter and a waitress here.&#x000A;&#x000A;You return at your table and put the glass of carrot juice in front of Monica.&#x000A;"Here is your carrot juice." &#x2014; you say to Monica.&#x000A;Monica smiles and kisses you.&#x000A;&#x000A;&#x2665; "I love you!" &#x2014; she whispers sweetly in your ear.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-85"/>
+    </children>
+  </item>
+  <item nodeId="node-85">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;Monica takes her glass of carrot juice and drinks the juice.&#x000A;After drinking Monica puts the empty glass on the table again.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-86"/>
+    </children>
+  </item>
+  <item nodeId="node-86">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;The waitress collects all the empty dishes, glasses and cups from the table. &#x000A;Then she goes to the kitchen.&#x000A;&#x000A;&#x2665; "We should find out what the weather is going to be like today and decide what to do." &#x2014; Monica says. &#x2014; "In any case, my suggestion is a visit to Cortina for a look at the shop windows." &#x000A;"It is always the same!" &#x2014; you reply &#x2014; "There are so many beautiful things to see, and all you can think of is to stroll along the windows." &#x000A;"Ok." &#x2014; Monica states &#x2014; "If the weather is good, we will do as you say, otherwise you will have to take me where you know. So ask someone for the weather forecast." &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-87"/>
+    </children>
+  </item>
+  <item nodeId="node-87">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-88"/>
+    </children>
+  </item>
+  <item nodeId="node-88">
+    <command xml:space="preserve">call a waiter</command>
+    <result xml:space="preserve">A waiter approached. &#x000A;"Can I help you?" &#x2014; he asks. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-89"/>
+    </children>
+  </item>
+  <item nodeId="node-89">
+    <command xml:space="preserve">ask about weather</command>
+    <result xml:space="preserve">"Do you know it might rain today?" &#x2014; you ask. &#x000A;"You can find the weather report in the hotel daily newsletter on your table." &#x2014; he explains.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-90"/>
+    </children>
+  </item>
+  <item nodeId="node-90">
+    <command xml:space="preserve">ask about newsletter</command>
+    <result xml:space="preserve">"Where can I find the newsletter?" &#x2014; you ask. &#x000A;"It's printed on the back side of the menu." &#x2014; the waiter reply.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-91"/>
+    </children>
+  </item>
+  <item nodeId="node-91">
+    <command xml:space="preserve">ask about mountain</command>
+    <result xml:space="preserve">"Sorry, I can't help you at this time." &#x2014; he admits.&#x000A;&#x000A;"So, we still know nothing about the weather?" &#x2014; Monica asks.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-92"/>
+    </children>
+  </item>
+  <item nodeId="node-92">
+    <command xml:space="preserve">turn menu</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-93"/>
+    </children>
+  </item>
+  <item nodeId="node-93">
+    <command xml:space="preserve">turn written paper</command>
+    <result xml:space="preserve">You turn the written paper: now you see the back side.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-94"/>
+    </children>
+  </item>
+  <item nodeId="node-94">
+    <command xml:space="preserve">x written paper</command>
+    <result xml:space="preserve">The daily newsletter&#x000A;&#x000A;There are several boxes whose titles are: "Weather report", "Tip of the day", "A legend of the Dolomites" and "Hike of the day". &#x000A;&#x000A;The waiter leaves.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-95"/>
+    </children>
+  </item>
+  <item nodeId="node-95">
+    <command xml:space="preserve">read weather</command>
+    <result xml:space="preserve">Weather report&#x000A;&#x000A;Today will be mostly sunny, except for some low clouds in the morning, which will dissipate quickly. In the late afternoon/evening, cloud formation and local rain showers are possible. &#x000A;Minimum temperatures between 8&#x00B0;C and 10&#x00B0;C, maximum temperatures between 20&#x00B0;C and 28&#x00B0;C.&#x000A;&#x000A;"This time you got lucky:" &#x2014; Monica admits &#x2014; "we'll go to the mountains." &#x000A;"Read which hike they suggest." &#x2014; Monica adds.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-96"/>
+    </children>
+  </item>
+  <item nodeId="node-96">
+    <command xml:space="preserve">read hike</command>
+    <result xml:space="preserve">Hike of the day&#x000A;&#x000A;Around the Three Peaks of Lavaredo&#x000A;The Three Peaks of Lavaredo, the symbol of the Dolomites, have always exerted a certain fascination, attracting climbers and hikers from all over the world. This is a true paradise for those who love hiking, mountaineering and vie ferrate. But that's not all... there are also some easy but breathtaking hikes, such as the tour around the Three Peaks of Lavaredo. The starting point for our walk is the Auronzo Hut (2,320 m).&#x000A;Crossing the Landro Valley we reach Lake Misurina, where we park our car. From here you can take the shuttle bus to the Auronzo Hut. Then we start our walk on the 101 path, which goes along the south side of the Three Peaks of Lavaredo to the Lavaredo Hut (2,344 m). From here take a small path to the left which leads to the Forcella di Lavaredo (2,454 m). There is a wonderful panoramic view, not only of the surrounding valleys, but also of the northern side of the Three Peaks of Lavaredo. Continue slightly downhill at the foot of Mount Paterno until you come to a fork, where you take the road that leads to the A. Locatelli Hut (2,405 m).&#x000A;Arriving at the refuge, after a walk of about 1.5 hours, we take a break and sit down on the grass to eat a typical snack of speck, salami and tomatoes. Then we start our way back, first to the Malga Lange (2,232 m, n. 105) and then, at the foot of the western face of the Three Peaks of Lavaredo, to the Auronzo Hut, from where we return to the car.&#x000A;&#x000A;"Sounds like a nice hike." &#x2014; Monica comments &#x2014; "From Misurina to Cortina is not a long way: on the way back we could stop." &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-97"/>
+    </children>
+  </item>
+  <item nodeId="node-97">
+    <command xml:space="preserve">kiss mo</command>
+    <result xml:space="preserve">&#x2665; "On dear!" &#x2014; she whispers sweetly in your ear.&#x000A;&#x000A;It's been a while since you've gone downstairs for breakfast, and now you feel the urge to go to the bathroom. &#x000A;You move a bit nervously, and Monica notices your discomfort. &#x000A;&#x000A;&#x2665; "Sweetheart, are you all right?" &#x2014; Monica asks.&#x000A;"Go to the toilet, which is better." &#x2014; she suggests &#x2014; "If you can't find it, ask: someone will show you." &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-98"/>
+      <child nodeId="node-136"/>
+    </children>
+  </item>
+  <item nodeId="node-98">
+    <command xml:space="preserve">rise hand</command>
+    <result xml:space="preserve">A waiter approached. &#x000A;"Can I help you?" &#x2014; he asks. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-99"/>
+    </children>
+  </item>
+  <item nodeId="node-99">
+    <command xml:space="preserve">ask about toilet</command>
+    <result xml:space="preserve">"Where can I find the toilet?" &#x2014; you ask. &#x000A;""Oh yes, it's inside the door in front of the reception desk." &#x2014; the waiter answer.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-100"/>
+    </children>
+  </item>
+  <item nodeId="node-100">
+    <command xml:space="preserve">stand up</command>
+    <result xml:space="preserve">But you aren't in anything at the moment.&#x000A;&#x000A;"You still haven't gone to the toilet?" &#x2014; Monica asks.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-101"/>
+    </children>
+  </item>
+  <item nodeId="node-101">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Reception&#x000A;The receptionist stands behind a tastefully crafted wooden desk, ready to assist guests with a genuine smile. &#x000A;Stairs lead to the upper floors. To the east is the dining room, along the wall is a door. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-102"/>
+    </children>
+  </item>
+  <item nodeId="node-102">
+    <command xml:space="preserve">ask about toilet</command>
+    <result xml:space="preserve">(addressing the receptionist)&#x000A;"Where can I find the toilet?" &#x2014; you ask. &#x000A;"It's the door right in front." &#x2014; the receptionist answer.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-103"/>
+    </children>
+  </item>
+  <item nodeId="node-103">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Reception&#x000A;The receptionist stands behind a tastefully crafted wooden desk, ready to assist guests with a genuine smile. &#x000A;Stairs lead to the upper floors. To the east is the dining room, along the wall is a door. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-104"/>
+    </children>
+  </item>
+  <item nodeId="node-104">
+    <command xml:space="preserve">enter toilet</command>
+    <result xml:space="preserve">(first opening the bathroom door)&#x000A;&#x000A;Bathroom antechamber&#x000A;The small room is floored and covered with white tiles; on some tiles on the walls there are colorful drawings of flowers.&#x000A;There are three doors: one is made of light wood and leads outside, the other two are white, one facing east and the other west, for men and women respectively. Near each door there is an electrical wall switch.&#x000A;&#x000A;A lamp is at the ceiling, but it's off; the light comes from the wooden door.&#x000A;&#x000A;On a side there is the sink where you can wash your hands.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-105"/>
+    </children>
+  </item>
+  <item nodeId="node-105">
+    <command xml:space="preserve">switch on</command>
+    <result xml:space="preserve">You switched on the bathroom antechamber ceiling lamp.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-106"/>
+    </children>
+  </item>
+  <item nodeId="node-106">
+    <command xml:space="preserve">close door</command>
+    <result xml:space="preserve">Which do you mean, the bathroom door, the women's toilet door or the men's toilet door?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-107"/>
+    </children>
+  </item>
+  <item nodeId="node-107">
+    <command xml:space="preserve">bathroom</command>
+    <result xml:space="preserve">You close the bathroom door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-108"/>
+    </children>
+  </item>
+  <item nodeId="node-108">
+    <command xml:space="preserve">switch on men</command>
+    <result xml:space="preserve">You switched on the men's toilet ceiling lamp.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-109"/>
+    </children>
+  </item>
+  <item nodeId="node-109">
+    <command xml:space="preserve">enter men</command>
+    <result xml:space="preserve">(first opening the men's toilet door)&#x000A;&#x000A;Men's toilet&#x000A;The floor and walls are covered with white tiles. The wc is in the middle of the wall in front of you, above it is a large white button. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-110"/>
+    </children>
+  </item>
+  <item nodeId="node-110">
+    <command xml:space="preserve">close door</command>
+    <result xml:space="preserve">You close the men's toilet door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-111"/>
+    </children>
+  </item>
+  <item nodeId="node-111">
+    <command xml:space="preserve">lock door</command>
+    <result xml:space="preserve">Click! You turn the latch, and the door is locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-112"/>
+    </children>
+  </item>
+  <item nodeId="node-112">
+    <command xml:space="preserve">pee</command>
+    <result xml:space="preserve">An inevitable need has finally been resolved!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-113"/>
+    </children>
+  </item>
+  <item nodeId="node-113">
+    <command xml:space="preserve">open door</command>
+    <result xml:space="preserve">(first unlocking the men's toilet door)&#x000A;Click! You turn the latch, and the door is unlocked.&#x000A;&#x000A;You open the men's toilet door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-114"/>
+    </children>
+  </item>
+  <item nodeId="node-114">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">Would you have liked to find the toilet dirty when you entered?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-115"/>
+    </children>
+  </item>
+  <item nodeId="node-115">
+    <command xml:space="preserve">flush</command>
+    <result xml:space="preserve">You cleaned the bowl with the water flush.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-116"/>
+      <child nodeId="node-132"/>
+    </children>
+  </item>
+  <item nodeId="node-116">
+    <command xml:space="preserve">antechamber</command>
+    <result xml:space="preserve">That noun did not make sense in this context.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-117"/>
+    </children>
+  </item>
+  <item nodeId="node-117">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">Bathroom antechamber&#x000A;The small room is floored and covered with white tiles; on some tiles on the walls there are colorful drawings of flowers.&#x000A;There are three doors: one is made of light wood and leads outside, the other two are white, one facing east and the other west, for men and women respectively. Near each door there is an electrical wall switch.&#x000A;&#x000A;The light comes from a ceiling lamp.&#x000A;&#x000A;On a side there is the sink where you can wash your hands.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-118"/>
+    </children>
+  </item>
+  <item nodeId="node-118">
+    <command xml:space="preserve">switch off men's</command>
+    <result xml:space="preserve">You switched off the men's toilet ceiling lamp.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-119"/>
+    </children>
+  </item>
+  <item nodeId="node-119">
+    <command xml:space="preserve">close door</command>
+    <result xml:space="preserve">Which do you mean, the men's toilet door, the bathroom door or the women's toilet door?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-120"/>
+    </children>
+  </item>
+  <item nodeId="node-120">
+    <command xml:space="preserve">men's</command>
+    <result xml:space="preserve">You close the men's toilet door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-121"/>
+    </children>
+  </item>
+  <item nodeId="node-121">
+    <command xml:space="preserve">wash hands</command>
+    <result xml:space="preserve">Now your hands smell clean.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-122"/>
+    </children>
+  </item>
+  <item nodeId="node-122">
+    <command xml:space="preserve">open door</command>
+    <result xml:space="preserve">Which do you mean, the men's toilet door, the bathroom door or the women's toilet door?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-123"/>
+    </children>
+  </item>
+  <item nodeId="node-123">
+    <command xml:space="preserve">open bath</command>
+    <result xml:space="preserve">You open the bathroom door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-124"/>
+    </children>
+  </item>
+  <item nodeId="node-124">
+    <command xml:space="preserve">switch off</command>
+    <result xml:space="preserve">You switched off the bathroom antechamber ceiling lamp.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-125"/>
+    </children>
+  </item>
+  <item nodeId="node-125">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">Reception&#x000A;The receptionist stands behind a tastefully crafted wooden desk, ready to assist guests with a genuine smile. &#x000A;Stairs lead to the upper floors. To the east is the dining room, along the wall is a door. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-126"/>
+    </children>
+  </item>
+  <item nodeId="node-126">
+    <command xml:space="preserve">close door</command>
+    <result xml:space="preserve">Which do you mean, the bathroom door or the sliding door?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-127"/>
+    </children>
+  </item>
+  <item nodeId="node-127">
+    <command xml:space="preserve">bath</command>
+    <result xml:space="preserve">You close the bathroom door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-128"/>
+    </children>
+  </item>
+  <item nodeId="node-128">
+    <command xml:space="preserve">dining</command>
+    <result xml:space="preserve">(heading east)&#x000A;&#x000A;Dining room&#x000A;The tables are elegantly set with crisp linens. Around the tables is a bench covered in dark green velvet. &#x000A;The reception area is to the west, to the north is the buffet area, and to the east a door leads to the kitchen.&#x000A;&#x000A;On the bench is Monica.&#x000A;&#x000A;You can also see a waitress and a waiter here.&#x000A;&#x000A;The receptionist walks away from his desk and comes into the dining room.&#x000A;The cook also comes here.&#x000A;Monica stands up and starts clapping, followed by all the other characters. &#x000A;&#x000A;Your game is over, you played very well and solved all the puzzles we set you. &#x000A;We all thank you for playing!&#x000A;&#x000A;&#x000A;&#x000A;    *** The curtain closes ***&#x000A;&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-129"/>
+    </children>
+  </item>
+  <item nodeId="node-129">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Please give one of the answers above.&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-139"/>
+      <child nodeId="node-130"/>
+    </children>
+  </item>
+  <item nodeId="node-139">
+    <command xml:space="preserve">quit</command>
+    <result xml:space="preserve"></result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-130">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-131"/>
+    </children>
+  </item>
+  <item nodeId="node-131">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-132">
+    <command xml:space="preserve">flush men</command>
+    <result xml:space="preserve">There is nothing to flush here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-133"/>
+    </children>
+  </item>
+  <item nodeId="node-133">
+    <command xml:space="preserve">flush button</command>
+    <result xml:space="preserve">You cleaned the bowl with the water flush.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-134"/>
+    </children>
+  </item>
+  <item nodeId="node-134">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-135"/>
+    </children>
+  </item>
+  <item nodeId="node-135">
+    <command xml:space="preserve">flush men's</command>
+    <result xml:space="preserve">There is nothing to flush here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-136">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-137"/>
+    </children>
+  </item>
+  <item nodeId="node-137">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-138"/>
+    </children>
+  </item>
+  <item nodeId="node-138">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+</Skein>
