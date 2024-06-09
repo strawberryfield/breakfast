@@ -330,7 +330,7 @@ Understand "hotel door/--" as the sliding door.
 After opening the sliding door, say "[We] [come] closer to [the noun] and it automatically [open].".
 After closing the sliding door, say "[We] [move] away from [the noun] and it automatically [close].".
 Instead of going through the sliding door:
-	try opening the noun;
+	[try opening the noun;]
 	the sliding door closes in 0 turns from now;
 	continue the action.
 After going through the sliding door:
@@ -345,7 +345,7 @@ At the time when the sliding door closes:
 To say automatic door:
 	say "It is an automatic door".
 Instead of opening the sliding door while the location of the player is the reception, say "[automatic door].".
-Instead of closing the sliding door while the location of the player is the reception, say "[automatic door].".
+[Instead of closing the sliding door while the location of the player is the reception, say "[automatic door].".]
 	
 Book 2.4 - The reception
 
@@ -487,7 +487,7 @@ At the time when receptionist closes check-in:
 	repeat with K running through room keys in sleeping room: 
 		now K is on the wooden desk;
 	say "[/ss]These are the keys of your room.' [/se][the naming of receptionist] [explain].";
-	say "[/ss]In the room you will find a brochure with all the useful information about the hotel, but if you have any questions I am at your disposal.' [/r][/n]";
+	say "[/ss]You will find a brochure in your room with all the useful information about the hotel. If you have any questions, I will be happy to answer them.' [/r][/n]";
 	Monica takes key in 1 turn from now.
 
 At the time when Monica takes key:
@@ -2715,6 +2715,10 @@ When Check-in ends:
 	say "[We] and [Monica] bid farewell to the receptionist and set off up the stairs. [/n][/ss]Have a good night!' [/se][the naming of the receptionist] [wish] you. [/n]";
 	say "[heart][Monica] [wrap] [their] arm around your waist and [give] you a kiss on the neck.";
 	pause the game.
+
+Understand "check-in/registration" as "[check-in]".	
+Response of a worker when asked-or-told about "[check-in]" during Check-in:
+	do nothing.
 	
 Book 4.4 - Breakfast
 
@@ -2745,7 +2749,7 @@ When the Breakfast begins:
 	say "[note style]The morning after. [/r][/p]";
 	say "After a good night's sleep, [we] [are] ready to enjoy the first day of your holiday. [/n][We] and [Monica] go down the stairs and back to reception. [/n][We] [wear] [a list of cloth worn by the player]; [Monica] [wear] [a list of cloth worn by Monica]. [/n]";
 	say "[The naming of the receptionist] [are] working behind the counter. [/p]";
-	say "[/ss]Miss [Monica] and Mr. [printed name of the player] good morning!' [/se][the naming of the receptionist] [wish], [/ss]You're looking good today!' [/r][/n]";
+	say "[/ss]Miss [Monica] and Mr. [printed name of the player] good morning!' [/se][the naming of the receptionist] [wish] [/ss1]You're looking good today!' [/r][/n]";
 	now morgen-trigger is true.
 	
 Chapter 4.4.1 - Greeting the receptionist
