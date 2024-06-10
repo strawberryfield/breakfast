@@ -459,11 +459,11 @@ At the time when the receptionist confirms reservation:
 	say "[/ss]Oh nice!' [/se][Monica] [say] and [open] [their] handbag. [/n]";
 	say "[The naming of receptionist] smiles. [/n]";
 	now the shiny black handbag is open;
-	the receptionist asks for documents in 1 turn from now.
+	the receptionist asks for documents in 0 turn from now.
 
 At the time when the receptionist asks for documents:
 	say "[/ss]May I have your documents so that I can register?' [/se][the naming of receptionist] [ask].";
-	Monica shows document in 1 turn from now.
+	Monica shows document in 0 turn from now.
 	
 At the time when Monica shows document:
 	say "[Monica] [take] [their] identity card and [show] it to [the naming of receptionist]. [/n]";
@@ -471,7 +471,7 @@ At the time when Monica shows document:
 	say "[Monica] [put] [their] identity card back in [their] handbag and [close] it.";
 	now the shiny black handbag is closed;
 	now Monica is registered;
-	unless the player is registered, Monica urges your document in 2 turns from now;
+	unless the player is registered, Monica urges your document in 0 turns from now;
 	otherwise:
 		receptionist closes check-in in 0 turns from now.
 
@@ -480,8 +480,18 @@ At the time when Monica urges your document:
 	unless the player is registered:
 		increase Muyd-count by 1;
 		say "[alert][/ss]What are you waiting for? Show the document to [the naming of receptionist].' [/se][Monica] [urge] you[other times of Muyd-count].";
-		Monica urges your document in 1 turn from now.
+		if Muyd-count is greater than two:
+			say "[/ss]Maybe you left it in the car?' [/se][the naming of receptionist] [ask].";
+			say "[/ss]I'm sure he has it with him.' [/se][Monica] [reply].";
+			Monica takes wallet in 1 turn from now;
+		otherwise:
+			Monica urges your document in 0 turn from now.
 
+At the time when Monica takes wallet:
+	unless the wallet is enclosed by the player:
+		say "[Monica] [put] her hand in the pocket of your shorts and [pull] out a wallet, which [they] [hand] to [us].";
+		now the player carries the wallet.
+		
 At the time when receptionist closes check-in:
 	say "[The naming of receptionist] takes two keys and puts them on the desk. [/n]";
 	repeat with K running through room keys in sleeping room: 
@@ -539,9 +549,11 @@ Instead of hailing during the check-in:
 Instead of saying hello to someone (called the other) during the check-in:
 	unless the other is Monica:
 		now the current interlocutor is the receptionist;
-		say "[/ss][good evening receptionist], we are [printed name of the player] and [Monica] and we have a reservation.' [/r][/n][/ss]Just a moment, I look for it.' [/se][the naming of receptionist] [state] and [type] something on the computer.";
-		the receptionist confirms reservation in 1 turn from now;
-		Monica remember to greet never;
+		unless present yourself completed:
+			say "[/ss][good evening receptionist], we are [printed name of the player] and [Monica] and we have a reservation.' [/r][/n][/ss]Just a moment, I look for it.' [/se][the naming of receptionist] [state] and [type] something on the computer.";
+			the receptionist confirms reservation in 1 turn from now;
+			Monica remember to greet never;
+			mark present yourself as done;
 	otherwise:
 		continue the action.
 
@@ -3217,6 +3229,7 @@ Got cooked egg	false
 Extracted juice	false
 Used wc	false
 read newsletter	false
+Present yourself	false
 
 Book 5.2 - Table of food limits
 

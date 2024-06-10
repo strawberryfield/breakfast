@@ -203,6 +203,7 @@ To follow is a verb.
 To frown is a verb. 
 To gag is a verb. 
 To greet is a verb.
+To hand is a verb.
 To hop is a verb. 
 To keep is a verb. 
 To kiss is a verb.
@@ -221,6 +222,7 @@ To peer is a verb.
 To ping is a verb. 
 To place is a verb.
 To point is a verb.
+To pull is a verb.
 To rebuke is a verb.
 To recite is a verb. 
 To recoalesce is a verb. 
