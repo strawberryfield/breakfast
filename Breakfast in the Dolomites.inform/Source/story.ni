@@ -14,7 +14,7 @@ She loves strolling around looking in shop windows; a peppy girl, she won't forg
 What a strange thing love is...
 
 There are no treasures to be found, there are no mysteries to be solved; remember, you are on holiday: have fun!".
-Release along with the cover art ("Breakfast in the Dolomites"), a file of "Quickstart guide" called "quickstart.pdf", a file of "Introductory booklet" called "booklet.pdf", a file of "Walkthrought" called "walkthrough.pdf" and the library card.
+Release along with the cover art ("Breakfast in the Dolomites"), a file of "Quickstart guide" called "quickstart.pdf", a file of "Introductory booklet" called "booklet.pdf", a file of "Walkthrought" called "walkthrough.pdf", the library card, a "TSF" website and an interpreter.
 
 Chapter 0.1 - Includes
 
@@ -858,7 +858,7 @@ Response of a worker when asked about bathroom:
 	otherwise:
 		say "[/ss]'Oh yes, it's inside the door in front of the reception desk.' [/se][the naming of the noun] [answer].".
 
-Understand "the/-- weather forecast/--" or "the/-- forecast" as "[weather]".	
+Understand "the/-- weather forecast/report/--" or "the/-- forecast/report" as "[weather]".	
 Response of a worker when asked about "[weather]" during the Breakfast:
 	say “[/ss]Do you know it might rain today?’ [/se][we] [ask]. [/n]”;
 	say "[/ss]You can find the weather report in the hotel daily newsletter on your table.' [/se][regarding the noun][they] [explain].".	
