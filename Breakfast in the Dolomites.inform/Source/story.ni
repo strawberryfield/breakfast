@@ -809,9 +809,11 @@ At the time when Monica sits at table:
 	otherwise:
 		Monica sits at table in 1 turn from now.
 
+Msit-count is a number that varies. Msit-count is zero.
 At the time when Monica invites to sit:
 	if the location is the dining room and the player is not enclosed by the bench:
-		say "[/ss]Why don't you sit?' [/se][Monica] [ask]. [/n]";
+		increase Msit-count by one;
+		say "[if Msit-count is greater than one][alert][end if][/ss]Why don't you sit?' [/se][Monica] [ask][other times of Msit-count]. [/n]";
 		Monica invites to sit in 1 turns from now.
 			
 Chapter 2.6.4 - Conversation
@@ -1308,13 +1310,15 @@ At the time when Monica drinks hot beverage:
 	say "[/ss]The [liquid of Monica-drink] was really good,' [/se][Monica] [state] and [suggest] [/ss1]why don't you try it?' [/r][/n]";
 	now Monica-drink is nothing;
 	unless visit buffet completed, Monica urges buffet in 1 turn from now.
-	
+
+Mub-count is a number that varies. Mub-count is zero.	
 At the time when Monica urges buffet:
 	unless can leave the table, Monica urges buffet in 1 turn from now;
 	otherwise if the player is at the table:
 		unless the number of hot drink containers carried by the player is zero, Monica urges buffet in 1 turn from now;
 		otherwise:
-			say "[heart][/ss]Come on, let's get something from the buffet.' [/se][Monica] [suggest] [us].";
+			increase Mub-count by one;
+			say "[if Mub-count is greater than two][alert][otherwise][heart][end if][/ss]Come on, let's get something from the buffet.' [/se][Monica] [if Mub-count is greater than two][urge][otherwise][suggest][end if] [us].";
 			Monica urges buffet in 2 turns from now.
 		
 At the time when Monica urges drink:
@@ -2974,11 +2978,13 @@ At the time when Monica urges wc:
 		now WC-trigger is true;
 	otherwise:
 		Monica urges wc in 1 turn from now.
-	
+
+Muo-count is a number that varies. Muo-count is zero.	
 At the time when Monica urges order:
 	unless order hot drinks completed:
 		if the location is the dining room:
-			say "[/ss]Why don't we order something hot to drink?' [/se][Monica] [ask].";
+			increase Muo-count by one;
+			say "[if Muo-count is greater than one][alert][end if][/ss]Why don't we order something hot to drink?' [/se][Monica] [ask][other times of Muo-count].";
 		Monica urges order in 1 turn from now.
 	
 Chapter 4.4.4 - Ordering
@@ -3133,11 +3139,13 @@ When Reading the newsletter begins:
 When Reading the newsletter ends:
 	mark read newsletter as done;
 	check stage progress.
-		
+
+Muw-count is a number that varies. Muw-count is zero.		
 At the time when Monica urges weather:
 	unless "Weather report" read:
 		if location is the dining room:
-			say "[/ss]So, we still know nothing about the weather?' [/se][Monica] [ask].";
+			increase Muw-count by one;
+			say "[alert][/ss]So, we still know nothing about the weather?' [/se][Monica] [ask][other times of Muw-count].";
 		Monica urges weather in 2 turns from now.
 		
 Chapter 4.4.8 - Using WC
@@ -3161,10 +3169,12 @@ After urinating into:
 	mark used WC as done;
 	now WC-trigger is false;
 	continue the action.
-		
+
+Mwc-count is a number that varies. Mwc-count is zero.		
 At the time when Monica remembers wc:
 	if the location is the dining room:
-		say "[/ss]You still haven't gone to the toilet?' [/se][Monica] [ask].";
+		increase Mwc-count by one;
+		say "[alert][/ss]You still haven't gone to the toilet?' [/se][Monica] [ask][other times of Mwc-count].";
 	Monica remembers wc in 1 turn from now.
 	
 Book 4.5 - End of the game
