@@ -697,6 +697,63 @@ Before going through the bathroom door from the bathroom-antechamber:
 		try opening the bathroom door;
 		say "[We] forgot the light on." instead.
 
+Chapter 2.5.5 - Usage example
+
+Bath help shown is a truth state that varies.
+After going to the bathroom-antechamber:
+	if bath help shown is false:
+		now bath help shown is true;
+		the girl enters bathroom in 3 turns from now;
+	continue the action.
+	
+At the time when the girl enters bathroom:
+	if the location of the player is the bathroom-antechamber:
+		say "A cute girl, with long black hair, enters in the bathroom antechamber";
+		now the girl is in the bathroom-antechamber;
+		the girl closes door in 0 turns from now;
+	otherwise:
+		the girl enters bathroom in one turn from now.
+
+At the time when the girl closes door:
+	unless the antechamber-lamp is lit:
+		try silently switching on the bathroom antechamber light switch;
+		if the location of the player is the bathroom-antechamber, say "The girl switches on the light.";
+	unless the bathroom door is closed:
+		try silently closing the bathroom door;
+		if the location of the player is the bathroom-antechamber, say "The girl closes the door.";
+	the girl enters wc in zero turns from now.
+		
+At the time when the girl enters wc:
+	try silently switching on the women's toilet light switch;
+	now the girl is in the women's toilet;
+	if the location of the player is the bathroom-antechamber, say "The girl switches on the women's toilet light, then she enters in the women's toilet and closes the door.";
+	the girl locks the door in zero turns from now.
+	
+At the time when the girl locks the door:
+	if the location of the player is the bathroom-antechamber, say "You hear locking the women's toilet door.";
+	the girl flushes in one turn from now.
+	
+At the time when the girl flushes:
+	if the location of the player is the bathroom-antechamber or the location of the player is the men's toilet, say "From the women's toilet you hear the sound of a flush.";
+	the girl exits wc in zero turns from now.
+	
+At the time when the girl exits wc:
+	now the girl is in the bathroom-antechamber;
+	try silently switching off the women's toilet light switch;
+	if the location of the player is the bathroom-antechamber, say "The girl returns to the bathroom antechamber, then she closes the door behind her and switches off the light.";
+	the girl washes hands in zero turns from now.
+	
+At the time when the girl washes hands:
+	if the location of the player is the bathroom-antechamber, say "The girl washes her hands.";
+	if the location of the player is the men's toilet, say "You hear someone using the sink.";
+	the girl leaves bathroom in zero turns from now.
+	
+At the time when the girl leaves bathroom:
+	if the location of the player is the bathroom-antechamber, say "The girl goes away.";	
+	now the girl is nowhere;
+	unless the location of the player is the bathroom-antechamber or the location of the player is the men's toilet, try silently switching off the bathroom antechamber light switch.
+	
+
 Book 2.6 - The dining room
 
 The description of the dining room is "[if unvisited]Rustic wooden beams and locally sourced stone accents complement the alpine setting, while tasteful decor elements pay homage to the region's cultural heritage. [end if]The tables are elegantly set with crisp linens. Around the tables is a bench covered in dark green velvet. [if unvisited][/n]Bathed in natural light that filters through large windows, the room offers panoramic views of the surrounding majestic peaks, creating a serene and inspiring atmosphere. [end if][/n]The reception area is to the west, to the north is the buffet area, and to the east a door leads to the kitchen.".
@@ -2699,13 +2756,30 @@ Carry out an actor asking help:
 			say "[/ss]'But,' [/se][regarding the actor][they] [go] on [/ss1]if you want to ask me more specific questions, I will be more than happy to help you.' [/r][/n]".
 
 Persuasion rule for asking a person to try asking help: persuasion succeeds.
+
+Book 3.6 - The girl
+
+The girl is a female person.
+The description is "A nice girl ".
+Hair are "long black". Eyes are "brown".
+Understand "Paola" or "cute/pretty/nice girl" as the girl.
+
+Instead of examining the girl for the first time:
+	say description of the noun;
+	say base character description of the noun;
+	say "[/i]A personal note from the narrator:[/r][/n]This is Paola and she is my fiancée, so behave yourself; but, Paola, do you have to go to the toilet right now?";
+	say "[/ss]Some needs are pressing!' [/se]Paola replies.";
+	now the printed name of the noun is "Paola";
+	now the noun is proper-named.
+
+
 			
 Volume 4 - Scenes
 
 Book 4.1 - Intro
 
 To say story-beginning: 
-	say "[/i]A summery Friday evening. [/r][/p][We] [are] driving [our] car to a small town in the Dolomites. [/n]Next to [us] [are] [Monica], [our] girlfriend; [we] [have] set off for a relaxing weekend after a hard day at work. [/n][/ss]Still a long way to go?' [/se][Monica] [ask].[/ss]We will be at the hotel shortly.' [/se][we] [reply]. [/n][regarding Monica][They] [rest] [their] head on your shoulder and [caress] your neck."
+	say "[/i]A summery Friday evening. [/r][/p][We] [are] driving [our] car to a small town in the Dolomites. [/n]Next to [us] [regarding Monica][are] [Monica], [our] girlfriend; [we] [have] set off for a relaxing weekend after a hard day at work. [/n][/ss]Still a long way to go?' [/se][Monica] [ask].[/ss]We will be at the hotel shortly.' [/se][we] [reply]. [/n][regarding Monica][They] [rest] [their] head on your shoulder and [caress] your neck."
 	
 Book 4.2 - Arrival
 

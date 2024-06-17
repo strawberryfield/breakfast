@@ -16,10 +16,10 @@ Understand "lamp" as a light switch.
 
 After switching on a light switch (called current switch):
 	now the powered item of the current switch is lit;
-	say "You switched on [the powered item of the current switch].".
+	if the action is not silent, say "You switched on [the powered item of the current switch].".
 After switching off a light switch (called current switch):
 	now the powered item of the current switch is not lit;
-	say "You switched off [the powered item of the current switch].".
+	if the action is not silent, say "You switched off [the powered item of the current switch].".
 
 Understand "power on/-- [something]" as switching on.
 Understand "power off/down [something]" as switching off.
