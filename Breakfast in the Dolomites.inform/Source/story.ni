@@ -581,7 +581,7 @@ The printed name of the bathroom-antechamber is "Bathroom antechamber".
 Section 2.5.1.1 - The bathroom door
 
 The description of the bathroom door is "A light wooden door[if the location of the player is the front side of the noun]. A tiny brass sign states [italic type]'Toilet'[roman type][end if].".
-Understand "bath/toilet door/--" as the bathroom door.
+Understand "bath/toilet door/--" or "light/-- wood/wooden/-- door" as the bathroom door.
 
 After deciding the scope of the player when the location is the bathroom-antechamber:
 	place the bathroom door in scope;
@@ -724,7 +724,7 @@ At the time when the girl closes door:
 	the girl enters wc in zero turns from now.
 		
 At the time when the girl enters wc:
-	try silently switching on the women's toilet light switch;
+	try silently the girl switching on the women's toilet light switch;
 	now the girl is in the women's toilet;
 	if the location of the player is the bathroom-antechamber, say "The girl switches on the women's toilet light, then she enters in the women's toilet and closes the door.";
 	the girl locks the door in zero turns from now.
@@ -739,7 +739,7 @@ At the time when the girl flushes:
 	
 At the time when the girl exits wc:
 	now the girl is in the bathroom-antechamber;
-	try silently switching off the women's toilet light switch;
+	try silently the girl switching off the women's toilet light switch;
 	if the location of the player is the bathroom-antechamber, say "The girl returns to the bathroom antechamber, then she closes the door behind her and switches off the light.";
 	the girl washes hands in zero turns from now.
 	

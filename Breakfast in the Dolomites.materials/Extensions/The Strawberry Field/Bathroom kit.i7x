@@ -14,10 +14,10 @@ A light switch has a thing called powered item.
 Understand "electrical switch" as a light switch.
 Understand "lamp" as a light switch.
 
-After switching on a light switch (called current switch):
+After an actor switching on a light switch (called current switch):
 	now the powered item of the current switch is lit;
 	if the action is not silent, say "You switched on [the powered item of the current switch].".
-After switching off a light switch (called current switch):
+After an actor switching off a light switch (called current switch):
 	now the powered item of the current switch is not lit;
 	if the action is not silent, say "You switched off [the powered item of the current switch].".
 
@@ -39,6 +39,7 @@ Understand "wash the/my/-- hands" as washing hands.
 Understand "clean the/my/-- hands" as washing hands.
 Understand "wash the/my/-- hands in/with [sink-item]" as washing hands in.
 Understand "clean the/my/-- hands in/with [sink-item]" as washing hands in.
+Understand "use [sink-item]" as washing hands in.
 
 Carry out washing hands in:
 	try washing hands instead.
