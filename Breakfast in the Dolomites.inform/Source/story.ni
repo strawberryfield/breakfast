@@ -177,6 +177,7 @@ Section 2.1.1.1 - The Dashboard
 The dashboard is a scenery open, not openable container in the car. 
 The description is "An old-fashioned dashboard with analogue instruments[if your-car-key is enclosed by the dashboard]. [/n]The key is inserted[end if].".
 Instead of examining the dashboard, say "[description of the dashboard][/n]".
+The analogue instrument is a scenery in the car. 
 
 Section 2.1.1.2 - The key
 
@@ -309,15 +310,50 @@ After going to the garden from the parking:
 Chapter 2.2.2 - Backdrops
 
 The sky is a backdrop. The sky is in the parking and in the garden.
-The description is "The sky is black because the moon is new; this makes it possible to admire a great number of stars.".
+The description is "[sky-description]."
+To say sky-description:
+	say "The sky is black because the moon is new; this makes it possible to admire a great number of stars".
 Understand "moon/stars" as the sky.
 
-The ground is a backdrop. The ground is in the parking and in the garden.
-The description is "[if the location of the player is the parking]An asphalted square; the parking spaces are marked with yellow paint[otherwise]A gravel driveway with well-mown grass to the sides[end if].".
+The ground is a backdrop. The ground is everywhere.
+The description is "[ground-description]."
+Understand "terrain/land/soil" as the ground.
+To say ground-description:
+	if the location of the player is the parking, say "An asphalted square; the parking spaces are marked with yellow paint" instead;
+	if the location of the player is the garden, say "A gravel driveway with well-mown grass to the sides" instead;
+	say floor-description.
 
+The floor is a backdrop.  The floor is everywhere.
+The description is "[floor-description]."
+To say floor-description:
+	if the location of the player is the parking or the location of the player is the garden, say "Perhaps you meant to say terrain? [/n][ground-description]" instead;
+	if the location of the player is  the reception or the location of the player is the dining room or the location of the player is the buffet, say "A perfectly honed and polished black and white granite floor" instead;
+	if the location of the player is the bathroom-antechamber or the location of the player is the men's toilet, say "A floor of white stoneware tiles" instead;
+	if the location is the car, say "The typical black carpeted floor of a passenger car".
+
+The ceiling is a backdrop. The ceiling is everywhere.
+The description is "[ceiling-description]."
+Understand "roof/top/overhead" as the ceiling.
+To say ceiling-description:
+	if the location of the player is the parking or the location of the player is the garden, say "Perhaps you meant to say sky? [/n][sky-description]" instead;
+	if the location of the player is  the reception or the location of the player is the dining room or the location of the player is the buffet, say "The ceiling is supported by wooden beams and decorated with inlaid boards" instead;
+	if the location of the player is the bathroom-antechamber or the location of the player is the men's toilet, say "A white ceiling" instead;
+	if the location is the car, say "The typical ceiling of a passenger car".
+	
 Book 2.3 - The garden
 
 The description of the garden is "There are fir trees in the garden and wooden tables and chairs in the lawn. [/n]The driveway is lit by a few marker lamps. At the end of it a sliding door is the entrance to the hotel. [/n]The low light enhances the starry sky and creates a romantic atmosphere. [/n]Parking is to the west.".
+
+The fir tree is a scenery in the garden. Description is "High fir tree".
+Instead of taking the fir tree, say "It's not Xmas!".
+
+The wooden-table is a supporter in the garden. It is scenery.
+The description is "A sturdy table made of rough fir wood."
+Understand "wooden/-- table" as the wooden-table.
+Instead of taking the wooden-table, say "Do you think you can use it for anything?".
+The chair is an enterable supporter in the garden. It is scenery.
+The description is "A simple wooden chair."
+Instead of taking the chair, say "Leave it available to other hotel guests."
 
 Instead of going to the parking from the garden, say "You didn't forget anything important in the car.".
 
