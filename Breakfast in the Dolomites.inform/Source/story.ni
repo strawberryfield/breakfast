@@ -339,7 +339,30 @@ To say ceiling-description:
 	if the location of the player is  the reception or the location of the player is the dining room or the location of the player is the buffet, say "The ceiling is supported by wooden beams and decorated with inlaid boards" instead;
 	if the location of the player is the bathroom-antechamber or the location of the player is the men's toilet, say "A white ceiling" instead;
 	if the location is the car, say "The typical ceiling of a passenger car".
+
+Chapter 2.2.3 - Sounds
+
+Instead of listening:
+	if the location of the player is the parking, say "It's late, all around is silent." instead;
+	if the location of the player is the garden, say "The 'cri-cri' of crickets is heard." instead;
+	if the location of the player is the reception, say "Ambient music at low volume[if breakfast is happening]. [/n]Unintelligible voices come from the dining room[end if]." instead;
+	if the location of the player is the dining room, say "Ambient music at low volume. [/n]You can hear other guests talking in low voices, but you cannot understand what they are saying." instead;
+	if the location of the player is the buffet, say "Ambient music is sometimes drowned out by the sound of crockery and cutlery being used by guests to serve themselves." instead;
+	say "No sound worth mentioning."
 	
+Understand "the/this/that music/song" as "[music]".
+Response of the receptionist when asked about "[music]":
+	say "[/ss]What is this music?' [/se][we] [ask] [/ss1]I don't recognise it.' [/r][/n]";
+	say "[/ss]It's a tape by Muzak.' [/se][the naming of the receptionist] [answer].";
+	say "[/ss]Muzak?' [/se][if the location of Monica is the reception][Monica] [reply][otherwise][we] [reply][end if] [/ss1]I have never heard this band.' [/r][/n]";
+	say "[/ss]No, it's not a band.' [/se][the naming of the receptionist] [explain] [/ss1]Muzak is an American brand of background music played in public establishments, sometime called [/r]elevator music[/i]; the name [/r]Muzak[/i], a blend of music and the popular camera brand name Kodak, has been in use since 1934.' [/r][/n]".
+
+Response of a waitstaff worker when asked about "[music]":
+	say "[/ss]What is this music?' [/se][we] [ask] [/ss1]I don't recognise it.' [/r][/n]";
+	say "[/ss]I don't know either.' [/se][regarding the noun][they] [reply] [/ss1]But you can also ask Nathan, the receptionist: he is in charge of the music.' [/r][/n]";
+	now the printed name of the receptionist is the proper name of the receptionist;
+	now the receptionist is proper-named.
+		
 Book 2.3 - The garden
 
 The description of the garden is "There are fir trees in the garden and wooden tables and chairs in the lawn. [/n]The driveway is lit by a few marker lamps. At the end of it a sliding door is the entrance to the hotel. [/n]The low light enhances the starry sky and creates a romantic atmosphere. [/n]Parking is to the west.".
@@ -2855,14 +2878,21 @@ To unwear (t - a thing): now t is in the sleeping room.
 
 When the Breakfast begins:
 	[dressing change]
-	unwear the red backpack;
-	unwear the pink trolley;
-	unwear the black t-shirt;
-	unwear the pair of blue sneakers;
-	unwear the pair of jeans;
-	unwear the striped camisole;
-	unwear the pair of shimmering gold sneakers;
-	unwear the shiny black handbag;
+	repeat with item running through the list of thing worn by the player:
+		now item is in the sleeping room;
+	repeat with item running through the list of thing worn by Monica:
+		now item is in the sleeping room;
+	repeat with item running through the list of thing carried by the player:
+		now item is in the sleeping room;
+	repeat with item running through the list of thing carried by Monica:
+		now item is in the sleeping room;
+	repeat with pocket-item running through the list of things which are parts of the pair of beige shorts:
+		repeat with item running through the list of things in the pocket-item:
+			now item is in the sleeping room;
+	now the identity card is in the wallet;
+	now the photo is in the wallet;
+	now the wallet is closed;
+	now the wallet is in the right back pocket;
 	now Monica wears the black sweatshirt;
 	now Monica wears the pair of black leggings;
 	now Monica wears the pair of pink trekking shoes;
@@ -2870,6 +2900,8 @@ When the Breakfast begins:
 	now the player wears the white t-shirt;
 	now the player wears the checkered flannel shirt;
 	now the player wears the pair of brown trekking boots;
+	now the player wears the pair of beige shorts;
+	now the player carries a random room key;
 	[description]
 	now the current interlocutor is nothing;
 	say "[note style]The morning after. [/r][/p]";
