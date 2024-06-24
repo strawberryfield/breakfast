@@ -214,6 +214,8 @@ To say car external:
 		otherwise:
 			say "and the boot are closed".
 	
+Does the player mean locking a door with: it is likely.
+Does the player mean unlocking a door with: it is likely.
 
 Chapter 2.1.3 - The car boot
 
@@ -249,6 +251,11 @@ Instead of Monica giving the pink trolley to the player:
 	now the player carries the pink trolley;
 	say "[heart][/ss]Will you carry it for me? How kind you are!' [/se]she thanks you with a wonderful smile.";
 	the rule succeeds.
+To Monica retakes trolley:
+	unless the pink trolley is enclosed by a people:
+		say "[alert][/ss]I'd better carry the trolley myself!' [/se][Monica] [say] annoyed and [take] [their] trolley again.";
+		now Monica carries the pink trolley;
+
 	
 The red backpack is a closed openable wearable container in the boot.
 The description is "Your beloved, somewhat frayed, red backpack.".
@@ -297,9 +304,13 @@ Before going to the garden from the parking:
 		say "[alert][/ss]It's better to close the car boot.' [/se][Monica] [suggest]." instead;
 	unless the car door  is locked:
 		say "[alert][/ss]There are a lot of thieves in this world, did you check to make sure that you've locked the car?' [/se][Monica] [ask]." instead;
-	unless the pink trolley is enclosed by a people:
-		say "[alert][/ss]I'd better carry the trolley myself!' [/se][Monica] [say] annoyed and [take] [their] trolley again.";
-		now Monica carries the pink trolley.
+	Monica retakes trolley;
+	let forgotten items be the list of not scenery things in the parking;
+	remove Monica from the forgotten items, if present;
+	remove the player from the forgotten items, if present;
+	if forgotten items is not empty:
+		say "Be careful: you are forgetting [forgotten items with definite articles].";
+		stop the action.
 		
 After going to the garden from the parking:
 	say "[Monica] [follow] you. [/n]";
@@ -367,18 +378,29 @@ Book 2.3 - The garden
 
 The description of the garden is "There are fir trees in the garden and wooden tables and chairs in the lawn. [/n]The driveway is lit by a few marker lamps. At the end of it a sliding door is the entrance to the hotel. [/n]The low light enhances the starry sky and creates a romantic atmosphere. [/n]Parking is to the west.".
 
-The fir tree is a scenery in the garden. Description is "High fir tree".
+The fir tree is a scenery in the garden. Description is "High fir tree.".
+Understand "fir/-- tree/trees/woods/wood" as the fir tree.
 Instead of taking the fir tree, say "It's not Xmas!".
 
 The wooden-table is a supporter in the garden. It is scenery.
 The description is "A sturdy table made of rough fir wood."
-Understand "wooden/-- table" as the wooden-table.
+Understand "wooden/-- table/tables" as the wooden-table.
 Instead of taking the wooden-table, say "Do you think you can use it for anything?".
 The chair is an enterable supporter in the garden. It is scenery.
 The description is "A simple wooden chair."
+Understand "wooden/-- chair/chairs" as the chair.
 Instead of taking the chair, say "Leave it available to other hotel guests."
 
 Instead of going to the parking from the garden, say "You didn't forget anything important in the car.".
+
+Before going to the reception from the garden:
+	Monica retakes trolley;
+	let forgotten items be the list of not scenery things in the garden;
+	remove Monica from the forgotten items, if present;
+	remove the player from the forgotten items, if present;
+	if forgotten items is not empty:
+		say "Be careful: you are forgetting [forgotten items with definite articles].";
+		stop the action.
 
 Chapter 2.3.1 - The sliding door
 
@@ -445,7 +467,9 @@ Instead of going up during the check-in:
 		say "[alert][/ss]Are you sure you took the room key?' [/se][Monica] [ask]." instead;
 	unless a room key is enclosed by Monica, say "[Monica] [have] not yet taken [their] key." instead;
 	unless the red backpack is enclosed by a people, say "[/ss]Mr. [printed name of the player], you forgot your backpack.' [/se][the naming of the receptionist] [remind] you." instead;
-	unless the pink trolley is enclosed by a people, say "[/ss]You forgot your trolley.' [/se][the naming of the receptionist] [remind] you." instead;
+	unless the pink trolley is enclosed by a people:
+		say "[/ss]You forgot your trolley.' [/se][the naming of the receptionist] [remind] you.";
+		Monica retakes trolley;
 	Monica gets tired never;
 	now the check-in-trigger is false.
 		
@@ -616,6 +640,9 @@ Instead of saying hello to someone (called the other) during the check-in:
 	otherwise:
 		continue the action.
 
+Response of the receptionist when told about "[myself]":
+	do nothing.
+	
 Section 2.4.3.2 - Morgen receptionist
 
 Instead of hailing for the first time during the morgen receptionist:
@@ -2868,6 +2895,8 @@ When Check-in ends:
 Understand "check-in/registration" as "[check-in]".	
 Response of a worker when asked-or-told about "[check-in]" during Check-in:
 	do nothing.
+
+Does the player mean taking a room key: it is likely.
 	
 Book 4.4 - Breakfast
 

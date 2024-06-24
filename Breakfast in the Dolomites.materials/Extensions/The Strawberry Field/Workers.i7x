@@ -176,4 +176,8 @@ Volume 4 - Answers
 Default response for a worker (this is the worker default response rule):
 	say "[/ss][one of]Sorry,[or]I'm sorry, but[at random] [one of]I can't help you[or]I can't be of any assistance to you[at random] [one of]now[or]at the moment[or]at this time[at random].' [/se][regarding the noun][they] [admit].".
 
+Understand "me/you/us/myself/yourself/ourself" as "[myself]".
+Response for a worker when told about "[myself]":
+	say "[/ss]Oh, interesting.' [/se][regarding the noun][they] [reply].".
+	
 Workers ends here.
