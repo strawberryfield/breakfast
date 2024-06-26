@@ -46,11 +46,12 @@ When play begins:
 
 Arrival-trigger is a truth state that varies. 
 After printing the banner text:
-	display the Figure cover;
-	pause the game;
-	now arrival-trigger is true;
-	say "[arrive to hotel][/n]";
-	Monica leaves the car in 1 turn from now.
+	if the location of the player is the car:
+		display the Figure cover;
+		pause the game;
+		now arrival-trigger is true;
+		say "[arrive to hotel][/n]";
+		Monica leaves the car in 1 turn from now.
 	[ uncomment above for release, than comment below]
 	[now the player is in the reception;
 	now the player is registered;
@@ -844,6 +845,12 @@ Book 2.6 - The dining room
 
 The description of the dining room is "[if unvisited]Rustic wooden beams and locally sourced stone accents complement the alpine setting, while tasteful decor elements pay homage to the region's cultural heritage. [end if]The tables are elegantly set with crisp linens. Around the tables is a bench covered in dark green velvet. [if unvisited][/n]Bathed in natural light that filters through large windows, the room offers panoramic views of the surrounding majestic peaks, creating a serene and inspiring atmosphere. [end if][/n]The reception area is to the west, to the north is the buffet area, and to the east a door leads to the kitchen.".
 
+The rustic wooden beam is a scenery in the dining room.
+Understand "rustic/-- wooden/-- beams" as the rustic wooden beam.
+The surrounding majestic peaks is a scenery in the dining room.
+The description is "The peaks of the Dolomites, mountains that are unique in the world."
+Understand "surrounding/-- majestic/-- peak/mountains/mountain" as the surrounding majestic peaks.
+
 Chapter 2.6.1 - Furniture
 
 Section 2.6.1.1 - Kitchen door
@@ -861,6 +868,8 @@ The bench is a scenery enterable supporter in the dining room.
 The description is "A wooden bench padded with dark green velvet cushions."
 After getting off the bench, say "[We] [stand] up.".
 Rule for supplying a missing noun while entering when the location is the dining room (this is the seat at the tabe rule): now the noun is the bench.
+The green velvet cushion is a scenery in the dining room. 
+Understand "green/-- velvet/-- cushions" as the green velvet cushion.
 
 Definition: a person is at the table if it is enclosed by the bench.
 
@@ -871,6 +880,9 @@ For printing a locale paragraph about the table:
 	if the player is at the table,  say "On the table in front of [us] [is-are a list of things on the table].".
 
 Instead of examining the table during search for the table, say "All tables are similar and well laid out.".
+Understand "tables" as the table.
+The crisp linen is a scenery in the dining room.
+Understand "white/-- crisp/-- linens" as the crisp linen.
 
 A houseware is a kind of thing. 
 A cutlery is a kind of houseware.
@@ -968,7 +980,7 @@ To say approaching (W - a worker):
 Instead of hailing during the Search for the table:
 	if the current interlocutor is nothing:
 		let W be a random waiter in the location;
-		say approaching W;
+		[say approaching W;]
 		try saying hello to W;
 	otherwise:
 		let W be the current interlocutor;
@@ -976,7 +988,7 @@ Instead of hailing during the Search for the table:
 		try saying hello to W.
 Instead of saying hello to someone (called the other) during the Search for the table:
 	unless the other is Monica:
-		if the current interlocutor is nothing, say approaching the other;
+		say approaching the other;
 		now the current interlocutor is the other;
 		say "[/ss1][good morning current interlocutor], we are staying in the 'Edelweiss' room and it is our first day here.' [/r][/n][/ss]Oh, welcome! Let me show you to your table.' [/se][the naming of current interlocutor] [regarding current interlocutor][say] and [go] to a free table. [/n][/ss]This is the table we have reserved for you, I hope it is to your liking.' [/se][regarding the current interlocutor][they] [point] to you the table.";
 		say "[heart][/ss]It's perfect!' [/se][Monica] [exclaim] [/ss1][thanks current interlocutor].' [/r][/n]";
@@ -987,6 +999,9 @@ Instead of saying hello to someone (called the other) during the Search for the 
 	otherwise:
 		continue the action.
 
+Response of a waiter when told about "[myself]" during the Search for the table:
+	do nothing.
+	
 Instead of saying yes during Search for the table, try hailing.
 Instead of calling a waiter during Search for the table, try hailing.
 
