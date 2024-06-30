@@ -1001,6 +1001,8 @@ Instead of saying hello to someone (called the other) during the Search for the 
 
 Response of a waiter when told about "[myself]" during the Search for the table:
 	do nothing.
+Response of a waiter when asked-or-told about the table during the Search for the table:
+	do nothing.
 	
 Instead of saying yes during Search for the table, try hailing.
 Instead of calling a waiter during Search for the table, try hailing.
@@ -1027,7 +1029,7 @@ Understand "the/-- daily/hotel/-- daily/hotel/-- newsletter/bulletin/gazette" as
 Response of a worker when asked about "[newsletter]" during the Breakfast:
 	say "[/ss]Where can I find the newsletter?' [/se][we] [ask]. [/n]";
 	if the noun is a waiter:
-		say "[/ss]It's printed on the back side of the menu.' [/se][the naming of the noun] [reply].";
+		say "[/ss]It's printed on the back side of the good morning sheet.' [/se][the naming of the noun] [reply].";
 	otherwise:
 		say "[/ss]You can find it on your table in the dining room.' [/se][the naming of the noun] [reply].".
 	
@@ -1604,7 +1606,7 @@ Response of a waiter when asked for "chocolate":
 Chapter 2.6.7 - The written paper
 			
 The written paper is a paper-item on the table.
-Understand "today/-- dinner/-- menus" as the written paper.
+Understand "good/-- illustrated/photo/morning/welcome/printed/written/-- paper/sheet" as the written paper.
 The written paper front is a paper-side.
 The written paper back is a paper-side.
 The front of the written paper is the written paper front.
@@ -1622,7 +1624,8 @@ To decide if (T - some text) read:
 
 Section 2.6.7.1 - Paper text
 	
-The description of the written paper front is "[/b]Today Dinner Menu[/p][/i]Starter[/f][/n]Toasted rustic bread with fresh tomatoes, red onions, basil, and garlic topped with cheese[/p][/i]First course[/f][/n]Traditional Italian bean and pasta soup[/p][/i]Main course[/f][/n]Sautéed chicken breast with wild mushrooms and scallions in a Marsala reduction wine sauce served with potato and vegetables[/p][/i]Dessert[/f][/n]Raspberry mousse[/r]".
+[The description of the written paper front is "[/b]Today Dinner Menu[/p][/i]Starter[/f][/n]Toasted rustic bread with fresh tomatoes, red onions, basil, and garlic topped with cheese[/p][/i]First course[/f][/n]Traditional Italian bean and pasta soup[/p][/i]Main course[/f][/n]Sautéed chicken breast with wild mushrooms and scallions in a Marsala reduction wine sauce served with potato and vegetables[/p][/i]Dessert[/f][/n]Raspberry mousse[/r]".]
+The description of the written paper front is "[/f]Good morning Miss. Monica e Mr. Francesco[/r][/n]At the bottom of this statement is a photo of the Three Peaks of Lavaredo on a sunny day like this one."
 
 Understand "legend/legends/ of/-- the/-- dolomites/mountain/mountains/--" as "[legend]".
 Understand "hike/escursion/trekking of/-- the/-- day/--" as "[hike]".
@@ -1781,12 +1784,12 @@ Understand "hot/liquid/-- chocolate" as hot chocolate.
 Understand "lemon/-- tea" as lemon tea.
 Understand "milk/milky/-- tea" or "milky" as milky tea.
 
-Understand "orange juice/--" as orange juice.
-Understand "apple juice/--" as apple juice.
-Understand "lemon/lime juice/--" as lemon juice.
-Understand "pear juice/nectar/--" as pear nectar.
-Understand "carrot juice/--" as carrot juice.
-Understand "celery juice/--" as celery juice.
+Understand "orange juice/--" or "juice" as orange juice.
+Understand "apple juice/--" or "juice" as apple juice.
+Understand "lemon/lime juice/--" or "juice" as lemon juice.
+Understand "pear juice/nectar/--" or "juice" as pear nectar.
+Understand "carrot juice/--" or "juice" as carrot juice.
+Understand "celery juice/--" or "juice" as celery juice.
 
 Use mixed liquids.
 
@@ -1851,6 +1854,8 @@ Understand "marble-topped/juicer table" as marble table.
 The juicer machine is a device on the marble table.
 The description is "The machine takes the form of a large steel cylinder. [/n]At the top, a lid gives access to a container in which to place the vegetables from which the juice is extracted. [/n]At the bottom there is a recess in which a glass can be placed to collect the juice that comes out of a spout. [/n]On the right is a switch to turn the machine on and off."
 Does the player mean examining the juicer machine: it is likely.
+Does the player mean quizzing someone about the juicer machine: it is likely.
+Does the player mean implicit-quizzing the juicer machine: it is likely.
 Understand "juice/-- machine/extractor" as the juicer machine.
 
 Before taking the juicer machine:
@@ -3000,7 +3005,7 @@ When First buffet access begins:
 When First buffet access ends:
 	say "[Monica] [return] with [us] in the dining room and [regarding Monica][sit] on the bench.";
 	now Monica is on the bench;
-	Monica invites to sit in 1 turn from now;
+	[Monica invites to sit in 1 turn from now;]
 	if the number of things carried by Monica is greater than zero:
 		say "Then she [put] the dishes and the glass she [have] brought from the buffet on the table.";
 		now Monica-dish is on the table;
@@ -3033,6 +3038,8 @@ Before going somewhere from the buffet during First buffet access:
 	
 After going somewhere from the buffet:
 	now buffet-trigger is false;
+	now msit-count is zero;
+	Monica invites to sit in 1 turn from now;
 	continue the action.
 	
 Section 4.4.3.1 - Monica actions in the buffet
@@ -3249,13 +3256,18 @@ Monica-juice-trigger is a truth state that varies.
 Juice for Monica begins when Monica-juice-trigger is true.
 Juice for Monica ends when Monica-juice-trigger is false.
 
+When Juice for Monica begins:
+	now current interlocutor is Emma.
+	
 When Juice for Monica ends:
+	now current interlocutor is nothing;
 	say "[We] [return] at your table and [put] [the Monica-glass] in front of [Monica].";
 	now the Monica-glass is on the table;
 	say "[/ss]Here is your [liquid of the Monica-glass].' [/se][we] [say] to [Monica].";
 	unless kisses-count is less than kisses-limit, now kisses-count is kisses-limit minus two;
 	say "[Monica] [smile] and [kiss] [us].";
 	try kissing Monica;
+	Monica invites to sit in 1 turn from now;
 	Monica drinks orange juice in 1 turn from now.
 	
 Section 4.4.6.1 - Starting event
