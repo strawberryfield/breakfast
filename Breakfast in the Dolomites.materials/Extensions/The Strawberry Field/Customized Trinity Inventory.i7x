@@ -36,9 +36,10 @@ Replaced by Large Games Speedup]
 Definition: a player's holdall is empty rather than non-empty if the first thing held by it is nothing.
 [Definition: a supporter is empty if the number of things on it is zero.
 Replaced by Large Games Speedup]
-Definition: a thing is empty if the number of things encased by it is zero.
+[Definition: a thing is empty if the number of things encased by it is zero.]
+Definition: a thing is empty rather than non-empty if the number of thing enclosed by it is zero.
 
-Definition: a thing is non-empty if it is not empty.
+[Definition: a thing is non-empty if it is not empty.]
 
 Section 2c - Specially-inventoried
 
@@ -227,8 +228,9 @@ Section 5e - Non-empty wearing rule
 
 Carry out taking inventory when the number of listed when worn things worn by the player is at least one (this is the non-empty wearing rule):
 	if the number of listed when carried things carried by the player is zero, say ", but [we]['re]" (A);
-	if the number of listed when carried things carried by the player is at least one, say ". [We]['re]" (B);
-	say " wearing [list of listed when worn things worn by the player][run paragraph on]" (C).
+	otherwise:
+		say ". [We]['re]" (B);
+	say " wearing [a list of listed when worn things worn by the player][run paragraph on]" (C).
 
 
 Section 5f - Set-up second-level inventory list rule
@@ -240,10 +242,12 @@ Carry out taking inventory (this is the set-up second-level inventory list rule)
 	now TI first option anded is 0;
 	now articulating is false;
 	now content-listing is false;
-	if the number of listed when carried things carried by the player is at least one, now TI first option anded is 1;
-	if the number of listed when carried things carried by the player is zero and the number of listed when worn things worn by the player is at least one, now TI first option anded is 1;
-	if the number of listed when worn things worn by the player is zero, now TI first option anded is 0;
-	if the number of listed when carried things carried by the player is at least one and the number of listed when worn things worn by the player is one, now TI first option anded is 0.
+	let N be the number of listed when carried things carried by the player;
+	let W be the number of listed when worn things worn by the player;
+	if N is at least one, now TI first option anded is 1;
+	if N is zero and W is at least one, now TI first option anded is 1;
+	if W is zero, now TI first option anded is 0;
+	if N is at least one and W is one, now TI first option anded is 0.
 
 
 Section 5g - Deliver second-level inventory list rule
@@ -253,8 +257,9 @@ Carry out taking inventory (this is the deliver second-level inventory list rule
 	if item is nothing, let item be a random unmentioned empty empty-listed thing encased by something mentioned;
 	while item is a thing:
 		if the contents of item are visible:
-			if the number of listed when carried things encased by the item is at least one, carry out the inventory listing the contents activity with the item;
-			if the number of listed when carried things encased by the item is zero and the item is empty-listed, carry out the inventory listing the contents activity with the item;
+			let N be the number of listed when carried things encased by the item;
+			if N is at least one, carry out the inventory listing the contents activity with the item;
+			if N is zero and the item is empty-listed, carry out the inventory listing the contents activity with the item;
 		now the item is mentioned;
 		let item be a random unmentioned non-empty thing encased by something mentioned;
 		if item is nothing, let item be a random unmentioned empty empty-listed thing encased by something mentioned;

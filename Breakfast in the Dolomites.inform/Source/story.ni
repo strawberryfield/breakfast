@@ -14,7 +14,7 @@ She loves strolling around looking in shop windows; a peppy girl, she won't forg
 What a strange thing love is...
 
 There are no treasures to be found, there are no mysteries to be solved; remember, you are on holiday: have fun!".
-Release along with the cover art ("Breakfast in the Dolomites"), a file of "Quickstart guide" called "quickstart.pdf", a file of "Introductory booklet" called "booklet.pdf", a file of "Walkthrought" called "walkthrough.pdf", a file of "License legal code" called "license.txt", the library card, a "TSF" website and an interpreter.
+Release along with the cover art ("Breakfast in the Dolomites"), a file of "Quickstart guide" called "quickstart.pdf", a file of "Introductory booklet" called "booklet.pdf", a file of "Walkthrought" called "walkthrough.pdf", a file of "License legal code" called "license.txt", the library card, a "TSF" website [and an interpreter].
 
 Chapter 0.1 - Includes
 
@@ -2877,9 +2877,7 @@ Instead of examining the girl for the first time:
 	say "[/ss]Some needs are pressing!' [/se]Paola replies.";
 	now the printed name of the noun is "Paola";
 	now the noun is proper-named.
-
-
-			
+		
 Volume 4 - Scenes
 
 Book 4.1 - Intro
