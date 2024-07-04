@@ -185,6 +185,7 @@ Section 2.1.1.2 - The key
 your-car-key is a thing in the dashboard. Printed name is "your car[']s key".
 The description is "The key to open and start your car."
 Understand "key" as your-car-key.
+Does the player mean inserting your-car-key into the left front pocket: it is likely.
 
 [Section 2.1.1.3 - The drawer
 
@@ -2636,6 +2637,11 @@ Instead of taking money, say "There is nothing to pay.".
 The identity card is in the wallet.
 The description is "A card folded into a booklet with your photo (slightly old) and your personal information.".
 
+Before inserting the wallet into a pocket:
+	if the noun is open, try closing the noun.
+
+Does the player mean inserting the wallet into the right back pocket: it is likely.
+		
 Book 3.2 - The girlfriend
 
 Monica is a woman in the car.
@@ -3290,11 +3296,20 @@ Default answer response for ask-for-juice node:
 Response for ask-for-juice node when saying no:
 	say "[alert][/ss]How unpleasant you are this morning!' [/se][Monica] [scold] [us] [/ss1]Don't you want to do a kindness to your girlfriend who loves you so much?' [/r][/n]".	
 Response for ask-for-juice node when saying yes:
+	if the number of things carried by the player is greater than zero:
+		say "[We] [put] on the table [the list of things carried by the player].";
+		repeat with item running through the things carried by the player:
+			now the item is on the table;
 	say "[leavenode][heart][/ss]My love!' [/se][Monica] [reply] caressing [us] [/ss1]You can choose the vegetable.' [/r][/n]";
 	say "[We] [stand] up and [go] to the buffet; [Monica] [send] [us] a kiss. [heart][/n]";
-	now the player is in the buffet;
+	unless the location of the player is the buffet, now the player is in the buffet;
 	now Monica-juice-trigger is true.
-	
+
+Before going to the Buffet when the current node is ask-for-juice node:
+	try saying yes instead.
+
+The can't travel in what's not a vehicle rule is not listed in any rulebook.
+		
 Before printing a parser error when the latest parser error is didn't understand error and the current node is ask-for-juice node (this is the generic answer for ask-for-juice rule):
 	follow the default answer response rules for the current node;
 	stop the action.
