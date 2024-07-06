@@ -297,6 +297,8 @@ Instead of doing anything other than examining to something while the noun is ow
 Does the player mean taking an owned thing: it is unlikely.
 Does the player mean inserting an owned thing into: it is unlikely.
 Does the player mean putting an owned thing on: it is unlikely.
+Does the player mean eating an owned thing: it is unlikely.
+Does the player mean drinking an owned thing: it is unlikely.
 
 Book 1.5 - go to named room
 

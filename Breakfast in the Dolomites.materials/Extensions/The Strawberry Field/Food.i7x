@@ -40,6 +40,7 @@ Volume 2 - Food items
 
 A food-item is a kind of thing. It is edible.
 A food-item can be spreadable. A food-item is usually not spreadable.
+A food-item can be spreaded. A food-item is usually not spreaded.
 A food-item can be bread-placeable. A food-item is usually not bread-placeable.
 A food-item has some text called attributes.
 Rule for printing the name of a food-item (called target):
@@ -59,12 +60,17 @@ Does the player mean taking a food-item: it is likely.
 Book 2.1 - bread
 
 A bread-slice is a kind of food-item.
-A bread-filling is a kind of supporter. A bread-filling is part of every bread-slice.
+A bread-filling is a kind of container. A bread-filling is part of every bread-slice.
 A bread-slice can be buttered or unbuttered. A bread-slice is usually unbuttered.
 
 To decide which bread-filling is fill holder of (target - a bread-slice):
 	decide on a random bread-filling which is part of the target.
-	
+
+Check an actor taking a food-item (this is the can't take spreaded rule):
+	if the noun is spreaded:
+		say "[The noun] [are] spreaded.";
+		stop the action.
+		
 [Definition: a bread-slice (called target) is buttered:
 	if the list of butter-items held by the fill holder of the target is empty, decide no;
 		decide yes.]
@@ -95,6 +101,11 @@ Instead of inserting something into a single portion jar, say "[We] [can't] do i
 Understand "single/-- portion/serving/-- container/jar" as a single portion jar.
 
 Does the player mean taking a closed single portion jar: it is very likely.
+Instead of eating an open single portion jar:
+	let item be the first thing held by the noun;
+	unless the item is nothing, try eating the item;
+	otherwise:
+		say "There is nothing edible.".
 
 Book 2.3 - vegetables
 
@@ -142,6 +153,7 @@ Check spreading it on:
 	
 Carry out an actor spreading something on something (this is the standard spreading rule):
 	now the noun is in the fill holder of the second noun;	
+	now the noun is spreaded;
 	if the noun is a butter-item, now the second noun is buttered.
 
 Report spreading it on:

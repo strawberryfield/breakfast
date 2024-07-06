@@ -16,6 +16,7 @@ What a strange thing love is...
 There are no treasures to be found, there are no mysteries to be solved; remember, you are on holiday: have fun!".
 Release along with the cover art ("Breakfast in the Dolomites"), a file of "Quickstart guide" called "quickstart.pdf", a file of "Introductory booklet" called "booklet.pdf", a file of "Walkthrought" called "walkthrough.pdf", a file of "License legal code" called "license.txt", the library card, a "TSF" website [and an interpreter].
 
+
 Chapter 0.1 - Includes
 
 Include Cleared Events by Daniel Stelzer.
@@ -874,6 +875,7 @@ Understand "green/-- velvet/-- cushions" as the green velvet cushion.
 
 Definition: a person is at the table if it is enclosed by the bench.
 
+
 Section 2.6.1.3 - The table
 	
 The table is a scenery supporter in the dining room.
@@ -895,7 +897,9 @@ A towel is a kind of houseware. The description is "A white paper towel.".
 Two knives, two teaspoons ,two forks and two towels are on the table.
 
 The round plastic container is an open, not openable, not lockable container on the table. 
+Understand "garbage/waste/-- can/bin/container" or "garbage/waste" as the round plastic container.
 The description is "A light brown plastic cylinder; on the surface reads: 'For a clean table'.".
+Understand "garbage/waste/-- can/bin/container" as the round plastic container.
 Instead of taking the round plastic container, say "[alert][/ss]But what do you do with the waste container?' [/se][Monica] [ask].".
 Instead of taking something which is enclosed by the round plastic container, say "[alert][/ss]Leave it there!' [/se][Monica] [scold] you [/ss]Now you'd better go wash your hands.' [/r][/n]".
 
@@ -924,7 +928,7 @@ Instead of drinking something while the player is not at the table:
 Section 2.6.2.2 - Food and drink management
 
 To decide whether can order hot drinks:
-	if the number of non-empty hot drink containers on the table is greater than zero, decide no;
+	if the number of non-empty not owned hot drink containers on the table is greater than zero, decide no;
 	otherwise	decide yes.
 			
 To decide whether hot drinks are drunk:
@@ -1581,7 +1585,7 @@ To decide whether the player can make order:
 		say "[alert][/ss]Don't you think you're overdoing it?' [/se][Monica] [say] [/ss1]You are already waiting for a hot drink.' [/r][/n]";
 		decide no;
 	unless can order hot drinks:
-		say "[alert][/ss]You have [a list of non-empty hot drink containers on the table] to drink.' [/se][Monica] [say] [/ss1]First drink it.' [/r][/n]";
+		say "[alert][/ss]You have [a list of non-empty not owned hot drink containers on the table] to drink.' [/se][Monica] [say] [/ss1]First drink it.' [/r][/n]";
 		decide no;
 	decide yes;
 
@@ -1604,6 +1608,9 @@ Response of a waiter when asked for "chocolate":
 			another chocolate-based eaten;
 			prepare chocolate.
 		
+Understand "order [text]" as implicit-imploring.
+Understand "order [text] from [someone]" as imploring it for (with nouns reversed).
+
 Chapter 2.6.7 - The written paper
 			
 The written paper is a paper-item on the table.
@@ -3111,14 +3118,14 @@ Section 4.4.3.2 - Monica eats buffet food
 At the time when Monica eats egg:
 	let the current egg be a random thing on the Monica-egg-dish;
 	silently try Monica eating the current egg;
-	say "[Monica] [eat] her [current egg]. [/n]It seems to have been really good, judging by her expression.";
+	if the location of the player is the dining room, say "[Monica] [eat] her [current egg]. [/n]It seems to have been really good, judging by her expression.";
 	Monica spreads butter in 2 turns from now.
 		
 At the time when Monica spreads butter:
 	let the current bread be a random bread-slice on the Monica-dish;
 	let the current butter be a random butter-item on the Monica-dish;
 	silently try Monica spreading the current butter on the current bread;
-	say "[Monica] [spread] [the current butter] on her [printed name of current bread].";
+	if the location of the player is the dining room, say "[Monica] [spread] [the current butter] on her [printed name of current bread].";
 	Monica opens jam in 0 turns from now.
 
 At the time when Monica opens jam:
@@ -3131,25 +3138,29 @@ At the time when Monica spreads jam:
 	let the current jam be a random jam-item in the current jar;
 	let the current bread be a random bread-slice on the Monica-dish;
 	silently try Monica spreading the current jam on the current bread;
-	say "[Monica] [spread] [the current jam] over the buttered [printed name of current bread].";
+	if the location of the player is the dining room, say "[Monica] [spread] [the current jam] over the buttered [printed name of current bread].";
 	Monica throws jar in 0 turns from now.
 
 At the time when Monica throws jar:
 	let the current jar be a random single portion jar on the Monica-dish;
 	now the current jar is in the round plastic container;
-	say "[Monica] [throw] [the current jar] in the round plastic container.";
+	if the location of the player is the dining room, say "[Monica] [throw] [the current jar] in the round plastic container.";
 	Monica eats jam in 0 turns from now.
 		
 At the time when Monica eats jam:
 	let the current bread be a random bread-slice on the Monica-dish;
-	try Monica eating the current bread;
-	say "[heart][/ss]Delicious!' [/se][Monica] [exclaim] [/ss1]You really took me to a nice place.' [/r][/n]";
+	if the location of the player is the dining room:
+		try Monica eating the current bread;
+		say "[heart][/ss]Delicious!' [/se][Monica] [exclaim] [/ss1]You really took me to a nice place.' [/r][/n]";
+	otherwise:
+		silently try Monica eating the current bread;		
 	Monica drinks orange juice in 0 turns from now.
 
 At the time when Monica drinks orange juice:
-	say "[Monica] [take] [their] [Monica-glass] and [drink] the juice.";
+	if the location of the player is the dining room:
+		say "[Monica] [take] [their] [Monica-glass] and [drink] the juice.";
+		say "After drinking [Monica] [put] [the Monica-glass] on the table again.";
 	now the fluid content of Monica-glass is 0 cc;
-	say "After drinking [Monica] [put] [the Monica-glass] on the table again.";
 	check stage progress.	
 
 After the player spreading something on:
@@ -3160,7 +3171,7 @@ At the time when Monica throws your jar:
 	let the current jar be a random empty single portion jar on a dish;
 	unless the current jar is nothing:
 		now the current jar is in the round plastic container;
-		say "[alert][/ss]Next time be tidier!' [/se][Monica] [say] throwing your [current jar] in the round plastic container.".
+		if the location of the player is the dining room, say "[alert][/ss]Next time be tidier!' [/se][Monica] [say] throwing your [current jar] in the round plastic container.".
 			
 Section 4.4.3.3 - Tasks requests
 

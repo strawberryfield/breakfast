@@ -19,6 +19,9 @@ Instead of turning a paper-item:
 Understand the command "flip" as "turn".
 Understand the command "revert" as "turn".
 
+Instead of looking under a paper-item:
+	try turning the noun.
+	
 Instead of examining a paper-item:
 	if the noun is upside, try examining the front of the noun instead;
 	try examining the back of the noun.
