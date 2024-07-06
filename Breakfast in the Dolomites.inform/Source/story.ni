@@ -16,7 +16,6 @@ What a strange thing love is...
 There are no treasures to be found, there are no mysteries to be solved; remember, you are on holiday: have fun!".
 Release along with the cover art ("Breakfast in the Dolomites"), a file of "Quickstart guide" called "quickstart.pdf", a file of "Introductory booklet" called "booklet.pdf", a file of "Walkthrought" called "walkthrough.pdf", a file of "License legal code" called "license.txt", the library card, a "TSF" website [and an interpreter].
 
-
 Chapter 0.1 - Includes
 
 Include Cleared Events by Daniel Stelzer.
@@ -203,6 +202,7 @@ Chapter 2.1.2 - The car door
 The car door is a closed openable lockable scenery door.
 The description is "[if the location of the player is the car]The door of your car[otherwise][car external][end if].".
 It is outside of the car and inside from the parking.
+Does the player mean looking under the car door: it is likely.
 
 Your-car-key unlocks the car door.
  
@@ -295,6 +295,10 @@ At the time when Monica knocks:
 Book 2.2 - The parking
 
 The description of the parking is "The hotel's reserved car park. [/n]Your white car is perhaps the smallest of all. [/n]To the east is the garden.".
+The white automobile is a scenery in the parking. Printed name is "white car".
+The description is "Your little hatchback."
+Understand "your/my/-- little/-- white/-- car" as the white automobile.
+Does the player mean examining the white automobile: it is likely.
 
 Chapter 2.2.1 - Rules
 
@@ -683,8 +687,8 @@ After closing the bathroom door:
 	now the bathroom-antechamber is dark;
 	continue the action.
 
-Does the player mean opening a closed door: it is likely.
-Does the player mean closing an open door: it is likely.
+Does the player mean opening a closed door: it is very likely.
+Does the player mean closing an open door: it is very likely.
 
 Section 2.5.1.2 - The sink
 
@@ -971,9 +975,9 @@ At the time when Monica sits at table:
 
 Msit-count is a number that varies. Msit-count is zero.
 At the time when Monica invites to sit:
-	if the location is the dining room and the player is not enclosed by the bench:
+	if the location is the dining room and the player is not enclosed by the bench and WC-trigger is false:
 		increase Msit-count by one;
-		say "[if Msit-count is greater than one][alert][end if][/ss]Why don't you sit?' [/se][Monica] [ask][other times of Msit-count]. [/n]";
+		say "[if Msit-count is greater than one][alert][end if][/ss][one of]Why don't you sit down[or]Shouldn't you sit down[or]Wouldn't it be better to sit down[at random]?' [/se][Monica] [ask][other times of Msit-count]. [/n]";
 		Monica invites to sit in 1 turns from now.
 			
 Chapter 2.6.4 - Conversation
@@ -3427,7 +3431,7 @@ At the time when play ends:
 		say "[The naming of the receptionist] walks away from his desk and comes into the dining room.";
 		say "[The naming of Emma] also comes here.";
 		say "[Monica] stands up and starts clapping, followed by all the other characters. [/p]";
-		say "Your game is over, you played very well and solved all the puzzles we set you. [/n]We all thank you for playing!";
+		say "Your game is over, you played very well and solved all the puzzles we set you. [/n]We all thank you for playing with us!";
 		end the story saying "The curtain closes".
 					
 Volume 5 - Internal db
