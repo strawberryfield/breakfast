@@ -649,7 +649,19 @@ Instead of saying hello to someone (called the other) during the check-in:
 
 Response of the receptionist when told about "[myself]":
 	do nothing.
-	
+
+Does the player mean showing the identity card to the receptionist: it is likely.	
+Understand "my/your/-- document/documents/passport" or "my/your/-- identity/-- card" as "[document]".
+
+Response of the receptionist when asked-or-told about "[document]" during Check-in:
+	say "[/ss]I need your passport or identity card to register you.' [/se][the naming of receptionist] [regarding the receptionist][explain].".
+Response of the receptionist when asked-or-told about identity card during Breakfast:
+	say "[/ss]We already did the registration last night.' [/se][the naming of receptionist] [regarding the receptionist][remember]."
+Response of Monica when asked-or-told about "[document]" during Check-in:
+	say "[/ss]Not in the wallet you keep in your pocket?' [/se][Monica] [ask]."
+Response of Monica when asked-or-told about identity card during Breakfast:
+	say "[/ss]What a silly question: what are you supposed to do with it?' [/se][Monica] [ask]."
+		
 Section 2.4.3.2 - Morgen receptionist
 
 Instead of hailing for the first time during the morgen receptionist:
@@ -675,6 +687,7 @@ Section 2.5.1.1 - The bathroom door
 
 The description of the bathroom door is "A light wooden door[if the location of the player is the front side of the noun]. A tiny brass sign states [italic type]'Toilet'[roman type][end if].".
 Understand "bath/toilet door/--" or "light/-- wood/wooden/-- door" as the bathroom door.
+Printed name of the bathroom door is "wooden door".
 
 After deciding the scope of the player when the location is the bathroom-antechamber:
 	place the bathroom door in scope;
@@ -2647,6 +2660,7 @@ Instead of taking money, say "There is nothing to pay.".
 
 The identity card is in the wallet.
 The description is "A card folded into a booklet with your photo (slightly old) and your personal information.".
+Understand "passport/document" as the identity card.
 
 Before inserting the wallet into a pocket:
 	if the noun is open, try closing the noun.
@@ -2967,7 +2981,9 @@ When the Breakfast begins:
 	now the player wears the pair of beige shorts;
 	now the player carries a random room key;
 	[description]
+	now the printed name of the bathroom door is "bathroom door";
 	now the current interlocutor is nothing;
+	say leavenode;
 	say "[note style]The morning after. [/r][/p]";
 	say "After a good night's sleep, [we] [are] ready to enjoy the first day of your holiday. [/n][We] and [Monica] go down the stairs and back to reception. [/n][We] [wear] [a list of cloth worn by the player]; [Monica] [wear] [a list of cloth worn by Monica]. [/n]";
 	say "[The naming of the receptionist] [are] working behind the counter. [/p]";
