@@ -2629,6 +2629,9 @@ A pocket is always open. A pocket is always not openable.
 Instead of searching a pocket: try examining the noun.
 The left back pocket, the right back pocket, the left front pocket, the right front pocket, the left leg pocket, the right leg pocket are pockets.
 The left back pocket, the right back pocket, the left front pocket, the right front pocket, the left leg pocket, the right leg pocket are parts of the pair of beige shorts.
+Instead of searching the pair of beige shorts:
+	if the wallet is in the sleeping room, now the wallet is in the right back pocket;
+	say "Examining your pants [we] [see]: [a list of pockets which are part of the noun including contents]."
 
 The pair of blue sneakers is a cloth.
 The pair of brown trekking boots is a cloth. The description is "Your old leather hiking boots; they still show the marks of the stones you have walked over."
@@ -2637,13 +2640,13 @@ The player wears the black t-shirt, the pair of beige shorts and the pair of blu
 
 Chapter 3.1.2 - The wallet
 
-The wallet is a closed openable container.
+The wallet is a closed openable container in the sleeping room.
 The description is "A grey canvas wallet. It's a gift from [Monica].".
 Check the player opening the wallet:
 	if the player is not carrying the noun:
 		carry out the implicitly taking activity with the noun;
 		if the player is not carrying the noun, stop the action. 
-Before examining the right back pocket:
+Before examining the right back pocket while the wallet is in the sleeping room:
 	now the wallet is in the noun.
 	
 An unuseful card is a kind of thing.	
