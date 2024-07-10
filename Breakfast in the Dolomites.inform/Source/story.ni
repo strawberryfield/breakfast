@@ -37,6 +37,7 @@ Include Written papers by The Strawberry Field.
 
 Chapter 0.2 - Game start
 
+Use brief room descriptions. 
 Figure cover is the file "Cover.jpg".
 [ uncomment below for release]
 When play begins:
@@ -398,6 +399,9 @@ The description is "A simple wooden chair."
 Understand "wooden/-- chair/chairs" as the chair.
 Instead of taking the chair, say "Leave it available to other hotel guests."
 
+Some marker lamps are in the garden. Marker lamps are scenery.
+Understand "marker/-- lamp" as marker lamps.
+
 Instead of going to the parking from the garden, say "You didn't forget anything important in the car.".
 
 Before going to the reception from the garden:
@@ -661,7 +665,12 @@ Response of Monica when asked-or-told about "[document]" during Check-in:
 	say "[/ss]Not in the wallet you keep in your pocket?' [/se][Monica] [ask]."
 Response of Monica when asked-or-told about identity card during Breakfast:
 	say "[/ss]What a silly question: what are you supposed to do with it?' [/se][Monica] [ask]."
-		
+
+Response of the receptionist when saying yes:
+	say "[/ss]Well.' [/se][regarding the receptionist][they] [reply]."
+Response of the receptionist when saying no:
+	say "[regarding the receptionist][They] [look] at [us] with a questioning look."
+	
 Section 2.4.3.2 - Morgen receptionist
 
 Instead of hailing for the first time during the morgen receptionist:
@@ -2022,6 +2031,7 @@ Section 2.7.2.5 - Cutting
 One knife is on the marble table.
 
 The sturdy wooden chopping board is a chopping board on the marble table.
+Understand "sturdy/-- wooden/-- cutting/cut/cutter board/--" or "sturdy/-- wooden/-- cutboard"as the sturdy wooden chopping board.
 The description is "The surface is slightly damp: someone must have used it to cut vegetables."
 Does the player mean putting a vegetable on the sturdy wooden chopping board: it is likely.
 Before putting a vegetable on the sturdy wooden chopping board:
@@ -2949,6 +2959,7 @@ Response of a worker when asked-or-told about "[check-in]" during Check-in:
 	do nothing.
 
 Does the player mean taking a room key: it is likely.
+Does the player mean inserting a room key into the front right pocket: it is likely.
 	
 Book 4.4 - Breakfast
 
