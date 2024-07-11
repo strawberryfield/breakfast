@@ -384,7 +384,7 @@ Response of a waitstaff worker when asked about "[music]":
 		
 Book 2.3 - The garden
 
-The description of the garden is "There are fir trees in the garden and wooden tables and chairs in the lawn. [/n]The driveway is lit by a few marker lamps. At the end of it a sliding door is the entrance to the hotel. [/n]The low light enhances the starry sky and creates a romantic atmosphere. [/n]Parking is to the west.".
+The description of the garden is "There are fir trees in the garden and wooden tables and chairs in the lawn. [/n]The walkway is lit by a few marker lamps. At the end of it a sliding door is the entrance to the hotel. [/n]The low light enhances the starry sky and creates a romantic atmosphere. [/n]Parking is to the west.".
 
 The fir tree is a scenery in the garden. Description is "High fir tree.".
 Understand "fir/-- tree/trees/woods/wood" as the fir tree.
@@ -401,7 +401,8 @@ Instead of taking the chair, say "Leave it available to other hotel guests."
 
 Some marker lamps are in the garden. Marker lamps are scenery.
 Understand "marker/-- lamp" as marker lamps.
-
+The driveway is a scenery in the garden. The description is "A small garden pathway."
+Understand "pathway/walkway" as the driveway.
 Instead of going to the parking from the garden, say "You didn't forget anything important in the car.".
 
 Before going to the reception from the garden:
@@ -1971,6 +1972,7 @@ Does the player mean switching on the juicer machine: it is likely.
 Does the player mean switching off the juicer machine: it is likely.
 Before switching on the juicer switch, try switching on the juicer machine instead.
 Before switching off the juicer switch, try switching off the juicer machine instead.
+Does the player mean taking a glass which is in the juicer recess: it is very likely.
 
 Before switching on the juicer machine:
 	if the juicer bowl is open, say "[/ss]If you do not close the lid, the machine will not start.' [/se][the naming of Emma] [remember] [us]." instead;
@@ -2029,10 +2031,14 @@ Response of a waitstaff worker when asked-or-told about "[carrot]" or asked abou
 Section 2.7.2.5 - Cutting
 
 One knife is on the marble table.
-
+Instead of taking a knife which is on the marble table:
+	say "Leave it there for the other guests to use."
+	
 The sturdy wooden chopping board is a chopping board on the marble table.
 Understand "sturdy/-- wooden/-- cutting/cut/cutter board/--" or "sturdy/-- wooden/-- cutboard"as the sturdy wooden chopping board.
 The description is "The surface is slightly damp: someone must have used it to cut vegetables."
+Instead of taking the sturdy wooden chopping board:
+	say "If you take it away, other guests will not be able to use it to cut vegetables for the juicer."
 Does the player mean putting a vegetable on the sturdy wooden chopping board: it is likely.
 Before putting a vegetable on the sturdy wooden chopping board:
 	now the noun is on the second noun;
