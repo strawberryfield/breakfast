@@ -177,7 +177,7 @@ Chapter 2.1.1 - The dashboard
 Section 2.1.1.1 - The Dashboard
 
 The dashboard is a scenery open, not openable container in the car. 
-The description is "An old-fashioned dashboard with analogue instruments[if your-car-key is enclosed by the dashboard]. [/n]The key is inserted[end if].".
+The description is "An old-fashioned dashboard, minimalist and functional, with analogue instruments[if your-car-key is enclosed by the dashboard]. [/n]The key is inserted[end if].".
 Instead of examining the dashboard, say "[description of the dashboard][/n]".
 The analogue instrument is a scenery in the car. 
 
@@ -188,12 +188,7 @@ The description is "The key to open and start your car."
 Understand "key" as your-car-key.
 Does the player mean inserting your-car-key into the left front pocket: it is likely.
 
-[Section 2.1.1.3 - The drawer
-
-The tiny drawer is a closed openable container. It is part of the dashboard.
-Instead of inserting something which is not your-car-key into the dashboard, try inserting the noun into the tiny drawer.]
-
-Section 2.1.1.4 The radio
+Section 2.1.1.3 The radio
 
 The radio is a device. It is part of the dashboard.
 Instead of switching on the radio, say "This is not the time to turn on the radio.".
@@ -384,11 +379,13 @@ Response of a waitstaff worker when asked about "[music]":
 		
 Book 2.3 - The garden
 
-The description of the garden is "There are fir trees in the garden and wooden tables and chairs in the lawn. [/n]The walkway is lit by a few marker lamps. At the end of it a sliding door is the entrance to the hotel. [/n]The low light enhances the starry sky and creates a romantic atmosphere. [/n]Parking is to the west.".
+The description of the garden is "The landscape blends seamlessly with the natural beauty of its surroundings, offering guests a tranquil escape into nature's embrace. [/n]There are fir trees around and wooden tables and chairs on the lawn. [/n]The walkway is lit by a few marker lamps. At the end of it a sliding door is the entrance to the hotel. [/n]The low light enhances the starry sky and creates a romantic atmosphere. [/n]Parking is to the west.".
 
 The fir tree is a scenery in the garden. Description is "High fir tree.".
 Understand "fir/-- tree/trees/woods/wood" as the fir tree.
 Instead of taking the fir tree, say "It's not Xmas!".
+The lawn is a scenery in the garden. Description is "The grass on the lawn is well maintained.".
+Understand "grass" as the lawn.
 
 The wooden-table is a supporter in the garden. It is scenery.
 The description is "A sturdy table made of rough fir wood."
@@ -398,7 +395,7 @@ The chair is an enterable supporter in the garden. It is scenery.
 The description is "A simple wooden chair."
 Understand "wooden/-- chair/chairs" as the chair.
 Instead of taking the chair, say "Leave it available to other hotel guests."
-
+         
 Some marker lamps are in the garden. Marker lamps are scenery.
 Understand "marker/-- lamp" as marker lamps.
 The driveway is a scenery in the garden. The description is "A small garden pathway."
@@ -414,6 +411,11 @@ Before going to the reception from the garden:
 		say "Be careful: you are forgetting [forgotten items with definite articles].";
 		stop the action.
 
+Xgarden-count is number that varies.
+Before examining something when the location of the player is the garden:
+	increase xgarden-count by one;
+	if xgarden-count is four, say "[alert][/ss]Listen, Ciccio, instead of looking all over the place like in those games you always play, wouldn't it be better if we went to the hotel?' [/se][Monica] [ask], then [they] [suggest] [/ss1]Don't you want to give your Mo a kiss?' [/r][/n]" instead.
+	
 Chapter 2.3.1 - The sliding door
 
 The sliding door is a scenery closed openable door. The description is "An automatic glass sliding door."
@@ -442,7 +444,7 @@ Instead of opening the sliding door while the location of the player is the rece
 	
 Book 2.4 - The reception
 
-The description of the reception is "[if unvisited]This charming little hotel welcomes guests with its cosy reception area: the inviting atmosphere is immediately apparent, with a blend of rustic elegance and modern comfort. [/n][end if]The receptionist stands behind a tastefully crafted wooden desk, ready to assist guests with a genuine smile. [/n]Stairs lead to the upper floors. To the east is the dining room, along the wall is a door. [if unvisited][/p]The reception of this little hotel in the Dolomites serves as the perfect introduction to the unique blend of comfort and authenticity that awaits guests throughout their stay, promising a memorable and rejuvenating experience in this picturesque mountain retreat. [end if]".
+The description of the reception is "[if unvisited]This charming little hotel welcomes guests with its cosy reception area: the inviting atmosphere is immediately apparent, with a blend of rustic elegance and modern comfort. [/n]The reception of this little hotel in the Dolomites serves as the perfect introduction to the unique blend of comfort and authenticity that awaits guests throughout their stay, promising a memorable and rejuvenating experience in this picturesque mountain retreat. [/p][end if]The receptionist stands behind a tastefully crafted wooden desk, ready to assist guests with a genuine smile. [/n]Stairs lead to the upper floors. To the east is the dining room, along the wall is a door.".
 
 The wooden desk is a scenery supporter in the reception.
 Understand "counter" as the wooden desk.
@@ -2624,13 +2626,14 @@ Book 3.1 - The player
 
 The description of the player is "A young man, about 30 years old, ".
 Hair of the player are "blond".
-Notes of the player are "You work as a software engineer, enjoy photography and love hiking in the mountains. [/n]In love with your girlfriend, very beautiful, but also shrewish when something doesn't go her way. In the end you always please her and she appreciates it".
+Notes of the player are "You work as a software engineer, enjoy photography and love hiking in the mountains. [/n]In love with your girlfriend, very beautiful, but also shrewish when something doesn't go her way. In the end you always please her and she appreciates it. [/n]Monica sometimes calls you Ciccio".
 The player is male.
 The player is leading.
 The printed name of the player is "Francesco".
 A person can be registered. The player is not registered.
 The carrying capacity of the player is 3.
 The scent-description of the player is "the aftershave [/i]'for the man who never has to ask'[/r] that [Monica] gave [us]".
+Understand "Ciccio" as yourself.
 
 Chapter 3.1.1 - Initial player dressing
 
@@ -2692,7 +2695,7 @@ Monica is a woman in the car.
 The description is "Tall, slim ".
 Hair are "lots of slightly reddish, frizzy".
 Eyes are "sparkling green".
-Notes are "Could you not fall in love with her? [/n]A peppy girl, she won't forgive you anything you do that she doesn't like, but deep down she has her heart beating for you.".
+Notes are "Could you not fall in love with her? [/n]A peppy girl, she won't forgive you anything you do that she doesn't like, but deep down she has her heart beating for you. [/n][We] got used to shortening her name to Mo".
 The scent-description of Monica is "the bouquet perfume you gave her for her birthday. [/n]She loves it and has almost finished it, so you have to find an excuse to give her another."
 Understand "Mo" or "my/-- love/girl/girlfriend" as Monica.
 Monica is proper-named.
@@ -3034,6 +3037,9 @@ Search for the table ends when search-table-trigger is false.
 When Search for the table begins:
 	say "[heart][/ss]Very nice, isn't it?' [/se][Monica] [ask], [/ss1]I wonder at which table we can sit.' [/r][/n]";
 	the waiter welcomes in 3 turns from now.
+	
+Default response of a waiter during Search for the table:
+	do nothing.
 	
 Chapter 4.4.3 - First buffet access
 
