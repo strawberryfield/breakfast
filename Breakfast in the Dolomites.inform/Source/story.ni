@@ -395,7 +395,10 @@ The chair is an enterable supporter in the garden. It is scenery.
 The description is "A simple wooden chair."
 Understand "wooden/-- chair/chairs" as the chair.
 Instead of taking the chair, say "Leave it available to other hotel guests."
-         
+
+The landscape is a scenery in the garden. The description is "[description of the surrounding majestic peaks]".
+Understand  "surround/dolomites/mountain/mountains/surroundings" as the landscape.
+     
 Some marker lamps are in the garden. Marker lamps are scenery.
 Understand "marker/-- lamp" as marker lamps.
 The driveway is a scenery in the garden. The description is "A small garden pathway."
@@ -880,7 +883,7 @@ The rustic wooden beam is a scenery in the dining room.
 Understand "rustic/-- wooden/-- beams" as the rustic wooden beam.
 The surrounding majestic peaks is a scenery in the dining room.
 The description is "The peaks of the Dolomites, mountains that are unique in the world."
-Understand "surrounding/-- majestic/-- peak/mountains/mountain" as the surrounding majestic peaks.
+Understand "surrounding/-- majestic/-- peak/mountains/mountain/dolomites" or "landscape/surround" as the surrounding majestic peaks.
 
 Chapter 2.6.1 - Furniture
 
@@ -1073,7 +1076,9 @@ Response of a worker when asked about "[table]" or asked about table during the 
 	otherwise:
 		say "[/ss]Please feel free to ask my colleagues in the dining room about it.' [/se][regarding the noun][they] [reply]."
 
-
+Response of a worker when asked about the surrounding majestic peaks:
+	say "[/ss][description of the surrounding majestic peaks]' [/se][regarding the noun][they] [reply] and [add] [/ss1]We love them and we are sure that you will love them as well.' [/r][/n]".
+	
 Section 2.6.4.3 - Garbage collection
 
 To decide if (W - a waiter) collects empty items:
@@ -3005,6 +3010,8 @@ When the Breakfast begins:
 	now the player carries a random room key;
 	[description]
 	now the printed name of the bathroom door is "bathroom door";
+	now the landscape is unseen;
+	now the landscape is unfamiliar;
 	now the current interlocutor is nothing;
 	say leavenode;
 	say "[note style]The morning after. [/r][/p]";
