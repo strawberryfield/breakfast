@@ -1,9 +1,10 @@
 # Breakfast in the Dolomites
+
 ## An adventure behind the adventure
 
 ### A brief story
 
-#### March 2020.
+#### March 2020
 
 During the pandemic lockdown, I wrote a BBS system that looks like the ones I used in the early '90s but uses more conteporary systems: 
 C#, Entity Framework, Maria DB and a Rapberry Pi 2 as host.
@@ -13,7 +14,7 @@ They were very popular in those years.
 
 Fortunately, the lockdown is over and the project has been shelved.
 
-#### August 2023.
+#### August 2023
 
 In a small town in the Ahrntal, the northernmost valley in Italy, with my family.
 
@@ -22,8 +23,7 @@ It was raining.
 The kind reception girl points us to our room, in another building across the street:
 “If you don't want to get wet, you can go through here” and points us to a staircase.
 
-We descend the staircase, which is covered with green carpet with rocking horses drawn on it.
-
+We descend the staircase, which is covered with green carpet with rocking horses drawn on it.  
 Unbelievably, there was a whole world to discover down there: a reading room with a small library, 
 a well-equipped gym, game stations, billiards, table tennis...
 
@@ -43,3 +43,20 @@ I carried out various tests, which I report on my site (in Italian only),
 and finally came up with a little story that I wanted to present at the IFComp to collect opinions and suggestions.
 
 I was ready for any kind of feedback.
+
+### About me
+
+I got my first camera at the age of 8 and have never stopped taking pictures since.
+
+I have been interested in programming since 1981, when I was given a Texas TI-58C calculator. 
+Then I moved on to the glorious Commodore 64 and finally to the PC.  
+I have used all kinds of operating systems, hardware architectures and programming languages.
+
+Often my artistic work is a mockery of the environment in which it is developed: 
+the photographic exhibition 'The Quantum Photographer', where photographers are photographed; 
+the "Taufererbahn" railway simulator, where a serious simulation environment 
+becomes a children's game, and this story, 
+where the protagonist's girlfriend reminds him that he is not playing an adventure game.
+
+### A long list of things that could not be appreciated
+
