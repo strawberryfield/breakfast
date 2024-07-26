@@ -548,7 +548,7 @@ At the time when the receptionist greets:
 Mrtg-count is a number that varies. Mrtg-count is 0.
 At the time when Monica remember to greet:
 	increase Mrtg-count by 1;
-	say "[alert][/ss]Don't be rude, say hello to [the naming of receptionist].' [/se][Monica] [suggest] in your ear[other times of Mrtg-count].";
+	say "[alert][/ss]Ciccio, don't be rude, say hello to [the naming of receptionist].' [/se][Monica] [suggest] in your ear[other times of Mrtg-count].";
 	Monica remember to greet in 1 turn from now;		
 
 At the time when Monica greets the receptionist:
@@ -567,7 +567,7 @@ At the time when the receptionist asks for documents:
 	
 At the time when Monica shows document:
 	say "[Monica] [take] [their] identity card and [show] it to [the naming of receptionist]. [/n]";
-	say "[regarding receptionist][They] [copy] some data into the computer and [say] [/ss]Thank you Miss [Monica].' [/r][/n]";
+	say "[regarding receptionist][They] [copy] some data into the computer and [say] [/ss1]Thank you Miss [Monica].' [/r][/n]";
 	say "[Monica] [put] [their] identity card back in [their] handbag and [close] it.";
 	now the shiny black handbag is closed;
 	now Monica is registered;
@@ -1061,6 +1061,10 @@ Understand "the/-- weather forecast/report/--" or "the/-- forecast/report" as "[
 Response of a worker when asked about "[weather]" during the Breakfast:
 	say “[/ss]Do you know it might rain today?’ [/se][we] [ask]. [/n]”;
 	say "[/ss]You can find the weather report in the hotel daily newsletter on your table.' [/se][regarding the noun][they] [explain].".	
+Response of Monica when asked about "[weather]":
+	say "[/ss]I do not know.' [/se][regarding Monica][they] [reply]."
+Response of Monica when told about "[weather]":
+	say "[/ss]Don't you have anything better to talk about?' [/se][regarding Monica][they] [ask]."
 
 Understand "the/-- daily/hotel/-- daily/hotel/-- newsletter/bulletin/gazette" as "[newsletter]".
 Response of a worker when asked about "[newsletter]" during the Breakfast:
@@ -1075,6 +1079,13 @@ Response of a worker when asked about "[table]" or asked about table during the 
 	if the noun is a waiter, do nothing;
 	otherwise:
 		say "[/ss]Please feel free to ask my colleagues in the dining room about it.' [/se][regarding the noun][they] [reply]."
+
+Understand "taking/take/-- photo/photos/photograph/photograps/picture/pictures" or "photography" as "[photo]".
+Response of a worker when asked-or-told about "[photo]":
+	say "[/ss]I love photography, is there a place you can recommend?' [/r][/n]";
+	say "[/ss]You can take beautiful photographs anywhere in these mountains.' [/se][regarding the noun][they] [answer]."
+Response of Monica when asked-or-told about "[photo]":
+	say "[alert][/ss]Look, Ciccio, don't bother me with your photos.' [/r][/n]".
 
 Response of a worker when asked about the surrounding majestic peaks:
 	say "[/ss][description of the surrounding majestic peaks]' [/se][regarding the noun][they] [reply] and [add] [/ss1]We love them and we are sure that you will love them as well.' [/r][/n]".
@@ -1690,7 +1701,7 @@ Instead of examining as a paper a topic listed in the Table of Bulletin topics:
 	if title entry is "Weather report":
 		say "[/ss]This time you got lucky:' [/se][Monica] [admit] [/ss1]we'll go to the mountains.' [/r][/n]";
 		unless "Hike of the day" read:
-			say "[/ss]Read which hike they suggest.' [/se][Monica] [add].";
+			say "[/ss]Ciccio, read which hike they suggest.' [/se][Monica] [add].";
 		otherwise:
 			now newsletter-trigger is false;
 	if title entry is "Hike of the day":
@@ -2638,7 +2649,7 @@ The printed name of the player is "Francesco".
 A person can be registered. The player is not registered.
 The carrying capacity of the player is 3.
 The scent-description of the player is "the aftershave [/i]'for the man who never has to ask'[/r] that [Monica] gave [us]".
-Understand "Ciccio" as yourself.
+Understand "Ciccio/Francesco/me/myself/you/yourself" or "the/-- player/protagonist" as yourself.
 
 Chapter 3.1.1 - Initial player dressing
 
@@ -2665,7 +2676,7 @@ The player wears the black t-shirt, the pair of beige shorts and the pair of blu
 Chapter 3.1.2 - The wallet
 
 The wallet is a closed openable container in the sleeping room.
-The description is "A grey canvas wallet. It's a gift from [Monica].".
+The description is "A grey canvas wallet. It's a gift from Mo.".
 Check the player opening the wallet:
 	if the player is not carrying the noun:
 		carry out the implicitly taking activity with the noun;
@@ -2702,7 +2713,7 @@ Hair are "lots of slightly reddish, frizzy".
 Eyes are "sparkling green".
 Notes are "Could you not fall in love with her? [/n]A peppy girl, she won't forgive you anything you do that she doesn't like, but deep down she has her heart beating for you. [/n][We] got used to shortening her name to Mo".
 The scent-description of Monica is "the bouquet perfume you gave her for her birthday. [/n]She loves it and has almost finished it, so you have to find an excuse to give her another."
-Understand "Mo" or "my/-- love/girl/girlfriend" as Monica.
+Understand "Mo" or "my/your/-- love/girl/girlfriend" as Monica.
 Monica is proper-named.
 Monica is leading.
 
@@ -2807,7 +2818,7 @@ To say narrator love kissing:
 	say "Ok, Ok, I'll try to remain professional.".
 	
 To say no more kisses:
-	say "[/ss]We have already kissed so many times.' [/se][Monica] [remind] [/ss1]I love kissing you, but now we have to get on with the game.' [/r][/n]".
+	say "[/ss]Ciccio, we have already kissed so many times.' [/se][Monica] [remind] [/ss1]I love kissing you, but now we have to get on with the game.' [/r][/n]".
 	
 Chapter 3.2.4 - Singing and dancing
 
@@ -2822,7 +2833,19 @@ Report Monica dancing:
 	say "[heart][The actor]  [do] a twirl. [/n]";
 	unless the number of not leading people in the location is zero, say "[The list of not leading people in the location] [clap]. [/n]";
 	say "[We] [kiss] [regarding the actor][them].".
-			
+
+Chapter 3.2.5 - Answers
+
+Response of Monica when asked-or-told about yourself:
+	say "[/ss]But what are these questions?' [/se][Monica] [reply], rather annoyed [/ss1]I remind you that you are really annoying when you stare at those computer games or think about your photos.'[/r][/n]Then [they] [add] [/ss1]Instead, try to be nice to your Mo, who loves you so much.' [/r][/n]".
+
+Response of Monica when asked-or-told about Monica or asked-or-told about "her/herself":
+	say "[/ss]As Mary Poppins: I'm pratically perfect!' [/se][Monica] [shut] [we] down."
+
+Response of a worker when asked-or-told about Monica:
+	say "[/ss]What a beautiful girl!' [/se][regarding the noun][they] [exclaim] [/ss1]You are lucky.' [/r][/n]";
+	if Monica is here, say "Monica [smile]."
+					
 Book 3.3 - The receptionist
 
 The receptionist is a scenery male worker in the reception.
@@ -3432,7 +3455,7 @@ Using the WC ends when the WC-trigger is false.
 
 When Using the WC begins:
 	say "It's been a while since you've gone downstairs for breakfast, and now you feel the urge to go to the bathroom. [/n]You move a bit nervously, and Monica notices your discomfort. [/p]";
-	say "[heart][/ss]Sweetheart, are you all right?' [/se][Monica] [ask].";
+	say "[heart][/ss]Ciccio, sweetheart, are you all right?' [/se][Monica] [ask].";
 	say "[/ss]Go to the toilet, which is better.' [/se][regarding Monica][they] [suggest] [/ss1]If you can't find it, ask: someone will show you.' [/r][/n]";
 	Monica remembers wc in 2 turn from now.
 

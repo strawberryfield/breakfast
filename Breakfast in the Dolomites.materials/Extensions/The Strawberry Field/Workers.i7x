@@ -179,5 +179,11 @@ Default response for a worker (this is the worker default response rule):
 Understand "me/you/us/myself/yourself/ourself" as "[myself]".
 Response for a worker when told about "[myself]":
 	say "[/ss]Oh, interesting.' [/se][regarding the noun][they] [reply].".
+ 
+Understand "he/him/himself/she/her/herself" as "[himself]".
+Response for a worker when asked-or-told about the noun:
+	say "[/ss]I'm [proper name of the noun]. [one of]At your service.' [or]How can I help you?' [at random][/r][/n]";
+	now the printed name of the noun is the proper name of the noun;
+	now the noun is proper-named.
 	
 Workers ends here.
