@@ -316,5 +316,57 @@ Carry out going by name:
     say "(heading [aim])[command clarification break]";
     try going aim;
     if the location is not the noun, say "You'll have to stop here."
+
+Book 2.1 - Administrivia
+
+Figure cover is the file "Cover.jpg".
+
+To waiting space key:
+	say "[paragraph break]Please press SPACE to continue.";
+	wait for the SPACE key;
+	say /n.
+	
+Chapter 2.1.1 - about
+
+Asking-about is an action applying to nothing.
+Understand "about the/this/-- story/game/program/adventure/--" as asking-about.
+Understand the command "info" as "about".
+
+Carry out asking-about:
+	say "[banner text]";
+	display the Figure cover;
+	waiting space key;
+	say "[story description]";
+	say "[/p]Type [/b]credits[/r] or [/b]license[/r] for more info.";
+	waiting space key.
+
+
+Chapter 2.1.2 - license
+
+Asking-license is an action applying to nothing.
+Understand "license note/--" as asking-license.
+Understand the command "copyright" as "license".
+Understand the command "legal" as "license".
+
+Carry out asking-license:
+	say "[story title] is copyright (c) [story creation year] [story author].";
+	say "Released under Creative Commons BY-NC-SA 4.0 license. [/p]";
+	say "[/i]Limitation of Liability[/r][/n]";
+	say "To the extent possible, in no event will the Licensor be liable to You on
+any legal theory (including, without limitation, negligence) or otherwise
+for any direct, special, indirect, incidental, consequential, punitive,
+exemplary, or other losses, costs, expenses, or damages arising out of this
+Public License or use of the Licensed Material, even if the Licensor has
+been advised of the possibility of such losses, costs, expenses, or
+damages.";
+	waiting space key;
+	say "[/i]Disclaimer for the Fiction[/r][/n]";
+	say "This is a work of fiction. Unless otherwise indicated, all the names,
+characters, businesses, places, events and incidents in this book are
+either the product of the author’s imagination or used in a fictitious
+manner. Any resemblance to actual persons, living or dead, or actual
+events is purely coincidental.";
+	say "[/p]Type [/b]credits[/r] or [/b]about[/r] for more info.";
+	waiting space key.
 	
 Commons ends here.

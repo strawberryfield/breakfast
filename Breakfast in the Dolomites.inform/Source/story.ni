@@ -38,7 +38,7 @@ Include Written papers by The Strawberry Field.
 Chapter 0.2 - Game start
 
 Use brief room descriptions. 
-Figure cover is the file "Cover.jpg".
+First-banner is a truth state that varies.
 [ uncomment below for release]
 When play begins:
 	say "[story-beginning]";
@@ -47,12 +47,13 @@ When play begins:
 
 Arrival-trigger is a truth state that varies. 
 After printing the banner text:
-	if the location of the player is the car:
+	if first-banner is false:
 		display the Figure cover;
 		pause the game;
 		now arrival-trigger is true;
 		say "[arrive to hotel][/n]";
-		Monica leaves the car in 1 turn from now.
+		Monica leaves the car in 1 turn from now;
+		now first-banner is true.
 	[ uncomment above for release, than comment below]
 	[now the player is in the reception;
 	now the player is registered;
@@ -2919,13 +2920,12 @@ Chapter 3.5.2 - Minimal help system
 Asking help is an action applying to nothing.
 Understand "help me/-- please/--" as asking help.
 Understand the command "hint" as "help".
-Understand the command "info" as "help".
 Understand the command "advise" as "help".
 Understand the command "suggest" as "help".
 Understand the command "tip" as "help".
 
 To say help1: say "It is not my job to help the player, but I can give you some advice".
-To say help2: say "First of all look carefully at anything around".
+To say help2: say "First of all look carefully at anything around. [/n]Be nice to people you meet, such as saying hello".
 To say help3: say "Next, pay attention to everything [Monica] [say] and [do]".
 Understand "help/hint/hints/suggestion/suggestions/info/tip/advise/game" or "this game/story" as "[help]".
 Response of a worker when asked about "[help]":
