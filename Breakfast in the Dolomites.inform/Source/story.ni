@@ -3574,4 +3574,10 @@ To decide if (L - food-limit) can be ordered:
 		say "[alert][/ss]You've already had [eaten entry in words] [description entry], that's enough.' [/se][Monica] [state].";
 		decide no.
 	
+Book 5.3 - Credits
+
+Table of credited peoples (continued)
+Name (text)	Reason (text)
+"otisdog"	"for making extensions working together"
+
 	

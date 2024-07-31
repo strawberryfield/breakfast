@@ -340,7 +340,6 @@ Carry out asking-about:
 	say "[/p]Type [/b]credits[/r] or [/b]license[/r] for more info.";
 	waiting space key.
 
-
 Chapter 2.1.2 - license
 
 Asking-license is an action applying to nothing.
@@ -368,5 +367,23 @@ manner. Any resemblance to actual persons, living or dead, or actual
 events is purely coincidental.";
 	say "[/p]Type [/b]credits[/r] or [/b]about[/r] for more info.";
 	waiting space key.
+
+Chapter 2.1.3 - credits	
+
+Asking-credits is an action applying to nothing.
+Understand "credits list/--" as asking-credits.
+Understand the command "acknowledgment/acknowledgments/acknowledgement/acknowledgements" as "credits".
+Understand the command "thanksgiving" as "credits".
+
+Table of credited peoples
+Name (text)	Reason (text)
+""	""
+
+Carry out asking-credits:
+	say "This program make use of the following extensions: [/n][the complete list of extension credits][/n]";
+	say "Thanks are also due to the following people: [/n]";
+	repeat with N running from 2 to the number of rows in the Table of credited peoples:
+		choose row N in the Table of credited peoples;
+		say "[name entry] [reason entry][/n]".
 	
 Commons ends here.
