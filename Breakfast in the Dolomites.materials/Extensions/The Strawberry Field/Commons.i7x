@@ -387,6 +387,8 @@ Carry out asking-credits:
 		
 Chapter 2.1.4 - Minimal help
 
+Section 2.1.4.1 - Actions
+
 Asking help is an action applying to nothing.
 Understand "help me/-- please/--" as asking help.
 Understand the command "hint" as "help".
@@ -394,9 +396,25 @@ Understand the command "advise" as "help".
 Understand the command "suggest" as "help".
 Understand the command "tip" as "help".
 Understand "help/hint/hints/suggestion/suggestions/info/tip/advise/game" or "this game/story" as "[help]".
+Understand "ask for help/hint/hints/suggestion/suggestions/advise" as asking help.
+Understand "get help/hint/hints/suggestion/suggestions/advise" as asking help.
+Understand "request help/hint/hints/suggestion/suggestions/advise" as asking help.
+
+Asking help from is an action applying to one thing.
+Understand "ask for help/hint/hints/suggestion/suggestions/advise from [something]" as asking help from.
+Understand "get help/hint/hints/suggestion/suggestions/advise from [something]" as asking help from.
+Understand "request help/hint/hints/suggestion/suggestions/advise from [something]" as asking help from.
+Understand "ask [something] for help/hint/hints/suggestion/suggestions/advise" as asking help from.
+
+Check asking help from:
+	unless the noun is a person, say "I don't think it can help you." instead.
+Carry out asking help from:
+	try the noun asking help.
 
 Response of someone when asked about "[help]":
 	try the noun asking help.
+
+Section 2.1.4.2 - Texts
 	
 Table of help hints
 Tip (text)
