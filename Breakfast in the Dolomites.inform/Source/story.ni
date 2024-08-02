@@ -2915,35 +2915,6 @@ Understand "ask the/-- [narrator] about [text]" as quizzing narrator about.
 Carry out quizzing narrator about:
 	try saying hello to the narrator.
 	
-Chapter 3.5.2 - Minimal help system
-
-Asking help is an action applying to nothing.
-Understand "help me/-- please/--" as asking help.
-Understand the command "hint" as "help".
-Understand the command "advise" as "help".
-Understand the command "suggest" as "help".
-Understand the command "tip" as "help".
-
-To say help1: say "It is not my job to help the player, but I can give you some advice".
-To say help2: say "First of all look carefully at anything around. [/n]Be nice to people you meet, such as saying hello".
-To say help3: say "Next, pay attention to everything [Monica] [say] and [do]".
-Understand "help/hint/hints/suggestion/suggestions/info/tip/advise/game" or "this game/story" as "[help]".
-Response of a worker when asked about "[help]":
-	try the noun asking help.
-Carry out an actor asking help:
-	if the actor is the player:
-		say "[first time]I am sorry to hear you are stuck. [/n][only][help1]. [/n][help2]. [/n][help3]. [/n]";
-		unless the number of not leading people in the location is zero, say "[The list of not leading people in the location] [can] tell you something of interest.";
-	otherwise:
-		say "[/ss][help1].' [/se][the actor] [say]. [/n]";
-		say "[/ss][help2].' [/r][/n]";
-		if the actor is Monica, say "[heart][/ss]And as I always tell you, pay attention to what I say and do: you know I am always right!' [/r][/n]";
-		otherwise:
-			say "[/ss][help3].' [/r][/n]";
-			say "[/ss]'But,' [/se][regarding the actor][they] [go] on [/ss1]if you want to ask me more specific questions, I will be more than happy to help you.' [/r][/n]".
-
-Persuasion rule for asking a person to try asking help: persuasion succeeds.
-
 Book 3.6 - The girl
 
 The girl is a female person.
@@ -3580,4 +3551,22 @@ Table of credited peoples (continued)
 Name (text)	Reason (text)
 "otisdog"	"for making extensions working together"
 
-	
+Book 5.4 - Minimal help system
+
+Table of help hints (continued)
+Tip (text)
+"be nice to people you meet, such as saying hello"
+"next, pay attention to everything [Monica] [say] and [do]"
+
+After an actor asking help:
+	if the actor is the player:
+		say "[combined help hints]. [/n]";
+		unless the number of not leading people in the location is zero, say "[The list of not leading people in the location] [can] tell you something of interest.";
+	otherwise:
+		if the actor is Monica:
+			say "[/ss][tip in row 1 of the Table of help hints]; [tip in row 2 of the Table of help hints].' [/se][Monica] [state].";
+			say "[heart][/ss]And as I always tell you,' [/se][regarding Monica][they] [go] on [/ss1]pay attention to what I say and do: you know I am always right!' [/r][/n]";
+		otherwise:
+			say "[/ss][tip in row 1 of the Table of help hints]; [tip in row 3 of the Table of help hints].' [/se][the naming of the actor] [state].";
+			say "[/ss]'But,' [/se][regarding the actor][they] [go] on [/ss1]if you want to ask me more specific questions, I will be more than happy to help you.' [/r][/n]".
+

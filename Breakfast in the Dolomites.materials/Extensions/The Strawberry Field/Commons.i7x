@@ -382,8 +382,40 @@ Name (text)	Reason (text)
 Carry out asking-credits:
 	say "This program make use of the following extensions: [/n][the complete list of extension credits][/n]";
 	say "Thanks are also due to the following people: [/n]";
-	repeat with N running from 2 to the number of rows in the Table of credited peoples:
-		choose row N in the Table of credited peoples;
+	repeat through the Table of credited peoples:
 		say "[name entry] [reason entry][/n]".
+		
+Chapter 2.1.4 - Minimal help
+
+Asking help is an action applying to nothing.
+Understand "help me/-- please/--" as asking help.
+Understand the command "hint" as "help".
+Understand the command "advise" as "help".
+Understand the command "suggest" as "help".
+Understand the command "tip" as "help".
+Understand "help/hint/hints/suggestion/suggestions/info/tip/advise/game" or "this game/story" as "[help]".
+
+Response of someone when asked about "[help]":
+	try the noun asking help.
+	
+Table of help hints
+Tip (text)
+"First of all look carefully at anything around"
+
+To say help intro: say "It is not my job to help the player, but I can give you some advice".
+
+To say combined help hints:
+	let last row be the number of rows in the Table of help hints;
+	repeat with N running from 1 to the number of rows in the Table of help hints:
+		say tip in row N of the Table of help hints;
+		if N is less than last row, say "; ".
+		
+Carry out an actor asking help:
+	if the actor is the player:
+		say "[first time]I am sorry to hear you are stuck. [/n][only][help intro].";
+	otherwise:
+		say "[/ss][help intro].' [/se][the actor] [say]. [/n]";
+
+Persuasion rule for asking a person to try asking help: persuasion succeeds.
 	
 Commons ends here.
