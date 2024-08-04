@@ -214,6 +214,7 @@ To leave is a verb.
 To love is a verb.
 To make is a verb. 
 To meet is a verb. 
+To mix is a verb.
 To move is a verb.
 To nod is a verb. 
 To observe is a verb.
@@ -256,6 +257,7 @@ To spread is a verb.
 To stand is a verb.
 To stare is a verb. 
 To state is a verb.
+To stir is a verb.
 To strike is a verb. 
 To suggest is a verb.
 To throw is a verb.
@@ -383,7 +385,9 @@ Carry out asking-credits:
 	say "This program make use of the following extensions: [/n][the complete list of extension credits][/n]";
 	say "Thanks are also due to the following people: [/n]";
 	repeat through the Table of credited peoples:
-		say "[name entry] [reason entry][/n]".
+		unless name entry is empty, say "[name entry] [reason entry][/n]";
+	say "[/p]Type [/b]license[/r] or [/b]about[/r] for more info.";
+	waiting space key.
 		
 Chapter 2.1.4 - Minimal help
 

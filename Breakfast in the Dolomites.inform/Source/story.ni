@@ -1134,6 +1134,7 @@ To (W - a waiter) restores dirty items:
 	repeat with the item running through the hot drink containers carried by W:
 		now the liquid of the item is nonliquid;
 		now the owner of the item is nothing;
+		now the item is not sugary;
 		now the item is in the kitchen;
 	now collected dirty items is false.
 
@@ -1620,8 +1621,83 @@ Response for an order-convnode when asked-or-told about "[drinks]":
 This is the about drinks rule:
 	say "[/ss]Cold drinks are available in the buffet.' [/cie][/ss1][if the current interlocutor is a waiter]I[otherwise]A waiter[end if] can serve you [available hot drinks].' [/r][/n]";
 	say "[/cia]If you want to know about a particular drink, feel free to ask.' [/r][/n]".
-			
-Section 2.6.6.8 - Hot drinks direct requests
+	
+Section 2.6.6.8 - Sugar
+
+A sugar-item is unfamiliar.
+Four white sugar sachets are in the kitchen.
+Four brown sugar sachets are in the kitchen.
+
+A fluid container can be sugary. A fluid container is usually not sugary.
+Does the player mean inserting a sugar-item into: it is very likely.
+
+Check inserting something into a fluid container (this is the can put sugar into a fluid container rule):
+	if the noun is a sugar sachet, say "Shouldn't you open it before pouring?" instead;
+	unless the noun is a sugar-item, say "[The second noun] [hold] only liquids." instead;
+	if the second noun is empty, say "The cup is empty, what is the point of putting sugar in it?" instead;
+	if the second noun is sugary, say "[The second noun] [are] already sugary." instead.
+The can put sugar into a fluid container rule is listed instead of the can't put solids into a fluid container rule in the check inserting it into rules.
+After inserting a sugar-item into a fluid container:
+	now the second noun is sugary;
+	now the noun is in the kitchen;
+	say "[We] [pour] [the noun] into [the second noun] and [regarding the player][stir]."
+
+Understand "mix [sugar-item] in/into/with [fluid container]" as inserting it into. 
+Understand "pour [sugar-item] in/into/on/onto [fluid container]" as inserting it into. 
+Understand "mix [sugar sachet] in/into/with [fluid container]" as inserting it into. 
+Understand "pour [sugar sachet] in/into/on/onto [fluid container]" as inserting it into. 
+	
+Instead of inserting a sugar sachet into a pocket:
+	say "I saw you trying to steal the sugar packet."
+	
+Understand "white/brown/dark/cane/-- sugar" as "[sugar]".
+Response of a worker when asked-or-told about "[sugar]":
+	say "[/ss]Feel free to ask a waiter about it.' [/se][regarding the noun][they] [reply]."
+Response of a waiter when asked-or-told about "[sugar]":
+	say "[/ss]I can offer you white or brown, cane, sugar.' [/se][regarding the noun][they] [reply]."
+	
+The sugar-order node is an order-convnode.
+Node-introduction for sugar-order node:
+	another sugar-based eaten;
+	say "[/ss]Which do you prefer, white or brown?' [ask for choice]".	
+	
+Response of a waiter when asked for "sugar":
+	if sugar-based can be ordered, setnode sugar-order node.	
+Default answer response for sugar-order node:
+	say "[/ss]I have only white or brown sugar.' [/se][the naming of current interlocutor] [state]. [/n]".
+Response for sugar-order node when answered that "[nothing]":
+	try saying no.	
+Response for sugar-order node when saying no:
+	say "[leavenode][/ss]If you need it later, don't hesitate to call me or my colleague.' [/se][the naming of current interlocutor] [say] and [go] away. [/n]";
+	now the node of the current interlocutor is the null-node;
+	now the current interlocutor is nothing.
+Response for sugar-order node when saying yes:
+	say "[/ss]Well!' [/se][regarding current interlocutor][they] [say] and then [ask]: [/ss1]What do you prefer?' [/r][/n]".
+
+Answering white is an action applying to nothing.
+Answering white is order-answering.
+Understand "[white]" as answering white.
+Carry out answering white: try answering the current interlocutor that "white".
+Answering brown is an action applying to nothing.
+Answering brown is order-answering.
+Understand "[brown]" as answering brown.
+Carry out answering brown: try answering the current interlocutor that "brown".	
+	
+To serve a (S - sugar sachet):
+	say "[leavenode][The naming of the current interlocutor] [take] a [S] from a box and [put] it on the table.";
+	say "[/ss]Here's a [S] for you.' [/se][regarding the current interlocutor][they] [say].";
+	now S is on the table.		
+Response for sugar-order node when answered that "[white]":
+	let item be a random white sugar sachet in the kitchen;
+	serve a item.
+Response for sugar-order node when answered that "[brown]":
+	let item be a random brown sugar sachet in the kitchen;
+	serve a item.
+	
+Instead of eating a sugar-item:
+	say "Eating a [noun] isn't a good idea."
+						
+Section 2.6.6.9 - Hot drinks direct requests
 
 To decide whether the player can make order:
 	unless the player is at the table:
@@ -3526,6 +3602,7 @@ cheese-based	2	0	"pieces of cheese"
 meat-based	3	0	"slices of meat"
 butter-based	3	0	"knobs of butter"
 jam-based	3	0	"portions of jam"
+sugar-based	4	0	"sachets of sugar"
 
 To another (L - a food-limit) eaten:
 	choose a row with a food-limit of L in the Table of limits;

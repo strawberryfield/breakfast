@@ -92,16 +92,22 @@ Book 2.2 - jams
 
 A jam-item is a kind of food-item. It is spreadable. It is bread-placeable.
 
-A single portion jar is a kind of container.
-A single portion jar is closed, openable not lockable.
+A monouse-package is a kind of container.
+A monouse-package is closed, openable not lockable.
+Rule for printing the name of a monouse-package (called target):
+	say "[if target is open]open [end if][printed name of the target]".
 
-Instead of closing an open single portion jar, say "Once opened, the package [cannot] be resealed."
-Instead of inserting something into a single portion jar, say "[We] [can't] do it."
+A single portion jar is a kind of monouse-package.
+
+Instead of closing an open monouse-package, say "Once opened, the package [cannot] be resealed."
+Instead of inserting something into a monouse-package, say "[We] [can't] do it."
 	
 Understand "single/-- portion/serving/-- container/jar" as a single portion jar.
 
-Does the player mean taking a closed single portion jar: it is very likely.
-Instead of eating an open single portion jar:
+Does the player mean taking a closed monouse-package: it is very likely.
+Does the player mean inserting a monouse-package into: it is likely.
+
+Instead of eating an open monouse-package:
 	let item be the first thing held by the noun;
 	unless the item is nothing, try eating the item;
 	otherwise:
@@ -138,6 +144,33 @@ Carry out cutting it with:
 	now the noun is chopped.
 Report cutting it with:
 	say "[We] [chop] [the printed name of the noun] using [the second noun] in small pieces."
+
+Book 2.4 - sugar
+
+A sugar-item is a kind of food-item.
+A sugar sachet is a kind of monouse-package.
+Does the player mean taking a sugar sachet: it is very likely.
+
+A portion of brown sugar is a kind of sugar-item.
+The flavor-description is "a slightly complex flavor, similar to caramel or toffee".
+A brown sugar sachet is a kind of sugar sachet.
+The description of a brown sugar sachet is "An ordinary light-brown sachet for sugar."
+A portion of brown sugar is in every brown sugar sachet.
+Understand "cane/dark/raw sugar" as a portion of brown sugar.
+Understand "cane/dark/raw sugar/-- sachet" as brown sugar sachet.
+Understand "cane/dark/raw/brown" as "[brown]".
+
+A portion of white sugar is a kind of sugar-item.
+The flavor-description is "the classic taste of sugar".
+A white sugar sachet is a kind of sugar sachet.
+The description of a white sugar sachet is "An ordinary white sachet for sugar."
+A portion of white sugar is in every white sugar sachet.
+Understand "plain/regular sugar" as a portion of white sugar.
+Understand "plain/regular sugar/-- sachet" as white sugar sachet.
+Understand "plain/regular/white" as "[white]".
+	
+After opening a sugar sachet:
+	say "You gently break a corner of the sachet."
 	
 Volume 3 - Spreading
 
