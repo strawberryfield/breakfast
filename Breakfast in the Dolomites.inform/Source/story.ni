@@ -3629,6 +3629,7 @@ Book 5.3 - Credits
 Table of credited peoples (continued)
 Name (text)	Reason (text)
 "otisdog"	"for making extensions working together"
+"Bing Image Creator"	"used to generate the cover art"
 
 Book 5.4 - Minimal help system
 
