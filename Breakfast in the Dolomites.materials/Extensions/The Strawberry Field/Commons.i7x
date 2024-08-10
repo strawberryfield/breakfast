@@ -337,6 +337,7 @@ Understand the command "info" as "about".
 Carry out asking-about:
 	say "[banner text]";
 	display the Figure cover;
+	say "[/i](AI generated image)[/r]";
 	waiting space key;
 	say "[story description]";
 	say "[/p]Type [/b]credits[/r] or [/b]license[/r] for more info.";
@@ -348,6 +349,7 @@ Asking-license is an action applying to nothing.
 Understand "license note/--" as asking-license.
 Understand the command "copyright" as "license".
 Understand the command "legal" as "license".
+Understand the command "licence" as "license".
 
 Carry out asking-license:
 	say "[story title] is copyright (c) [story creation year] [story author].";

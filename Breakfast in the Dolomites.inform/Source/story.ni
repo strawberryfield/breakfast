@@ -49,6 +49,8 @@ Arrival-trigger is a truth state that varies.
 After printing the banner text:
 	if first-banner is false:
 		display the Figure cover;
+		say "[/i](AI generated image)[/r] [/p]";
+		say "Type [/b]about[/r], [/b]credits[/r] and [/b]license[/r] during the game for more information.";
 		pause the game;
 		now arrival-trigger is true;
 		say "[arrive to hotel][/n]";
