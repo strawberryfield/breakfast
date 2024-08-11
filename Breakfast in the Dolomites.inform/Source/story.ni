@@ -1660,7 +1660,6 @@ Response of a waiter when asked-or-told about "[sugar]":
 	
 The sugar-order node is an order-convnode.
 Node-introduction for sugar-order node:
-	another sugar-based eaten;
 	say "[/ss]Which do you prefer, white or brown?' [ask for choice]".	
 	
 Response of a waiter when asked for "sugar":
@@ -1688,6 +1687,7 @@ Carry out answering brown: try answering the current interlocutor that "brown".
 To serve a (S - sugar sachet):
 	say "[leavenode][The naming of the current interlocutor] [take] a [S] from a box and [put] it on the table.";
 	say "[/ss]Here's a [S] for you.' [/se][regarding the current interlocutor][they] [say].";
+	another sugar-based eaten;
 	now S is on the table.		
 Response for sugar-order node when answered that "[white]":
 	let item be a random white sugar sachet in the kitchen;
@@ -1695,7 +1695,16 @@ Response for sugar-order node when answered that "[white]":
 Response for sugar-order node when answered that "[brown]":
 	let item be a random brown sugar sachet in the kitchen;
 	serve a item.
-	
+
+Response of a waiter when asked for "[white] sugar":
+	if sugar-based can be ordered:
+		let item be a random white sugar sachet in the kitchen;
+		serve a item.	
+Response of a waiter when asked for "[brown] sugar":
+	if sugar-based can be ordered:
+		let item be a random brown sugar sachet in the kitchen;
+		serve a item.	
+				
 Instead of eating a sugar-item:
 	say "Eating a [noun] isn't a good idea."
 						
