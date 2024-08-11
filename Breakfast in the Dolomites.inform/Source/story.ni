@@ -832,7 +832,7 @@ After going to the bathroom-antechamber:
 	
 At the time when the girl enters bathroom:
 	if the location of the player is the bathroom-antechamber:
-		say "A cute girl, with long black hair, enters in the bathroom antechamber";
+		say "A cute girl, with long black hair, enters in the bathroom antechamber.";
 		now the girl is in the bathroom-antechamber;
 		the girl closes door in 0 turns from now;
 	otherwise:

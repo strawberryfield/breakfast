@@ -51,6 +51,9 @@ Carry out washing hands:
 Report washing hands:
 	say "Now your hands smell clean.".
 
+Instead of inserting something into a sink-item:
+	say "[The second noun] isn't a trash can."
+	
 Volume 3 - WC
 
 A wc-room is a kind of room.
@@ -73,6 +76,9 @@ A wc-bowl is a kind of supporter. A wc-bowl is scenery and enterable.
 A wc-bowl is in every wc-room.
 Understand "wc/bowl" or "wc bowl" as a wc-bowl.
 
+Instead of putting something on a wc-bowl:
+	say "Better not, you might block the drain."
+	
 Chapter 3.2 - The flush button
 
 A flush button is a kind of thing. The description is "A large white button. You should press it after using the wc.".
