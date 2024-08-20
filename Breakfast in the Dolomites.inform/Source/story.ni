@@ -14,7 +14,7 @@ She loves strolling around looking in shop windows; a peppy girl, she won't forg
 What a strange thing love is...
 
 There are no treasures to be found, there are no mysteries to be solved; remember, you are on holiday: have fun!".
-Release along with the cover art ("Breakfast in the Dolomites"), a file of "Quickstart guide" called "quickstart.pdf", a file of "Introductory booklet" called "booklet.pdf", a file of "Walkthrought" called "walkthrough.pdf", a file of "License legal code" called "license.txt", the library card, a "TSF" website and an interpreter.
+Release along with the cover art ("Breakfast in the Dolomites"), a file of "Quickstart guide" called "quickstart.pdf", a file of "Introductory booklet" called "booklet.pdf", a file of "Walkthrought" called "walkthrough.pdf", a file of "License legal code" called "license.txt", the library card, a "TSF" website and an interpreter [a "Recording Parchment" interpreter].
 
 Chapter 0.1 - Includes
 
@@ -546,7 +546,7 @@ Section 2.4.2.1 - Check-in
 At the time when the receptionist greets:
 	say "[/ss]Good evening, welcome to our hotel!' [/se][the naming of receptionist] [greet] you [/ss1]How can I help you?' [/r][/n]";
 	Monica greets the receptionist in 0 turns from now;
-	Monica remember to greet in 1 turn from now;
+	unless the current interlocutor is the receptionist, Monica remember to greet in 1 turn from now;
 
 Mrtg-count is a number that varies. Mrtg-count is 0.
 At the time when Monica remember to greet:
