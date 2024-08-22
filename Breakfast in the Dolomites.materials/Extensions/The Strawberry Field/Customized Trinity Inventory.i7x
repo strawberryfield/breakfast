@@ -1,10 +1,10 @@
-Customized Trinity Inventory by The Strawberry Field begins here.
+Version 1 of Customized Trinity Inventory by The Strawberry Field begins here.
 
-[Based on Trinity Inventory by Mikael Segercrantz]
+[Based on Version 5.1 of Trinity Inventory by Mikael Segercrantz]
 
 "Provides a framework for listing inventories in natural sentences, akin to Infocom's game Trinity. Separates carried and worn objects, followed by objects that contains other objects. What's listed in the third section is customizable via a rulebook. Objects can be marked as not listed when carried or worn as well as marked as having their contents listed in the inventory when they're empty. This extension is based upon the extension Written Inventory by Jon Ingold."
 
-"based on the extension of the same name by Mikael Segercrantz"
+"based on Version 5.1 of Trinity Inventory by Mikael Segercrantz"
 
 [Updated for Inform 6L02 by Matt Weiner as of July 1, 2014. There should be no changes in performance, but you may wish to triple-check the behavior of the adaptive text.]
 

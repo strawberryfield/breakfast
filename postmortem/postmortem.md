@@ -1,12 +1,21 @@
 # Breakfast in the Dolomites
 
+Breakfast in the Dolomites is my first piece of interactive fiction.
+
+That is not quite true: in the eighties I wrote some little 'adventures' with a BASIC interpreter, 
+but they were very limited: not a real game.
+
+Why did I come back after 40 years to write such a game? 
+I tell the whole story in the introductory booklet that comes with the game, but I will briefly rewrite it here.
+
 ## An adventure behind the adventure
 
 ### A brief story
 
 #### March 2020
 
-During the pandemic lockdown, I wrote a [BBS system](https://github.com/strawberryfield/BBS) that looks like the ones I used in the early '90s but using more conteporary systems: 
+During the pandemic lockdown, I wrote a [BBS system](https://github.com/strawberryfield/BBS) 
+that looks like the ones I used in the early '90s but using more conteporary systems: 
 C#, Entity Framework, Maria DB and a Rapberry Pi 2 as host.
 
 I thought that a game should be great in it, why not an adventure game? 
@@ -83,7 +92,7 @@ In any case, the walkthrough is included in the package.
 
 #### Testing
 
-No tester is credited, I sent my game to some friend of mine, but nobody effectively played the game.
+No tester is credited, I sent my game to some friend of mine, but no one really played the game.
 
 I wasn't interested in someone stressing the game with absurd situations, I was looking for someone who would get into the story and complete it as a pastime.
 
@@ -101,18 +110,35 @@ but a real photograph (I have lots of them) would not have had the same effect.
 
 Other images produced in this way are used to illustrate the accompanying booklets.
 
-## The results
-
-### The AI art
+#### The new AI-generated art rules
 
 Two weeks before the deadline for submitting games, I received an email asking me to state whether AI was used for the cover, other images or sounds, or for the text.
 
 Ticking that box resulted in this statement appearing prominently in the game's entry: _Generative artificial intelligence was used to make the cover art. See in-game credits for more information._
 
-#### AmandaB from the IF forum
-
-I point out on the forum that this seems discriminatory to me, and I get this response:
+I pointed out on the forum that this seems discriminatory to me within the answers i found also this:
 
 _If you feel good about your art and how it came to be, fly the flag and let the community decide how they feel about it. Frankly, with the current community feeling about it, I’m not sure why anyone wants to test the waters there when there are so many other avenues for cover art._
 
-She basically tells me that no one will want to play my story because it has an AI-generated cover.
+The icing on the cake, not exactly encouraging.
+
+Someone suggested I send an email to the organisers explaining the problem. 
+I did, and the note was reduced in size and placed near the cover art: a good solution.
+
+## Why I wanted to join this competition
+
+I spent a lot of time writing this story, mainly because I was unfamiliar with the instrument, but also because I had a lot of fun trying out the many situations that could be created.
+
+But one question remained. Does it only appeal to me, or can it appeal to others?
+
+My friends were not very interested, partly because it was all in English, but how would an audience of enthusiasts receive it?
+
+Entering a well-known competition could have been a good way to get some answers.
+
+### My goals
+
+- Find someone who wanted to play the story and maybe even leave me the transcript
+
+- Get some reviews, no matter if negative or positive, to understand which elements to focus on or which to avoid in the future. 
+
+## The results

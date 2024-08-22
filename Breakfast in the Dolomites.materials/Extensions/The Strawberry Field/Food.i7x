@@ -1,4 +1,4 @@
-Food by The Strawberry Field begins here.
+Version 1 of Food by The Strawberry Field begins here.
 
 Volume 1 - Smell and Taste
 

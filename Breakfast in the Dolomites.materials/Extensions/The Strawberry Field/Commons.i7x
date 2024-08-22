@@ -1,4 +1,4 @@
-Commons by The Strawberry Field begins here.
+Version 1 of Commons by The Strawberry Field begins here.
 
 Book 1.1 - Typoghraphy
 

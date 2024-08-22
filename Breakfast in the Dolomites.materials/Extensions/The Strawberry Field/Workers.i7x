@@ -1,4 +1,4 @@
-Workers by The Strawberry Field begins here.
+Version 1 of Workers by The Strawberry Field begins here.
 
 Volume 1 - Generic people
 

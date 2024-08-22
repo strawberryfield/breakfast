@@ -1,4 +1,4 @@
-Written papers by The Strawberry Field begins here.
+Version 1 of Written papers by The Strawberry Field begins here.
 
 A paper-item is a kind of thing.
 A paper-side is a kind of thing.

@@ -14,8 +14,8 @@ She loves strolling around looking in shop windows; a peppy girl, she won't forg
 What a strange thing love is...
 
 There are no treasures to be found, there are no mysteries to be solved; remember, you are on holiday: have fun!".
-Release along with the cover art ("Breakfast in the Dolomites"), a file of "Quickstart guide" called "quickstart.pdf", a file of "Introductory booklet" called "booklet.pdf", a file of "Walkthrought" called "walkthrough.pdf", a file of "License legal code" called "license.txt", the library card, a "TSF" website and an interpreter [a "Recording Parchment" interpreter].
-
+Release along with the cover art ("Breakfast in the Dolomites"), a file of "Quickstart guide" called "quickstart.pdf", a file of "Introductory booklet" called "booklet.pdf", a file of "Walkthrough" called "walkthrough.pdf", a file of "License legal code" called "license.txt", the library card, a "TSF" website and an interpreter.
+ 
 Chapter 0.1 - Includes
 
 Include Cleared Events by Daniel Stelzer.
@@ -154,6 +154,11 @@ Report drinking a fluid container (this is the custom report drinking rule):
 	otherwise:
 		say "." 
 The custom report drinking rule is listed instead of the standard report drinking rule in the report drinking rules.
+
+Book 1.3 - Score
+
+Check requesting the score:
+	say "Relax and don't worry about the score, just enjoy your holiday." instead.
 
 Volume 2 - Rooms definitions
 

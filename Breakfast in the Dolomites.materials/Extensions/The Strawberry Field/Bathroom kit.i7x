@@ -1,4 +1,4 @@
-Bathroom kit by The Strawberry Field begins here.
+Version 1 of Bathroom kit by The Strawberry Field begins here.
 
 Include Locksmith by Emily Short.
 
