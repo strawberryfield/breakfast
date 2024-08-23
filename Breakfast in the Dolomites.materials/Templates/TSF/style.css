@@ -433,6 +433,7 @@ Styles for play.html
 	position: absolute;
 	right: 0px;
 	top: 0px;
+	overflow-x: hidden;
 }
 
 /*
