@@ -188,12 +188,17 @@ The dashboard is a scenery open, not openable container in the car.
 The description is "An old-fashioned dashboard, minimalist and functional, with analogue instruments[if your-car-key is enclosed by the dashboard]. [/n]The key is inserted[end if].".
 Instead of examining the dashboard, say "[description of the dashboard][/n]".
 The analogue instrument is a scenery in the car. 
+Understand "analogue/-- instruments" as the analogue instrument.
+Instead of switching on the dashboard:
+	say "Have you just arrived and already want to leave?".
+Instead of switching off the dashboard:
+	say "It's already powered off.".
 
 Section 2.1.1.2 - The key
 
 your-car-key is a thing in the dashboard. Printed name is "your car[']s key".
 The description is "The key to open and start your car."
-Understand "key" as your-car-key.
+Understand "car/-- key/keys" as your-car-key.
 Does the player mean inserting your-car-key into the left front pocket: it is likely.
 
 Section 2.1.1.3 The radio
@@ -207,9 +212,14 @@ The car door is a closed openable lockable scenery door.
 The description is "[if the location of the player is the car]The door of your car[otherwise][car external][end if].".
 It is outside of the car and inside from the parking.
 Does the player mean looking under the car door: it is likely.
-
+Instead of switching
 Your-car-key unlocks the car door.
  
+Instead of switching on the car door while the location of the player is the car:
+	say "Have you just arrived and already want to leave?".
+Instead of switching off the car door while the location of the player is the car:
+	say "It's already powered off.".
+	
 To say car external:
 	say "Your little white city car, the door ";
 	if the car door is open:
@@ -266,7 +276,7 @@ To Monica retakes trolley:
 	
 The red backpack is a closed openable wearable container in the boot.
 The description is "Your beloved, somewhat frayed, red backpack.".
-Understand "baggage/luggage" as the red backpack.
+Understand "baggage/luggage" or "red/-- pack" as the red backpack.
 Instead of opening the red backpack, say "There is nothing you need in your backpack now.".
 
 Chapter 2.1.4 - Timed events
@@ -1245,7 +1255,7 @@ Node-introduction for tea-order node:
 The espresso-order node is an order-convnode.
 The barley-order node is an order-convnode.
 	
-Understand "hot/-- chocolate" as "[chocolate]".
+Understand "hot/-- chocolate/cocoa" as "[chocolate]".
 To prepare chocolate:
 	now the order content is a random mug in the kitchen;
 	now the liquid of the order content is hot chocolate;
@@ -2747,6 +2757,7 @@ Understand "Ciccio/Francesco/me/myself/you/yourself" or "the/-- player/protagoni
 Chapter 3.1.1 - Initial player dressing
 
 The black t-shirt is a cloth. The description is "A black T-shirt with a surfer design on the front.".
+Understand "black/-- shirt" as black t-shirt.
 The white t-shirt is a cloth.
 The checkered flannel shirt is a cloth. The description is "It was a gift from your father many years ago, it seemed a strange object at the time, but over time you appreciated its comfort and now you no longer leave it."
 
@@ -2790,6 +2801,7 @@ Some money are in the wallet. The description of money is "It's only banknotes, 
 Instead of taking money, say "There is nothing to pay.".
 
 The identity card is in the wallet.
+Understand "id card/document/--" or "your id/identity/-- card/document/documents" as the identity card.
 The description is "A card folded into a booklet with your photo (slightly old) and your personal information.".
 Understand "passport/document" as the identity card.
 

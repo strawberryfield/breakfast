@@ -51,6 +51,13 @@ A cloth is a kind of thing.
 A cloth is always wearable.
 A cloth is usually unlisted when worn.
 
+Instead of getting off a cloth:
+	say "This is not the time to undress."
+	
+Persuasion rule for asking someone to try getting off a cloth:
+	say "[/ss]Does this seem like something to ask?' [/se][regarding the actor][they] [ask] you angrily.";
+	persuasion fails.
+
 Volume 2 - generic worker
 
 A worker is a kind of person.
