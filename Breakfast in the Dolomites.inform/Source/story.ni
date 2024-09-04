@@ -3643,6 +3643,7 @@ Book 5.3 - Credits
 Table of credited peoples (continued)
 Name (text)	Reason (text)
 "otisdog"	"for making extensions working together"
+"Mauro and Federico Casadei"	"for their patience in trying out the game and pointing out some problems to me"
 "Bing Image Creator"	"used to generate the cover art"
 
 Book 5.4 - Minimal help system
