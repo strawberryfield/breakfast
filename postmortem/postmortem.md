@@ -67,6 +67,27 @@ the ["Taufererbahn" railway simulator](https://taufererbahn.altervista.org/bruni
 becomes a children's game, and this story, 
 where the protagonist's girlfriend reminds him that he is not playing an adventure game.
 
+### How the game was built
+
+I approached the writing of the game from my experience as a programmer, 
+translating the expressions ‘is a kind of’ as inheriting a class, 
+‘the xyz is a’ as creating an instance of an object, and so on.
+
+I was quite puzzled by the idea of putting the whole program in one source file: 
+I am used to putting each class (or even a single part of it) in a separate file.
+
+Everything that was possible I put into extensions (and I used a large number already made by others):
+so I could try it out separately and get a more solid final structure.
+
+I concentrated more on building the structure than creating an actual story, 
+maybe next time I can create a more interesting story from the structure I have already built.
+
+In addition to the actual game, I also prepared illustrated manuals 
+with the many images I created to see how the texts could be imagined by the reader; 
+I cleaned up the site template created by the compiler 
+and set up an automated build system for the distribution package.   
+All stuff that probably won't interest anyone, but which gave me the idea of a more professional job.
+
 ### A long list of things that could not be appreciated
 
 #### English language
@@ -112,13 +133,17 @@ Other images produced in this way are used to illustrate the accompanying bookle
 
 #### The new AI-generated art rules
 
-Two weeks before the deadline for submitting games, I received an email asking me to state whether AI was used for the cover, other images or sounds, or for the text.
+Two weeks before the deadline for submitting games, 
+I received an email asking me to state whether AI was used for the cover, other images or sounds, or for the text.
 
-Ticking that box resulted in this statement appearing prominently in the game's entry: _Generative artificial intelligence was used to make the cover art. See in-game credits for more information._
+Ticking that box resulted in this statement appearing prominently in the game's entry: 
+_Generative artificial intelligence was used to make the cover art. See in-game credits for more information._
 
 I pointed out on the forum that this seems discriminatory to me within the answers i found also this:
 
-_If you feel good about your art and how it came to be, fly the flag and let the community decide how they feel about it. Frankly, with the current community feeling about it, I’m not sure why anyone wants to test the waters there when there are so many other avenues for cover art._
+_If you feel good about your art and how it came to be, fly the flag and let the community decide how they feel about it. 
+Frankly, with the current community feeling about it, 
+I’m not sure why anyone wants to test the waters there when there are so many other avenues for cover art._
 
 The icing on the cake, not exactly encouraging.
 
@@ -127,11 +152,13 @@ I did, and the note was reduced in size and placed near the cover art: a good so
 
 ## Why I wanted to join this competition
 
-I spent a lot of time writing this story, mainly because I was unfamiliar with the instrument, but also because I had a lot of fun trying out the many situations that could be created.
+I spent a lot of time writing this story, mainly because I was unfamiliar with the instrument, 
+but also because I had a lot of fun trying out the many situations that could be created.
 
 But one question remained. Does it only appeal to me, or can it appeal to others?
 
-My friends were not very interested, partly because it was all in English, but how would an audience of enthusiasts receive it?
+My friends were not very interested, partly because it was all in English, 
+but how would an audience of enthusiasts receive it?
 
 Entering a well-known competition could have been a good way to get some answers.
 
@@ -142,3 +169,11 @@ Entering a well-known competition could have been a good way to get some answers
 - Get some reviews, no matter if negative or positive, to understand which elements to focus on or which to avoid in the future. 
 
 ## The results
+
+As soon as I uploaded the game to IFComp, I discovered that it could be played online 
+and in this case I was getting transcripts back: how nice!
+
+The transcripts that immediately started arriving (so someone interested in the game was there), 
+surprised and amused me with the situations that were being created.
+
+Someone who had just arrived wanted to leave immediately,
