@@ -196,7 +196,7 @@ Instead of switching off the dashboard:
 
 Section 2.1.1.2 - The key
 
-your-car-key is a thing in the dashboard. Printed name is "your car[']s key".
+Your-car-key is a thing in the dashboard. Printed name is "your car[']s key".
 The description is "The key to open and start your car."
 Understand "car/-- key/keys" as your-car-key.
 Does the player mean inserting your-car-key into the left front pocket: it is likely.
@@ -212,7 +212,6 @@ The car door is a closed openable lockable scenery door.
 The description is "[if the location of the player is the car]The door of your car[otherwise][car external][end if].".
 It is outside of the car and inside from the parking.
 Does the player mean looking under the car door: it is likely.
-Instead of switching
 Your-car-key unlocks the car door.
  
 Instead of switching on the car door while the location of the player is the car:
