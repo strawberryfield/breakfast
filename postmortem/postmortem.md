@@ -6,7 +6,8 @@ That is not quite true: in the eighties I wrote some little 'adventures' with a 
 but they were very limited: not a real game.
 
 Why did I come back after 40 years to write such a game? 
-I tell the whole story in the introductory booklet that comes with the game, but I will briefly rewrite it here.
+I tell the whole story in the introductory booklet that comes with the game, 
+but I will briefly rewrite it here.
 
 ## An adventure behind the adventure
 
@@ -33,7 +34,8 @@ The kind reception girl points us to our room, in another building across the st
 “If you don't want to get wet, you can go through here” and points us to a staircase.
 
 We descend the staircase, which is covered with green carpet with rocking horses drawn on it.  
-Unbelievably, there was a whole world to discover down there: a reading room with a small library, 
+Unbelievably, there was a whole world to discover down there: 
+a reading room with a small library, 
 a well-equipped gym, game stations, billiards, table tennis...
 
 The walls were lined with showcases containing toy horses of various origins, 
@@ -170,6 +172,8 @@ Entering a well-known competition could have been a good way to get some answers
 
 ## The results
 
+### The transcripts
+
 As soon as I uploaded the game to IFComp, I discovered that it could be played online 
 and in this case I was getting transcripts back: how nice!
 
@@ -177,3 +181,70 @@ The transcripts that immediately started arriving (so someone interested in the 
 surprised and amused me with the situations that were being created.
 
 Someone who had just arrived wanted to leave immediately,
+another takes his clothes off in the car and gets out completely naked.
+
+Then there's the guy who first gets angry because he's already kissed his girlfriend twice,
+~~~
+!damn girl, I already kissed you twice in this game
+~~~
+and then starts trying to kiss everything around him:
+~~~
+> kiss receptionist
+
+"Do you like men now?" — amazed Monica asks you.
+
+"Good evening, welcome to our hotel!" — the receptionist greet you — "How can I help you?"
+
+> kiss me
+
+"Do you like men now?" — amazed Monica asks you.
+
+"Good evening." — Monica says to the receptionist.
+
+>l
+
+Reception
+The receptionist stands behind a tastefully crafted wooden desk, ready to assist guests with a genuine smile.
+Stairs lead to the upper floors. To the east is the dining room, along the wall is a door.
+
+Monica is next to you.
+
+♤ "Ciccio, don't be rude, say hello to the receptionist." — Monica suggests in your ear.
+
+> kiss door
+
+Which do you mean, the sliding door or the wooden door?
+
+> sliding
+
+"Hold the kisses for me!" — Monica scolds you.
+
+> kiss desk
+
+"Hold the kisses for me!" — Monica scolds you.
+
+♤ "Ciccio, don't be rude, say hello to the receptionist." — Monica suggests in your ear for the second time.
+~~~
+
+Strange people around...
+
+### The reviews
+
+A few days after the judging period opened I saw the first review: 
+Mike Russo took the time to play and review my game.  
+He does not hide the fact that he was a little disappointed:
+~~~
+though: look, in my IF career I’ve stared down mad scientists 
+thousands of meters deep beneath alien seas, 
+used the last of my strength to perform rituals of 
+banishment abjuring abhorrent gods, 
+and endured painfully-immersive narratives of abuse, 
+but rarely have I felt as stressed as 
+I did juggling a bread plate 
+and a scrambled egg while trying to work a juicer.
+~~~
+ 
+But it was exactly what I had planned!  
+A parody of traditional adventures.
+
+
