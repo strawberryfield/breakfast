@@ -2177,7 +2177,7 @@ The description is "A slice of typical Tyrolean smoked ham. Dark red in color wi
 The plural of slice of speck is slices of speck.
 The scent-description of a slice of speck is "a slight smell of smoke".
 The flavor-description of the slice of speck is "An intense and spicy flavor of the pork leg enhanced by the expert smoking".
-Understand "smoked/-- ham" or "speck" as "[speck]".
+Understand "smoked/-- ham/meat" or "speck" as "[speck]".
 Understand "slice of [speck]" or "[speck]" as a slice of speck.
 
 To say (P - a person) talks about speck:
@@ -2191,7 +2191,7 @@ The description is "A slice of seasoned sausage. Dark red in color with little d
 The plural of slice of salami is slices of salami.
 The scent-description of a slice of salami is "light scent of spices".
 The flavor-description of the slice of salami is "Lightly smoked over beech wood and cured in the pure mountain air, it develops an extraordinary aroma".
-Understand "kaminwurzen/sausage/salami" as "[salami]".
+Understand "kaminwurzen/sausage/salami/meat" as "[salami]".
 Understand "slice of [salami]" or "[salami]" as a slice of salami.
 
 To say (P - a person) talks about salami:
@@ -2431,7 +2431,7 @@ Instead of hailing while the location is the buffet:
 Instead of saying hello to someone (called the other) while the location is the buffet:
 	unless the other is Monica:
 		now the current interlocutor is the other;
-		unless the greeting type is implicit, say "[/ss1][good morning current interlocutor].' [/r][/n]";
+		unless the greeting type is implicit, say "[/ss][good morning current interlocutor].' [/r][/n]";
 		if the number of thing carried by the player is less than the carrying capacity of the player:
 			now the egg-cooking-trigger is true;
 			setnode main-egg node;
@@ -2987,7 +2987,7 @@ Hair are "a bonnet covering her". Eyes are "brown".
 Proper name is "Emma".
 Printed name is "cook".
 Emma is improper-named. 
-Understand "cook/waitress" as Emma.
+Understand "cook/waitress/chef" as Emma.
 
 The white blouse and the apron made of rough canvas are cloth.
 Emma wear the white blouse and the apron made of rough canvas.

@@ -12,7 +12,7 @@ set EXTERNAL="%DOC_ROOT%%DOC_PATH%"
 rem project paths
 set PROJECT_HOME=breakfast
 set NAME=Breakfast in the Dolomites
-set RAR="C:\Program Files\WinRAR\WinRAR.exe"
+set RAREXE="C:\Program Files\WinRAR\WinRAR.exe"
 set COMMENT=zipcomment.txt
 set HOME_PATH=%DOC_ROOT%%DOC_PATH%\Projects\%PROJECT_HOME%
 set PROJECT_PATH=%HOME_PATH%\%NAME%.inform
@@ -40,5 +40,5 @@ copy "%MATERIALS_PATH%\resourcemap.js" "%INTERPRETER_DIR%"
 
 rem packaging
 cd "%MATERIALS_PATH%\release"
-%RAR% a -afzip -r -m5 -z..\%COMMENT% "%BIN%" *.*
+%RAREXE% a -afzip -r -m5 -z..\%COMMENT% "%BIN%" *.*
 popd
