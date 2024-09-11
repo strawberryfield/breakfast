@@ -558,7 +558,7 @@ Chapter 2.4.2 - Timed events
 Section 2.4.2.1 - Check-in
 
 At the time when the receptionist greets:
-	say "[/ss]Good evening, welcome to our hotel!' [/se][the naming of receptionist] [greet] you [/ss1]How can I help you?' [/r][/n]";
+	say "[/ss]Good evening, welcome to our hotel!' [/se][the naming of receptionist] [greet] you[unless the current interlocutor is the receptionist] [/ss1]How can I help you?' [else]. [end if][/r][/n]";
 	Monica greets the receptionist in 0 turns from now;
 	unless the current interlocutor is the receptionist, Monica remember to greet in 1 turn from now;
 
@@ -673,6 +673,8 @@ Instead of saying hello to someone (called the other) during the check-in:
 			mark present yourself as done;
 	otherwise:
 		continue the action.
+
+Understand "check-in" or "checkin" or "check in" or "reservation" as hailing.
 
 Response of the receptionist when told about "[myself]":
 	do nothing.
@@ -2177,7 +2179,7 @@ The description is "A slice of typical Tyrolean smoked ham. Dark red in color wi
 The plural of slice of speck is slices of speck.
 The scent-description of a slice of speck is "a slight smell of smoke".
 The flavor-description of the slice of speck is "An intense and spicy flavor of the pork leg enhanced by the expert smoking".
-Understand "smoked/-- ham/meat" or "speck" as "[speck]".
+Understand "smoked/-- ham/meat/meats" or "speck" as "[speck]".
 Understand "slice of [speck]" or "[speck]" as a slice of speck.
 
 To say (P - a person) talks about speck:
@@ -2191,7 +2193,7 @@ The description is "A slice of seasoned sausage. Dark red in color with little d
 The plural of slice of salami is slices of salami.
 The scent-description of a slice of salami is "light scent of spices".
 The flavor-description of the slice of salami is "Lightly smoked over beech wood and cured in the pure mountain air, it develops an extraordinary aroma".
-Understand "kaminwurzen/sausage/salami/meat" as "[salami]".
+Understand "kaminwurzen/sausage/salami/meat/meats" as "[salami]".
 Understand "slice of [salami]" or "[salami]" as a slice of salami.
 
 To say (P - a person) talks about salami:
@@ -2702,7 +2704,8 @@ Chapter 2.7.6 - Movements
 
 Before going from the dining room:
 	if the number of things carried by the player is greater than zero:
-		say "[/ss]Why are you carrying [the list of things carried by the player]?' [/se][Monica] [ask]. [/n]" instead.
+		say "[/ss]Why are you carrying [the list of things carried by the player]?' [/se][Monica] [ask]. [/n]" instead;
+	unless can leave the table, say "[/ss]Before taking more food, eat what is on the table.' [/se][Monica] [remember] [us].".
 		
 Chapter 2.7.7 - Generic answers
 
@@ -2957,7 +2960,7 @@ The description is "A tall man ".
 Hair are "short black". Eyes are "dark". 
 Notes are "He also has a light, well-groomed beard".
 Proper name of the receptionist is "Nathan". The receptionist is improper-named.
-Understand "Nathan" as the receptionist.
+Understand "Nathan/manager/concierge/clerk" as the receptionist.
 
 The dark grey jacket and dotted grey tie are cloth.
 The receptionist wears the white shirt, dark grey jacket and dotted grey tie.
