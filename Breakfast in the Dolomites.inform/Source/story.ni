@@ -14,7 +14,7 @@ She loves strolling around looking in shop windows; a peppy girl, she won't forg
 What a strange thing love is...
 
 There are no treasures to be found, there are no mysteries to be solved; remember, you are on holiday: have fun!".
-Release along with the cover art ("Breakfast in the Dolomites"), a file of "Quickstart guide" called "quickstart.pdf", a file of "Introductory booklet" called "booklet.pdf", a file of "Walkthrough" called "walkthrough.pdf", a file of "License legal code" called "license.txt", the library card, a "TSF" website and an interpreter.
+Release along with the cover art ("Breakfast in the Dolomites"), a file of "Quickstart guide" called "quickstart.pdf", a file of "User manual" called "booklet.pdf", a file of "Walkthrough" called "walkthrough.pdf", a file of "License legal code" called "license.txt", the library card, a "TSF" website and an interpreter.
  
 Chapter 0.1 - Includes
 
@@ -237,6 +237,7 @@ Chapter 2.1.3 - The car boot
 
 The car boot is a closed openable lockable scenery container in the parking.
 Understand "car/-- trunk" as the car boot.
+Your-car-key unlocks the car boot.
 
 Section 2.1.3.1 - Locking rules
 
@@ -2181,6 +2182,7 @@ The scent-description of a slice of speck is "a slight smell of smoke".
 The flavor-description of the slice of speck is "An intense and spicy flavor of the pork leg enhanced by the expert smoking".
 Understand "smoked/-- ham/meat/meats" or "speck" as "[speck]".
 Understand "slice of [speck]" or "[speck]" as a slice of speck.
+Does the player mean taking a slice of speck: it is very likely.
 
 To say (P - a person) talks about speck:
 	say "[/ss]Speck is a typical product of our valleys.' [/se][the naming of P] [say] ";
