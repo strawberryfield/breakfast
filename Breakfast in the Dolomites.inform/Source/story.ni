@@ -3037,7 +3037,10 @@ Instead of examining the girl for the first time:
 	say "[/ss]Some needs are pressing!' [/se]Paola replies.";
 	now the printed name of the noun is "Paola";
 	now the noun is proper-named.
-		
+
+Instead of kissing the girl:
+	say "Hey, don't you dare! That's my girlfriend."
+			
 Volume 4 - Scenes
 
 Book 4.1 - Intro
@@ -3400,7 +3403,7 @@ When Monica egg cooking begins:
 	if the crepe is enclosed by the player:
 		now the fried egg is in the Monica-egg-dish;
 		now attributes of the fried egg is "sunny side up";
-		now the owner of the crepe is Monica;
+		now the owner of the fried egg is Monica;
 	otherwise:
 		now the crepe is in the Monica-egg-dish;
 		now the owner of the crepe is Monica;

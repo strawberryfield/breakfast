@@ -175,8 +175,10 @@ Before showing something to a waiter (this is the waiter showing rule):
 	waiter tries to go away in two turns from now.
 
 At the time when waiter tries to go away:
-	unless the current interlocutor is nothing, say "[The naming of current interlocutor] [leave].";
-	reset the interlocutor.
+	unless the current interlocutor is nothing:
+		if the current interlocutor is a waiter:
+			say "[The naming of current interlocutor] [leave].";
+			reset the interlocutor.
 	
 Volume 4 - Answers
 
