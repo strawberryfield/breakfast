@@ -51,7 +51,7 @@ A cloth is a kind of thing.
 A cloth is always wearable.
 A cloth is usually unlisted when worn.
 
-Instead of getting off a cloth:
+Instead of taking off a cloth:
 	say "This is not the time to undress."
 	
 Persuasion rule for asking someone to try getting off a cloth:

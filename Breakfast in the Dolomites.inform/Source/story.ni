@@ -453,7 +453,7 @@ After going through the sliding door:
 	say "[Monica] also [walk] through the door.";
 	now Monica is in the location of the player;
 	now check-in-trigger is true;
-	the receptionist greets in 1 turn from now;
+	the receptionist greets in 0 turn from now;
 	continue the action.
 At the time when the sliding door closes:
 	try closing the sliding door.
@@ -1554,7 +1554,7 @@ At the time when Monica urges buffet:
 		
 At the time when Monica urges drink:
 	unless can order hot drinks:
-		say "[/ss]Drink your [list of non-empty hot drink containers which are not pot on the table] before [they] [get] cold.' [/se][Monica] [suggest] [us].";
+		if the location of the player is the dining room,	say "[/ss]Drink your [list of non-empty hot drink containers which are not pot on the table] before [they] [get] cold.' [/se][Monica] [suggest] [us].";
 		Monica urges drink in 1 turn from now.
 		
 Before drinking a cup:

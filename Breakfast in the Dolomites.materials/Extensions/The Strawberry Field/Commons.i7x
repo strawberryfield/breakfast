@@ -23,6 +23,12 @@ Book 1.2 - Rules
 
 Rule for clarifying the parser's choice of something:
 	do nothing instead.
+	
+After reading a command:
+	if the player's command includes "sex" or the player's command includes "fuck":
+		say "The game does not include references to sex.";
+		reject the player's command. 
+	
 
 Chapter 1.2.1 - Aliases
 
