@@ -115,7 +115,7 @@ In any case, the walkthrough is included in the package.
 
 #### Testing
 
-No tester is credited, I sent my game to some friend of mine, but no one really played the game.
+I sent my game to some friends of mine, they played it and pointed out a few problems.
 
 I wasn't interested in someone stressing the game with absurd situations, I was looking for someone who would get into the story and complete it as a pastime.
 
@@ -182,6 +182,43 @@ surprised and amused me with the situations that were being created.
 
 Someone who had just arrived wanted to leave immediately,
 another takes his clothes off in the car and gets out completely naked.
+~~~
+>mremove shorts
+
+You take off the pair of beige shorts.
+
+> remove shirt
+
+You take off the black t-shirt.
+
+> remove sneakers
+
+You take off the pair of blue sneakers.
+
+Monica opens the car boot revealing a pink trolley and a red backpack, then she takes her pink trolley.
+
+>x me
+
+A young man, about 30 years old, with blond hair.
+You work as a software engineer, enjoy photography and love hiking in the mountains.
+In love with your girlfriend, very beautiful, but also shrewish when something doesn't go her way. In the end you always please her and she appreciates it.
+Monica sometimes calls you Ciccio.
+
+>i
+
+You're holding a black t-shirt, a pair of beige shorts and a pair of blue sneakers.
+
+Monica is knocking on the door of the car.
+"What are you still doing in there?" — she asks.
+
+>eat shorts
+
+I am sure that Monica would scold you if she could see you now.
+
+>kiss shorts
+
+"Hold the kisses for me!" — Monica scolds you.
+~~~
 
 Then there's the guy who first gets angry because he's already kissed his girlfriend twice,
 ~~~
@@ -226,6 +263,59 @@ Which do you mean, the sliding door or the wooden door?
 ♤ "Ciccio, don't be rude, say hello to the receptionist." — Monica suggests in your ear for the second time.
 ~~~
 
+There is also someone no woman wants to meet.
+~~~
+Car
+A city car; the interior space is not much, but more than enough for a young couple.
+The dashboard is powered off.
+
+Monica is next to you.
+
+>fuck monica
+
+Next time, I suggest you write the command as: monica
+That noun did not make sense in this context.
+
+>kiss monica
+
+♥ "I love you!" — she whispers sweetly in your ear.
+
+>kill monica
+
+Violence isn't the answer to this one.
+
+Monica jumps out of the car, then closes the car door.
+
+>get out
+
+(first opening the car door)
+
+Parking
+The hotel's reserved car park.
+Your white car is perhaps the smallest of all.
+To the east is the garden.
+
+Monica is next to you.
+
+>screw monica
+
+Monica might not like that.
+
+>have sex with monica
+
+(You don't always need to specify what you're doing something with.)
+Next time, I suggest you write the command as: have sex
+That noun did not make sense in this context.
+
+>have sex
+
+That noun did not make sense in this context.
+
+>ask monica about sex
+
+Monica does not respond.
+~~~
+
 Strange people around...
 
 ### The reviews
@@ -243,7 +333,6 @@ but rarely have I felt as stressed as
 I did juggling a bread plate 
 and a scrambled egg while trying to work a juicer.
 ~~~
- 
 But it was exactly what I had planned!  
 A parody of traditional adventures.
 
