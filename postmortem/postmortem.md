@@ -66,7 +66,7 @@ I have used all kinds of operating systems, hardware architectures and programmi
 Often my artistic work is a mockery of the environment in which it is developed: 
 the [photographic exhibition "The Quantum Photographer"](https://strawberryfield.altervista.org/fq/mostrafotografica-robertoceccarelli-semplicementefotografare-novafeltria.php), where photographers are photographed; 
 the ["Taufererbahn" railway simulator](https://taufererbahn.altervista.org/brunico_campotures/taufererbahn_download.php), where a serious simulation environment 
-becomes a children's game, and this story, 
+becomes a children's game; and this story, 
 where the protagonist's girlfriend reminds him that he is not playing an adventure game.
 
 ### How the game was built
@@ -168,7 +168,8 @@ Entering a well-known competition could have been a good way to get some answers
 
 - Find someone who wanted to play the story and maybe even leave me the transcript
 
-- Get some reviews, no matter if negative or positive, to understand which elements to focus on or which to avoid in the future. 
+- Get some reviews, no matter if negative or positive, 
+to understand which elements to focus on or which to avoid in the future. 
 
 ## The results
 
@@ -183,7 +184,7 @@ surprised and amused me with the situations that were being created.
 Someone who had just arrived wanted to leave immediately,
 another takes his clothes off in the car and gets out completely naked.
 ~~~
->mremove shorts
+> remove shorts
 
 You take off the pair of beige shorts.
 
@@ -262,6 +263,7 @@ Which do you mean, the sliding door or the wooden door?
 
 ♤ "Ciccio, don't be rude, say hello to the receptionist." — Monica suggests in your ear for the second time.
 ~~~
+Strange people around...
 
 There is also someone no woman wants to meet.
 ~~~
@@ -315,25 +317,89 @@ That noun did not make sense in this context.
 
 Monica does not respond.
 ~~~
+This gentleman also left a review in which he complained _"Monica! Why are you so cruel?"_
 
-Strange people around...
+I must say I am proud of the way Monica got her revenge, helped by a bug that popped up at just the right time.
 
 ### The reviews
 
 A few days after the judging period opened I saw the first review: 
 Mike Russo took the time to play and review my game.  
 He does not hide the fact that he was a little disappointed:
-~~~
-though: look, in my IF career I’ve stared down mad scientists 
+
+_though: look, in my IF career I’ve stared down mad scientists 
 thousands of meters deep beneath alien seas, 
 used the last of my strength to perform rituals of 
 banishment abjuring abhorrent gods, 
 and endured painfully-immersive narratives of abuse, 
 but rarely have I felt as stressed as 
 I did juggling a bread plate 
-and a scrambled egg while trying to work a juicer.
-~~~
+and a scrambled egg while trying to work a juicer._
+
 But it was exactly what I had planned!  
 A parody of traditional adventures.
 
+Brad Buchanan guesses my intention, 
+but points out that you have to be very skilled to reach the goal; 
+and I, in my first experience, certainly am not.
 
+_What I think the game is trying to do is to turn moments 
+that are traditionally frustrating in parser games, 
+like inventory limits and disambiguation, into moments of interactive comedy._
+
+_I think for “simulated frustrating” play to work, 
+we need to have confidence that we’re in good hands._
+
+
+Doug Egan points out that the amount of detail is sometimes excessive, 
+which may not please those who are more concerned with the plot.
+
+_It’s very granular in the level of detail. 
+Cars have doors and locks. Bathrooms have doors and locks. 
+Hiking pants have six pockets. 
+Which is all very “realistic” in a sense, 
+but frustrating for the player who has to navigate these obstacles, 
+and lacking in the sorts of “poetic” detail 
+which might appeal to a player who enjoys atmospheric writing._
+
+Honestly, I focused more on the gameplay aspect than the story aspect; 
+experience will help me balance things better.
+
+DemonApologist appreciated my effort.
+
+_I think what this game does that is interesting 
+is that it realizes that struggles with parser gameplay can be inherently comedic, 
+and takes advantage of that._
+
+JJ McC points out that
+
+_the game ended BEFORE OUR FIRST NATURE HIKE. 
+It was the triple crown of low stakes, high difficulty and no payoff._
+
+But the game is not called ‘Hiking in the Dolomites’, 
+so enjoy your breakfast and don't expect anything else.
+
+And he was not the only one who expected this.
+
+
+Other reviews came from Brian Rushton, Truthcraze, Ade McTavish and Hidnook.
+
+I have to thank everyone who had the patience 
+to play my game and leave me their impressions, 
+all of which are very helpful in trying to make something better.
+
+## Final Thoughts
+
+### What's next?
+
+There certainly won't be a version 2, 
+some things were fixed during the competetion, 
+and I don't think it is necessary to add anything else: 
+I consider this experience over.
+
+There could be a second episode or 
+something completely different to explore new possibilities.
+
+In any case, not anytime soon: 
+I am working on other non-interactive fiction projects 
+that I would like to complete.

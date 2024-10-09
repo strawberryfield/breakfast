@@ -2893,7 +2893,7 @@ Instead of kissing something:
 	if the noun is Monica:
 		increase kisses-count by one;
 		if kisses-count is greater than kisses-limit, say no more kisses instead;
-		say "[heart][/ss][one of]On dear[or]I love you[at random]!' [/se][regarding the noun][they] [whisper] sweetly in your ear.";
+		say "[heart][/ss][one of]Oh dear[or]I love you[at random]!' [/se][regarding the noun][they] [whisper] sweetly in your ear.";
 		if kisses-count is three, say narrator love kissing;
 		stop the action;
 	if the noun is a female person, say "[alert][/ss]I'm here to be kissed!' [/se][Monica] [scold] [us]." instead;
@@ -3361,7 +3361,8 @@ Ordering begins when ordering-trigger is true.
 Ordering ends when ordering-trigger is false.
 
 Instead of getting off the bench during ordering:
-	say "[alert][/ss]Have you no respect for [the naming of order handler]? ' [/se][Monica] [rebuke] [us]. [/n]".
+	unless order handler is nothing, say "[alert][/ss]Have you no respect for [the naming of order handler]? ' [/se][Monica] [rebuke] [us]. [/n]";
+	now ordering-trigger is false.
 
 Chapter 4.4.5 - Egg cooking
 
