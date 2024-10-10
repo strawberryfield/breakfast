@@ -381,14 +381,49 @@ so enjoy your breakfast and don't expect anything else.
 
 And he was not the only one who expected this.
 
-
-Other reviews came from Brian Rushton, Truthcraze, Ade McTavish and Hidnook.
+Other reviews came from Brian Rushton, Truthcraze, Ade McTavish, Hidnook and Wolfbiter.
 
 I have to thank everyone who had the patience 
 to play my game and leave me their impressions, 
 all of which are very helpful in trying to make something better.
 
+### The game as a model
+
+One thing that really surprised me was that my game was used as an example in some of the discussions.
+
+A sign that the game did not leave the players indifferent, 
+and for a complete unknown that is a great achievement.
+
+#### Medium-sized dry goods
+
+**CMG:**
+_For instance, you could have something like this:_
+
+_PICK UP CORKSCREW. PUT CORKSCREW IN BOTTLE. TWIST CORKSCREW. PULL CORKSCREW. REMOVE CORK FROM CORKSCREW. DROP CORK. DROP CORKSCREW. PICK UP BOTTLE. POUR BOTTLE INTO GLASS. PUT DOWN BOTTLE. PICK UP GLASS. DRINK WINE._
+
+**Phil Riley:**
+_This seems like a strawman to me. No one does this nowadays. In the comp, there is one parser game I’ve played that requires too many such steps (OPEN ENVELOPE, READ LETTER), but it’s nothing so silly. If I wrote reviews, I’d call them out on it, even though I like the “medium-sized dry goods”, “world simulation” style myself._
+
+**Daniel Stelzer:**
+_In fairness, from the reviews there seems to be one comp entry 
+that does this explicitly and intentionally (*Breakfast in the Dolomites*)._
+
+**Phil Riley:**
+_Granted. I haven’t played very far into that one, but I had noted the reviews. But this seems to be the exception rather than the rule, I think?_
+
+#### Do people hate it when the inventory command does not work in the dark?
+
+**Allyson Gray:**
+_Maybe multiple carried containers can be used to store items, à la Breakfast in the Dolomites with its different pant pockets (though maybe not that extreme), so that in darkness the player can keep track of similar things by putting them in different places. The packet of salt goes on the left, the packet of sugar goes on the right…_
+
 ## Final Thoughts
+
+At the end of the competition, 
+I achieved my goals: the game was not the worst, 
+it created interest, it was played, 
+and ten people left reviews and comments that will be very useful for improving my games.
+
+A very positive experience.
 
 ### What's next?
 
