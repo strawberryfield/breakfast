@@ -474,3 +474,10 @@ something completely different to explore new possibilities.
 In any case, not anytime soon: 
 I am working on other non-interactive fiction projects 
 that I would like to complete.
+
+#### Source code
+
+The original plan was to release the source code, 
+including the scripts to handle the release, 
+but it is not as tidy as I would have liked.  
+It would need refactoring, but I don't have time for that at the moment. 
