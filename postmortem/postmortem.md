@@ -344,10 +344,11 @@ I must say I am proud of the way Monica got her revenge, helped by a bug that po
 #### Reading the transcripts was very interesting
 
 I realised that some things that seemed obvious to me were not obvious to someone.   
-Other times I saw searching for complicated sentences 
-when to order a coffee it was enough to write _coffee_ and there was no need to write 
+To order a coffee it was sufficient (and polite) to answer the waiter's request 
+with a simple _answer coffee_ or simply _coffee_. 
+There was no need to write 
 _order espresso coffee to the waiter_
-(which the parser would not have understood anyway).
+(all this despite Monica's warnings not to change the topic.).
 
 There are also things that are completely ignored: 
 no one asked for sugar (apparently they all do what I do and drink bitter coffee).
@@ -455,11 +456,13 @@ _"Most detailed breakfast implementation of all time"_:
 a nice acknowledgement.
 
 At the end of the competition, 
-I achieved my goals: the game was not the worst, 
-it created interest, it was played, 
+I achieved my goals: the game was not the worst (I even got a nine), 
+it created interest, it was played (I got 46 votes), 
 and ten people left reviews and comments that will be very useful for improving my games.
 
-A very positive experience.
+Many thanks to everybody played, rated and commented my work.
+
+My participation in the IF Comp is a very positive experience.
 
 ### What's next?
 
