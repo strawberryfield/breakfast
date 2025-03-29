@@ -1,0 +1,27 @@
+<table style="width:100%;margin-bottom:1em;clear:both"><tr><td>{{comedy}} {{romance}} {{compnth|IF Comp 2024|64th of 67}} </td></tr></table>
+
+{{game infobox|title=Breakfast in the Dolomites|image=
+[[File:Cover.jpg|thumb|Cover image]]
+|author=[[Roberto Ceccarelli]]|publisher=«The Strawberry Field»|released=01-Sep-2024|authsystem=[[Inform 7]]|platform=[[Glulx]] |language=English|license=[[Creative Commons]]|color=optional|graphics=none|sound=none|cruelty=Polite}}
+
+==The Blurb==
+It is the mid-1990s. On a Friday evening in the summer, a guy and his girlfriend leave work for a short holiday in the Dolomites.
+
+You play as Francesco, about 30 years old, blond hair. Francesco works as a software engineer, he like photography and hiking in the mountains. Monica is his beautiful girlfriend: tall, slim, with lots of slightly reddish frizzy hair and sparkling green eyes: could he not fall in love with her? She loves strolling around looking in shop windows; a peppy girl, she won't forgive him for anything he does that she doesn't like, but deep down her heart beats for him. What a strange thing love is...
+
+There are no treasures to be found, there are no mysteries to be solved; remember, you are on holiday: have fun!
+
+==Get the game==
+{{link | url=https://strawberryfield.altervista.org/breakfast-in-the-dolomites/breakfast_download.php?lang=en | archive= | text=Download }}
+{{link | url=https://strawberryfield.altervista.org/breakfast-in-the-dolomites/play.html?lang=en | archive= | text=Play on-line }}
+
+==Links==
+{{link | url=https://strawberryfield.altervista.org/breakfast-in-the-dolomites/index.php?lang=en | archive= | text=Game website }}
+{{link | url=https://ifdb.org/viewgame?id=6t7reqb9bvw4wcu | archive= | text=IFDB entry }}
+{{link | url=https://ifcomp.org/comp/2024#entry-2959 | archive= | text=IF Comp 2024 entry }}
+
+[[Category:Works]]
+[[Category:Works in 2024]]
+[[Category:IF Comp works]]
+[[Category:Inform 7 works]]
+[[Category:Glulx works]]
