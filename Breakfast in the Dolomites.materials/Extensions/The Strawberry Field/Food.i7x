@@ -1,5 +1,21 @@
 Version 1 of Food by The Strawberry Field begins here.
 
+[
+Food © 2024 by Roberto Ceccarelli - The Strawberry Field 
+is licensed under CC BY-NC-SA 4.0. 
+To view a copy of this license, 
+visit https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+Food is free software: 
+you can redistribute it and/or modify it
+under the terms of the Creative Commons BY-NC-SA license.
+
+Food is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+See the license for more details.
+]
+
 Volume 1 - Smell and Taste
 
 A thing has some text called the scent-description.

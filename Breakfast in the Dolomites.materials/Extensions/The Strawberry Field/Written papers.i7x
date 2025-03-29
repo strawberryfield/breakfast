@@ -1,5 +1,21 @@
 Version 1 of Written papers by The Strawberry Field begins here.
 
+[
+Written papers © 2024 by Roberto Ceccarelli - The Strawberry Field 
+is licensed under CC BY-NC-SA 4.0. 
+To view a copy of this license, 
+visit https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+Written papers is free software: 
+you can redistribute it and/or modify it
+under the terms of the Creative Commons BY-NC-SA license.
+
+Written papers is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+See the license for more details.
+]
+
 A paper-item is a kind of thing.
 A paper-side is a kind of thing.
 A paper-side has a table name called arguments.
