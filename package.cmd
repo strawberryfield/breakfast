@@ -32,7 +32,7 @@ rem project home
 pushd "%DOC_ROOT%%DOC_PATH%\%PROJECT_HOME%"
 
 rem build project
-%Inform7% -release -internal %INTERNAL% -external %EXTERNAL% -project "%PROJECT_PATH%" -format=Inform6/32d
+%Inform7% -release -internal %INTERNAL% -external %EXTERNAL% -project "%PROJECT_PATH%" -format=Inform6/32
 %Inform6% -E2w~S~DG "%BUILD_DIR%auto.inf" "%BUILD_DIR%output.ulx"
 echo copyright %COPYRIGHT% >> %BLURB%
 %InBlorb% %BLURB% "%RELEASE_DIR%%NAME%.gblorb"
