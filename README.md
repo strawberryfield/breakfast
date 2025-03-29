@@ -55,3 +55,19 @@ I also find a very strange language, Inform7, download it and greedily read the 
 [I carried out various tests, which I report on my site](https://strawberryfield.altervista.org/interactive-fiction/index.php?lang=en) (in Italian only), 
 and finally came up with a little story that I wanted to present at the IFComp to collect opinions and suggestions.
 
+The full story and more are collected in the [postmortem](https://strawberryfield.altervista.org/breakfast-in-the-dolomites/postmortem.php?lang=en).
+
+## Source code for _Source Code Amnesty Day 2025_
+
+In 2023, Mike Russo declared April 1 to be [Source Code Amnesty Day](https://www.ifwiki.org/Source_Code_Amnesty_Day), a day when interactive fiction authors are encouraged to release source code for their games. The first Source Code Amnesty Day was April 1, 2023.
+
+From [Mike's forum post](https://intfiction.org/t/april-1-is-source-code-amnesty-day-it-happened/61025):
+
+    One of the most valuable resources for folks learning an authoring system is source code for existing games, 
+    so they can see how others have solved problems similar to the ones they’ve faced. 
+    
+    Publicly-available source is also nice to have for folks who appreciate a game and 
+    want to learn more about the nuts and bolts of implementation, 
+    and it also helps satisfy the archival impulse that animates many parts of our community. 
+
+This is certainly not a great source example, it is totally uncommented upon, but I accept the challenge anyway and publish it.
