@@ -16,7 +16,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 See the license for more details.
 ]
 
-Book 1.1 - Typoghraphy
+Book 1.1 - Typography
 
 Chapter 1.1.1 - Shortenings
 
